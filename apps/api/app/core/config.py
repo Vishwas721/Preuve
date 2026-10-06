@@ -19,15 +19,15 @@ class Settings(BaseSettings):
     app_name: str = "Preuve API"
     environment: str = "development"
 
-    database_url: str = "postgresql+asyncpg://preuve:preuve@localhost:5433/preuve"
-    redis_url: str = "redis://localhost:6379/0"
-    searxng_url: str = "http://localhost:8888"
+    database_url: str = "postgresql+asyncpg://preuve:preuve@127.0.0.1:5433/preuve"
+    redis_url: str = "redis://127.0.0.1:6379/0"
+    searxng_url: str = "http://127.0.0.1:8888"
     # Comma-separated in env: CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
     cors_origins: Annotated[list[str], NoDecode] = Field(
         default_factory=lambda: ["http://localhost:3000"]
     )
 
-    ollama_url: str = "http://localhost:11434"
+    ollama_url: str = "http://127.0.0.1:11434"
     ollama_model: str = "llama3:8b"
     gemini_api_key: str = ""
     gemini_model: str = "gemini-2.5-flash"
