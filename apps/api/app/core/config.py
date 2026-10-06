@@ -32,7 +32,7 @@ class Settings(BaseSettings):
     ollama_num_ctx: int = 8192  # llama3:8b's max context; raise for llama3.1 / qwen2.5
     ollama_timeout_s: float = 180.0
     gemini_api_key: str = ""
-    gemini_model: str = "gemini-2.5-flash"
+    gemini_model: str = "gemini-3.8-flash"
 
     # Single-user mode until Phase 5 auth: this user is created on first request.
     dev_user_email: str = "founder@preuve.local"
