@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     app_name: str = "Preuve API"
     environment: str = "development"
 
-    database_url: str = "postgresql+asyncpg://preuve:preuve@localhost:5432/preuve"
+    database_url: str = "postgresql+asyncpg://preuve:preuve@localhost:5433/preuve"
     redis_url: str = "redis://localhost:6379/0"
     searxng_url: str = "http://localhost:8888"
     # Comma-separated in env: CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
