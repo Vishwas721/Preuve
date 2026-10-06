@@ -34,6 +34,11 @@ class Settings(BaseSettings):
     gemini_api_key: str = ""
     gemini_model: str = "gemini-3.8-flash"
 
+    # Per-task provider overrides, JSON in env: LLM_ROUTE_OVERRIDES={"analyze_idea": "local"}
+    llm_route_overrides: dict[str, str] = Field(default_factory=dict)
+    # Let Gemini-routed tasks fall back to the local model when Gemini is unavailable.
+    llm_allow_downgrade: bool = True
+
     # Single-user mode until Phase 5 auth: this user is created on first request.
     dev_user_email: str = "founder@preuve.local"
     dev_user_name: str = "Founder"
