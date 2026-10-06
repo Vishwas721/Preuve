@@ -12,6 +12,9 @@ from app.llm.base import (
     parse_structured,
 )
 
+# We never pass tools, so turn off the SDK's automatic function calling (and its warning).
+_NO_AFC = types.AutomaticFunctionCallingConfig(disable=True)
+
 
 class GeminiProvider(LLMProvider):
     """Gemini via the `google-genai` SDK (free tier). Used for heavy synthesis tasks."""
@@ -42,7 +45,9 @@ class GeminiProvider(LLMProvider):
     async def generate_text(
         self, prompt: str, *, system: str | None = None, temperature: float = 0.2
     ) -> str:
-        config = types.GenerateContentConfig(system_instruction=system, temperature=temperature)
+        config = types.GenerateContentConfig(
+            system_instruction=system, temperature=temperature, automatic_function_calling=_NO_AFC
+        )
         return await self._generate(prompt, config)
 
     async def generate_structured(
@@ -58,6 +63,7 @@ class GeminiProvider(LLMProvider):
             temperature=temperature,
             response_mime_type="application/json",
             response_json_schema=schema.model_json_schema(),
+            automatic_function_calling=_NO_AFC,
         )
         raw = await self._generate(prompt, config)
         return parse_structured(raw, schema)
