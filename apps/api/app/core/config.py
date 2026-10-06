@@ -32,6 +32,10 @@ class Settings(BaseSettings):
     gemini_api_key: str = ""
     gemini_model: str = "gemini-2.5-flash"
 
+    # Single-user mode until Phase 5 auth: this user is created on first request.
+    dev_user_email: str = "founder@preuve.local"
+    dev_user_name: str = "Founder"
+
     @field_validator("cors_origins", mode="before")
     @classmethod
     def _split_origins(cls, v: object) -> object:
