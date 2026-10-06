@@ -1,0 +1,49 @@
+name: preuve
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-preuve}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-preuve}
+      POSTGRES_DB: ${POSTGRES_DB:-preuve}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-preuve} -d ${POSTGRES_DB:-preuve}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  searxng:
+    image: searxng/searxng:latest
+    ports:
+      - "8888:8080"
+    environment:
+      SEARXNG_BASE_URL: http://localhost:8888/
+      SEARXNG_SECRET: ${SEARXNG_SECRET:-change-me-in-dotenv}
+    volumes:
+      - ./searxng:/etc/searxng
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:8080/healthz || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres_data:
+  redis_data:

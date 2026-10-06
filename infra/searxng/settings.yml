@@ -1,0 +1,14 @@
+# Minimal SearXNG config for Preuve: defaults + JSON output for the API.
+use_default_settings: true
+
+server:
+  # Overridden by the SEARXNG_SECRET env var (see infra/docker-compose.yml).
+  secret_key: "change-me-in-dotenv"
+  limiter: false
+  image_proxy: false
+
+search:
+  safe_search: 0
+  formats:
+    - html
+    - json
