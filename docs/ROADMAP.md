@@ -10,7 +10,7 @@ Nothing from a later phase is built early. Status: `[ ]` todo · `[~]` in progre
 
 ---
 
-## Phase 0 — Foundation `[~]`
+## Phase 0 — Foundation `[x]`
 
 Monorepo, infra, API skeleton, DB + migrations, worker queue, hybrid LLM layer, search layer, web
 skeleton, CI, docs.
@@ -23,6 +23,14 @@ skeleton, CI, docs.
 - Claim guardrail rejects facts without evidence ids.
 - Web dashboard shows API health and ideas list.
 - CI green (ruff, pytest, web lint + build).
+
+**Notes carried into later phases**
+- `llama3:8b` gets structured fields right but can mislabel sentiment (it called a
+  problem-confirming reply "negative"). Prompts for local tasks must define labels precisely;
+  consider `llama3.1:8b` / `qwen2.5:7b` via `OLLAMA_MODEL`.
+- Reddit disallows crawlers in `robots.txt`, so the fetcher skips it. Forum evidence from Reddit
+  would need its official API (Phase 1B decision).
+- Gemini default model `gemini-3.8-flash` (free tier); verify rate limits once a key is in use.
 
 ---
 
