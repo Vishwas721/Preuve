@@ -1,3 +1,4 @@
+import json
 from collections import deque
 from dataclasses import dataclass
 from typing import Any
@@ -57,5 +58,5 @@ class FakeProvider(LLMProvider):
         if isinstance(item, BaseModel):
             return schema.model_validate(item.model_dump())
         if isinstance(item, dict):
-            return schema.model_validate(item)
+            item = json.dumps(item)
         return parse_structured(str(item), schema)
