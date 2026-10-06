@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import get_settings
 from app.modules.ideas.router import router as ideas_router
+from app.modules.meta.router import router as meta_router
 
 
 def create_app() -> FastAPI:
@@ -17,10 +18,7 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    @app.get("/health", tags=["meta"])
-    async def health() -> dict:
-        return {"status": "ok"}
-
+    app.include_router(meta_router)
     app.include_router(ideas_router)
     return app
 
