@@ -1,0 +1,444 @@
+{
+  "$defs": {
+    "Claim": {
+      "properties": {
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "kind": {
+          "$ref": "#/$defs/ClaimKind"
+        },
+        "statement": {
+          "minLength": 1,
+          "title": "Statement",
+          "type": "string"
+        }
+      },
+      "required": [
+        "statement",
+        "kind"
+      ],
+      "title": "Claim",
+      "type": "object"
+    },
+    "ClaimKind": {
+      "enum": [
+        "fact",
+        "inference",
+        "assumption"
+      ],
+      "title": "ClaimKind",
+      "type": "string"
+    },
+    "EvidenceKind": {
+      "description": "Assumptions are not evidence, so they can't appear here.",
+      "enum": [
+        "fact",
+        "inference"
+      ],
+      "title": "EvidenceKind",
+      "type": "string"
+    },
+    "FindingStatus": {
+      "enum": [
+        "answered",
+        "partially_answered",
+        "no_evidence_found"
+      ],
+      "title": "FindingStatus",
+      "type": "string"
+    },
+    "HypothesisUpdate": {
+      "properties": {
+        "buyer": {
+          "minLength": 1,
+          "title": "Buyer",
+          "type": "string"
+        },
+        "decision_maker": {
+          "minLength": 1,
+          "title": "Decision Maker",
+          "type": "string"
+        },
+        "economic_value": {
+          "minLength": 1,
+          "title": "Economic Value",
+          "type": "string"
+        },
+        "geography": {
+          "maxLength": 200,
+          "minLength": 1,
+          "title": "Geography",
+          "type": "string"
+        },
+        "industry": {
+          "maxLength": 200,
+          "minLength": 1,
+          "title": "Industry",
+          "type": "string"
+        },
+        "problem": {
+          "minLength": 1,
+          "title": "Problem",
+          "type": "string"
+        },
+        "rationale": {
+          "description": "Why, citing evidence refs.",
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "minItems": 1,
+          "title": "Rationale",
+          "type": "array"
+        },
+        "users": {
+          "minLength": 1,
+          "title": "Users",
+          "type": "string"
+        }
+      },
+      "required": [
+        "problem",
+        "users",
+        "buyer",
+        "decision_maker",
+        "economic_value",
+        "geography",
+        "industry",
+        "rationale"
+      ],
+      "title": "HypothesisUpdate",
+      "type": "object"
+    },
+    "NewUnknown": {
+      "properties": {
+        "category": {
+          "$ref": "#/$defs/UnknownCategory",
+          "default": "other"
+        },
+        "priority": {
+          "$ref": "#/$defs/Priority",
+          "default": "medium"
+        },
+        "question": {
+          "minLength": 1,
+          "title": "Question",
+          "type": "string"
+        }
+      },
+      "required": [
+        "question"
+      ],
+      "title": "NewUnknown",
+      "type": "object"
+    },
+    "PackEvidence": {
+      "properties": {
+        "company_name": {
+          "anyOf": [
+            {
+              "maxLength": 200,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Company Name"
+        },
+        "kind": {
+          "$ref": "#/$defs/EvidenceKind"
+        },
+        "published_at": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Published At"
+        },
+        "quote": {
+          "description": "Copied verbatim from the page. '\u2026' may join fragments that appear in order.",
+          "maxLength": 600,
+          "minLength": 20,
+          "title": "Quote",
+          "type": "string"
+        },
+        "ref": {
+          "examples": [
+            "ev-01"
+          ],
+          "pattern": "^[a-z0-9][a-z0-9-]{0,31}$",
+          "title": "Ref",
+          "type": "string"
+        },
+        "relevance": {
+          "$ref": "#/$defs/Relevance"
+        },
+        "source_type": {
+          "$ref": "#/$defs/SourceType"
+        },
+        "stance": {
+          "$ref": "#/$defs/Stance"
+        },
+        "statement": {
+          "description": "What the quote shows.",
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Statement",
+          "type": "string"
+        },
+        "title": {
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "unknown_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "title": "Unknown Ids",
+          "type": "array"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ref",
+        "url",
+        "title",
+        "source_type",
+        "quote",
+        "statement",
+        "kind",
+        "stance",
+        "relevance"
+      ],
+      "title": "PackEvidence",
+      "type": "object"
+    },
+    "PackMeta": {
+      "properties": {
+        "finished_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Finished At"
+        },
+        "idea_id": {
+          "format": "uuid",
+          "title": "Idea Id",
+          "type": "string"
+        },
+        "method_version": {
+          "examples": [
+            "1"
+          ],
+          "maxLength": 20,
+          "minLength": 1,
+          "title": "Method Version",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "queries": {
+          "description": "Searches run, for transparency.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Queries",
+          "type": "array"
+        },
+        "researcher": {
+          "default": "claude-code",
+          "maxLength": 50,
+          "title": "Researcher",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "started_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Started At"
+        }
+      },
+      "required": [
+        "method_version",
+        "idea_id"
+      ],
+      "title": "PackMeta",
+      "type": "object"
+    },
+    "Priority": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "title": "Priority",
+      "type": "string"
+    },
+    "Relevance": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "title": "Relevance",
+      "type": "string"
+    },
+    "SourceType": {
+      "enum": [
+        "job_posting",
+        "forum",
+        "review",
+        "news",
+        "industry_publication",
+        "company_site",
+        "report",
+        "directory",
+        "other"
+      ],
+      "title": "SourceType",
+      "type": "string"
+    },
+    "Stance": {
+      "enum": [
+        "supports",
+        "contradicts",
+        "neutral"
+      ],
+      "title": "Stance",
+      "type": "string"
+    },
+    "UnknownCategory": {
+      "enum": [
+        "frequency",
+        "cost",
+        "current_solution",
+        "buyer",
+        "budget",
+        "alternatives",
+        "urgency",
+        "other"
+      ],
+      "title": "UnknownCategory",
+      "type": "string"
+    },
+    "UnknownFinding": {
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/FindingStatus"
+        },
+        "summary": {
+          "description": "Claims citing evidence refs in `evidence_ids`.",
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Summary",
+          "type": "array"
+        },
+        "unknown_id": {
+          "format": "uuid",
+          "title": "Unknown Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "unknown_id",
+        "status"
+      ],
+      "title": "UnknownFinding",
+      "type": "object"
+    }
+  },
+  "$id": "https://github.com/Vishwas721/Preuve/docs/research-pack.schema.json",
+  "properties": {
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/PackEvidence"
+      },
+      "maxItems": 200,
+      "title": "Evidence",
+      "type": "array"
+    },
+    "hypothesis_update": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/HypothesisUpdate"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "meta": {
+      "$ref": "#/$defs/PackMeta"
+    },
+    "new_unknowns": {
+      "items": {
+        "$ref": "#/$defs/NewUnknown"
+      },
+      "maxItems": 20,
+      "title": "New Unknowns",
+      "type": "array"
+    },
+    "unknown_findings": {
+      "items": {
+        "$ref": "#/$defs/UnknownFinding"
+      },
+      "title": "Unknown Findings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "meta"
+  ],
+  "title": "Preuve research pack",
+  "type": "object"
+}
