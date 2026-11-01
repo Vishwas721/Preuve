@@ -4,7 +4,14 @@ import { useState, type FormEvent } from "react";
 
 import { AssumptionBadge } from "@/components/AssumptionBadge";
 import { btnLink, btnPrimary, card, input, sectionTitle, select } from "@/components/ui";
-import { api, type Priority, type Unknown, type UnknownCategory } from "@/lib/api";
+import {
+  api,
+  type Finding,
+  type FindingStatus,
+  type Priority,
+  type Unknown,
+  type UnknownCategory,
+} from "@/lib/api";
 
 const CATEGORIES: Record<UnknownCategory, string> = {
   frequency: "Frequency",
@@ -23,13 +30,55 @@ const PRIORITY_STYLE: Record<Priority, string> = {
   low: "bg-black/5 dark:bg-white/10",
 };
 
+const FINDING_LABELS: Record<FindingStatus, { label: string; style: string }> = {
+  answered: { label: "Answered by research", style: "text-green-700 dark:text-green-400" },
+  partially_answered: {
+    label: "Partially answered by research",
+    style: "text-amber-700 dark:text-amber-300",
+  },
+  no_evidence_found: { label: "No evidence found", style: "opacity-70" },
+};
+
+/** Latest research finding for an unknown; claims link to the evidence they cite. */
+function FindingBlock({ finding, refs }: { finding: Finding; refs: Record<string, string> }) {
+  const { label, style } = FINDING_LABELS[finding.status];
+  return (
+    <div className="rounded-md bg-black/[.03] px-3 py-2 text-sm dark:bg-white/[.05]">
+      <p className={`text-xs font-medium ${style}`}>{label}</p>
+      {finding.summary.length > 0 && (
+        <ul className="mt-1 flex flex-col gap-1">
+          {finding.summary.map((c, i) => (
+            <li key={i}>
+              {c.statement}{" "}
+              {c.evidence_ids.map((id) => (
+                <a
+                  key={id}
+                  href={`#ev-${id}`}
+                  className="text-xs underline underline-offset-2 opacity-60 hover:opacity-100"
+                >
+                  [{refs[id] ?? "evidence"}]
+                </a>
+              ))}
+              {c.kind !== "fact" && <span className="ml-1 text-xs opacity-50">({c.kind})</span>}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 function UnknownRow({
   ideaId,
   unknown,
+  finding,
+  refs,
   onChange,
 }: {
   ideaId: string;
   unknown: Unknown;
+  finding?: Finding;
+  refs: Record<string, string>;
   onChange: () => void;
 }) {
   const [editing, setEditing] = useState(false);
@@ -72,6 +121,7 @@ function UnknownRow({
       ) : (
         <p className={`text-sm ${answered ? "opacity-60 line-through" : ""}`}>{unknown.question}</p>
       )}
+      {finding && <FindingBlock finding={finding} refs={refs} />}
       <div className="flex flex-wrap gap-3">
         {!editing && (
           <button className={btnLink} onClick={() => setEditing(true)}>
@@ -106,12 +156,18 @@ function UnknownRow({
 export function UnknownsPanel({
   ideaId,
   unknowns,
+  findings = [],
+  evidenceRefs = {},
   onChange,
 }: {
   ideaId: string;
   unknowns: Unknown[];
+  findings?: Finding[];
+  /** evidence id -> its ref label, for citation links */
+  evidenceRefs?: Record<string, string>;
   onChange: () => void;
 }) {
+  const findingFor = Object.fromEntries(findings.map((f) => [f.unknown_id, f]));
   const [question, setQuestion] = useState("");
   const [category, setCategory] = useState<UnknownCategory>("other");
   const [priority, setPriority] = useState<Priority>("medium");
@@ -146,7 +202,14 @@ export function UnknownsPanel({
       ) : (
         <ul className="mt-3">
           {sorted.map((u) => (
-            <UnknownRow key={u.id} ideaId={ideaId} unknown={u} onChange={onChange} />
+            <UnknownRow
+              key={u.id}
+              ideaId={ideaId}
+              unknown={u}
+              finding={findingFor[u.id]}
+              refs={evidenceRefs}
+              onChange={onChange}
+            />
           ))}
         </ul>
       )}

@@ -8,8 +8,9 @@ import { HypothesisPanel } from "@/components/analysis/HypothesisPanel";
 import { IcpPanel } from "@/components/analysis/IcpPanel";
 import { isActive, RunBanner } from "@/components/analysis/RunBanner";
 import { UnknownsPanel } from "@/components/analysis/UnknownsPanel";
+import { EvidencePanel } from "@/components/research/EvidencePanel";
 import { btnPrimary, card } from "@/components/ui";
-import { api, type Idea, type IdeaAnalysis } from "@/lib/api";
+import { api, type Idea, type IdeaAnalysis, type IdeaResearch } from "@/lib/api";
 
 const POLL_MS = 2500;
 
@@ -17,12 +18,15 @@ export default function IdeaPage() {
   const { id } = useParams<{ id: string }>();
   const [idea, setIdea] = useState<Idea | null>(null);
   const [analysis, setAnalysis] = useState<IdeaAnalysis | null>(null);
+  const [research, setResearch] = useState<IdeaResearch | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [starting, setStarting] = useState(false);
 
   const refresh = useCallback(async () => {
     try {
-      setAnalysis(await api.getAnalysis(id));
+      const [a, r] = await Promise.all([api.getAnalysis(id), api.getResearch(id)]);
+      setAnalysis(a);
+      setResearch(r);
     } catch (err) {
       setError((err as Error).message);
     }
@@ -35,11 +39,14 @@ export default function IdeaPage() {
   }, [id, refresh]);
 
   const running = isActive(analysis?.latest_run ?? null);
+  const verifying = !!research?.imports.some(
+    (i) => i.status === "queued" || i.status === "verifying",
+  );
   useEffect(() => {
-    if (!running) return;
+    if (!running && !verifying) return;
     const timer = setInterval(refresh, POLL_MS);
     return () => clearInterval(timer);
-  }, [running, refresh]);
+  }, [running, verifying, refresh]);
 
   async function start(kind: "full" | "icps") {
     setStarting(true);
@@ -65,7 +72,7 @@ export default function IdeaPage() {
     );
   }
 
-  if (!idea || !analysis) {
+  if (!idea || !analysis || !research) {
     return <main className="mx-auto w-full max-w-4xl px-4 py-10 text-sm opacity-70">Loading…</main>;
   }
 
@@ -115,7 +122,14 @@ export default function IdeaPage() {
       )}
 
       <HypothesisPanel ideaId={id} hypothesis={analysis.hypothesis} onChange={refresh} />
-      <UnknownsPanel ideaId={id} unknowns={analysis.unknowns} onChange={refresh} />
+      <UnknownsPanel
+        ideaId={id}
+        unknowns={analysis.unknowns}
+        findings={research.findings}
+        evidenceRefs={Object.fromEntries(research.evidence.map((e) => [e.id, e.ref]))}
+        onChange={refresh}
+      />
+      <EvidencePanel ideaId={id} research={research} onChange={refresh} />
       <IcpPanel
         ideaId={id}
         icps={analysis.icps}
