@@ -22,10 +22,13 @@
 - **Generate ICPs** (`generate_icps`, Gemini): 1–3 candidate ICPs, each with:
   - company type, size band, geography, operating signals (e.g. "10+ active projects");
   - target roles (user / buyer);
-  - a hypothesis score from 0–100, with a written rationale.
+  - a hypothesis score from 0–100 built from a **fixed rubric** (see Decisions): the model rates
+    each criterion 1–5 with a rationale, and code computes the weighted total.
 - **Labelling:** every generated item is stored as an `assumption` until later phases attach
   evidence. The UI makes that obvious.
 - **Editing:** the user can edit, delete, add and re-generate the hypothesis, unknowns and ICPs.
+  Hypothesis edits and re-generations create a **new version** (append-only); the latest is
+  current. Unknowns and ICPs aren't versioned: removing one sets its status instead of deleting it.
 - **Async:** analysis runs as an arq job. The request returns a run id and the UI polls status.
 
 ## Out of scope
@@ -36,16 +39,17 @@ Web research and evidence (1B), competitors (1C), companies and prospects (1D).
 
 | Table | Key columns |
 |---|---|
-| `hypotheses` | idea_id, problem, users, buyer, decision_maker, economic_value, geography, industry, source (`ai` / `user`), version |
+| `hypotheses` | idea_id, version (unique per idea), problem, users, buyer, decision_maker, economic_value, geography, industry, source (`ai` / `user`), change_note? — append-only |
 | `unknowns` | idea_id, question, category, priority, status (`open` / `answered` / `dropped`), source |
-| `icps` | idea_id, name, company_type, size_min, size_max, geography, signals (json), roles (json), hypothesis_score, rationale, source, is_primary |
+| `icps` | idea_id, name, company_type, size_min, size_max, geography, signals (json), roles (json), score_components (json: criterion, rating 1–5, rationale), hypothesis_score (computed), source, is_primary, status (`active` / `dismissed`) |
 | `analysis_runs` | idea_id, kind (`analyze` / `icps`), status, error, started_at, finished_at |
 
 ## API (draft)
 
 - `POST /ideas/{id}/analyze` starts the analysis job and returns `analysis_run`.
 - `GET /ideas/{id}/analysis-runs/{run_id}` returns run status.
-- `GET /ideas/{id}/hypothesis` and `PATCH /ideas/{id}/hypothesis`.
+- `GET /ideas/{id}/hypothesis` (current version), `GET /ideas/{id}/hypothesis/versions`, and
+  `POST /ideas/{id}/hypothesis` (save an edit as a new version).
 - `GET/POST /ideas/{id}/unknowns`, `PATCH/DELETE /unknowns/{id}`.
 - `GET/POST /ideas/{id}/icps`, `PATCH/DELETE /icps/{id}`.
 
@@ -79,8 +83,27 @@ propose assumptions and questions.
 - [ ] If Gemini is down, the router falls back to local, or shows a clear error state. No crash.
 - [ ] Tests cover the services, the job, prompt and schema validation (FakeProvider) and the API.
 
-## Open questions (settle at kickoff)
+## Decisions (2026-11-01)
 
-- Keep hypothesis history (versioning), or only the latest version?
-- Should the ICP score use a rubric (e.g. pain likelihood, reachability, budget), or the
-  model's estimate plus a rationale?
+1. **Hypothesis history: keep versions (append-only).** Every edit or re-generation inserts a
+   new `hypotheses` row with `version + 1`, and the highest version is current.
+   - **Why:** PRD §28 experiments exist to change the hypothesis ("update ICP"), and the Phase 4
+     report should show how the idea evolved and why. An append-only insert costs about the same
+     as an update and loses nothing.
+   - **Not versioned:** unknowns and ICPs. They use status fields instead, to keep 1A small.
+2. **ICP score: a fixed rubric, totalled in code.** The model rates each criterion 1–5 with a
+   one-line rationale. The weighted 0–100 total is computed deterministically.
+   - **Why:** LLM-picked numbers aren't calibrated or comparable across ideas or runs. A rubric
+     makes the score explainable, consistent with PRD §16 and §24, and lets Phase 1B evidence
+     later adjust individual criteria.
+   - **The score is still an assumption** until evidence exists, and is labelled that way.
+
+   | Criterion | Weight | Question the model answers (1–5) |
+   |---|---|---|
+   | Pain likelihood | 30 | How likely is this segment to feel the problem strongly? |
+   | Ability to pay | 25 | Does this segment plausibly have budget and buying authority? |
+   | Reachability | 20 | Can these companies and roles be found and contacted from public info? |
+   | Frequency / urgency | 15 | How often, or how urgently, does the problem occur for them? |
+   | Segment size | 10 | Are there enough such companies in the target market? |
+
+   `score = Σ weight × (rating − 1) / 4`, so all 1s give 0 and all 5s give 100.
