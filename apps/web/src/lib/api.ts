@@ -34,7 +34,7 @@ export interface Idea extends Required<IdeaInput> {
 
 // ---------- analysis (Phase 1A) ----------
 
-export type Source = "ai" | "user";
+export type Source = "ai" | "user" | "research";
 export type RunStatus = "queued" | "running" | "succeeded" | "failed";
 export type UnknownCategory =
   | "frequency"
@@ -151,6 +151,94 @@ export interface IdeaAnalysis {
   latest_run: AnalysisRun | null;
 }
 
+// ---------- research (Phase 1B) ----------
+
+export type Stance = "supports" | "contradicts" | "neutral";
+export type EvidenceKind = "fact" | "inference";
+export type Relevance = "high" | "medium" | "low";
+export type Verification = "verified" | "unverifiable";
+export type FindingStatus = "answered" | "partially_answered" | "no_evidence_found";
+export type SourceType =
+  | "job_posting"
+  | "forum"
+  | "review"
+  | "news"
+  | "industry_publication"
+  | "company_site"
+  | "report"
+  | "directory"
+  | "other";
+
+export interface Evidence {
+  id: string;
+  import_id: string;
+  ref: string;
+  url: string;
+  final_url: string | null;
+  title: string | null;
+  fetched_at: string;
+  quote: string;
+  statement: string;
+  source_type: SourceType;
+  kind: EvidenceKind;
+  stance: Stance;
+  relevance: Relevance;
+  company_name: string | null;
+  published_at: string | null;
+  verification: Verification;
+  verification_note: string | null;
+  dismissed: boolean;
+  user_edited: boolean;
+  original_labels: Record<string, string> | null;
+  unknown_ids: string[];
+  created_at: string;
+}
+
+export interface Claim {
+  statement: string;
+  kind: "fact" | "inference" | "assumption";
+  evidence_ids: string[];
+}
+
+export interface Finding {
+  unknown_id: string;
+  import_id: string;
+  status: FindingStatus;
+  summary: Claim[];
+  created_at: string;
+}
+
+export interface ImportReport {
+  counts?: { verified: number; unverifiable: number; rejected: number };
+  rejected?: { ref: string; url: string; reason: string }[];
+  dropped_claims?: { statement: string; missing_refs: string[] }[];
+  downgraded_findings?: string[];
+  duplicates?: string[];
+  hypothesis_version?: number | null;
+  hypothesis_skipped?: string | null;
+  new_unknowns?: number;
+}
+
+export interface ResearchImport {
+  id: string;
+  idea_id: string;
+  schema_version: string;
+  method_version: string;
+  researcher: string;
+  status: "queued" | "verifying" | "done" | "failed";
+  report: ImportReport;
+  error: string | null;
+  created_at: string;
+  started_at: string | null;
+  finished_at: string | null;
+}
+
+export interface IdeaResearch {
+  evidence: Evidence[];
+  findings: Finding[];
+  imports: ResearchImport[];
+}
+
 export interface Health {
   status: "ok" | "degraded";
   checks: Record<string, boolean>;
@@ -222,4 +310,11 @@ export const api = {
     request<ICP>(`/ideas/${ideaId}/icps`, json("POST", data)),
   updateIcp: (ideaId: string, icpId: string, data: ICPPatch) =>
     request<ICP>(`/ideas/${ideaId}/icps/${icpId}`, json("PATCH", data)),
+
+  getResearch: (ideaId: string) => request<IdeaResearch>(`/ideas/${ideaId}/research`),
+  updateEvidence: (
+    ideaId: string,
+    evidenceId: string,
+    data: Partial<Pick<Evidence, "dismissed" | "kind" | "stance" | "relevance">>,
+  ) => request<Evidence>(`/ideas/${ideaId}/evidence/${evidenceId}`, json("PATCH", data)),
 };
