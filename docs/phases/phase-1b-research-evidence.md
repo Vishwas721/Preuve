@@ -1,85 +1,187 @@
-# Phase 1B — Research & evidence engine
+# Phase 1B — Research import & evidence verification
 
-- **Status:** Not started (draft)
-- **Goal:** Gather public evidence for or against the hypothesis, and store each item with full
-  provenance and an honest fact / inference / assumption label.
-- **PRD refs:** §11 Market research engine, §12 Evidence engine, §31 async architecture,
-  §35 guardrails, §37 privacy
+- **Status:** Not started (rewritten 2026-11-01 for [ADR 0004](../adr/0004-claude-code-research-analyst.md))
+- **Goal:** Get high-quality public evidence for or against an idea by having Claude Code do the
+  research. Preuve imports the result, **independently verifies every quote against the live
+  page**, and stores the evidence with full provenance and an honest label.
+- **PRD refs:** §11 Market research, §12 Evidence engine, §35 guardrails, §37 privacy
+
+## How it works
+
+```
+You paste an idea into Claude Code
+        │  /research-idea  (fixed method, versioned)
+        ▼
+research/<idea-slug>/pack.json   +   research/<idea-slug>/report.md
+        │  uv run python -m app.scripts.import_research research/<idea-slug>/pack.json
+        ▼
+POST /ideas/{id}/research-imports   ──►  arq job: verify each evidence item
+        │                                  fetch URL (robots.txt respected)
+        │                                  find the verbatim quote on the page
+        ▼
+evidence (verified | unverifiable)  +  import report (rejected items and why)
+        ▼
+Idea page: evidence list with quotes, sources and labels; unknowns show their findings
+```
 
 ## Scope
 
-- **Research run:** `POST /ideas/{id}/research` creates a `research_run` and enqueues a job.
-  Progress (queries done, pages fetched, evidence found) can be polled.
-- **Query planning:** build search queries from the open unknowns, the hypothesis and the primary
-  ICP. Templates first; the LLM only helps expand them. Targets PRD §11 evidence types: job
-  postings, forums, reviews, industry publications, news, company sites.
-- **Search → fetch → extract** for each result:
-  - SearXNG search;
-  - `PageFetcher.fetch` (robots.txt respected);
-  - store a `source` (url, title, fetched_at, content hash);
-  - `extract_fields` / `classify_evidence` (local) pull **verbatim quotes**, their relevance and
-    the linked unknown or hypothesis.
-- **Evidence record (PRD §12):** source, url, company (if any), date, evidence type, verbatim
-  quote, statement, kind (fact / inference / assumption), relevance, confidence, linked
-  hypothesis or unknown.
-- **Integrity checks, enforced in code:**
-  - a quote must appear in the stored page text (exact or normalized match), otherwise it is
-    rejected;
-  - an evidence row cannot exist without a source;
-  - a run that finds nothing records and shows "No evidence found."
-- **Dedup:** the same URL or content hash is not stored twice per idea.
-- **Politeness:** per-domain rate limit, concurrency cap, timeouts.
+### 1. Research pack (the contract)
+
+- Defined as Pydantic models in `app/modules/research/pack.py`. These are the source of truth.
+- Exported to `docs/research-pack.schema.json` by a script; a test fails if the export is stale.
+- **`meta`:**
+  - `schema_version`, `method_version`, `idea_id`, `researcher` (`claude-code`);
+  - `started_at`, `finished_at`;
+  - `queries` (what was searched, for transparency), `notes`.
+- **`evidence[]`** fields:
+  - `ref` (pack-local id, e.g. `ev-01`), `url`, `title`;
+  - `source_type`: `job_posting` / `forum` / `review` / `news` / `industry_publication` /
+    `company_site` / `report` / `directory` / `other`;
+  - `published_at?`;
+  - `quote`: copied **verbatim** from the page, max ~500 characters;
+  - `statement`: what the quote shows, in one sentence;
+  - `kind`: `fact` or `inference` (assumptions are not evidence);
+  - `stance`: `supports` / `contradicts` / `neutral`, relative to the hypothesis;
+  - `relevance`: `high` / `medium` / `low`;
+  - `unknown_ids[]`: which unknowns it informs;
+  - `company_name?`.
+- **`unknown_findings[]`:**
+  - `unknown_id`;
+  - `status`: `answered` / `partially_answered` / `no_evidence_found`;
+  - `summary`: a list of `Claim`s citing evidence `ref`s.
+- **`hypothesis_update?`** (optional): proposed new hypothesis fields, with a `rationale` that
+  cites evidence refs. Imported as a **new hypothesis version** with source `research`, never
+  applied silently.
+- **`new_unknowns[]`** (optional): questions the research raised. Imported with source
+  `research`.
+
+### 2. Import and verification
+
+- `POST /ideas/{id}/research-imports` validates the pack (schema, idea id, ref uniqueness,
+  citation refs exist) and returns 422 with a clear error list if it's invalid. Otherwise it
+  stores the import and enqueues `verify_research_import`.
+- **Verification, per evidence item:**
+  - fetch with `PageFetcher` (robots.txt respected, timeout, provenance recorded);
+  - normalize the page text and the quote (case, whitespace, curly quotes, dashes, ellipses)
+    and look for the quote. If the main-content extraction misses it, fall back to the full
+    page text;
+  - **verified:** the quote was found. Stored with `fetched_at` and a content hash.
+  - **unverifiable:** the page couldn't be fetched (robots.txt, 4xx/5xx, paywall). Stored but
+    flagged, shown separately, and excluded from scoring by default.
+  - **rejected:** the page was fetched but the quote isn't on it. **Not stored as evidence**;
+    listed in the import report.
+- **Claims** in `unknown_findings` and `hypothesis_update` must cite only refs of stored
+  (verified or unverifiable) evidence (`verify_citations`). A claim citing a rejected item is
+  dropped and reported.
+- Bounded concurrency and a per-domain politeness delay.
+- **Re-importing** a pack for the same idea adds a new import. Evidence is deduplicated by URL
+  plus normalized quote.
+
+### 3. The `/research-idea` skill (`.claude/skills/research-idea/SKILL.md`)
+
+- **Inputs:** an idea, either pasted text or an existing idea id. If it's new, the skill creates
+  it via the API and runs the 1A analysis, so research targets the unknowns.
+- **Fixed method (v1):**
+  1. Read the idea, the current hypothesis, the open unknowns and the primary ICP from the API.
+  2. Plan queries per unknown, covering the PRD §11 source types: job postings (manual
+     workflows), forums and communities, reviews of existing tools (complaints), industry
+     publications, news, company sites.
+  3. Search, open the pages that look promising, and copy quotes **verbatim**.
+  4. **Actively look for contradicting evidence** (e.g. "this is solved", "not a problem").
+  5. For each unknown: answered, partially answered, or **no evidence found**.
+  6. Write `pack.json` (validated against the schema) and `report.md` (a readable summary that
+     cites the same refs).
+  7. Run the import script and summarize the verification results.
+- **Rules:**
+  - never paraphrase inside `quote`;
+  - never cite a page that wasn't opened;
+  - no personal data beyond what the evidence needs: no usernames, no private individuals'
+    names. A company name is fine.
+  - Stop at the configured budget (default: about 15–25 evidence items, at least 2 contradiction
+    searches).
+- Packs and reports are committed under `research/<idea-slug>/`, which keeps the research
+  history versioned.
+
+### 4. UI
+
+- **Idea page, new "Evidence" section:**
+  - items grouped by stance;
+  - quote, source link, source type, kind (fact / inference), relevance, verification badge;
+  - unverifiable items in a collapsed group;
+  - "No evidence found." when the list is empty.
+- **Unknowns** show their latest finding status and summary, with links to the cited evidence.
+- **Import history:** date, method version, counts (verified / unverifiable / rejected), and a
+  link to the rejected items with reasons.
+- A **"research" source badge** on hypothesis versions and unknowns that came from a pack.
 
 ## Out of scope
 
-Competitor synthesis (1C), company discovery (1D), Phase 1 explorer UI polish (1E). This phase
-ships a minimal evidence list only.
+- The automated crawler (deferred, ADR 0004).
+- Competitors (1C) and companies (1D). Those phases **extend the research pack** with
+  `competitors[]` and `companies[]` sections, and add steps to the skill.
+- Full research explorer polish (1E).
 
 ## Data model (draft)
 
 | Table | Key columns |
 |---|---|
-| `research_runs` | idea_id, status, queries (json), stats (json), error, started_at, finished_at |
-| `sources` | idea_id, url, final_url, title, fetched_at, content_hash, text (or a pointer to it), source_type |
-| `evidence` | idea_id, source_id, research_run_id, unknown_id?, hypothesis_id?, evidence_type, quote, statement, kind, relevance, confidence, company_name?, published_at? |
+| `research_imports` | idea_id, schema_version, method_version, researcher, pack (json), status (`queued` / `verifying` / `done` / `failed`), report (json: counts, rejected items, dropped claims), error |
+| `sources` | idea_id, url, final_url, title, fetched_at, fetch_status, content_hash, text |
+| `evidence` | idea_id, import_id, source_id, ref, quote, statement, source_type, kind, stance, relevance, company_name?, published_at?, verification (`verified` / `unverifiable`), verification_note, dismissed |
+| `evidence_unknowns` | evidence_id, unknown_id |
+| `unknown_findings` | unknown_id, import_id, status, summary (json claims with evidence ids) |
+
+`Source` gains a value, `research` (hypotheses, unknowns).
 
 ## API (draft)
 
-- `POST /ideas/{id}/research` and `GET /ideas/{id}/research-runs/{run_id}`.
-- `GET /ideas/{id}/evidence` (filters: type, kind, relevance, unknown).
-- `PATCH /evidence/{id}`: the user can relabel or dismiss an item. Dismissed items stay for audit.
+All routes are under `/ideas/{idea_id}`:
+
+- `POST /research-imports` (202, or 422 with validation errors), `GET /research-imports`,
+  `GET /research-imports/{id}`.
+- `GET /evidence` (filters: stance, kind, verification, unknown) and `PATCH /evidence/{id}`
+  (dismiss, or relabel kind or stance; changes are recorded).
+- `GET /analysis` also returns the latest findings per unknown.
 
 ## Jobs
 
-`research_job(run_id)`: plan queries → search → fetch (bounded concurrency) → extract and
-classify → verify quotes → store → update stats.
+`verify_research_import(import_id)`: fetch, find quotes, store evidence, check claims, apply the
+optional hypothesis update and new unknowns, write the report. Crash safety works as in 1A: the
+import is marked failed and never left stuck.
 
 ## LLM tasks
 
-| Task | Provider | Notes |
-|---|---|---|
-| `extract_fields` | local (qwen2.5:7b) | Single page → candidate quotes + fields. Precise field definitions. |
-| `classify_evidence` | local | Snippet + hypothesis → relevance / supports / kind. |
-| `synthesize_evidence` | Gemini chain | Optional run summary; claims must pass `verify_citations`. |
-
-## UI
-
-Minimal: a "Run research" button, a progress indicator, and an evidence list with quote, source
-link, type, kind and relevance badges.
+None required. Verification is deterministic. Local models may be used later for relabel
+suggestions; not in this phase.
 
 ## Acceptance criteria
 
-- [ ] A run on a real idea produces evidence items, each with a URL, fetched_at time and a
-      verbatim quote that is present in the stored page.
-- [ ] Storing evidence without a source, or with a quote not found in the source, is impossible
-      (tested).
-- [ ] An empty run shows "No evidence found."
-- [ ] robots.txt and the rate limits are respected (tested with mocked HTTP).
-- [ ] Runs are resumable or fail cleanly; progress stats are accurate.
+- [ ] The pack schema is exported to `docs/research-pack.schema.json`; a test keeps it in sync.
+- [ ] An invalid pack is rejected with a precise error list (bad refs, unknown ids, missing
+      quote, etc.).
+- [ ] An evidence item whose quote isn't on its page is rejected and reported (tested with
+      mocked HTTP).
+- [ ] An item whose page blocks fetching is stored as `unverifiable` and shown separately.
+- [ ] Claims citing rejected or unknown refs are dropped and reported (`verify_citations`).
+- [ ] A hypothesis update from research becomes a new version with source `research`; nothing
+      the user wrote is overwritten.
+- [ ] **Live:** `/research-idea` on a real idea produces a pack. Importing it gives mostly
+      verified evidence, shown on the idea page with working source links. Unknowns show
+      findings, including "No evidence found" where honest.
+- [ ] Tests cover the schema, verification and matching rules, import service, job and API.
+
+## Decisions (2026-11-01)
+
+- **Reddit:** no special integration. Reddit blocks crawlers, so Reddit items can be cited but
+  will import as `unverifiable`. That's honest and visible.
+- **Stored page text:** keep the full extracted text per source. It allows re-verification and
+  audit. Revisit retention in Phase 5.
+- **Other free sources:** none needed. The skill decides where to look; verification only needs
+  public URLs.
 
 ## Open questions (settle at kickoff)
 
-- **Reddit:** use the official Reddit API (needs an app and credentials, and its terms), or skip
-  Reddit? The robots.txt check currently blocks crawling it.
-- How much page text should we store (the full text, or a trimmed window around the quotes)?
-- Do we need other free sources (e.g. public job boards with APIs)?
+- The quote-matching tolerance: exact after normalization, or allow small gaps (e.g. "…" joining
+  two fragments)? Proposal: exact after normalization; an ellipsis splits a quote into fragments
+  that must all be found in order.
