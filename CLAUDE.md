@@ -1,13 +1,15 @@
 # CLAUDE.md — Working rules for Preuve
 
 Preuve is an evidence-driven customer-validation engine. Spec: `docs/PRD.md`.
-Architecture: `docs/ARCHITECTURE.md`. Build order: `docs/ROADMAP.md`.
+Architecture: `docs/ARCHITECTURE.md`. Build order: `docs/ROADMAP.md`, with one doc per phase in
+`docs/phases/`.
 
 ## Phase discipline
-- Work only on the current roadmap phase. Read its section in `docs/ROADMAP.md` before starting.
+- Work only on the current roadmap phase. Read its doc in `docs/phases/` (and the PRD sections it
+  cites) before starting; refine and commit that doc at kickoff.
 - Don't add tables, endpoints or UI belonging to a later phase.
-- Finish a phase by checking its acceptance criteria, updating its status in `ROADMAP.md`, and
-  stopping for review.
+- Finish a phase by ticking its acceptance criteria in its phase doc, updating the status there
+  and in `ROADMAP.md`, and stopping for review.
 
 ## Commits
 - Small, single-purpose commits in Conventional Commit style: `feat(api): …`, `fix(web): …`,
