@@ -6,9 +6,10 @@
 
 ## Scope
 
-- **Discovery:** targeted searches (e.g. "<problem> software", "<problem> template",
-  "<problem> consultant") plus mentions already in Phase 1B sources and the founder's list of
-  known competitors.
+- **Discovery (ADR 0004):** the `/research-idea` skill gains a competitor step (targeted searches
+  such as "<problem> software", "<problem> template", "<problem> consultant", the founder's known
+  competitors, and mentions in existing evidence). The research pack gains a `competitors[]`
+  section, and each entry cites verified evidence refs.
 - **Classification** into four kinds:
   - **direct**: products solving the same problem;
   - **indirect**: different software solving part of it;

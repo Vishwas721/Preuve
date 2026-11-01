@@ -10,7 +10,7 @@ Nothing from a later phase is built early. Every phase ends with a review stop.
 |---|---|---|
 | 0 — Foundation | [phase-0-foundation.md](phases/phase-0-foundation.md) | ✅ Done |
 | 1A — Idea intake & analyzer | [phase-1a-idea-analyzer.md](phases/phase-1a-idea-analyzer.md) | ✅ Done |
-| 1B — Research & evidence engine | [phase-1b-research-evidence.md](phases/phase-1b-research-evidence.md) | ⬜ Next |
+| 1B — Research import & verification | [phase-1b-research-evidence.md](phases/phase-1b-research-evidence.md) | ⬜ Next |
 | 1C — Competitors & alternatives | [phase-1c-competitors.md](phases/phase-1c-competitors.md) | ⬜ |
 | 1D — Prospects, enrichment & scoring | [phase-1d-prospects-scoring.md](phases/phase-1d-prospects-scoring.md) | ⬜ |
 | 1E — Phase 1 UI | [phase-1e-phase1-ui.md](phases/phase-1e-phase1-ui.md) | ⬜ |
@@ -27,7 +27,7 @@ PRD's MVP Phases 2, 3 and 4.
 ```
 1A idea → hypothesis, unknowns, ICPs
  ↓
-1B research → evidence (with provenance)
+1B Claude Code researches (/research-idea) → Preuve verifies quotes → evidence
  ↓
 1C competitors / alternatives          1D companies → contacts → lead scores
  ↓                                      ↓

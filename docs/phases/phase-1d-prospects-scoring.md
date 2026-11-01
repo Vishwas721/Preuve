@@ -7,8 +7,10 @@
 
 ## Scope
 
-- **Company discovery:** searches built from the primary ICP (industry, geography, size signals),
-  public directories, and companies already present in Phase 1B evidence.
+- **Company discovery (ADR 0004):** the `/research-idea` skill gains a prospecting step driven by
+  the primary ICP (industry, geography, size signals), public directories and companies already
+  in the evidence. The research pack gains a `companies[]` section. Preuve verifies each company
+  site (it fetches the page and checks the cited facts) before storing it.
 - **Enrichment** from each company's public website: industry, location, services, size
   estimate (with the signal used, e.g. "careers page lists 40 openings"), technology hints,
   relevant public evidence.
