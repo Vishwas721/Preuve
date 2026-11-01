@@ -54,7 +54,7 @@ function FindingBlock({ finding, refs }: { finding: Finding; refs: Record<string
                 <a
                   key={id}
                   href={`#ev-${id}`}
-                  className="text-xs underline underline-offset-2 opacity-60 hover:opacity-100"
+                  className="mr-1 text-xs underline underline-offset-2 opacity-60 hover:opacity-100"
                 >
                   [{refs[id] ?? "evidence"}]
                 </a>
