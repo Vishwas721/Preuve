@@ -41,6 +41,12 @@ Architecture: `docs/ARCHITECTURE.md`. Build order: `docs/ROADMAP.md`, with one d
 - Next.js App Router, TypeScript strict, Tailwind. pnpm.
 - All API calls go through `src/lib/api.ts`.
 
+## Researching ideas
+- Use the project skill `/research-idea` (`.claude/skills/research-idea/SKILL.md`). Follow its
+  method exactly and copy quotes only from `uv run python -m app.scripts.research fetch <url>`.
+  Packs and reports go in `research/<slug>/`.
+- Changing the pack schema means re-exporting it: `uv run python -m app.scripts.export_pack_schema`.
+
 ## Common commands
 ```bash
 docker compose -f infra/docker-compose.yml up -d     # postgres, redis, searxng

@@ -57,6 +57,13 @@ pnpm dev                                      # http://localhost:3000
 > `.env`. Use `127.0.0.1` rather than `localhost` for service URLs on Windows (Docker IPv6
 > forwarding can time out).
 
+## Researching an idea
+
+In Claude Code, run `/research-idea` and paste the idea, or pass an existing idea id. Claude
+researches it with a fixed method and writes `research/<slug>/pack-<date>.json` plus a report.
+Preuve imports the pack and verifies every quote against the live page before storing it
+(ADR 0004). The API and worker must be running.
+
 ## Checks
 
 ```bash
