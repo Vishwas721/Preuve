@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 
 import { AssumptionBadge } from "@/components/AssumptionBadge";
-import { btnLink, btnPrimary, card, input, sectionTitle } from "@/components/ui";
+import { btnLink, btnPrimary, card, input, sectionTitle, select } from "@/components/ui";
 import { api, type Priority, type Unknown, type UnknownCategory } from "@/lib/api";
 
 const CATEGORIES: Record<UnknownCategory, string> = {
@@ -163,7 +163,7 @@ export function UnknownsPanel({
         <div className="flex flex-wrap gap-2">
           <select
             aria-label="Category"
-            className={`${input} w-auto`}
+            className={select}
             value={category}
             onChange={(e) => setCategory(e.target.value as UnknownCategory)}
           >
@@ -175,7 +175,7 @@ export function UnknownsPanel({
           </select>
           <select
             aria-label="Priority"
-            className={`${input} w-auto`}
+            className={select}
             value={priority}
             onChange={(e) => setPriority(e.target.value as Priority)}
           >

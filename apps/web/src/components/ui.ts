@@ -7,6 +7,9 @@ export const sectionTitle = "text-sm font-semibold uppercase tracking-wide opaci
 export const input =
   "w-full rounded-md border border-black/15 bg-transparent px-3 py-2 text-sm outline-none focus:border-black/40 dark:border-white/20 dark:focus:border-white/50";
 
+export const select =
+  "rounded-md border border-black/15 bg-transparent px-3 py-2 text-sm outline-none focus:border-black/40 dark:border-white/20 dark:focus:border-white/50";
+
 export const btnPrimary =
   "rounded-md bg-foreground px-3 py-1.5 text-sm font-medium text-background disabled:opacity-50";
 
