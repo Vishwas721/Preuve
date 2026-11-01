@@ -1,6 +1,6 @@
 # Phase 1B — Research import & evidence verification
 
-- **Status:** Not started (rewritten 2026-11-01 for [ADR 0004](../adr/0004-claude-code-research-analyst.md))
+- **Status:** In progress (kickoff 2026-11-01; rewritten for [ADR 0004](../adr/0004-claude-code-research-analyst.md))
 - **Goal:** Get high-quality public evidence for or against an idea by having Claude Code do the
   research. Preuve imports the result, **independently verifies every quote against the live
   page**, and stores the evidence with full provenance and an honest label.
@@ -180,8 +180,33 @@ suggestions; not in this phase.
 - **Other free sources:** none needed. The skill decides where to look; verification only needs
   public URLs.
 
-## Open questions (settle at kickoff)
+## Kickoff plan (concrete design)
 
-- The quote-matching tolerance: exact after normalization, or allow small gaps (e.g. "…" joining
-  two fragments)? Proposal: exact after normalization; an ellipsis splits a quote into fragments
-  that must all be found in order.
+- **Quote matching (decided):** an exact match after normalization. Normalization covers Unicode
+  NFKC, lowercasing, curly quotes to straight, every dash to `-`, removing zero-width
+  characters, and collapsing whitespace. `…`, `...` and `[...]` split a quote into fragments
+  that must all be found **in order**. Each fragment must be at least 8 characters, and the
+  whole quote at least 20. The main extracted text is tried first, then the full page text.
+- **Module:** `app/modules/research/`:
+  - `pack.py` (the contract), `matching.py`, `models.py`, `schemas.py`, `service.py`,
+    `router.py`;
+  - the job `verify_research_import` lives in `app/workers/jobs.py`;
+  - the analysis module exposes `add_hypothesis_version` / `add_unknown` for research to call.
+- **One CLI for the skill**, `app/scripts/research.py`:
+  - `context <idea_id>`: the idea, current hypothesis, unknowns with ids, and primary ICP, as
+    JSON;
+  - `create`: create an idea, optionally analyzing it;
+  - `fetch <url>`: prints the **exact text Preuve will verify against**, so quotes are copied
+    from it rather than from a summarizing tool;
+  - `validate <pack>`: local schema check;
+  - `import <pack>`: POST it, wait, print the verification report.
+- **Read model:** `GET /ideas/{id}/research` returns evidence, the latest finding per unknown,
+  and the import history in one call. `/analysis` is unchanged, which keeps the modules
+  decoupled.
+- **Unknown status is not changed automatically.** A finding is shown next to the unknown, and
+  the user decides whether it's answered.
+- **Honest downgrade:** if every claim in a finding is dropped during verification, its status
+  becomes `no_evidence_found`, and the report says why.
+- **Evidence edits:** dismissing or relabelling sets `user_edited` and keeps the original labels.
+- `analysis.Source` gains `research`. The enum isn't native, so no migration is needed for the
+  new value.
