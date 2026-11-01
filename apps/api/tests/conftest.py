@@ -1,5 +1,6 @@
 import os
 from collections.abc import AsyncIterator
+from typing import Any
 
 import asyncpg
 import pytest
@@ -10,6 +11,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from app.db.models import Base
 from app.db.session import get_session
 from app.main import create_app
+from app.workers.queue import get_job_queue
 
 TEST_DATABASE_URL = os.environ.get(
     "TEST_DATABASE_URL", "postgresql+asyncpg://preuve:preuve@127.0.0.1:5435/preuve_test"
@@ -46,9 +48,38 @@ async def session_maker() -> AsyncIterator[async_sessionmaker[AsyncSession]]:
     await engine.dispose()
 
 
+class FakeQueue:
+    """Records enqueued jobs instead of talking to Redis. Set `fail` to simulate Redis down."""
+
+    def __init__(self) -> None:
+        self.jobs: list[tuple[str, tuple[Any, ...]]] = []
+        self.fail = False
+
+    async def enqueue_job(self, function: str, *args: Any, **kwargs: Any) -> None:
+        if self.fail:
+            raise ConnectionError("redis down")
+        self.jobs.append((function, args))
+
+
 @pytest.fixture
-async def client(session_maker: async_sessionmaker[AsyncSession]) -> AsyncIterator[AsyncClient]:
+def queue() -> FakeQueue:
+    return FakeQueue()
+
+
+@pytest.fixture
+async def session(
+    session_maker: async_sessionmaker[AsyncSession],
+) -> AsyncIterator[AsyncSession]:
+    async with session_maker() as s:
+        yield s
+
+
+@pytest.fixture
+async def client(
+    session_maker: async_sessionmaker[AsyncSession], queue: FakeQueue
+) -> AsyncIterator[AsyncClient]:
     app = create_app()
+    app.dependency_overrides[get_job_queue] = lambda: queue
 
     async def _session() -> AsyncIterator[AsyncSession]:
         async with session_maker() as session:
