@@ -8,6 +8,7 @@ from app.core.config import get_settings
 from app.modules.analysis.router import router as analysis_router
 from app.modules.ideas.router import router as ideas_router
 from app.modules.meta.router import router as meta_router
+from app.modules.research.router import router as research_router
 
 
 @asynccontextmanager
@@ -33,6 +34,7 @@ def create_app() -> FastAPI:
     app.include_router(meta_router)
     app.include_router(ideas_router)
     app.include_router(analysis_router)
+    app.include_router(research_router)
     return app
 
 
