@@ -7,6 +7,7 @@ import logging
 import uuid
 from typing import Any
 
+import app.db.models  # noqa: F401  (register every ORM mapper in the worker process)
 from app.db.session import SessionLocal
 from app.llm.router import get_llm_router
 from app.modules.analysis import service as analysis
