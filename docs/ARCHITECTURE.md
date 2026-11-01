@@ -70,11 +70,24 @@ Enforced in code, not just prompts (PRD §12, §35):
 - Evidence records always carry provenance: source URL, fetched-at time, extracted quote.
 - When nothing is found the system stores/returns "No evidence found" — never a generic statement.
 
+## Research (ADR 0004)
+
+- **Claude Code is the research analyst.** The `/research-idea` project skill runs a fixed,
+  versioned method and writes a **research pack**: JSON matching a schema owned by the API, plus
+  a readable report.
+- **Preuve verifies.** It imports the pack, fetches every cited URL itself, checks the verbatim
+  quote is on the page, and stores evidence as `verified` or `unverifiable`. Items whose quote
+  isn't on the page are rejected.
+- Local and Gemini models keep the high-volume, single-input tasks: classification, extraction,
+  drafting, reply analysis.
+
 ## Search (`app/search/`)
 
-- `SearchProvider` interface; `SearXNGProvider` queries the local SearXNG JSON API (free, no key).
-- `fetch_page()` downloads a URL with a timeout and identifying user agent, respects `robots.txt`,
-  and extracts readable text. Results keep URL + fetch timestamp for provenance.
+- `PageFetcher` downloads a URL with a timeout and an identifying user agent, respects
+  `robots.txt`, and extracts readable text, keeping the URL and fetch time for provenance. It
+  is the basis of research verification.
+- `SearchProvider` / `SearXNGProvider` (free, keyless) is kept for an optional automated research
+  source later; Phase 1B doesn't use it.
 
 ## Data
 

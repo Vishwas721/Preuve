@@ -1,6 +1,6 @@
 # ADR 0003 — Self-hosted SearXNG for web search
 
-- **Status:** accepted
+- **Status:** accepted; scope narrowed by [ADR 0004](0004-claude-code-research-analyst.md) (research is done in Claude Code; SearXNG is kept for an optional automated source, and page fetching is used to verify research)
 - **Date:** 2026-10-06
 
 ## Context
