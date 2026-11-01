@@ -25,7 +25,7 @@ Evidence-driven customer validation for startup ideas.
 - Docker Desktop
 - Python 3.11 + [uv](https://docs.astral.sh/uv/)
 - Node 22 + pnpm
-- [Ollama](https://ollama.com) with a model pulled: `ollama pull llama3:8b`
+- [Ollama](https://ollama.com) with a model pulled: `ollama pull qwen2.5:7b`
 - Optional: a Gemini API key from Google AI Studio
 
 ## Setup

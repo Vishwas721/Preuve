@@ -28,8 +28,8 @@ class Settings(BaseSettings):
     )
 
     ollama_url: str = "http://127.0.0.1:11434"
-    ollama_model: str = "llama3:8b"
-    ollama_num_ctx: int = 8192  # llama3:8b's max context; raise for llama3.1 / qwen2.5
+    ollama_model: str = "qwen2.5:7b"
+    ollama_num_ctx: int = 8192  # qwen2.5 supports 32K; raise if RAM/VRAM allows
     ollama_timeout_s: float = 180.0
     gemini_api_key: str = ""
     # Fallback chain, tried in order; comma-separated in env.
