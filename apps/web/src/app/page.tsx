@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { api, API_URL, type Health, type Idea, type ValidationState } from "@/lib/api";
@@ -68,7 +69,13 @@ function IdeasPanel() {
       {ideas.status === "loading" && <p className="text-sm opacity-70">Loading…</p>}
       {ideas.status === "error" && <p className="text-sm text-red-600">{ideas.message}</p>}
       {ideas.status === "ok" && ideas.data.length === 0 && (
-        <p className="text-sm opacity-70">No ideas yet. Idea intake arrives in Phase 1A.</p>
+        <p className="text-sm opacity-70">
+          No ideas yet.{" "}
+          <Link href="/ideas/new" className="underline">
+            Add your first one
+          </Link>
+          .
+        </p>
       )}
       {ideas.status === "ok" && ideas.data.length > 0 && (
         <table className="w-full text-left text-sm">
@@ -82,7 +89,11 @@ function IdeasPanel() {
           <tbody>
             {ideas.data.map((idea) => (
               <tr key={idea.id} className="border-t border-black/5 dark:border-white/10">
-                <td className="py-2">{idea.title}</td>
+                <td className="py-2">
+                  <Link href={`/ideas/${idea.id}`} className="font-medium hover:underline">
+                    {idea.title}
+                  </Link>
+                </td>
                 <td className="py-2">{idea.target_market}</td>
                 <td className="py-2">{STATE_LABELS[idea.state]}</td>
               </tr>
@@ -97,9 +108,17 @@ function IdeasPanel() {
 export default function Dashboard() {
   return (
     <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 py-10">
-      <header>
-        <h1 className="text-2xl font-semibold">Preuve</h1>
-        <p className="text-sm opacity-70">Evidence before you build.</p>
+      <header className="flex items-end justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-semibold">Preuve</h1>
+          <p className="text-sm opacity-70">Evidence before you build.</p>
+        </div>
+        <Link
+          href="/ideas/new"
+          className="rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background"
+        >
+          New idea
+        </Link>
       </header>
       <HealthPanel />
       <IdeasPanel />
