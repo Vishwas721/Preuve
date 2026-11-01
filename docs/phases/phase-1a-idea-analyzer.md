@@ -1,6 +1,6 @@
 # Phase 1A — Idea intake & analyzer
 
-- **Status:** Not started (draft)
+- **Status:** In progress (kickoff 2026-11-01)
 - **Goal:** Turn a raw idea into a structured, editable problem hypothesis, a list of unknowns
   (the research plan) and candidate ICPs. All of it is clearly labelled as AI assumptions.
 - **PRD refs:** §8 Idea submission, §9 Idea analyzer, §10 ICP generator, §12 (fact / inference /
@@ -30,6 +30,28 @@
   Hypothesis edits and re-generations create a **new version** (append-only); the latest is
   current. Unknowns and ICPs aren't versioned: removing one sets its status instead of deleting it.
 - **Async:** analysis runs as an arq job. The request returns a run id and the UI polls status.
+
+## Kickoff plan (concrete design)
+
+- **Module:** `app/modules/analysis/` (models, schemas, prompts, rubric, service, router). The job
+  lives in `app/workers/jobs.py` and calls the service.
+- **Runs:** `analysis_runs.kind` is `full` (hypothesis + unknowns + ICPs) or `icps` (ICPs only,
+  regenerated from the current hypothesis). Status is `queued → running → succeeded | failed`,
+  and `step` (`hypothesis` / `icps`) shows progress. Only one active run per idea; starting
+  another returns 409.
+- **Re-generation never destroys user work:**
+  - a new hypothesis version is appended;
+  - open AI-sourced unknowns become `dropped`, and active AI-sourced ICPs become `dismissed`;
+  - anything the user created or edited (`source = user`) is kept.
+- **Editing** an AI item switches its `source` to `user`. Removing an item sets its status
+  (unknown → `dropped`, ICP → `dismissed`); nothing is hard-deleted.
+- **Labels:** all 1A items are assumptions. The UI shows "Assumption · AI" or
+  "Assumption · edited by you".
+- **Prompts:** they state that the model has no market data and must not output statistics,
+  company names or market facts. They only structure the founder's input and propose testable
+  assumptions and neutral questions.
+- **Queue:** the API opens an arq pool in its lifespan; a `get_queue` dependency is overridden in
+  tests. A failed enqueue marks the run failed and returns 503.
 
 ## Out of scope
 
