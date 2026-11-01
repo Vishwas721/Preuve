@@ -25,12 +25,12 @@ skeleton, CI, docs.
 - CI green (ruff, pytest, web lint + build).
 
 **Notes carried into later phases**
-- `llama3:8b` gets structured fields right but can mislabel sentiment (it called a
-  problem-confirming reply "negative"). Prompts for local tasks must define labels precisely;
-  consider `llama3.1:8b` / `qwen2.5:7b` via `OLLAMA_MODEL`.
+- Local model is `qwen2.5:7b` (won the benchmark, see ADR 0002). Its misses came from
+  under-specified prompts, so extraction prompts must define every label/field precisely.
 - Reddit disallows crawlers in `robots.txt`, so the fetcher skips it. Forum evidence from Reddit
   would need its official API (Phase 1B decision).
-- Gemini default model `gemini-3.8-flash` (free tier); verify rate limits once a key is in use.
+- Gemini runs a fallback chain `3.8-flash → 3.6-flash → 2.5-flash`. On 2026-11-01, 3.8-flash
+  was timing out (504) while 3.6/2.5 answered in 1–2s; reorder `GEMINI_MODELS` if that persists.
 
 ---
 

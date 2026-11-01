@@ -13,8 +13,11 @@ synthesis and is prone to unsupported claims — the opposite of what an evidenc
 - A task router assigns each `TaskType` a default provider (light tasks → local, synthesis → Gemini).
 - All structured output is validated against Pydantic schemas; invalid output is retried, then
   escalated local → Gemini.
-- Model names are configuration, so the local model can be upgraded (e.g. `llama3.1:8b`,
-  `qwen2.5:7b`) without code changes.
+- Model names are configuration, so the local model can be swapped without code changes.
+- Update 2026-11-01: benchmarked with `app/scripts/llm_bench.py` (11 Preuve-style tasks x 2):
+  `llama3:8b` 14/22, `llama3.1:8b` 16/22, `qwen2.5:7b` 18/22 (only misses: an under-specified
+  extraction prompt). Default is now `qwen2.5:7b`. Gemini uses a 3-model fallback chain
+  (`3.8-flash -> 3.6-flash -> 2.5-flash`) with per-model cooldown.
 
 ## Consequences
 - Free to run; most high-volume calls stay local.

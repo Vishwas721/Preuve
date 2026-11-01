@@ -31,7 +31,7 @@
 | PostgreSQL 16 | Docker (`infra/docker-compose.yml`) | 5435 (host) |
 | Redis 7 | Docker | 6381 (host) |
 | SearXNG | Docker | 8888 |
-| Ollama (`llama3:8b`) | Host | 11434 |
+| Ollama (`qwen2.5:7b`) | Host | 11434 |
 | API (uvicorn) | Host, `apps/api` | 8000 |
 | Worker (arq) | Host, `apps/api` | — |
 | Web (Next.js) | Host, `apps/web` | 3000 |
@@ -40,7 +40,7 @@
 
 No paid APIs. Two real providers behind one interface:
 
-- **OllamaProvider** — local model (default `llama3:8b`, set by `OLLAMA_MODEL`). Uses Ollama's
+- **OllamaProvider** — local model (default `qwen2.5:7b`, set by `OLLAMA_MODEL`). Uses Ollama's
   `/api/chat` with `format=<JSON schema>` for structured output. Good for single-document,
   short-context tasks.
 - **GeminiProvider** — Gemini free tier via `google-genai`, with a **model fallback chain**
