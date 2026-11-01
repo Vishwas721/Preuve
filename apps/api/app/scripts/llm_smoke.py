@@ -4,6 +4,7 @@ Run: uv run python -m app.scripts.llm_smoke
 """
 
 import asyncio
+import logging
 import time
 
 from pydantic import BaseModel
@@ -26,6 +27,8 @@ class ReplySignal(BaseModel):
 
 
 async def main() -> None:
+    logging.basicConfig(level=logging.WARNING, format="  %(name)s: %(message)s")
+    logging.getLogger("app.llm.gemini").setLevel(logging.INFO)  # show which model answered
     providers = get_llm_router().providers
     for name in (ProviderName.LOCAL, ProviderName.GEMINI):
         provider = providers[name]

@@ -133,7 +133,12 @@ def get_llm_router() -> LLMRouter:
         ProviderName.LOCAL: OllamaProvider(
             s.ollama_url, s.ollama_model, num_ctx=s.ollama_num_ctx, timeout_s=s.ollama_timeout_s
         ),
-        ProviderName.GEMINI: GeminiProvider(s.gemini_api_key, s.gemini_model),
+        ProviderName.GEMINI: GeminiProvider(
+            s.gemini_api_key,
+            s.gemini_models,
+            timeout_s=s.gemini_timeout_s,
+            cooldown_s=s.gemini_cooldown_s,
+        ),
     }
     routes = {TaskType(k): ProviderName(v) for k, v in s.llm_route_overrides.items()}
     return LLMRouter(providers, routes, allow_downgrade=s.llm_allow_downgrade)

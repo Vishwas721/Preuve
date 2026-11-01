@@ -32,7 +32,12 @@ class Settings(BaseSettings):
     ollama_num_ctx: int = 8192  # llama3:8b's max context; raise for llama3.1 / qwen2.5
     ollama_timeout_s: float = 180.0
     gemini_api_key: str = ""
-    gemini_model: str = "gemini-3.8-flash"
+    # Fallback chain, tried in order; comma-separated in env.
+    gemini_models: Annotated[list[str], NoDecode] = Field(
+        default_factory=lambda: ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-2.5-flash"]
+    )
+    gemini_timeout_s: float = 45.0
+    gemini_cooldown_s: float = 300.0  # skip a model this long after a 429 / 5xx / timeout
 
     # Per-task provider overrides, JSON in env: LLM_ROUTE_OVERRIDES={"analyze_idea": "local"}
     llm_route_overrides: dict[str, str] = Field(default_factory=dict)
@@ -43,9 +48,9 @@ class Settings(BaseSettings):
     dev_user_email: str = "founder@preuve.local"
     dev_user_name: str = "Founder"
 
-    @field_validator("cors_origins", mode="before")
+    @field_validator("cors_origins", "gemini_models", mode="before")
     @classmethod
-    def _split_origins(cls, v: object) -> object:
+    def _split_csv(cls, v: object) -> object:
         if isinstance(v, str):
             return [o.strip() for o in v.split(",") if o.strip()]
         return v

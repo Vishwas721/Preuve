@@ -43,7 +43,10 @@ No paid APIs. Two real providers behind one interface:
 - **OllamaProvider** — local model (default `llama3:8b`, set by `OLLAMA_MODEL`). Uses Ollama's
   `/api/chat` with `format=<JSON schema>` for structured output. Good for single-document,
   short-context tasks.
-- **GeminiProvider** — Gemini free tier via `google-genai` (`GEMINI_MODEL`). Used for multi-source
+- **GeminiProvider** — Gemini free tier via `google-genai`, with a **model fallback chain**
+  (`GEMINI_MODELS`, default `gemini-3.8-flash → gemini-3.6-flash → gemini-2.5-flash`). A model that
+  returns 429 / 5xx / times out (`GEMINI_TIMEOUT_S`) is skipped for `GEMINI_COOLDOWN_S`; invalid
+  output moves to the next model without a cooldown. SDK retries are disabled. Used for multi-source
   synthesis and long-context reasoning. Free-tier data may be used by Google to improve models —
   don't send private data (e.g. prospect email bodies) there without the user opting in.
 - **FakeProvider** — deterministic, for tests/CI.
