@@ -28,8 +28,8 @@
 
 | Component | Where | Port |
 |---|---|---|
-| PostgreSQL 16 | Docker (`infra/docker-compose.yml`) | 5433 (host) |
-| Redis 7 | Docker | 6379 |
+| PostgreSQL 16 | Docker (`infra/docker-compose.yml`) | 5435 (host) |
+| Redis 7 | Docker | 6381 (host) |
 | SearXNG | Docker | 8888 |
 | Ollama (`llama3:8b`) | Host | 11434 |
 | API (uvicorn) | Host, `apps/api` | 8000 |

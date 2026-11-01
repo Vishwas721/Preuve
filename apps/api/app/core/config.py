@@ -19,8 +19,8 @@ class Settings(BaseSettings):
     app_name: str = "Preuve API"
     environment: str = "development"
 
-    database_url: str = "postgresql+asyncpg://preuve:preuve@127.0.0.1:5433/preuve"
-    redis_url: str = "redis://127.0.0.1:6379/0"
+    database_url: str = "postgresql+asyncpg://preuve:preuve@127.0.0.1:5435/preuve"
+    redis_url: str = "redis://127.0.0.1:6381/0"
     searxng_url: str = "http://127.0.0.1:8888"
     # Comma-separated in env: CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
     cors_origins: Annotated[list[str], NoDecode] = Field(

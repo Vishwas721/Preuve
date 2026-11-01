@@ -35,7 +35,7 @@ Evidence-driven customer validation for startup ideas.
 cp .env.example .env                          # set SEARXNG_SECRET, GEMINI_API_KEY
 cp apps/web/.env.example apps/web/.env.local
 
-# 2. Infra: Postgres (host port 5433), Redis (6379), SearXNG (8888)
+# 2. Infra: Postgres (host port 5435), Redis (6381), SearXNG (8888)
 docker compose --env-file .env -f infra/docker-compose.yml up -d
 
 # 3. API

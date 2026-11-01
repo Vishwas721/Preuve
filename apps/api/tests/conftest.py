@@ -12,7 +12,7 @@ from app.db.session import get_session
 from app.main import create_app
 
 TEST_DATABASE_URL = os.environ.get(
-    "TEST_DATABASE_URL", "postgresql+asyncpg://preuve:preuve@127.0.0.1:5433/preuve_test"
+    "TEST_DATABASE_URL", "postgresql+asyncpg://preuve:preuve@127.0.0.1:5435/preuve_test"
 )
 
 
