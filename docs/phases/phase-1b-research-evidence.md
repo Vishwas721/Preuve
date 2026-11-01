@@ -1,6 +1,6 @@
 # Phase 1B — Research import & evidence verification
 
-- **Status:** In progress (kickoff 2026-11-01; rewritten for [ADR 0004](../adr/0004-claude-code-research-analyst.md))
+- **Status:** Done (2026-11-01; see [ADR 0004](../adr/0004-claude-code-research-analyst.md))
 - **Goal:** Get high-quality public evidence for or against an idea by having Claude Code do the
   research. Preuve imports the result, **independently verifies every quote against the live
   page**, and stores the evidence with full provenance and an honest label.
@@ -122,19 +122,19 @@ Idea page: evidence list with quotes, sources and labels; unknowns show their fi
   `competitors[]` and `companies[]` sections, and add steps to the skill.
 - Full research explorer polish (1E).
 
-## Data model (draft)
+## Data model
 
 | Table | Key columns |
 |---|---|
 | `research_imports` | idea_id, schema_version, method_version, researcher, pack (json), status (`queued` / `verifying` / `done` / `failed`), report (json: counts, rejected items, dropped claims), error |
-| `sources` | idea_id, url, final_url, title, fetched_at, fetch_status, content_hash, text |
-| `evidence` | idea_id, import_id, source_id, ref, quote, statement, source_type, kind, stance, relevance, company_name?, published_at?, verification (`verified` / `unverifiable`), verification_note, dismissed |
+| `sources` | idea_id, url (unique per idea), final_url, title, fetched_at, fetch_status, fetch_note, content_hash, text, full_text |
+| `evidence` | idea_id, import_id, source_id, ref, quote, statement, source_type, kind, stance, relevance, company_name?, published_at?, verification (`verified` / `unverifiable`), verification_note, dismissed, user_edited, original_labels, quote_key (dedup) |
 | `evidence_unknowns` | evidence_id, unknown_id |
 | `unknown_findings` | unknown_id, import_id, status, summary (json claims with evidence ids) |
 
 `Source` gains a value, `research` (hypotheses, unknowns).
 
-## API (draft)
+## API (as built)
 
 All routes are under `/ideas/{idea_id}`:
 
@@ -142,7 +142,8 @@ All routes are under `/ideas/{idea_id}`:
   `GET /research-imports/{id}`.
 - `GET /evidence` (filters: stance, kind, verification, unknown) and `PATCH /evidence/{id}`
   (dismiss, or relabel kind or stance; changes are recorded).
-- `GET /analysis` also returns the latest findings per unknown.
+- `GET /research`: evidence, the latest finding per unknown, and the import history, in one call.
+  `/analysis` is unchanged.
 
 ## Jobs
 
@@ -157,19 +158,42 @@ suggestions; not in this phase.
 
 ## Acceptance criteria
 
-- [ ] The pack schema is exported to `docs/research-pack.schema.json`; a test keeps it in sync.
-- [ ] An invalid pack is rejected with a precise error list (bad refs, unknown ids, missing
-      quote, etc.).
-- [ ] An evidence item whose quote isn't on its page is rejected and reported (tested with
-      mocked HTTP).
-- [ ] An item whose page blocks fetching is stored as `unverifiable` and shown separately.
-- [ ] Claims citing rejected or unknown refs are dropped and reported (`verify_citations`).
-- [ ] A hypothesis update from research becomes a new version with source `research`; nothing
-      the user wrote is overwritten.
-- [ ] **Live:** `/research-idea` on a real idea produces a pack. Importing it gives mostly
-      verified evidence, shown on the idea page with working source links. Unknowns show
-      findings, including "No evidence found" where honest.
-- [ ] Tests cover the schema, verification and matching rules, import service, job and API.
+- [x] The pack schema is exported to `docs/research-pack.schema.json`; `test_schema_export_is_in_sync`
+      keeps it in sync.
+- [x] An invalid pack is rejected with a precise error list. Pydantic 422s carry field locations,
+      and idea-level checks (idea id, unknown ids) return 422 messages. Covered by tests.
+- [x] An evidence item whose quote isn't on its page is rejected and reported. Tested with fakes,
+      and live: a scratch pack with one paraphrased and one fabricated quote had **both
+      rejected**, its claim dropped and its finding downgraded.
+- [x] An item whose page blocks fetching is stored as `unverifiable` and shown in a separate,
+      collapsed group. Tested.
+- [x] Claims citing rejected or unknown refs are dropped and reported. Refs that don't exist
+      fail pack validation; claims citing rejected items are dropped during verification.
+- [x] A hypothesis update from research becomes a new version with source `research`. Live:
+      hypothesis v2 shows the "From research" badge.
+- [x] **Live:** `/research-idea` on "Construction progress automation" produced
+      `research/construction-progress-reports/pack-2026-11-01.json` (22 items, 10 queries).
+      **22/22 quotes were verified.** The browser check showed 22 verified badges (10 supporting,
+      6 against, 6 context), 5 findings including an honest "No evidence found", working
+      citation links and source links, and zero console errors.
+- [x] Tests cover the schema, matching rules, verification service, job crash safety and API:
+      102 tests in total, CI green.
+
+## Notes carried forward
+
+- **Crawler blocking is the main limit on verification.** letsbuild, Sitemate, Capterra,
+  TrustRadius, Software Advice, OpenSpace and Autodesk block Preuve's honest user agent via
+  robots.txt or HTTP 403. The skill prefers fetchable sources, so **reviews of existing tools are
+  under-represented**. We won't disguise the bot. A possible future path is a manual
+  "verified by founder" flow, or importing reviews the user pastes. Decide when it matters.
+- **"Latest finding wins"** is the right rule for re-research, but a test or bad import can
+  shadow a good finding. Deleting the import removes its findings (cascade). A UI to delete an
+  import isn't built yet; consider adding one in 1E.
+- **The first live research run changed the picture:** the incumbent (Procore) already markets
+  AI daily-log and progress-summary agents. Exactly the kind of "don't build yet" signal Preuve
+  exists to surface.
+- `pnpm lint` can hang on this machine. Run `npx eslint .`, `npx next typegen && npx tsc
+  --noEmit` and `npx next build` directly, with stdin closed.
 
 ## Decisions (2026-11-01)
 
