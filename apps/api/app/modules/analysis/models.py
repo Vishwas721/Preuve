@@ -29,6 +29,7 @@ def _enum(cls: type[enum.Enum]) -> Enum:
 class Source(enum.StrEnum):
     AI = "ai"
     USER = "user"
+    RESEARCH = "research"  # from an imported research pack (Phase 1B)
 
 
 class UnknownCategory(enum.StrEnum):

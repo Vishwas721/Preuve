@@ -3,6 +3,26 @@
 from app.db.base import Base
 from app.modules.analysis.models import ICP, AnalysisRun, Hypothesis, Unknown
 from app.modules.ideas.models import Idea
+from app.modules.research.models import (
+    Evidence,
+    EvidenceUnknown,
+    ResearchImport,
+    UnknownFinding,
+    WebSource,
+)
 from app.modules.users.models import User
 
-__all__ = ["ICP", "AnalysisRun", "Base", "Hypothesis", "Idea", "Unknown", "User"]
+__all__ = [
+    "ICP",
+    "AnalysisRun",
+    "Base",
+    "Evidence",
+    "EvidenceUnknown",
+    "Hypothesis",
+    "Idea",
+    "ResearchImport",
+    "Unknown",
+    "UnknownFinding",
+    "User",
+    "WebSource",
+]
