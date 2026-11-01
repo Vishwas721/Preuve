@@ -142,9 +142,11 @@ async def execute_run(session: AsyncSession, llm: LLMRouter, run_id: uuid.UUID) 
         await session.commit()
         await _generate_icps(session, llm, idea)
     except Exception as exc:
-        logger.exception("analysis run %s failed at step %s", run.id, run.step)
+        step = run.step  # read before rollback expires the instance
+        logger.exception("analysis run %s failed at step %s", run_id, step)
         await session.rollback()
-        await fail_run(session, run, f"Failed at step '{run.step}': {exc}")
+        await session.refresh(run)
+        await fail_run(session, run, f"Failed at step '{step}': {exc}")
         return run.status
 
     run.status = RunStatus.SUCCEEDED
