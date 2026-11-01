@@ -117,6 +117,13 @@ async def fail_run(session: AsyncSession, run: AnalysisRun, error: str) -> None:
     await session.commit()
 
 
+async def fail_if_active(session: AsyncSession, run_id: uuid.UUID, error: str) -> None:
+    """Safety net for crashes outside `execute_run`'s own error handling."""
+    run = await session.get(AnalysisRun, run_id)
+    if run is not None and run.status in (RunStatus.QUEUED, RunStatus.RUNNING):
+        await fail_run(session, run, error)
+
+
 async def execute_run(session: AsyncSession, llm: LLMRouter, run_id: uuid.UUID) -> RunStatus:
     """Run the analysis steps for `run_id`. Each finished step is committed, so a later
     failure (e.g. ICPs) keeps earlier work (the hypothesis) and can be retried on its own."""

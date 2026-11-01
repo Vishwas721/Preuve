@@ -23,6 +23,14 @@ async def ping(ctx: dict[str, Any], message: str = "pong") -> str:
 
 async def run_analysis(ctx: dict[str, Any], run_id: str) -> str:
     """Phase 1A: hypothesis + unknowns + ICPs for one analysis run."""
-    async with SessionLocal() as session:
-        status = await analysis.execute_run(session, get_llm_router(), uuid.UUID(run_id))
+    rid = uuid.UUID(run_id)
+    try:
+        async with SessionLocal() as session:
+            status = await analysis.execute_run(session, get_llm_router(), rid)
+    except Exception as exc:
+        # Never leave a run stuck in queued/running: that would block the idea until it goes stale.
+        logger.exception("analysis job crashed for run %s", run_id)
+        async with SessionLocal() as session:
+            await analysis.fail_if_active(session, rid, f"Worker error: {exc}")
+        raise
     return status.value
