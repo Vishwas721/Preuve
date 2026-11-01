@@ -49,6 +49,8 @@ async def test_fetch_extracts_text_with_provenance() -> None:
     assert "weekly progress reports" in page.text
     assert page.final_url == "https://example.com/post"
     assert page.fetched_at.tzinfo is not None
+    assert "Weekly reports are painful" in page.full_text
+    assert len(page.content_hash) == 64
 
 
 async def test_fetch_respects_robots() -> None:

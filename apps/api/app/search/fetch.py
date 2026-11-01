@@ -1,10 +1,13 @@
 import asyncio
+import hashlib
 from datetime import UTC, datetime
 from urllib.parse import urlsplit
 from urllib.robotparser import RobotFileParser
 
 import httpx
+import lxml.html
 import trafilatura
+from lxml import etree
 from pydantic import BaseModel
 
 USER_AGENT = "PreuveResearchBot/0.1 (+https://github.com/Vishwas721/Preuve)"
@@ -23,7 +26,9 @@ class FetchedPage(BaseModel):
     status_code: int
     fetched_at: datetime
     title: str | None
-    text: str
+    text: str  # main content (trafilatura)
+    full_text: str  # every visible text node; fallback for quote verification
+    content_hash: str  # sha256 of full_text
 
 
 class PageFetcher:
@@ -79,9 +84,12 @@ class PageFetcher:
         content_type = resp.headers.get("content-type", "")
         if "html" not in content_type and "text" not in content_type:
             raise FetchError(f"Unsupported content type '{content_type}' for {url}")
-        html = resp.text[:MAX_BYTES]
+        body = resp.text[:MAX_BYTES]
 
-        text, title = await asyncio.to_thread(_extract, html)
+        if "html" in content_type:
+            text, title, full_text = await asyncio.to_thread(_extract, body)
+        else:  # plain text: nothing to extract
+            text, title, full_text = body, None, body
         return FetchedPage(
             url=url,
             final_url=str(resp.url),
@@ -89,10 +97,21 @@ class PageFetcher:
             fetched_at=datetime.now(UTC),
             title=title,
             text=text,
+            full_text=full_text,
+            content_hash=hashlib.sha256(full_text.encode()).hexdigest(),
         )
 
 
-def _extract(html: str) -> tuple[str, str | None]:
+def _extract(html: str) -> tuple[str, str | None, str]:
     text = trafilatura.extract(html, include_comments=False, include_tables=True) or ""
     meta = trafilatura.extract_metadata(html)
-    return text, (meta.title if meta else None)
+    return text, (meta.title if meta else None), _visible_text(html)
+
+
+def _visible_text(html: str) -> str:
+    try:
+        root = lxml.html.fromstring(html)
+    except (etree.ParserError, ValueError):
+        return ""
+    etree.strip_elements(root, "script", "style", "noscript", "template", with_tail=False)
+    return " ".join(t.strip() for t in root.itertext() if t.strip())
