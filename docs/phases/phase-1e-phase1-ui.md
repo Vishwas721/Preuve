@@ -1,6 +1,6 @@
 # Phase 1E — Phase 1 UI
 
-- **Status:** Not started (draft)
+- **Status:** In progress (kickoff 2026-11-02)
 - **Goal:** Make Phase 1 usable end to end in the browser: from a new idea to ranked prospects,
   with the evidence one click away.
 - **PRD refs:** §27 Portfolio, §38 Dashboard, §39 Idea detail, §40 Research explorer,
@@ -42,6 +42,44 @@ No new tables. Only small read endpoints if a view needs aggregated counts (e.g.
 - [ ] Empty, loading and error states exist for every view.
 - [ ] Web lint, typecheck and build pass; key flows are checked manually in a browser.
 
-## Open questions (settle at kickoff)
+## Decisions (2026-11-02)
 
-- Should we add a component library (e.g. shadcn/ui), or stay with plain Tailwind?
+- **Component library: shadcn/ui** on Radix primitives (accessible dialogs, sheets, selects,
+  tabs, tooltips, plus a `cmdk` command palette), with **motion** for animation,
+  **lucide-react** for icons and **sonner** for toasts. Components are copied into the repo, so we
+  own them and can restyle them fully.
+- **Design direction: "The Dossier".** Preuve is French for *proof*, so the UI reads like an
+  evidence case file rather than a generic SaaS dashboard:
+  - **Typography:** an editorial serif display face (Instrument Serif) for headlines and quoted
+    evidence, Geist for UI text, and Geist Mono for metadata (exhibit numbers, dates, domains,
+    scores).
+  - **Surfaces:** warm paper (light) and deep ink (dark), with a subtle grain, hairline rules,
+    and folder tabs for case navigation.
+  - **Evidence:** each item is an **exhibit** (`EX-07`) with a large serif pull-quote, a source
+    line in mono, and **stamps** (`VERIFIED` / `UNVERIFIABLE`) styled like rubber stamps.
+    Fact, inference and assumption always look different.
+  - **Data viz (dataviz method, palette validated on these surfaces):**
+    - the evidence balance (supports ↔ contradicts) uses the diverging pair, blue ↔ red with a
+      gray neutral;
+    - scores and rubrics are single-hue blue bars with tracks;
+    - verification uses status colors, always with an icon and a label;
+    - every chart gets a tooltip and a text alternative.
+  - **Navigation:**
+    - a slim top bar and a ⌘K command palette (jump to any idea or section);
+    - the idea **dossier** has a sticky "case file" rail (verdict balance, counts, open
+      questions) and folder-tab sections.
+- **Routes:**
+  - `/` is the case board (portfolio);
+  - `/ideas/new` is intake ("What are you thinking of building?", per PRD §50);
+  - `/ideas/[id]` is Overview (hypothesis, open questions, ICPs);
+  - `/ideas/[id]/evidence` is the research explorer;
+  - `/ideas/[id]/landscape` covers competitors and alternatives;
+  - `/ideas/[id]/prospects` is the prospect explorer.
+  A shared `layout.tsx` loads the idea once and polls while runs or imports are active.
+- **One read endpoint:** `GET /portfolio` returns per-idea aggregates (evidence by stance and
+  verification, competitors, prospects and the top score, open and answered unknowns, last
+  activity). It's a new `portfolio` module that only calls other modules' service functions.
+- **Dark mode is first-class:** its own tokens (validated chart colors), a theme toggle, and
+  respect for the OS setting.
+- **Still out of scope:** deleting research imports (noted in 1B). It's a backend feature, not
+  UI polish; revisit after Phase 1.
