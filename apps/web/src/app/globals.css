@@ -2,136 +2,241 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* ===================================================================
+   Preuve — "The Dossier"
+   Warm paper (light) / deep ink (dark). Editorial serif for headlines
+   and quoted evidence, Geist for UI, Geist Mono for metadata.
+   Chart colours follow the dataviz method; the diverging pair was
+   validated against these exact surfaces (light #fbf9f4, dark #1b1a17).
+   =================================================================== */
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
+  --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
+  --font-heading: var(--font-display);
+  --font-display: var(--font-instrument-serif);
+
   --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Dossier extras */
+  --color-paper: var(--paper);
+  --color-ink-soft: var(--ink-soft);
+  --color-rule: var(--rule);
+  --color-highlight: var(--highlight);
+
+  /* Data viz roles (see dataviz palette): diverging pair + neutral, sequential, track */
+  --color-viz-supports: var(--viz-supports);
+  --color-viz-contradicts: var(--viz-contradicts);
+  --color-viz-neutral: var(--viz-neutral);
+  --color-viz-seq: var(--viz-seq);
+  --color-viz-track: var(--viz-track);
+
+  /* Status roles — always paired with an icon + label */
+  --color-status-good: var(--status-good);
+  --color-status-good-ink: var(--status-good-ink);
+  --color-status-warning: var(--status-warning);
+  --color-status-warning-ink: var(--status-warning-ink);
+  --color-status-critical: var(--status-critical);
+
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.4);
   --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
-}
-
-body {
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --radius: 0.5rem;
+
+  --background: #f3efe5; /* page plane: warm paper */
+  --paper: #fbf9f4; /* sheet surface (cards, chart surface) */
+  --foreground: #17150f; /* ink */
+  --ink-soft: #4d483d;
+  --card: var(--paper);
+  --card-foreground: var(--foreground);
+  --popover: #fdfcf8;
+  --popover-foreground: var(--foreground);
+  --primary: #17150f;
+  --primary-foreground: #fbf9f4;
+  --secondary: #ebe6d9;
+  --secondary-foreground: #17150f;
+  --muted: #ebe6d9;
+  --muted-foreground: #6b665a;
+  --accent: #e6e0d0;
+  --accent-foreground: #17150f;
+  --destructive: #c2412d;
+  --border: rgb(23 21 15 / 0.13);
+  --input: rgb(23 21 15 / 0.18);
+  --ring: #2a78d6;
+  --rule: rgb(23 21 15 / 0.22);
+  --highlight: #f6e7a8; /* marker pen behind key words */
+
+  --viz-supports: #2a78d6;
+  --viz-contradicts: #e34948;
+  --viz-neutral: #cfc9ba;
+  --viz-seq: #2a78d6;
+  --viz-track: #e7e1d3;
+
+  --status-good: #0ca30c;
+  --status-good-ink: #006300;
+  --status-warning: #fab219;
+  --status-warning-ink: #8a5a00;
+  --status-critical: #d03b3b;
+
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: #11100e; /* deep ink */
+  --paper: #1b1a17;
+  --foreground: #ede8dc;
+  --ink-soft: #c9c2b2;
+  --card: var(--paper);
+  --card-foreground: var(--foreground);
+  --popover: #201f1b;
+  --popover-foreground: var(--foreground);
+  --primary: #ede8dc;
+  --primary-foreground: #11100e;
+  --secondary: #26241f;
+  --secondary-foreground: #ede8dc;
+  --muted: #26241f;
+  --muted-foreground: #a39d8e;
+  --accent: #2c2a24;
+  --accent-foreground: #ede8dc;
+  --destructive: #e66767;
+  --border: rgb(237 232 220 / 0.12);
+  --input: rgb(237 232 220 / 0.18);
+  --ring: #3987e5;
+  --rule: rgb(237 232 220 / 0.2);
+  --highlight: #5b4a12;
+
+  --viz-supports: #3987e5;
+  --viz-contradicts: #e66767;
+  --viz-neutral: #4a4740;
+  --viz-seq: #3987e5;
+  --viz-track: #2b2925;
+
+  --status-good: #0ca30c;
+  --status-good-ink: #0ca30c;
+  --status-warning: #fab219;
+  --status-warning-ink: #fab219;
+  --status-critical: #d03b3b;
+
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button:not(:disabled), [role="button"]:not(:disabled) {
-    cursor: pointer;
-  }
   html {
     @apply font-sans;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    /* Paper grain: an inline SVG noise tile, very low opacity. */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.055 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    background-color: var(--background);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: var(--highlight);
+    color: var(--foreground);
+  }
+}
+
+@layer components {
+  /* Editorial display type */
+  .font-display {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  /* Small mono caps used for metadata: exhibit numbers, dates, sections */
+  .eyebrow {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+  /* A sheet of paper sitting on the desk */
+  .sheet {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.6) inset,
+      0 1px 2px rgb(23 21 15 / 0.05),
+      0 8px 24px -12px rgb(23 21 15 / 0.18);
+  }
+  .dark .sheet {
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.03) inset,
+      0 10px 30px -14px rgb(0 0 0 / 0.7);
+  }
+  /* Ruled hairline, like a ledger */
+  .rule {
+    border-color: var(--rule);
+  }
+  /* Marker-pen highlight behind a phrase */
+  .mark {
+    background: linear-gradient(
+      transparent 58%,
+      var(--highlight) 58%,
+      var(--highlight) 92%,
+      transparent 92%
+    );
+    padding: 0 0.1em;
+  }
+  /* Rubber stamp: outlined, slightly rotated, inked */
+  .stamp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border: 1.5px solid currentColor;
+    border-radius: 0.25rem;
+    transform: rotate(-2.5deg);
+    opacity: 0.92;
+    mix-blend-mode: multiply;
+  }
+  .dark .stamp {
+    mix-blend-mode: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }
