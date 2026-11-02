@@ -272,6 +272,57 @@ export interface IdeaResearch {
   current_solutions: Claim[];
 }
 
+// ---------- prospects (Phase 1D) ----------
+
+export type ProspectStatus = "new" | "shortlisted" | "excluded";
+
+export interface ProspectSummary {
+  id: string;
+  name: string;
+  website: string;
+  domain: string;
+  location: string | null;
+  industry: string | null;
+  status: ProspectStatus;
+  icp_id: string | null;
+  score: number | null;
+  contacts: number;
+  top_contact_role: string | null;
+}
+
+export interface ScoreComponent {
+  key: string;
+  label: string;
+  points: number;
+  max: number;
+  reason: string;
+  evidence_ids: string[];
+}
+
+export interface Contact {
+  id: string;
+  name: string;
+  role: string;
+  email: string | null;
+  evidence_id: string;
+  source_url: string;
+  collected_at: string;
+}
+
+export interface ProspectDetail extends ProspectSummary {
+  description: string;
+  size_min: number | null;
+  size_max: number | null;
+  size_signal: string | null;
+  in_geo: boolean | null;
+  technologies: string[];
+  evidence_ids: string[];
+  contacts_list: Contact[];
+  components: ScoreComponent[];
+  scored_at: string | null;
+  inputs_hash: string | null;
+}
+
 export interface Health {
   status: "ok" | "degraded";
   checks: Record<string, boolean>;
@@ -358,4 +409,24 @@ export const api = {
     competitorId: string,
     data: Partial<CompetitorInput> & { status?: "active" | "dismissed" },
   ) => request<Competitor>(`/ideas/${ideaId}/competitors/${competitorId}`, json("PATCH", data)),
+
+  listProspects: (
+    ideaId: string,
+    filters: { status?: ProspectStatus; min_score?: number } = {},
+  ) => {
+    const qs = new URLSearchParams(
+      Object.entries(filters)
+        .filter(([, v]) => v !== undefined)
+        .map(([k, v]) => [k, String(v)]),
+    ).toString();
+    return request<ProspectSummary[]>(`/ideas/${ideaId}/prospects${qs ? `?${qs}` : ""}`);
+  },
+  getProspect: (ideaId: string, companyId: string) =>
+    request<ProspectDetail>(`/ideas/${ideaId}/prospects/${companyId}`),
+  updateProspect: (ideaId: string, companyId: string, data: { status?: ProspectStatus }) =>
+    request<ProspectDetail>(`/ideas/${ideaId}/prospects/${companyId}`, json("PATCH", data)),
+  rescoreProspects: (ideaId: string) =>
+    request<{ rescored: number }>(`/ideas/${ideaId}/prospects/rescore`, { method: "POST" }),
+  deleteContact: (ideaId: string, contactId: string) =>
+    request<void>(`/ideas/${ideaId}/contacts/${contactId}`, { method: "DELETE" }),
 };
