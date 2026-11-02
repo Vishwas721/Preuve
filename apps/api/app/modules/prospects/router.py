@@ -1,6 +1,7 @@
 import uuid
+from typing import Annotated
 
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, Query, status
 
 from app.core.deps import SessionDep
 from app.modules.ideas.deps import OwnedIdea
@@ -15,7 +16,7 @@ router = APIRouter(prefix="/ideas/{idea_id}", tags=["prospects"])
 async def list_prospects(
     idea: OwnedIdea,
     session: SessionDep,
-    status_filter: ProspectStatus | None = None,
+    status_filter: Annotated[ProspectStatus | None, Query(alias="status")] = None,
     min_score: int | None = None,
 ) -> list[dict]:
     """Companies for this idea, best score first."""
