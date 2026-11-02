@@ -141,3 +141,11 @@ def test_zero_rating_reads_as_a_rating_not_missing_evidence() -> None:
     comp = by_key(score(base(other_signals=AssessmentInput(0, "No public signals.", ()))))
     assert comp["other_signals"].points == 0
     assert comp["other_signals"].reason == "0/5: No public signals."
+
+
+def test_hash_changes_with_scoring_version(monkeypatch: pytest.MonkeyPatch) -> None:
+    from app.modules.prospects import scoring as scoring_module
+
+    before = score(base()).inputs_hash
+    monkeypatch.setattr(scoring_module, "SCORING_VERSION", scoring_module.SCORING_VERSION + 1)
+    assert score(base()).inputs_hash != before

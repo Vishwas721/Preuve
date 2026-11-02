@@ -10,6 +10,9 @@ import json
 import re
 from dataclasses import asdict, dataclass, field
 
+# Bump whenever the rules below change, so re-scoring stored inputs produces fresh rows.
+SCORING_VERSION = 2
+
 # ---------- inputs ----------
 
 
@@ -224,7 +227,9 @@ def _geography(inp: ScoringInput) -> Component:
 
 
 def _hash(inp: ScoringInput) -> str:
-    payload = json.dumps(asdict(inp), sort_keys=True, default=str)
+    payload = json.dumps(
+        {"version": SCORING_VERSION, "inputs": asdict(inp)}, sort_keys=True, default=str
+    )
     return hashlib.sha256(payload.encode()).hexdigest()
 
 
