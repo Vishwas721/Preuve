@@ -81,6 +81,10 @@ Enforced in code, not just prompts (PRD §12, §35):
 - Packs (schema 1.1) also carry competitors and alternatives plus a "how it's solved today"
   summary. A competitor is stored only if its cited evidence survives verification, and
   re-imports merge by normalized name without overwriting user edits.
+- Packs (schema 1.2) also carry companies and contacts. A contact is stored only if a
+  **verified** quote contains the person's name, and an email only if it is printed on the
+  fetched page. Lead scores (PRD §16) are computed in code (`prospects/scoring.py`) from stored
+  evidence only, with a versioned inputs hash for reproducibility.
 - Local and Gemini models keep the high-volume, single-input tasks: classification, extraction,
   drafting, reply analysis.
 
