@@ -4,6 +4,7 @@ from app.db.base import Base
 from app.modules.analysis.models import ICP, AnalysisRun, Hypothesis, Unknown
 from app.modules.competitors.models import Competitor, CompetitorEvidence
 from app.modules.ideas.models import Idea
+from app.modules.prospects.models import Company, CompanyEvidence, Contact, LeadScore
 from app.modules.research.models import (
     Evidence,
     EvidenceUnknown,
@@ -17,12 +18,16 @@ __all__ = [
     "ICP",
     "AnalysisRun",
     "Base",
+    "Company",
+    "CompanyEvidence",
     "Competitor",
+    "Contact",
     "CompetitorEvidence",
     "Evidence",
     "EvidenceUnknown",
     "Hypothesis",
     "Idea",
+    "LeadScore",
     "ResearchImport",
     "Unknown",
     "UnknownFinding",
