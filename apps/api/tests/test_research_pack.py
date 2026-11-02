@@ -17,7 +17,7 @@ def test_valid_pack() -> None:
         "summary": [claim("x", "ev-01")],
     }
     p = ResearchPack.model_validate(pack(IDEA, unknown_findings=[finding]))
-    assert p.meta.schema_version == "1.0" and len(p.evidence) == 1
+    assert p.meta.schema_version == "1.1" and len(p.evidence) == 1
 
 
 def test_schema_export_is_in_sync() -> None:
@@ -84,3 +84,53 @@ def test_hypothesis_update_needs_rationale() -> None:
     }
     with pytest.raises(ValidationError, match="rationale"):
         ResearchPack.model_validate(pack(IDEA, hypothesis_update=hyp))
+
+
+def test_schema_1_0_packs_still_accepted() -> None:
+    body = pack(IDEA)
+    body["meta"]["schema_version"] = "1.0"
+    assert ResearchPack.model_validate(body).meta.schema_version == "1.0"
+
+
+def competitor(ref: str = "comp-01", **overrides) -> dict:
+    item = {
+        "ref": ref,
+        "name": "Procore",
+        "url": "https://www.procore.com",
+        "kind": "direct",
+        "description": "Drafts daily logs from photos.",
+        "evidence_refs": ["ev-01"],
+        "sentiment": [claim("Users like it", "ev-01")],
+    }
+    return item | overrides
+
+
+def test_competitors_and_current_solutions_valid() -> None:
+    p = ResearchPack.model_validate(
+        pack(
+            IDEA,
+            competitors=[
+                competitor(),
+                competitor("comp-02", name="Spreadsheets", url=None, kind="manual"),
+            ],
+            current_solutions=[claim("Mostly Procore and spreadsheets", "ev-01")],
+        )
+    )
+    assert [c.kind for c in p.competitors] == ["direct", "manual"]
+    assert len(p.claims()) == 3  # two sentiment claims + one summary claim
+
+
+@pytest.mark.parametrize(
+    ("competitors", "message"),
+    [
+        ([competitor(evidence_refs=["ev-77"])], "competitors cite refs"),
+        ([competitor(evidence_refs=[])], "evidence_refs"),
+        ([competitor(), competitor("comp-02", name="  PROCORE ")], "duplicate competitor names"),
+        ([competitor(), competitor()], "duplicate competitor refs"),
+        ([competitor(kind="partner")], "kind"),
+        ([competitor(sentiment=[claim("x", "ev-55")])], "ev-55"),
+    ],
+)
+def test_competitor_validation(competitors: list, message: str) -> None:
+    with pytest.raises(ValidationError, match=message):
+        ResearchPack.model_validate(pack(IDEA, competitors=competitors))

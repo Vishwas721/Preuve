@@ -34,6 +34,16 @@
       "title": "ClaimKind",
       "type": "string"
     },
+    "CompetitorKind": {
+      "enum": [
+        "direct",
+        "indirect",
+        "manual",
+        "service"
+      ],
+      "title": "CompetitorKind",
+      "type": "string"
+    },
     "EvidenceKind": {
       "description": "Assumptions are not evidence, so they can't appear here.",
       "enum": [
@@ -134,6 +144,87 @@
         "question"
       ],
       "title": "NewUnknown",
+      "type": "object"
+    },
+    "PackCompetitor": {
+      "properties": {
+        "description": {
+          "description": "What it covers of the problem.",
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "evidence_refs": {
+          "description": "Evidence refs that mention it.",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence Refs",
+          "type": "array"
+        },
+        "kind": {
+          "$ref": "#/$defs/CompetitorKind"
+        },
+        "name": {
+          "maxLength": 200,
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "pricing_note": {
+          "anyOf": [
+            {
+              "maxLength": 300,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Only if publicly stated; cite it in evidence_refs.",
+          "title": "Pricing Note"
+        },
+        "ref": {
+          "examples": [
+            "comp-01"
+          ],
+          "pattern": "^[a-z0-9][a-z0-9-]{0,31}$",
+          "title": "Ref",
+          "type": "string"
+        },
+        "sentiment": {
+          "description": "What customers praise or complain about, citing refs.",
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Sentiment",
+          "type": "array"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Product/provider homepage; null for generic workarounds.",
+          "title": "Url"
+        }
+      },
+      "required": [
+        "ref",
+        "name",
+        "kind",
+        "description",
+        "evidence_refs"
+      ],
+      "title": "PackCompetitor",
       "type": "object"
     },
     "PackEvidence": {
@@ -287,8 +378,11 @@
           "type": "string"
         },
         "schema_version": {
-          "const": "1.0",
-          "default": "1.0",
+          "default": "1.1",
+          "enum": [
+            "1.0",
+            "1.1"
+          ],
           "title": "Schema Version",
           "type": "string"
         },
@@ -398,6 +492,22 @@
   },
   "$id": "https://github.com/Vishwas721/Preuve/docs/research-pack.schema.json",
   "properties": {
+    "competitors": {
+      "items": {
+        "$ref": "#/$defs/PackCompetitor"
+      },
+      "maxItems": 50,
+      "title": "Competitors",
+      "type": "array"
+    },
+    "current_solutions": {
+      "description": "How the problem is solved today, citing evidence refs.",
+      "items": {
+        "$ref": "#/$defs/Claim"
+      },
+      "title": "Current Solutions",
+      "type": "array"
+    },
     "evidence": {
       "items": {
         "$ref": "#/$defs/PackEvidence"
