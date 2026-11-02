@@ -4,6 +4,7 @@ These models are the source of truth. `docs/research-pack.schema.json` is export
 (`uv run python -m app.scripts.export_pack_schema`) and a test keeps the export in sync.
 """
 
+import re
 import uuid
 from datetime import date, datetime
 from enum import StrEnum
@@ -16,7 +17,7 @@ from app.llm.guardrails import Claim
 from app.modules.analysis.models import Priority, UnknownCategory
 from app.modules.analysis.schemas import HypothesisFields
 
-SCHEMA_VERSION = "1.1"  # 1.1 adds competitors + current_solutions (Phase 1C); 1.0 still accepted
+SCHEMA_VERSION = "1.2"  # 1.1: competitors + current_solutions (1C); 1.2: companies (1D)
 
 MIN_QUOTE_CHARS = 20
 MAX_QUOTE_CHARS = 600
@@ -67,7 +68,7 @@ class FindingStatus(StrEnum):
 
 
 class PackMeta(BaseModel):
-    schema_version: Literal["1.0", "1.1"] = SCHEMA_VERSION
+    schema_version: Literal["1.0", "1.1", "1.2"] = SCHEMA_VERSION
     method_version: str = Field(min_length=1, max_length=20, examples=["1"])
     idea_id: uuid.UUID
     researcher: str = Field(default="claude-code", max_length=50)
@@ -158,6 +159,97 @@ class PackCompetitor(BaseModel):
         return v
 
 
+def domain_key(url: str) -> str:
+    """Normalized registrable host, used to deduplicate companies (www. stripped)."""
+    host = urlsplit(url).netloc.lower().split(":")[0]
+    return host.removeprefix("www.")
+
+
+_EMAIL = re.compile(r"^[^@\s]+@[^@\s]+\.[a-z]{2,}$", re.IGNORECASE)
+
+
+class SizeEstimate(BaseModel):
+    min: int | None = Field(default=None, ge=1, description="Employees, lower bound.")
+    max: int | None = Field(default=None, ge=1, description="Employees, upper bound.")
+    signal: str = Field(
+        min_length=1, max_length=300, description='e.g. "About page: 200+ employees"'
+    )
+    evidence_ref: str
+
+
+class GeographyCheck(BaseModel):
+    value: bool = Field(description="Is the company in the ICP's target geography?")
+    evidence_ref: str
+
+
+class Assessment(BaseModel):
+    rating: int = Field(ge=0, le=5)
+    rationale: str = Field(min_length=1, max_length=500)
+    evidence_refs: list[str] = Field(default_factory=list)
+
+
+class CompanyAssessments(BaseModel):
+    company_fit: Assessment
+    technology_fit: Assessment
+    other_signals: Assessment
+
+
+class PackContact(BaseModel):
+    """A person named on the company's own public page. Professional fields only."""
+
+    name: str = Field(min_length=2, max_length=200)
+    role: str = Field(min_length=2, max_length=200)
+    email: str | None = Field(
+        default=None, description="Only a business email printed on the cited page; never guessed."
+    )
+    evidence_ref: str = Field(description="Evidence whose verbatim quote contains the name.")
+
+    @field_validator("email")
+    @classmethod
+    def _email(cls, v: str | None) -> str | None:
+        if v is not None and not _EMAIL.match(v):
+            raise ValueError("not an email address")
+        return v
+
+
+class PackCompany(BaseModel):
+    ref: str = Field(pattern=r"^[a-z0-9][a-z0-9-]{0,31}$", examples=["co-01"])
+    name: str = Field(min_length=1, max_length=200)
+    website: str
+    icp_id: uuid.UUID | None = Field(default=None, description="Target ICP; default primary.")
+    location: str | None = Field(default=None, max_length=200)
+    industry: str | None = Field(default=None, max_length=200)
+    description: str = Field(min_length=1, max_length=1000)
+    size_estimate: SizeEstimate | None = None
+    in_target_geography: GeographyCheck | None = None
+    technologies: list[str] = Field(default_factory=list)
+    evidence_refs: list[str] = Field(min_length=1)
+    assessments: CompanyAssessments
+    contacts: list[PackContact] = Field(default_factory=list, max_length=10)
+
+    @field_validator("website")
+    @classmethod
+    def _http_url(cls, v: str) -> str:
+        parts = urlsplit(v)
+        if parts.scheme not in ("http", "https") or not parts.netloc:
+            raise ValueError("must be an http(s) URL")
+        return v
+
+    def all_refs(self) -> set[str]:
+        refs = set(self.evidence_refs) | {c.evidence_ref for c in self.contacts}
+        for a in (
+            self.assessments.company_fit,
+            self.assessments.technology_fit,
+            self.assessments.other_signals,
+        ):
+            refs |= set(a.evidence_refs)
+        if self.size_estimate:
+            refs.add(self.size_estimate.evidence_ref)
+        if self.in_target_geography:
+            refs.add(self.in_target_geography.evidence_ref)
+        return refs
+
+
 class ResearchPack(BaseModel):
     meta: PackMeta
     evidence: list[PackEvidence] = Field(default_factory=list, max_length=200)
@@ -165,6 +257,7 @@ class ResearchPack(BaseModel):
     current_solutions: list[Claim] = Field(
         default_factory=list, description="How the problem is solved today, citing evidence refs."
     )
+    companies: list[PackCompany] = Field(default_factory=list, max_length=100)
     unknown_findings: list[UnknownFinding] = Field(default_factory=list)
     hypothesis_update: HypothesisUpdate | None = None
     new_unknowns: list[NewUnknown] = Field(default_factory=list, max_length=20)
@@ -204,6 +297,17 @@ class ResearchPack(BaseModel):
         )
         if bad_comp_refs:
             errors.append(f"competitors cite refs that are not in `evidence`: {bad_comp_refs}")
+        co_refs = [c.ref for c in self.companies]
+        dupe_co = sorted({r for r in co_refs if co_refs.count(r) > 1})
+        if dupe_co:
+            errors.append(f"duplicate company refs: {dupe_co}")
+        domains = [domain_key(c.website) for c in self.companies]
+        dupe_domains = sorted({d for d in domains if domains.count(d) > 1})
+        if dupe_domains:
+            errors.append(f"duplicate company domains: {dupe_domains}")
+        bad_co_refs = sorted({r for c in self.companies for r in c.all_refs() if r not in known})
+        if bad_co_refs:
+            errors.append(f"companies cite refs that are not in `evidence`: {bad_co_refs}")
         for f in self.unknown_findings:
             if f.status != FindingStatus.NO_EVIDENCE_FOUND and not f.summary:
                 errors.append(f"finding for {f.unknown_id} is '{f.status}' but has no summary")
