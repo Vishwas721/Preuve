@@ -1,7 +1,7 @@
 "use client";
 
 import { History, PencilLine } from "lucide-react";
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { toast } from "sonner";
 
 import { useDossier } from "@/components/dossier/DossierProvider";
@@ -114,17 +114,17 @@ function EditSheet({
 }
 
 function HistorySheet({ open, onOpenChange }: { open: boolean; onOpenChange: (o: boolean) => void }) {
-  const { id } = useDossier();
+  const { id, analysis } = useDossier();
   const [versions, setVersions] = useState<Hypothesis[] | null>(null);
+  const current = analysis?.hypothesis?.version;
+
+  // Fetch whenever the sheet opens (the parent opens it, so onOpenChange doesn't fire then).
+  useEffect(() => {
+    if (open) api.hypothesisVersions(id).then(setVersions, () => setVersions([]));
+  }, [open, id, current]);
 
   return (
-    <Sheet
-      open={open}
-      onOpenChange={(o) => {
-        onOpenChange(o);
-        if (o) api.hypothesisVersions(id).then(setVersions, () => setVersions([]));
-      }}
-    >
+    <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent className="w-full overflow-y-auto sm:max-w-lg">
         <SheetHeader>
           <SheetTitle className="font-display text-2xl font-normal">How the hypothesis evolved</SheetTitle>
