@@ -13,6 +13,8 @@ from app.llm.guardrails import Claim
 from app.modules.analysis import service as analysis
 from app.modules.analysis.models import Source, Unknown
 from app.modules.analysis.schemas import UnknownCreate
+from app.modules.competitors import service as competitors
+from app.modules.competitors.schemas import ResearchCompetitorInput
 from app.modules.ideas.models import Idea
 from app.modules.research.matching import match_any, quote_key
 from app.modules.research.models import (
@@ -303,8 +305,39 @@ async def _verify(
     for nu in pack.new_unknowns:
         analysis.add_unknown(session, idea_id, UnknownCreate(**nu.model_dump()), Source.RESEARCH)
 
+    # Phase 1C: a competitor survives only if at least one of its cited evidence items did.
+    rejected_competitors: list[dict] = []
+    competitor_inputs: list[ResearchCompetitorInput] = []
+    for comp in pack.competitors:
+        evidence_ids = [ref_map[r] for r in comp.evidence_refs if r in ref_map]
+        if not evidence_ids:
+            rejected_competitors.append(
+                {"ref": comp.ref, "name": comp.name, "reason": "none of its evidence was stored"}
+            )
+            continue
+        kept, dropped = _remap_claims(comp.sentiment, ref_map)
+        dropped_claims += [d | {"competitor": comp.name} for d in dropped]
+        competitor_inputs.append(
+            ResearchCompetitorInput(
+                name=comp.name,
+                url=comp.url,
+                kind=comp.kind,
+                description=comp.description,
+                pricing_note=comp.pricing_note,
+                evidence_ids=evidence_ids,
+                sentiment=kept,
+            )
+        )
+    merged = await competitors.upsert_from_research(session, idea_id, imp.id, competitor_inputs)
+
+    if pack.current_solutions:
+        kept, dropped = _remap_claims(pack.current_solutions, ref_map)
+        dropped_claims += [d | {"current_solutions": True} for d in dropped]
+        imp.solutions_summary = kept
+
     await session.flush()
     return {
+        "competitors": merged | {"rejected": rejected_competitors},
         "counts": counts,
         "rejected": rejected,
         "duplicates": duplicates,
@@ -445,3 +478,16 @@ async def update_evidence(session: AsyncSession, evidence: Evidence, data: Evide
     if labels:
         evidence.user_edited = True
     await session.commit()
+
+
+async def current_solutions(session: AsyncSession, idea_id: uuid.UUID) -> list[dict]:
+    """Latest "how is it solved today" summary from a finished import (may be empty).
+
+    Filtered in Python: a JSON column can hold JSON `null`, which SQL `IS NOT NULL` keeps.
+    """
+    summaries = await session.scalars(
+        select(ResearchImport.solutions_summary)
+        .where(ResearchImport.idea_id == idea_id, ResearchImport.status == ImportStatus.DONE)
+        .order_by(ResearchImport.created_at.desc())
+    )
+    return next((s for s in summaries if s is not None), [])
