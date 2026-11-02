@@ -3,7 +3,7 @@ name: research-idea
 description: Research a startup idea for Preuve. Finds public evidence for and against the problem, writes a verified research pack plus a report, and imports it into Preuve. Use when the user pastes an idea to validate, gives a Preuve idea id to research, or asks to research or re-research an idea.
 ---
 
-# /research-idea — method v2
+# /research-idea — method v3
 
 You are Preuve's research analyst (ADR 0004). Find **real, public evidence** about whether the
 idea's problem exists, how painful it is and how it is solved today. Then hand Preuve a research
@@ -148,6 +148,48 @@ Answer "how is this problem solved today?" with sourced entries only (PRD §13).
 5. **`current_solutions`:** 2–5 claims summarizing how the problem is solved today, citing refs.
    Include the boring answer (spreadsheets, email) when the evidence shows it.
 
+## 5c. Prospects: companies and contacts (when asked to prospect, or for a new idea)
+
+Find **20+ companies** that match the target ICP: the primary one, unless the user names another.
+Take its id, size band and roles from `context`.
+
+**Allowed sources:**
+
+- the companies' own websites;
+- public association or member directories and public lists that Preuve can fetch;
+- news;
+- job postings.
+
+**Never use** LinkedIn, ZoomInfo, Apollo, people-search or data-broker sites, or anything behind
+a login.
+
+For each company:
+
+1. **Facts from its own site:** `fetch` its home, about or contact page. Add `evidence[]` items
+   quoting what it does and where it is.
+   - Website: the canonical site (one per company; Preuve deduplicates by domain).
+2. **`in_target_geography`:** `{value, evidence_ref}`, citing the quote that shows the location.
+3. **`size_estimate`:** only from the company's own stated headcount, a team or careers page
+   count, or a directory listing, as `{min, max, signal, evidence_ref}`. If nothing states it,
+   **omit it**. Unknown size is honest and scores 0 for that component.
+4. **Problem evidence for this company,** if any: e.g. its job postings describing manual
+   reporting, cited with `stance: supports`. Add those refs to the company's `evidence_refs`.
+   This is the heaviest-weighted score component (25 points).
+5. **`assessments`:** for `company_fit`, `technology_fit` and `other_signals`, give a
+   `{rating 0–5, rationale, evidence_refs}` each. A rating without evidence refs earns 0 points,
+   so cite or rate honestly.
+6. **`contacts`:** only people named on the company's **own public pages** (team, leadership,
+   contact).
+   - The `evidence_ref` must be a quote that contains the person's name, exactly as printed,
+     together with their title, e.g. `"Jane Roe, Project Engineer"`.
+   - `email` only if it is printed on that page. **Never construct or guess an email.**
+   - No personal phones, home addresses, photos or social profiles.
+   - Prefer the ICP's buyer and user roles; at most 3–4 people per company.
+7. **`description`:** one line on why the company matches the ICP.
+
+Companies whose only pages are unfetchable will import without verified contacts. Prefer
+companies with fetchable sites.
+
 ## 6. Write the pack and the report
 
 Write two files to `research/<idea-slug>/` at the repo root. Use a short kebab-case slug,
@@ -158,8 +200,8 @@ e.g. `construction-progress-reports`.
 ```json
 {
   "meta": {
-    "schema_version": "1.1",
-    "method_version": "2",
+    "schema_version": "1.2",
+    "method_version": "3",
     "idea_id": "<uuid>",
     "researcher": "claude-code",
     "started_at": "<iso>",
@@ -206,6 +248,29 @@ e.g. `construction-progress-reports`.
   ],
   "current_solutions": [
     {"statement": "...", "kind": "fact", "evidence_ids": ["ev-02", "ev-07"]}
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "ABC Builders",
+      "website": "https://www.abcbuilders.com",
+      "icp_id": null,
+      "location": "Dallas, TX",
+      "industry": "Commercial general contracting",
+      "description": "why it matches the ICP",
+      "size_estimate": {"min": 200, "max": null, "signal": "About page: 200+ employees", "evidence_ref": "ev-31"},
+      "in_target_geography": {"value": true, "evidence_ref": "ev-30"},
+      "technologies": ["Procore"],
+      "evidence_refs": ["ev-30", "ev-31", "ev-32"],
+      "assessments": {
+        "company_fit": {"rating": 4, "rationale": "...", "evidence_refs": ["ev-30"]},
+        "technology_fit": {"rating": 0, "rationale": "no evidence", "evidence_refs": []},
+        "other_signals": {"rating": 0, "rationale": "none", "evidence_refs": []}
+      },
+      "contacts": [
+        {"name": "Jane Roe", "role": "Project Engineer", "email": null, "evidence_ref": "ev-33"}
+      ]
+    }
   ]
 }
 ```
@@ -235,7 +300,7 @@ uv run python -m app.scripts.research import   ../../research/<slug>/pack-<date>
 ## 8. Finish
 
 - Commit the pack and report:
-  `git add research/<slug> && git commit -m "research: <slug> (method v2)"` and push.
+  `git add research/<slug> && git commit -m "research: <slug> (method v3)"` and push.
 - Tell the user:
   - verified / unverifiable / rejected counts;
   - the bottom line;
@@ -248,3 +313,5 @@ uv run python -m app.scripts.research import   ../../research/<slug>/pack-<date>
 - **v1 (2026-11-01):** initial method.
 - **v2 (2026-11-02):** adds step 5b (competitors and alternatives, `current_solutions`), pack
   schema 1.1.
+- **v3 (2026-11-02):** adds step 5c (prospects: companies and contacts, with privacy rules),
+  pack schema 1.2.
