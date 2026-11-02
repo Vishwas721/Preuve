@@ -1,6 +1,6 @@
 # Phase 1C — Competitors & alternatives
 
-- **Status:** In progress (kickoff 2026-11-02)
+- **Status:** Done (2026-11-02)
 - **Goal:** Answer "how is this problem solved today?" with sourced entries only.
 - **PRD refs:** §13 Competitor & alternative analysis, §35 guardrails
 
@@ -84,11 +84,37 @@ A "How it's solved today" section on the idea page:
 
 ## Acceptance criteria
 
-- [ ] Every competitor or alternative links to at least one evidence item, or is marked "added
+- [x] Every competitor or alternative links to at least one evidence item, or is marked "added
       by user".
-- [ ] Manual and service alternatives appear when the sources mention them.
-- [ ] The summary contains only cited claims; empty input gives "No evidence found."
-- [ ] The user can add, edit and dismiss entries.
+      - Research entries without stored evidence are rejected (tested).
+      - Manual entries show "Added by you" and "No linked evidence".
+      - Live: all 8 imported entries have 1–3 linked evidence items.
+- [x] Manual and service alternatives appear when the sources mention them. Live: "Spreadsheets
+      and free report templates", "Email, text and phone" and "Lender construction monitoring
+      firms" (service).
+- [x] The summary contains only cited claims; empty input gives "No evidence found."
+      - Claims citing rejected refs are dropped (tested).
+      - The UI shows "No evidence found." for an empty summary and for empty kinds.
+      - Live: a 5-claim summary, every claim cited.
+- [x] The user can add, edit and dismiss entries. Browser check:
+      - add (duplicate names get a 409 with a clear message);
+      - edit a research entry (badge becomes "From research · edited by you");
+      - dismiss; zero unexpected console errors.
+      - Re-imports keep user edits and dismissals (tested).
+
+**Live run:** method v2 step 5b on "Construction progress automation". 16 of 16 quotes verified
+(6 deduplicated re-citations), 8 competitors across all four kinds. Report:
+`research/construction-progress-reports/report-2026-11-02.md`.
+
+## Notes carried forward
+
+- **Customer sentiment is thin.** Independent review sites (G2, Capterra, TrustRadius) block
+  Preuve's crawler. The only verifiable Procore complaint came from a competitor's blog and is
+  flagged as biased. Interviews (Phase 3) are where real sentiment will come from.
+- **Pricing is often missing or stale.** Vendors hide pricing behind demos, and Raken's own site
+  blocks the crawler, so its pricing comes from an undated article. `pricing_note` should always
+  say how fresh it is.
+- Pack schema is now **1.1**; 1.0 packs still import. The skill is at **method v2**.
 
 ## Decisions (2026-11-02)
 
