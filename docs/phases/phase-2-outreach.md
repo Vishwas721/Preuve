@@ -26,6 +26,8 @@
   - contact frequency limits;
   - bounce recording;
   - a transparent sender identity (real name and reason), and no fake company identities.
+  - **from 1D:** deleting a contact (`DELETE /ideas/{id}/contacts/{contact_id}`) must also add
+    their email, if known, to `suppressions` with reason `deletion_request`.
 - **Tracking (PRD §19):** sent, delivered or bounced, replied (Phase 3 fills in replies). Open
   rates are not used as validation.
 
