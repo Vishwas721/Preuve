@@ -12,7 +12,7 @@ Nothing from a later phase is built early. Every phase ends with a review stop.
 | 1A — Idea intake & analyzer | [phase-1a-idea-analyzer.md](phases/phase-1a-idea-analyzer.md) | ✅ Done |
 | 1B — Research import & verification | [phase-1b-research-evidence.md](phases/phase-1b-research-evidence.md) | ✅ Done |
 | 1C — Competitors & alternatives | [phase-1c-competitors.md](phases/phase-1c-competitors.md) | ✅ Done |
-| 1D — Prospects, enrichment & scoring | [phase-1d-prospects-scoring.md](phases/phase-1d-prospects-scoring.md) | ⬜ Next |
+| 1D — Prospects, enrichment & scoring | [phase-1d-prospects-scoring.md](phases/phase-1d-prospects-scoring.md) | 🟡 In progress |
 | 1E — Phase 1 UI | [phase-1e-phase1-ui.md](phases/phase-1e-phase1-ui.md) | ⬜ |
 | 2 — Outreach | [phase-2-outreach.md](phases/phase-2-outreach.md) | ⬜ |
 | 3 — Responses & interviews | [phase-3-responses-interviews.md](phases/phase-3-responses-interviews.md) | ⬜ |
