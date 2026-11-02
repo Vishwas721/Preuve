@@ -323,6 +323,31 @@ export interface ProspectDetail extends ProspectSummary {
   inputs_hash: string | null;
 }
 
+// ---------- portfolio (Phase 1E) ----------
+
+export interface PortfolioItem {
+  id: string;
+  title: string;
+  target_market: string;
+  state: ValidationState;
+  problem: string | null;
+  evidence: {
+    supports: number;
+    contradicts: number;
+    neutral: number;
+    verified: number;
+    unverifiable: number;
+  };
+  competitors: number;
+  prospects: number;
+  top_score: number | null;
+  unknowns_open: number;
+  unknowns_answered: number;
+  busy: boolean;
+  created_at: string;
+  last_activity: string;
+}
+
 export interface Health {
   status: "ok" | "degraded";
   checks: Record<string, boolean>;
@@ -366,6 +391,7 @@ export const api = {
   health: () => request<Health>("/health"),
 
   listIdeas: () => request<Idea[]>("/ideas"),
+  portfolio: () => request<PortfolioItem[]>("/portfolio"),
   getIdea: (id: string) => request<Idea>(`/ideas/${id}`),
   createIdea: (data: IdeaInput) => request<Idea>("/ideas", json("POST", data)),
 
