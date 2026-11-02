@@ -9,6 +9,7 @@ from app.modules.analysis.router import router as analysis_router
 from app.modules.competitors.router import router as competitors_router
 from app.modules.ideas.router import router as ideas_router
 from app.modules.meta.router import router as meta_router
+from app.modules.portfolio.router import router as portfolio_router
 from app.modules.prospects.router import router as prospects_router
 from app.modules.research.router import router as research_router
 
@@ -39,6 +40,7 @@ def create_app() -> FastAPI:
     app.include_router(research_router)
     app.include_router(competitors_router)
     app.include_router(prospects_router)
+    app.include_router(portfolio_router)
     return app
 
 

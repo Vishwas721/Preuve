@@ -1,0 +1,61 @@
+"""Case-board aggregates. Reads only through other modules' service functions."""
+
+from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.modules.analysis import service as analysis
+from app.modules.analysis.models import UnknownStatus
+from app.modules.competitors import service as competitors
+from app.modules.ideas import service as ideas
+from app.modules.ideas.models import Idea
+from app.modules.portfolio.schemas import EvidenceTally, PortfolioItem
+from app.modules.prospects import service as prospects
+from app.modules.research import service as research
+from app.modules.users.models import User
+
+
+async def _item(session: AsyncSession, idea: Idea) -> PortfolioItem:
+    evidence = await research.list_evidence(session, idea.id)
+    tally = EvidenceTally()
+    for e in evidence:
+        setattr(tally, e["stance"].value, getattr(tally, e["stance"].value) + 1)
+        setattr(tally, e["verification"].value, getattr(tally, e["verification"].value) + 1)
+
+    unknowns = await analysis.list_unknowns(session, idea.id)
+    hypothesis = await analysis.get_current_hypothesis(session, idea.id)
+    rows = await prospects.list_prospects(session, idea.id)
+    imports = await research.list_imports(session, idea.id)
+    run = await analysis.latest_run(session, idea.id)
+
+    stamps = [idea.updated_at]
+    if imports:
+        stamps.append(imports[0].created_at)
+    if run is not None:
+        stamps.append(run.created_at)
+    if hypothesis is not None:
+        stamps.append(hypothesis.created_at)
+
+    busy = (run is not None and run.status in ("queued", "running")) or any(
+        i.status in ("queued", "verifying") for i in imports
+    )
+    scores = [r["score"] for r in rows if r["score"] is not None]
+    return PortfolioItem(
+        id=idea.id,
+        title=idea.title,
+        target_market=idea.target_market,
+        state=idea.state,
+        problem=hypothesis.problem if hypothesis else None,
+        evidence=tally,
+        competitors=len(await competitors.list_competitors(session, idea.id)),
+        prospects=len(rows),
+        top_score=max(scores) if scores else None,
+        unknowns_open=sum(u.status == UnknownStatus.OPEN for u in unknowns),
+        unknowns_answered=sum(u.status == UnknownStatus.ANSWERED for u in unknowns),
+        busy=busy,
+        created_at=idea.created_at,
+        last_activity=max(stamps),
+    )
+
+
+async def portfolio(session: AsyncSession, user: User) -> list[PortfolioItem]:
+    items = [await _item(session, idea) for idea in await ideas.list_ideas(session, user.id)]
+    return sorted(items, key=lambda i: i.last_activity, reverse=True)
