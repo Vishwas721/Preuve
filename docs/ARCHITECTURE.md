@@ -78,6 +78,9 @@ Enforced in code, not just prompts (PRD §12, §35):
 - **Preuve verifies.** It imports the pack, fetches every cited URL itself, checks the verbatim
   quote is on the page, and stores evidence as `verified` or `unverifiable`. Items whose quote
   isn't on the page are rejected.
+- Packs (schema 1.1) also carry competitors and alternatives plus a "how it's solved today"
+  summary. A competitor is stored only if its cited evidence survives verification, and
+  re-imports merge by normalized name without overwriting user edits.
 - Local and Gemini models keep the high-volume, single-input tasks: classification, extraction,
   drafting, reply analysis.
 
