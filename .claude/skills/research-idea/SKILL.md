@@ -3,7 +3,7 @@ name: research-idea
 description: Research a startup idea for Preuve. Finds public evidence for and against the problem, writes a verified research pack plus a report, and imports it into Preuve. Use when the user pastes an idea to validate, gives a Preuve idea id to research, or asks to research or re-research an idea.
 ---
 
-# /research-idea — method v1
+# /research-idea — method v2
 
 You are Preuve's research analyst (ADR 0004). Find **real, public evidence** about whether the
 idea's problem exists, how painful it is and how it is solved today. Then hand Preuve a research
@@ -97,7 +97,7 @@ For each item, decide:
 - **company_name:** only if the evidence is about a specific company. **Never record people's
   names or usernames.**
 
-**Budget:** about 15–25 evidence items, with a mix of source types. Stop when more searching
+**Budget:** about 15–25 evidence items for the unknowns, plus what step 5b needs (typically 5–12 more), with a mix of source types. Stop when more searching
 isn't changing the picture. Quality beats count.
 
 ## 5. Conclude per unknown
@@ -121,6 +121,33 @@ Optional, and only when the evidence warrants it:
   saves it as a new version; it never overwrites the user's.
 - `new_unknowns`: important questions the research raised.
 
+## 5b. Competitors and alternatives: how is it solved today?
+
+Answer "how is this problem solved today?" with sourced entries only (PRD §13).
+
+1. **Founder-listed competitors** (`idea.known_competitors` in the context): research each one.
+   Include it if you find public evidence about it. If you don't, say so in the report.
+2. **Search for the four kinds:**
+   - `direct`: products solving the same problem (`<problem> software`, `<problem> app`,
+     `<problem> AI`);
+   - `indirect`: broader tools that cover part of it, such as the incumbent platform's features;
+   - `manual`: spreadsheets, email, chat apps, paper, internal tools
+     (`<problem> template`, `<problem> excel`);
+   - `service`: consultants, agencies, outsourced or third-party providers
+     (`<problem> consultant`, `<problem> services`).
+3. **At least one complaint search** about the leading tool, e.g. `<tool> problems`,
+   `<tool> reviews cons`, `<tool> alternative`. Review sites often block Preuve's crawler; prefer
+   fetchable sources such as vendor docs, forums, news and publications.
+4. **Every competitor needs evidence.** Add an `evidence[]` item for the page that shows it
+   exists or what it does, then cite those refs in the competitor's `evidence_refs`.
+   - Re-citing a page and quote already imported is fine; Preuve deduplicates.
+   - A competitor whose evidence is all rejected is not stored.
+   - `pricing_note` only when the price is publicly stated on a cited page.
+   - `sentiment`: claims about what customers praise or complain about, citing refs. Only use
+     what the sources actually say.
+5. **`current_solutions`:** 2–5 claims summarizing how the problem is solved today, citing refs.
+   Include the boring answer (spreadsheets, email) when the evidence shows it.
+
 ## 6. Write the pack and the report
 
 Write two files to `research/<idea-slug>/` at the repo root. Use a short kebab-case slug,
@@ -131,8 +158,8 @@ e.g. `construction-progress-reports`.
 ```json
 {
   "meta": {
-    "schema_version": "1.0",
-    "method_version": "1",
+    "schema_version": "1.1",
+    "method_version": "2",
     "idea_id": "<uuid>",
     "researcher": "claude-code",
     "started_at": "<iso>",
@@ -164,7 +191,22 @@ e.g. `construction-progress-reports`.
     }
   ],
   "hypothesis_update": null,
-  "new_unknowns": []
+  "new_unknowns": [],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Procore",
+      "url": "https://www.procore.com",
+      "kind": "indirect",
+      "description": "what part of the problem it covers",
+      "pricing_note": null,
+      "evidence_refs": ["ev-07"],
+      "sentiment": [{"statement": "...", "kind": "fact", "evidence_ids": ["ev-09"]}]
+    }
+  ],
+  "current_solutions": [
+    {"statement": "...", "kind": "fact", "evidence_ids": ["ev-02", "ev-07"]}
+  ]
 }
 ```
 
@@ -174,7 +216,8 @@ e.g. `construction-progress-reports`.
 - **What supports the problem**: the strongest items first.
 - **What argues against it**: the contradicting evidence, never omitted.
 - **Unknowns**: the status of each, and what's still missing.
-- **How it's solved today**: only what the evidence shows.
+- **How it's solved today**: the competitors and alternatives by kind, plus the founder-listed
+  competitors with no public evidence. Only what the evidence shows.
 - **Method notes**: queries, source mix, limits, what couldn't be verified.
 
 ## 7. Validate and import
@@ -192,7 +235,7 @@ uv run python -m app.scripts.research import   ../../research/<slug>/pack-<date>
 ## 8. Finish
 
 - Commit the pack and report:
-  `git add research/<slug> && git commit -m "research: <slug> (method v1)"` and push.
+  `git add research/<slug> && git commit -m "research: <slug> (method v2)"` and push.
 - Tell the user:
   - verified / unverifiable / rejected counts;
   - the bottom line;
@@ -203,3 +246,5 @@ uv run python -m app.scripts.research import   ../../research/<slug>/pack-<date>
 ## Method changelog
 
 - **v1 (2026-11-01):** initial method.
+- **v2 (2026-11-02):** adds step 5b (competitors and alternatives, `current_solutions`), pack
+  schema 1.1.
