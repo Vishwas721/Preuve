@@ -78,7 +78,7 @@ class PageFetcher:
         try:
             resp = await self._client.get(url)
         except httpx.HTTPError as exc:
-            raise FetchError(f"Fetch failed for {url}: {exc}") from exc
+            raise FetchError(f"Fetch failed for {url}: {type(exc).__name__}: {exc}") from exc
         if resp.status_code >= 400:
             raise FetchError(f"HTTP {resp.status_code} for {url}")
         content_type = resp.headers.get("content-type", "")
