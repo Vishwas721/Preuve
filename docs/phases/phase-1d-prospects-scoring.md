@@ -1,6 +1,6 @@
 # Phase 1D — Prospect discovery, enrichment & scoring
 
-- **Status:** In progress (kickoff 2026-11-02)
+- **Status:** Done (2026-11-02)
 - **Goal:** Find companies that match the ICP and are likely to have the problem, identify
   relevant roles, and rank prospects with an explainable score.
 - **PRD refs:** §14 Prospect discovery, §15 Enrichment, §16 Lead scoring, §37 privacy
@@ -130,9 +130,34 @@ Polish comes in 1E.
 
 ## Acceptance criteria
 
-- [ ] At least 20 prospects for one real idea, deduplicated by domain.
-- [ ] Contacts are stored only when their name is in a verified quote; emails only when present
-      on the page (tested).
-- [ ] Every score shows each component's points, a reason, and linked evidence where relevant.
-- [ ] Every contact has a source URL; no contact data comes from non-public sources.
-- [ ] Re-scoring the same data gives the same result (deterministic rules, tested).
+- [x] At least 20 prospects for one real idea, deduplicated by domain.
+      - Live: **22 companies** for "Construction progress automation"; all 31 quotes verified.
+      - Domains are unique per idea (DB constraint), and re-imports merge by domain (tested).
+- [x] Every score shows each component's points, a reason, and linked evidence where relevant.
+      - 7 components, max 100.
+      - Browser check: the breakdown shows points, reasons and evidence citations.
+- [x] Every contact has a source URL; no contact data comes from non-public sources.
+      - Contacts come only from verified quotes on the companies' own pages.
+      - The skill forbids LinkedIn, people-search sites and data brokers.
+      - Live: 3 contacts, each with a source.
+- [x] Contacts are stored only when their name is in a verified quote; emails only when present
+      on the page. Tested:
+      - a name missing from the quote is rejected;
+      - a contact cited from an unverifiable page is rejected;
+      - an email not on the page is dropped.
+- [x] Re-scoring the same data gives the same result (deterministic rules, tested).
+      - `inputs_hash` includes `SCORING_VERSION`, so a rule change produces fresh rows while
+        unchanged inputs don't.
+
+## Notes carried forward
+
+- **Phase 2 must add a suppression entry when a contact is deleted** (PRD §37). Deletion is
+  currently a hard delete only.
+- **Fetchability shapes the prospect list.** About 30 candidate GCs were dropped (403,
+  robots.txt, TLS chain errors, DNS). TLS `CERTIFICATE_VERIFY_FAILED` on sites with incomplete
+  certificate chains is a fixable fetcher limitation (AIA fetching or certifi updates); consider
+  it if it keeps costing good sources.
+- **Low scores are honest.** Most companies lack company-level problem evidence (25 points) and
+  stated size. Interviews (Phase 3) and job-posting evidence are what will move them.
+- Fetch errors now include the exception type, since timeouts used to show empty messages.
+- The skill is at **method v3**; the pack schema is at **1.2**.
