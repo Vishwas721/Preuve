@@ -16,7 +16,9 @@ from app.modules.analysis.schemas import UnknownCreate
 from app.modules.competitors import service as competitors
 from app.modules.competitors.schemas import ResearchCompetitorInput
 from app.modules.ideas.models import Idea
-from app.modules.research.matching import match_any, quote_key
+from app.modules.prospects import service as prospects
+from app.modules.prospects.schemas import ContactInput, ResearchCompanyInput
+from app.modules.research.matching import match_any, normalize, quote_key
 from app.modules.research.models import (
     Evidence,
     EvidenceUnknown,
@@ -27,7 +29,7 @@ from app.modules.research.models import (
     Verification,
     WebSource,
 )
-from app.modules.research.pack import FindingStatus, ResearchPack
+from app.modules.research.pack import FindingStatus, PackCompany, ResearchPack, domain_key
 from app.modules.research.schemas import EvidenceUpdate
 from app.search.fetch import FetchedPage, FetchError
 
@@ -217,6 +219,7 @@ async def _verify(
     sources = {url: await _upsert_source(session, idea_id, url, pages[url]) for url in urls}
 
     ref_map: dict[str, uuid.UUID] = {}
+    verified_refs: set[str] = set()  # refs whose stored evidence is verified
     rejected: list[dict] = []
     duplicates: list[str] = []
     counts = {"verified": 0, "unverifiable": 0, "rejected": 0}
@@ -268,6 +271,8 @@ async def _verify(
             await session.flush()
         await _link_unknowns(session, evidence.id, item.unknown_ids)
         ref_map[item.ref] = evidence.id
+        if evidence.verification == Verification.VERIFIED:
+            verified_refs.add(item.ref)
         counts[evidence.verification.value] += 1
 
     dropped_claims: list[dict] = []
@@ -330,6 +335,8 @@ async def _verify(
         )
     merged = await competitors.upsert_from_research(session, idea_id, imp.id, competitor_inputs)
 
+    company_report = await _apply_companies(session, pack, imp, ref_map, verified_refs, pages)
+
     if pack.current_solutions:
         kept, dropped = _remap_claims(pack.current_solutions, ref_map)
         dropped_claims += [d | {"current_solutions": True} for d in dropped]
@@ -338,6 +345,7 @@ async def _verify(
     await session.flush()
     return {
         "competitors": merged | {"rejected": rejected_competitors},
+        "companies": company_report,
         "counts": counts,
         "rejected": rejected,
         "duplicates": duplicates,
@@ -351,6 +359,146 @@ async def _verify(
             "failed": sum(not isinstance(p, FetchedPage) for p in pages.values()),
         },
     }
+
+
+# ---------- companies (Phase 1D) ----------
+
+
+def _contact_inputs(
+    company: PackCompany,
+    ref_map: dict[str, uuid.UUID],
+    items: dict[str, Any],
+    verified_refs: set[str],
+    pages: dict[str, FetchedPage | str],
+) -> tuple[list[ContactInput], list[dict]]:
+    """Personal data needs the strongest bar: a verified quote that names the person, and an
+    email only if it is printed on the fetched page."""
+    kept, rejected = [], []
+    for c in company.contacts:
+        base = {"company": company.name, "name": c.name}
+        if c.evidence_ref not in verified_refs:
+            rejected.append(base | {"reason": "its evidence was not verified"})
+            continue
+        item = items[c.evidence_ref]
+        if normalize(c.name) not in normalize(item.quote):
+            rejected.append(base | {"reason": "name does not appear in the cited quote"})
+            continue
+        email = c.email
+        page = pages.get(item.url)
+        if email and not (
+            isinstance(page, FetchedPage) and email.lower() in page.full_text.lower()
+        ):
+            rejected.append(base | {"reason": "email not found on the page; dropped the email"})
+            email = None
+        kept.append(
+            ContactInput(
+                name=c.name,
+                role=c.role,
+                email=email,
+                evidence_id=ref_map[c.evidence_ref],
+                source_url=item.url,
+            )
+        )
+    return kept, rejected
+
+
+async def _apply_companies(
+    session: AsyncSession,
+    pack: ResearchPack,
+    imp: ResearchImport,
+    ref_map: dict[str, uuid.UUID],
+    verified_refs: set[str],
+    pages: dict[str, FetchedPage | str],
+) -> dict[str, Any]:
+    if not pack.companies:
+        return {
+            "created": [],
+            "updated": [],
+            "rejected": [],
+            "contacts_added": 0,
+            "contacts_rejected": [],
+        }
+    items = {e.ref: e for e in pack.evidence}
+    stored = set(ref_map)
+
+    inputs, rejected, contacts_rejected = [], [], []
+    for company in pack.companies:
+        evidence_ids = [ref_map[r] for r in company.evidence_refs if r in stored]
+        if not evidence_ids:
+            rejected.append(
+                {
+                    "ref": company.ref,
+                    "name": company.name,
+                    "reason": "none of its evidence was stored",
+                }
+            )
+            continue
+        contacts, bad = _contact_inputs(company, ref_map, items, verified_refs, pages)
+        contacts_rejected += bad
+
+        def resolve(refs: list[str]) -> list[str]:
+            return [str(ref_map[r]) for r in refs if r in stored]
+
+        a = company.assessments
+        assessments = {
+            key: {
+                "rating": x.rating,
+                "rationale": x.rationale,
+                "evidence_ids": resolve(x.evidence_refs),
+            }
+            for key, x in (
+                ("company_fit", a.company_fit),
+                ("technology_fit", a.technology_fit),
+                ("other_signals", a.other_signals),
+            )
+        }
+        size = (
+            company.size_estimate
+            if (company.size_estimate and company.size_estimate.evidence_ref in stored)
+            else None
+        )
+        geo = (
+            company.in_target_geography
+            if (company.in_target_geography and company.in_target_geography.evidence_ref in stored)
+            else None
+        )
+        inputs.append(
+            ResearchCompanyInput(
+                name=company.name,
+                website=company.website,
+                domain=domain_key(company.website),
+                icp_id=company.icp_id,
+                location=company.location,
+                industry=company.industry,
+                description=company.description,
+                size_min=size.min if size else None,
+                size_max=size.max if size else None,
+                size_signal=size.signal if size else None,
+                size_evidence_id=ref_map[size.evidence_ref] if size else None,
+                in_geo=geo.value if geo else None,
+                geo_evidence_id=ref_map[geo.evidence_ref] if geo else None,
+                technologies=company.technologies,
+                assessments=assessments,
+                evidence_ids=evidence_ids,
+                contacts=contacts,
+            )
+        )
+    merged = await prospects.upsert_from_research(session, imp.idea_id, imp.id, inputs)
+    return merged | {"rejected": rejected, "contacts_rejected": contacts_rejected}
+
+
+async def evidence_labels(
+    session: AsyncSession, evidence_ids: list[uuid.UUID]
+) -> dict[uuid.UUID, tuple[str, str]]:
+    """(verification, stance) per evidence id; used by lead scoring."""
+    if not evidence_ids:
+        return {}
+    rows = await session.execute(
+        select(Evidence.id, Evidence.verification, Evidence.stance).where(
+            Evidence.id.in_(evidence_ids)
+        )
+    )
+    return {eid: (str(v.value), str(s.value)) for eid, v, s in rows}
 
 
 # ---------- reading ----------
