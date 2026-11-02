@@ -8,6 +8,7 @@ import { HypothesisPanel } from "@/components/analysis/HypothesisPanel";
 import { IcpPanel } from "@/components/analysis/IcpPanel";
 import { isActive, RunBanner } from "@/components/analysis/RunBanner";
 import { UnknownsPanel } from "@/components/analysis/UnknownsPanel";
+import { ProspectsPanel } from "@/components/prospects/ProspectsPanel";
 import { EvidencePanel } from "@/components/research/EvidencePanel";
 import { SolutionsPanel } from "@/components/research/SolutionsPanel";
 import { btnPrimary, card } from "@/components/ui";
@@ -132,6 +133,10 @@ export default function IdeaPage() {
       />
       <EvidencePanel ideaId={id} research={research} onChange={refresh} />
       <SolutionsPanel ideaId={id} research={research} onChange={refresh} />
+      <ProspectsPanel
+        ideaId={id}
+        evidenceRefs={Object.fromEntries(research.evidence.map((e) => [e.id, e.ref]))}
+      />
       <IcpPanel
         ideaId={id}
         icps={analysis.icps}
