@@ -4,6 +4,8 @@ import uuid
 from fastapi import APIRouter, HTTPException, status
 
 from app.core.deps import SessionDep
+from app.modules.competitors import service as competitors
+from app.modules.competitors.schemas import CompetitorRead
 from app.modules.ideas.deps import OwnedIdea
 from app.modules.research import service
 from app.modules.research.models import ResearchImport, Verification
@@ -33,6 +35,10 @@ async def get_research(idea: OwnedIdea, session: SessionDep) -> IdeaResearchRead
             ResearchImportRead.model_validate(i)
             for i in await service.list_imports(session, idea.id)
         ],
+        competitors=[
+            CompetitorRead(**c) for c in await competitors.list_competitors(session, idea.id)
+        ],
+        current_solutions=await service.current_solutions(session, idea.id),
     )
 
 

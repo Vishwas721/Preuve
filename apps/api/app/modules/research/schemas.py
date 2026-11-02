@@ -4,6 +4,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict
 
+from app.modules.competitors.schemas import CompetitorRead
 from app.modules.research.models import ImportStatus, Verification
 from app.modules.research.pack import EvidenceKind, FindingStatus, Relevance, SourceType, Stance
 
@@ -18,6 +19,7 @@ class ResearchImportRead(BaseModel):
     researcher: str
     status: ImportStatus
     report: dict[str, Any]
+    solutions_summary: list[dict[str, Any]] | None = None
     error: str | None
     created_at: datetime
     started_at: datetime | None
@@ -72,3 +74,5 @@ class IdeaResearchRead(BaseModel):
     evidence: list[EvidenceRead]
     findings: list[FindingRead]
     imports: list[ResearchImportRead]
+    competitors: list[CompetitorRead]  # active only
+    current_solutions: list[dict[str, Any]]  # Claims; evidence_ids are Evidence ids
