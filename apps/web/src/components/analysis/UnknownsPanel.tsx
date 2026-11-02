@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 
 import { AssumptionBadge } from "@/components/AssumptionBadge";
+import { ClaimList } from "@/components/research/ClaimList";
 import { btnLink, btnPrimary, card, input, sectionTitle, select } from "@/components/ui";
 import {
   api,
@@ -46,23 +47,9 @@ function FindingBlock({ finding, refs }: { finding: Finding; refs: Record<string
     <div className="rounded-md bg-black/[.03] px-3 py-2 text-sm dark:bg-white/[.05]">
       <p className={`text-xs font-medium ${style}`}>{label}</p>
       {finding.summary.length > 0 && (
-        <ul className="mt-1 flex flex-col gap-1">
-          {finding.summary.map((c, i) => (
-            <li key={i}>
-              {c.statement}{" "}
-              {c.evidence_ids.map((id) => (
-                <a
-                  key={id}
-                  href={`#ev-${id}`}
-                  className="mr-1 text-xs underline underline-offset-2 opacity-60 hover:opacity-100"
-                >
-                  [{refs[id] ?? "evidence"}]
-                </a>
-              ))}
-              {c.kind !== "fact" && <span className="ml-1 text-xs opacity-50">({c.kind})</span>}
-            </li>
-          ))}
-        </ul>
+        <div className="mt-1">
+          <ClaimList claims={finding.summary} refs={refs} />
+        </div>
       )}
     </div>
   );

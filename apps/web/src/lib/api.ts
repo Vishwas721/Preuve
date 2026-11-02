@@ -217,6 +217,11 @@ export interface ImportReport {
   hypothesis_version?: number | null;
   hypothesis_skipped?: string | null;
   new_unknowns?: number;
+  competitors?: {
+    created: string[];
+    updated: string[];
+    rejected: { ref: string; name: string; reason: string }[];
+  };
 }
 
 export interface ResearchImport {
@@ -233,10 +238,38 @@ export interface ResearchImport {
   finished_at: string | null;
 }
 
+export type CompetitorKind = "direct" | "indirect" | "manual" | "service";
+
+export interface Competitor {
+  id: string;
+  name: string;
+  url: string | null;
+  kind: CompetitorKind;
+  description: string;
+  pricing_note: string | null;
+  sentiment: Claim[];
+  source: Source;
+  status: "active" | "dismissed";
+  user_edited: boolean;
+  evidence_ids: string[];
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CompetitorInput {
+  name: string;
+  kind: CompetitorKind;
+  url?: string | null;
+  description: string;
+  pricing_note?: string | null;
+}
+
 export interface IdeaResearch {
   evidence: Evidence[];
   findings: Finding[];
   imports: ResearchImport[];
+  competitors: Competitor[];
+  current_solutions: Claim[];
 }
 
 export interface Health {
@@ -317,4 +350,12 @@ export const api = {
     evidenceId: string,
     data: Partial<Pick<Evidence, "dismissed" | "kind" | "stance" | "relevance">>,
   ) => request<Evidence>(`/ideas/${ideaId}/evidence/${evidenceId}`, json("PATCH", data)),
+
+  createCompetitor: (ideaId: string, data: CompetitorInput) =>
+    request<Competitor>(`/ideas/${ideaId}/competitors`, json("POST", data)),
+  updateCompetitor: (
+    ideaId: string,
+    competitorId: string,
+    data: Partial<CompetitorInput> & { status?: "active" | "dismissed" },
+  ) => request<Competitor>(`/ideas/${ideaId}/competitors/${competitorId}`, json("PATCH", data)),
 };
