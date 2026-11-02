@@ -1,0 +1,1309 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "9f259df8-99c5-4f88-b3b1-e1d57cecbb66",
+    "researcher": "claude-code",
+    "started_at": "2026-11-02T06:40:00Z",
+    "finished_at": "2026-11-02T08:30:00Z",
+    "queries": [
+      "commercial general contractor \"employees\" about us leadership team Texas mid-size firm",
+      "commercial general contractor Ohio \"project engineer\" leadership team about us",
+      "regional commercial construction company North Carolina general contractor \"our team\" employees",
+      "commercial general contractor Colorado \"employee-owned\" about leadership",
+      "\"general contractor\" \"150 employees\" OR \"120 employees\" OR \"200 employees\" commercial construction company about us",
+      "mid-size commercial general contractor Michigan Wisconsin Minnesota employee-owned about us offices"
+    ],
+    "notes": "Method v3 step 5c (prospecting) for primary ICP 'Mid-sized Commercial General Contractors' (50-250 employees). Sources are the companies' own public pages only. About 30 more candidate GCs were dropped because Preuve could not fetch them (403, robots.txt, TLS chain errors, DNS) or their pages had no usable text. Headcount is stated by only 3 of 22 companies; the rest are 'size unknown' (0 size points). No public evidence about software stacks was found (technology fit 0). Contacts: only 3 people whose name and title appear together in a verified quote on their company's own page. No emails collected. Brinkmann's problem evidence re-cites its process document imported on 2026-11-01."
+  },
+  "evidence": [
+    {
+      "ref": "ev-40",
+      "url": "https://edificeinc.com/about/",
+      "title": "About | Edifice",
+      "source_type": "company_site",
+      "quote": "Edifice is a regional construction firm headquartered in Charlotte, North Carolina with offices in Greenville and Charleston, South Carolina.",
+      "statement": "Regional commercial builder headquartered in Charlotte, NC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Edifice"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://edificeinc.com/about/",
+      "title": "About | Edifice",
+      "source_type": "company_site",
+      "quote": "The Edifice team is comprised of 185+ full-time employees",
+      "statement": "Edifice states 185+ full-time employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Edifice"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://edificeinc.com/about/our-team/",
+      "title": "Leadership | Edifice",
+      "source_type": "company_site",
+      "quote": "Tod Creech Chief Financial Officer",
+      "statement": "Leadership page lists the CFO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Edifice"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://bartlettcocke.com/about/",
+      "title": "About | Bartlett Cocke",
+      "source_type": "company_site",
+      "quote": "From our home base in San Antonio to our regional offices in Austin and Houston, we bring deep local knowledge",
+      "statement": "San Antonio-based GC with Austin and Houston offices.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bartlett Cocke"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://bartlettcocke.com",
+      "title": "Bartlett Cocke | General Contractors in Texas",
+      "source_type": "company_site",
+      "quote": "We’re a Texas-based, employee-owned general contractor with a belief in the power of place.",
+      "statement": "Texas-based employee-owned general contractor.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bartlett Cocke"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://bryanconstruction.com",
+      "title": "Colorado Commercial General Contractor | Bryan Construction",
+      "source_type": "company_site",
+      "quote": "We have offices in Colorado Springs, Denver, Fort Collins, and Istanbul.",
+      "statement": "Commercial GC with Colorado offices (and one in Istanbul).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bryan Construction"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://elford.com/about/history/",
+      "title": "History | Elford Construction",
+      "source_type": "company_site",
+      "quote": "Now in our fifth generation of family leadership and proudly employee-owned, we continue to uphold these values in every project.",
+      "statement": "Long-established, employee-owned builder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Elford"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://elford.com/about/history/",
+      "title": "History | Elford Construction",
+      "source_type": "company_site",
+      "quote": "Elford Construction and another Columbus contractor submitted identical bids for the Dublin Bridge Project",
+      "statement": "Elford is a Columbus (Ohio) contractor.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Elford"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://joeris.com",
+      "title": "Joeris General Contractors",
+      "source_type": "company_site",
+      "quote": "Since 1967, Joeris has been building Texas with a sense of passion and purpose greater than just the physical structures we construct.",
+      "statement": "Texas general contractor since 1967.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Joeris"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://manhattanconstructiongroup.com",
+      "title": "Manhattan Construction Group",
+      "source_type": "company_site",
+      "quote": "For more than 125 years, we have grown our construction firm by delivering on our promises",
+      "statement": "Long-established construction firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Manhattan Construction Group"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://spawglass.com",
+      "title": "SpawGlass",
+      "source_type": "company_site",
+      "quote": "SpawGlass has nine offices across Texas and approximately 700 team members.",
+      "statement": "Texas builder with ~700 team members.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "SpawGlass"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://triadbuilders.com",
+      "title": "Triad Builders",
+      "source_type": "company_site",
+      "quote": "Headquartered in King, NC, Triad Builders is licensed in eight states in the Southeastern US (NC, SC, VA, TN, GA, AL, AR, MD).",
+      "statement": "NC-headquartered general contractor licensed in eight states.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Triad Builders"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://www.drymalla.com/about/our-history",
+      "title": "Our History | Drymalla Construction",
+      "source_type": "company_site",
+      "quote": "In addition to our central office in Columbus, Texas, we maintain a branch office in Houston and Kingwood",
+      "statement": "Texas GC with central and branch offices.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Drymalla"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://www.hitt.com/who-we-are",
+      "title": "Who We Are | HITT",
+      "source_type": "company_site",
+      "quote": "we’re now more than 3,300 teammates strong from coast to coast with projects in nearly every state",
+      "statement": "National builder with 3,300+ people.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "HITT"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.messer.com/about-messer/",
+      "title": "About Messer",
+      "source_type": "company_site",
+      "quote": "it operates in 10 regions throughout the Midwest and Southeast",
+      "statement": "Multi-region builder in the Midwest and Southeast.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Messer"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.ruscilli.com/about-us/",
+      "title": "About Us | Ruscilli",
+      "source_type": "company_site",
+      "quote": "Founded in 1945, Ruscilli has grown from a small trade contractor to one of the largest full-service construction firms in the Midwestern United States.",
+      "statement": "Large Midwestern construction firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ruscilli"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.shielsexton.com/about-us",
+      "title": "About Us | Shiel Sexton",
+      "source_type": "company_site",
+      "quote": "we’re a 100% employee-owned commercial construction company personally committed to making your project a success",
+      "statement": "Employee-owned commercial construction company.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Shiel Sexton"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.shielsexton.com",
+      "title": "Shiel Sexton",
+      "source_type": "company_site",
+      "quote": "With a proven track record of successful construction projects all over the United States",
+      "statement": "Works on projects across the US.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Shiel Sexton"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://skybluebuilders.com/about/",
+      "title": "About | Sky Blue Builders",
+      "source_type": "company_site",
+      "quote": "Sky Blue Builders (SBB) is a Denver-based, 100% employee-owned general contractor and construction management firm",
+      "statement": "Denver-based employee-owned GC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Sky Blue Builders"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://skybluebuilders.com/about/",
+      "title": "About | Sky Blue Builders",
+      "source_type": "company_site",
+      "quote": "Ale Spray, President",
+      "statement": "About page names the President.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Sky Blue Builders"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.vaughnconstruction.com",
+      "title": "Vaughn Construction",
+      "source_type": "company_site",
+      "quote": "Austin Bryan-College Station Dallas-Fort Worth Houston Lubbock Rio Grande Valley San Antonio Texas Medical Center",
+      "statement": "Office locations across Texas.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Vaughn Construction"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.linbeck.com",
+      "title": "Linbeck Group",
+      "source_type": "company_site",
+      "quote": "Linbeck Debuts New Houston Office Headquarters",
+      "statement": "Houston-headquartered builder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Linbeck"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.spencebrothers.com",
+      "title": "Spence Brothers",
+      "source_type": "company_site",
+      "quote": "For more than 130 years, communities across Michigan have trusted us to lead construction projects that make a lasting difference.",
+      "statement": "Michigan construction firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Spence Brothers"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://skylineconst.com/about-us/overview/",
+      "title": "Overview | Skyline Construction",
+      "source_type": "company_site",
+      "quote": "We are a 100% employee-owned general contractor specializing in commercial interior construction projects at scale.",
+      "statement": "Employee-owned interiors GC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Skyline Construction"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://skylineconst.com/about-us/overview/",
+      "title": "Overview | Skyline Construction",
+      "source_type": "company_site",
+      "quote": "DAVE GOVER Director of Operations",
+      "statement": "Team page lists a Director of Operations.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Skyline Construction"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://skylineconst.com/about-us/overview/",
+      "title": "Overview | Skyline Construction",
+      "source_type": "company_site",
+      "quote": "NATIONAL LEADERSHIP NORTHERN CALIFORNIA SOUTHERN CALIFORNIA WASHINGTON ILLINOIS",
+      "statement": "Teams in California, Washington and Illinois.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Skyline Construction"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.miller-davis.com",
+      "title": "Miller Davis Company",
+      "source_type": "company_site",
+      "quote": "With more than a century of experience, Miller Davis has earned the repeat business of clients in Michigan and beyond.",
+      "statement": "Michigan general contractor.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Miller Davis"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.rockford.com",
+      "title": "Rockford | Construction, Development & Property Management",
+      "source_type": "company_site",
+      "quote": "Rockford helped Michigan State University create a place for medical breakthroughs with the construction of this seven-story building.",
+      "statement": "Michigan builder (also a developer and property manager).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Rockford"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://bondbrothers.com/",
+      "title": "BOND",
+      "source_type": "company_site",
+      "quote": "Medford Headquarters 10 Cabot Road Suite 304 Medford, MA 02155",
+      "statement": "Massachusetts headquarters.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "BOND"
+    },
+    {
+      "ref": "ev-01",
+      "url": "https://support.procore.com/tc/brinkmann/Procore_Process_Database/Weekly_Report",
+      "title": "Weekly Report (Brinkmann process database)",
+      "source_type": "company_site",
+      "quote": "The engineer is responsible for creating, formatting, and sending weekly reports no later than end of day each Friday.",
+      "statement": "At this GC, the project engineer writes and sends the weekly owner report every Friday.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [],
+      "company_name": "Brinkmann"
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://support.procore.com/tc/brinkmann/Procore_Process_Database/Weekly_Report",
+      "title": "Weekly Report (Brinkmann process database)",
+      "source_type": "company_site",
+      "quote": "managers are responsible to review the format and content for accuracy before issued",
+      "statement": "A manager reviews every weekly report before it goes out.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Brinkmann"
+    }
+  ],
+  "unknown_findings": [],
+  "hypothesis_update": null,
+  "new_unknowns": [],
+  "competitors": [],
+  "current_solutions": [],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Edifice",
+      "website": "https://edificeinc.com",
+      "icp_id": null,
+      "location": "Charlotte, NC",
+      "industry": "Commercial general contracting",
+      "description": "Regional commercial GC in the Carolinas with a stated 185+ employees; mid-size match.",
+      "size_estimate": {
+        "min": 185,
+        "max": null,
+        "signal": "About page: 185+ full-time employees",
+        "evidence_ref": "ev-41"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-40"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-40",
+        "ev-41",
+        "ev-42"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional commercial construction firm, mid-size by stated headcount.",
+          "evidence_refs": [
+            "ev-40",
+            "ev-41"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Tod Creech",
+          "role": "Chief Financial Officer",
+          "email": null,
+          "evidence_ref": "ev-42"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "Bartlett Cocke General Contractors",
+      "website": "https://bartlettcocke.com",
+      "icp_id": null,
+      "location": "San Antonio, TX",
+      "industry": "Commercial general contracting",
+      "description": "Texas regional general contractor with three metro offices.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-43"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-43",
+        "ev-44"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional Texas general contractor.",
+          "evidence_refs": [
+            "ev-43",
+            "ev-44"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Bryan Construction",
+      "website": "https://bryanconstruction.com",
+      "icp_id": null,
+      "location": "Colorado Springs, CO",
+      "industry": "Commercial general contracting",
+      "description": "Colorado commercial general contractor, employee-owned.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-45"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-45"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Colorado commercial general contractor with three in-state offices.",
+          "evidence_refs": [
+            "ev-45"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "Elford",
+      "website": "https://elford.com",
+      "icp_id": null,
+      "location": "Columbus, OH",
+      "industry": "Commercial general contracting",
+      "description": "Columbus, Ohio commercial builder, employee-owned, fifth-generation leadership.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-47"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-46",
+        "ev-47"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Established regional commercial builder.",
+          "evidence_refs": [
+            "ev-46",
+            "ev-47"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Joeris General Contractors",
+      "website": "https://joeris.com",
+      "icp_id": null,
+      "location": "San Antonio, TX",
+      "industry": "Commercial general contracting",
+      "description": "Texas general contractor.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-48"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-48"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional Texas general contractor.",
+          "evidence_refs": [
+            "ev-48"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Manhattan Construction Group",
+      "website": "https://manhattanconstructiongroup.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Commercial general contracting",
+      "description": "Large, long-established builder with stadium and university work; likely above the ICP size band (not stated).",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [],
+      "evidence_refs": [
+        "ev-49"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Established firm, but its project portfolio suggests a large builder rather than mid-size.",
+          "evidence_refs": [
+            "ev-49"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "SpawGlass",
+      "website": "https://spawglass.com",
+      "icp_id": null,
+      "location": "Texas",
+      "industry": "Commercial general contracting",
+      "description": "Texas construction services provider, about 700 people; larger than the ICP band.",
+      "size_estimate": {
+        "min": 700,
+        "max": 700,
+        "signal": "Homepage: approximately 700 team members",
+        "evidence_ref": "ev-50"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-50"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-50"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Texas GC, but well above the 50–250 size band.",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "Triad Builders",
+      "website": "https://triadbuilders.com",
+      "icp_id": null,
+      "location": "King, NC",
+      "industry": "Commercial general contracting",
+      "description": "North Carolina general contractor working across the Southeast.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-51"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-51"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional Southeastern general contractor.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Drymalla Construction Company",
+      "website": "https://www.drymalla.com",
+      "icp_id": null,
+      "location": "Columbus, TX",
+      "industry": "Commercial general contracting",
+      "description": "Texas general contractor founded 1946.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-52"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-52"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional Texas general contractor.",
+          "evidence_refs": [
+            "ev-52"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "HITT Contracting",
+      "website": "https://www.hitt.com",
+      "icp_id": null,
+      "location": "Falls Church, VA",
+      "industry": "Commercial general contracting",
+      "description": "National commercial contractor, 3,300+ people; far above the ICP band.",
+      "size_estimate": {
+        "min": 3300,
+        "max": null,
+        "signal": "Who We Are: more than 3,300 teammates",
+        "evidence_ref": "ev-53"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-53"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-53"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 1,
+          "rationale": "National-scale contractor, not mid-size.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Messer Construction",
+      "website": "https://www.messer.com",
+      "icp_id": null,
+      "location": "Cincinnati, OH",
+      "industry": "Commercial general contracting",
+      "description": "Employee-owned builder operating in 10 regions; larger than mid-size.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-54"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-54"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Multi-region contractor, larger than the ICP target.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "Ruscilli Construction",
+      "website": "https://www.ruscilli.com",
+      "icp_id": null,
+      "location": "Columbus, OH",
+      "industry": "Commercial general contracting",
+      "description": "Employee-owned Midwestern construction firm, self-described as one of the largest.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-55"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Midwest commercial builder; possibly above the size band.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Shiel Sexton",
+      "website": "https://www.shielsexton.com",
+      "icp_id": null,
+      "location": "Indianapolis, IN",
+      "industry": "Commercial general contracting",
+      "description": "Employee-owned commercial construction company.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-56",
+        "ev-57"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Commercial construction company.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Sky Blue Builders",
+      "website": "https://skybluebuilders.com",
+      "icp_id": null,
+      "location": "Denver, CO",
+      "industry": "Commercial general contracting",
+      "description": "Denver general contractor focused on public and institutional work.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-58",
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "General contractor, mostly public-sector clients.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Ale Spray",
+          "role": "President",
+          "email": null,
+          "evidence_ref": "ev-59"
+        }
+      ]
+    },
+    {
+      "ref": "co-15",
+      "name": "Vaughn Construction",
+      "website": "https://www.vaughnconstruction.com",
+      "icp_id": null,
+      "location": "Houston, TX",
+      "industry": "Commercial general contracting",
+      "description": "Texas builder with offices across the state.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-60"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Texas contractor with many offices; size not stated.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Linbeck Group",
+      "website": "https://www.linbeck.com",
+      "icp_id": null,
+      "location": "Houston, TX",
+      "industry": "Commercial general contracting",
+      "description": "Houston-headquartered builder.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Texas builder; size and segment not stated.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "Spence Brothers",
+      "website": "https://www.spencebrothers.com",
+      "icp_id": null,
+      "location": "Saginaw, MI",
+      "industry": "Commercial general contracting",
+      "description": "Michigan commercial construction firm since 1893.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional Michigan commercial builder.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Skyline Construction",
+      "website": "https://skylineconst.com",
+      "icp_id": null,
+      "location": "San Francisco, CA",
+      "industry": "Commercial general contracting",
+      "description": "Commercial interiors general contractor (tenant improvements).",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-65"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-63",
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Commercial GC, but interiors-focused.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Dave Gover",
+          "role": "Director of Operations",
+          "email": null,
+          "evidence_ref": "ev-64"
+        }
+      ]
+    },
+    {
+      "ref": "co-19",
+      "name": "Miller Davis Company",
+      "website": "https://www.miller-davis.com",
+      "icp_id": null,
+      "location": "Kalamazoo, MI",
+      "industry": "Commercial general contracting",
+      "description": "Michigan general contractor with 100+ years of history.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional Michigan general contractor.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "Rockford Construction",
+      "website": "https://www.rockford.com",
+      "icp_id": null,
+      "location": "Grand Rapids, MI",
+      "industry": "Commercial general contracting",
+      "description": "Michigan builder that is also a developer and property manager.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Builds, but also develops and manages property: a mixed fit.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-21",
+      "name": "BOND (Bond Brothers)",
+      "website": "https://bondbrothers.com",
+      "icp_id": null,
+      "location": "Medford, MA",
+      "industry": "Commercial general contracting",
+      "description": "Massachusetts building and civil contractor.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-68"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-68"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Massachusetts contractor; segment and size not stated on fetched pages.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-22",
+      "name": "Brinkmann Constructors",
+      "website": "https://www.brinkmannconstructors.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Commercial general contracting",
+      "description": "General contractor whose own process standard documents the weekly owner-report workflow.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [],
+      "evidence_refs": [
+        "ev-01",
+        "ev-02"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "General contractor with a documented weekly owner-reporting process.",
+          "evidence_refs": [
+            "ev-01"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public evidence about buying signals.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}

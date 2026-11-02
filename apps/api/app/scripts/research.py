@@ -215,6 +215,16 @@ def cmd_import(args: argparse.Namespace) -> None:
         )
     for c in comps.get("rejected", []):
         print(f"  COMPETITOR REJECTED {c['ref']} ({c['name']}): {c['reason']}")
+    cos = r.get("companies") or {}
+    if cos.get("created") or cos.get("updated"):
+        print(
+            f"  Companies: {len(cos['created'])} new, {len(cos['updated'])} updated;"
+            f" contacts added: {cos.get('contacts_added', 0)}"
+        )
+    for c in cos.get("rejected", []):
+        print(f"  COMPANY REJECTED {c['ref']} ({c['name']}): {c['reason']}")
+    for c in cos.get("contacts_rejected", []):
+        print(f"  CONTACT REJECTED {c['name']} at {c['company']}: {c['reason']}")
 
 
 def main() -> None:
