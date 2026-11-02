@@ -135,3 +135,9 @@ def test_no_icp_still_scores() -> None:
     result = score(base(icp=None))
     assert by_key(result)["role_relevance"].points == 5
     assert by_key(result)["company_size"].points == 5
+
+
+def test_zero_rating_reads_as_a_rating_not_missing_evidence() -> None:
+    comp = by_key(score(base(other_signals=AssessmentInput(0, "No public signals.", ()))))
+    assert comp["other_signals"].points == 0
+    assert comp["other_signals"].reason == "0/5: No public signals."

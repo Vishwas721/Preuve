@@ -126,6 +126,8 @@ def _assessment(key: str, label: str, a: AssessmentInput | None) -> Component:
     cap = MAX[key]
     if a is None:
         return Component(key, label, 0, cap, "Not assessed.")
+    if a.rating == 0:
+        return Component(key, label, 0, cap, f"0/5: {a.rationale}", list(a.evidence_ids))
     if not a.evidence_ids:
         return Component(
             key, label, 0, cap, f"Rated {a.rating}/5 but no stored evidence backs it: {a.rationale}"
