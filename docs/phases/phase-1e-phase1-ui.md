@@ -42,6 +42,28 @@ No new tables. Only small read endpoints if a view needs aggregated counts (e.g.
 - [ ] Empty, loading and error states exist for every view.
 - [ ] Web lint, typecheck and build pass; key flows are checked manually in a browser.
 
+## Progress (paused 2026-11-02)
+
+**Built and pushed:**
+- `GET /portfolio` (tested).
+- shadcn/ui setup, the Dossier tokens and fonts, the top bar with the ⌘K palette, health and
+  theme.
+- The case board, intake, and the dossier frame (folder tabs, case rail, run status).
+- Overview (hypothesis, question docket, profile cards), the evidence explorer, landscape and
+  prospect explorer.
+- Old components removed. Production build, lint and typecheck all pass.
+
+**The browser check found and fixed:**
+- the command palette crashing on open (missing `<Command>` wrapper);
+- the history sheet not loading its versions.
+
+**Left to do when resuming:**
+1. Re-run the end-to-end browser check (`scratchpad/e2e/phase1e.mjs`) to the end. The steps from
+   landscape onward (add/dismiss an alternative, prospects slider and sheet, theme, mobile,
+   intake) haven't completed a run yet.
+2. Tick the acceptance criteria below with that evidence, mark the phase Done, and update
+   ROADMAP.
+
 ## Decisions (2026-11-02)
 
 - **Component library: shadcn/ui** on Radix primitives (accessible dialogs, sheets, selects,
