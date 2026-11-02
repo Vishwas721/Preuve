@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "schema_version": "1.1",
+    "method_version": "2",
+    "idea_id": "9f259df8-99c5-4f88-b3b1-e1d57cecbb66",
+    "researcher": "claude-code",
+    "started_at": "2026-11-02T05:40:00Z",
+    "finished_at": "2026-11-02T06:10:00Z",
+    "queries": [
+      "CompanyCam construction photo documentation progress reports feature",
+      "Raken daily reports app construction pricing per user month",
+      "lender construction monitoring services monthly progress report site inspection draw review firm",
+      "construction weekly progress report template excel free download",
+      "Procore complaints field teams daily log too complicated expensive superintendents"
+    ],
+    "notes": "Method v2 step 5b only (competitors and alternatives) for an idea researched on 2026-11-01. The founder listed no known competitors. Items ev-10, ev-14, ev-15, ev-17, ev-18 and ev-20 re-cite quotes imported on 2026-11-01 (Preuve deduplicates them). Review sites (G2, Capterra, TrustRadius) and Raken's own site block Preuve's crawler, so customer sentiment is thin: the only complaint about Procore's daily log comes from a competitor's blog and is flagged as such. Raken pricing comes from an undated trade-magazine article and may be out of date."
+  },
+  "evidence": [
+    {
+      "ref": "ev-10",
+      "url": "https://prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html",
+      "title": "New Research from PlanGrid and FMI (2018 survey of 599 construction leaders)",
+      "source_type": "report",
+      "published_at": "2018-08-07",
+      "quote": "less than one-fifth of companies consistently (more than 80 percent of the time) use apps aside from just email, text and phone calls to access project data and collaborate with project stakeholders",
+      "statement": "In 2018 most firms still relied mainly on email, text and phone to share project data.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://bdcnetwork.com/construction-still-lags-other-industries-use-technology",
+      "title": "Construction still lags other industries in use of technology (BD+C on JBKnowledge 2021 ConTech report)",
+      "source_type": "industry_publication",
+      "quote": "more than two-fifths use spreadsheets over software for project management",
+      "statement": "A large minority of firms still run project management in spreadsheets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://bdcnetwork.com/construction-still-lags-other-industries-use-technology",
+      "title": "Construction still lags other industries in use of technology (BD+C on JBKnowledge 2021 ConTech report)",
+      "source_type": "industry_publication",
+      "quote": "Procore for project management (46.2 percent)",
+      "statement": "Procore was the most cited project management software, used by 46.2% of respondents.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": "Procore"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.constructiondive.com/news/photo-software-creates-virtual-record-of-project-progress/525024/",
+      "title": "Photo software creates virtual record of project progress (Construction Dive)",
+      "source_type": "news",
+      "quote": "Within a day, OpenSpace artificial intelligence (AI) stitches the video footage into a 360-degree panoramic map similar to Google Street View.",
+      "statement": "AI-based progress capture from site imagery has existed since at least OpenSpace's launch.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": "OpenSpace"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.procore.com/ai/agents/daily-log",
+      "title": "AI Daily Log Agent | Procore",
+      "source_type": "company_site",
+      "quote": "Convert field photos, notes, and audio files into structured logs automatically.",
+      "statement": "The market leader markets an AI agent that turns field photos and notes into structured logs.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": "Procore"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://support.procore.com/products/online/user-guide/project-level/agent-builder/faq/what-are-the-procore-starter-agents",
+      "title": "What are the Procore Starter Agents? (Procore support)",
+      "source_type": "company_site",
+      "quote": "Extracts key progress updates from a daily log to create a concise, actionable summary for the project team or any project stakeholder",
+      "statement": "Procore also offers a starter agent that turns daily logs into stakeholder progress summaries.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": "Procore"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://companycam.com/blog/companycam-features-you-need-to-succeed",
+      "title": "CompanyCam 101: 5 Features Every Contractor Should Know",
+      "source_type": "company_site",
+      "quote": "Create reports, checklists, captions, and updates without typing a word with AI that goes with you—on site, in motion, and mid-task.",
+      "statement": "CompanyCam, a jobsite photo app, markets AI that turns site capture into reports and updates.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": "CompanyCam"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://www.constructionbusinessowner.com/technology/app-spotlight-raken",
+      "title": "App Spotlight: How Raken Simplifies Reporting on Jobsites (Construction Business Owner)",
+      "source_type": "industry_publication",
+      "quote": "Employees on the jobsite use voice-to-text technology to file reports or type the report in manually using a mobile device.",
+      "statement": "Raken is a mobile daily-reporting app with voice-to-text entry.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": "Raken"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://www.constructionbusinessowner.com/technology/app-spotlight-raken",
+      "title": "App Spotlight: How Raken Simplifies Reporting on Jobsites (Construction Business Owner)",
+      "source_type": "industry_publication",
+      "quote": "Annually, there are three different cost levels: basic ($12 per user, per month), professional ($30) and performance ($37).",
+      "statement": "Published Raken pricing (article undated): $12, $30 or $37 per user per month, billed annually.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": "Raken"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://www.constructionbusinessowner.com/technology/app-spotlight-raken",
+      "title": "App Spotlight: How Raken Simplifies Reporting on Jobsites (Construction Business Owner)",
+      "source_type": "industry_publication",
+      "quote": "A lot of companies have complex project management software, but they aren’t user friendly.",
+      "statement": "A Raken executive positions it against complex project management suites (a vendor claim).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": ["77b97701-42e0-4948-a1fd-488b906be6bc"],
+      "company_name": "Raken"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://constructable.ai/blog/daily-log-field-reporting-software",
+      "title": "Top Daily Log and Field Reporting Software in February 2026 (Constructable blog)",
+      "source_type": "company_site",
+      "quote": "Daily log workflows are often described as click-heavy and difficult to navigate, especially for superintendents and field staff",
+      "statement": "A competitor claims Procore's daily log is click-heavy for field staff; a biased source, but the only complaint found that Preuve can verify.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": ["77b97701-42e0-4948-a1fd-488b906be6bc"],
+      "company_name": "Procore"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://constructable.ai/blog/daily-log-field-reporting-software",
+      "title": "Top Daily Log and Field Reporting Software in February 2026 (Constructable blog)",
+      "source_type": "company_site",
+      "quote": "Constructable gives you daily logs and complete project management, with unlimited users, at a flat fee.",
+      "statement": "Constructable sells daily logs plus project management at a flat fee, positioned against Procore.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": "Constructable"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://safetyculture.com/library/construction/high-construction-weekly-progress-report",
+      "title": "Construction Weekly Progress Report Template (SafetyCulture library)",
+      "source_type": "directory",
+      "quote": "Use this free Construction Weekly Progress Report template to document project progress each week.",
+      "statement": "Free weekly progress report templates are a readily available manual alternative.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://www.partneresi.com/services/construction-progress-monitoring",
+      "title": "Construction Progress Monitoring (Partner Engineering and Science)",
+      "source_type": "company_site",
+      "quote": "Construction lenders often require us to be their boots on the ground and report on the progress of a project.",
+      "statement": "Lenders hire third-party monitoring firms to report on construction progress.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903", "803d7f30-d395-4e34-bd05-75b970cefb42"],
+      "company_name": "Partner Engineering and Science"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://www.partneresi.com/services/construction-progress-monitoring",
+      "title": "Construction Progress Monitoring (Partner Engineering and Science)",
+      "source_type": "company_site",
+      "quote": "Partner will conduct regular or monthly construction progress site assessments to ensure that the proposed improvements at the subject site are progressing as required in the contract/agreement.",
+      "statement": "Lender-side monitoring is typically a monthly site assessment and written report.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": ["803d7f30-d395-4e34-bd05-75b970cefb42"],
+      "company_name": "Partner Engineering and Science"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.rlb.com/americas/services/specialist-solutions/lender-services/",
+      "title": "Lender Services (RLB Americas)",
+      "source_type": "company_site",
+      "quote": "RLB supports lenders and investors by providing independent oversight of projects tied to debt and equity agreements",
+      "statement": "Large cost consultancies also sell independent project oversight to lenders.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": ["13e98d96-a8d3-4677-bf24-849ace512903"],
+      "company_name": "RLB"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "13e98d96-a8d3-4677-bf24-849ace512903",
+      "status": "answered",
+      "summary": [
+        {"statement": "Procore is the most-used project management software (46.2% in 2021) and markets AI agents that draft daily logs from photos and summarize progress for stakeholders.", "kind": "fact", "evidence_ids": ["ev-15", "ev-18", "ev-20"]},
+        {"statement": "Point tools cover parts of the workflow: CompanyCam (photos plus AI-generated reports), Raken (mobile daily reports) and OpenSpace (360° progress capture).", "kind": "fact", "evidence_ids": ["ev-23", "ev-24", "ev-17"]},
+        {"statement": "Many firms still rely on spreadsheets, free templates, and email or text.", "kind": "fact", "evidence_ids": ["ev-14", "ev-29", "ev-10"]},
+        {"statement": "Lenders separately pay third-party monitoring firms for monthly progress reports.", "kind": "fact", "evidence_ids": ["ev-30", "ev-32"]}
+      ]
+    },
+    {
+      "unknown_id": "77b97701-42e0-4948-a1fd-488b906be6bc",
+      "status": "partially_answered",
+      "summary": [
+        {"statement": "Verifiable complaints about Procore's daily log come only from competitors (click-heavy for field staff; complex suites aren't user friendly).", "kind": "inference", "evidence_ids": ["ev-27", "ev-26"]},
+        {"statement": "No independent user reviews of Procore's AI agents could be verified; review sites block Preuve's crawler. This needs interviews with Procore users.", "kind": "assumption", "evidence_ids": []}
+      ]
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Procore",
+      "url": "https://www.procore.com",
+      "kind": "indirect",
+      "description": "Market-leading construction management platform. Its built-in AI agents draft daily logs from field photos, notes and audio, and turn logs into stakeholder progress summaries.",
+      "pricing_note": null,
+      "evidence_refs": ["ev-15", "ev-18", "ev-20"],
+      "sentiment": [
+        {"statement": "A competitor claims its daily log workflows are click-heavy and hard to navigate for field staff (biased source).", "kind": "inference", "evidence_ids": ["ev-27"]}
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "CompanyCam",
+      "url": "https://companycam.com",
+      "kind": "direct",
+      "description": "Jobsite photo documentation app that markets AI-generated reports, captions and updates from site capture.",
+      "pricing_note": null,
+      "evidence_refs": ["ev-23"],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "Raken",
+      "url": "https://www.rakenapp.com",
+      "kind": "direct",
+      "description": "Mobile daily-reporting app for field teams, with voice-to-text entry, automatic weather capture and photo attachments.",
+      "pricing_note": "Published (undated article): $12, $30 or $37 per user per month, billed annually.",
+      "evidence_refs": ["ev-24", "ev-25"],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Constructable",
+      "url": "https://constructable.ai",
+      "kind": "direct",
+      "description": "Daily logs plus project management at a flat fee with unlimited users, positioned as a simpler alternative to Procore.",
+      "pricing_note": "Flat fee with unlimited users (amount not published on the cited page).",
+      "evidence_refs": ["ev-28"],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "OpenSpace",
+      "url": "https://www.openspace.ai",
+      "kind": "indirect",
+      "description": "360° camera walkthroughs stitched by AI into a navigable visual record of site progress. It covers progress capture, not written reports.",
+      "pricing_note": null,
+      "evidence_refs": ["ev-17"],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Spreadsheets and free report templates",
+      "url": null,
+      "kind": "manual",
+      "description": "Excel or Sheets and free weekly progress report templates, filled in by hand.",
+      "pricing_note": null,
+      "evidence_refs": ["ev-14", "ev-29"],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Email, text and phone",
+      "url": null,
+      "kind": "manual",
+      "description": "Project data and updates shared ad hoc by email, text and calls rather than dedicated apps.",
+      "pricing_note": null,
+      "evidence_refs": ["ev-10"],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "Lender construction monitoring firms (e.g. Partner Engineering and Science, RLB)",
+      "url": null,
+      "kind": "service",
+      "description": "Third-party firms hired by lenders to visit the site, typically monthly, and write independent progress reports. They serve the lender, not the contractor.",
+      "pricing_note": null,
+      "evidence_refs": ["ev-30", "ev-31", "ev-32"],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {"statement": "Reporting is done inside the dominant platform, Procore, which now ships AI agents for daily logs and stakeholder progress summaries.", "kind": "fact", "evidence_ids": ["ev-15", "ev-18", "ev-20"]},
+    {"statement": "Specialized apps cover parts of the workflow: photo documentation with AI reports (CompanyCam), daily reports (Raken, Constructable) and visual progress capture (OpenSpace).", "kind": "fact", "evidence_ids": ["ev-23", "ev-24", "ev-28", "ev-17"]},
+    {"statement": "Many firms still fall back on spreadsheets, free templates, and email or text.", "kind": "fact", "evidence_ids": ["ev-14", "ev-29", "ev-10"]},
+    {"statement": "For lenders, monthly progress reporting is often outsourced to third-party monitoring firms.", "kind": "fact", "evidence_ids": ["ev-30", "ev-31"]},
+    {"statement": "The space is crowded at the data-capture and daily-log level; any opening is more likely in owner- or lender-specific report assembly.", "kind": "inference", "evidence_ids": ["ev-18", "ev-23", "ev-30"]}
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": []
+}

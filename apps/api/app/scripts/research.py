@@ -207,6 +207,14 @@ def cmd_import(args: argparse.Namespace) -> None:
         print(f"  Hypothesis update skipped: {r['hypothesis_skipped']}")
     if r["new_unknowns"]:
         print(f"  New unknowns added: {r['new_unknowns']}")
+    comps = r.get("competitors") or {}
+    if comps.get("created") or comps.get("updated"):
+        print(
+            f"  Competitors: {len(comps['created'])} new, {len(comps['updated'])} updated"
+            f" ({', '.join(comps['created'] + comps['updated'])})"
+        )
+    for c in comps.get("rejected", []):
+        print(f"  COMPETITOR REJECTED {c['ref']} ({c['name']}): {c['reason']}")
 
 
 def main() -> None:
