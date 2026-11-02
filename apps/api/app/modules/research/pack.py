@@ -122,6 +122,11 @@ class NewUnknown(BaseModel):
     priority: Priority = Priority.MEDIUM
 
 
+def name_key(name: str) -> str:
+    """Normalized competitor name, used to merge the same competitor across packs."""
+    return " ".join(name.lower().split())
+
+
 class PackCompetitor(BaseModel):
     ref: str = Field(pattern=r"^[a-z0-9][a-z0-9-]{0,31}$", examples=["comp-01"])
     name: str = Field(min_length=1, max_length=200)
@@ -190,7 +195,7 @@ class ResearchPack(BaseModel):
         dupe_comps = sorted({r for r in comp_refs if comp_refs.count(r) > 1})
         if dupe_comps:
             errors.append(f"duplicate competitor refs: {dupe_comps}")
-        names = [" ".join(c.name.lower().split()) for c in self.competitors]
+        names = [name_key(c.name) for c in self.competitors]
         dupe_names = sorted({n for n in names if names.count(n) > 1})
         if dupe_names:
             errors.append(f"duplicate competitor names: {dupe_names}")

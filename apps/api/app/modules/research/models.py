@@ -54,6 +54,8 @@ class ResearchImport(UUIDPrimaryKeyMixin, TimestampMixin, Base):
     status: Mapped[ImportStatus] = mapped_column(_enum(ImportStatus), default=ImportStatus.QUEUED)
     # counts, rejected items, dropped claims, notes — see service.verify_import
     report: Mapped[dict] = mapped_column(JSON, default=dict)
+    # verified "how is it solved today" claims (Phase 1C); evidence_ids are Evidence ids
+    solutions_summary: Mapped[list[dict] | None] = mapped_column(JSON)
     error: Mapped[str | None] = mapped_column(Text)
     started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
