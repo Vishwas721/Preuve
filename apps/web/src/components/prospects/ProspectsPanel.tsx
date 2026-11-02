@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 
 import { Cite } from "@/components/research/ClaimList";
-import { btnLink, btnSecondary, card, input, sectionTitle, select } from "@/components/ui";
+import { btnLink, btnSecondary, card, sectionTitle, select } from "@/components/ui";
 import { api, type ProspectDetail, type ProspectStatus, type ProspectSummary } from "@/lib/api";
 
 const STATUS_LABELS: Record<ProspectStatus, string> = {
@@ -211,7 +211,7 @@ export function ProspectsPanel({
             min={0}
             max={100}
             placeholder="Min score"
-            className={`${input} w-28`}
+            className={`${select} w-28`}
             value={minScore}
             onChange={(e) => setMinScore(e.target.value)}
           />
