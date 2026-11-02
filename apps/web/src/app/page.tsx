@@ -24,11 +24,20 @@ export default function CaseBoard() {
   const [items, setItems] = useState<PortfolioItem[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const load = useCallback(() => {
-    setError(null);
-    api.portfolio().then(setItems, (e: Error) => setError(e.message));
-  }, []);
-  useEffect(load, [load]);
+  const load = useCallback(
+    () =>
+      api.portfolio().then(
+        (data) => {
+          setError(null);
+          setItems(data);
+        },
+        (e: Error) => setError(e.message),
+      ),
+    [],
+  );
+  useEffect(() => {
+    load();
+  }, [load]);
 
   const totals = (items ?? []).reduce(
     (acc, i) => ({
