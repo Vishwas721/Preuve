@@ -1,127 +1,128 @@
 "use client";
 
+import { ArrowRight, FilePlus2 } from "lucide-react";
+import { motion } from "motion/react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
-import { api, API_URL, type Health, type Idea, type ValidationState } from "@/lib/api";
+import { CaseFolder } from "@/components/board/CaseFolder";
+import { EmptyState, ErrorState } from "@/components/dossier/layout";
+import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
+import { api, type PortfolioItem } from "@/lib/api";
 
-const STATE_LABELS: Record<ValidationState, string> = {
-  unvalidated: "Unvalidated",
-  researching: "Researching",
-  early_signal: "Early signal",
-  problem_validated: "Problem validated",
-  solution_validation: "Solution validation",
-  commercial_validation: "Commercial validation",
-  mvp_ready: "MVP ready",
-};
+function Stat({ value, label }: { value: number | string; label: string }) {
+  return (
+    <div className="border-l rule pl-4">
+      <div className="font-display text-4xl leading-none tabular-nums sm:text-5xl">{value}</div>
+      <div className="eyebrow mt-2">{label}</div>
+    </div>
+  );
+}
 
-type Load<T> = { status: "loading" } | { status: "error"; message: string } | { status: "ok"; data: T };
+export default function CaseBoard() {
+  const [items, setItems] = useState<PortfolioItem[] | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
-function useLoad<T>(fn: () => Promise<T>): Load<T> {
-  const [state, setState] = useState<Load<T>>({ status: "loading" });
-  useEffect(() => {
-    let cancelled = false;
-    fn()
-      .then((data) => !cancelled && setState({ status: "ok", data }))
-      .catch((e: Error) => !cancelled && setState({ status: "error", message: e.message }));
-    return () => {
-      cancelled = true;
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  const load = useCallback(() => {
+    setError(null);
+    api.portfolio().then(setItems, (e: Error) => setError(e.message));
   }, []);
-  return state;
-}
+  useEffect(load, [load]);
 
-function HealthPanel() {
-  const health = useLoad<Health>(api.health);
-  return (
-    <section className="rounded-lg border border-black/10 p-5 dark:border-white/15">
-      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide opacity-70">System</h2>
-      {health.status === "loading" && <p className="text-sm opacity-70">Checking…</p>}
-      {health.status === "error" && (
-        <p className="text-sm text-red-600">
-          API unreachable at {API_URL}. Is <code>uvicorn</code> running?
-        </p>
-      )}
-      {health.status === "ok" && (
-        <ul className="grid grid-cols-2 gap-2 text-sm sm:grid-cols-5">
-          {Object.entries(health.data.checks).map(([name, ok]) => (
-            <li key={name} className="flex items-center gap-2">
-              <span
-                aria-hidden
-                className={`h-2 w-2 rounded-full ${ok ? "bg-green-500" : "bg-red-500"}`}
-              />
-              <span>{name.replace("_", " ")}</span>
-              <span className="sr-only">{ok ? "up" : "down"}</span>
-            </li>
-          ))}
-        </ul>
-      )}
-    </section>
+  const totals = (items ?? []).reduce(
+    (acc, i) => ({
+      verified: acc.verified + i.evidence.verified,
+      prospects: acc.prospects + i.prospects,
+      open: acc.open + i.unknowns_open,
+    }),
+    { verified: 0, prospects: 0, open: 0 },
   );
-}
 
-function IdeasPanel() {
-  const ideas = useLoad<Idea[]>(api.listIdeas);
   return (
-    <section className="rounded-lg border border-black/10 p-5 dark:border-white/15">
-      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide opacity-70">My ideas</h2>
-      {ideas.status === "loading" && <p className="text-sm opacity-70">Loading…</p>}
-      {ideas.status === "error" && <p className="text-sm text-red-600">{ideas.message}</p>}
-      {ideas.status === "ok" && ideas.data.length === 0 && (
-        <p className="text-sm opacity-70">
-          No ideas yet.{" "}
-          <Link href="/ideas/new" className="underline">
-            Add your first one
-          </Link>
-          .
-        </p>
-      )}
-      {ideas.status === "ok" && ideas.data.length > 0 && (
-        <table className="w-full text-left text-sm">
-          <thead className="opacity-70">
-            <tr>
-              <th className="py-2 font-medium">Idea</th>
-              <th className="py-2 font-medium">Market</th>
-              <th className="py-2 font-medium">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {ideas.data.map((idea) => (
-              <tr key={idea.id} className="border-t border-black/5 dark:border-white/10">
-                <td className="py-2">
-                  <Link href={`/ideas/${idea.id}`} className="font-medium hover:underline">
-                    {idea.title}
-                  </Link>
-                </td>
-                <td className="py-2">{idea.target_market}</td>
-                <td className="py-2">{STATE_LABELS[idea.state]}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      )}
-    </section>
-  );
-}
+    <main className="mx-auto w-full max-w-7xl px-4 pb-24 sm:px-6">
+      {/* masthead */}
+      <section className="grid gap-10 border-b rule py-12 lg:grid-cols-[1.4fr_1fr] lg:items-end lg:py-16">
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+          <p className="eyebrow mb-4">The case board</p>
+          <h1 className="font-display text-5xl leading-[0.95] tracking-tight sm:text-7xl">
+            Every idea is a case.
+            <br />
+            <span className="italic text-ink-soft">
+              Build only what the <span className="mark not-italic text-foreground">evidence</span> proves.
+            </span>
+          </h1>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <Button asChild size="lg" className="h-10 px-4">
+              <Link href="/ideas/new">
+                <FilePlus2 /> Open a new case
+              </Link>
+            </Button>
+            <span className="text-sm text-muted-foreground">
+              or press <kbd className="rounded border bg-paper px-1.5 font-mono text-xs">⌘K</kbd> to find one
+            </span>
+          </div>
+        </motion.div>
 
-export default function Dashboard() {
-  return (
-    <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 py-10">
-      <header className="flex items-end justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-semibold">Preuve</h1>
-          <p className="text-sm opacity-70">Evidence before you build.</p>
-        </div>
-        <Link
-          href="/ideas/new"
-          className="rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background"
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="grid grid-cols-2 gap-y-8 sm:grid-cols-4 lg:grid-cols-2"
+          aria-label="Totals"
         >
-          New idea
-        </Link>
-      </header>
-      <HealthPanel />
-      <IdeasPanel />
+          <Stat value={items?.length ?? "—"} label="Open cases" />
+          <Stat value={items ? totals.verified : "—"} label="Verified exhibits" />
+          <Stat value={items ? totals.prospects : "—"} label="Prospects" />
+          <Stat value={items ? totals.open : "—"} label="Open questions" />
+        </motion.div>
+      </section>
+
+      {/* folders */}
+      <section className="pt-10" aria-labelledby="cases-heading">
+        <div className="mb-6 flex items-baseline justify-between">
+          <h2 id="cases-heading" className="eyebrow">
+            Cases · most recent activity first
+          </h2>
+        </div>
+
+        {error && <ErrorState message={`Couldn't load your cases: ${error}`} onRetry={load} />}
+
+        {!error && items === null && (
+          <ul className="grid gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3" aria-busy="true">
+            {[0, 1, 2].map((i) => (
+              <li key={i} className="list-none">
+                <Skeleton className="h-6 w-40 rounded-b-none" />
+                <Skeleton className="h-72 rounded-tl-none" />
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {items && items.length === 0 && (
+          <EmptyState
+            title="No open cases."
+            action={
+              <Button asChild>
+                <Link href="/ideas/new">
+                  Open your first case <ArrowRight />
+                </Link>
+              </Button>
+            }
+          >
+            Describe an idea in your own words. Preuve turns it into testable assumptions, then
+            evidence decides.
+          </EmptyState>
+        )}
+
+        {items && items.length > 0 && (
+          <ul className="grid gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
+            {items.map((item, i) => (
+              <CaseFolder key={item.id} item={item} index={i} />
+            ))}
+          </ul>
+        )}
+      </section>
     </main>
   );
 }
