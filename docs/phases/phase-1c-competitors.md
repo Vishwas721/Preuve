@@ -1,6 +1,6 @@
 # Phase 1C — Competitors & alternatives
 
-- **Status:** Not started (draft)
+- **Status:** In progress (kickoff 2026-11-02)
 - **Goal:** Answer "how is this problem solved today?" with sourced entries only.
 - **PRD refs:** §13 Competitor & alternative analysis, §35 guardrails
 
@@ -18,40 +18,69 @@
 - **Each entry** has: name, url, kind, what it covers, pricing if publicly stated, the evidence
   ids that mention it, and how customers talk about it (praise or complaints) when the sources
   say so.
-- **"Current solutions" summary** (`analyze_competitors`, Gemini): claims that must pass
-  `verify_citations`. Without sources the summary says "No evidence found."
+- **"Current solutions" summary:** written by the researcher in the pack as claims citing
+  evidence refs, and verified like 1B findings. Claims citing rejected evidence are dropped;
+  with nothing left, the UI shows "No evidence found."
 
 ## Out of scope
 
 Pricing strategy and positioning advice. Feature-by-feature comparison matrices.
 
-## Data model (draft)
+## Kickoff plan (concrete design, ADR 0004)
+
+- **No new crawler and no LLM.** Competitors arrive in the research pack and are verified by the
+  1B pipeline. The `analyze_competitors` / `extract_fields` tasks from the draft are dropped for
+  this phase; the researcher writes the synthesis, and Preuve verifies its citations.
+- **Pack schema 1.1** (backward compatible: 1.0 packs still import):
+  - `competitors[]`, each with `ref` (`comp-01`), `name`, `url?` (null for generic alternatives
+    like spreadsheets), `kind` (`direct` / `indirect` / `manual` / `service`), `description`
+    (what it covers), `pricing_note?` (only if publicly stated, with an evidence ref),
+    `evidence_refs[]` (at least 1), and `sentiment[]` (claims about praise or complaints,
+    citing refs);
+  - `current_solutions[]`: claims summarizing how the problem is solved today.
+- **Verification rules:**
+  - a competitor is stored only if at least one cited evidence item survives (verified or
+    unverifiable); otherwise it's rejected and reported;
+  - a competitor whose surviving evidence is all unverifiable is flagged in the UI;
+  - sentiment and summary claims citing rejected refs are dropped, the same as 1B findings.
+- **Re-imports merge by normalized name per idea:** evidence links are added, and research text
+  is refreshed. If the user edited an entry, their text is kept and only evidence links are
+  added. Dismissed entries stay dismissed.
+- **The current-solutions summary** is stored per import (`research_imports.solutions_summary`);
+  the latest non-empty one is shown.
+- **The `/research-idea` skill moves to method v2,** adding a competitors and alternatives step:
+  - the founder's known competitors, direct and indirect products, manual workarounds and
+    service providers;
+  - at least one search for complaints about the leading tools.
+- **Settled open question:** founder-listed competitors are verified through the skill. The skill
+  must research each one and include it if public evidence exists; otherwise the report says no
+  evidence was found. There's no separate auto-fetch machinery.
+
+## Data model
 
 | Table | Key columns |
 |---|---|
-| `competitors` | idea_id, name, url, kind, description, pricing_note?, source (`ai` / `user`), dismissed |
+| `competitors` | idea_id, name, name_key (normalized, unique per idea), url?, kind, description, pricing_note?, sentiment (json claims), source (`research` / `user`), status (`active` / `dismissed`), user_edited, last_import_id? |
 | `competitor_evidence` | competitor_id, evidence_id |
+| `research_imports` | + `solutions_summary` (json claims, evidence ids) |
 
-## API (draft)
+## API
 
-- `POST /ideas/{id}/competitors/discover` (job) and `GET /ideas/{id}/competitors`.
-- `POST /ideas/{id}/competitors` (manual add) and `PATCH/DELETE /competitors/{id}`.
+All routes are under `/ideas/{idea_id}`:
 
-## Jobs
-
-`competitor_job(idea_id)`: search → fetch → reuse the evidence pipeline → group into competitors
-→ synthesize.
-
-## LLM tasks
-
-| Task | Provider | Notes |
-|---|---|---|
-| `extract_fields` | local | Pull the product name, kind and claims from a page. |
-| `analyze_competitors` | Gemini chain | Grouping and summary; every claim must cite evidence. |
+- `GET /competitors` (`?include_dismissed=true`), `POST /competitors` (manual add, source
+  `user`), `PATCH /competitors/{id}` (edit or dismiss; edits set `user_edited`).
+- `GET /research` also returns `competitors` and `current_solutions` (the latest summary).
 
 ## UI
 
-A "How it's solved today" section on the idea page, grouped by kind, with source links.
+A "How it's solved today" section on the idea page:
+
+- the summary first (claims with citation links);
+- then entries grouped by kind (Direct / Indirect / Manual workarounds / Services);
+- each entry shows its description, pricing note, what customers say, linked evidence, and
+  source badges ("From research" or "Added by you", plus an "only unverifiable evidence" flag);
+- add, edit and dismiss controls.
 
 ## Acceptance criteria
 
@@ -61,6 +90,9 @@ A "How it's solved today" section on the idea page, grouped by kind, with source
 - [ ] The summary contains only cited claims; empty input gives "No evidence found."
 - [ ] The user can add, edit and dismiss entries.
 
-## Open questions (settle at kickoff)
+## Decisions (2026-11-02)
 
-- Should founder-listed competitors be fetched and verified automatically?
+- Founder-listed competitors are verified via the skill (see the kickoff plan), not by separate
+  auto-fetching.
+- The synthesis is written by the researcher and verified by Preuve; there's no Gemini call in
+  this phase.
