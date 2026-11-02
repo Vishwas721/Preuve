@@ -9,6 +9,7 @@ import { IcpPanel } from "@/components/analysis/IcpPanel";
 import { isActive, RunBanner } from "@/components/analysis/RunBanner";
 import { UnknownsPanel } from "@/components/analysis/UnknownsPanel";
 import { EvidencePanel } from "@/components/research/EvidencePanel";
+import { SolutionsPanel } from "@/components/research/SolutionsPanel";
 import { btnPrimary, card } from "@/components/ui";
 import { api, type Idea, type IdeaAnalysis, type IdeaResearch } from "@/lib/api";
 
@@ -130,6 +131,7 @@ export default function IdeaPage() {
         onChange={refresh}
       />
       <EvidencePanel ideaId={id} research={research} onChange={refresh} />
+      <SolutionsPanel ideaId={id} research={research} onChange={refresh} />
       <IcpPanel
         ideaId={id}
         icps={analysis.icps}
