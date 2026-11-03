@@ -102,6 +102,7 @@ export default function EvidenceExplorer() {
                   value={f.stance}
                   onValueChange={(v) => setF({ ...f, stance: (v || "all") as Filters["stance"] })}
                   aria-label="Stance"
+                  className="max-w-full overflow-x-auto"
                 >
                   <ToggleGroupItem value="all">All {all.length}</ToggleGroupItem>
                   <ToggleGroupItem value="supports">

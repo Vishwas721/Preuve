@@ -276,7 +276,7 @@ export function DossierFrame({ children }: { children: ReactNode }) {
         <FolderTabs />
       </div>
 
-      <div className="grid gap-8 pt-8 lg:grid-cols-[minmax(0,1fr)_19rem]">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-8 pt-8 lg:grid-cols-[minmax(0,1fr)_19rem]">
         <div className="min-w-0">{children}</div>
         <CaseRail />
       </div>
