@@ -298,6 +298,40 @@ async def prospect_detail(session: AsyncSession, company: Company) -> dict[str, 
     }
 
 
+async def company_evidence_ids(session: AsyncSession, company_id: uuid.UUID) -> list[uuid.UUID]:
+    return await _evidence_ids(session, company_id)
+
+
+async def latest_score_total(session: AsyncSession, company_id: uuid.UUID) -> int | None:
+    latest = await _latest_score(session, company_id)
+    return latest.total if latest else None
+
+
+async def get_contact(
+    session: AsyncSession, idea_id: uuid.UUID, contact_id: uuid.UUID
+) -> tuple[Contact, Company] | None:
+    row = (
+        await session.execute(
+            select(Contact, Company)
+            .join(Company, Company.id == Contact.company_id)
+            .where(Contact.id == contact_id, Company.idea_id == idea_id)
+        )
+    ).first()
+    return (row[0], row[1]) if row else None
+
+
+async def list_idea_contacts(
+    session: AsyncSession, idea_id: uuid.UUID
+) -> list[tuple[Contact, Company]]:
+    rows = await session.execute(
+        select(Contact, Company)
+        .join(Company, Company.id == Contact.company_id)
+        .where(Company.idea_id == idea_id)
+        .order_by(Company.name, Contact.name)
+    )
+    return [(c, co) for c, co in rows]
+
+
 # ---------- updates ----------
 
 
@@ -315,7 +349,10 @@ async def update_prospect(session: AsyncSession, company: Company, data: Prospec
 
 
 async def delete_contact(session: AsyncSession, idea_id: uuid.UUID, contact_id: uuid.UUID) -> bool:
-    """Hard-delete a person's data (PRD §37). Phase 2 must also add a suppression entry."""
+    """Hard-delete a person's data (PRD §37): suppress their address, drop or redact messages."""
+    # Lazy import: outreach.service imports this module.
+    from app.modules.outreach import service as outreach
+
     contact = await session.scalar(
         select(Contact)
         .join(Company, Company.id == Contact.company_id)
@@ -324,6 +361,7 @@ async def delete_contact(session: AsyncSession, idea_id: uuid.UUID, contact_id: 
     if contact is None:
         return False
     company = await session.get(Company, contact.company_id)
+    await outreach.forget_contact(session, contact.id, contact.email)
     await session.execute(delete(Contact).where(Contact.id == contact_id))
     await rescore_company(session, company)
     await session.commit()
