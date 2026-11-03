@@ -14,7 +14,7 @@ Nothing from a later phase is built early. Every phase ends with a review stop.
 | 1C — Competitors & alternatives | [phase-1c-competitors.md](phases/phase-1c-competitors.md) | ✅ Done |
 | 1D — Prospects, enrichment & scoring | [phase-1d-prospects-scoring.md](phases/phase-1d-prospects-scoring.md) | ✅ Done |
 | 1E — Phase 1 UI | [phase-1e-phase1-ui.md](phases/phase-1e-phase1-ui.md) | ✅ Done |
-| 2 — Outreach | [phase-2-outreach.md](phases/phase-2-outreach.md) | ⬜ |
+| 2 — Outreach | [phase-2-outreach.md](phases/phase-2-outreach.md) | 🟨 In progress |
 | 3 — Responses & interviews | [phase-3-responses-interviews.md](phases/phase-3-responses-interviews.md) | ⬜ |
 | 4 — Validation & decision | [phase-4-validation-decision.md](phases/phase-4-validation-decision.md) | ⬜ |
 | 5 — Hardening | [phase-5-hardening.md](phases/phase-5-hardening.md) | ⬜ |
