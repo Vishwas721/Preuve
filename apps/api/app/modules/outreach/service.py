@@ -48,6 +48,8 @@ logger = logging.getLogger(__name__)
 
 MAX_EVIDENCE_IN_PROMPT = 6
 DRAFT_ATTEMPTS = 2
+# A message still `drafting` after this long is assumed lost (worker crash) and can be redrafted.
+STALE_DRAFT_AFTER = timedelta(minutes=10)
 SENT_STATES = (MessageStatus.SENT, MessageStatus.BOUNCED)
 
 
@@ -400,10 +402,19 @@ async def generate_draft(
     return message.status
 
 
+def is_stale_draft(message: Message, now: datetime | None = None) -> bool:
+    return (
+        message.status == MessageStatus.DRAFTING
+        and (now or _now()) - message.updated_at > STALE_DRAFT_AFTER
+    )
+
+
 async def start_redraft(session: AsyncSession, message: Message) -> None:
-    if message.status not in (MessageStatus.DRAFT, MessageStatus.REJECTED):
+    ok = message.status in (MessageStatus.DRAFT, MessageStatus.REJECTED) or is_stale_draft(message)
+    if not ok:
         raise OutreachError(f"Only drafts can be redrafted (this one is {message.status.value})")
     message.status = MessageStatus.DRAFTING
+    message.updated_at = _now()
     message.draft_error = None
     message.user_edited = False
     await session.commit()
@@ -743,6 +754,7 @@ async def message_detail(session: AsyncSession, message: Message) -> dict[str, A
     await session.refresh(message)  # commits expire it; updated_at is set by the database
     campaign = await session.get(OutreachCampaign, message.campaign_id)
     data = {c.key: getattr(message, c.key) for c in Message.__table__.columns}
+    data["stale"] = is_stale_draft(message)
     data["prospect"] = None
     if message.company_id:
         company = await prospects.get_company(session, campaign.idea_id, message.company_id)

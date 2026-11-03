@@ -188,6 +188,21 @@ async def test_duplicate_and_suppressed_contacts_skipped(session: AsyncSession, 
     }
 
 
+async def test_stuck_drafting_can_be_redrafted_once_stale(
+    session: AsyncSession,
+    idea: Idea,  # noqa: F811
+) -> None:
+    campaign = await setup_campaign(session, idea)
+    [message], _ = await outreach.create_drafts(session, campaign, [await contact_id(session)])
+    await session.refresh(message)
+    with pytest.raises(outreach.OutreachError):
+        await outreach.start_redraft(session, message)  # the job may still be running
+    message.updated_at = datetime.now(UTC) - timedelta(minutes=11)
+    await session.commit()
+    await outreach.start_redraft(session, message)
+    assert message.status == MessageStatus.DRAFTING
+
+
 # ---------- the approval gate ----------
 
 
@@ -532,7 +547,7 @@ async def test_outreach_api_flow(
     detail = (await client.get(f"/ideas/{idea_id}/messages/{mid}")).json()
     assert detail["status"] == "draft" and detail["prospect"]["name"] == "ABC Builders"
     assert detail["cited_evidence"][0]["url"].startswith("https://")
-    assert detail["why_selected"][0]["kind"] == "fact"
+    assert detail["why_selected"][0]["kind"] == "fact" and detail["stale"] is False
 
     r = await client.post(f"/ideas/{idea_id}/campaigns/{camp['id']}/send", json={})
     assert r.status_code == 409  # nothing approved

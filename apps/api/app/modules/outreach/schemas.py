@@ -132,6 +132,7 @@ class MessageRead(MessageSummary):
     blocked_reason: str | None
     bounced_at: datetime | None
     redacted_at: datetime | None
+    stale: bool = False  # stuck in `drafting` (lost job); can be redrafted
     prospect: MessageProspect | None = None
     cited_evidence: list[CitedEvidence] = []
 
