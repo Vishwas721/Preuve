@@ -168,7 +168,7 @@ export default function OutreachPage() {
               Each recipient gets one draft written from their company’s verified evidence.
             </EmptyState>
           ) : (
-            <div className="grid gap-5 xl:grid-cols-[17rem_minmax(0,1fr)]">
+            <div className="grid grid-cols-[minmax(0,1fr)] gap-5 xl:grid-cols-[17rem_minmax(0,1fr)]">
               <ol className="sheet divide-y divide-border self-start overflow-hidden" aria-label="Messages">
                 {messages.map((m) => (
                   <li key={m.id}>
@@ -282,7 +282,7 @@ function CampaignBar({
         <p className="eyebrow">Research purpose</p>
         <p className="mt-0.5 text-sm text-ink-soft">{campaign.purpose}</p>
       </div>
-      <dl className="flex gap-5 font-mono text-xs" aria-label="Campaign tally">
+      <dl className="flex flex-wrap gap-x-5 gap-y-3 font-mono text-xs" aria-label="Campaign tally">
         {(
           [
             ["drafts", s.draft + s.drafting],

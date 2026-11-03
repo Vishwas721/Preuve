@@ -114,7 +114,7 @@ export function MessageDesk({
     act(async () => adopt(await api.messageAction(id, m.id, a)), done);
 
   return (
-    <article className="grid gap-5 lg:grid-cols-[minmax(0,19rem)_minmax(0,1fr)]" aria-label={`Message to ${m.to_name}`}>
+    <article className="grid grid-cols-[minmax(0,1fr)] gap-5 lg:grid-cols-[minmax(0,19rem)_minmax(0,1fr)]" aria-label={`Message to ${m.to_name}`}>
       {/* ---- the prospect & the evidence ---- */}
       <aside className="space-y-5">
         <section className="sheet space-y-3 p-4">
@@ -376,7 +376,7 @@ function SentRecord({ m }: { m: OutreachMessage }) {
           ) : null,
         )}
       </dl>
-      <pre className="max-h-[28rem] overflow-auto whitespace-pre-wrap rounded-md border bg-background/60 p-4 font-display text-[16px] leading-relaxed">
+      <pre className="max-h-[28rem] overflow-auto whitespace-pre-wrap [overflow-wrap:anywhere] rounded-md border bg-background/60 p-4 font-display text-[16px] leading-relaxed">
         {m.sent_body}
       </pre>
       <p className="font-mono text-[10px] break-all text-muted-foreground">
