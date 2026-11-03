@@ -1,6 +1,6 @@
 # Phase 1E — Phase 1 UI
 
-- **Status:** In progress (kickoff 2026-11-02)
+- **Status:** Done (2026-11-03)
 - **Goal:** Make Phase 1 usable end to end in the browser: from a new idea to ranked prospects,
   with the evidence one click away.
 - **PRD refs:** §27 Portfolio, §38 Dashboard, §39 Idea detail, §40 Research explorer,
@@ -36,33 +36,31 @@ No new tables. Only small read endpoints if a view needs aggregated counts (e.g.
 
 ## Acceptance criteria
 
-- [ ] For one fresh idea, PRD §46 items 1–6 are reachable in the UI: ICP, hypotheses, evidence,
-      competitors, 20+ prospects, lead scores.
-- [ ] Every evidence item and score component links back to its source.
-- [ ] Empty, loading and error states exist for every view.
-- [ ] Web lint, typecheck and build pass; key flows are checked manually in a browser.
+- [x] For one fresh idea, PRD §46 items 1–6 are reachable in the UI: ICP, hypotheses, evidence,
+      competitors, 20+ prospects, lead scores. *(Construction case: hypothesis v2 with history,
+      ICP profiles, 61 exhibits, landscape, 22 prospects with scored breakdowns.)*
+- [x] Every evidence item and score component links back to its source. *(Exhibits show the
+      source URL and fetch date; score components cite `EX-nn` chips that deep-link to the
+      highlighted exhibit.)*
+- [x] Empty, loading and error states exist for every view. *(`EmptyState`, `ErrorState`,
+      `SheetSkeleton`; "No evidence found." on empty result lists.)*
+- [x] Web lint, typecheck and build pass; key flows are checked manually in a browser.
 
-## Progress (paused 2026-11-02)
+## Verification (2026-11-03)
 
-**Built and pushed:**
-- `GET /portfolio` (tested).
-- shadcn/ui setup, the Dossier tokens and fonts, the top bar with the ⌘K palette, health and
-  theme.
-- The case board, intake, and the dossier frame (folder tabs, case rail, run status).
-- Overview (hypothesis, question docket, profile cards), the evidence explorer, landscape and
-  prospect explorer.
-- Old components removed. Production build, lint and typecheck all pass.
+A Playwright run against the dev servers passed every step with no console errors:
+- the case board and the ⌘K palette (jump to a case);
+- the revise sheet; history shows 2 versions; the question docket has 8 entries;
+- an `EX-01` citation jumps to its highlighted exhibit; the stance filter; the exhibit sheet and
+  its dismiss confirmation;
+- adding and dismissing a landscape alternative;
+- the prospects min-score slider (30 → 3 of 22), the prospect sheet's score breakdown, and the
+  delete-contact confirmation;
+- the ink theme; no horizontal overflow at 390px wide;
+- intake creating a new case, which starts analysis (the temporary case was then deleted).
 
-**The browser check found and fixed:**
-- the command palette crashing on open (missing `<Command>` wrapper);
-- the history sheet not loading its versions.
-
-**Left to do when resuming:**
-1. Re-run the end-to-end browser check (`scratchpad/e2e/phase1e.mjs`) to the end. The steps from
-   landscape onward (add/dismiss an alternative, prospects slider and sheet, theme, mobile,
-   intake) haven't completed a run yet.
-2. Tick the acceptance criteria below with that evidence, mark the phase Done, and update
-   ROADMAP.
+Fixed along the way: the command palette crashing on open, the history sheet not loading, and
+the slider thumb lacking an accessible name.
 
 ## Decisions (2026-11-02)
 
