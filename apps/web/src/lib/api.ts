@@ -430,6 +430,8 @@ export interface OutreachMessage extends MessageSummary {
   blocked_reason: string | null;
   bounced_at: string | null;
   redacted_at: string | null;
+  /** Stuck in drafting (lost job): can be redrafted. */
+  stale: boolean;
   prospect: {
     company_id: string;
     name: string;

@@ -208,6 +208,14 @@ export function MessageDesk({
           <div className="flex flex-1 flex-col items-center justify-center gap-3 py-16 text-muted-foreground" aria-live="polite">
             <Loader2 className="size-6 animate-spin" aria-hidden />
             <p className="text-sm">Drafting from verified evidence only…</p>
+            {m.stale && (
+              <>
+                <p className="text-xs">This is taking too long; the job may have been lost.</p>
+                <Button variant="outline" size="sm" onClick={() => action("redraft", "Redrafting")} disabled={busy}>
+                  <RotateCcw /> Redraft
+                </Button>
+              </>
+            )}
           </div>
         ) : m.redacted_at ? (
           <EmptyState title="Deleted on request.">
