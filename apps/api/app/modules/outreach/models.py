@@ -77,7 +77,8 @@ class Message(UUIDPrimaryKeyMixin, TimestampMixin, Base):
     to_email_source: Mapped[EmailSource | None] = mapped_column(_enum(EmailSource))
     subject: Mapped[str] = mapped_column(Text, default="")
     body: Mapped[str] = mapped_column(Text, default="")
-    why_selected: Mapped[str] = mapped_column(Text, default="")
+    # Claim dicts (fact | inference | assumption) explaining the choice to the founder.
+    why_selected: Mapped[list[dict]] = mapped_column(JSON, default=list)
     cited_evidence_ids: Mapped[list[str]] = mapped_column(JSON, default=list)
     checks: Mapped[list[str]] = mapped_column(JSON, default=list)  # draft lint warnings
     status: Mapped[MessageStatus] = mapped_column(

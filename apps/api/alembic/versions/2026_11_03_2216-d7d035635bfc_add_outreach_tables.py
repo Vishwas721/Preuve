@@ -45,7 +45,7 @@ def upgrade() -> None:
     sa.Column('to_email_source', sa.Enum('public_page', 'user_entered', name='emailsource', native_enum=False, length=32), nullable=True),
     sa.Column('subject', sa.Text(), nullable=False),
     sa.Column('body', sa.Text(), nullable=False),
-    sa.Column('why_selected', sa.Text(), nullable=False),
+    sa.Column('why_selected', sa.JSON(), nullable=False),
     sa.Column('cited_evidence_ids', sa.JSON(), nullable=False),
     sa.Column('checks', sa.JSON(), nullable=False),
     sa.Column('status', sa.Enum('drafting', 'draft', 'approved', 'rejected', 'sent', 'bounced', 'blocked', name='messagestatus', native_enum=False, length=32), nullable=False),
