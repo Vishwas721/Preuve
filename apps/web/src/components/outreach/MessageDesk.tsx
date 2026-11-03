@@ -114,9 +114,9 @@ export function MessageDesk({
     act(async () => adopt(await api.messageAction(id, m.id, a)), done);
 
   return (
-    <article className="grid grid-cols-[minmax(0,1fr)] gap-5 lg:grid-cols-[minmax(0,19rem)_minmax(0,1fr)]" aria-label={`Message to ${m.to_name}`}>
+    <article className="grid grid-cols-[minmax(0,1fr)] gap-5 2xl:grid-cols-[minmax(0,19rem)_minmax(0,1fr)]" aria-label={`Message to ${m.to_name}`}>
       {/* ---- the prospect & the evidence ---- */}
-      <aside className="space-y-5">
+      <aside className="grid content-start gap-5 sm:grid-cols-2 2xl:grid-cols-1">
         <section className="sheet space-y-3 p-4">
           <p className="eyebrow">Recipient</p>
           <div>
@@ -157,7 +157,7 @@ export function MessageDesk({
           )}
         </section>
 
-        <section className="sheet space-y-3 p-4">
+        <section className="sheet space-y-3 p-4 sm:col-span-2 2xl:col-span-1">
           <p className="eyebrow">Cited in this message</p>
           {m.cited_evidence.length === 0 ? (
             <p className="text-sm text-muted-foreground">No evidence found.</p>
