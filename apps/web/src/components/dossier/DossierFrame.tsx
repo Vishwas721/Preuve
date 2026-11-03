@@ -84,6 +84,7 @@ function FolderTabs() {
     { href: `${base}/evidence`, label: "Evidence", count: research?.evidence.length ?? null, countLabel: "exhibits" },
     { href: `${base}/landscape`, label: "Landscape", count: research?.competitors.length ?? null, countLabel: "alternatives" },
     { href: `${base}/prospects`, label: "Prospects", count: prospects?.length ?? null, countLabel: "companies" },
+    { href: `${base}/outreach`, label: "Outreach", count: null, countLabel: "" },
   ];
   return (
     <nav aria-label="Case sections" className="-mb-px flex gap-1 overflow-x-auto pt-2">
