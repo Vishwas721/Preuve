@@ -1,6 +1,6 @@
 # Phase 2 — Outreach
 
-- **Status:** In progress (kickoff 2026-11-03)
+- **Status:** Done (2026-11-03)
 - **Goal:** Send a small number of honest, research-oriented messages to well-chosen prospects,
   with a human approving every one.
 - **PRD refs:** §17 Outreach generation, §18 Human approval gate, §19 Outreach experiment,
@@ -141,14 +141,38 @@ New dossier folder tab **Outreach** (`/ideas/[id]/outreach`), in the Dossier des
 
 ## Acceptance criteria
 
-- [ ] An unapproved message cannot be sent (tested at the service and job level).
-- [ ] Suppressed addresses are never contacted; unsubscribing works end to end.
-- [ ] Send limits and duplicate prevention are enforced (tested).
-- [ ] Every sent message is stored with its exact content and cited evidence.
-- [ ] Deleting a contact suppresses their address and redacts their messages (tested).
-- [ ] Draft citations are verified; empty drafts never get filler text (tested).
-- [ ] Web lint, typecheck and build pass; the outreach flow is checked in a real browser
+- [x] An unapproved message cannot be sent (tested at the service and job level). *(Drafts,
+      rejected and edited-after-approval messages are never sent; content changed behind the gate
+      fails the `approved_hash` check and returns to draft.)*
+- [x] Suppressed addresses are never contacted; unsubscribing works end to end. *(Tested, and
+      live: Mailpit link → confirm page → POST → suppression list; GET alone changes nothing.)*
+- [x] Send limits and duplicate prevention are enforced (tested). *(Campaign and global daily
+      limits defer; 30-day cooldown across campaigns blocks; one message per contact per campaign;
+      a sent message is never resent.)*
+- [x] Every sent message is stored with its exact content and cited evidence. *(`sent_body`,
+      `sent_headers`, `content_hash`, `cited_evidence_ids`; live body matched Mailpit's copy.)*
+- [x] Deleting a contact suppresses their address and redacts their messages (tested).
+- [x] Draft citations are verified; empty drafts never get filler text (tested).
+- [x] Web lint, typecheck and build pass; the outreach flow is checked in a real browser
       (draft → edit → approve → send to Mailpit → unsubscribe).
+
+## Verification (2026-11-03)
+
+- API: ruff clean; 194 tests pass (27 outreach, 7 email), with `FakeProvider` and
+  `FakeEmailProvider` only.
+- Web: lint, typecheck and production build pass.
+- Live run (Playwright, real Chrome, real `qwen2.5:7b`, Mailpit) on the construction case:
+  new campaign → add recipient → AI draft in ~26 s (one assumption-labelled "why selected"
+  claim; checks flagged a two-question draft on an earlier run) → approving without an address is
+  refused → enter a test address → **Approve & send** → stamp *Sent*, headers + sha256 shown →
+  Mailpit received it with `List-Unsubscribe` and `List-Unsubscribe-Post` → the link opens the
+  confirm page → Unsubscribe → the address shows as *Unsubscribed* in Do not contact. Ink theme
+  checked; no horizontal overflow at 390 px on any dossier tab. The test campaign, suppression
+  and Mailpit copy were deleted afterwards.
+- Fixed along the way: Python RFC 2047-encoded the long `List-Unsubscribe` header (clients
+  couldn't read the link); a message stuck in `drafting` after a lost job can now be redrafted
+  after 10 minutes; the dossier frame's grid let wide content stretch the page on mobile (this
+  also fixed a pre-existing overflow on the Evidence tab).
 
 ## Decisions (2026-11-03)
 
@@ -165,3 +189,12 @@ New dossier folder tab **Outreach** (`/ideas/[id]/outreach`), in the Dossier des
 ## Notes
 
 - From 1D: contact deletion must suppress the address (covered above).
+- For Phase 3: replies ("stop" included) are added to suppressions by hand until reply
+  ingestion exists; asynchronous bounces likewise (`Record a bounce`). The `replied` tally
+  starts there.
+- The unsubscribe link only works for real recipients once the API is public (Phase 5); set
+  `PUBLIC_API_URL` then.
+- Local 7B drafts are short and sometimes cite no evidence; that's honest (no filler), and the
+  human edits before approving. Gemini can be routed in with `LLM_ROUTE_OVERRIDES`.
+- Dev gotcha: an old arq worker left running from before this phase consumed the new jobs as
+  unknown functions. Restart the worker after pulling.
