@@ -353,6 +353,128 @@ export interface Health {
   checks: Record<string, boolean>;
 }
 
+// ---------- outreach (Phase 2) ----------
+
+export type CampaignStatus = "active" | "paused";
+export type MessageStatus = "drafting" | "draft" | "approved" | "rejected" | "sent" | "bounced" | "blocked";
+export type SuppressionReason = "unsubscribed" | "bounced" | "manual" | "deletion_request";
+
+export interface CampaignStats {
+  drafting: number;
+  draft: number;
+  approved: number;
+  rejected: number;
+  sent: number;
+  bounced: number;
+  blocked: number;
+  sent_today: number;
+}
+
+export interface Campaign {
+  id: string;
+  idea_id: string;
+  icp_id: string | null;
+  name: string;
+  purpose: string;
+  daily_limit: number;
+  status: CampaignStatus;
+  created_at: string;
+  stats: CampaignStats;
+}
+
+export interface CampaignInput {
+  name: string;
+  purpose: string;
+  icp_id?: string | null;
+  daily_limit?: number;
+}
+
+export interface MessageSummary {
+  id: string;
+  campaign_id: string;
+  contact_id: string | null;
+  company_id: string | null;
+  to_name: string;
+  to_email: string | null;
+  subject: string;
+  status: MessageStatus;
+  checks: string[];
+  approved_at: string | null;
+  sent_at: string | null;
+  updated_at: string;
+}
+
+export interface CitedEvidence {
+  id: string;
+  quote: string;
+  statement: string;
+  url: string;
+  fetched_at: string;
+  verification: "verified" | "unverifiable";
+  stance: string;
+}
+
+export interface OutreachMessage extends MessageSummary {
+  to_email_source: "public_page" | "user_entered" | null;
+  body: string;
+  why_selected: Claim[];
+  cited_evidence_ids: string[];
+  draft_error: string | null;
+  user_edited: boolean;
+  rejected_at: string | null;
+  sent_body: string | null;
+  sent_headers: Record<string, string> | null;
+  content_hash: string | null;
+  provider_message_id: string | null;
+  send_error: string | null;
+  blocked_reason: string | null;
+  bounced_at: string | null;
+  redacted_at: string | null;
+  prospect: {
+    company_id: string;
+    name: string;
+    domain: string;
+    score: number | null;
+    contact_role: string | null;
+    contact_source_url: string | null;
+  } | null;
+  cited_evidence: CitedEvidence[];
+}
+
+export interface Recipient {
+  contact_id: string;
+  name: string;
+  role: string;
+  email: string | null;
+  company_id: string;
+  company_name: string;
+  score: number | null;
+  prospect_status: ProspectStatus;
+  suppressed: boolean;
+  campaign_ids: string[];
+}
+
+export interface Suppression {
+  id: string;
+  email: string;
+  reason: SuppressionReason;
+  message_id: string | null;
+  note: string | null;
+  created_at: string;
+}
+
+export interface OutreachSettings {
+  sending_enabled: boolean;
+  provider: string;
+  sender_name: string;
+  sender_address: string;
+  sender_ready: boolean;
+  daily_limit: number;
+  cooldown_days: number;
+  sent_today: number;
+  postal_address: string;
+}
+
 // ---------- transport ----------
 
 export class ApiError extends Error {
@@ -455,4 +577,43 @@ export const api = {
     request<{ rescored: number }>(`/ideas/${ideaId}/prospects/rescore`, { method: "POST" }),
   deleteContact: (ideaId: string, contactId: string) =>
     request<void>(`/ideas/${ideaId}/contacts/${contactId}`, { method: "DELETE" }),
+  outreachSettings: () => request<OutreachSettings>("/outreach/settings"),
+  listCampaigns: (ideaId: string) => request<Campaign[]>(`/ideas/${ideaId}/campaigns`),
+  createCampaign: (ideaId: string, data: CampaignInput) =>
+    request<Campaign>(`/ideas/${ideaId}/campaigns`, json("POST", data)),
+  updateCampaign: (
+    ideaId: string,
+    campaignId: string,
+    data: Partial<Pick<Campaign, "name" | "purpose" | "daily_limit" | "status">>,
+  ) => request<Campaign>(`/ideas/${ideaId}/campaigns/${campaignId}`, json("PATCH", data)),
+  listRecipients: (ideaId: string) => request<Recipient[]>(`/ideas/${ideaId}/outreach/recipients`),
+  createDrafts: (ideaId: string, campaignId: string, contactIds: string[]) =>
+    request<{ created: string[]; skipped: { contact_id: string; reason: string }[] }>(
+      `/ideas/${ideaId}/campaigns/${campaignId}/drafts`,
+      json("POST", { contact_ids: contactIds }),
+    ),
+  listMessages: (ideaId: string, campaignId: string) =>
+    request<MessageSummary[]>(`/ideas/${ideaId}/campaigns/${campaignId}/messages`),
+  getMessage: (ideaId: string, messageId: string) =>
+    request<OutreachMessage>(`/ideas/${ideaId}/messages/${messageId}`),
+  updateMessage: (
+    ideaId: string,
+    messageId: string,
+    data: { to_email?: string | null; subject?: string; body?: string },
+  ) => request<OutreachMessage>(`/ideas/${ideaId}/messages/${messageId}`, json("PATCH", data)),
+  messageAction: (
+    ideaId: string,
+    messageId: string,
+    action: "approve" | "reject" | "reopen" | "bounce" | "redraft",
+  ) => request<OutreachMessage>(`/ideas/${ideaId}/messages/${messageId}/${action}`, { method: "POST" }),
+  sendCampaign: (ideaId: string, campaignId: string, messageIds?: string[]) =>
+    request<{ queued: number }>(
+      `/ideas/${ideaId}/campaigns/${campaignId}/send`,
+      json("POST", { message_ids: messageIds ?? null }),
+    ),
+  listSuppressions: () => request<Suppression[]>("/suppressions"),
+  addSuppression: (email: string, note?: string) =>
+    request<Suppression>("/suppressions", json("POST", { email, note: note || null })),
+  deleteSuppression: (suppressionId: string) =>
+    request<void>(`/suppressions/${suppressionId}`, { method: "DELETE" }),
 };
