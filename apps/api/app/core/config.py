@@ -44,6 +44,22 @@ class Settings(BaseSettings):
     # Let Gemini-routed tasks fall back to the local model when Gemini is unavailable.
     llm_allow_downgrade: bool = True
 
+    # Outreach email (Phase 2). Empty smtp_host disables sending.
+    smtp_host: str = ""
+    smtp_port: int = 587
+    smtp_username: str = ""
+    smtp_password: str = ""
+    smtp_starttls: bool = False
+    smtp_ssl: bool = False
+    smtp_timeout_s: float = 30.0
+    email_from_name: str = ""
+    email_from_address: str = ""
+    email_postal_address: str = ""
+    outreach_secret: str = "dev-outreach-secret-change-me"
+    public_api_url: str = "http://localhost:8000"
+    outreach_daily_limit: int = 20  # across all campaigns
+    outreach_cooldown_days: int = 30  # min days between two emails to one address
+
     # Single-user mode until Phase 5 auth: this user is created on first request.
     dev_user_email: str = "founder@preuve.local"
     dev_user_name: str = "Founder"
