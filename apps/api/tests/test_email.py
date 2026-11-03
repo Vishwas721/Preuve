@@ -67,6 +67,14 @@ def test_build_message_headers() -> None:
     assert msg.get_content() == EMAIL.body
 
 
+def test_long_unsubscribe_header_is_not_encoded() -> None:
+    url = "http://localhost:8000/unsubscribe/" + "x" * 22 + "." + "y" * 22
+    email = OutgoingEmail(**{**EMAIL.__dict__, "headers": {"List-Unsubscribe": f"<{url}>"}})
+    raw = build_message(email).as_string()
+    assert f"List-Unsubscribe: <{url}>" in raw
+    assert "=?utf-8?" not in raw
+
+
 async def test_smtp_sends_with_starttls_and_login(fake_smtp: type[_FakeSMTP]) -> None:
     provider = SmtpProvider("smtp.test", 587, username="u", password="p", starttls=True)
     result = await provider.send(EMAIL)

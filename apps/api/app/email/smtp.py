@@ -3,6 +3,7 @@ import smtplib
 from datetime import UTC, datetime
 from email.headerregistry import Address
 from email.message import EmailMessage
+from email.policy import default as default_policy
 from email.utils import format_datetime
 
 from app.email.base import (
@@ -14,9 +15,14 @@ from app.email.base import (
     SendResult,
 )
 
+# Long URL headers (List-Unsubscribe) must stay plain ASCII: with the default 78-column limit
+# Python RFC 2047-encodes them, and mail clients can no longer read the link. 998 is RFC 5322's
+# hard limit.
+POLICY = default_policy.clone(max_line_length=998)
+
 
 def build_message(email: OutgoingEmail) -> EmailMessage:
-    msg = EmailMessage()
+    msg = EmailMessage(policy=POLICY)
     msg["From"] = Address(email.from_name, addr_spec=email.from_address)
     msg["To"] = Address(email.to_name, addr_spec=email.to_address)
     msg["Subject"] = email.subject
