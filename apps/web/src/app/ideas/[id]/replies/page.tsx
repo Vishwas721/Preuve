@@ -169,10 +169,10 @@ function MailboxStrip({ inbox }: { inbox: InboxStatus | null }) {
         !inbox.enabled && "border-dashed",
       )}
     >
-      <span className="inline-flex items-center gap-2">
-        <Inbox className="size-4 text-muted-foreground" aria-hidden />
+      <span className="inline-flex min-w-0 items-center gap-2">
+        <Inbox className="size-4 shrink-0 text-muted-foreground" aria-hidden />
         {inbox.enabled ? (
-          <span className="font-mono text-xs">{inbox.mailbox}</span>
+          <span className="min-w-0 font-mono text-xs [overflow-wrap:anywhere]">{inbox.mailbox}</span>
         ) : (
           <span className="text-muted-foreground">Mailbox polling is off (set IMAP_HOST in .env).</span>
         )}
