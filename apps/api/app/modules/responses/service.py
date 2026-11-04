@@ -189,9 +189,12 @@ _FREE_TEXT = ("pain", "frequency", "current_solution", "time_or_cost")
 def recover_quotes(c: prompts.ResponseClassification, reply: str) -> None:
     """Fill an empty quote from a value that appears verbatim in the reply (local models often
     put the customer's words in `value`). Still verified by the matcher before it's stored."""
-    for field in _FREE_TEXT:
+    for field, _ in _SIGNALS:
         item = getattr(c, field)
-        item.quote = firstparty.recover_quote(item.value, item.quote, reply)
+        if field in _FREE_TEXT:
+            item.quote = firstparty.recover_quote(item.value, item.quote, reply)
+        else:  # labels ("yes", "high") are never the customer's words
+            item.quote = firstparty.clean_quote(item.quote)
 
 
 def signals(c: prompts.ResponseClassification, who: str) -> list[firstparty.Signal]:

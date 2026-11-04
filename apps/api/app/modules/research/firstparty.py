@@ -36,12 +36,21 @@ class Signal:
     relevance: Relevance = Relevance.HIGH
 
 
+_WRAPPERS = "\"'“”‘’«»"
+
+
+def clean_quote(quote: str) -> str:
+    """Drop the quotation marks a model wraps around a quote ('like this'); the words inside
+    are what must appear verbatim."""
+    return quote.strip().strip(_WRAPPERS).strip()
+
+
 def recover_quote(value: str, quote: str, text: str) -> str:
-    """The model's quote; or, when it left the quote empty but its *value* is itself a verbatim
-    span of the text (e.g. "every week"), that value. Anything else stays unquoted."""
-    if quote.strip():
-        return quote.strip()
-    v = value.strip().strip("\"'“”")
+    """The model's quote (unwrapped); or, when it left the quote empty but its *value* is itself
+    a verbatim span of the text (e.g. "every week"), that value. Anything else stays unquoted."""
+    if clean_quote(quote):
+        return clean_quote(quote)
+    v = clean_quote(value)
     return v if v and match_quote(v, text).found else ""
 
 

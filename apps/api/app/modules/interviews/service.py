@@ -336,6 +336,9 @@ async def extract(
                 )
             )
     by_ref = {i.ref: i for i in items}
+    for a in out.answered_unknowns:
+        a.quote = firstparty.clean_quote(a.quote)
+    out.willingness_to_pay.quote = firstparty.clean_quote(out.willingness_to_pay.quote)
     answers = [
         a
         for a in out.answered_unknowns

@@ -398,3 +398,24 @@ async def test_non_answers_are_skipped_not_dropped(session: AsyncSession, idea: 
     await session.refresh(row)
     assert [a["unknown_id"] for a in row.extraction["answered_unknowns"]] == [str(u1)]
     assert row.dropped == []
+
+
+async def test_wrapped_quotes_are_unwrapped(session: AsyncSession, idea: Idea) -> None:
+    """Live qwen2.5 output: quotes wrapped in single quotes still verify against the notes."""
+    row = await make_interview(session, idea)
+    await interviews.add_note(session, row, NoteCreate(text=NOTES))
+    out = extraction_output(
+        objections={"value": "", "quote": "'the field team won't adopt another app'"},
+        workflow={"value": "", "quote": "“Photos come in over WhatsApp”"},
+        cost={"value": "", "quote": ""},
+        answered_unknowns=[],
+    )
+    llm, _, _ = llm_with(out)
+    await interviews.extract(session, llm, row.id)
+    await session.refresh(row)
+    quotes = set(
+        await session.scalars(select(Evidence.quote).where(Evidence.interview_id == row.id))
+    )
+    assert {"the field team won't adopt another app", "Photos come in over WhatsApp"} <= quotes
+    assert row.dropped == []
+    assert row.extraction["objections"]["quote"] == "the field team won't adopt another app"
