@@ -20,6 +20,7 @@ export function EvidenceBalance({
   neutral,
   size = "md",
   legend = true,
+  labels,
   className,
 }: {
   supports: number;
@@ -27,15 +28,20 @@ export function EvidenceBalance({
   neutral: number;
   size?: "sm" | "md" | "lg";
   legend?: boolean;
+  /** Override the segment names, e.g. sentiment: negative / neutral / positive. */
+  labels?: { supports: string; contradicts: string; neutral: string };
   className?: string;
 }) {
   const counts = { supports, contradicts, neutral };
+  const name = (key: keyof typeof counts, fallback: string) => labels?.[key] ?? fallback;
   const total = supports + contradicts + neutral;
   const height = size === "sm" ? "h-1.5" : size === "lg" ? "h-3.5" : "h-2.5";
   const summary =
     total === 0
       ? "No evidence yet."
-      : `${supports} supporting, ${contradicts} contradicting, ${neutral} context out of ${total} evidence items.`;
+      : labels
+        ? `${supports} ${labels.supports}, ${contradicts} ${labels.contradicts}, ${neutral} ${labels.neutral} out of ${total}.`
+        : `${supports} supporting, ${contradicts} contradicting, ${neutral} context out of ${total} evidence items.`;
 
   return (
     <figure className={cn("w-full", className)}>
@@ -56,7 +62,7 @@ export function EvidenceBalance({
                   />
                 </TooltipTrigger>
                 <TooltipContent>
-                  <span className="font-mono">{n}</span> {s.label.toLowerCase()} ·{" "}
+                  <span className="font-mono">{n}</span> {name(s.key, s.label).toLowerCase()} ·{" "}
                   {Math.round((n / total) * 100)}%
                 </TooltipContent>
               </Tooltip>
@@ -69,7 +75,7 @@ export function EvidenceBalance({
           {SEGMENTS.map((s) => (
             <span key={s.key} className="inline-flex items-center gap-1.5">
               <span className={cn("size-2 rounded-[2px]", s.color)} />
-              {s.label}
+              {name(s.key, s.label)}
               <span className="font-mono text-foreground">{counts[s.key]}</span>
             </span>
           ))}
