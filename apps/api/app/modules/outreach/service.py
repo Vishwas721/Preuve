@@ -550,6 +550,19 @@ async def sent_count(session: AsyncSession, idea_id: uuid.UUID) -> int:
     )
 
 
+async def sent_with_campaigns(
+    session: AsyncSession, idea_id: uuid.UUID
+) -> list[tuple[Message, OutreachCampaign]]:
+    """Every sent (or later bounced) message of an idea, with its campaign."""
+    rows = await session.execute(
+        select(Message, OutreachCampaign)
+        .join(OutreachCampaign, OutreachCampaign.id == Message.campaign_id)
+        .where(OutreachCampaign.idea_id == idea_id, Message.status.in_(SENT_STATES))
+        .order_by(Message.sent_at)
+    )
+    return [(m, c) for m, c in rows]
+
+
 async def first_sent_at(session: AsyncSession) -> datetime | None:
     return await session.scalar(select(func.min(Message.sent_at)))
 

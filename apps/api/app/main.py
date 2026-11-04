@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from app.modules.analysis.router import router as analysis_router
 from app.modules.competitors.router import router as competitors_router
+from app.modules.experiments.router import router as experiments_router
 from app.modules.ideas.router import router as ideas_router
 from app.modules.interviews.router import router as interviews_router
 from app.modules.meta.router import router as meta_router
@@ -57,6 +58,7 @@ def create_app() -> FastAPI:
     app.include_router(interviews_router)
     app.include_router(wtp_router)
     app.include_router(validation_router)
+    app.include_router(experiments_router)
     return app
 
 

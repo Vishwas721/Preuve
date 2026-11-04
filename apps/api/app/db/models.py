@@ -3,6 +3,7 @@
 from app.db.base import Base
 from app.modules.analysis.models import ICP, AnalysisRun, Hypothesis, Unknown
 from app.modules.competitors.models import Competitor, CompetitorEvidence
+from app.modules.experiments.models import Experiment
 from app.modules.ideas.models import Idea
 from app.modules.interviews.models import Interview, InterviewNote
 from app.modules.outreach.models import Message, OutreachCampaign, Suppression
@@ -30,6 +31,7 @@ __all__ = [
     "CompetitorEvidence",
     "Evidence",
     "EvidenceUnknown",
+    "Experiment",
     "Hypothesis",
     "Idea",
     "Interview",
