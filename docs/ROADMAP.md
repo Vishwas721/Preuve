@@ -20,7 +20,7 @@ Nothing from a later phase is built early. Every phase ends with a review stop.
 | 5 — Hardening (overview) | [phase-5-hardening.md](phases/phase-5-hardening.md) | 🟡 In progress |
 | 5A — Auth & workspaces | [phase-5a-auth-workspaces.md](phases/phase-5a-auth-workspaces.md) | ✅ Done |
 | 5B — Privacy | [phase-5b-privacy.md](phases/phase-5b-privacy.md) | ✅ Done |
-| 5C — Security | [phase-5c-security.md](phases/phase-5c-security.md) | ⬜ |
+| 5C — Security | [phase-5c-security.md](phases/phase-5c-security.md) | 🟡 In progress |
 | 5D — Ops & deploy | [phase-5d-ops-deploy.md](phases/phase-5d-ops-deploy.md) | ⬜ |
 
 Phases 1A–1E together form the PRD's "MVP Phase 1" (§45). Phases 2, 3 and 4 correspond to the
