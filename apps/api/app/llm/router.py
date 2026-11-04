@@ -92,10 +92,12 @@ class LLMRouter:
     async def _run(
         self, task: TaskType, call: Callable[[LLMProvider], Awaitable[R]], *, private: bool = False
     ) -> R:
-        primary = self.routes[task]
+        chain = self.chain(task, private=private)
+        # The provider actually tried first (a private Gemini task starts, and stays, on local).
+        primary = chain[0] if chain else self.routes[task]
         last_error: Exception | None = None
 
-        for name in self.chain(task, private=private):
+        for name in chain:
             if name != primary and primary == ProviderName.GEMINI:
                 if not isinstance(last_error, LLMUnavailableError):
                     break
