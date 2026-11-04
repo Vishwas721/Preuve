@@ -1,6 +1,8 @@
 // Typed client for the Preuve API. All API calls from the web app go through here.
 
-export const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
+// Same-origin: Next proxies /api/* to the API (next.config.ts), so the session cookie is
+// first-party (Phase 5A).
+export const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "/api";
 
 // ---------- ideas ----------
 
@@ -840,6 +842,56 @@ export interface ValidationReport {
   recommendation: Recommendation | null;
 }
 
+// ---------- auth & workspaces (Phase 5A) ----------
+
+export type Role = "owner" | "member";
+
+export interface AuthStatus {
+  needs_setup: boolean;
+  signup_open: boolean;
+  signed_in: boolean;
+}
+
+export interface Me {
+  user: { id: string; email: string; name: string };
+  workspaces: { id: string; name: string; role: Role }[];
+  active_workspace_id: string | null;
+  via: "session" | "token";
+}
+
+export interface Member {
+  user_id: string;
+  name: string;
+  email: string;
+  role: Role;
+  joined_at: string;
+}
+
+export interface Invitation {
+  id: string;
+  email: string;
+  role: Role;
+  expires_at: string;
+  created_at: string;
+}
+
+export interface InvitationPublic {
+  workspace_name: string;
+  email: string;
+  role: Role;
+  expires_at: string;
+  account_exists: boolean;
+}
+
+export interface ApiTokenRow {
+  id: string;
+  name: string;
+  token_prefix: string;
+  workspace_id: string;
+  last_used_at: string | null;
+  created_at: string;
+}
+
 // ---------- transport ----------
 
 export class ApiError extends Error {
@@ -851,11 +903,19 @@ export class ApiError extends Error {
   }
 }
 
+// Called when the API says the session is missing or expired (set by the session provider).
+let onUnauthorized: (() => void) | null = null;
+export function setUnauthorizedHandler(fn: (() => void) | null) {
+  onUnauthorized = fn;
+}
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${API_URL}${path}`, {
     ...init,
+    credentials: "same-origin",
     headers: { "Content-Type": "application/json", ...init?.headers },
   });
+  if (res.status === 401 && !path.startsWith("/auth/") && onUnauthorized) onUnauthorized();
   if (!res.ok) {
     let detail = `${init?.method ?? "GET"} ${path} failed: ${res.status}`;
     try {
@@ -875,6 +935,43 @@ const json = (method: string, body: unknown): RequestInit => ({
 });
 
 export const api = {
+  authStatus: () => request<AuthStatus>("/auth/status"),
+  me: () => request<Me>("/auth/me"),
+  setup: (data: { email: string; name: string; password: string }) =>
+    request<Me>("/auth/setup", json("POST", data)),
+  login: (data: { email: string; password: string }) => request<Me>("/auth/login", json("POST", data)),
+  logout: () => request<void>("/auth/logout", { method: "POST" }),
+  switchWorkspace: (workspaceId: string) =>
+    request<Me>("/auth/workspace", json("POST", { workspace_id: workspaceId })),
+  changePassword: (current: string, next: string) =>
+    request<void>("/auth/password", json("POST", { current, new: next })),
+  listTokens: () => request<ApiTokenRow[]>("/auth/tokens"),
+  createToken: (name: string) =>
+    request<ApiTokenRow & { token: string }>("/auth/tokens", json("POST", { name })),
+  revokeToken: (tokenId: string) => request<void>(`/auth/tokens/${tokenId}`, { method: "DELETE" }),
+
+  createWorkspace: (name: string) =>
+    request<{ id: string; name: string }>("/workspaces", json("POST", { name })),
+  renameWorkspace: (workspaceId: string, name: string) =>
+    request<{ id: string; name: string }>(`/workspaces/${workspaceId}`, json("PATCH", { name })),
+  listMembers: (workspaceId: string) => request<Member[]>(`/workspaces/${workspaceId}/members`),
+  setMemberRole: (workspaceId: string, userId: string, role: Role) =>
+    request<void>(`/workspaces/${workspaceId}/members/${userId}`, json("PATCH", { role })),
+  removeMember: (workspaceId: string, userId: string) =>
+    request<void>(`/workspaces/${workspaceId}/members/${userId}`, { method: "DELETE" }),
+  listInvitations: (workspaceId: string) => request<Invitation[]>(`/workspaces/${workspaceId}/invitations`),
+  invite: (workspaceId: string, email: string, role: Role) =>
+    request<Invitation & { token: string }>(
+      `/workspaces/${workspaceId}/invitations`,
+      json("POST", { email, role }),
+    ),
+  revokeInvitation: (workspaceId: string, invitationId: string) =>
+    request<void>(`/workspaces/${workspaceId}/invitations/${invitationId}`, { method: "DELETE" }),
+  getInvitation: (token: string) => request<InvitationPublic>(`/invitations/${token}`),
+  acceptInvitation: (token: string) => request<Me>(`/invitations/${token}/accept`, { method: "POST" }),
+  signupWithInvitation: (token: string, data: { name: string; password: string }) =>
+    request<Me>(`/invitations/${token}/signup`, json("POST", data)),
+
   health: () => request<Health>("/health"),
 
   listIdeas: () => request<Idea[]>("/ideas"),
