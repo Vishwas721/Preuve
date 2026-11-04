@@ -56,6 +56,18 @@ services:
       timeout: 5s
       retries: 10
 
+  # Local test mailbox for reply ingestion (Phase 3): IMAP 3143, SMTP 3025.
+  greenmail:
+    image: greenmail/standalone:2.0.1
+    environment:
+      GREENMAIL_OPTS: >-
+        -Dgreenmail.setup.test.smtp -Dgreenmail.setup.test.imap
+        -Dgreenmail.hostname=0.0.0.0 -Dgreenmail.users=founder:secret@preuve.local
+        -Dgreenmail.users.login=email
+    ports:
+      - "${GREENMAIL_SMTP_PORT:-3025}:3025"
+      - "${GREENMAIL_IMAP_PORT:-3143}:3143"
+
 volumes:
   postgres_data:
   redis_data:

@@ -60,6 +60,18 @@ class Settings(BaseSettings):
     outreach_daily_limit: int = 20  # across all campaigns
     outreach_cooldown_days: int = 30  # min days between two emails to one address
 
+    # Reply ingestion (Phase 3). Empty imap_host disables polling.
+    imap_host: str = ""
+    imap_port: int = 993
+    imap_ssl: bool = True
+    imap_username: str = ""
+    imap_password: str = ""
+    imap_folder: str = "INBOX"
+    imap_poll_minutes: int = 5
+    imap_timeout_s: float = 30.0
+    # Private text (replies, interview notes) may only escalate to Gemini when this is true.
+    allow_private_to_gemini: bool = False
+
     # Single-user mode until Phase 5 auth: this user is created on first request.
     dev_user_email: str = "founder@preuve.local"
     dev_user_name: str = "Founder"
