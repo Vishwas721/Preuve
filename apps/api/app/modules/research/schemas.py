@@ -5,7 +5,7 @@ from typing import Any
 from pydantic import BaseModel, ConfigDict
 
 from app.modules.competitors.schemas import CompetitorRead
-from app.modules.research.models import ImportStatus, Verification
+from app.modules.research.models import EvidenceOrigin, ImportStatus, Verification
 from app.modules.research.pack import EvidenceKind, FindingStatus, Relevance, SourceType, Stance
 
 
@@ -28,7 +28,10 @@ class ResearchImportRead(BaseModel):
 
 class EvidenceRead(BaseModel):
     id: uuid.UUID
-    import_id: uuid.UUID
+    import_id: uuid.UUID | None
+    origin: EvidenceOrigin
+    response_id: uuid.UUID | None
+    interview_id: uuid.UUID | None
     ref: str
     url: str
     final_url: str | None

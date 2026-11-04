@@ -36,6 +36,12 @@ class FetchStatus(enum.StrEnum):
     FAILED = "failed"  # robots.txt, HTTP error, unsupported type, network
 
 
+class EvidenceOrigin(enum.StrEnum):
+    RESEARCH = "research"  # a public page, from a research import (1B)
+    REPLY = "reply"  # a prospect's reply (first-party, Phase 3)
+    INTERVIEW = "interview"  # interview notes (first-party, Phase 3)
+
+
 class Verification(enum.StrEnum):
     VERIFIED = "verified"  # quote found on the fetched page
     UNVERIFIABLE = "unverifiable"  # page couldn't be fetched; kept but flagged
@@ -88,10 +94,20 @@ class Evidence(UUIDPrimaryKeyMixin, TimestampMixin, Base):
     idea_id: Mapped[uuid.UUID] = mapped_column(
         ForeignKey("ideas.id", ondelete="CASCADE"), index=True
     )
-    import_id: Mapped[uuid.UUID] = mapped_column(
+    # Null for first-party evidence (replies, interviews), which has no research import.
+    import_id: Mapped[uuid.UUID | None] = mapped_column(
         ForeignKey("research_imports.id", ondelete="CASCADE"), index=True
     )
     source_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("sources.id", ondelete="CASCADE"))
+    origin: Mapped[EvidenceOrigin] = mapped_column(
+        _enum(EvidenceOrigin), default=EvidenceOrigin.RESEARCH, server_default="research"
+    )
+    response_id: Mapped[uuid.UUID | None] = mapped_column(
+        ForeignKey("responses.id", ondelete="CASCADE"), index=True
+    )
+    interview_id: Mapped[uuid.UUID | None] = mapped_column(
+        ForeignKey("interviews.id", ondelete="CASCADE"), index=True
+    )
     ref: Mapped[str] = mapped_column(String(32))  # ref within its pack
     quote: Mapped[str] = mapped_column(Text)
     quote_key: Mapped[str] = mapped_column(Text)  # normalized, for dedup

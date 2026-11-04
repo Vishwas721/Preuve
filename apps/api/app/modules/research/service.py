@@ -563,6 +563,9 @@ async def list_evidence(
                 for c in (
                     "id",
                     "import_id",
+                    "origin",
+                    "response_id",
+                    "interview_id",
                     "ref",
                     "quote",
                     "statement",
