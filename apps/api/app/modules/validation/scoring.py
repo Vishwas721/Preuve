@@ -12,7 +12,7 @@ import json
 from collections import defaultdict
 from dataclasses import asdict, dataclass, field
 
-SCORING_VERSION = 1
+SCORING_VERSION = 2  # 2: symmetric research caps, deduplicated next actions
 
 # ---------- constants (agreed at Phase 4 kickoff) ----------
 
@@ -312,7 +312,8 @@ def _problem(inp: ValidationInput, c: _Customers) -> Dimension:
         min(PROBLEM_CUSTOMER_MAX, PROBLEM_PER_CUSTOMER * len(confirm))
         + min(PROBLEM_DOMAIN_MAX, PROBLEM_PER_DOMAIN * len(support))
         - PROBLEM_DENIAL_PENALTY * len(deny)
-        - PROBLEM_CONTRA_DOMAIN_PENALTY * len(contra)
+        # Same cap both ways: many sources can't outweigh customers in either direction.
+        - min(PROBLEM_DOMAIN_MAX, PROBLEM_CONTRA_DOMAIN_PENALTY * len(contra))
     )
     reason = (
         f"{_plural(len(confirm), 'customer')} confirmed the problem, "
@@ -659,20 +660,24 @@ def _uncertainty(dims: list[Dimension], inp: ValidationInput) -> str:
 
 def _next_actions(dims: list[Dimension], f: dict, inp: ValidationInput) -> list[str]:
     actions: list[str] = []
+    covered: set[str] = set()  # dimensions a threshold action above already speaks for
     need = PROBLEM_VALIDATED_COMPANIES - f["confirming_companies"]
     if need > 0:
+        covered.add("problem_evidence")
         actions.append(
             f"Get {_plural(need, 'more independent company', 'more independent companies')} "
             f"to confirm the problem ({f['confirming_companies']} so far)."
         )
     if f["confirming_in_interview"] < PROBLEM_VALIDATED_INTERVIEWS:
+        covered.add("interview_confirmation")
         actions.append("Hold an interview where the customer describes the problem in their words.")
     if inp.sent < RESPONSE_MIN_SENT:
+        covered.add("customer_response")
         actions.append(
             f"Send outreach to at least {RESPONSE_MIN_SENT} prospects ({inp.sent} sent)."
         )
     for d in sorted(dims, key=lambda d: d.points - d.max):
-        if d.points < d.max and d.gaps and d.gaps[0] not in actions:
+        if d.key not in covered and d.points < d.max and d.gaps and d.gaps[0] not in actions:
             actions.append(d.gaps[0])
         if len(actions) >= 5:
             break

@@ -312,3 +312,21 @@ def test_stored_inputs_rescore_to_the_same_result():
     inp = strong_input()
     stored = json.loads(json.dumps(canonical(inp)))  # as it comes back from a JSON column
     assert evaluate(from_canonical(stored)).as_dict() == evaluate(inp).as_dict()
+
+
+def test_research_caps_are_symmetric():
+    """Live run: 6 supporting vs 6 contradicting domains wiped out a customer's confirmation."""
+    inp = ValidationInput(
+        has_research=True,
+        research=tuple(research(f"s{i}.com") for i in range(6))
+        + tuple(research(f"c{i}.com", stance="contradicts") for i in range(6)),
+        signals=(sig("c1", "problem_confirmed", "yes"),),
+    )
+    assert evaluate(inp).dimensions[0].points == 3  # 3 (customer) + 8 - 8
+
+
+def test_next_actions_dont_repeat_threshold_actions():
+    actions = evaluate(WEAK).decision.next_actions
+    assert "More customers confirming the problem in their own words." not in actions
+    assert "Complete interviews that probe the problem." not in actions
+    assert len(actions) == len(set(actions))

@@ -20,7 +20,7 @@
 - **Absence is not rejection.** Missing evidence leads to INVESTIGATE FURTHER ("don't build
   yet"), never to ABANDON. ABANDON needs customers actively contradicting the problem.
 
-## Validation score (PRD §24) — `SCORING_VERSION = 1`
+## Validation score (PRD §24) — `SCORING_VERSION = 2`
 
 Pure function `score(ValidationInput) -> ScoreResult`, like lead scoring (1D). Each dimension
 stores `points`, `max`, `reason`, `evidence_ids` and `gaps` (what would raise it). Points are
@@ -28,7 +28,7 @@ clamped to `[0, max]`; the total is their sum. All constants live in one block i
 
 | Dimension | Max | Rule |
 |---|---|---|
-| Problem evidence | 20 | +3 per customer confirming the problem (reply `problem confirmed: yes`, or interview `problem` evidence), max 12; +2 per independent domain of verified, supporting, medium/high-relevance research evidence, max 8; −3 per customer denying it (`problem confirmed: no`); −2 per domain of verified contradicting research. |
+| Problem evidence | 20 | +3 per customer confirming the problem (reply `problem confirmed: yes`, or interview `problem` evidence), max 12; +2 per independent domain of verified, supporting, medium/high-relevance research evidence, max 8; −3 per customer denying it (`problem confirmed: no`); −2 per domain of verified contradicting research, max 8 (same cap as support, so sources never outweigh customers either way). |
 | Problem frequency | 10 | +2 per customer with a frequency quote (reply or interview), max 8; +1 per verified supporting research item linked to a `frequency` unknown, max 2. |
 | Problem severity | 15 | Per customer: severity high +3, medium +1, low −2; a quantified time/cost quote +2. Max 13 from customers; +1 per verified supporting research item linked to a `cost`/`urgency` unknown, max 2. |
 | Customer response | 15 | +2 per customer with a positive reply or high/medium interest, max 10; reply rate ≥ 10 % on ≥ 10 sent +5 (≥ 5 % on ≥ 10 sent +2). |
