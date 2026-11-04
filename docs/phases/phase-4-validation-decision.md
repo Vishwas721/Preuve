@@ -1,6 +1,6 @@
 # Phase 4 — Validation & decision
 
-- **Status:** In progress (kickoff 2026-11-04)
+- **Status:** Done (2026-11-04)
 - **Goal:** Combine all stored evidence into a reproducible score, a validation state and an
   explained recommendation, including telling the founder "don't build yet".
 - **PRD refs:** §24 Validation scoring, §25 Validation states, §26 Decision engine,
@@ -160,15 +160,55 @@ when stored inputs changed since the last score).
 
 ## Acceptance criteria
 
-- [ ] The score is fully reproducible from DB data (same inputs, same output; tested).
-- [ ] Every recommendation lists the evidence behind it, plus its weak spots.
-- [ ] A fixture idea with weak evidence is told not to build yet (tested).
-- [ ] The report contains only cited claims; numbers match the score record.
-- [ ] Validation state transitions follow the thresholds above (tested per state).
-- [ ] Experiments compare cohorts from real outreach/reply data (tested).
-- [ ] Private text never reaches Gemini for the report unless opted in (tested).
-- [ ] Web lint, typecheck and build pass; verdict, experiments, report and board checked in a
+- [x] The score is fully reproducible from DB data (same inputs, same output; tested).
+      *(Inputs are canonicalised (row order doesn't matter) and stored with each snapshot;
+      re-scoring the stored inputs reproduces the record exactly; recomputing twice gives the
+      same hash; `stale` flags when stored data changed.)*
+- [x] Every recommendation lists the evidence behind it, plus its weak spots.
+      *(Strong/weak points cite exhibits or WTP/interview records; weak spots include
+      contradictions, objections, stated-but-uncommitted WTP and unverifiable research.)*
+- [x] A fixture idea with weak evidence is told not to build yet (tested; live too: the
+      construction case scored 19/100, "Weak evidence. Don't build yet.", INVESTIGATE FURTHER).
+- [x] The report contains only cited claims; numbers match the score record. *(Summary
+      sentences that are assumptions, cite nothing, cite unknown exhibits or use a number not in
+      the record or the cited quotes are rejected and listed; tests check every dimension,
+      fact, weak point and next action appears in the Markdown as stored.)*
+- [x] Validation state transitions follow the thresholds above (tested per state, including
+      independence: three people at one company are one company).
+- [x] Experiments compare cohorts from real outreach/reply data (tested; live with two
+      role cohorts); concluded results are frozen.
+- [x] Private text never reaches Gemini for the report unless opted in (tested both ways).
+- [x] Web lint, typecheck and build pass; verdict, experiments, report and board checked in a
       real browser.
+
+## Verification (2026-11-04)
+
+- API: ruff clean; **276 tests** pass (scoring 26 pure tests, validation 6, experiments 3,
+  reports 9, portfolio), with `FakeProvider` and fakes only.
+- Web: lint, typecheck and production build pass.
+- Live run (Playwright in real Chrome, real `qwen2.5:7b`, Mailpit out, GreenMail in), on the
+  construction case:
+  - outreach sent to a test address, threaded reply pulled over IMAP and classified locally;
+  - Verdict tab: "Not scored yet" → **Score the evidence** → 19/100, INVESTIGATE FURTHER,
+    "Weak evidence. Don't build yet.", state moved to *Early signal*; every dimension shows
+    its reason, exhibits (43 chips, none broken) and what would raise it; the stale notice
+    appeared after the scoring rules changed;
+  - experiment "Ops directors" vs "Project managers" (role cohorts): counts side by side,
+    "sample too small" flagged, concluded with a user conclusion, results frozen;
+  - report generated on the worker: 1 cited summary sentence from the local model, 32
+    exhibits with quote, source and fetch date; Markdown download; print view hides the top
+    bar and toolbar;
+  - case board sorted by score shows score, verdict and funnel per case;
+  - 0 px horizontal overflow at 390 px (verdict, report, board; light and dark); no console
+    errors.
+  All test data (reports, experiments, score snapshots, campaign, reply, Mailpit/GreenMail mail)
+  was removed and both ideas are back to *Unvalidated*, as before.
+- Fixed because of the live run (each with a regression test):
+  - contradicting research was uncapped while supporting research was capped at 8, so 6 vs 6
+    domains wiped out a customer's confirmation (0/20). Both now cap at 8 (`SCORING_VERSION 2`);
+  - next actions repeated the threshold actions in other words ("Get 2 more companies…" and
+    "More customers confirming…");
+  - the report page overflowed at 390 px on long source URLs.
 
 ## Decisions (2026-11-04)
 
@@ -185,3 +225,12 @@ when stored inputs changed since the last score).
 - Local-model extraction is sparse (2–3 of 10 interview fields), so interview-based dimensions
   will often be low; that's honest, and the gaps say what to ask next.
 - Restart the arq worker after pulling (a stale worker swallows unknown job types).
+- Score snapshots are kept (history endpoint), never deleted by the UI; `ideas.state` follows
+  the latest one. Recomputing is on demand; the Verdict tab and board say when it's stale.
+- The local model's report summary is short (one sentence in the live run) — honest, and the
+  rest of the report doesn't depend on it. `ALLOW_PRIVATE_TO_GEMINI=true` would let Gemini
+  write it, sending reply/interview quotes to Google.
+- Report Markdown is rendered in the web app by a small renderer for the subset the API emits
+  (no Markdown dependency, text only, never HTML).
+- Live e2e scripts for this phase: scratchpad `e2e/phase4.mjs` (+ `p3_setup.py` to create a
+  reply, `p3_cleanup.py` plus deleting `validation_scores` and resetting `ideas.state`).
