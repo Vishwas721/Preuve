@@ -114,7 +114,7 @@ export function TopBar() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 border-b rule bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/70">
+    <header className="sticky top-0 print:hidden z-40 border-b rule bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/70">
       <div className="mx-auto flex h-14 w-full max-w-7xl items-center gap-4 px-4 sm:px-6">
         <Link href="/" className="group flex items-baseline gap-2" aria-label="Preuve, case board">
           <span className="font-display text-2xl leading-none tracking-tight">Preuve</span>
