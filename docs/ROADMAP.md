@@ -16,7 +16,7 @@ Nothing from a later phase is built early. Every phase ends with a review stop.
 | 1E — Phase 1 UI | [phase-1e-phase1-ui.md](phases/phase-1e-phase1-ui.md) | ✅ Done |
 | 2 — Outreach | [phase-2-outreach.md](phases/phase-2-outreach.md) | ✅ Done |
 | 3 — Responses & interviews | [phase-3-responses-interviews.md](phases/phase-3-responses-interviews.md) | ✅ Done |
-| 4 — Validation & decision | [phase-4-validation-decision.md](phases/phase-4-validation-decision.md) | ⬜ |
+| 4 — Validation & decision | [phase-4-validation-decision.md](phases/phase-4-validation-decision.md) | 🟡 In progress |
 | 5 — Hardening | [phase-5-hardening.md](phases/phase-5-hardening.md) | ⬜ |
 
 Phases 1A–1E together form the PRD's "MVP Phase 1" (§45). Phases 2, 3 and 4 correspond to the
