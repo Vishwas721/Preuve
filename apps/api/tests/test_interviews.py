@@ -433,3 +433,46 @@ def test_non_answer_phrasings_from_live_runs() -> None:
         assert prompts.is_non_answer(answer, quote), answer
     assert not prompts.is_non_answer("The owner's rep signs off on it.", quote)
     assert not prompts.is_non_answer("Notably, the owner's rep signs off.", quote)
+
+
+async def _confirmed_interview(session: AsyncSession, idea: Idea):
+    u1, *_ = await add_unknowns(session, idea)
+    row = await make_interview(session, idea)
+    await interviews.add_note(session, row, NoteCreate(text=NOTES))
+    llm, _, _ = llm_with(extraction_output())
+    await interviews.extract(session, llm, row.id)
+    await session.refresh(row)
+    await interviews.confirm_unknown(session, row, u1)
+    return row, u1
+
+
+async def test_reextraction_keeps_confirmed_answers(session: AsyncSession, idea: Idea) -> None:
+    """The live bug: re-extracting dropped the evidence behind a confirmed answer."""
+    row, u1 = await _confirmed_interview(session, idea)
+    llm, local, _ = llm_with(extraction_output(answered_unknowns=[]))
+    await interviews.extract(session, llm, row.id)
+    assert "Who approves the weekly report?" not in local.calls[0].prompt  # no longer open
+    await session.refresh(row)
+    [kept] = row.extraction["answered_unknowns"]
+    assert kept["confirmed"] and kept["unknown_id"] == str(u1)
+    link = await session.scalar(select(EvidenceUnknown).where(EvidenceUnknown.unknown_id == u1))
+    assert link is not None and str(link.evidence_id) == kept["evidence_id"]
+    assert (await analysis.get_unknown(session, idea.id, u1)).status == UnknownStatus.ANSWERED
+
+
+async def test_answer_withdrawn_when_its_words_are_gone(session: AsyncSession, idea: Idea) -> None:
+    row, u1 = await _confirmed_interview(session, idea)
+    [note] = await interviews.notes(session, row.id)
+    await interviews.delete_note(session, row, note.id)
+    await interviews.add_note(session, row, NoteCreate(text="Rescheduled; nothing discussed yet."))
+    llm, _, _ = llm_with(extraction_output(answered_unknowns=[]))
+    await interviews.extract(session, llm, row.id)
+    await session.refresh(row)
+    assert row.extraction["answered_unknowns"] == []
+    assert (await analysis.get_unknown(session, idea.id, u1)).status == UnknownStatus.OPEN
+
+
+async def test_deleting_interview_reopens_its_answers(session: AsyncSession, idea: Idea) -> None:
+    row, u1 = await _confirmed_interview(session, idea)
+    await interviews.delete_interview(session, row)
+    assert (await analysis.get_unknown(session, idea.id, u1)).status == UnknownStatus.OPEN

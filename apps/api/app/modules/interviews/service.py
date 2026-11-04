@@ -364,6 +364,19 @@ async def extract(
             )
         )
 
+    # Answers the user already confirmed survive re-extraction: their quotes are recorded
+    # again (the unknown is no longer open, so the model won't propose it a second time).
+    kept = [p for p in (row.extraction or {}).get("answered_unknowns", []) if p.get("confirmed")]
+    for p in kept:
+        sigs.append(
+            firstparty.Signal(
+                f"{who} (interview) on “{p['unknown']}”: {p['answer']}",
+                p["quote"],
+                Stance.NEUTRAL,
+                Relevance.HIGH,
+            )
+        )
+
     evidence_ids, dropped = await firstparty.record(
         session,
         idea_id=row.idea_id,
@@ -384,18 +397,28 @@ async def extract(
         if data[field]["quote"].strip() in bad:
             data[field]["quote"] = ""
     proposals = []
+    for p in kept:
+        eid = await research.evidence_for_quote(session, row.idea_id, evidence_ids, p["quote"])
+        unknown = await analysis.get_unknown(session, row.idea_id, uuid.UUID(p["unknown_id"]))
+        if eid is not None and unknown is not None:
+            await firstparty.link_unknown(session, [eid], unknown.id)
+            proposals.append({**p, "evidence_id": str(eid)})
+        elif unknown is not None and unknown.status == UnknownStatus.ANSWERED:
+            # The notes no longer contain the words it was answered with: reopen it.
+            await analysis.set_unknown_status(session, unknown, UnknownStatus.OPEN)
+    kept_quotes = {p["quote"] for p in kept}
+    dropped = [d for d in dropped if d["quote"] not in kept_quotes]
     for a in answers:
         if a.quote.strip() in bad:
             continue
+        eid = await research.evidence_for_quote(session, row.idea_id, evidence_ids, a.quote)
         proposals.append(
             {
                 "unknown_id": str(refs[a.unknown_ref]),
                 "unknown": by_ref[a.unknown_ref].question,
                 "answer": a.answer.strip(),
                 "quote": a.quote.strip(),
-                "evidence_id": str(
-                    await research.evidence_for_quote(session, row.idea_id, evidence_ids, a.quote)
-                ),
+                "evidence_id": str(eid) if eid else None,
                 "confirmed": False,
             }
         )
@@ -431,7 +454,7 @@ async def confirm_unknown(session: AsyncSession, row: Interview, unknown_id: uui
     unknown = await analysis.get_unknown(session, row.idea_id, unknown_id)
     if unknown is None:
         raise InterviewError("Unknown not found")
-    if match.get("evidence_id") and match["evidence_id"] != "None":
+    if match.get("evidence_id"):
         await firstparty.link_unknown(session, [uuid.UUID(match["evidence_id"])], unknown.id)
     row.extraction = {
         **row.extraction,
@@ -446,6 +469,14 @@ async def confirm_unknown(session: AsyncSession, row: Interview, unknown_id: uui
 async def _drop(session: AsyncSession, rows: list[Interview]) -> None:
     companies = {r.company_id for r in rows if r.company_id}
     for row in rows:
+        # Only open unknowns can be proposed, so a confirmed answer moved it open -> answered;
+        # with the interview gone, that answer is withdrawn.
+        for p in (row.extraction or {}).get("answered_unknowns", []):
+            if not p.get("confirmed"):
+                continue
+            unknown = await analysis.get_unknown(session, row.idea_id, uuid.UUID(p["unknown_id"]))
+            if unknown is not None and unknown.status == UnknownStatus.ANSWERED:
+                await analysis.set_unknown_status(session, unknown, UnknownStatus.OPEN)
         await firstparty.clear(session, row.idea_id, EvidenceOrigin.INTERVIEW, row.id)
         await wtp.forget_interview(session, row.id)
         await session.delete(row)  # notes cascade

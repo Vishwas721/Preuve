@@ -332,6 +332,15 @@ async def create_unknown(session: AsyncSession, idea_id: uuid.UUID, data: Unknow
     return unknown
 
 
+async def set_unknown_status(
+    session: AsyncSession, unknown: Unknown, status: UnknownStatus
+) -> None:
+    """Change only the status (e.g. an interview answered it, or that answer was withdrawn).
+    Does not commit, so it can run inside a larger transaction."""
+    unknown.status = status
+    await session.flush()
+
+
 async def update_unknown(session: AsyncSession, unknown: Unknown, data: UnknownUpdate) -> Unknown:
     changes = data.model_dump(exclude_unset=True)
     for field, value in changes.items():
