@@ -19,7 +19,7 @@ Nothing from a later phase is built early. Every phase ends with a review stop.
 | 4 — Validation & decision | [phase-4-validation-decision.md](phases/phase-4-validation-decision.md) | ✅ Done |
 | 5 — Hardening (overview) | [phase-5-hardening.md](phases/phase-5-hardening.md) | 🟡 In progress |
 | 5A — Auth & workspaces | [phase-5a-auth-workspaces.md](phases/phase-5a-auth-workspaces.md) | ✅ Done |
-| 5B — Privacy | [phase-5b-privacy.md](phases/phase-5b-privacy.md) | ⬜ |
+| 5B — Privacy | [phase-5b-privacy.md](phases/phase-5b-privacy.md) | 🟡 In progress |
 | 5C — Security | [phase-5c-security.md](phases/phase-5c-security.md) | ⬜ |
 | 5D — Ops & deploy | [phase-5d-ops-deploy.md](phases/phase-5d-ops-deploy.md) | ⬜ |
 
