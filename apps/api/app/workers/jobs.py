@@ -3,6 +3,7 @@
 Jobs are thin: open a DB session, call a module service, return a small summary.
 """
 
+import json
 import logging
 import uuid
 from typing import Any
@@ -15,6 +16,8 @@ from app.llm.router import get_llm_router
 from app.modules.analysis import service as analysis
 from app.modules.outreach import service as outreach
 from app.modules.research import service as research
+from app.modules.responses import mailbox
+from app.modules.responses import service as responses
 from app.search.fetch import PageFetcher
 
 logger = logging.getLogger(__name__)
@@ -87,3 +90,37 @@ async def send_campaign(
             get_settings(),
             [uuid.UUID(m) for m in message_ids] if message_ids else None,
         )
+
+
+LAST_POLL_KEY = "preuve:inbox:last_poll"
+
+
+async def analyze_response(ctx: dict[str, Any], response_id: str) -> str | None:
+    """Phase 3: classify a reply on the local model and store its verified quotes as evidence."""
+    rid = uuid.UUID(response_id)
+    try:
+        async with SessionLocal() as session:
+            status = await responses.analyze_response(session, get_llm_router(), rid)
+    except Exception as exc:
+        logger.exception("analyze_response crashed for %s", response_id)
+        async with SessionLocal() as session:
+            await responses.mark_failed(session, rid, f"Worker error: {exc}")
+        raise
+    return status.value if status else None
+
+
+async def imap_poll(ctx: dict[str, Any]) -> dict[str, Any]:
+    """Phase 3: read new replies and bounce reports from the sending mailbox."""
+    box = mailbox.get_mailbox(get_settings())
+    if not box.enabled:
+        return {"skipped": "IMAP_HOST not set"}
+    async with SessionLocal() as session:
+        report = await mailbox.poll(session, box)
+    redis = ctx.get("redis")
+    if redis is not None:
+        for rid in report["new_response_ids"]:
+            await redis.enqueue_job("analyze_response", rid)
+        await redis.set(
+            LAST_POLL_KEY, json.dumps({k: v for k, v in report.items() if k != "new_response_ids"})
+        )
+    return report

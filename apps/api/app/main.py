@@ -15,6 +15,8 @@ from app.modules.outreach.router import router as outreach_router
 from app.modules.portfolio.router import router as portfolio_router
 from app.modules.prospects.router import router as prospects_router
 from app.modules.research.router import router as research_router
+from app.modules.responses.router import inbox_router
+from app.modules.responses.router import router as responses_router
 
 
 @asynccontextmanager
@@ -47,6 +49,8 @@ def create_app() -> FastAPI:
     app.include_router(outreach_router)
     app.include_router(outreach_global_router)
     app.include_router(unsubscribe_router)
+    app.include_router(responses_router)
+    app.include_router(inbox_router)
     return app
 
 
