@@ -85,6 +85,9 @@ class WebSource(UUIDPrimaryKeyMixin, TimestampMixin, Base):
     content_hash: Mapped[str | None] = mapped_column(String(64))
     text: Mapped[str | None] = mapped_column(Text)
     full_text: Mapped[str | None] = mapped_column(Text)
+    # Set when the page text was dropped (retention, or because it named a deleted person).
+    # URL, fetch time, title and content hash stay, so exhibits remain traceable.
+    text_purged_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
 
 class Evidence(UUIDPrimaryKeyMixin, TimestampMixin, Base):

@@ -4,6 +4,7 @@ Reads other modules only through their service functions. Only evidence that is 
 dismissed counts; first-party signals are tied to their evidence rows by quote.
 """
 
+import hashlib
 import uuid
 from typing import Any
 
@@ -58,11 +59,14 @@ def _norm(text: str | None) -> str:
 
 
 def _person_key(contact_id, company_id, fallback: str) -> str:
+    """An independent-customer key. A person without a contact record (e.g. a reply from an
+    unknown sender) is keyed by a hash of their email/name, so score snapshots never store
+    personal data (Phase 5B); equality is all the score needs."""
     if contact_id:
         return f"contact:{contact_id}"
     if company_id:
         return f"company:{company_id}"
-    return f"name:{_norm(fallback)}"
+    return "person:" + hashlib.sha256(_norm(fallback).encode()).hexdigest()[:16]
 
 
 def _company_key(company_id, company_name: str | None, customer: str) -> str:

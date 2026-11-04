@@ -390,3 +390,20 @@ async def read(session: AsyncSession, row: Report) -> dict[str, Any]:
         "total": score.total if score else None,
         "recommendation": score.recommendation if score else None,
     }
+
+
+async def forget_evidence(session: AsyncSession, idea_id: uuid.UUID, evidence_ids: set[str]) -> int:
+    """Evidence is being deleted (a deletion request, or a reply/interview removed): delete
+    every report of this idea that quoted it. Reports are regenerated from the current data;
+    a redacted report would misstate its own evidence. Does not commit."""
+    if not evidence_ids:
+        return 0
+    rows = [
+        r
+        for r in await list_reports(session, idea_id)
+        if evidence_ids & set((r.exhibits or {}).keys())
+    ]
+    for r in rows:
+        await session.delete(r)
+    await session.flush()
+    return len(rows)

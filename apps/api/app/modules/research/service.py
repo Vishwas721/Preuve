@@ -2,11 +2,11 @@ import asyncio
 import logging
 import uuid
 from collections import defaultdict
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from typing import Any, Protocol
 from urllib.parse import urlsplit
 
-from sqlalchemy import select
+from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.llm.guardrails import Claim
@@ -16,6 +16,7 @@ from app.modules.analysis.schemas import UnknownCreate
 from app.modules.competitors import service as competitors
 from app.modules.competitors.schemas import ResearchCompetitorInput
 from app.modules.ideas.models import Idea
+from app.modules.privacy import tombstones
 from app.modules.prospects import service as prospects
 from app.modules.prospects.schemas import ContactInput, ResearchCompanyInput
 from app.modules.research.matching import match_any, normalize, quote_key
@@ -29,7 +30,13 @@ from app.modules.research.models import (
     Verification,
     WebSource,
 )
-from app.modules.research.pack import FindingStatus, PackCompany, ResearchPack, domain_key
+from app.modules.research.pack import (
+    FindingStatus,
+    PackCompany,
+    ResearchPack,
+    domain_key,
+    name_key,
+)
 from app.modules.research.schemas import EvidenceUpdate
 from app.search.fetch import FetchedPage, FetchError
 
@@ -417,11 +424,13 @@ async def _apply_companies(
             "rejected": [],
             "contacts_added": 0,
             "contacts_rejected": [],
+            "contacts_skipped_deleted_on_request": 0,
         }
     items = {e.ref: e for e in pack.evidence}
     stored = set(ref_map)
 
     inputs, rejected, contacts_rejected = [], [], []
+    forgotten: list[str] = []
     for company in pack.companies:
         evidence_ids = [ref_map[r] for r in company.evidence_refs if r in stored]
         if not evidence_ids:
@@ -435,6 +444,15 @@ async def _apply_companies(
             continue
         contacts, bad = _contact_inputs(company, ref_map, items, verified_refs, pages)
         contacts_rejected += bad
+        # People deleted on request are never re-imported (Phase 5B); their name is erased
+        # from this import too. Reported by count only, so the name isn't stored again.
+        domain = domain_key(company.website)
+        for c in list(contacts):
+            if await tombstones.is_deleted(
+                session, email=c.email, domain=domain, name_key=name_key(c.name)
+            ):
+                contacts.remove(c)
+                forgotten.append(c.name)
 
         def resolve(refs: list[str]) -> list[str]:
             return [str(ref_map[r]) for r in refs if r in stored]
@@ -484,7 +502,16 @@ async def _apply_companies(
             )
         )
     merged = await prospects.upsert_from_research(session, imp.idea_id, imp.id, inputs)
-    return merged | {"rejected": rejected, "contacts_rejected": contacts_rejected}
+    from app.modules.reports import service as reports  # lazy: reports imports research
+
+    for name in forgotten:
+        erased = await forget_person(session, imp.idea_id, name)
+        await reports.forget_evidence(session, imp.idea_id, erased["deleted"])
+    return merged | {
+        "rejected": rejected,
+        "contacts_rejected": contacts_rejected,
+        "contacts_skipped_deleted_on_request": len(forgotten),
+    }
 
 
 async def evidence_labels(
@@ -675,3 +702,91 @@ async def evidence_for_quote(
             Evidence.quote_key == quote_key(quote),
         )
     )
+
+
+# ---------- privacy (Phase 5B) ----------
+
+PAGE_TEXT_RETENTION_DAYS = 30
+MIN_NAME_CHARS = 5  # never erase by a name so short it would match unrelated text
+
+
+async def forget_person(session: AsyncSession, idea_id: uuid.UUID, name: str) -> dict[str, Any]:
+    """Erase a person's name from this idea's research (a deletion request, PRD §37).
+
+    Deletes every evidence row whose quote names them, drops stored page text that mentions
+    them, and strips them from stored research packs. An evidence row that is also another
+    contact's source is kept (deleting it would delete that contact) and reported. Does not
+    commit. Returns the deleted evidence ids and the kept ones.
+    """
+    from app.modules.prospects.models import Contact  # lazy: prospects imports research
+
+    needle = normalize(name)
+    if len(needle) < MIN_NAME_CHARS:
+        return {"deleted": set(), "kept": set()}
+    rows = list(await session.scalars(select(Evidence).where(Evidence.idea_id == idea_id)))
+    hits = [e for e in rows if needle in normalize(e.quote)]
+    key = name_key(name)
+    # A quote that is also another person's contact source is kept, so that contact survives.
+    kept = (
+        set(
+            await session.scalars(
+                select(Contact.evidence_id).where(
+                    Contact.evidence_id.in_([e.id for e in hits]), Contact.name_key != key
+                )
+            )
+        )
+        if hits
+        else set()
+    )
+    deleted = [e.id for e in hits if e.id not in kept]
+    if deleted:
+        await session.execute(delete(Evidence).where(Evidence.id.in_(deleted)))
+
+    now = _now()
+    for src in await session.scalars(
+        select(WebSource).where(WebSource.idea_id == idea_id, WebSource.text_purged_at.is_(None))
+    ):
+        if src.url.startswith("preuve://"):
+            continue  # first-party text lives and dies with its reply or interview
+        if needle in normalize((src.full_text or "") + " " + (src.text or "")):
+            src.text = src.full_text = None
+            src.text_purged_at = now
+
+    for imp in await session.scalars(
+        select(ResearchImport).where(ResearchImport.idea_id == idea_id)
+    ):
+        pack = imp.pack or {}
+        evidence = [
+            e for e in pack.get("evidence", []) if needle not in normalize(e.get("quote", ""))
+        ]
+        companies = [
+            c
+            | {"contacts": [x for x in c.get("contacts", []) if name_key(x.get("name", "")) != key]}
+            for c in pack.get("companies", [])
+        ]
+        if evidence != pack.get("evidence", []) or companies != pack.get("companies", []):
+            imp.pack = pack | {"evidence": evidence, "companies": companies}  # new object: saved
+    await session.flush()
+    return {"deleted": {str(i) for i in deleted}, "kept": {str(i) for i in kept}}
+
+
+async def purge_page_text(
+    session: AsyncSession, now: datetime | None = None, days: int = PAGE_TEXT_RETENTION_DAYS
+) -> int:
+    """Retention: drop the text of research pages fetched more than `days` ago. URL, fetch time,
+    title and content hash stay, so every exhibit remains traceable and re-checkable."""
+    now = now or _now()
+    rows = list(
+        await session.scalars(
+            select(WebSource).where(
+                WebSource.fetched_at < now - timedelta(days=days),
+                WebSource.text_purged_at.is_(None),
+                ~WebSource.url.startswith("preuve://"),
+            )
+        )
+    )
+    for src in rows:
+        src.text = src.full_text = None
+        src.text_purged_at = now
+    await session.commit()
+    return len(rows)

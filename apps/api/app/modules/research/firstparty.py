@@ -62,7 +62,18 @@ def source_url(origin: EvidenceOrigin, owner_id: uuid.UUID) -> str:
 async def clear(
     session: AsyncSession, idea_id: uuid.UUID, origin: EvidenceOrigin, owner_id: uuid.UUID
 ) -> None:
-    """Delete the internal source of a reply/interview; its evidence goes with it (CASCADE)."""
+    """Delete the internal source of a reply/interview; its evidence goes with it (CASCADE),
+    and so do reports that quoted that evidence (Phase 5B)."""
+    from app.modules.reports import service as reports  # lazy: reports imports research
+
+    ids = set(
+        await session.scalars(
+            select(Evidence.id)
+            .join(WebSource, WebSource.id == Evidence.source_id)
+            .where(WebSource.idea_id == idea_id, WebSource.url == source_url(origin, owner_id))
+        )
+    )
+    await reports.forget_evidence(session, idea_id, {str(i) for i in ids})
     await session.execute(
         delete(WebSource).where(
             WebSource.idea_id == idea_id, WebSource.url == source_url(origin, owner_id)

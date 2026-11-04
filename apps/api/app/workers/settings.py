@@ -10,6 +10,7 @@ from app.workers.jobs import (
     imap_poll,
     interview_guide,
     ping,
+    purge_page_text,
     run_analysis,
     send_campaign,
     validation_report,
@@ -30,6 +31,7 @@ class WorkerSettings:
         interview_guide,
         analyze_interview,
         validation_report,
+        purge_page_text,
     ]
     # Poll the mailbox every IMAP_POLL_MINUTES (the job returns at once if IMAP is off).
     cron_jobs = [
@@ -37,7 +39,9 @@ class WorkerSettings:
             imap_poll,
             minute=set(range(0, 60, max(1, get_settings().imap_poll_minutes))),
             run_at_startup=False,
-        )
+        ),
+        # Retention (Phase 5B): once a day, early morning.
+        cron(purge_page_text, hour={4}, minute={15}, run_at_startup=False),
     ]
     redis_settings = redis_settings()
     max_jobs = 10

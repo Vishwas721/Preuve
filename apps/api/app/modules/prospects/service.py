@@ -382,7 +382,11 @@ async def delete_contact(session: AsyncSession, idea_id: uuid.UUID, contact_id: 
     if contact is None:
         return False
     company = await session.get(Company, contact.company_id)
+    from app.modules.ideas import service as ideas
     from app.modules.interviews import service as interviews
+    from app.modules.privacy import tombstones
+    from app.modules.reports import service as reports
+    from app.modules.research import service as research
     from app.modules.responses import service as responses
     from app.modules.wtp import service as wtp
 
@@ -390,11 +394,21 @@ async def delete_contact(session: AsyncSession, idea_id: uuid.UUID, contact_id: 
     await responses.forget_contact(session, contact.id, addresses)
     await interviews.forget_contact(session, contact.id)
     await wtp.forget_contact(session, contact.id)
-    from app.modules.ideas import service as ideas
-
     workspace_id = await ideas.workspace_of(session, idea_id)
     await outreach.forget_contact(session, contact.id, contact.email, workspace_id)
+    # Don't let a later research import bring them back (hashes only).
+    await tombstones.record(
+        session,
+        emails=addresses,
+        domain=company.domain,
+        name_key=contact.name_key,
+        workspace_id=workspace_id,
+    )
+    name = contact.name
     await session.execute(delete(Contact).where(Contact.id == contact_id))
+    # The quotes, stored pages and packs that name them, and reports quoting any of it.
+    erased = await research.forget_person(session, idea_id, name)
+    await reports.forget_evidence(session, idea_id, erased["deleted"])
     await rescore_company(session, company)
     await session.commit()
     return True

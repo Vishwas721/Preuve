@@ -8,6 +8,7 @@ from app.modules.experiments.models import Experiment
 from app.modules.ideas.models import Idea
 from app.modules.interviews.models import Interview, InterviewNote
 from app.modules.outreach.models import Message, OutreachCampaign, Suppression
+from app.modules.privacy.models import DeletedPerson
 from app.modules.prospects.models import Company, CompanyEvidence, Contact, LeadScore
 from app.modules.reports.models import Report
 from app.modules.research.models import (
@@ -32,6 +33,7 @@ __all__ = [
     "Company",
     "CompanyEvidence",
     "Competitor",
+    "DeletedPerson",
     "Contact",
     "CompetitorEvidence",
     "Evidence",

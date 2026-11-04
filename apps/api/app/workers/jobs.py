@@ -152,6 +152,14 @@ async def analyze_interview(ctx: dict[str, Any], interview_id: str) -> str | Non
     return await _interview_job(interview_id, "extraction")
 
 
+async def purge_page_text(ctx: dict[str, Any]) -> int:
+    """Phase 5B retention: drop research page text fetched more than 30 days ago."""
+    async with SessionLocal() as session:
+        n = await research.purge_page_text(session)
+    logger.info("purged the text of %d research pages", n)
+    return n
+
+
 async def validation_report(ctx: dict[str, Any], report_id: str) -> str | None:
     """Phase 4: render a validation report from its score snapshot, with a cited summary."""
     rid = uuid.UUID(report_id)
