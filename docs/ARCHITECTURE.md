@@ -105,5 +105,15 @@ Enforced in code, not just prompts (PRD §12, §35):
 
 ## Auth
 
-Phase 0–4 run single-user: a seeded dev user is resolved by a `get_current_user` dependency.
-Real auth and teams arrive in Phase 5; the dependency is the single seam to replace.
+Since Phase 5A (see `docs/phases/phase-5a-auth-workspaces.md`):
+
+- Email + password accounts (argon2id). Browsers hold a session cookie (`httpOnly`,
+  `SameSite=Lax`); scripts use personal API tokens (`Authorization: Bearer prv_…`). Only hashes of
+  either are stored.
+- Ideas belong to a **workspace**; members (owner / member) see everything in it.
+  `app.core.deps.get_principal` resolves the caller and their active workspace;
+  `ideas.deps.get_owned_idea` returns 404 for other workspaces' ideas.
+- Every router is private by default (`app/main.py`); public routes are an explicit list
+  (health, unsubscribe, sign-in/setup, invitation links).
+- The web app calls the API same-origin at `/api` (a Next rewrite), so the cookie is
+  first-party; cookie requests that change state must come from an allowed origin (CSRF).

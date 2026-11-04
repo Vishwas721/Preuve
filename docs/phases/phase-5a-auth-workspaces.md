@@ -1,6 +1,6 @@
 # Phase 5A — Auth & workspaces
 
-- **Status:** In progress (kickoff 2026-11-04)
+- **Status:** Done (2026-11-04)
 - **Goal:** Replace the single-user seam with real accounts, and put every idea inside a
   workspace that only its members can see.
 - **PRD refs:** §6 (solo founder, 2–5 person team), §37 (minimal personal data), §49
@@ -111,19 +111,53 @@ Audit log of member actions.
 
 ## Acceptance criteria
 
-- [ ] Users only see their own workspace's data (every route tested at the API level).
-- [ ] Existing data survives: the migration moves it into the owner's workspace and first-run
-      setup claims it (tested, and on the real database).
-- [ ] Passwords are argon2-hashed; sessions are httpOnly cookies stored only as hashes, expire,
+- [x] Users only see their own workspace's data (every route tested at the API level).
+      *(`test_tenancy` walks the OpenAPI schema: all 60+ `/ideas/{id}/…` routes return 404 to a
+      user of another workspace, reports by id too, and every non-public route returns 401
+      signed out; the public set is pinned to 9 paths.)*
+- [x] Existing data survives: the migration moves it into the owner's workspace and first-run
+      setup claims it (tested; rehearsed on a copy with upgrade/downgrade/upgrade, then applied
+      to the real database: both cases in "Founder's workspace").
+- [x] Passwords are argon2-hashed; sessions are httpOnly cookies stored only as hashes, expire,
       and end on logout or password change (tested).
-- [ ] Repeated failed logins are throttled; errors don't reveal whether an email exists (tested).
-- [ ] Cookie requests from a foreign origin are refused (tested).
-- [ ] Invites: join by link, roles enforced (members can't manage the workspace), removal ends
-      access immediately (tested).
-- [ ] Suppressions block globally but are listed per workspace (tested).
-- [ ] The research CLI works with an API token (tested; live import on the real case).
-- [ ] Web lint, typecheck and build pass; setup, login, invite, switching and settings checked
+- [x] Repeated failed logins are throttled; errors don't reveal whether an email exists (tested).
+- [x] Cookie requests from a foreign origin are refused (tested; bearer requests exempt).
+- [x] Invites: join by link, roles enforced (members can't manage the workspace), removal ends
+      access immediately (tested; live too).
+- [x] Suppressions block globally but are listed per workspace (tested).
+- [x] The research CLI works with an API token (tested; live: `context` on the real case, and
+      `create` + delete of a throwaway idea through the token).
+- [x] Web lint, typecheck and build pass; setup, login, invite, switching and settings checked
       in a real browser.
+
+## Verification (2026-11-04)
+
+- API: ruff clean; **297 tests** pass (auth 13, tenancy 4, CLI 4, plus every earlier API test
+  now running through a real signed-in session instead of a dependency override). Migrations
+  run on an empty database and `alembic check` is clean.
+- Web: lint, typecheck and production build pass.
+- Live run (Playwright in real Chrome, real database, the web app proxying `/api`):
+  - a fresh visit redirects to `/setup`; the owner account claimed the existing data (both
+    cases on the board, in "Founder's workspace");
+  - Settings → invite → one-time link → a second browser signed up through it and saw both
+    cases; the used link then showed "This link doesn't work";
+  - an API token was created (shown once) and used by the research CLI against the live API;
+  - removing the member: their next request to the case got "Idea not found", and their board
+    showed their own (empty) workspace;
+  - signing out sent `/ideas/new` to `/login?next=%2Fideas%2Fnew`; a wrong password showed
+    "Wrong email or password."; signing in returned to `/ideas/new`;
+  - 0 px horizontal overflow at 390 px (login, invite, settings, board; dark); no console errors.
+  Afterwards the test accounts, sessions, token and invitation were removed and the owner
+  account was returned to *unclaimed*, so first-run setup is still yours to do. The pre-5A
+  database dump is kept in the session scratchpad.
+- Fixed because of the live run:
+  - the browser still called the API cross-site (`NEXT_PUBLIC_API_URL=http://127.0.0.1:8000` in
+    `.env` / `apps/web/.env.local`), so the session cookie was never sent back after setup.
+    The client now always calls `/api` same-origin and ignores that variable;
+  - the research CLI printed `\u2192` for "→" on the Windows console; messages are ASCII now.
+- Found while building: the instance-level routes (`/suppressions`, `/outreach/settings`,
+  `/outreach/inbox…`) had no auth check at all (they relied on the single-user seam). Every
+  router is now private by default in `main.py`, with an explicit public list.
 
 ## Decisions (2026-11-04)
 
@@ -136,3 +170,15 @@ Also: 404 for other workspaces' ideas; tokens bound to one workspace; no email s
   existing API test now exercises the session path.
 - Worker jobs act on ids they were given and don't need a user.
 - Restart the arq worker after pulling.
+- **Dev setup changed:** the web app reaches the API through its own `/api` proxy
+  (`next.config.ts`, `PREUVE_API_INTERNAL_URL`, default `http://127.0.0.1:8000`). Restart
+  `pnpm dev` after pulling (rewrites load at start). `NEXT_PUBLIC_API_URL` is no longer used and
+  can be removed from `.env` and `apps/web/.env.local`.
+- First visit after pulling: `/setup` creates the owner account and keeps every existing case.
+- The research CLI needs `PREUVE_API_TOKEN` (Settings → API tokens, in the idea's workspace).
+- Carried to 5C: password reset by email, API-wide rate limiting, a review of the Origin-based
+  CSRF check, session listing/revocation per device.
+- Carried to 5D: `PREUVE_API_INTERNAL_URL` is read when Next builds/starts; the production web
+  image must set it to the API container's address.
+- The instance has one SMTP/IMAP mailbox shared by all workspaces; replies are matched to the
+  right idea by message id, so they land in the right workspace.
