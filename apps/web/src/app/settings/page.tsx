@@ -6,6 +6,7 @@ import { Suspense, useCallback, useEffect, useRef, useState, type ReactNode } fr
 import { toast } from "sonner";
 
 import { SectionHeading } from "@/components/dossier/layout";
+import { PrivacySection } from "@/components/settings/PrivacySection";
 import { useSession } from "@/components/shell/SessionProvider";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -431,6 +432,7 @@ export default function SettingsPage() {
         <WorkspaceSection />
       </Suspense>
       <Tokens />
+      <PrivacySection />
     </main>
   );
 }

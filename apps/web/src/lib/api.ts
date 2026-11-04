@@ -893,6 +893,38 @@ export interface ApiTokenRow {
   created_at: string;
 }
 
+// ---------- privacy (Phase 5B) ----------
+
+export interface PersonSummary {
+  email: string | null;
+  addresses: string[];
+  contacts: {
+    id: string;
+    idea_id: string;
+    idea_title: string;
+    name: string;
+    role: string;
+    company: string;
+    email: string | null;
+    source_url: string;
+    collected_at: string;
+  }[];
+  messages: number;
+  replies: number;
+  interviews: number;
+  wtp_records: number;
+  suppressed: boolean;
+  nothing_found: boolean;
+}
+
+export interface PrivacyFinding {
+  kind: "provenance" | "minimisation" | "retention";
+  severity: "high" | "medium" | "low";
+  message: string;
+  ids: string[];
+  contacts?: { id: string; name: string; company: string; idea_id: string }[];
+}
+
 // ---------- transport ----------
 
 export class ApiError extends Error {
@@ -1135,4 +1167,11 @@ export const api = {
   getReport: (reportId: string) => request<ValidationReport>(`/reports/${reportId}`),
   deleteReport: (reportId: string) => request<void>(`/reports/${reportId}`, { method: "DELETE" }),
   reportMarkdownUrl: (reportId: string) => `${API_URL}/reports/${reportId}/markdown`,
+
+  findPerson: (email: string) =>
+    request<PersonSummary>(`/privacy/people?email=${encodeURIComponent(email)}`),
+  personExportUrl: (email: string) => `${API_URL}/privacy/people/export?email=${encodeURIComponent(email)}`,
+  erasePerson: (email: string) =>
+    request<Record<string, number>>("/privacy/people/erase", json("POST", { email })),
+  privacyCheck: () => request<{ findings: PrivacyFinding[]; ok: boolean }>("/privacy/check"),
 };
