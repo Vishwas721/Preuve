@@ -350,6 +350,15 @@ export interface PortfolioItem {
   unknowns_open: number;
   unknowns_answered: number;
   busy: boolean;
+  validation: {
+    score: number;
+    recommendation: Recommendation;
+    headline: string;
+    validated_conversations: number;
+    stale: boolean;
+    computed_at: string;
+  } | null;
+  funnel: { sent: number; replies: number; interviews_done: number; pilot_or_better: number };
   created_at: string;
   last_activity: string;
 }
@@ -716,6 +725,121 @@ export interface ReplyPaste {
   from_email?: string | null;
 }
 
+// ---------- validation & decision (Phase 4) ----------
+
+export type Recommendation = "build" | "iterate" | "investigate" | "abandon";
+
+export interface ScoreDimension {
+  key: string;
+  label: string;
+  points: number;
+  max: number;
+  reason: string;
+  evidence_ids: string[];
+  record_ids: string[]; // "wtp:…", "competitor:…", "interview:…"
+  gaps: string[];
+}
+
+export interface DecisionPoint {
+  text: string;
+  evidence_ids: string[];
+  record_ids: string[];
+}
+
+export interface ValidationScore {
+  id: string;
+  idea_id: string;
+  total: number;
+  dimensions: ScoreDimension[];
+  state: ValidationState;
+  recommendation: Recommendation;
+  decision: {
+    recommendation: Recommendation;
+    headline: string;
+    why: string;
+    strong: DecisionPoint[];
+    weak: DecisionPoint[];
+    uncertainty: string;
+    next_actions: string[];
+  };
+  metrics: {
+    validated_conversations: number;
+    response_rate: number | null;
+    problem_confirmation_rate: number | null;
+    interview_conversion: number | null;
+    commercial_validation: number | null;
+  };
+  facts: Record<string, number>;
+  inputs_hash: string;
+  scoring_version: number;
+  created_at: string;
+}
+
+export interface ScoreStatus {
+  score: ValidationScore | null;
+  stale: boolean;
+}
+
+export interface Cohort {
+  label: string;
+  campaign_ids: string[];
+  icp_id: string | null;
+  role_contains: string;
+}
+
+export interface CohortResult {
+  label: string;
+  sent: number;
+  replies: number;
+  reply_rate: number | null;
+  positive: number;
+  problem_confirmed: number;
+  interview_recommended: number;
+  interviews_done: number;
+  small_sample: boolean;
+}
+
+export interface Experiment {
+  id: string;
+  idea_id: string;
+  hypothesis: string;
+  cohort_a: Cohort;
+  cohort_b: Cohort | null;
+  status: "running" | "concluded";
+  conclusion: string;
+  concluded_at: string | null;
+  created_at: string;
+  result: { a: CohortResult; b: CohortResult | null; comparison: string[]; computed_at: string };
+}
+
+export interface ExperimentInput {
+  hypothesis: string;
+  cohort_a: Cohort;
+  cohort_b?: Cohort | null;
+}
+
+export type ExperimentPatch = Partial<ExperimentInput> & {
+  conclusion?: string;
+  status?: "running" | "concluded";
+};
+
+export interface ValidationReport {
+  id: string;
+  idea_id: string;
+  validation_score_id: string;
+  status: "queued" | "running" | "done" | "failed";
+  content: string;
+  summary: { statement: string; kind: string; evidence_ids: string[]; evidence_uuids: string[] }[];
+  dropped: { statement: string; reason: string }[];
+  exhibits: Record<string, string>;
+  summary_provider: string | null;
+  error: string | null;
+  generated_at: string | null;
+  created_at: string;
+  total: number | null;
+  recommendation: Recommendation | null;
+}
+
 // ---------- transport ----------
 
 export class ApiError extends Error {
@@ -896,4 +1020,21 @@ export const api = {
   updateWtp: (ideaId: string, wtpId: string, data: WtpInput) =>
     request<WtpSignal>(`/ideas/${ideaId}/wtp/${wtpId}`, json("PATCH", data)),
   deleteWtp: (ideaId: string, wtpId: string) => request<void>(`/ideas/${ideaId}/wtp/${wtpId}`, { method: "DELETE" }),
+
+  getScore: (ideaId: string) => request<ScoreStatus>(`/ideas/${ideaId}/score`),
+  recomputeScore: (ideaId: string) => request<ValidationScore>(`/ideas/${ideaId}/score`, { method: "POST" }),
+
+  listExperiments: (ideaId: string) => request<Experiment[]>(`/ideas/${ideaId}/experiments`),
+  createExperiment: (ideaId: string, data: ExperimentInput) =>
+    request<Experiment>(`/ideas/${ideaId}/experiments`, json("POST", data)),
+  updateExperiment: (ideaId: string, experimentId: string, data: ExperimentPatch) =>
+    request<Experiment>(`/ideas/${ideaId}/experiments/${experimentId}`, json("PATCH", data)),
+  deleteExperiment: (ideaId: string, experimentId: string) =>
+    request<void>(`/ideas/${ideaId}/experiments/${experimentId}`, { method: "DELETE" }),
+
+  listReports: (ideaId: string) => request<ValidationReport[]>(`/ideas/${ideaId}/reports`),
+  createReport: (ideaId: string) => request<ValidationReport>(`/ideas/${ideaId}/reports`, { method: "POST" }),
+  getReport: (reportId: string) => request<ValidationReport>(`/reports/${reportId}`),
+  deleteReport: (reportId: string) => request<void>(`/reports/${reportId}`, { method: "DELETE" }),
+  reportMarkdownUrl: (reportId: string) => `${API_URL}/reports/${reportId}/markdown`,
 };
