@@ -8,6 +8,7 @@ from httpx import ASGITransport, AsyncClient
 from sqlalchemy.engine import make_url
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 
+from app.core.ratelimit import MemoryLimiter, get_limiter
 from app.db.models import Base
 from app.db.session import get_session
 from app.main import create_app
@@ -86,6 +87,8 @@ def make_app(session_maker: async_sessionmaker[AsyncSession], queue: "FakeQueue"
     app.dependency_overrides[get_job_queue] = lambda: queue
     shared = throttle or MemoryThrottle()
     app.dependency_overrides[get_throttle] = lambda: shared
+    limiter = MemoryLimiter()
+    app.dependency_overrides[get_limiter] = lambda: limiter
 
     async def _session() -> AsyncIterator[AsyncSession]:
         async with session_maker() as session:

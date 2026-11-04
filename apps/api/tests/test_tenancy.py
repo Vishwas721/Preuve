@@ -101,4 +101,5 @@ def test_public_routes_are_only_the_expected_ones() -> None:
         "/auth/logout",
         "/invitations/{token}",
         "/invitations/{token}/signup",
+        "/password-reset/{token}",  # 5C: opening and using a reset link
     } == PUBLIC_PATHS

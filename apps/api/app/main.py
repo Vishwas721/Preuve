@@ -6,7 +6,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import get_settings
 from app.core.deps import get_principal
+from app.core.middleware import BodySizeLimitMiddleware, SecurityHeadersMiddleware
+from app.core.ratelimit import limit_private, limit_public
 from app.modules.analysis.router import router as analysis_router
+from app.modules.auth.router import admin_router, reset_public_router
 from app.modules.auth.router import public_router as auth_public_router
 from app.modules.auth.router import router as auth_router
 from app.modules.competitors.router import router as competitors_router
@@ -35,10 +38,12 @@ PUBLIC_ROUTERS = [
     unsubscribe_router,  # recipients clicking the unsubscribe link
     auth_public_router,  # status, setup, sign-up, login, logout
     invitations_public_router,  # opening an invitation link, signing up with it
+    reset_public_router,  # opening a password-reset link, setting the password
 ]
 
 PRIVATE_ROUTERS = [
     auth_router,
+    admin_router,
     workspaces_router,
     ideas_router,
     analysis_router,
@@ -69,7 +74,16 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 
 def create_app() -> FastAPI:
     settings = get_settings()
-    app = FastAPI(title=settings.app_name, version="0.1.0", lifespan=lifespan)
+    dev = settings.environment == "development"
+    app = FastAPI(
+        title=settings.app_name,
+        version="0.1.0",
+        lifespan=lifespan,
+        # Interactive docs and the schema only in development (Phase 5C).
+        docs_url="/docs" if dev else None,
+        redoc_url="/redoc" if dev else None,
+        openapi_url="/openapi.json" if dev else None,
+    )
 
     app.add_middleware(
         CORSMiddleware,
@@ -79,12 +93,16 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
+    # Outermost last: sizes are checked before anything else runs; headers go on every reply.
+    app.add_middleware(BodySizeLimitMiddleware, max_bytes=settings.max_request_bytes)
+    app.add_middleware(SecurityHeadersMiddleware, hsts=not dev)
+
     for r in PUBLIC_ROUTERS:
-        app.include_router(r)
+        app.include_router(r, dependencies=[Depends(limit_public)])
     # Default-deny: a route added to these routers is private even if it forgets to ask for
     # the caller. (Routes that need the caller still declare it to get the Principal.)
     for r in PRIVATE_ROUTERS:
-        app.include_router(r, dependencies=[Depends(get_principal)])
+        app.include_router(r, dependencies=[Depends(get_principal), Depends(limit_private)])
     return app
 
 
