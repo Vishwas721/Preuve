@@ -854,7 +854,7 @@ export interface AuthStatus {
 }
 
 export interface Me {
-  user: { id: string; email: string; name: string };
+  user: { id: string; email: string; name: string; is_instance_owner: boolean };
   workspaces: { id: string; name: string; role: Role }[];
   active_workspace_id: string | null;
   via: "session" | "token";
@@ -882,6 +882,15 @@ export interface InvitationPublic {
   role: Role;
   expires_at: string;
   account_exists: boolean;
+}
+
+export interface AdminUser {
+  id: string;
+  email: string;
+  name: string;
+  is_instance_owner: boolean;
+  workspaces: string[];
+  last_login_at: string | null;
 }
 
 export interface ApiTokenRow {
@@ -982,6 +991,15 @@ export const api = {
   createToken: (name: string) =>
     request<ApiTokenRow & { token: string }>("/auth/tokens", json("POST", { name })),
   revokeToken: (tokenId: string) => request<void>(`/auth/tokens/${tokenId}`, { method: "DELETE" }),
+
+  adminUsers: () => request<AdminUser[]>("/admin/users"),
+  createResetLink: (userId: string) =>
+    request<{ token: string; expires_in_minutes: number }>(`/admin/users/${userId}/reset-link`, {
+      method: "POST",
+    }),
+  resetInfo: (token: string) => request<{ email: string }>(`/password-reset/${token}`),
+  useResetLink: (token: string, password: string) =>
+    request<void>(`/password-reset/${token}`, json("POST", { password })),
 
   createWorkspace: (name: string) =>
     request<{ id: string; name: string }>("/workspaces", json("POST", { name })),

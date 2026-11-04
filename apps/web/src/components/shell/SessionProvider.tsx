@@ -10,7 +10,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { Skeleton } from "@/components/ui/skeleton";
 import { api, ApiError, setUnauthorizedHandler, type Me } from "@/lib/api";
 
-const PUBLIC = [/^\/login$/, /^\/setup$/, /^\/invite\/[^/]+$/];
+const PUBLIC = [/^\/login$/, /^\/setup$/, /^\/invite\/[^/]+$/, /^\/reset\/[^/]+$/];
 export const isPublicPath = (path: string) => PUBLIC.some((re) => re.test(path));
 
 interface SessionValue {
