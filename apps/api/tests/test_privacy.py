@@ -207,6 +207,7 @@ async def test_find_export_and_erase_by_email(
 
     after = (await client.get("/privacy/people", params={"email": JANE})).json()
     assert after["contacts"] == [] and after["replies"] == 0 and after["suppressed"] is True
+    assert after["nothing_found"] is True  # only the block record remains
     async with session_maker() as s:
         assert await _count(s, Report) == 0
         msg_rows = (await s.execute(text("select to_email, body from messages"))).all()

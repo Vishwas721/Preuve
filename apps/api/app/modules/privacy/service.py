@@ -179,9 +179,10 @@ def summary(found: dict[str, Any]) -> dict[str, Any]:
         "interviews": len(found["interviews"]),
         "wtp_records": len(found["wtp"]),
         "suppressed": bool(found["suppressions"]) or found["blocked_elsewhere"],
+        # The suppression row isn't data *about* them: it's the block that keeps them from being
+        # emailed again, kept on purpose after an erasure (shown separately as `suppressed`).
         "nothing_found": not any(
-            found[k]
-            for k in ("contacts", "messages", "replies", "interviews", "wtp", "suppressions")
+            found[k] for k in ("contacts", "messages", "replies", "interviews", "wtp")
         ),
     }
 
