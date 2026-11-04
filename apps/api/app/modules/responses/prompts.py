@@ -44,17 +44,17 @@ class QuotedText(BaseModel):
 
 class QuotedYesNo(BaseModel):
     value: YesNo = YesNo.UNCLEAR
-    quote: str = ""
+    quote: str = Field(default="", description="Exact words copied from the reply, word for word.")
 
 
 class QuotedLevel(BaseModel):
     value: Level = Level.UNCLEAR
-    quote: str = ""
+    quote: str = Field(default="", description="Exact words copied from the reply, word for word.")
 
 
 class QuotedWillingness(BaseModel):
     value: Willingness = Willingness.UNKNOWN
-    quote: str = ""
+    quote: str = Field(default="", description="Exact words copied from the reply, word for word.")
 
 
 class ResponseClassification(BaseModel):
@@ -94,6 +94,19 @@ Rules:
    - willingness_to_pay: strong = says they'd pay or have budget; some = open to paying;
      low = reluctant; none = says they won't pay; unknown = money not mentioned.
 4. Do not flatter the founder's idea or add advice.
+
+Example. Reply: "Yeah this is a real headache. We do it every Friday in Excel and it eats most
+of my afternoon. Not sure we'd pay though."
+Answer (abridged):
+{"sentiment": "neutral",
+ "problem_confirmed": {"value": "yes", "quote": "this is a real headache"},
+ "pain": {"value": "takes most of an afternoon", "quote": "it eats most of my afternoon"},
+ "frequency": {"value": "weekly", "quote": "every Friday"},
+ "current_solution": {"value": "Excel", "quote": "We do it every Friday in Excel"},
+ "time_or_cost": {"value": "most of an afternoon", "quote": "it eats most of my afternoon"},
+ "willingness_to_pay": {"value": "low", "quote": "Not sure we'd pay though"},
+ "interest": {"value": "unclear", "quote": ""}}
+Every non-empty value has its quote. A value without a quote is not used.
 """
 
 
