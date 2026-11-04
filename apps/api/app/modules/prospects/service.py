@@ -302,6 +302,27 @@ async def company_evidence_ids(session: AsyncSession, company_id: uuid.UUID) -> 
     return await _evidence_ids(session, company_id)
 
 
+async def link_company_evidence(
+    session: AsyncSession, company_id: uuid.UUID, evidence_ids: list[uuid.UUID]
+) -> None:
+    """Attach evidence (e.g. a prospect's own reply) to a company and rescore it. No commit."""
+    company = await session.get(Company, company_id)
+    if company is None:
+        return
+    linked = set(await _evidence_ids(session, company_id))
+    for eid in dict.fromkeys(evidence_ids):
+        if eid not in linked:
+            session.add(CompanyEvidence(company_id=company_id, evidence_id=eid))
+    await session.flush()
+    await rescore_company(session, company)
+
+
+async def rescore_company_id(session: AsyncSession, company_id: uuid.UUID) -> None:
+    company = await session.get(Company, company_id)
+    if company is not None:
+        await rescore_company(session, company)
+
+
 async def latest_score_total(session: AsyncSession, company_id: uuid.UUID) -> int | None:
     latest = await _latest_score(session, company_id)
     return latest.total if latest else None
@@ -361,6 +382,14 @@ async def delete_contact(session: AsyncSession, idea_id: uuid.UUID, contact_id: 
     if contact is None:
         return False
     company = await session.get(Company, contact.company_id)
+    from app.modules.interviews import service as interviews
+    from app.modules.responses import service as responses
+    from app.modules.wtp import service as wtp
+
+    addresses = await outreach.contact_addresses(session, contact.id, contact.email)
+    await responses.forget_contact(session, contact.id, addresses)
+    await interviews.forget_contact(session, contact.id)
+    await wtp.forget_contact(session, contact.id)
     await outreach.forget_contact(session, contact.id, contact.email)
     await session.execute(delete(Contact).where(Contact.id == contact_id))
     await rescore_company(session, company)

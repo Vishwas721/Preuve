@@ -642,3 +642,36 @@ async def current_solutions(session: AsyncSession, idea_id: uuid.UUID) -> list[d
         .order_by(ResearchImport.created_at.desc())
     )
     return next((s for s in summaries if s is not None), [])
+
+
+# ---------- first-party evidence lookups (Phase 3) ----------
+
+
+async def evidence_ids_for(
+    session: AsyncSession,
+    idea_id: uuid.UUID,
+    *,
+    response_id: uuid.UUID | None = None,
+    interview_id: uuid.UUID | None = None,
+) -> list[uuid.UUID]:
+    query = select(Evidence.id).where(Evidence.idea_id == idea_id)
+    if response_id is not None:
+        query = query.where(Evidence.response_id == response_id)
+    if interview_id is not None:
+        query = query.where(Evidence.interview_id == interview_id)
+    return list(await session.scalars(query.order_by(Evidence.ref)))
+
+
+async def evidence_for_quote(
+    session: AsyncSession, idea_id: uuid.UUID, evidence_ids: list[uuid.UUID], quote: str
+) -> uuid.UUID | None:
+    """Which of these evidence rows holds this quote (by normalized key)."""
+    if not evidence_ids:
+        return None
+    return await session.scalar(
+        select(Evidence.id).where(
+            Evidence.idea_id == idea_id,
+            Evidence.id.in_(evidence_ids),
+            Evidence.quote_key == quote_key(quote),
+        )
+    )
