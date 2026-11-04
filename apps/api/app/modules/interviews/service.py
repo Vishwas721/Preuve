@@ -336,7 +336,11 @@ async def extract(
                 )
             )
     by_ref = {i.ref: i for i in items}
-    answers = [a for a in out.answered_unknowns if a.unknown_ref in refs]
+    answers = [
+        a
+        for a in out.answered_unknowns
+        if a.unknown_ref in refs and not prompts.is_non_answer(a.answer, a.quote)
+    ]
     for a in answers:
         sigs.append(
             firstparty.Signal(

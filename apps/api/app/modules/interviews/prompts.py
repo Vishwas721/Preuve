@@ -58,9 +58,11 @@ Return JSON with: questions (each with unknown_ref, question, follow_ups).
 
 _LEADING = [
     (
+        # Any question opening with an auxiliary verb is yes/no ("Do general contractors…?"),
+        # except the standard open prompts "Can/Could you walk me through / describe / tell…".
         re.compile(
-            r"^\s*(do|does|did|would|will|is|are|was|were|can|could|should|have|has)\s+"
-            r"(you|your|it|this|that|there|they)\b",
+            r"^\s*(?!(can|could) you (walk|describe|tell|explain|show|give|share|talk|take)\b)"
+            r"(do|does|did|would|will|is|are|was|were|can|could|should|shall|have|has|had|may)\b",
             re.IGNORECASE,
         ),
         "Yes/no question: ask about what they actually do instead.",
@@ -131,6 +133,21 @@ class InterviewExtraction(BaseModel):
     desired_solution: QuotedText = QuotedText()
     willingness_to_pay: QuotedWillingness = QuotedWillingness()
     answered_unknowns: list[AnsweredUnknown] = Field(default_factory=list, max_length=12)
+
+
+_NON_ANSWER = re.compile(
+    r"^\W*(not (provided|mentioned|discussed|covered|stated|said|answered)|no (information|answer|"
+    r"mention|data)|n/?a|none|unknown|unclear)\b",
+    re.IGNORECASE,
+)
+MIN_QUOTE_CHARS = 8
+
+
+def is_non_answer(answer: str, quote: str) -> bool:
+    """Small models fill `answered_unknowns` for unknowns the notes don't cover ("Not provided
+    in the notes.", quote "'"). Those aren't answers, so they're skipped rather than reported
+    as dropped quotes."""
+    return bool(_NON_ANSWER.match(answer)) or len(re.sub(r"\W", "", quote)) < MIN_QUOTE_CHARS
 
 
 FIELDS: list[tuple[str, str]] = [

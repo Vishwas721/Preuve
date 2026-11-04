@@ -365,3 +365,36 @@ async def test_quoted_field_without_value_is_kept(session: AsyncSession, idea: I
     )
     assert "the field team won't adopt another app" in quotes
     assert "half a day" in quotes
+
+
+def test_question_flags_calibrated_on_live_guide() -> None:
+    """Cases from the live qwen2.5 guide: open prompts pass, real yes/no questions don't."""
+    assert prompts.question_flags("Can you walk me through the process from start to finish?") == []
+    assert prompts.question_flags("Could you tell me about the last report you wrote?") == []
+    assert prompts.question_flags(
+        "Do general contractors that don't use Procore have a painful reporting workflow?"
+    )
+    assert prompts.question_flags("Is this time consistent across different projects?")
+    assert prompts.question_flags("Could this be automated?")
+
+
+async def test_non_answers_are_skipped_not_dropped(session: AsyncSession, idea: Idea) -> None:
+    u1, u2, _ = await add_unknowns(session, idea)
+    row = await make_interview(session, idea)
+    await interviews.add_note(session, row, NoteCreate(text=NOTES))
+    out = extraction_output(
+        cost={"value": "", "quote": ""},
+        answered_unknowns=[
+            {
+                "unknown_ref": "U1",
+                "answer": "The owner's rep signs off.",
+                "quote": "The owner's rep signs off on the report",
+            },
+            {"unknown_ref": "U2", "answer": "Not provided in the notes.", "quote": "'"},
+        ],
+    )
+    llm, _, _ = llm_with(out)
+    await interviews.extract(session, llm, row.id)
+    await session.refresh(row)
+    assert [a["unknown_id"] for a in row.extraction["answered_unknowns"]] == [str(u1)]
+    assert row.dropped == []
