@@ -1,8 +1,9 @@
 // Typed client for the Preuve API. All API calls from the web app go through here.
 
-// Same-origin: Next proxies /api/* to the API (next.config.ts), so the session cookie is
-// first-party (Phase 5A).
-export const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "/api";
+// Always same-origin: Next proxies /api/* to the API (next.config.ts, PREUVE_API_INTERNAL_URL),
+// so the session cookie is first-party (Phase 5A). A cross-site API URL would break sign-in,
+// so the old NEXT_PUBLIC_API_URL setting is deliberately ignored.
+export const API_URL = "/api";
 
 // ---------- ideas ----------
 
