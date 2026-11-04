@@ -4,9 +4,11 @@ from arq import cron
 
 from app.core.config import get_settings
 from app.workers.jobs import (
+    analyze_interview,
     analyze_response,
     draft_outreach,
     imap_poll,
+    interview_guide,
     ping,
     run_analysis,
     send_campaign,
@@ -24,6 +26,8 @@ class WorkerSettings:
         send_campaign,
         analyze_response,
         imap_poll,
+        interview_guide,
+        analyze_interview,
     ]
     # Poll the mailbox every IMAP_POLL_MINUTES (the job returns at once if IMAP is off).
     cron_jobs = [

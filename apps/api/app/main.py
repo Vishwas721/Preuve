@@ -8,6 +8,7 @@ from app.core.config import get_settings
 from app.modules.analysis.router import router as analysis_router
 from app.modules.competitors.router import router as competitors_router
 from app.modules.ideas.router import router as ideas_router
+from app.modules.interviews.router import router as interviews_router
 from app.modules.meta.router import router as meta_router
 from app.modules.outreach.router import global_router as outreach_global_router
 from app.modules.outreach.router import public_router as unsubscribe_router
@@ -17,6 +18,7 @@ from app.modules.prospects.router import router as prospects_router
 from app.modules.research.router import router as research_router
 from app.modules.responses.router import inbox_router
 from app.modules.responses.router import router as responses_router
+from app.modules.wtp.router import router as wtp_router
 
 
 @asynccontextmanager
@@ -51,6 +53,8 @@ def create_app() -> FastAPI:
     app.include_router(unsubscribe_router)
     app.include_router(responses_router)
     app.include_router(inbox_router)
+    app.include_router(interviews_router)
+    app.include_router(wtp_router)
     return app
 
 

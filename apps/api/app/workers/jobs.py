@@ -14,6 +14,7 @@ from app.db.session import SessionLocal
 from app.email import get_email_provider
 from app.llm.router import get_llm_router
 from app.modules.analysis import service as analysis
+from app.modules.interviews import service as interviews
 from app.modules.outreach import service as outreach
 from app.modules.research import service as research
 from app.modules.responses import mailbox
@@ -124,3 +125,27 @@ async def imap_poll(ctx: dict[str, Any]) -> dict[str, Any]:
             LAST_POLL_KEY, json.dumps({k: v for k, v in report.items() if k != "new_response_ids"})
         )
     return report
+
+
+async def _interview_job(interview_id: str, which: str) -> str | None:
+    iid = uuid.UUID(interview_id)
+    run = interviews.generate_guide if which == "guide" else interviews.extract
+    try:
+        async with SessionLocal() as session:
+            state = await run(session, get_llm_router(), iid)
+    except Exception as exc:
+        logger.exception("%s job crashed for interview %s", which, interview_id)
+        async with SessionLocal() as session:
+            await interviews.mark_failed(session, iid, which, f"Worker error: {exc}")
+        raise
+    return state.value if state else None
+
+
+async def interview_guide(ctx: dict[str, Any], interview_id: str) -> str | None:
+    """Phase 3: an interview guide from the idea's open unknowns."""
+    return await _interview_job(interview_id, "guide")
+
+
+async def analyze_interview(ctx: dict[str, Any], interview_id: str) -> str | None:
+    """Phase 3: extract conversation fields from interview notes (local, private)."""
+    return await _interview_job(interview_id, "extraction")
