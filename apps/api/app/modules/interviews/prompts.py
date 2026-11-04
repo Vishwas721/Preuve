@@ -136,8 +136,10 @@ class InterviewExtraction(BaseModel):
 
 
 _NON_ANSWER = re.compile(
-    r"^\W*(not (provided|mentioned|discussed|covered|stated|said|answered)|no (information|answer|"
-    r"mention|data)|n/?a|none|unknown|unclear)\b",
+    r"^\W*((is |was )?not (clearly )?(provided|mentioned|discussed|covered|stated|said|answered|"
+    r"specified|given|addressed|clear|known|available)|(the notes )?(do not|don't|does not|doesn't)"
+    r" (say|mention|specify|cover|address)|no (clear )?(information|answer|mention|data|details)|"
+    r"n/?a|none|unknown|unclear)\b",
     re.IGNORECASE,
 )
 MIN_QUOTE_CHARS = 8

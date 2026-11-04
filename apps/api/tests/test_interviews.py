@@ -419,3 +419,17 @@ async def test_wrapped_quotes_are_unwrapped(session: AsyncSession, idea: Idea) -
     assert {"the field team won't adopt another app", "Photos come in over WhatsApp"} <= quotes
     assert row.dropped == []
     assert row.extraction["objections"]["quote"] == "the field team won't adopt another app"
+
+
+def test_non_answer_phrasings_from_live_runs() -> None:
+    quote = "He worries the superintendents won't use yet another app."
+    for answer in [
+        "Not provided in the notes.",
+        "Not specified in the notes.",
+        "The notes don't mention it.",
+        "No clear answer.",
+        "Unclear.",
+    ]:
+        assert prompts.is_non_answer(answer, quote), answer
+    assert not prompts.is_non_answer("The owner's rep signs off on it.", quote)
+    assert not prompts.is_non_answer("Notably, the owner's rep signs off.", quote)
