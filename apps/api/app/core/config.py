@@ -2,10 +2,11 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Annotated
 
-from pydantic import Field, field_validator
+from pydantic import Field, field_validator, model_validator
 from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 # Repo root `.env` (apps/api/app/core/config.py -> ../../../../.env), then a local one.
+DEV_OUTREACH_SECRET = "dev-outreach-secret-change-me"
 _REPO_ROOT = Path(__file__).resolve().parents[4]
 
 
@@ -55,7 +56,7 @@ class Settings(BaseSettings):
     email_from_name: str = ""
     email_from_address: str = ""
     email_postal_address: str = ""
-    outreach_secret: str = "dev-outreach-secret-change-me"
+    outreach_secret: str = DEV_OUTREACH_SECRET
     public_api_url: str = "http://localhost:8000"
     outreach_daily_limit: int = 20  # across all campaigns
     outreach_cooldown_days: int = 30  # min days between two emails to one address
@@ -78,6 +79,22 @@ class Settings(BaseSettings):
     # The pre-5A single user; first-run setup claims it (and the data it owns).
     dev_user_email: str = "founder@preuve.local"
     dev_user_name: str = "Founder"
+
+    # Behind a reverse proxy / Cloudflare Tunnel (5D): take the client IP from its headers.
+    trust_proxy_headers: bool = False
+    max_request_bytes: int = 5_000_000
+
+    @model_validator(mode="after")
+    def _no_dev_secrets_in_production(self) -> "Settings":
+        """Phase 5C: refuse to start outside development with the dev outreach secret (it
+        signs unsubscribe links) or a short one."""
+        weak = self.outreach_secret == DEV_OUTREACH_SECRET or len(self.outreach_secret) < 32
+        if self.environment != "development" and weak:
+            raise ValueError(
+                "OUTREACH_SECRET must be a random value of 32+ characters outside development, "
+                "e.g. the output of: python -c 'import secrets; print(secrets.token_urlsafe(32))'"
+            )
+        return self
 
     @field_validator("cors_origins", "gemini_models", mode="before")
     @classmethod

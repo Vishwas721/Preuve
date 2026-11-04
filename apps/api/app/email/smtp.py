@@ -21,15 +21,21 @@ from app.email.base import (
 POLICY = default_policy.clone(max_line_length=998)
 
 
+def one_line(value: str) -> str:
+    """Header fields can't contain line breaks (the library would refuse the whole message, and
+    a raw CR/LF is how header injection works): collapse them to spaces."""
+    return " ".join(value.split()) if ("\r" in value or "\n" in value) else value
+
+
 def build_message(email: OutgoingEmail) -> EmailMessage:
     msg = EmailMessage(policy=POLICY)
-    msg["From"] = Address(email.from_name, addr_spec=email.from_address)
-    msg["To"] = Address(email.to_name, addr_spec=email.to_address)
-    msg["Subject"] = email.subject
+    msg["From"] = Address(one_line(email.from_name), addr_spec=email.from_address)
+    msg["To"] = Address(one_line(email.to_name), addr_spec=email.to_address)
+    msg["Subject"] = one_line(email.subject)
     msg["Date"] = format_datetime(datetime.now(UTC))
     msg["Message-ID"] = email.message_id
     for k, v in email.headers.items():
-        msg[k] = v
+        msg[k] = one_line(v)
     msg.set_content(email.body)
     return msg
 
