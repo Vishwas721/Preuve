@@ -1,6 +1,7 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, MessageSquareQuote } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -22,7 +23,7 @@ import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { api, type Evidence, type EvidenceKind, type Relevance, type Stance } from "@/lib/api";
-import { domain, shortDate } from "@/lib/format";
+import { shortDate, sourceHref, sourceName } from "@/lib/format";
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -81,11 +82,22 @@ export function ExhibitSheet({
               </blockquote>
               <p className="text-[0.95rem] leading-relaxed">{ev.statement}</p>
 
-              <Button asChild variant="outline" size="sm">
-                <a href={ev.url} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink /> {ev.title ?? domain(ev.url)}
-                </a>
-              </Button>
+              {(() => {
+                const src = sourceHref(id, ev);
+                return src.internal ? (
+                  <Button asChild variant="outline" size="sm">
+                    <Link href={src.href}>
+                      <MessageSquareQuote /> {ev.title ?? sourceName(ev)}
+                    </Link>
+                  </Button>
+                ) : (
+                  <Button asChild variant="outline" size="sm">
+                    <a href={src.href} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink /> {ev.title ?? sourceName(ev)}
+                    </a>
+                  </Button>
+                );
+              })()}
 
               <dl>
                 <Row label="Kind">
@@ -93,13 +105,16 @@ export function ExhibitSheet({
                 </Row>
                 <Row label="Stance">{STANCE[ev.stance].label}</Row>
                 <Row label="Source">
-                  {SOURCE_LABELS[ev.source_type]} · <span className="font-mono text-xs">{domain(ev.url)}</span>
+                  {ev.origin === "research" ? SOURCE_LABELS[ev.source_type] : "First-party"} ·{" "}
+                  <span className="font-mono text-xs">{sourceName(ev)}</span>
                 </Row>
                 {ev.company_name && <Row label="Company">{ev.company_name}</Row>}
                 {ev.published_at && <Row label="Published">{shortDate(ev.published_at)}</Row>}
                 <Row label="Checked">
                   {shortDate(ev.fetched_at)}
-                  {ev.verification === "verified"
+                  {ev.origin !== "research"
+                    ? ` — ${ev.verification_note ?? "quote found verbatim"}`
+                    : ev.verification === "verified"
                     ? " — quote found on the page"
                     : ` — page could not be fetched${ev.verification_note ? ` (${ev.verification_note})` : ""}`}
                 </Row>

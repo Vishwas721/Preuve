@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 import { KindMark, VerificationStamp } from "@/components/dossier/marks";
 import type { Evidence, SourceType, Stance } from "@/lib/api";
-import { domain } from "@/lib/format";
+import { sourceName } from "@/lib/format";
 import { cn } from "@/lib/utils";
 
 export const SOURCE_LABELS: Record<SourceType, string> = {
@@ -88,8 +88,12 @@ export function ExhibitCard({
 
         <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t rule pt-3 text-xs text-muted-foreground">
           <KindMark kind={ev.kind} />
-          <span className="eyebrow !text-[10px]">{SOURCE_LABELS[ev.source_type]}</span>
-          <span className="font-mono">{domain(ev.url)}</span>
+          {ev.origin === "research" ? (
+            <span className="eyebrow !text-[10px]">{SOURCE_LABELS[ev.source_type]}</span>
+          ) : (
+            <span className="eyebrow !text-[10px] !text-viz-seq">First-party</span>
+          )}
+          <span className="font-mono">{sourceName(ev)}</span>
           {ev.company_name && <span>{ev.company_name}</span>}
           <span className="ml-auto">
             <RelevancePips relevance={ev.relevance} />

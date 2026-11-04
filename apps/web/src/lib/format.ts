@@ -38,3 +38,21 @@ export function exhibitNo(index: number): string {
 export function plural(n: number, one: string, many = `${one}s`): string {
   return `${n} ${n === 1 ? one : many}`;
 }
+
+type Sourced = { url: string; origin?: string; response_id?: string | null; interview_id?: string | null };
+
+/** Where an exhibit comes from: a web domain, or the prospect's own words (Phase 3). */
+export function sourceName(ev: Sourced): string {
+  if (ev.origin === "reply") return "Prospect reply";
+  if (ev.origin === "interview") return "Interview notes";
+  return domain(ev.url);
+}
+
+/** Link to an exhibit's source: the public page, or the reply / interview inside Preuve. */
+export function sourceHref(ideaId: string, ev: Sourced): { href: string; internal: boolean } {
+  if (ev.origin === "reply" && ev.response_id)
+    return { href: `/ideas/${ideaId}/replies?r=${ev.response_id}`, internal: true };
+  if (ev.origin === "interview" && ev.interview_id)
+    return { href: `/ideas/${ideaId}/interviews?i=${ev.interview_id}`, internal: true };
+  return { href: ev.url, internal: false };
+}

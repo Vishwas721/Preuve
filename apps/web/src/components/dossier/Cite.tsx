@@ -6,7 +6,7 @@ import { useDossier } from "@/components/dossier/DossierProvider";
 import { KindMark } from "@/components/dossier/marks";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import type { Claim } from "@/lib/api";
-import { domain } from "@/lib/format";
+import { sourceName } from "@/lib/format";
 import { cn } from "@/lib/utils";
 
 /** A citation chip: "EX-04". Hover previews the quote; click jumps to the exhibit. */
@@ -30,7 +30,7 @@ export function Cite({ id, className }: { id: string; className?: string }) {
       <TooltipTrigger asChild>{chip}</TooltipTrigger>
       <TooltipContent className="max-w-sm p-3">
         <p className="font-display text-sm italic leading-snug">&ldquo;{ev.quote}&rdquo;</p>
-        <p className="mt-1.5 font-mono text-[10px] opacity-70">{domain(ev.url)}</p>
+        <p className="mt-1.5 font-mono text-[10px] opacity-70">{sourceName(ev)}</p>
       </TooltipContent>
     </Tooltip>
   );
