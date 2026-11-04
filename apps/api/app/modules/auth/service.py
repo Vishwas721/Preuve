@@ -12,7 +12,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import get_settings
 from app.modules.auth import security
-from app.modules.auth.models import ApiToken, AuthSession
+from app.modules.auth.models import ApiToken, AuthSession, PasswordReset
 from app.modules.auth.throttle import Throttle
 from app.modules.users.models import User
 from app.modules.workspaces import service as workspaces
@@ -73,6 +73,7 @@ async def setup(session: AsyncSession, *, email: str, name: str, password: str) 
         raise AuthError("Another account already uses that email.")
     user.email, user.name = email, name.strip()
     user.password_hash = security.hash_password(password)
+    user.is_instance_owner = True
     await session.flush()
     await workspaces.ensure_personal_workspace(session, user)
     await session.commit()
@@ -285,3 +286,67 @@ async def resolve_token(session: AsyncSession, raw: str) -> Principal | None:
         row.last_used_at = now
         await session.commit()
     return Principal(user=user, workspace_id=row.workspace_id, token=row)
+
+
+# ---------- password reset links (Phase 5C) ----------
+
+RESET_TTL = timedelta(hours=1)
+
+
+async def list_users(session: AsyncSession) -> list[tuple[User, list[str]]]:
+    """Every account with the names of its workspaces (for the instance owner)."""
+    out = []
+    for user in await session.scalars(select(User).order_by(User.created_at)):
+        rows = await workspaces.user_workspaces(session, user.id)
+        out.append((user, [w.name for w, _ in rows]))
+    return out
+
+
+async def create_reset_link(session: AsyncSession, by: User, user_id: uuid.UUID) -> str:
+    """Only the instance owner may do this: a reset link lets its creator sign in as that user,
+    so a workspace owner could otherwise take over a member's *other* workspaces."""
+    if not by.is_instance_owner:
+        raise PermissionError("Only the instance owner can create password-reset links.")
+    target = await session.get(User, user_id)
+    if target is None:
+        raise LookupError("User not found")
+    token = security.new_token(security.RESET_PREFIX)
+    session.add(
+        PasswordReset(
+            user_id=target.id,
+            token_hash=security.hash_token(token),
+            created_by_id=by.id,
+            expires_at=_now() + RESET_TTL,
+        )
+    )
+    await session.commit()
+    return token
+
+
+async def _usable_reset(session: AsyncSession, token: str) -> PasswordReset | None:
+    row = await session.scalar(
+        select(PasswordReset).where(PasswordReset.token_hash == security.hash_token(token))
+    )
+    if row is None or row.used_at or row.expires_at <= _now():
+        return None
+    return row
+
+
+async def reset_target(session: AsyncSession, token: str) -> User | None:
+    row = await _usable_reset(session, token)
+    return await session.get(User, row.user_id) if row else None
+
+
+async def use_reset_link(session: AsyncSession, token: str, password: str) -> User:
+    """Set the new password, burn the link, and end every session of that user."""
+    row = await _usable_reset(session, token)
+    if row is None:
+        raise AuthError("This reset link is invalid, used or expired. Ask for a new one.")
+    user = await session.get(User, row.user_id)
+    assert user is not None
+    security.check_password_strength(password, user.email)
+    user.password_hash = security.hash_password(password)
+    row.used_at = _now()
+    await session.execute(delete(AuthSession).where(AuthSession.user_id == user.id))
+    await session.commit()
+    return user

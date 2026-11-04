@@ -2,7 +2,7 @@
 
 from app.db.base import Base
 from app.modules.analysis.models import ICP, AnalysisRun, Hypothesis, Unknown
-from app.modules.auth.models import ApiToken, AuthSession
+from app.modules.auth.models import ApiToken, AuthSession, PasswordReset
 from app.modules.competitors.models import Competitor, CompetitorEvidence
 from app.modules.experiments.models import Experiment
 from app.modules.ideas.models import Idea
@@ -48,6 +48,7 @@ __all__ = [
     "Membership",
     "Message",
     "OutreachCampaign",
+    "PasswordReset",
     "Report",
     "ResearchImport",
     "Response",

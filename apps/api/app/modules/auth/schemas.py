@@ -57,6 +57,25 @@ class UserRead(BaseModel):
     id: uuid.UUID
     email: str
     name: str
+    is_instance_owner: bool = False
+
+
+class AdminUser(UserRead):
+    workspaces: list[str]
+    last_login_at: datetime | None
+
+
+class ResetLink(BaseModel):
+    token: str  # shown once; the web app turns it into a link
+    expires_in_minutes: int
+
+
+class ResetInfo(BaseModel):
+    email: str
+
+
+class ResetIn(BaseModel):
+    password: str = Field(min_length=1, max_length=200)
 
 
 class WorkspaceMembership(BaseModel):

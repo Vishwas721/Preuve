@@ -13,10 +13,14 @@ from app.core.config import get_settings
 from app.core.deps import SESSION_COOKIE, CurrentPrincipal, SessionDep, check_origin
 from app.modules.auth import service
 from app.modules.auth.schemas import (
+    AdminUser,
     AuthStatus,
     LoginIn,
     Me,
     PasswordIn,
+    ResetIn,
+    ResetInfo,
+    ResetLink,
     SetupIn,
     TokenCreate,
     TokenCreated,
@@ -32,6 +36,9 @@ from app.modules.workspaces import service as workspaces
 
 public_router = APIRouter(prefix="/auth", tags=["auth"])
 router = APIRouter(prefix="/auth", tags=["auth"])
+# Phase 5C: password-reset links. Creating them is for the instance owner only.
+admin_router = APIRouter(prefix="/admin", tags=["admin"])
+reset_public_router = APIRouter(prefix="/password-reset", tags=["auth"])
 
 ThrottleDep = Annotated[Throttle, Depends(get_throttle)]
 
@@ -217,4 +224,66 @@ async def revoke_token(
     try:
         await service.revoke_token(session, principal.user.id, token_id)
     except LookupError as exc:
+        raise _bad(exc, status.HTTP_404_NOT_FOUND) from exc
+
+
+# ---------- password-reset links (Phase 5C) ----------
+
+
+def _instance_owner(principal: CurrentPrincipal) -> User:
+    if not principal.user.is_instance_owner or principal.session is None:
+        raise HTTPException(status.HTTP_403_FORBIDDEN, "Only the instance owner can do this")
+    return principal.user
+
+
+@admin_router.get("/users", response_model=list[AdminUser])
+async def admin_users(session: SessionDep, principal: CurrentPrincipal) -> list[AdminUser]:
+    _instance_owner(principal)
+    return [
+        AdminUser(
+            id=u.id,
+            email=u.email,
+            name=u.name,
+            is_instance_owner=u.is_instance_owner,
+            workspaces=names,
+            last_login_at=u.last_login_at,
+        )
+        for u, names in await service.list_users(session)
+    ]
+
+
+@admin_router.post(
+    "/users/{user_id}/reset-link", response_model=ResetLink, status_code=status.HTTP_201_CREATED
+)
+async def create_reset_link(
+    user_id: uuid.UUID, session: SessionDep, principal: CurrentPrincipal
+) -> ResetLink:
+    """A one-time link (1 hour) to set a new password. Pass it on yourself; no email is sent."""
+    owner = _instance_owner(principal)
+    try:
+        token = await service.create_reset_link(session, owner, user_id)
+    except LookupError as exc:
+        raise _bad(exc, status.HTTP_404_NOT_FOUND) from exc
+    return ResetLink(token=token, expires_in_minutes=int(service.RESET_TTL.total_seconds() // 60))
+
+
+@reset_public_router.get("/{token}", response_model=ResetInfo)
+async def reset_info(token: str, session: SessionDep) -> ResetInfo:
+    user = await service.reset_target(session, token)
+    if user is None:
+        raise HTTPException(
+            status.HTTP_404_NOT_FOUND, "This reset link is invalid, used or expired"
+        )
+    return ResetInfo(email=user.email)
+
+
+@reset_public_router.post("/{token}", status_code=status.HTTP_204_NO_CONTENT)
+async def use_reset_link(token: str, data: ResetIn, request: Request, session: SessionDep) -> None:
+    """Sets the new password and signs that account out everywhere; then sign in normally."""
+    check_origin(request)
+    try:
+        await service.use_reset_link(session, token, data.password)
+    except WeakPasswordError as exc:
+        raise _bad(exc, status.HTTP_422_UNPROCESSABLE_CONTENT) from exc
+    except service.AuthError as exc:
         raise _bad(exc, status.HTTP_404_NOT_FOUND) from exc

@@ -37,6 +37,7 @@ _COMMON = {
 SESSION_PREFIX = "ses_"
 API_TOKEN_PREFIX = "prv_"
 INVITE_PREFIX = "inv_"
+RESET_PREFIX = "rst_"
 
 
 class WeakPasswordError(ValueError):
