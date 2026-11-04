@@ -3,7 +3,9 @@
 import { motion } from "motion/react";
 import Link from "next/link";
 
+import { RECOMMENDATION } from "@/components/verdict/DecisionPanel";
 import { EvidenceBalance } from "@/components/viz/EvidenceBalance";
+import { ScoreFigure } from "@/components/viz/ScoreBar";
 import type { PortfolioItem } from "@/lib/api";
 import { plural, relativeTime } from "@/lib/format";
 import { STATE_LABELS } from "@/lib/states";
@@ -18,7 +20,7 @@ function Ledger({ label, value }: { label: string; value: string | number }) {
   );
 }
 
-export function CaseFolder({ item, index }: { item: PortfolioItem; index: number }) {
+export function CaseFolder({ item, index, caseNo }: { item: PortfolioItem; index: number; caseNo: number }) {
   const ev = item.evidence;
   const exhibits = ev.supports + ev.contradicts + ev.neutral;
   const questions = item.unknowns_open + item.unknowns_answered;
@@ -44,7 +46,7 @@ export function CaseFolder({ item, index }: { item: PortfolioItem; index: number
             )}
           >
             <span className="font-mono text-[10px] tracking-[0.14em] text-muted-foreground">
-              CASE {String(index + 1).padStart(3, "0")}
+              CASE {String(caseNo).padStart(3, "0")}
             </span>
             <span aria-hidden className="h-3 w-px bg-border" />
             <span className="font-mono text-[10px] uppercase tracking-[0.14em]">
@@ -66,12 +68,20 @@ export function CaseFolder({ item, index }: { item: PortfolioItem; index: number
             "group-hover:-translate-y-0.5 group-hover:shadow-lg group-focus-visible:ring-2 group-focus-visible:ring-ring",
           )}
         >
-          <div>
-            <p className="eyebrow">{item.target_market}</p>
-            <h3 className="mt-1 font-display text-[1.65rem] leading-[1.1] decoration-1 underline-offset-4 group-hover:underline">
-              {item.title}
-            </h3>
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0">
+              <p className="eyebrow">{item.target_market}</p>
+              <h3 className="mt-1 font-display text-[1.65rem] leading-[1.1] decoration-1 underline-offset-4 group-hover:underline">
+                {item.title}
+              </h3>
+            </div>
+            <ScoreFigure score={item.validation?.score ?? null} label="validation" className="shrink-0" />
           </div>
+          <p className="-mt-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
+            {item.validation
+              ? `${RECOMMENDATION[item.validation.recommendation].label}${item.validation.stale ? " · evidence changed" : ""}`
+              : "Not scored yet"}
+          </p>
 
           <p className="line-clamp-3 min-h-[3.75rem] font-display text-[1.02rem] italic leading-snug text-ink-soft">
             {item.problem ?? "Not analyzed yet — the hypothesis appears here once the case is opened."}
@@ -97,7 +107,13 @@ export function CaseFolder({ item, index }: { item: PortfolioItem; index: number
             <Ledger label="Exhibits" value={exhibits} />
             <Ledger label="Alternatives" value={item.competitors} />
             <Ledger label="Prospects" value={item.prospects} />
-            <Ledger label="Top score" value={item.top_score ?? "—"} />
+            <Ledger label="Top lead" value={item.top_score ?? "—"} />
+          </div>
+          <div className="-mt-1 grid grid-cols-4 gap-3">
+            <Ledger label="Sent" value={item.funnel.sent} />
+            <Ledger label="Replies" value={item.funnel.replies} />
+            <Ledger label="Interviews" value={item.funnel.interviews_done} />
+            <Ledger label="Pilots+" value={item.funnel.pilot_or_better} />
           </div>
 
           <div className="mt-auto flex items-center justify-between gap-3 text-xs text-muted-foreground">

@@ -10,6 +10,7 @@ import { EmptyState, ErrorState } from "@/components/dossier/layout";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { api, type PortfolioItem } from "@/lib/api";
+import { cn } from "@/lib/utils";
 
 function Stat({ value, label }: { value: number | string; label: string }) {
   return (
@@ -23,6 +24,7 @@ function Stat({ value, label }: { value: number | string; label: string }) {
 export default function CaseBoard() {
   const [items, setItems] = useState<PortfolioItem[] | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [order, setOrder] = useState<"recent" | "score">("recent");
 
   const load = useCallback(
     () =>
@@ -89,10 +91,25 @@ export default function CaseBoard() {
 
       {/* folders */}
       <section className="pt-10" aria-labelledby="cases-heading">
-        <div className="mb-6 flex items-baseline justify-between">
+        <div className="mb-6 flex flex-wrap items-baseline justify-between gap-3">
           <h2 id="cases-heading" className="eyebrow">
-            Cases · most recent activity first
+            Cases · {order === "score" ? "highest validation score first" : "most recent activity first"}
           </h2>
+          <div className="flex gap-1 text-xs" role="group" aria-label="Sort cases">
+            {(["recent", "score"] as const).map((o) => (
+              <button
+                key={o}
+                aria-pressed={order === o}
+                onClick={() => setOrder(o)}
+                className={cn(
+                  "rounded-md px-2.5 py-1 transition-colors hover:bg-accent",
+                  order === o ? "bg-accent font-medium" : "text-muted-foreground",
+                )}
+              >
+                {o === "recent" ? "Recent" : "Score"}
+              </button>
+            ))}
+          </div>
         </div>
 
         {error && <ErrorState message={`Couldn't load your cases: ${error}`} onRetry={load} />}
@@ -126,8 +143,11 @@ export default function CaseBoard() {
 
         {items && items.length > 0 && (
           <ul className="grid gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
-            {items.map((item, i) => (
-              <CaseFolder key={item.id} item={item} index={i} />
+            {(order === "score"
+              ? [...items].sort((a, b) => (b.validation?.score ?? -1) - (a.validation?.score ?? -1))
+              : items
+            ).map((item, i) => (
+              <CaseFolder key={item.id} item={item} index={i} caseNo={items.indexOf(item) + 1} />
             ))}
           </ul>
         )}
