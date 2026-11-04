@@ -16,6 +16,7 @@ from app.modules.outreach.router import public_router as unsubscribe_router
 from app.modules.outreach.router import router as outreach_router
 from app.modules.portfolio.router import router as portfolio_router
 from app.modules.prospects.router import router as prospects_router
+from app.modules.reports.router import router as reports_router
 from app.modules.research.router import router as research_router
 from app.modules.responses.router import inbox_router
 from app.modules.responses.router import router as responses_router
@@ -59,6 +60,7 @@ def create_app() -> FastAPI:
     app.include_router(wtp_router)
     app.include_router(validation_router)
     app.include_router(experiments_router)
+    app.include_router(reports_router)
     return app
 
 

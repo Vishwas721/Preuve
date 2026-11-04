@@ -12,6 +12,7 @@ from app.workers.jobs import (
     ping,
     run_analysis,
     send_campaign,
+    validation_report,
     verify_research_import,
 )
 from app.workers.queue import redis_settings
@@ -28,6 +29,7 @@ class WorkerSettings:
         imap_poll,
         interview_guide,
         analyze_interview,
+        validation_report,
     ]
     # Poll the mailbox every IMAP_POLL_MINUTES (the job returns at once if IMAP is off).
     cron_jobs = [

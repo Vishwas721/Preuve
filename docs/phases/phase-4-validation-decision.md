@@ -105,7 +105,7 @@ Shown with the score, deterministic:
   because first-party quotes are included: local model by default, Gemini only with
   `ALLOW_PRIVATE_TO_GEMINI=true`. If the call fails or returns nothing, the report says
   "No summary — the model returned no cited claims." and is still complete.
-- Export: `GET /reports/{id}.md` (Markdown download) and a print-optimised report page
+- Export: `GET /reports/{id}/markdown` (Markdown download) and a print-optimised report page
   (browser "Save as PDF"). No server-side PDF dependency.
 
 ## Portfolio (PRD §27)
@@ -136,7 +136,7 @@ when stored inputs changed since the last score).
 - `GET/POST /ideas/{id}/experiments`, `GET/PATCH/DELETE /ideas/{id}/experiments/{eid}`
   (results computed on read; PATCH can conclude).
 - `POST /ideas/{id}/reports` (enqueue), `GET /ideas/{id}/reports`, `GET /reports/{id}`,
-  `GET /reports/{id}.md`, `DELETE /reports/{id}`.
+  `GET /reports/{id}/markdown`, `DELETE /reports/{id}`.
 - `GET /portfolio` (extended).
 
 ## Jobs

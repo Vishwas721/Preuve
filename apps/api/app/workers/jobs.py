@@ -16,6 +16,7 @@ from app.llm.router import get_llm_router
 from app.modules.analysis import service as analysis
 from app.modules.interviews import service as interviews
 from app.modules.outreach import service as outreach
+from app.modules.reports import service as reports
 from app.modules.research import service as research
 from app.modules.responses import mailbox
 from app.modules.responses import service as responses
@@ -149,3 +150,17 @@ async def interview_guide(ctx: dict[str, Any], interview_id: str) -> str | None:
 async def analyze_interview(ctx: dict[str, Any], interview_id: str) -> str | None:
     """Phase 3: extract conversation fields from interview notes (local, private)."""
     return await _interview_job(interview_id, "extraction")
+
+
+async def validation_report(ctx: dict[str, Any], report_id: str) -> str | None:
+    """Phase 4: render a validation report from its score snapshot, with a cited summary."""
+    rid = uuid.UUID(report_id)
+    try:
+        async with SessionLocal() as session:
+            status = await reports.generate(session, get_llm_router(), rid)
+    except Exception as exc:
+        logger.exception("validation_report crashed for %s", report_id)
+        async with SessionLocal() as session:
+            await reports.mark_failed(session, rid, f"Worker error: {exc}")
+        raise
+    return status.value if status else None
