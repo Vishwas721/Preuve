@@ -34,5 +34,5 @@ Billing. CRM integrations (PRD §49, later). SSO / OAuth providers.
 
 - [x] Users only see their own workspace's data (tested at the API level). — 5A
 - [x] Deleting a contact removes their personal data and suppresses the address. — 5B
-- [ ] A security review has been done and its findings addressed. — 5C
+- [x] A security review has been done and its findings addressed. — 5C
 - [ ] Production deploy works from CI with migrations; backups are verified by a restore. — 5D

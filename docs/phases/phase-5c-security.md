@@ -1,6 +1,6 @@
 # Phase 5C — Security
 
-- **Status:** In progress (kickoff 2026-11-04)
+- **Status:** Done (2026-11-04)
 - **Goal:** Review and harden the attack surface before Preuve is reachable from the internet.
 - **PRD refs:** §36 Outreach safety, §37
 
@@ -96,17 +96,41 @@ Settings → **Accounts** (instance owner only): users, "Create reset link" (sho
 
 ## Acceptance criteria
 
-- [ ] The fetcher refuses private, loopback, link-local and metadata addresses, including via
-      redirects (tested).
-- [ ] No high or critical advisories in production dependencies (`pip-audit`, `pnpm audit --prod`);
-      both run in CI; Dependabot configured.
-- [ ] Production refuses to start with the dev outreach secret (tested).
-- [ ] Rate limits return 429 with `Retry-After` (tested).
-- [ ] Security headers are set on the web app and the API (tested / checked live).
-- [ ] Oversized requests get 413; a bad header field no longer aborts a campaign send (tested).
-- [ ] Reset links: only the instance owner can create them; one use, 1 hour; all sessions end
-      (tested).
-- [ ] Web lint, typecheck and build pass; reset flow and headers checked in a real browser.
+- [x] The fetcher refuses private, loopback, link-local and metadata addresses, including via
+      redirects (tested: 10 address kinds, mixed public/private DNS answers, redirect to
+      169.254.169.254; live: loopback, the DB port, metadata and 10.x refused, a public page
+      fetched).
+- [x] No high or critical advisories in production dependencies (`pip-audit`, `pnpm audit --prod`:
+      none); both run in CI; Dependabot configured.
+- [x] Production refuses to start with the dev outreach secret (tested; your `.env` already has
+      a 43-character secret).
+- [x] Rate limits return 429 with `Retry-After` (tested; live on a public route).
+- [x] Security headers are set on the web app and the API (tested; checked live; framing the app
+      from another page is blocked).
+- [x] Oversized requests get 413; a bad header field no longer aborts a campaign send (tested).
+- [x] Reset links: only the instance owner can create them; one use, 1 hour; all sessions end
+      (tested; live).
+- [x] Web lint, typecheck and build pass; reset flow and headers checked in a real browser.
+
+## Verification (2026-11-04)
+
+- API: ruff clean; **330 tests** pass (security 12, fetcher SSRF 15). Migrations apply on an
+  empty database and `alembic check` is clean; the real database is on the new revision.
+- Web: lint, typecheck and production build pass on Next 16.4.3.
+- `pip-audit` and `pnpm audit --prod`: no known vulnerabilities.
+- Live: the research CLI's `fetch` refused `127.0.0.1:8000`, `localhost:5435`,
+  `169.254.169.254` and `10.0.0.1` and fetched `https://example.com`; the web app and the API
+  (through the proxy) sent every security header, authenticated API responses were `no-store`;
+  request 31 to a public auth route got `429` with `Retry-After: 10`.
+- Live run (Playwright in real Chrome): the instance owner created a reset link for a member
+  who is a workspace *owner*; that member saw no Accounts section and got 403 from the admin
+  API; the link set a new password, ended the member's old session, then stopped working; the
+  new password signed in; a page embedding Preuve in an iframe was blocked by
+  `frame-ancestors 'none'`. Afterwards everything was removed and the owner account returned
+  to *unclaimed*.
+- Fixed during the phase: the first upgrade to Next 16.4.5 tripped pnpm's minimum-release-age
+  policy (the version was a day old) and pnpm wrote exceptions; instead Next is pinned to 16.4.3
+  (12 days old, includes the fixes), with no exceptions, so CI's frozen install passes.
 
 ## Decisions (2026-11-04)
 
@@ -120,3 +144,12 @@ Settings → **Accounts** (instance owner only): users, "Create reset link" (sho
 - From 5A: review the Origin-based CSRF check (done above: fine), password reset (S11), API-wide
   rate limiting (S6).
 - 5D needs `TRUST_PROXY_HEADERS=true` behind the tunnel and a real `OUTREACH_SECRET`.
+- **For 5D:** behind the Next proxy every browser reaches the API as `127.0.0.1`, so per-IP
+  limits on public auth routes are shared by everyone unless `TRUST_PROXY_HEADERS=true`. Set it
+  only when the API is reachable *solely* through the proxy/tunnel (otherwise the header can be
+  spoofed); the Next proxy forwards `X-Forwarded-For`.
+- The fetcher re-resolves DNS when connecting, so DNS rebinding between the check and the
+  request isn't covered; the impact is limited to quote matching.
+- Remaining nice-to-haves: a nonce-based script CSP for the web app; a session list with
+  "sign out other devices".
+- Settings added to `.env.example`: `TRUST_PROXY_HEADERS`, `MAX_REQUEST_BYTES`.
