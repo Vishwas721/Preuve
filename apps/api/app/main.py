@@ -18,6 +18,7 @@ from app.modules.outreach.router import global_router as outreach_global_router
 from app.modules.outreach.router import public_router as unsubscribe_router
 from app.modules.outreach.router import router as outreach_router
 from app.modules.portfolio.router import router as portfolio_router
+from app.modules.privacy.router import router as privacy_router
 from app.modules.prospects.router import router as prospects_router
 from app.modules.reports.router import router as reports_router
 from app.modules.research.router import router as research_router
@@ -54,6 +55,7 @@ PRIVATE_ROUTERS = [
     validation_router,
     experiments_router,
     reports_router,
+    privacy_router,
 ]
 
 

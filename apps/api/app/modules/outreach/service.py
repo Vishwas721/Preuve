@@ -874,6 +874,12 @@ async def forget_contact(
             session, address, SuppressionReason.DELETION_REQUEST, workspace_id=workspace_id
         )
 
+    await _forget_messages(session, messages)
+
+
+async def _forget_messages(session: AsyncSession, messages: list[Message]) -> None:
+    """Drop unsent messages and redact sent ones (their hash, dates, status and cited evidence
+    stay, as the record that something was sent). Does not commit."""
     unsent = [m.id for m in messages if m.status not in SENT_STATES]
     if unsent:
         await session.execute(delete(Message).where(Message.id.in_(unsent)))
@@ -887,6 +893,34 @@ async def forget_contact(
             m.checks = []
             m.redacted_at = _now()
     await session.flush()
+
+
+async def messages_to(
+    session: AsyncSession, workspace_id: uuid.UUID, email: str
+) -> list[tuple[Message, OutreachCampaign]]:
+    """Messages written to this address in the workspace's ideas (Phase 5B)."""
+    rows = await session.execute(
+        select(Message, OutreachCampaign)
+        .join(OutreachCampaign, OutreachCampaign.id == Message.campaign_id)
+        .join(Idea, Idea.id == OutreachCampaign.idea_id)
+        .where(
+            Idea.workspace_id == workspace_id,
+            func.lower(Message.to_email) == safety.normalize_email(email),
+        )
+        .order_by(Message.created_at)
+    )
+    return [(m, c) for m, c in rows]
+
+
+async def forget_address(session: AsyncSession, workspace_id: uuid.UUID, email: str) -> int:
+    """Erasure by address: suppress it and drop/redact every message to it in this workspace.
+    Does not commit. Returns how many messages were affected."""
+    rows = await messages_to(session, workspace_id, email)
+    await add_suppression(
+        session, email, SuppressionReason.DELETION_REQUEST, workspace_id=workspace_id
+    )
+    await _forget_messages(session, [m for m, _ in rows])
+    return len(rows)
 
 
 # ---------- reading ----------
