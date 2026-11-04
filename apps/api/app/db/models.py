@@ -16,6 +16,7 @@ from app.modules.research.models import (
 )
 from app.modules.responses.models import Response
 from app.modules.users.models import User
+from app.modules.validation.models import ValidationScore
 from app.modules.wtp.models import WtpSignal
 
 __all__ = [
@@ -42,6 +43,7 @@ __all__ = [
     "Unknown",
     "UnknownFinding",
     "User",
+    "ValidationScore",
     "WebSource",
     "WtpSignal",
 ]

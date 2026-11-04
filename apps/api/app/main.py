@@ -18,6 +18,7 @@ from app.modules.prospects.router import router as prospects_router
 from app.modules.research.router import router as research_router
 from app.modules.responses.router import inbox_router
 from app.modules.responses.router import router as responses_router
+from app.modules.validation.router import router as validation_router
 from app.modules.wtp.router import router as wtp_router
 
 
@@ -55,6 +56,7 @@ def create_app() -> FastAPI:
     app.include_router(inbox_router)
     app.include_router(interviews_router)
     app.include_router(wtp_router)
+    app.include_router(validation_router)
     return app
 
 

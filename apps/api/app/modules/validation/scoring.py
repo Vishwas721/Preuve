@@ -711,7 +711,34 @@ def canonical(inp: ValidationInput) -> dict:
     return data
 
 
+_ROW_TYPES = {
+    "research": ResearchItem,
+    "signals": CustomerSignal,
+    "replies": ReplyInput,
+    "interviews": InterviewInput,
+    "wtp": WtpInput,
+    "competitors": CompetitorInput,
+    "open_unknowns": UnknownInput,
+}
+
+
+def from_canonical(data: dict) -> ValidationInput:
+    """Rebuild inputs from `canonical()` output (e.g. a stored snapshot) to re-score them."""
+
+    def row(cls: type, d: dict):
+        return cls(**{k: tuple(v) if isinstance(v, list) else v for k, v in d.items()})
+
+    return ValidationInput(
+        **{
+            k: tuple(row(_ROW_TYPES[k], x) for x in v) if k in _ROW_TYPES else v
+            for k, v in data.items()
+        }
+    )
+
+
 def evaluate(inp: ValidationInput) -> Evaluation:
+    # Sorted rows first, so the output (including id order) never depends on DB row order.
+    inp = from_canonical(canonical(inp))
     c = _customers(inp)
     dims = [
         _problem(inp, c),

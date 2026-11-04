@@ -302,3 +302,13 @@ def test_wtp_points_take_the_best_per_customer():
     )
     e = evaluate(ValidationInput(has_research=True, wtp=rows))
     assert e.dimensions[6].points == 8 - 2
+
+
+def test_stored_inputs_rescore_to_the_same_result():
+    import json
+
+    from app.modules.validation.scoring import canonical, from_canonical
+
+    inp = strong_input()
+    stored = json.loads(json.dumps(canonical(inp)))  # as it comes back from a JSON column
+    assert evaluate(from_canonical(stored)).as_dict() == evaluate(inp).as_dict()
