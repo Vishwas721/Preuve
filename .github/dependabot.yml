@@ -1,0 +1,21 @@
+# Weekly dependency updates (Phase 5C). Security updates also arrive as soon as they're published
+# when "Dependabot security updates" is on in the repository settings.
+version: 2
+updates:
+  - package-ecosystem: uv
+    directory: /apps/api
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: npm
+    directory: /apps/web
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      next:
+        patterns: ["next", "eslint-config-next"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
