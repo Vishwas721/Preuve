@@ -17,7 +17,6 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.llm.base import LLMError
 from app.llm.router import LLMRouter
 from app.llm.tasks import TaskType
-from app.modules.ideas import service as ideas
 from app.modules.ideas.models import Idea
 from app.modules.reports import prompts
 from app.modules.reports.models import Report, ReportStatus
@@ -358,13 +357,9 @@ async def list_reports(session: AsyncSession, idea_id: uuid.UUID) -> list[Report
     )
 
 
-async def get_owned(
-    session: AsyncSession, owner_id: uuid.UUID, report_id: uuid.UUID
-) -> Report | None:
-    row = await session.get(Report, report_id)
-    if row is None or await ideas.get_idea(session, owner_id, row.idea_id) is None:
-        return None
-    return row
+async def get_report(session: AsyncSession, report_id: uuid.UUID) -> Report | None:
+    """No access check: the router authorises through the report's idea."""
+    return await session.get(Report, report_id)
 
 
 async def delete(session: AsyncSession, row: Report) -> None:

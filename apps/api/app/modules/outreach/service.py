@@ -69,13 +69,30 @@ def _day_start(now: datetime) -> datetime:
 
 
 async def get_suppression(session: AsyncSession, email: str) -> Suppression | None:
+    """The oldest row blocking this address, in any workspace."""
     return await session.scalar(
-        select(Suppression).where(Suppression.email == safety.normalize_email(email))
+        select(Suppression)
+        .where(Suppression.email == safety.normalize_email(email))
+        .order_by(Suppression.created_at)
+        .limit(1)
     )
 
 
 async def is_suppressed(session: AsyncSession, email: str) -> bool:
-    return await get_suppression(session, email) is not None
+    """Global: a row in *any* workspace blocks the address (Phase 5A)."""
+    found = await session.scalar(
+        select(Suppression.id).where(Suppression.email == safety.normalize_email(email)).limit(1)
+    )
+    return found is not None
+
+
+async def _message_workspace(session: AsyncSession, message_id: uuid.UUID) -> uuid.UUID | None:
+    return await session.scalar(
+        select(Idea.workspace_id)
+        .join(OutreachCampaign, OutreachCampaign.idea_id == Idea.id)
+        .join(Message, Message.campaign_id == OutreachCampaign.id)
+        .where(Message.id == message_id)
+    )
 
 
 async def add_suppression(
@@ -83,28 +100,67 @@ async def add_suppression(
     email: str,
     reason: SuppressionReason,
     *,
+    workspace_id: uuid.UUID | None = None,
     message_id: uuid.UUID | None = None,
     note: str | None = None,
 ) -> Suppression:
-    """Idempotent; an existing entry is kept as is (does not commit)."""
-    existing = await get_suppression(session, email)
+    """Idempotent per workspace; an existing entry is kept as is (does not commit).
+
+    The row belongs to `workspace_id`, else to the workspace of the message it came from.
+    """
+    if workspace_id is None and message_id is not None:
+        workspace_id = await _message_workspace(session, message_id)
+    email = safety.normalize_email(email)
+    existing = await session.scalar(
+        select(Suppression).where(
+            Suppression.email == email,
+            Suppression.workspace_id == workspace_id
+            if workspace_id
+            else Suppression.workspace_id.is_(None),
+        )
+    )
     if existing is not None:
         return existing
     row = Suppression(
-        email=safety.normalize_email(email), reason=reason, message_id=message_id, note=note
+        email=email,
+        workspace_id=workspace_id,
+        reason=reason,
+        message_id=message_id,
+        note=note,
     )
     session.add(row)
     await session.flush()
     return row
 
 
-async def list_suppressions(session: AsyncSession) -> list[Suppression]:
-    return list(await session.scalars(select(Suppression).order_by(Suppression.created_at.desc())))
+async def list_suppressions(session: AsyncSession, workspace_id: uuid.UUID) -> list[Suppression]:
+    """Only this workspace's rows; other workspaces' entries still block, but stay private."""
+    return list(
+        await session.scalars(
+            select(Suppression)
+            .where(Suppression.workspace_id == workspace_id)
+            .order_by(Suppression.created_at.desc())
+        )
+    )
 
 
-async def delete_suppression(session: AsyncSession, suppression_id: uuid.UUID) -> None:
+async def blocked_elsewhere(session: AsyncSession, email: str, workspace_id: uuid.UUID) -> bool:
+    found = await session.scalar(
+        select(Suppression.id)
+        .where(
+            Suppression.email == safety.normalize_email(email),
+            Suppression.workspace_id.is_distinct_from(workspace_id),
+        )
+        .limit(1)
+    )
+    return found is not None
+
+
+async def delete_suppression(
+    session: AsyncSession, workspace_id: uuid.UUID, suppression_id: uuid.UUID
+) -> None:
     row = await session.get(Suppression, suppression_id)
-    if row is None:
+    if row is None or row.workspace_id != workspace_id:
         raise LookupError("Suppression not found")
     if row.reason != SuppressionReason.MANUAL:
         raise OutreachError(f"A '{row.reason.value}' suppression can't be removed")
@@ -803,7 +859,10 @@ async def contact_addresses(
 
 
 async def forget_contact(
-    session: AsyncSession, contact_id: uuid.UUID, contact_email: str | None
+    session: AsyncSession,
+    contact_id: uuid.UUID,
+    contact_email: str | None,
+    workspace_id: uuid.UUID | None = None,
 ) -> None:
     """Before a contact is deleted: suppress every address, drop unsent messages and redact
     sent ones (their hash, dates, status and cited evidence stay). Does not commit."""
@@ -811,7 +870,9 @@ async def forget_contact(
     addresses = {safety.normalize_email(e) for e in [contact_email] if e}
     addresses |= {safety.normalize_email(m.to_email) for m in messages if m.to_email}
     for address in sorted(addresses):
-        await add_suppression(session, address, SuppressionReason.DELETION_REQUEST)
+        await add_suppression(
+            session, address, SuppressionReason.DELETION_REQUEST, workspace_id=workspace_id
+        )
 
     unsent = [m.id for m in messages if m.status not in SENT_STATES]
     if unsent:

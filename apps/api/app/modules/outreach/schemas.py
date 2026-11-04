@@ -158,6 +158,8 @@ class SuppressionRead(BaseModel):
     message_id: uuid.UUID | None
     note: str | None
     created_at: datetime
+    # Set when adding: the address was already blocked by another workspace (which isn't named).
+    blocked_elsewhere: bool = False
 
 
 # ---------- recipients & settings ----------

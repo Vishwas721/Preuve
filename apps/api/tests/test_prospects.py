@@ -14,6 +14,7 @@ from app.modules.prospects import service as prospects
 from app.modules.prospects.models import Contact, LeadScore
 from app.modules.research import service as research
 from app.modules.users.service import get_or_create_user
+from app.modules.workspaces.service import personal_workspace_id
 from app.search.fetch import FetchError
 from tests.research_fixtures import evidence_item, pack
 from tests.test_research_service import FakeFetcher, run_import
@@ -96,7 +97,9 @@ PAGES = {
 async def idea(session: AsyncSession) -> Idea:
     user = await get_or_create_user(session, "p@preuve.local", "P")
     idea = await create_idea(
-        session, user.id, IdeaCreate(title="t", description="d", target_market="US")
+        session,
+        await personal_workspace_id(session, user),
+        IdeaCreate(title="t", description="d", target_market="US"),
     )
     ratings = {
         k: {"rating": 3, "rationale": "r"}
@@ -293,7 +296,9 @@ async def test_prospect_api(
     async with session_maker() as s:
         user = await get_or_create_user(s, "founder@preuve.local", "Founder")
         idea = await create_idea(
-            s, user.id, IdeaCreate(title="t", description="d", target_market="US")
+            s,
+            await personal_workspace_id(s, user),
+            IdeaCreate(title="t", description="d", target_market="US"),
         )
         await import_company(s, idea)
         idea_id = idea.id

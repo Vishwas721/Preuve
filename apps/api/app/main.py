@@ -1,11 +1,14 @@
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import get_settings
+from app.core.deps import get_principal
 from app.modules.analysis.router import router as analysis_router
+from app.modules.auth.router import public_router as auth_public_router
+from app.modules.auth.router import router as auth_router
 from app.modules.competitors.router import router as competitors_router
 from app.modules.experiments.router import router as experiments_router
 from app.modules.ideas.router import router as ideas_router
@@ -21,7 +24,37 @@ from app.modules.research.router import router as research_router
 from app.modules.responses.router import inbox_router
 from app.modules.responses.router import router as responses_router
 from app.modules.validation.router import router as validation_router
+from app.modules.workspaces.router import public_router as invitations_public_router
+from app.modules.workspaces.router import router as workspaces_router
 from app.modules.wtp.router import router as wtp_router
+
+# Reachable without signing in. Everything else requires a session or an API token.
+PUBLIC_ROUTERS = [
+    meta_router,  # /health
+    unsubscribe_router,  # recipients clicking the unsubscribe link
+    auth_public_router,  # status, setup, sign-up, login, logout
+    invitations_public_router,  # opening an invitation link, signing up with it
+]
+
+PRIVATE_ROUTERS = [
+    auth_router,
+    workspaces_router,
+    ideas_router,
+    analysis_router,
+    research_router,
+    competitors_router,
+    prospects_router,
+    portfolio_router,
+    outreach_router,
+    outreach_global_router,
+    responses_router,
+    inbox_router,
+    interviews_router,
+    wtp_router,
+    validation_router,
+    experiments_router,
+    reports_router,
+]
 
 
 @asynccontextmanager
@@ -44,23 +77,12 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    app.include_router(meta_router)
-    app.include_router(ideas_router)
-    app.include_router(analysis_router)
-    app.include_router(research_router)
-    app.include_router(competitors_router)
-    app.include_router(prospects_router)
-    app.include_router(portfolio_router)
-    app.include_router(outreach_router)
-    app.include_router(outreach_global_router)
-    app.include_router(unsubscribe_router)
-    app.include_router(responses_router)
-    app.include_router(inbox_router)
-    app.include_router(interviews_router)
-    app.include_router(wtp_router)
-    app.include_router(validation_router)
-    app.include_router(experiments_router)
-    app.include_router(reports_router)
+    for r in PUBLIC_ROUTERS:
+        app.include_router(r)
+    # Default-deny: a route added to these routers is private even if it forgets to ask for
+    # the caller. (Routes that need the caller still declare it to get the Principal.)
+    for r in PRIVATE_ROUTERS:
+        app.include_router(r, dependencies=[Depends(get_principal)])
     return app
 
 

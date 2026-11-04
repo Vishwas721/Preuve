@@ -73,6 +73,9 @@ class Settings(BaseSettings):
     allow_private_to_gemini: bool = False
 
     # Single-user mode until Phase 5 auth: this user is created on first request.
+    # Phase 5A auth. Open sign-up is off: people join a workspace through an invitation.
+    allow_signup: bool = False
+    # The pre-5A single user; first-run setup claims it (and the data it owns).
     dev_user_email: str = "founder@preuve.local"
     dev_user_name: str = "Founder"
 

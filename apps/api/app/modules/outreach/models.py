@@ -103,11 +103,16 @@ class Message(UUIDPrimaryKeyMixin, TimestampMixin, Base):
 
 
 class Suppression(UUIDPrimaryKeyMixin, TimestampMixin, Base):
-    """Global: a suppressed address is never contacted again, by any campaign or idea."""
+    """Blocking is global: an address with a row in *any* workspace is never contacted again.
+    Each workspace only sees and manages its own rows (Phase 5A)."""
 
     __tablename__ = "suppressions"
+    __table_args__ = (UniqueConstraint("email", "workspace_id"),)
 
-    email: Mapped[str] = mapped_column(String(320), unique=True)  # lower-cased
+    email: Mapped[str] = mapped_column(String(320), index=True)  # lower-cased
+    workspace_id: Mapped[uuid.UUID | None] = mapped_column(
+        ForeignKey("workspaces.id", ondelete="SET NULL"), index=True
+    )
     reason: Mapped[SuppressionReason] = mapped_column(_enum(SuppressionReason))
     message_id: Mapped[uuid.UUID | None] = mapped_column(
         ForeignKey("messages.id", ondelete="SET NULL")

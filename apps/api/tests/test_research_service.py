@@ -21,6 +21,7 @@ from app.modules.research.models import (
 from app.modules.research.pack import ResearchPack
 from app.modules.research.schemas import EvidenceUpdate
 from app.modules.users.service import get_or_create_user
+from app.modules.workspaces.service import personal_workspace_id
 from app.search.fetch import FetchedPage, FetchError
 from tests.research_fixtures import claim, evidence_item, pack
 
@@ -58,7 +59,9 @@ class FakeFetcher:
 async def idea(session: AsyncSession) -> Idea:
     user = await get_or_create_user(session, "r@preuve.local", "R")
     return await create_idea(
-        session, user.id, IdeaCreate(title="t", description="d", target_market="US")
+        session,
+        await personal_workspace_id(session, user),
+        IdeaCreate(title="t", description="d", target_market="US"),
     )
 
 
@@ -266,7 +269,7 @@ async def test_reimport_deduplicates_and_upgrades(session: AsyncSession, idea: I
 
 async def test_validate_for_idea(session: AsyncSession, idea: Idea) -> None:
     other = await create_idea(
-        session, idea.owner_id, IdeaCreate(title="o", description="d", target_market="US")
+        session, idea.workspace_id, IdeaCreate(title="o", description="d", target_market="US")
     )
     foreign = await analysis.create_unknown(session, other.id, UnknownCreate(question="Elsewhere?"))
     p = ResearchPack.model_validate(pack(other.id, [evidence_item(unknown_ids=[str(foreign.id)])]))

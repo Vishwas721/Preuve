@@ -13,6 +13,7 @@ from app.email.fake import FakeEmailProvider
 from app.llm.fake import FakeProvider
 from app.llm.router import LLMRouter
 from app.llm.tasks import ProviderName
+from app.modules.ideas import service as ideas_service
 from app.modules.ideas.models import Idea
 from app.modules.outreach import safety
 from app.modules.outreach import service as outreach
@@ -571,7 +572,10 @@ async def test_outreach_api_flow(
     assert (await client.post("/suppressions", json={"email": "bad"})).status_code == 422
     assert (await client.delete(f"/suppressions/{r.json()['id']}")).status_code == 204
     async with session_maker() as session:
-        row = await outreach.add_suppression(session, "u@x.test", SuppressionReason.UNSUBSCRIBED)
+        ws = await ideas_service.workspace_of(session, uuid.UUID(idea_id))
+        row = await outreach.add_suppression(
+            session, "u@x.test", SuppressionReason.UNSUBSCRIBED, workspace_id=ws
+        )
         await session.commit()
     assert (await client.delete(f"/suppressions/{row.id}")).status_code == 409
 

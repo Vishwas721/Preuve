@@ -1,5 +1,7 @@
 """Case-board aggregates. Reads only through other modules' service functions."""
 
+import uuid
+
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.modules.analysis import service as analysis
@@ -13,7 +15,6 @@ from app.modules.portfolio.schemas import EvidenceTally, Funnel, PortfolioItem, 
 from app.modules.prospects import service as prospects
 from app.modules.research import service as research
 from app.modules.responses import service as responses
-from app.modules.users.models import User
 from app.modules.validation import service as validation
 from app.modules.wtp import service as wtp
 
@@ -81,6 +82,6 @@ async def _item(session: AsyncSession, idea: Idea) -> PortfolioItem:
     )
 
 
-async def portfolio(session: AsyncSession, user: User) -> list[PortfolioItem]:
-    items = [await _item(session, idea) for idea in await ideas.list_ideas(session, user.id)]
+async def portfolio(session: AsyncSession, workspace_id: uuid.UUID) -> list[PortfolioItem]:
+    items = [await _item(session, idea) for idea in await ideas.list_ideas(session, workspace_id)]
     return sorted(items, key=lambda i: i.last_activity, reverse=True)

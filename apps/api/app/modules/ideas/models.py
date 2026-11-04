@@ -2,7 +2,7 @@ import enum
 import uuid
 
 from sqlalchemy import Enum, ForeignKey, String, Text
-from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy.orm import Mapped, mapped_column
 
 from app.db.base import Base, TimestampMixin, UUIDPrimaryKeyMixin
 
@@ -24,8 +24,12 @@ class Idea(UUIDPrimaryKeyMixin, TimestampMixin, Base):
 
     __tablename__ = "ideas"
 
-    owner_id: Mapped[uuid.UUID] = mapped_column(
-        ForeignKey("users.id", ondelete="CASCADE"), index=True
+    # Who can see it: every member of this workspace (Phase 5A).
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("workspaces.id", ondelete="CASCADE"), index=True
+    )
+    created_by_id: Mapped[uuid.UUID | None] = mapped_column(
+        ForeignKey("users.id", ondelete="SET NULL")
     )
 
     title: Mapped[str] = mapped_column(String(200))
@@ -49,5 +53,3 @@ class Idea(UUIDPrimaryKeyMixin, TimestampMixin, Base):
         ),
         default=ValidationState.UNVALIDATED,
     )
-
-    owner: Mapped["User"] = relationship(back_populates="ideas")  # noqa: F821

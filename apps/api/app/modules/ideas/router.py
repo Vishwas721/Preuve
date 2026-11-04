@@ -1,6 +1,6 @@
 from fastapi import APIRouter, status
 
-from app.core.deps import CurrentUser, SessionDep
+from app.core.deps import ActiveWorkspace, CurrentUser, SessionDep
 from app.modules.ideas import service
 from app.modules.ideas.deps import OwnedIdea
 from app.modules.ideas.models import Idea
@@ -10,13 +10,16 @@ router = APIRouter(prefix="/ideas", tags=["ideas"])
 
 
 @router.get("", response_model=list[IdeaRead])
-async def list_ideas(session: SessionDep, user: CurrentUser) -> list[Idea]:
-    return await service.list_ideas(session, user.id)
+async def list_ideas(session: SessionDep, workspace_id: ActiveWorkspace) -> list[Idea]:
+    """Ideas in the active workspace."""
+    return await service.list_ideas(session, workspace_id)
 
 
 @router.post("", response_model=IdeaRead, status_code=status.HTTP_201_CREATED)
-async def create_idea(data: IdeaCreate, session: SessionDep, user: CurrentUser) -> Idea:
-    return await service.create_idea(session, user.id, data)
+async def create_idea(
+    data: IdeaCreate, session: SessionDep, user: CurrentUser, workspace_id: ActiveWorkspace
+) -> Idea:
+    return await service.create_idea(session, workspace_id, data, created_by_id=user.id)
 
 
 @router.get("/{idea_id}", response_model=IdeaRead)

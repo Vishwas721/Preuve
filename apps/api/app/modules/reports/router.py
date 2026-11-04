@@ -5,8 +5,9 @@ import uuid
 from fastapi import APIRouter, HTTPException, status
 from fastapi.responses import Response
 
-from app.core.deps import CurrentUser, SessionDep
-from app.modules.ideas.deps import OwnedIdea
+from app.core.deps import CurrentPrincipal, SessionDep
+from app.modules.ideas import service as ideas
+from app.modules.ideas.deps import OwnedIdea, can_access
 from app.modules.reports import service
 from app.modules.reports.models import Report
 from app.modules.reports.schemas import ReportRead
@@ -17,9 +18,10 @@ logger = logging.getLogger(__name__)
 router = APIRouter(tags=["reports"])
 
 
-async def _owned(session: SessionDep, user: CurrentUser, report_id: uuid.UUID) -> Report:
-    row = await service.get_owned(session, user.id, report_id)
-    if row is None:
+async def _owned(session: SessionDep, principal: CurrentPrincipal, report_id: uuid.UUID) -> Report:
+    row = await service.get_report(session, report_id)
+    ws = await ideas.workspace_of(session, row.idea_id) if row else None
+    if row is None or ws is None or not await can_access(session, principal, ws):
         raise HTTPException(status.HTTP_404_NOT_FOUND, "Report not found")
     return row
 
@@ -47,13 +49,17 @@ async def create_report(idea: OwnedIdea, session: SessionDep, queue: QueueDep) -
 
 
 @router.get("/reports/{report_id}", response_model=ReportRead)
-async def get_report(report_id: uuid.UUID, session: SessionDep, user: CurrentUser) -> dict:
-    return await service.read(session, await _owned(session, user, report_id))
+async def get_report(
+    report_id: uuid.UUID, session: SessionDep, principal: CurrentPrincipal
+) -> dict:
+    return await service.read(session, await _owned(session, principal, report_id))
 
 
 @router.get("/reports/{report_id}/markdown")
-async def download_report(report_id: uuid.UUID, session: SessionDep, user: CurrentUser) -> Response:
-    row = await _owned(session, user, report_id)
+async def download_report(
+    report_id: uuid.UUID, session: SessionDep, principal: CurrentPrincipal
+) -> Response:
+    row = await _owned(session, principal, report_id)
     if row.status != "done":
         raise HTTPException(status.HTTP_409_CONFLICT, "The report isn't ready yet")
     title = row.content.splitlines()[0].removeprefix("# Validation report: ") if row.content else ""
@@ -69,5 +75,7 @@ async def download_report(report_id: uuid.UUID, session: SessionDep, user: Curre
 
 
 @router.delete("/reports/{report_id}", status_code=status.HTTP_204_NO_CONTENT)
-async def delete_report(report_id: uuid.UUID, session: SessionDep, user: CurrentUser) -> None:
-    await service.delete(session, await _owned(session, user, report_id))
+async def delete_report(
+    report_id: uuid.UUID, session: SessionDep, principal: CurrentPrincipal
+) -> None:
+    await service.delete(session, await _owned(session, principal, report_id))

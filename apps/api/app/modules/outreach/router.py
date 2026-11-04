@@ -6,7 +6,7 @@ from fastapi import APIRouter, HTTPException, status
 from fastapi.responses import HTMLResponse
 
 from app.core.config import get_settings
-from app.core.deps import SessionDep
+from app.core.deps import ActiveWorkspace, SessionDep
 from app.email import get_email_provider
 from app.modules.ideas.deps import OwnedIdea
 from app.modules.outreach import safety, service
@@ -269,27 +269,33 @@ async def outreach_settings(session: SessionDep) -> OutreachSettings:
 
 
 @global_router.get("/suppressions", response_model=list[SuppressionRead])
-async def list_suppressions(session: SessionDep) -> list:
-    return await service.list_suppressions(session)
+async def list_suppressions(session: SessionDep, workspace_id: ActiveWorkspace) -> list:
+    """This workspace's entries. Entries made by other workspaces block too, but aren't shown."""
+    return await service.list_suppressions(session, workspace_id)
 
 
 @global_router.post(
     "/suppressions", response_model=SuppressionRead, status_code=status.HTTP_201_CREATED
 )
-async def add_suppression(data: SuppressionCreate, session: SessionDep):
+async def add_suppression(
+    data: SuppressionCreate, session: SessionDep, workspace_id: ActiveWorkspace
+) -> dict:
     if not safety.is_valid_email(data.email):
         raise HTTPException(status.HTTP_422_UNPROCESSABLE_CONTENT, "Not an email address")
     row = await service.add_suppression(
-        session, data.email, SuppressionReason.MANUAL, note=data.note
+        session, data.email, SuppressionReason.MANUAL, workspace_id=workspace_id, note=data.note
     )
     await session.commit()
-    return row
+    elsewhere = await service.blocked_elsewhere(session, row.email, workspace_id)
+    return {**SuppressionRead.model_validate(row).model_dump(), "blocked_elsewhere": elsewhere}
 
 
 @global_router.delete("/suppressions/{suppression_id}", status_code=status.HTTP_204_NO_CONTENT)
-async def delete_suppression(suppression_id: uuid.UUID, session: SessionDep) -> None:
+async def delete_suppression(
+    suppression_id: uuid.UUID, session: SessionDep, workspace_id: ActiveWorkspace
+) -> None:
     try:
-        await service.delete_suppression(session, suppression_id)
+        await service.delete_suppression(session, workspace_id, suppression_id)
     except LookupError as exc:
         raise HTTPException(status.HTTP_404_NOT_FOUND, str(exc)) from exc
     except service.OutreachError as exc:

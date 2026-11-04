@@ -11,6 +11,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from app.db.models import Base
 from app.db.session import get_session
 from app.main import create_app
+from app.modules.auth.throttle import MemoryThrottle, get_throttle
 from app.workers.queue import get_job_queue
 
 TEST_DATABASE_URL = os.environ.get(
@@ -74,17 +75,47 @@ async def session(
         yield s
 
 
-@pytest.fixture
-async def client(
-    session_maker: async_sessionmaker[AsyncSession], queue: FakeQueue
-) -> AsyncIterator[AsyncClient]:
+# Every API test runs as a signed-in user through the real session path (Phase 5A).
+ORIGIN = "http://localhost:3000"  # in the default CORS_ORIGINS, so cookie writes pass CSRF
+PASSWORD = "correct horse battery"
+OWNER_EMAIL = "founder@preuve.local"  # DEV_USER_EMAIL: setup claims it
+
+
+def make_app(session_maker: async_sessionmaker[AsyncSession], queue: "FakeQueue", throttle=None):
     app = create_app()
     app.dependency_overrides[get_job_queue] = lambda: queue
+    shared = throttle or MemoryThrottle()
+    app.dependency_overrides[get_throttle] = lambda: shared
 
     async def _session() -> AsyncIterator[AsyncSession]:
         async with session_maker() as session:
             yield session
 
     app.dependency_overrides[get_session] = _session
-    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as c:
+    return app
+
+
+def new_client(app) -> AsyncClient:
+    return AsyncClient(
+        transport=ASGITransport(app=app), base_url="http://test", headers={"Origin": ORIGIN}
+    )
+
+
+@pytest.fixture
+async def anon_client(
+    session_maker: async_sessionmaker[AsyncSession], queue: FakeQueue
+) -> AsyncIterator[AsyncClient]:
+    async with new_client(make_app(session_maker, queue)) as c:
+        yield c
+
+
+@pytest.fixture
+async def client(
+    session_maker: async_sessionmaker[AsyncSession], queue: FakeQueue
+) -> AsyncIterator[AsyncClient]:
+    async with new_client(make_app(session_maker, queue)) as c:
+        r = await c.post(
+            "/auth/setup", json={"email": OWNER_EMAIL, "name": "Founder", "password": PASSWORD}
+        )
+        assert r.status_code == 201, r.text
         yield c

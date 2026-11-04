@@ -12,6 +12,7 @@ from app.modules.ideas.schemas import IdeaCreate
 from app.modules.ideas.service import create_idea
 from app.modules.research import service as research
 from app.modules.users.service import get_or_create_user
+from app.modules.workspaces.service import personal_workspace_id
 from app.search.fetch import FetchError
 from tests.research_fixtures import claim, evidence_item, pack
 from tests.test_research_service import FakeFetcher, run_import
@@ -63,7 +64,9 @@ FETCHER_PAGES = {"https://procore.com/a": PROCORE_PAGE, "https://bdc.com/b": SHE
 async def idea(session: AsyncSession) -> Idea:
     user = await get_or_create_user(session, "c@preuve.local", "C")
     return await create_idea(
-        session, user.id, IdeaCreate(title="t", description="d", target_market="US")
+        session,
+        await personal_workspace_id(session, user),
+        IdeaCreate(title="t", description="d", target_market="US"),
     )
 
 

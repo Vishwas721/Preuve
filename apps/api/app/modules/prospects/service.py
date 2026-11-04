@@ -390,7 +390,10 @@ async def delete_contact(session: AsyncSession, idea_id: uuid.UUID, contact_id: 
     await responses.forget_contact(session, contact.id, addresses)
     await interviews.forget_contact(session, contact.id)
     await wtp.forget_contact(session, contact.id)
-    await outreach.forget_contact(session, contact.id, contact.email)
+    from app.modules.ideas import service as ideas
+
+    workspace_id = await ideas.workspace_of(session, idea_id)
+    await outreach.forget_contact(session, contact.id, contact.email, workspace_id)
     await session.execute(delete(Contact).where(Contact.id == contact_id))
     await rescore_company(session, company)
     await session.commit()

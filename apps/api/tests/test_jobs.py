@@ -6,6 +6,7 @@ from app.modules.analysis.models import AnalysisRun, RunKind, RunStatus
 from app.modules.ideas.schemas import IdeaCreate
 from app.modules.ideas.service import create_idea
 from app.modules.users.service import get_or_create_user
+from app.modules.workspaces.service import personal_workspace_id
 from app.workers import jobs
 
 
@@ -15,7 +16,9 @@ async def test_crashed_job_marks_run_failed(
     async with session_maker() as s:
         user = await get_or_create_user(s, "j@preuve.local", "J")
         idea = await create_idea(
-            s, user.id, IdeaCreate(title="t", description="d", target_market="US")
+            s,
+            await personal_workspace_id(s, user),
+            IdeaCreate(title="t", description="d", target_market="US"),
         )
         run = await service.start_run(s, idea, RunKind.FULL)
         run_id = run.id
@@ -47,7 +50,9 @@ async def test_crashed_research_job_marks_import_failed(
     async with session_maker() as s:
         user = await get_or_create_user(s, "k@preuve.local", "K")
         idea = await create_idea(
-            s, user.id, IdeaCreate(title="t", description="d", target_market="US")
+            s,
+            await personal_workspace_id(s, user),
+            IdeaCreate(title="t", description="d", target_market="US"),
         )
         imp = await research.create_import(s, idea, ResearchPack.model_validate(pack(idea.id)))
         import_id = imp.id

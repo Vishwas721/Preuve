@@ -2,6 +2,7 @@
 
 from app.db.base import Base
 from app.modules.analysis.models import ICP, AnalysisRun, Hypothesis, Unknown
+from app.modules.auth.models import ApiToken, AuthSession
 from app.modules.competitors.models import Competitor, CompetitorEvidence
 from app.modules.experiments.models import Experiment
 from app.modules.ideas.models import Idea
@@ -19,11 +20,14 @@ from app.modules.research.models import (
 from app.modules.responses.models import Response
 from app.modules.users.models import User
 from app.modules.validation.models import ValidationScore
+from app.modules.workspaces.models import Invitation, Membership, Workspace
 from app.modules.wtp.models import WtpSignal
 
 __all__ = [
     "ICP",
     "AnalysisRun",
+    "ApiToken",
+    "AuthSession",
     "Base",
     "Company",
     "CompanyEvidence",
@@ -36,8 +40,10 @@ __all__ = [
     "Hypothesis",
     "Idea",
     "Interview",
+    "Invitation",
     "InterviewNote",
     "LeadScore",
+    "Membership",
     "Message",
     "OutreachCampaign",
     "Report",
@@ -49,5 +55,6 @@ __all__ = [
     "User",
     "ValidationScore",
     "WebSource",
+    "Workspace",
     "WtpSignal",
 ]

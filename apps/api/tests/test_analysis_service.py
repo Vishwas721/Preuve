@@ -25,6 +25,7 @@ from app.modules.ideas.models import Idea
 from app.modules.ideas.schemas import IdeaCreate
 from app.modules.ideas.service import create_idea
 from app.modules.users.service import get_or_create_user
+from app.modules.workspaces.service import personal_workspace_id
 from tests.analysis_fixtures import analysis_output, icp, icps_output, make_router, ratings
 
 
@@ -33,7 +34,7 @@ async def idea(session: AsyncSession) -> Idea:
     user = await get_or_create_user(session, "t@preuve.local", "T")
     return await create_idea(
         session,
-        user.id,
+        await personal_workspace_id(session, user),
         IdeaCreate(
             title="Construction AI",
             description="AI tool that automates construction progress reports.",
