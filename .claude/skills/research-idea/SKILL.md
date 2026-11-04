@@ -25,6 +25,12 @@ curl -s http://127.0.0.1:8000/health    # API must be up:  uv run uvicorn app.ma
 
 If the API or worker isn't running, start it in the background before continuing.
 
+The CLI needs a Preuve API token (Phase 5A). Check `PREUVE_API_TOKEN` is set (`echo
+${PREUVE_API_TOKEN:+set}`). If not, ask the user to create one in the web app (**Settings → API
+tokens**, while the idea's workspace is active) and to set it, e.g. `! export PREUVE_API_TOKEN=prv_…`
+— never ask them to paste it into the chat, and never write it to a file in the repo. A token
+only sees its own workspace: a 404 on the idea means the token is for another workspace.
+
 ## 1. Get the idea into Preuve
 
 - **The user gave an idea id:** go to step 2.

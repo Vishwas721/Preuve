@@ -7,7 +7,9 @@
   uv run python -m app.scripts.research import <pack.json>
 
 `context`, `create` and `import` talk to the running API (PREUVE_API_URL, default
-http://127.0.0.1:8000); `import` also needs the worker. `fetch` and `validate` work offline.
+http://127.0.0.1:8000) with a personal API token (PREUVE_API_TOKEN, created under Settings →
+API tokens; it's bound to one workspace). `import` also needs the worker. `fetch` and `validate`
+work offline.
 """
 
 import argparse
@@ -27,13 +29,31 @@ from app.search.fetch import FetchError, PageFetcher
 
 API = os.environ.get("PREUVE_API_URL", "http://127.0.0.1:8000")
 POLL_S = 2.0
+NO_TOKEN = (
+    "Set PREUVE_API_TOKEN to a Preuve API token (Settings → API tokens in the web app, "
+    "in the workspace that holds the idea)."
+)
+
+
+def _headers() -> dict[str, str]:
+    token = os.environ.get("PREUVE_API_TOKEN", "").strip()
+    if not token:
+        sys.exit(NO_TOKEN)
+    return {"Authorization": f"Bearer {token}"}
 
 
 def _api(method: str, path: str, **kwargs: Any) -> Any:
     try:
-        resp = httpx.request(method, f"{API}{path}", timeout=30, **kwargs)
+        resp = httpx.request(method, f"{API}{path}", timeout=30, headers=_headers(), **kwargs)
     except httpx.HTTPError as exc:
         sys.exit(f"Cannot reach the Preuve API at {API} ({exc}). Is uvicorn running?")
+    if resp.status_code == 401:
+        sys.exit(f"The API refused the token (revoked or wrong). {NO_TOKEN}")
+    if resp.status_code == 404 and path.startswith("/ideas/"):
+        sys.exit(
+            f"{method} {path} -> 404: no such idea in this token's workspace. "
+            "Use a token created in the idea's workspace."
+        )
     if resp.status_code >= 400:
         sys.exit(f"{method} {path} -> {resp.status_code}: {resp.text}")
     return resp.json() if resp.content else None
