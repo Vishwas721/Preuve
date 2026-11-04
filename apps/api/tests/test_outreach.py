@@ -65,7 +65,7 @@ def llm_with(*responses) -> tuple[LLMRouter, FakeProvider]:
     return LLMRouter({ProviderName.LOCAL: fake}, allow_downgrade=False, sleep=no_sleep), fake
 
 
-async def setup_campaign(session: AsyncSession, idea: Idea, **kw) -> OutreachCampaign:  # noqa: F811
+async def setup_campaign(session: AsyncSession, idea: Idea, **kw) -> OutreachCampaign:
     await import_company(session, idea)
     data = {"name": "Owner reports", "purpose": PURPOSE} | kw
     return await outreach.create_campaign(session, idea, CampaignCreate(**data))
@@ -142,7 +142,7 @@ def test_footer_has_identity_and_opt_out() -> None:
 # ---------- drafting ----------
 
 
-async def test_draft_maps_and_verifies_citations(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_draft_maps_and_verifies_citations(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     [message], _ = await outreach.create_drafts(session, campaign, [await contact_id(session)])
     assert message.status == MessageStatus.DRAFTING and message.to_email is None
@@ -163,7 +163,7 @@ async def test_draft_maps_and_verifies_citations(session: AsyncSession, idea: Id
     assert message.checks == []
 
 
-async def test_hallucinated_citation_leaves_empty_draft(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_hallucinated_citation_leaves_empty_draft(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     [message], _ = await outreach.create_drafts(session, campaign, [await contact_id(session)])
     bad = draft_output(cited_refs=["E9"])
@@ -176,7 +176,7 @@ async def test_hallucinated_citation_leaves_empty_draft(session: AsyncSession, i
     assert "Couldn't generate a draft" in message.draft_error
 
 
-async def test_duplicate_and_suppressed_contacts_skipped(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_duplicate_and_suppressed_contacts_skipped(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     cid = await contact_id(session)
     created, _ = await outreach.create_drafts(session, campaign, [cid, cid])
@@ -190,7 +190,7 @@ async def test_duplicate_and_suppressed_contacts_skipped(session: AsyncSession, 
 
 async def test_stuck_drafting_can_be_redrafted_once_stale(
     session: AsyncSession,
-    idea: Idea,  # noqa: F811
+    idea: Idea,
 ) -> None:
     campaign = await setup_campaign(session, idea)
     [message], _ = await outreach.create_drafts(session, campaign, [await contact_id(session)])
@@ -206,7 +206,7 @@ async def test_stuck_drafting_can_be_redrafted_once_stale(
 # ---------- the approval gate ----------
 
 
-async def test_unapproved_message_is_never_sent(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_unapproved_message_is_never_sent(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     message = await ready_message(session, campaign, approve=False)
     provider = FakeEmailProvider()
@@ -216,7 +216,7 @@ async def test_unapproved_message_is_never_sent(session: AsyncSession, idea: Ide
     assert message.status == MessageStatus.DRAFT and message.sent_at is None
 
 
-async def test_approval_requires_address_and_content(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_approval_requires_address_and_content(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     [message], _ = await outreach.create_drafts(session, campaign, [await contact_id(session)])
     with pytest.raises(outreach.OutreachError):  # still drafting
@@ -234,7 +234,7 @@ async def test_approval_requires_address_and_content(session: AsyncSession, idea
     assert message.status == MessageStatus.APPROVED and message.approved_hash
 
 
-async def test_edit_after_approval_requires_reapproval(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_edit_after_approval_requires_reapproval(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     message = await ready_message(session, campaign)
     await outreach.update_message(session, message, MessageUpdate(body="Hi Jane, one question?"))
@@ -246,7 +246,7 @@ async def test_edit_after_approval_requires_reapproval(session: AsyncSession, id
 
 async def test_content_changed_behind_the_gate_is_not_sent(
     session: AsyncSession,
-    idea: Idea,  # noqa: F811
+    idea: Idea,
 ) -> None:
     campaign = await setup_campaign(session, idea)
     message = await ready_message(session, campaign)
@@ -260,7 +260,7 @@ async def test_content_changed_behind_the_gate_is_not_sent(
     assert "approve it again" in message.send_error
 
 
-async def test_reject_and_reopen(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_reject_and_reopen(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     message = await ready_message(session, campaign)
     await outreach.reject(session, message)
@@ -275,7 +275,7 @@ async def test_reject_and_reopen(session: AsyncSession, idea: Idea) -> None:  # 
 # ---------- sending & stored content ----------
 
 
-async def test_sent_message_stores_exact_content(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_sent_message_stores_exact_content(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     message = await ready_message(session, campaign)
     provider = FakeEmailProvider()
@@ -300,7 +300,7 @@ async def test_sent_message_stores_exact_content(session: AsyncSession, idea: Id
     assert again["sent"] == 0 and len(provider.sent) == 1
 
 
-async def test_sending_disabled_or_no_identity_defers(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_sending_disabled_or_no_identity_defers(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     await ready_message(session, campaign)
     report = await send(session, campaign, FakeEmailProvider(enabled=False))
@@ -310,7 +310,7 @@ async def test_sending_disabled_or_no_identity_defers(session: AsyncSession, ide
     assert report["deferred"] == 1 and "real sender identity" in report["notes"][0]
 
 
-async def test_paused_campaign_defers(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_paused_campaign_defers(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     await ready_message(session, campaign)
     campaign.status = "paused"
@@ -320,7 +320,7 @@ async def test_paused_campaign_defers(session: AsyncSession, idea: Idea) -> None
     assert provider.sent == [] and report["notes"] == ["Campaign is paused."]
 
 
-async def test_transient_error_keeps_it_approved(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_transient_error_keeps_it_approved(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     message = await ready_message(session, campaign)
     provider = FakeEmailProvider()
@@ -333,7 +333,7 @@ async def test_transient_error_keeps_it_approved(session: AsyncSession, idea: Id
 
 async def test_refused_recipient_is_bounced_and_suppressed(
     session: AsyncSession,
-    idea: Idea,  # noqa: F811
+    idea: Idea,
 ) -> None:
     campaign = await setup_campaign(session, idea)
     message = await ready_message(session, campaign)
@@ -346,7 +346,7 @@ async def test_refused_recipient_is_bounced_and_suppressed(
     assert sup.reason == SuppressionReason.BOUNCED
 
 
-async def test_manual_bounce_suppresses(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_manual_bounce_suppresses(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     message = await ready_message(session, campaign)
     await send(session, campaign)
@@ -358,7 +358,7 @@ async def test_manual_bounce_suppresses(session: AsyncSession, idea: Idea) -> No
 # ---------- suppression & limits ----------
 
 
-async def test_suppressed_address_is_blocked_at_send(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_suppressed_address_is_blocked_at_send(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     message = await ready_message(session, campaign)
     await outreach.add_suppression(session, "Jane@abc.test", SuppressionReason.MANUAL)
@@ -376,7 +376,7 @@ async def test_suppressed_address_is_blocked_at_send(session: AsyncSession, idea
         await ready_message(session, other)
 
 
-async def test_campaign_daily_limit(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_campaign_daily_limit(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea, daily_limit=1)
     await ready_message(session, campaign)
     # A second recipient at the same company.
@@ -408,7 +408,7 @@ async def test_campaign_daily_limit(session: AsyncSession, idea: Idea) -> None: 
     assert report["sent"] == 1 and len(provider.sent) == 2
 
 
-async def test_global_daily_limit(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_global_daily_limit(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     await ready_message(session, campaign)
     tight = SETTINGS.model_copy(update={"outreach_daily_limit": 0})
@@ -419,7 +419,7 @@ async def test_global_daily_limit(session: AsyncSession, idea: Idea) -> None:  #
 
 async def test_contact_frequency_limit_across_campaigns(
     session: AsyncSession,
-    idea: Idea,  # noqa: F811
+    idea: Idea,
 ) -> None:
     first = await setup_campaign(session, idea)
     await ready_message(session, first)
@@ -443,7 +443,7 @@ async def test_contact_frequency_limit_across_campaigns(
 async def test_unsubscribe_end_to_end(
     client: AsyncClient,
     session_maker: async_sessionmaker[AsyncSession],
-    idea: Idea,  # noqa: F811
+    idea: Idea,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.setattr("app.modules.outreach.router.get_settings", lambda: SETTINGS)
@@ -479,7 +479,7 @@ async def test_unsubscribe_end_to_end(
             await outreach.approve(session, m2)
 
 
-async def test_delete_contact_suppresses_and_redacts(session: AsyncSession, idea: Idea) -> None:  # noqa: F811
+async def test_delete_contact_suppresses_and_redacts(session: AsyncSession, idea: Idea) -> None:
     campaign = await setup_campaign(session, idea)
     sent = await ready_message(session, campaign)
     await send(session, campaign)

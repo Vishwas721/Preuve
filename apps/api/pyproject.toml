@@ -35,6 +35,10 @@ extend-exclude = ["alembic/versions"]
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "ASYNC", "SIM"]
 
+[tool.ruff.lint.per-file-ignores]
+# Tests import shared pytest fixtures (e.g. `idea`) and take them as parameters.
+"tests/*" = ["F811"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
