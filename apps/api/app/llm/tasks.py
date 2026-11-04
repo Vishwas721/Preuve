@@ -13,6 +13,7 @@ class TaskType(StrEnum):
     CLASSIFY_RESPONSE = "classify_response"
     SUMMARIZE_SHORT = "summarize_short"
     DRAFT_OUTREACH = "draft_outreach"
+    INTERVIEW_GUIDE = "interview_guide"
     # Multi-source reasoning / long context — Gemini.
     ANALYZE_IDEA = "analyze_idea"
     GENERATE_ICPS = "generate_icps"
@@ -27,6 +28,7 @@ DEFAULT_ROUTES: dict[TaskType, ProviderName] = {
     TaskType.CLASSIFY_RESPONSE: ProviderName.LOCAL,
     TaskType.SUMMARIZE_SHORT: ProviderName.LOCAL,
     TaskType.DRAFT_OUTREACH: ProviderName.LOCAL,
+    TaskType.INTERVIEW_GUIDE: ProviderName.LOCAL,
     TaskType.ANALYZE_IDEA: ProviderName.GEMINI,
     TaskType.GENERATE_ICPS: ProviderName.GEMINI,
     TaskType.SYNTHESIZE_EVIDENCE: ProviderName.GEMINI,

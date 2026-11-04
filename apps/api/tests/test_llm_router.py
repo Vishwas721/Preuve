@@ -108,3 +108,27 @@ async def test_text_generation_is_routed() -> None:
     router, local, _, _ = make_router()
     local.queue("hello")
     assert await router.text(TaskType.DRAFT_OUTREACH, "p") == "hello"
+
+
+async def test_private_call_never_escalates_to_gemini_by_default() -> None:
+    router, local, gemini, _ = make_router()
+    local.queue("bad", "still bad")  # invalid output would normally escalate
+    with pytest.raises(LLMError):
+        await router.structured(LOCAL_TASK, "a private reply", Label, private=True)
+    assert len(local.calls) == 2
+    assert not gemini.calls
+
+
+async def test_private_gemini_task_stays_local_by_default() -> None:
+    router, local, gemini, _ = make_router()
+    local.queue({"label": "ok"})
+    assert (await router.structured(GEMINI_TASK, "p", Label, private=True)).label == "ok"
+    assert not gemini.calls
+
+
+async def test_private_call_may_escalate_when_opted_in() -> None:
+    router, local, gemini, _ = make_router(allow_private_remote=True)
+    local.queue(LLMUnavailableError("ollama down"))
+    gemini.queue({"label": "ok"})
+    assert (await router.structured(LOCAL_TASK, "p", Label, private=True)).label == "ok"
+    assert len(gemini.calls) == 1

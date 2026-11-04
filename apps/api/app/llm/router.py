@@ -31,6 +31,9 @@ class LLMRouter:
       - routed GEMINI -> gemini, then local only if `allow_downgrade` and gemini is *unavailable*
                          (e.g. no API key) — never because gemini's output was invalid.
     Each provider gets `max_attempts` tries on invalid output; rate limits back off and retry.
+
+    `private=True` (replies, interview notes) keeps a call on the local model unless
+    `allow_private_remote` is set (ALLOW_PRIVATE_TO_GEMINI).
     """
 
     def __init__(
@@ -41,6 +44,7 @@ class LLMRouter:
         max_attempts: int = 2,
         rate_limit_retries: int = 2,
         allow_downgrade: bool = True,
+        allow_private_remote: bool = False,
         sleep: Callable[[float], Awaitable[None]] = asyncio.sleep,
     ) -> None:
         self.providers = dict(providers)
@@ -48,10 +52,13 @@ class LLMRouter:
         self.max_attempts = max_attempts
         self.rate_limit_retries = rate_limit_retries
         self.allow_downgrade = allow_downgrade
+        self.allow_private_remote = allow_private_remote
         self._sleep = sleep
 
-    def chain(self, task: TaskType) -> list[ProviderName]:
-        if self.routes[task] == ProviderName.LOCAL:
+    def chain(self, task: TaskType, *, private: bool = False) -> list[ProviderName]:
+        if private and not self.allow_private_remote:
+            names = [ProviderName.LOCAL]
+        elif self.routes[task] == ProviderName.LOCAL:
             names = [ProviderName.LOCAL, ProviderName.GEMINI]
         else:
             names = [ProviderName.GEMINI]
@@ -67,10 +74,12 @@ class LLMRouter:
         *,
         system: str | None = None,
         temperature: float = 0.0,
+        private: bool = False,
     ) -> T:
         return await self._run(
             task,
             lambda p: p.generate_structured(prompt, schema, system=system, temperature=temperature),
+            private=private,
         )
 
     async def text(
@@ -80,11 +89,13 @@ class LLMRouter:
             task, lambda p: p.generate_text(prompt, system=system, temperature=temperature)
         )
 
-    async def _run(self, task: TaskType, call: Callable[[LLMProvider], Awaitable[R]]) -> R:
+    async def _run(
+        self, task: TaskType, call: Callable[[LLMProvider], Awaitable[R]], *, private: bool = False
+    ) -> R:
         primary = self.routes[task]
         last_error: Exception | None = None
 
-        for name in self.chain(task):
+        for name in self.chain(task, private=private):
             if name != primary and primary == ProviderName.GEMINI:
                 if not isinstance(last_error, LLMUnavailableError):
                     break
@@ -141,4 +152,9 @@ def get_llm_router() -> LLMRouter:
         ),
     }
     routes = {TaskType(k): ProviderName(v) for k, v in s.llm_route_overrides.items()}
-    return LLMRouter(providers, routes, allow_downgrade=s.llm_allow_downgrade)
+    return LLMRouter(
+        providers,
+        routes,
+        allow_downgrade=s.llm_allow_downgrade,
+        allow_private_remote=s.allow_private_to_gemini,
+    )
