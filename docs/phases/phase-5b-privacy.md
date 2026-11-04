@@ -1,6 +1,6 @@
 # Phase 5B — Privacy
 
-- **Status:** In progress (kickoff 2026-11-04)
+- **Status:** Done (2026-11-04)
 - **Goal:** Make personal data easy to find, export and delete, keep only what's needed, and
   prove every exhibit and contact has a source.
 - **PRD refs:** §37 Privacy & compliance (minimise, deletion, suppression, provenance, no
@@ -102,16 +102,43 @@ confirmation), and the privacy check with its findings (delete stale prospects f
 
 ## Acceptance criteria
 
-- [ ] Deleting a contact removes their personal data everywhere (including reports and the
-      evidence naming them) and suppresses the address (tested).
-- [ ] A deleted person isn't recreated by a later research import (tested).
-- [ ] A person's data can be found and exported by email; erase-by-email works (tested).
-- [ ] No raw email or name is stored in score inputs (tested).
-- [ ] Research page text is dropped after 30 days by the scheduled job; exhibits stay
-      traceable (tested).
-- [ ] The privacy check reports zero provenance violations on the real database.
-- [ ] Web lint, typecheck and build pass; lookup, export, erase and the check work in a real
+- [x] Deleting a contact removes their personal data everywhere (including reports and the
+      evidence naming them) and suppresses the address (tested: the quote naming them, their
+      reply and its evidence, the report quoting it, the stored page text that named them and
+      the research pack entries are all gone; quotes that don't name them stay).
+- [x] A deleted person isn't recreated by a later research import (tested: skipped, counted
+      but not named in the import report, erased from the new pack).
+- [x] A person's data can be found and exported by email; erase-by-email works (tested; live
+      in a throwaway workspace).
+- [x] No raw email or name is stored in score inputs (tested).
+- [x] Research page text is dropped after 30 days by the scheduled job; exhibits stay
+      traceable (tested; `cron:purge_page_text` runs daily at 04:15 on the worker).
+- [x] The privacy check reports zero provenance violations on the real database (zero findings
+      of any kind).
+- [x] Web lint, typecheck and build pass; lookup, export, erase and the check work in a real
       browser.
+
+## Verification (2026-11-04)
+
+- API: ruff clean; **305 tests** pass (privacy 8). Migrations apply to an empty database and
+  `alembic check` is clean; the real database is on the new revision.
+- Web: lint, typecheck and production build pass.
+- Real database: `privacy.check` → `[]` for "Founder's workspace" (all 61 research exhibits and
+  3 contacts have source URL, fetch time and a quote naming them; pages were fetched 3 days
+  ago, inside the 30-day window).
+- Live run (Playwright in real Chrome): the privacy check on the real workspace showed "No
+  issues found"; in a throwaway "E2E privacy" workspace a reply was pasted from a test
+  address, looked up (1 reply), exported as JSON (reply text and sender included), and erased
+  through the confirmation dialog; afterwards the lookup said nothing is held and the address
+  is suppressed; the reply and its stored text were gone; the only traces were a 64-character
+  hash in `deleted_people` and the suppression row that keeps the address blocked. 0 px
+  overflow at 390 px; no console errors. Everything was then removed and the owner account
+  returned to *unclaimed*, as after 5A.
+- Fixed because of the live run: after an erasure the lookup didn't say "nothing held",
+  because the deliberately kept suppression row counted as data about the person.
+- Gotcha: the full test suite run in parallel with web lint, Next dev and Docker on this
+  machine took 22 minutes and produced 35 spurious failures; run alone it passed (5 minutes).
+  Run the gates one at a time here.
 
 ## Decisions (2026-11-04)
 
@@ -126,3 +153,9 @@ confirmation), and the privacy check with its findings (delete stale prospects f
 - 5A: everything is scoped to the active workspace; tombstones are global like suppression
   blocking.
 - Restart the arq worker after pulling (new cron job).
+- What remains after an erasure, by design: the suppression row (the plain address, so it
+  stays blocked), a hash tombstone, and redacted sent-message records (date, status, hash).
+- Evidence quotes that name a deleted person but are another contact's source are kept, so
+  that contact survives; claims or summaries that cited a deleted exhibit show it as missing.
+- Data outside Preuve is not touched: the real mailbox, Mailpit/GreenMail, and backups (5D).
+- Script/e2e: scratchpad `e2e/phase5b.mjs`; restore with `e2e/p5_cleanup.sql`.
