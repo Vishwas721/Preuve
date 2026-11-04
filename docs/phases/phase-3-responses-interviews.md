@@ -1,6 +1,6 @@
 # Phase 3 — Responses & interviews
 
-- **Status:** In progress (kickoff 2026-11-04)
+- **Status:** Done (2026-11-04)
 - **Goal:** Turn replies and interviews into structured, first-party evidence: the strongest
   kind Preuve collects.
 - **PRD refs:** §20 Response intelligence, §21 Conversation intelligence, §22 Interview
@@ -139,17 +139,21 @@ Earlier tables are extended, not duplicated:
 
 ## Acceptance criteria
 
-- [ ] A pasted reply becomes a structured record and `fact` evidence quoting the reply.
-- [ ] IMAP replies are matched to the right prospect and message (tested; live with GreenMail).
-- [ ] IMAP bounce reports mark the message bounced and suppress the address (tested).
-- [ ] Opt-out replies suppress the sender (tested).
-- [ ] Interview guides come only from open unknowns; questions are non-leading (checked and
-      reviewed).
-- [ ] WTP records separate stated willingness from actual commitment; the AI can't set a
-      commitment (tested).
-- [ ] Private text never reaches Gemini unless opted in (tested).
-- [ ] Deleting a contact removes their replies, notes, WTP records and derived evidence (tested).
-- [ ] Web lint, typecheck and build pass; replies, interviews and WTP are checked in a real
+- [x] A pasted reply becomes a structured record and `fact` evidence quoting the reply.
+      *(Tested; live, the PRD §20 example reply gave 9 signals, each quoted and cited.)*
+- [x] IMAP replies are matched to the right prospect and message (tested; live with GreenMail).
+      *(By `In-Reply-To` and by sender; duplicates skipped; unmatched mail never stored.)*
+- [x] IMAP bounce reports mark the message bounced and suppress the address (tested).
+- [x] Opt-out replies suppress the sender (tested; live via paste).
+- [x] Interview guides come only from open unknowns; questions are non-leading (checked and
+      reviewed). *(Refs to non-open unknowns are dropped; every question and follow-up runs
+      through the leading-question checks, recalibrated on the live guide — see Notes.)*
+- [x] WTP records separate stated willingness from actual commitment; the AI can't set a
+      commitment (tested; live: AI-proposed "says they'd pay" + user-recorded pilot).
+- [x] Private text never reaches Gemini unless opted in (tested at the router and in both
+      services).
+- [x] Deleting a contact removes their replies, notes, WTP records and derived evidence (tested).
+- [x] Web lint, typecheck and build pass; replies, interviews and WTP are checked in a real
       browser.
 
 ## Mail setup
@@ -160,6 +164,40 @@ Earlier tables are extended, not duplicated:
 - **Real:** Gmail IMAP with the same app password: `IMAP_HOST=imap.gmail.com`, `IMAP_PORT=993`,
   `IMAP_SSL=true`, `IMAP_USERNAME`, `IMAP_PASSWORD`, `IMAP_FOLDER=INBOX`. Leave `IMAP_HOST` empty
   to disable polling.
+
+## Verification (2026-11-04)
+
+- API: ruff clean; **232 tests** pass (replies 18, interviews 17, plus router privacy tests),
+  with `FakeProvider`, `FakeEmailProvider` and a fake mailbox only.
+- Web: lint, typecheck and production build pass.
+- Live run (Playwright in real Chrome, real `qwen2.5:7b`, Mailpit out, GreenMail in), on the
+  construction case, three times. Final run:
+  - outreach sent to a test address → a threaded reply dropped into GreenMail → **Check inbox
+    now** → matched to the right message and contact, quoted history stripped;
+  - classified on the local model: 9 signals, all quoted verbatim, 9 `EX-nn` exhibits,
+    6 highlighted spans, nothing dropped; recommended action *Interview*;
+  - **Plan an interview** from the reply → guide from the 8 open unknowns (7 questions, the
+    yes/no one flagged) → a note → extraction: workflow and objections quoted and cited;
+  - WTP: the AI proposed "says they'd pay" with the quote; the commitment (pilot) was set by hand
+    and shown in its own column;
+  - evidence explorer: first-party exhibits marked and linking back to the reply/interview;
+  - pasted "Please stop emailing me." → *Opted out*, suppressed;
+  - no console errors; 0 px horizontal overflow at 390 px on every dossier tab.
+  All test data (campaigns, replies, interviews, WTP, suppressions, Mailpit/GreenMail mail) was
+  removed and the case's 8 unknowns are open again, as before.
+- Fixed because of the live runs (each with a regression test built from the real output):
+  - the model left `quote` empty and put the customer's words in `value` → no evidence at all.
+    Now a free-text value that appears verbatim is used as the quote (still matcher-verified),
+    and the prompt shows a worked example;
+  - quoted fields without a summary were skipped; quotes wrapped in `'…'` failed to verify;
+  - "answers" like "Not specified in the notes." with a junk quote were reported as dropped;
+  - leading checks flagged good prompts ("Can you walk me through…") and missed real yes/no
+    questions ("Do general contractors … have …?");
+  - **integrity:** re-extracting an interview deleted the evidence behind a confirmed answer,
+    leaving an unknown "answered" with nothing behind it; deleting the interview did the same.
+    Confirmed answers are now carried forward (and reopened if the notes no longer contain the
+    words), and deleting an interview reopens the unknowns it answered;
+  - the mailbox address overflowed at 390 px.
 
 ## Decisions (2026-11-04)
 
@@ -176,3 +214,15 @@ Earlier tables are extended, not duplicated:
 
 - From Phase 2: "stop" replies and async bounces were manual; this phase automates both.
 - Restart the arq worker after pulling (a stale worker swallows unknown job types).
+- Local-model quality (qwen2.5:7b), for Phase 4 to keep in mind:
+  - guide questions mostly restate the unknowns; the checks flag yes/no wording, but questions
+    can't be edited in the UI yet (worth adding);
+  - extraction is sparse (it covered 2–3 of 10 fields on a short note) — honest, not filler;
+  - Gemini can be allowed for this with `ALLOW_PRIVATE_TO_GEMINI=true` if the user accepts
+    sending private text to Google.
+- The dashboard counts are deterministic; "most common pain" lists verbatim quotes, it doesn't
+  summarise them.
+- Matching by sender falls back to the most recent message sent to that address in 60 days;
+  a reply from a colleague (different address, no thread headers) isn't matched — paste it.
+- Real mailbox: set `IMAP_HOST=imap.gmail.com`, `IMAP_PORT=993`, `IMAP_SSL=true` and the same
+  app password. Polling is read-only (BODY.PEEK) and never marks mail as read.
