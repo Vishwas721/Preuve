@@ -5,7 +5,26 @@ import type { NextConfig } from "next";
 // from the Next server; it's read when the server builds/starts.
 const API = (process.env.PREUVE_API_INTERNAL_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
 
+// Phase 5C: no framing (clickjacking on Settings), no MIME sniffing, a strict referrer policy,
+// and powerful browser features off. A full script CSP would need per-request nonces; for now
+// the CSP only covers framing, base URI, form targets and plugins.
+const SECURITY_HEADERS = [
+  {
+    key: "Content-Security-Policy",
+    value: "frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'",
+  },
+  { key: "X-Frame-Options", value: "DENY" },
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=()" },
+  { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+];
+
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
+  async headers() {
+    return [{ source: "/:path*", headers: SECURITY_HEADERS }];
+  },
   async rewrites() {
     return [{ source: "/api/:path*", destination: `${API}/:path*` }];
   },
