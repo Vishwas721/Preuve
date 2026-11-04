@@ -169,9 +169,15 @@ export type SourceType =
   | "directory"
   | "other";
 
+export type EvidenceOrigin = "research" | "reply" | "interview";
+
 export interface Evidence {
   id: string;
-  import_id: string;
+  /** Null for first-party evidence (replies, interviews). */
+  import_id: string | null;
+  origin: EvidenceOrigin;
+  response_id: string | null;
+  interview_id: string | null;
   ref: string;
   url: string;
   final_url: string | null;
@@ -477,6 +483,239 @@ export interface OutreachSettings {
   postal_address: string;
 }
 
+// ---------- replies, interviews, WTP (Phase 3) ----------
+
+export type ResponseStatus = "queued" | "analyzing" | "done" | "failed";
+export type Willingness = "unknown" | "none" | "low" | "some" | "strong";
+export type Commitment = "none" | "verbal" | "pilot" | "signed" | "paid";
+
+export interface Quoted<V extends string = string> {
+  value: V;
+  quote: string;
+}
+
+export interface ResponseClassification {
+  sentiment: "positive" | "neutral" | "negative";
+  problem_confirmed: Quoted<"yes" | "no" | "unclear">;
+  pain: Quoted;
+  frequency: Quoted;
+  current_solution: Quoted;
+  time_or_cost: Quoted;
+  severity: Quoted<"high" | "medium" | "low" | "unclear">;
+  solution_satisfaction: Quoted<"high" | "medium" | "low" | "unclear">;
+  interest: Quoted<"high" | "medium" | "low" | "unclear">;
+  willingness_to_pay: Quoted<Willingness>;
+  recommended_action: { value: "interview" | "follow_up" | "close" | "none"; reason: string };
+}
+
+export interface ReplySummary {
+  id: string;
+  idea_id: string;
+  message_id: string | null;
+  contact_id: string | null;
+  company_id: string | null;
+  from_name: string;
+  from_email: string | null;
+  subject: string;
+  received_at: string;
+  channel: "paste" | "imap";
+  status: ResponseStatus;
+  opt_out: boolean;
+  classification: ResponseClassification | null;
+  error: string | null;
+  created_at: string;
+}
+
+export interface Reply extends ReplySummary {
+  raw_text: string;
+  dropped: { label: string; quote: string; reason: string }[];
+  analyzed_at: string | null;
+  company_name: string | null;
+  original: {
+    id: string;
+    campaign_id: string;
+    subject: string;
+    sent_at: string | null;
+    status: MessageStatus;
+    body: string;
+  } | null;
+  evidence_ids: string[];
+}
+
+export interface ReplyDashboard {
+  sent: number;
+  replies: number;
+  reply_rate: number | null;
+  positive: number;
+  neutral: number;
+  negative: number;
+  opt_outs: number;
+  problem_confirmed: number;
+  interview_recommended: number;
+  interviews_done: number;
+  pilot_or_better: number;
+  stated_strong: number;
+  top_pains: { quote: string; from: string; id: string }[];
+  frequencies: { value: string; count: number }[];
+  current_solutions: { value: string; count: number }[];
+}
+
+export interface InboxStatus {
+  enabled: boolean;
+  mailbox: string;
+  last_poll: {
+    at: string;
+    seen: number;
+    reply: number;
+    bounce: number;
+    duplicate: number;
+    unmatched: number;
+    errors: number;
+    error: string | null;
+  } | null;
+}
+
+export type InterviewStatus = "planned" | "done" | "cancelled";
+export type JobState = "none" | "queued" | "running" | "done" | "failed";
+
+export interface GuideQuestion {
+  unknown_id: string;
+  unknown: string;
+  question: string;
+  follow_ups: string[];
+  flags: string[];
+  follow_up_flags: string[][];
+}
+
+export interface InterviewGuide {
+  known: Claim[];
+  questions: GuideQuestion[];
+  uncovered?: { unknown_id: string; unknown: string }[];
+  skipped?: number;
+  note?: string;
+}
+
+export interface AnsweredProposal {
+  unknown_id: string;
+  unknown: string;
+  answer: string;
+  quote: string;
+  evidence_id: string;
+  confirmed: boolean;
+}
+
+export interface InterviewExtraction {
+  problem: Quoted;
+  workflow: Quoted;
+  frequency: Quoted;
+  cost: Quoted;
+  alternatives: Quoted;
+  trigger: Quoted;
+  buyer: Quoted;
+  decision_process: Quoted;
+  objections: Quoted;
+  desired_solution: Quoted;
+  willingness_to_pay: Quoted<Willingness>;
+  answered_unknowns: AnsweredProposal[];
+}
+
+export interface InterviewSummary {
+  id: string;
+  idea_id: string;
+  contact_id: string | null;
+  company_id: string | null;
+  response_id: string | null;
+  interviewee_name: string;
+  interviewee_role: string;
+  company_name: string;
+  scheduled_at: string | null;
+  status: InterviewStatus;
+  guide_state: JobState;
+  extraction_state: JobState;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface InterviewNote {
+  id: string;
+  kind: "live" | "post";
+  text: string;
+  created_at: string;
+}
+
+export interface Interview extends InterviewSummary {
+  scheduling_note: string;
+  guide: InterviewGuide | null;
+  extraction: InterviewExtraction | null;
+  dropped: { label: string; quote: string; reason: string }[];
+  error: string | null;
+  notes: InterviewNote[];
+  evidence_ids: string[];
+}
+
+export interface InterviewInput {
+  contact_id?: string | null;
+  response_id?: string | null;
+  interviewee_name?: string;
+  interviewee_role?: string;
+  company_name?: string;
+  scheduled_at?: string | null;
+  scheduling_note?: string;
+}
+
+export type InterviewPatch = Partial<
+  Pick<
+    Interview,
+    "interviewee_name" | "interviewee_role" | "company_name" | "scheduled_at" | "status" | "scheduling_note"
+  >
+>;
+
+export interface WtpSignal {
+  id: string;
+  idea_id: string;
+  contact_id: string | null;
+  company_id: string | null;
+  response_id: string | null;
+  interview_id: string | null;
+  customer_label: string;
+  current_spend: string;
+  problem_cost: string;
+  expected_price: string;
+  stated_willingness: Willingness;
+  stated_quote: string;
+  stated_evidence_id: string | null;
+  commitment: Commitment;
+  commitment_note: string;
+  committed_at: string | null;
+  source: "user" | "ai";
+  created_at: string;
+  updated_at: string;
+}
+
+export type WtpInput = Partial<
+  Pick<
+    WtpSignal,
+    | "customer_label"
+    | "contact_id"
+    | "current_spend"
+    | "problem_cost"
+    | "expected_price"
+    | "stated_willingness"
+    | "stated_quote"
+    | "commitment"
+    | "commitment_note"
+    | "committed_at"
+  >
+>;
+
+export interface ReplyPaste {
+  text: string;
+  message_id?: string | null;
+  contact_id?: string | null;
+  from_name?: string;
+  from_email?: string | null;
+}
+
 // ---------- transport ----------
 
 export class ApiError extends Error {
@@ -618,4 +857,43 @@ export const api = {
     request<Suppression>("/suppressions", json("POST", { email, note: note || null })),
   deleteSuppression: (suppressionId: string) =>
     request<void>(`/suppressions/${suppressionId}`, { method: "DELETE" }),
+  listReplies: (ideaId: string) => request<ReplySummary[]>(`/ideas/${ideaId}/responses`),
+  replyDashboard: (ideaId: string) => request<ReplyDashboard>(`/ideas/${ideaId}/responses/dashboard`),
+  getReply: (ideaId: string, replyId: string) => request<Reply>(`/ideas/${ideaId}/responses/${replyId}`),
+  pasteReply: (ideaId: string, data: ReplyPaste) =>
+    request<Reply>(`/ideas/${ideaId}/responses`, json("POST", data)),
+  reanalyzeReply: (ideaId: string, replyId: string) =>
+    request<Reply>(`/ideas/${ideaId}/responses/${replyId}/reanalyze`, { method: "POST" }),
+  deleteReply: (ideaId: string, replyId: string) =>
+    request<void>(`/ideas/${ideaId}/responses/${replyId}`, { method: "DELETE" }),
+  inboxStatus: () => request<InboxStatus>("/outreach/inbox"),
+  checkInbox: () => request<{ queued: boolean }>("/outreach/inbox/check", { method: "POST" }),
+
+  listInterviews: (ideaId: string) => request<InterviewSummary[]>(`/ideas/${ideaId}/interviews`),
+  getInterview: (ideaId: string, interviewId: string) =>
+    request<Interview>(`/ideas/${ideaId}/interviews/${interviewId}`),
+  createInterview: (ideaId: string, data: InterviewInput) =>
+    request<Interview>(`/ideas/${ideaId}/interviews`, json("POST", data)),
+  updateInterview: (ideaId: string, interviewId: string, data: InterviewPatch) =>
+    request<Interview>(`/ideas/${ideaId}/interviews/${interviewId}`, json("PATCH", data)),
+  deleteInterview: (ideaId: string, interviewId: string) =>
+    request<void>(`/ideas/${ideaId}/interviews/${interviewId}`, { method: "DELETE" }),
+  addInterviewNote: (ideaId: string, interviewId: string, data: { text: string; kind: "live" | "post" }) =>
+    request<Interview>(`/ideas/${ideaId}/interviews/${interviewId}/notes`, json("POST", data)),
+  deleteInterviewNote: (ideaId: string, interviewId: string, noteId: string) =>
+    request<Interview>(`/ideas/${ideaId}/interviews/${interviewId}/notes/${noteId}`, { method: "DELETE" }),
+  generateGuide: (ideaId: string, interviewId: string) =>
+    request<Interview>(`/ideas/${ideaId}/interviews/${interviewId}/guide`, { method: "POST" }),
+  extractInterview: (ideaId: string, interviewId: string) =>
+    request<Interview>(`/ideas/${ideaId}/interviews/${interviewId}/extract`, { method: "POST" }),
+  confirmAnswered: (ideaId: string, interviewId: string, unknownId: string) =>
+    request<Interview>(`/ideas/${ideaId}/interviews/${interviewId}/unknowns/${unknownId}/confirm`, {
+      method: "POST",
+    }),
+
+  listWtp: (ideaId: string) => request<WtpSignal[]>(`/ideas/${ideaId}/wtp`),
+  createWtp: (ideaId: string, data: WtpInput) => request<WtpSignal>(`/ideas/${ideaId}/wtp`, json("POST", data)),
+  updateWtp: (ideaId: string, wtpId: string, data: WtpInput) =>
+    request<WtpSignal>(`/ideas/${ideaId}/wtp/${wtpId}`, json("PATCH", data)),
+  deleteWtp: (ideaId: string, wtpId: string) => request<void>(`/ideas/${ideaId}/wtp/${wtpId}`, { method: "DELETE" }),
 };
