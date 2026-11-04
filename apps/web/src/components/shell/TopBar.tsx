@@ -1,18 +1,22 @@
 "use client";
 
-import { Monitor, Moon, Search, Sun } from "lucide-react";
+import { Check, ChevronsUpDown, LogOut, Monitor, Moon, Plus, Search, Settings, Sun } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 import { CommandMenu } from "@/components/shell/CommandMenu";
+import { useSession } from "@/components/shell/SessionProvider";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
@@ -93,8 +97,58 @@ function ThemeMenu() {
   );
 }
 
+/** The active workspace, switching between workspaces, settings and sign-out. */
+function WorkspaceMenu() {
+  const { me, activeWorkspace, switchWorkspace, signOut } = useSession();
+  if (!me) return null;
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" className="h-8 max-w-44 gap-1.5 px-2 text-sm" aria-label="Workspace and account">
+          <span className="truncate">{activeWorkspace?.name ?? "No workspace"}</span>
+          <ChevronsUpDown className="size-3.5 shrink-0 text-muted-foreground" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-64">
+        <DropdownMenuLabel className="font-normal">
+          <p className="truncate text-sm">{me.user.name}</p>
+          <p className="truncate font-mono text-[11px] text-muted-foreground">{me.user.email}</p>
+        </DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuLabel className="eyebrow !text-[9px]">Workspaces</DropdownMenuLabel>
+        {me.workspaces.map((w) => (
+          <DropdownMenuItem
+            key={w.id}
+            onSelect={() => w.id !== me.active_workspace_id && void switchWorkspace(w.id)}
+            className="gap-2"
+          >
+            <Check className={cn("size-3.5", w.id === me.active_workspace_id ? "opacity-100" : "opacity-0")} />
+            <span className="flex-1 truncate">{w.name}</span>
+            <span className="font-mono text-[10px] uppercase text-muted-foreground">{w.role}</span>
+          </DropdownMenuItem>
+        ))}
+        <DropdownMenuItem asChild>
+          <Link href="/settings?new=workspace" className="gap-2">
+            <Plus className="size-3.5" /> New workspace
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem asChild>
+          <Link href="/settings" className="gap-2">
+            <Settings className="size-3.5" /> Settings
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem onSelect={() => void signOut()} className="gap-2">
+          <LogOut className="size-3.5" /> Sign out
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
+
 export function TopBar() {
   const pathname = usePathname();
+  const { me } = useSession();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -121,6 +175,7 @@ export function TopBar() {
           <span className="eyebrow hidden translate-y-[-2px] md:inline">evidence before you build</span>
         </Link>
 
+        {me && (
         <nav className="ml-2 hidden items-center gap-1 sm:flex" aria-label="Main">
           {nav.map((n) => (
             <Link
@@ -136,8 +191,11 @@ export function TopBar() {
             </Link>
           ))}
         </nav>
+        )}
 
         <div className="ml-auto flex items-center gap-1">
+          {me && (
+          <>
           <Button
             variant="outline"
             className="hidden h-8 w-56 justify-start gap-2 bg-paper/60 text-muted-foreground md:flex"
@@ -150,11 +208,14 @@ export function TopBar() {
           <Button variant="ghost" size="icon" className="md:hidden" aria-label="Search" onClick={() => setOpen(true)}>
             <Search />
           </Button>
+          </>
+          )}
           <HealthDot />
           <ThemeMenu />
+          <WorkspaceMenu />
         </div>
       </div>
-      <CommandMenu open={open} onOpenChange={setOpen} />
+      {me && <CommandMenu open={open} onOpenChange={setOpen} />}
     </header>
   );
 }
