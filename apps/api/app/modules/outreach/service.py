@@ -508,6 +508,65 @@ async def mark_bounced(session: AsyncSession, message: Message, note: str | None
     return message
 
 
+# ---------- lookups for reply ingestion (Phase 3) ----------
+
+
+async def sent_messages(session: AsyncSession, message_ids: list[uuid.UUID]) -> list[Message]:
+    """Sent (or bounced) outreach messages among these ids."""
+    if not message_ids:
+        return []
+    return list(
+        await session.scalars(
+            select(Message).where(Message.id.in_(message_ids), Message.status.in_(SENT_STATES))
+        )
+    )
+
+
+async def latest_sent_to(
+    session: AsyncSession, email: str, within_days: int = 60, now: datetime | None = None
+) -> Message | None:
+    since = (now or _now()) - timedelta(days=within_days)
+    return await session.scalar(
+        select(Message)
+        .where(
+            func.lower(Message.to_email) == safety.normalize_email(email),
+            Message.status.in_(SENT_STATES),
+            Message.sent_at >= since,
+        )
+        .order_by(Message.sent_at.desc())
+        .limit(1)
+    )
+
+
+async def sent_count(session: AsyncSession, idea_id: uuid.UUID) -> int:
+    return (
+        await session.scalar(
+            select(func.count())
+            .select_from(Message)
+            .join(OutreachCampaign, OutreachCampaign.id == Message.campaign_id)
+            .where(OutreachCampaign.idea_id == idea_id, Message.status.in_(SENT_STATES))
+        )
+        or 0
+    )
+
+
+async def first_sent_at(session: AsyncSession) -> datetime | None:
+    return await session.scalar(select(func.min(Message.sent_at)))
+
+
+async def message_idea_id(session: AsyncSession, message: Message) -> uuid.UUID:
+    campaign = await session.get(OutreachCampaign, message.campaign_id)
+    return campaign.idea_id
+
+
+async def record_bounce(session: AsyncSession, message: Message, note: str) -> bool:
+    """A bounce report arrived for a sent message: mark it and suppress (idempotent, commits)."""
+    if message.status == MessageStatus.BOUNCED:
+        return False
+    await mark_bounced(session, message, note)
+    return True
+
+
 # ---------- sending ----------
 
 
@@ -719,6 +778,15 @@ async def unsubscribe(session: AsyncSession, token: str, secret: str) -> bool:
 
 
 # ---------- deletion (PRD §37) ----------
+
+
+async def contact_addresses(
+    session: AsyncSession, contact_id: uuid.UUID, contact_email: str | None
+) -> set[str]:
+    """Every address known for a contact (their email and any address we wrote to)."""
+    rows = await session.scalars(select(Message.to_email).where(Message.contact_id == contact_id))
+    found = {safety.normalize_email(e) for e in [contact_email, *rows] if e}
+    return found
 
 
 async def forget_contact(
