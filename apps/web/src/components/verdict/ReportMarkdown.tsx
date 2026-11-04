@@ -55,7 +55,8 @@ export function parse(md: string): Block[] {
 
 export function ReportMarkdown({ content }: { content: string }) {
   return (
-    <article className="report space-y-4 text-[15px] leading-relaxed">
+    // overflow-wrap:anywhere lets long source URLs break instead of widening the page on phones.
+    <article className="report min-w-0 space-y-4 text-[15px] leading-relaxed [overflow-wrap:anywhere]">
       {parse(content).map((b, i) => {
         switch (b.t) {
           case "h1":
