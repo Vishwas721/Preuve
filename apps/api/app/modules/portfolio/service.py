@@ -7,10 +7,15 @@ from app.modules.analysis.models import UnknownStatus
 from app.modules.competitors import service as competitors
 from app.modules.ideas import service as ideas
 from app.modules.ideas.models import Idea
-from app.modules.portfolio.schemas import EvidenceTally, PortfolioItem
+from app.modules.interviews import service as interviews
+from app.modules.outreach import service as outreach
+from app.modules.portfolio.schemas import EvidenceTally, Funnel, PortfolioItem, Validation
 from app.modules.prospects import service as prospects
 from app.modules.research import service as research
+from app.modules.responses import service as responses
 from app.modules.users.models import User
+from app.modules.validation import service as validation
+from app.modules.wtp import service as wtp
 
 
 async def _item(session: AsyncSession, idea: Idea) -> PortfolioItem:
@@ -38,6 +43,8 @@ async def _item(session: AsyncSession, idea: Idea) -> PortfolioItem:
         i.status in ("queued", "verifying") for i in imports
     )
     scores = [r["score"] for r in rows if r["score"] is not None]
+    snap = await validation.latest(session, idea.id)
+    commitments = await wtp.list_signals(session, idea.id)
     return PortfolioItem(
         id=idea.id,
         title=idea.title,
@@ -51,6 +58,24 @@ async def _item(session: AsyncSession, idea: Idea) -> PortfolioItem:
         unknowns_open=sum(u.status == UnknownStatus.OPEN for u in unknowns),
         unknowns_answered=sum(u.status == UnknownStatus.ANSWERED for u in unknowns),
         busy=busy,
+        validation=Validation(
+            score=snap.total,
+            recommendation=snap.recommendation,
+            headline=snap.decision["headline"],
+            validated_conversations=snap.metrics["validated_conversations"],
+            stale=snap.inputs_hash != await validation.current_hash(session, idea),
+            computed_at=snap.created_at,
+        )
+        if snap
+        else None,
+        funnel=Funnel(
+            sent=await outreach.sent_count(session, idea.id),
+            replies=len(await responses.list_responses(session, idea.id)),
+            interviews_done=await interviews.count_done(session, idea.id),
+            pilot_or_better=sum(
+                1 for s in commitments if s.commitment.value in ("pilot", "signed", "paid")
+            ),
+        ),
         created_at=idea.created_at,
         last_activity=max(stamps),
     )

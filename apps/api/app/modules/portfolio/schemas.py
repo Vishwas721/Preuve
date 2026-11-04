@@ -14,6 +14,26 @@ class EvidenceTally(BaseModel):
     unverifiable: int = 0
 
 
+class Validation(BaseModel):
+    """The latest validation score snapshot (Phase 4); None until one is computed."""
+
+    score: int
+    recommendation: str  # build | iterate | investigate | abandon
+    headline: str
+    validated_conversations: int
+    stale: bool  # stored data changed since the snapshot
+    computed_at: datetime
+
+
+class Funnel(BaseModel):
+    """First-party counts, live (PRD §27, §47)."""
+
+    sent: int
+    replies: int
+    interviews_done: int
+    pilot_or_better: int
+
+
 class PortfolioItem(BaseModel):
     """One idea on the case board (PRD §27/§38)."""
 
@@ -29,5 +49,7 @@ class PortfolioItem(BaseModel):
     unknowns_open: int
     unknowns_answered: int
     busy: bool  # an analysis run or research import is in progress
+    validation: Validation | None
+    funnel: Funnel
     created_at: datetime
     last_activity: datetime

@@ -57,3 +57,20 @@ async def test_portfolio_aggregates(
 
 async def test_empty_portfolio(client: AsyncClient) -> None:
     assert (await client.get("/portfolio")).json() == []
+
+
+async def test_portfolio_shows_latest_validation_and_funnel(client: AsyncClient) -> None:
+    created = await client.post(
+        "/ideas", json={"title": "Scored", "description": "d", "target_market": "US"}
+    )
+    iid = created.json()["id"]
+    [item] = (await client.get("/portfolio")).json()
+    assert item["validation"] is None
+    assert item["funnel"] == {"sent": 0, "replies": 0, "interviews_done": 0, "pilot_or_better": 0}
+
+    score = (await client.post(f"/ideas/{iid}/score")).json()
+    [item] = (await client.get("/portfolio")).json()
+    v = item["validation"]
+    assert v["score"] == score["total"] == 0 and v["recommendation"] == "investigate"
+    assert v["headline"] == "Weak evidence. Don't build yet." and v["stale"] is False
+    assert v["validated_conversations"] == 0
