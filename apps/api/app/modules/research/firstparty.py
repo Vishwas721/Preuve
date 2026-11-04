@@ -36,6 +36,15 @@ class Signal:
     relevance: Relevance = Relevance.HIGH
 
 
+def recover_quote(value: str, quote: str, text: str) -> str:
+    """The model's quote; or, when it left the quote empty but its *value* is itself a verbatim
+    span of the text (e.g. "every week"), that value. Anything else stays unquoted."""
+    if quote.strip():
+        return quote.strip()
+    v = value.strip().strip("\"'“”")
+    return v if v and match_quote(v, text).found else ""
+
+
 def source_url(origin: EvidenceOrigin, owner_id: uuid.UUID) -> str:
     kind = "responses" if origin == EvidenceOrigin.REPLY else "interviews"
     return f"preuve://{kind}/{owner_id}"

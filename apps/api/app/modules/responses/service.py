@@ -182,6 +182,18 @@ def _stance(field: str, value: str) -> Stance:
     return Stance.NEUTRAL
 
 
+# Free-text fields whose value may itself be the customer's words (labels like "yes" never are).
+_FREE_TEXT = ("pain", "frequency", "current_solution", "time_or_cost")
+
+
+def recover_quotes(c: prompts.ResponseClassification, reply: str) -> None:
+    """Fill an empty quote from a value that appears verbatim in the reply (local models often
+    put the customer's words in `value`). Still verified by the matcher before it's stored."""
+    for field in _FREE_TEXT:
+        item = getattr(c, field)
+        item.quote = firstparty.recover_quote(item.value, item.quote, reply)
+
+
 def signals(c: prompts.ResponseClassification, who: str) -> list[firstparty.Signal]:
     out: list[firstparty.Signal] = []
     for field, label in _SIGNALS:
@@ -225,6 +237,7 @@ async def analyze_response(
         await session.commit()
         return response.status
 
+    recover_quotes(c, response.raw_text)
     company = (
         await prospects.get_company(session, response.idea_id, response.company_id)
         if response.company_id

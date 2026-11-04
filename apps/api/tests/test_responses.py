@@ -447,3 +447,35 @@ async def test_paste_with_queue_down(
     async with session_maker() as session:
         [row] = list(await session.scalars(select(Response)))
         assert row.status == ResponseStatus.FAILED and "job queue" in row.error
+
+
+async def test_verbatim_values_recover_missing_quotes(session: AsyncSession, idea: Idea) -> None:
+    """What qwen2.5 actually returned live: the customer's words in `value`, quotes empty."""
+    message = await sent_message(session, idea)
+    reply = (
+        "We actually have this problem every week. Our PMs spend about 4-5 hours creating "
+        "reports. We currently use Excel and photos from WhatsApp, and honestly nobody likes it."
+    )
+    r = await responses.create_paste(
+        session, idea, ResponsePaste(text=reply, message_id=message.id)
+    )
+    live = {
+        "sentiment": "positive",
+        "problem_confirmed": {"value": "yes", "quote": ""},
+        "pain": {"value": "nobody likes it", "quote": ""},
+        "frequency": {"value": "every week", "quote": ""},
+        "current_solution": {"value": "Excel and photos from WhatsApp", "quote": ""},
+        "time_or_cost": {"value": "4-5 hours a week", "quote": ""},  # not verbatim
+        "severity": {"value": "high", "quote": ""},
+        "solution_satisfaction": {"value": "low", "quote": ""},
+        "interest": {"value": "medium", "quote": ""},
+        "willingness_to_pay": {"value": "strong", "quote": ""},
+    }
+    llm, _, _ = llm_with(live)
+    await responses.analyze_response(session, llm, r.id)
+    await session.refresh(r)
+    quotes = set(await session.scalars(select(Evidence.quote).where(Evidence.response_id == r.id)))
+    assert quotes == {"nobody likes it", "every week", "Excel and photos from WhatsApp"}
+    assert r.classification["frequency"]["quote"] == "every week"
+    assert r.classification["time_or_cost"]["quote"] == ""  # paraphrase: never shown as theirs
+    assert await wtp.list_signals(session, idea.id) == []  # no quote, no proposal

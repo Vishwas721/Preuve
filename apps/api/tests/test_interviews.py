@@ -348,3 +348,20 @@ async def test_wtp_create_service(session: AsyncSession, idea: Idea) -> None:
         WtpCreate(customer_label="Jane", contact_id=await contact_id(session), commitment="verbal"),
     )
     assert row.company_id is not None and row.committed_at is not None
+
+
+async def test_quoted_field_without_value_is_kept(session: AsyncSession, idea: Idea) -> None:
+    row = await make_interview(session, idea)
+    await interviews.add_note(session, row, NoteCreate(text=NOTES))
+    out = extraction_output(
+        objections={"value": "", "quote": "the field team won't adopt another app"},
+        frequency={"value": "half a day", "quote": ""},  # verbatim value, no quote
+        answered_unknowns=[],
+    )
+    llm, _, _ = llm_with(out)
+    await interviews.extract(session, llm, row.id)
+    quotes = set(
+        await session.scalars(select(Evidence.quote).where(Evidence.interview_id == row.id))
+    )
+    assert "the field team won't adopt another app" in quotes
+    assert "half a day" in quotes

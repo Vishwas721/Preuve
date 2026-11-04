@@ -323,10 +323,13 @@ async def extract(
     sigs: list[firstparty.Signal] = []
     for field, label in prompts.FIELDS:
         item = getattr(out, field)
-        if item.quote.strip() and item.value.strip():
+        item.quote = firstparty.recover_quote(item.value, item.quote, text)
+        if item.quote:
+            # A quote with no summary still counts: the statement then is the quote itself.
+            summary = item.value.strip() or item.quote
             sigs.append(
                 firstparty.Signal(
-                    f"{who} (interview): {label.lower()}: {item.value.strip()}",
+                    f"{who} (interview): {label.lower()}: {summary}",
                     item.quote,
                     _STANCE.get(field, Stance.NEUTRAL),
                     Relevance.HIGH,
