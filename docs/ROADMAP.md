@@ -22,6 +22,7 @@ Nothing from a later phase is built early. Every phase ends with a review stop.
 | 5B — Privacy | [phase-5b-privacy.md](phases/phase-5b-privacy.md) | ✅ Done |
 | 5C — Security | [phase-5c-security.md](phases/phase-5c-security.md) | ✅ Done |
 | 5D — Ops & deploy | [phase-5d-ops-deploy.md](phases/phase-5d-ops-deploy.md) | ✅ Done |
+| 6 — Research score | [phase-6-research-score.md](phases/phase-6-research-score.md) | 🚧 In progress |
 
 Phases 1A–1E together form the PRD's "MVP Phase 1" (§45). Phases 2, 3 and 4 correspond to the
 PRD's MVP Phases 2, 3 and 4.
@@ -44,4 +45,6 @@ PRD's MVP Phases 2, 3 and 4.
 4  validation score → state → decision → report
  ↓
 5  auth, teams, privacy, deployment
+
+6  research score: rank ideas on verified web evidence before outreach (between 1B and 2)
 ```
