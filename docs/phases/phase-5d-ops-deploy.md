@@ -1,27 +1,99 @@
 # Phase 5D — Ops & deploy
 
-- **Status:** Not started (draft)
-- **Goal:** Run Preuve in production for $0, deploy it reproducibly, and be able to recover it.
+- **Status:** In progress (kickoff 2026-11-05)
+- **Goal:** Run Preuve in production on this machine for $0, deploy it reproducibly from CI-built
+  images, and be able to recover it.
 
-## Scope (draft)
+## Decisions at kickoff (2026-11-05)
 
-- **Production images:** API (also runs the arq worker and migrations), web (Next.js
-  standalone). Multi-stage, non-root.
-- **Production Compose stack:** api, worker, web, postgres, redis, searxng; Ollama on the host
-  (or a container); no Mailpit/GreenMail.
-- **Public access:** Cloudflare Tunnel (free) for HTTPS on the web app and API, so unsubscribe
-  links work for real recipients (`PUBLIC_API_URL`).
-- **CI:** build and push images (GHCR), then a deploy smoke test (stack up, migrations, health).
-  Deploy = a script that pulls, migrates and restarts.
-- **Backups:** scheduled `pg_dump` with rotation; a restore is tested.
-- **Logging and errors:** structured logs; error tracking with a free option (self-hosted or
-  free tier) — to decide.
-- **Health checks** for every service.
-- **Legal checklist** before scaling outreach (CAN-SPAM / GDPR / PECR) — a checklist, not legal
-  advice.
+- **Local only for now.** The production stack runs on this machine, reachable at
+  `http://localhost:3100`. A Cloudflare Tunnel service is included but **off** (a compose
+  profile); turning it on later needs a domain on a free Cloudflare account and a tunnel token.
+- **Errors:** structured JSON logs (request id on every line, rotated by Docker), plus an
+  optional Sentry hook that's off unless `SENTRY_DSN` is set (nothing leaves the machine by
+  default).
+- **Backups:** a daily compressed `pg_dump` with 14 days of rotation into `BACKUP_DIR`
+  (default `./backups`; point it at a cloud-synced folder for an off-machine copy).
+- **Registry:** the repo is public, so CI pushes images to GHCR for free.
 
-## Acceptance criteria (draft)
+## Scope
 
-- [ ] Production deploy works from CI with migrations.
-- [ ] Backups are verified by a restore.
-- [ ] Unsubscribe links work from the public URL.
+### Images
+
+- **API** (`apps/api/Dockerfile`): Python 3.11 slim, multi-stage with `uv`, dependencies from
+  the lockfile only, non-root user, health check. The same image runs the API, the arq worker
+  and migrations (different commands).
+- **Web** (`apps/web/Dockerfile`): Node 22, pnpm from the lockfile (supply-chain policy intact),
+  Next.js `output: "standalone"`, non-root. `PREUVE_API_INTERNAL_URL=http://api:8000` is baked in
+  at build time (rewrites are compiled into the build).
+
+### Production stack (`infra/docker-compose.prod.yml`, project `preuve-prod`)
+
+| Service | Notes |
+|---|---|
+| postgres, redis, searxng | Internal network only, no host ports; named volumes. |
+| migrate | One-shot `alembic upgrade head`; api and worker start only after it succeeds. |
+| api | Not published to the host: only the web app reaches it (so `TRUST_PROXY_HEADERS=true` is safe and per-IP limits work). |
+| worker | arq, including the daily page-text purge. |
+| web | Published on `127.0.0.1:${WEB_PORT:-3100}`. The browser reaches the API at `/api`. |
+| backup | `pg_dump` daily at `BACKUP_HOUR`, gzip, keeps `BACKUP_KEEP_DAYS` (14). |
+| cloudflared | Profile `tunnel`, off by default. |
+
+- Ollama stays on the host (`OLLAMA_URL=http://host.docker.internal:11434`).
+- Every service has a health check; every service's logs rotate (10 MB × 5).
+- Settings come from `infra/.env.prod` (git-ignored); `infra/.env.prod.example` lists them,
+  and the API already refuses to start with dev secrets outside development (5C).
+- `PUBLIC_API_URL=http://localhost:3100/api`, so unsubscribe links resolve through the web app's
+  proxy (once tunnelled, the public URL replaces it).
+
+### Logging and errors
+
+- `LOG_FORMAT=json`: one JSON object per line (time, level, logger, message, request id,
+  method, path, status, duration); the request id is returned as `X-Request-ID`.
+- `SENTRY_DSN` (optional): errors from the API and the worker go to Sentry, without request
+  bodies, cookies or personal data (`send_default_pii=False`).
+
+### Scripts (`infra/scripts/`, bash; run from Git Bash on Windows)
+
+- `deploy.sh [tag]`: pull images from GHCR (or `--build` locally), run migrations, start the
+  stack, wait until healthy, print the URL.
+- `backup.sh`: take a backup now. `restore.sh <dump>`: restore a dump (asks for confirmation,
+  stops api/worker first).
+- `verify-backup.sh`: restore the latest dump into a scratch database and compare row counts
+  with the live one (the "backups are verified by a restore" check).
+
+### CI
+
+- Build both images on every push; on `main`, push them to GHCR as `:sha` and `:latest`.
+- **Deploy smoke test**: start the production stack from the just-built images with generated
+  secrets, wait for health, check migrations are at head, call `/api/health` and an
+  unauthenticated route through the web app, take a backup and verify it by a restore.
+
+### Legal checklist
+
+`docs/legal-checklist.md`: CAN-SPAM, GDPR/UK GDPR and PECR points to check before scaling
+outreach, mapped to what Preuve already does (identity, unsubscribe, suppression, deletion,
+minimisation) and what the operator must still decide. A checklist, not legal advice.
+
+## Out of scope
+
+A public deployment (no domain yet). Managed Postgres/Redis (local volumes instead).
+Self-hosted error dashboards. Kubernetes.
+
+## Acceptance criteria
+
+- [ ] Production images build in CI and are pushed to GHCR; both run as non-root.
+- [ ] The CI deploy smoke test brings the stack up from those images with migrations applied.
+- [ ] The stack runs on this machine via `deploy.sh`, healthy, with the real data migrated in.
+- [ ] Backups run on schedule and are verified by a restore (in CI and locally).
+- [ ] Unsubscribe links work through the production stack's URL.
+- [ ] Logs are structured JSON with request ids; Sentry is off unless configured (tested).
+- [ ] The legal checklist exists and is linked from the README.
+
+## Notes
+
+- From 5C: `TRUST_PROXY_HEADERS=true` only because the API isn't published; a real
+  `OUTREACH_SECRET` is required.
+- From 5A: rewrites are compiled at build time, hence the build-time `PREUVE_API_INTERNAL_URL`.
+- The dev stack (`infra/docker-compose.yml`) is unchanged and uses different ports, so both can
+  exist side by side (memory permitting).
