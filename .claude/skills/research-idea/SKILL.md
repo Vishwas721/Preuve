@@ -17,18 +17,24 @@ a valid, valuable result. Never fill gaps with plausible-sounding claims.
 
 Run everything from `apps/api`. Run pnpm and long commands with `< /dev/null`.
 
+Preuve normally runs as the local production app (`preuve.cmd`, http://localhost:3100); the
+CLI talks to it at `http://localhost:3100/api` by default.
+
 ```bash
-docker compose --env-file ../../.env -f ../../infra/docker-compose.yml up -d   # if not running
-curl -s http://127.0.0.1:8000/health    # API must be up:  uv run uvicorn app.main:app
-                                        # worker must be up: uv run arq app.workers.settings.WorkerSettings
+curl -s http://localhost:3100/api/health    # must answer {"status":"ok",...}
 ```
 
-If the API or worker isn't running, start it in the background before continuing.
+If it doesn't answer, start it: `cmd //c "C:\Preuve\preuve.cmd --no-browser"` (starts Docker,
+Ollama and the app, including the worker the import needs) and check again. Only if the user
+works on the development setup instead (`preuve.cmd dev`, API on :8000), set
+`PREUVE_API_URL=http://127.0.0.1:8000` for the CLI commands.
 
 The CLI needs a Preuve API token (Phase 5A). Check `PREUVE_API_TOKEN` is set (`echo
 ${PREUVE_API_TOKEN:+set}`). If not, ask the user to create one in the web app (**Settings → API
-tokens**, while the idea's workspace is active) and to set it, e.g. `! export PREUVE_API_TOKEN=prv_…`
-— never ask them to paste it into the chat, and never write it to a file in the repo. A token
+tokens**, while the idea's workspace is active) and to save it once for every future session
+with `setx PREUVE_API_TOKEN prv_…` in a Windows terminal, then restart Claude Code (or, for
+this session only, `! export PREUVE_API_TOKEN=prv_…`) — never ask them to paste it into the
+chat, and never write it to a file in the repo. A token
 only sees its own workspace: a 404 on the idea means the token is for another workspace.
 
 ## 1. Get the idea into Preuve
@@ -312,7 +318,7 @@ uv run python -m app.scripts.research import   ../../research/<slug>/pack-<date>
   - the bottom line;
   - the 2–3 strongest supporting and contradicting items;
   - which unknowns are still open;
-  - where to see it: `http://localhost:3000/ideas/<idea_id>`.
+  - where to see it: `http://localhost:3100/ideas/<idea_id>`.
 
 ## Method changelog
 

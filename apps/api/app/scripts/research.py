@@ -7,9 +7,9 @@
   uv run python -m app.scripts.research import <pack.json>
 
 `context`, `create` and `import` talk to the running API (PREUVE_API_URL, default
-http://127.0.0.1:8000) with a personal API token (PREUVE_API_TOKEN, created under Settings >
-API tokens; it's bound to one workspace). `import` also needs the worker. `fetch` and `validate`
-work offline.
+http://localhost:3100/api, the app started with preuve.cmd) with a personal API token
+(PREUVE_API_TOKEN, created under Settings > API tokens; it's bound to one workspace).
+`import` also needs the worker. `fetch` and `validate` work offline.
 """
 
 import argparse
@@ -27,7 +27,9 @@ from pydantic import ValidationError
 from app.modules.research.pack import ResearchPack
 from app.search.fetch import FetchError, PageFetcher
 
-API = os.environ.get("PREUVE_API_URL", "http://127.0.0.1:8000")
+# The local app started with `preuve.cmd` (production stack, API behind the web app at /api).
+# For the development setup use PREUVE_API_URL=http://127.0.0.1:8000.
+API = os.environ.get("PREUVE_API_URL", "http://localhost:3100/api")
 POLL_S = 2.0
 NO_TOKEN = (
     "Set PREUVE_API_TOKEN to a Preuve API token (Settings > API tokens in the web app, "
