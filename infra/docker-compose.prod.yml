@@ -1,0 +1,187 @@
+# Preuve production stack (Phase 5D). Runs from the images CI pushes to GHCR (or local builds).
+#
+#   infra/scripts/deploy.sh            # pull, migrate, start, wait for health
+#   docker compose -p preuve-prod --env-file infra/.env.prod -f infra/docker-compose.prod.yml ps
+#
+# Only the web app is published (on 127.0.0.1); the API, database, Redis and SearXNG stay on
+# the internal network. Settings: infra/.env.prod (copy infra/.env.prod.example).
+
+name: preuve-prod
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+x-api-env: &api-env
+  ENVIRONMENT: production
+  LOG_FORMAT: json
+  DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-preuve}:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in infra/.env.prod}@postgres:5432/${POSTGRES_DB:-preuve}
+  REDIS_URL: redis://redis:6379/0
+  SEARXNG_URL: http://searxng:8080
+  OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+  OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:7b}
+  GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+  ALLOW_PRIVATE_TO_GEMINI: ${ALLOW_PRIVATE_TO_GEMINI:-false}
+  CORS_ORIGINS: ${PUBLIC_WEB_URL:-http://localhost:3100}
+  PUBLIC_API_URL: ${PUBLIC_WEB_URL:-http://localhost:3100}/api
+  OUTREACH_SECRET: ${OUTREACH_SECRET:?set OUTREACH_SECRET in infra/.env.prod}
+  OUTREACH_DAILY_LIMIT: ${OUTREACH_DAILY_LIMIT:-20}
+  SMTP_HOST: ${SMTP_HOST:-}
+  SMTP_PORT: ${SMTP_PORT:-587}
+  SMTP_USERNAME: ${SMTP_USERNAME:-}
+  SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+  SMTP_STARTTLS: ${SMTP_STARTTLS:-true}
+  SMTP_SSL: ${SMTP_SSL:-false}
+  EMAIL_FROM_NAME: ${EMAIL_FROM_NAME:-}
+  EMAIL_FROM_ADDRESS: ${EMAIL_FROM_ADDRESS:-}
+  EMAIL_POSTAL_ADDRESS: ${EMAIL_POSTAL_ADDRESS:-}
+  IMAP_HOST: ${IMAP_HOST:-}
+  IMAP_PORT: ${IMAP_PORT:-993}
+  IMAP_SSL: ${IMAP_SSL:-true}
+  IMAP_USERNAME: ${IMAP_USERNAME:-}
+  IMAP_PASSWORD: ${IMAP_PASSWORD:-}
+  ALLOW_SIGNUP: ${ALLOW_SIGNUP:-false}
+  # The API is only reachable through the web app's proxy, so its forwarded headers are trusted.
+  TRUST_PROXY_HEADERS: "true"
+  SENTRY_DSN: ${SENTRY_DSN:-}
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-preuve}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in infra/.env.prod}
+      POSTGRES_DB: ${POSTGRES_DB:-preuve}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-preuve} -d ${POSTGRES_DB:-preuve}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    logging: *logging
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    logging: *logging
+
+  searxng:
+    image: searxng/searxng:latest
+    restart: unless-stopped
+    environment:
+      SEARXNG_SECRET: ${SEARXNG_SECRET:?set SEARXNG_SECRET in infra/.env.prod}
+      SEARXNG_BASE_URL: http://searxng:8080/
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:8080/healthz || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+    logging: *logging
+
+  migrate:
+    image: ${PREUVE_API_IMAGE:-ghcr.io/vishwas721/preuve-api}:${PREUVE_TAG:-latest}
+    command: ["alembic", "upgrade", "head"]
+    environment: *api-env
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+    logging: *logging
+
+  api:
+    image: ${PREUVE_API_IMAGE:-ghcr.io/vishwas721/preuve-api}:${PREUVE_TAG:-latest}
+    restart: unless-stopped
+    environment: *api-env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+    logging: *logging
+
+  worker:
+    image: ${PREUVE_API_IMAGE:-ghcr.io/vishwas721/preuve-api}:${PREUVE_TAG:-latest}
+    command: ["arq", "app.workers.settings.WorkerSettings"]
+    restart: unless-stopped
+    environment: *api-env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+    healthcheck:
+      # arq writes a health key to Redis on every poll.
+      test: ["CMD", "arq", "--check", "app.workers.settings.WorkerSettings"]
+      interval: 60s
+      timeout: 15s
+      start_period: 30s
+      retries: 3
+    logging: *logging
+
+  web:
+    image: ${PREUVE_WEB_IMAGE:-ghcr.io/vishwas721/preuve-web}:${PREUVE_TAG:-latest}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${WEB_PORT:-3100}:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    logging: *logging
+
+  backup:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      PGHOST: postgres
+      PGUSER: ${POSTGRES_USER:-preuve}
+      PGPASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in infra/.env.prod}
+      PGDATABASE: ${POSTGRES_DB:-preuve}
+      BACKUP_HOUR: ${BACKUP_HOUR:-3}
+      BACKUP_KEEP_DAYS: ${BACKUP_KEEP_DAYS:-14}
+    volumes:
+      - ${BACKUP_DIR:-../backups}:/backups
+      - ./backup/backup-loop.sh:/usr/local/bin/backup-loop.sh:ro
+    entrypoint: ["/bin/sh", "/usr/local/bin/backup-loop.sh"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      # Healthy once at least one dump exists and the newest is under 26 hours old.
+      test: ["CMD-SHELL", "find /backups -name 'preuve-*.sql.gz' -mmin -1560 | grep -q ."]
+      interval: 5m
+      timeout: 10s
+      start_period: 2m
+      retries: 2
+    logging: *logging
+
+  # Public HTTPS later: `--profile tunnel` with CLOUDFLARE_TUNNEL_TOKEN set (needs a domain).
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    profiles: ["tunnel"]
+    restart: unless-stopped
+    command: ["tunnel", "--no-autoupdate", "run"]
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:-}
+    depends_on:
+      - web
+    logging: *logging
+
+volumes:
+  postgres_data:
+  redis_data:
