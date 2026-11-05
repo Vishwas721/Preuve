@@ -1,6 +1,6 @@
 # Phase 6 — Research score (rank ideas before outreach)
 
-- **Status:** In progress (kickoff 2026-11-05)
+- **Status:** Done (2026-11-05)
 - **Goal:** Rank ideas on public-web evidence alone, before any customer contact, so the founder can
   work down the list and start outreach with the most promising idea first.
 - **PRD refs:** §24 Validation scoring (the score this precedes), §27 Portfolio, §51 philosophy
@@ -72,14 +72,14 @@ None.
 
 ## Acceptance criteria
 
-- [ ] Pure function: the same inputs give the same result, and each dimension is clamped to [0, max] (unit tests).
-- [ ] Unverifiable, dismissed, low-relevance and first-party evidence don't count (tests).
-- [ ] Domains are counted once per dimension (test).
-- [ ] Contradicting domains lower the balance dimension, and one-sided thin evidence doesn't score full balance (tests).
-- [ ] `GET /ideas/{id}/research-score` returns the dimensions; `GET /portfolio` includes `research_score` (API tests).
-- [ ] The case board shows the research score and sorts by it; the overview shows the breakdown.
-- [ ] Live check on the two researched cases: they rank in a sensible order, and the totals match a hand calculation.
-- [ ] `ruff check`, `ruff format --check`, `pytest`, web lint and typecheck pass.
+- [x] Pure function: the same inputs give the same result, and each dimension is clamped to [0, max] (unit tests).
+- [x] Unverifiable, dismissed, low-relevance and first-party evidence don't count (tests).
+- [x] Domains are counted once per dimension (test).
+- [x] Contradicting domains lower the balance dimension, and one-sided thin evidence doesn't score full balance (tests).
+- [x] `GET /ideas/{id}/research-score` returns the dimensions; `GET /portfolio` includes `research_score` (API tests).
+- [x] The case board shows the research score and sorts by it; the overview shows the breakdown. (Verified by lint, typecheck and the live API. A visual check in the browser was left to the founder because the app needs a login.)
+- [x] Live check on the two researched cases: they rank in a sensible order, and the totals match a hand calculation.
+- [x] `ruff check`, `ruff format --check`, `pytest`, web lint and typecheck pass.
 
 ## Open questions (settled at kickoff)
 
@@ -89,6 +89,15 @@ None.
   weak problem with many prospects; the weights guarantee that (problem + balance = 50 points).
 
 ## Notes
+
+- Live check (2026-11-05): CBAM 76 (problem 30, pain 15, balance 12, questions 7, alternatives 5,
+  reachability 7) and deceased-estate claims 73 (27, 15, 11, 7, 5, 8). Both match a hand calculation
+  from the packs.
+- Known limit: the score measures how well the *problem* is documented, not how strong the
+  *wedge* is. Both researched cases score "strong" although their research found crowded or free
+  alternatives. Thorough research saturates problem, pain and alternatives, so ranking among
+  researched ideas is driven mainly by balance, questions and reachability. If that proves too
+  coarse, a v2 could add a competition/whitespace dimension.
 
 - Constants live in one block in `research_score.py`; changing one means bumping
   `RESEARCH_SCORE_VERSION` and updating this doc.
