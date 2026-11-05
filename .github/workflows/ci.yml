@@ -30,7 +30,7 @@ jobs:
       TEST_DATABASE_URL: postgresql+asyncpg://preuve:preuve@127.0.0.1:5432/preuve_test
       GEMINI_API_KEY: ""
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
@@ -50,7 +50,7 @@ jobs:
       run:
         working-directory: apps/web
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: pnpm/action-setup@v4
         with:
           package_json_file: apps/web/package.json
@@ -78,7 +78,7 @@ jobs:
     env:
       COMPOSE: docker compose -p preuve-prod --env-file infra/.env.prod -f infra/docker-compose.prod.yml
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Production settings with generated secrets
         run: |
           cp infra/.env.prod.example infra/.env.prod
