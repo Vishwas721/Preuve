@@ -1,0 +1,2740 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "ec6e4f63-83c6-4808-842f-ec5833872460",
+    "researcher": "claude-code",
+    "started_at": "2026-11-05T14:15:00Z",
+    "finished_at": "2026-11-05T15:30:00Z",
+    "queries": [
+      "Shiprocket weight discrepancy complaint seller",
+      "weight discrepancy courier charges India dispute window",
+      "Shiprocket weight dispute reddit seller lost money dispute rejected",
+      "fake RTO customer refused courier India seller",
+      "COD remittance mismatch D2C India reconciliation",
+      "COD remittance reconciliation Shopify India app courier remittance mismatch",
+      "packing video recording software India ecommerce sellers AWB scan returns proof",
+      "\"weight discrepancy\" executive job India ecommerce courier reconciliation responsibilities",
+      "COD reconciliation job India courier",
+      "Cointab COD reconciliation courier weight audit India D2C",
+      "Shiprocket API weight discrepancy endpoint OR remittance API documentation",
+      "Shiprocket weight freeze review seller \"no weight discrepancy\" (contradiction)",
+      "weight discrepancy auto dispute aggregator (contradiction: already solved)",
+      "weight discrepancy leakage percent of logistics spend (contradiction: small amounts)",
+      "Amazon reimbursement services contingency pricing",
+      "Indian D2C apparel footwear brand shipping policy COD Shiprocket"
+    ],
+    "notes": "Run resumed after an interrupted session; earlier fetch outputs reused. Most quantitative evidence (loss per order, % flagged, recovery %) comes from vendors selling a fix (aggregators, reconciliation tools) and is marked inference. Seller voices come from complaint sites/forums/app reviews (few, mostly Shiprocket). Shopify App Store and Capterra reviews were unfetchable. The Shiprocket 'briefing' page is an unofficial Google Sites page. No seller-stated monthly loss and no Indian WTP evidence found. 21 prospects: sizes not stated on any site, so size omitted; contacts only where a name+title appears on the company's own page (5 people, 4 companies)."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "source_type": "forum",
+      "quote": "I upload all the dimensions with measuring tape and weight of the shipment in package images before hand only to avoid any dispute still after getting the images they have charged me huge amounts on fake excess weight issue.",
+      "statement": "A small apparel seller shipping via Shiprocket reports uploading tape-measure and weight images for every parcel in advance and still being charged for excess weight.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0",
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://voxya.com/consumer-complaints/weight-discrepancy-fraud-by-shiprocket/229902",
+      "title": "Big foot retail solutions pvt Ltd - Weight discrepancy fraud by Shiprocket",
+      "published_at": null
+    },
+    {
+      "ref": "ev-02",
+      "source_type": "forum",
+      "quote": "Shiprocket gives an option to raise dispute but that option is totally biased and even after uploading images before and after as well there is no action that has been taken.",
+      "statement": "The same seller says disputes raised with image proof were not acted on, i.e. the existing dispute flow did not recover the charges.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://voxya.com/consumer-complaints/weight-discrepancy-fraud-by-shiprocket/229902",
+      "title": "Big foot retail solutions pvt Ltd - Weight discrepancy fraud by Shiprocket",
+      "published_at": null
+    },
+    {
+      "ref": "ev-03",
+      "source_type": "forum",
+      "quote": "In short, will suggest to never use these couriers, especially with Shiprocket where they keep claiming fake weights and hope that the customer either doesn’t have images of the dimensions or weight, or doesn’t respond in 7 days.",
+      "statement": "A forum user describes repeated inflated-weight claims via Shiprocket that rely on sellers lacking photo proof or missing the 7-day window.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a",
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://techenclave.com/t/courier-service-feedback/60083?page=78",
+      "title": "Courier Service Feedback",
+      "published_at": null
+    },
+    {
+      "ref": "ev-04",
+      "source_type": "forum",
+      "quote": "Well shiprocket just charged me 4kg for a 2 ram sticks shipment, they raised a discrepancy and auto accepted it, no mails or anything … The funny thing is they dont email you when there’s time to dispute it. They email you the day the 7 day dispute period passes",
+      "statement": "Two forum users report discrepancies that were auto-accepted before they noticed, i.e. the dispute window passed without the seller acting.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://techenclave.com/t/courier-service-feedback/60083?page=78",
+      "title": "Courier Service Feedback",
+      "published_at": null
+    },
+    {
+      "ref": "ev-05",
+      "source_type": "review",
+      "quote": "if you are shipping 100 order per day then you need a team of 2-3 people to handle these Discrepancy which is an additional expense just for the shiprocket … SHIPROCKET is raising Discrepancy for the same boxes in 90% of my orders … For an additional 1 KG Discrepancy weight they are charging me Rs100 to 150 /-.",
+      "statement": "A Shopify-app review by a seller says discrepancies were raised on 90% of orders, cost Rs100-150 per extra kg, and would need 2-3 people at 100 orders/day to handle.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e",
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a",
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://appnavigator.io/app/shiprocket/reviews/2186791",
+      "title": "The Purple Tree review for Shiprocket: eCommerce Shipping",
+      "published_at": null
+    },
+    {
+      "ref": "ev-06",
+      "source_type": "company_site",
+      "quote": "Once an incorrect charge has been identified, the seller has 7 working days to raise a dispute. … In case the sellers do not respond to the dispute within 7 working days, Shiprocket auto accepts, and the amount is debited from the Shiprocket wallet.",
+      "statement": "Shiprocket gives sellers 7 working days to dispute a weight charge; unanswered discrepancies are auto-accepted and debited from the wallet.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a",
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://www.shiprocket.in/weight-dispute-management/",
+      "title": "Weight Dispute Management - Weight Discrepancy -Shiprocket",
+      "published_at": null
+    },
+    {
+      "ref": "ev-07",
+      "source_type": "company_site",
+      "quote": "Usually, weight discrepancy arises when sellers add the actual weight of the product instead of the volumetric weight of the product.",
+      "statement": "Shiprocket says most discrepancies come from sellers declaring dead weight instead of volumetric weight, i.e. many charges may be valid rather than recoverable.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://www.shiprocket.in/weight-dispute-management/",
+      "title": "Weight Dispute Management - Weight Discrepancy -Shiprocket",
+      "published_at": null
+    },
+    {
+      "ref": "ev-08",
+      "source_type": "company_site",
+      "quote": "The weight discrepancy gets uploaded on the panel every Thursday as day zero ( 0 ) … Seller will also receive an email and SMS on day 1, alternate day, and on remaining days 3,2 and 1 to take action against the raised discrepancies.",
+      "statement": "Shiprocket's SOP says discrepancies are uploaded weekly and sellers get email/SMS reminders through the window, which weakens the claim that sellers are not alerted.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://sites.google.com/shiprocket.com/sop-shiprocket/weight-management-faqs",
+      "title": "Shiprocket SOP - Weight Management FAQs",
+      "published_at": null
+    },
+    {
+      "ref": "ev-09",
+      "source_type": "company_site",
+      "quote": "Average billing timeline is 21 days but with weight freeze process it can come down to 4 days",
+      "statement": "Shiprocket's SOP states the average weight billing timeline is 21 days, consistent with charges arriving weeks after dispatch.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://sites.google.com/shiprocket.com/sop-shiprocket/weight-management-faqs",
+      "title": "Shiprocket SOP - Weight Management FAQs",
+      "published_at": null
+    },
+    {
+      "ref": "ev-10",
+      "source_type": "company_site",
+      "quote": "if you raise dispute against the shipment then you need to provide min 4 or max 5 mandatory images including scale measurement of length, breadth , height & Dead weight images on weighing scale within 7 days .",
+      "statement": "To dispute on Shiprocket a seller must supply 4-5 images (L, B, H with a scale and dead weight on a weighing scale) within 7 days.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0",
+        "415acb42-9607-4181-aa53-9f8897a37682"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://sites.google.com/shiprocket.com/sop-shiprocket/weight-discrepancy",
+      "title": "Shiprocket SOP - Weight Discrepancy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-11",
+      "source_type": "company_site",
+      "quote": "Upload at least 1 product image and 5 final package images. Make sure the length, width, height and actual weight of the product is visible in the photographs.",
+      "statement": "Shiprocket's Weight Freeze lets sellers lock SKU weight/dimensions by uploading product and package photos.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://support.shiprocket.in/support/solutions/articles/43000664207-i-want-to-freeze-the-weight-and-dimensions-of-my-product",
+      "title": "I want to freeze the weight and dimensions of my product",
+      "published_at": null
+    },
+    {
+      "ref": "ev-12",
+      "source_type": "company_site",
+      "quote": "We match images with their respective AWBs … If dissatisfied, you can reopen the dispute for a thorough reevaluation. … consider joining Shiprocket’s Weight Assurance Program. You can simply contact your key account manager (KAM) or email Shiprocket’s support team to benefit from zero weight discrepancies assurance.",
+      "statement": "Shiprocket says it checks courier images against AWBs itself and offers a 'zero weight discrepancies' assurance program, i.e. the incumbent already addresses part of the problem.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://www.shiprocket.in/blog/how-shiprocket-handles-weight-discrepancies/",
+      "title": "How Does Shiprocket Handle Weight Discrepancies? - Shiprocket",
+      "published_at": null
+    },
+    {
+      "ref": "ev-13",
+      "source_type": "company_site",
+      "quote": "we have come up with a solution that removes weight errors from all your future shipments*. Weight Freeze is a one-time process where you need to upload the images of your product and packaging.",
+      "statement": "Shiprocket markets Weight Freeze (since 2021) as removing weight errors from future shipments after a one-time image upload.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://www.shiprocket.in/blog/product-updates-april-2021/",
+      "title": "Product Highlights from April 2021 - Shiprocket",
+      "published_at": null
+    },
+    {
+      "ref": "ev-14",
+      "source_type": "company_site",
+      "quote": "For order, you can only raise a dispute only once. … Offline requests won’t be catered to, as the details shared on the panel will be shared with the respective courier partners.",
+      "statement": "Shiprocket only accepts weight disputes through its panel, once per order, which constrains any third-party tool to working through the seller's panel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "12ab8b95-9c6c-42e8-8a10-63551d0442b0"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://www.shiprocket.in/knowledgebase/weight-dispute-manager/",
+      "title": "What Is The Weight Dispute Manager in ShipRocket? - KB",
+      "published_at": null
+    },
+    {
+      "ref": "ev-15",
+      "source_type": "industry_publication",
+      "quote": "covers order create/update/cancel, courier serviceability and AWB assignment, pickup scheduling, labels/manifests/invoices, tracking, returns/exchanges, NDR actions, products, listings, channels, inventory, wallet and statements … The validity of this token is 10 days . … Shiprocket Discrepancy Details API description: Use this API to get the discrepancy details of your account.",
+      "statement": "Shiprocket's public API (JWT token valid 10 days) includes wallet/statements and a Discrepancy Details endpoint, so reading discrepancy data need not rely on scraping.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "12ab8b95-9c6c-42e8-8a10-63551d0442b0"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://apis.io/providers/shiprocket/",
+      "title": "Shiprocket API — Docs, OpenAPI & Kin Score | APIs.io",
+      "published_at": null
+    },
+    {
+      "ref": "ev-16",
+      "source_type": "company_site",
+      "quote": "The Raise Claim option is available for delivered shipments only. … Remember to click shipment images as proof in the event of weight mismatch.",
+      "statement": "Delhivery One has its own weight-mismatch claim flow and tells sellers to photograph shipments as proof.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Delhivery",
+      "url": "https://help.delhivery.com/docs/weight-dispute",
+      "title": "Weight Mismatch",
+      "published_at": null
+    },
+    {
+      "ref": "ev-17",
+      "source_type": "company_site",
+      "quote": "Discrepancies automatically disputed by the system based on evidence … You have 10 days from when the discrepancy is raised to take action (accept or dispute).",
+      "statement": "Velocity Shipping already auto-disputes some discrepancies and gives a 10-day window.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a",
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Velocity",
+      "url": "https://www.velocity.in/shipping-faq/features/weight-discrepancies",
+      "title": "Weight Discrepancies | Velocity Shipping Help Center",
+      "published_at": null
+    },
+    {
+      "ref": "ev-18",
+      "source_type": "company_site",
+      "quote": "With limited bandwidth, brands often end up accepting incorrect charges, leading to shrinking margins and wasted time.",
+      "statement": "An aggregator says brands with limited bandwidth often accept incorrect weight charges.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a",
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": "Velocity",
+      "url": "https://blog.velocity.in/weight-discrepancy-in-e-commerce-how-incorrect-package-weights-drain-your-margins/",
+      "title": "Weight Discrepancy in E-Commerce: How Incorrect Package Weights Drain Your Margins - Blog",
+      "published_at": null
+    },
+    {
+      "ref": "ev-19",
+      "source_type": "company_site",
+      "quote": "~40–50% of weight discrepancy claims are handled entirely by Velocity Shipping",
+      "statement": "Velocity says 40-50% of weight claims are handled by the aggregator without the brand, so aggregators are competing on this.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Velocity",
+      "url": "https://blog.velocity.in/weight-discrepancy-in-e-commerce-how-incorrect-package-weights-drain-your-margins/",
+      "title": "Weight Discrepancy in E-Commerce: How Incorrect Package Weights Drain Your Margins - Blog",
+      "published_at": null
+    },
+    {
+      "ref": "ev-20",
+      "source_type": "company_site",
+      "quote": "Whenever a discrepancy is detected between declared and actual weight, Eshopbox automatically raises a dispute with the courier partner.",
+      "statement": "Eshopbox (fulfilment) automatically raises weight disputes for its clients.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Eshopbox",
+      "url": "https://www.eshopbox.com/blog/minimizing-shipping-overcharges",
+      "title": "Minimize Shipping Costs: Tackle Weight Discrepancies Smartly | Eshopbox",
+      "published_at": null
+    },
+    {
+      "ref": "ev-21",
+      "source_type": "company_site",
+      "quote": "When courier companies detect weight discrepancies, they impose surcharges that can range from ₹10-50 per shipment—seemingly small amounts that quickly accumulate. For a business shipping 1,000 orders monthly with a 25% discrepancy rate, these penalties can easily exceed ₹1 lakh annually.",
+      "statement": "Vendor estimate: Rs10-50 per flagged shipment; at 1,000 orders/month and 25% discrepancy rate, over Rs1 lakh a year.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": null,
+      "url": "https://www.eshopbox.com/blog/minimizing-shipping-overcharges",
+      "title": "Minimize Shipping Costs: Tackle Weight Discrepancies Smartly | Eshopbox",
+      "published_at": null
+    },
+    {
+      "ref": "ev-22",
+      "source_type": "company_site",
+      "quote": "At an average gap of 300 to 500 grams per flagged shipment, sellers routinely lose ₹18 to ₹35 per order. On 5,000 orders a month, that’s ₹90,000 to ₹1.75 lakh, every month, most of it never disputed because nobody caught it in time.",
+      "statement": "Shipway (aggregator) estimates Rs18-35 lost per flagged order, Rs90,000-1.75 lakh a month at 5,000 orders, mostly undisputed.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e",
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a"
+      ],
+      "company_name": "Shipway",
+      "url": "https://blog.shipway.com/weight-discrepancy-courier-charges-dispute/",
+      "title": "Weight Discrepancy Courier Charges: Why & How to raise Disputes",
+      "published_at": null
+    },
+    {
+      "ref": "ev-23",
+      "source_type": "company_site",
+      "quote": "Most dispute windows close 3 to 7 days after the charge is flagged.",
+      "statement": "Dispute windows are typically 3-7 days after a charge is flagged.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a"
+      ],
+      "company_name": null,
+      "url": "https://blog.shipway.com/weight-discrepancy-courier-charges-dispute/",
+      "title": "Weight Discrepancy Courier Charges: Why & How to raise Disputes",
+      "published_at": null
+    },
+    {
+      "ref": "ev-24",
+      "source_type": "industry_publication",
+      "quote": "D2C brands with high SKU variability typically see 4-9 percent of AWBs flagged for volumetric upgrade.",
+      "statement": "A reconciliation vendor says 4-9% of AWBs are typically flagged for volumetric upgrade.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a"
+      ],
+      "company_name": null,
+      "url": "https://www.terra-insight.com/insights/courier-last-mile-reconciliation-india/",
+      "title": "Courier and Last-Mile Reconciliation for Indian E-commerce and D2C Brands | Terra Insight",
+      "published_at": null
+    },
+    {
+      "ref": "ev-25",
+      "source_type": "industry_publication",
+      "quote": "Total courier spend | ₹58 lakh … Contested with valid evidence (write-off) | 3,408 (40%) … Unresponded billed | 852 (10%) … Permanent weight-dispute leakage | ₹84,000",
+      "statement": "In a vendor's worked example (₹58 lakh monthly courier spend), 40% of flagged AWBs are won with evidence and permanent weight leakage is only ₹84,000 (~1.4% of spend): recoverable money may be small.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e",
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a"
+      ],
+      "company_name": null,
+      "url": "https://www.terra-insight.com/insights/courier-last-mile-reconciliation-india/",
+      "title": "Courier and Last-Mile Reconciliation for Indian E-commerce and D2C Brands | Terra Insight",
+      "published_at": null
+    },
+    {
+      "ref": "ev-26",
+      "source_type": "industry_publication",
+      "quote": "Typical exception rate is 0.4-1.2 percent of COD value with recovery taking 14-30 days.",
+      "statement": "COD remittance exceptions are typically 0.4-1.2% of COD value (vendor estimate).",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e",
+        "abe78bd1-da1e-4cec-822b-cb0489ea2ec0"
+      ],
+      "company_name": null,
+      "url": "https://www.terra-insight.com/insights/courier-last-mile-reconciliation-india/",
+      "title": "Courier and Last-Mile Reconciliation for Indian E-commerce and D2C Brands | Terra Insight",
+      "published_at": null
+    },
+    {
+      "ref": "ev-27",
+      "source_type": "company_site",
+      "quote": "These variations aren’t minor—they can affect 5-20% of your shipments, making it difficult to predict your monthly bill.",
+      "statement": "WareIQ's founder says slab misclassification can affect 5-20% of shipments.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a"
+      ],
+      "company_name": "WareIQ",
+      "url": "https://wareiq.com/resources/blogs/shipping-weight-discrepancy-in-indian-ecommerce-why-does-it-happen-perspectives-of-various-parties-and-potential-solutions/",
+      "title": "Shipping Weight Discrepancy in Indian eCommerce: Causes & Solutions",
+      "published_at": null
+    },
+    {
+      "ref": "ev-28",
+      "source_type": "company_site",
+      "quote": "Brands shipping 10,000+ parcels per month typically recover 2-5% of total freight spend through systematic weight dispute management.",
+      "statement": "Prozo claims 2-5% of freight spend recovered through systematic weight disputes, for brands at 10,000+ parcels/month (above this idea's ICP).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": "Prozo",
+      "url": "https://www.prozo.com/logistics/weight-discrepancy-management/",
+      "title": "Automated Weight Discrepancy Management | Prozo",
+      "published_at": null
+    },
+    {
+      "ref": "ev-29",
+      "source_type": "company_site",
+      "quote": "Sellers waste time chasing support tickets. … Seller wallet is debited within 48 hours of dispatch, not weeks after delivery.",
+      "statement": "JetPost, an aggregator, sells 'TrueWeight Shield' on the premise that weight debits arrive weeks after delivery and sellers chase tickets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "JetPost",
+      "url": "https://thejetpost.in/trueweight-shield",
+      "title": "Structured Weight Dispute Management For Ecommerce Logistics",
+      "published_at": null
+    },
+    {
+      "ref": "ev-30",
+      "source_type": "company_site",
+      "quote": "Brands are left reconciling numbers manually, spending hours per week just to track where money went. … Finance teams often spend 3–5 working days per month on this alone, creating inefficiency and human error risk.",
+      "statement": "An aggregator says COD remittances arrive with unitemised deductions and finance teams spend 3-5 working days a month reconciling manually.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "abe78bd1-da1e-4cec-822b-cb0489ea2ec0"
+      ],
+      "company_name": "Shipmozo",
+      "url": "https://www.shipmozo.com/blog/top-cod-remittance-problems",
+      "title": "Top COD Remittance Problems for D2C Brands in India (2026)",
+      "published_at": null
+    },
+    {
+      "ref": "ev-31",
+      "source_type": "company_site",
+      "quote": "In rare but damaging cases, especially with last-mile delivery agents in remote regions, COD fraud occurs—delivery agents mark orders as undelivered or returned while collecting cash.",
+      "statement": "COD fraud where agents mark orders undelivered/returned while collecting cash is described as rare but damaging.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": null,
+      "url": "https://www.shipmozo.com/blog/top-cod-remittance-problems",
+      "title": "Top COD Remittance Problems for D2C Brands in India (2026)",
+      "published_at": null
+    },
+    {
+      "ref": "ev-32",
+      "source_type": "company_site",
+      "quote": "Most COD merchants reconcile by gut feel, not by system.",
+      "statement": "A Shopify COD-app vendor says most COD merchants do not reconcile remittances systematically.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "abe78bd1-da1e-4cec-822b-cb0489ea2ec0"
+      ],
+      "company_name": null,
+      "url": "https://easysellapp.com/blogs/wiki/cod-cash-reconciliation-match-payments-to-orders",
+      "title": "COD Cash Reconciliation: Match Payments to Orders",
+      "published_at": null
+    },
+    {
+      "ref": "ev-33",
+      "source_type": "company_site",
+      "quote": "A structured Google Sheet and 30 minutes per week will catch most discrepancies.",
+      "statement": "The same source says a Google Sheet and 30 minutes a week catches most COD discrepancies, i.e. the manual alternative is cheap at small volume.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "abe78bd1-da1e-4cec-822b-cb0489ea2ec0"
+      ],
+      "company_name": null,
+      "url": "https://easysellapp.com/blogs/wiki/cod-cash-reconciliation-match-payments-to-orders",
+      "title": "COD Cash Reconciliation: Match Payments to Orders",
+      "published_at": null
+    },
+    {
+      "ref": "ev-34",
+      "source_type": "company_site",
+      "quote": "This takes 2–3 hours per week for a store shipping 100–300 COD orders daily through 3 couriers.",
+      "statement": "Manual multi-courier COD reconciliation is estimated at 2-3 hours/week for 100-300 COD orders/day.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "abe78bd1-da1e-4cec-822b-cb0489ea2ec0"
+      ],
+      "company_name": null,
+      "url": "https://easysellapp.com/blogs/wiki/reconcile-cod-payments-multiple-couriers",
+      "title": "How to Reconcile COD Payments From Multiple Couriers",
+      "published_at": null
+    },
+    {
+      "ref": "ev-35",
+      "source_type": "company_site",
+      "quote": "Platforms like Cointab specialize in Shopify + courier reconciliation.",
+      "statement": "Cointab is named as dedicated Shopify + courier reconciliation software.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "abe78bd1-da1e-4cec-822b-cb0489ea2ec0"
+      ],
+      "company_name": "Cointab",
+      "url": "https://easysellapp.com/blogs/wiki/reconcile-cod-payments-multiple-couriers",
+      "title": "How to Reconcile COD Payments From Multiple Couriers",
+      "published_at": null
+    },
+    {
+      "ref": "ev-36",
+      "source_type": "company_site",
+      "quote": "Without order-level matching, brands cannot identify which orders were underpaid, which had unauthorized deductions, and which COD amounts are still outstanding. This is a recoverable loss that manual reconciliation consistently misses.",
+      "statement": "An OMS vendor describes COD remittance discrepancies as a recoverable loss that manual reconciliation misses.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "abe78bd1-da1e-4cec-822b-cb0489ea2ec0",
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": null,
+      "url": "https://base.com/en-IN/blog/cod-order-management-in-india/",
+      "title": "COD Order Management in India: A Complete D2C Guide",
+      "published_at": null
+    },
+    {
+      "ref": "ev-37",
+      "source_type": "job_posting",
+      "quote": "Manage end-to-end Cash on Delivery (COD) reconciliation with courier partners",
+      "statement": "A logistics company hires an accounts executive to own COD reconciliation with courier partners: the work is staffed.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "abe78bd1-da1e-4cec-822b-cb0489ea2ec0"
+      ],
+      "company_name": "Truxcargo",
+      "url": "https://jobs.weekday.works/account-executive-at-truxcargo-4403352996",
+      "title": "TRUXCARGO hiring for Account Executive",
+      "published_at": null
+    },
+    {
+      "ref": "ev-38",
+      "source_type": "company_site",
+      "quote": "Manual reconciliation across hundreds of shipments can take hours. BUSY Recom automates this entire process by importing invoices and manifest files from Shiprocket, Delhivery, and other couriers.",
+      "statement": "BUSY Recom sells courier invoice reconciliation that imports Shiprocket/Delhivery files and flags overcharges.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "abe78bd1-da1e-4cec-822b-cb0489ea2ec0"
+      ],
+      "company_name": "BUSY",
+      "url": "https://busy.in/ecommerce-reconciliation/shiprocket--delhivery-shipping-reconciliation-match-invoices--catch-overcharges/",
+      "title": "Shiprocket and Delhivery: Shipping Reconciliation Guide",
+      "published_at": null
+    },
+    {
+      "ref": "ev-39",
+      "source_type": "forum",
+      "quote": "Delhivery wrongly updated fake remarks as customer refused, and Shiprocket subsequently just marked the product as RTO (return-to-origin), which is totally against their policy of three delivery attempts.",
+      "statement": "A seller reports a fake 'customer refused' remark leading to RTO of a made-to-order product.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://voxya.com/consumer-complaints/customised-product-not-delivered-fake-delivery-remarks/131444",
+      "title": "Shiprocket - Customised Product Not Delivered Fake Delivery Remarks",
+      "published_at": null
+    },
+    {
+      "ref": "ev-40",
+      "source_type": "company_site",
+      "quote": "Fake delivery attempts - where courier executives mark a shipment as attempted without making a genuine visit - are one of the most significant sources of avoidable RTO in the Indian logistics ecosystem.",
+      "statement": "An aggregator calls fake delivery attempts a major source of avoidable RTO.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": null,
+      "url": "https://www.icarry.in/pages/blog/delivery-attempt-rto-costs.html",
+      "title": "What Is a Delivery Attempt? Understanding Failed Deliveries, NDR and RTO Costs",
+      "published_at": null
+    },
+    {
+      "ref": "ev-41",
+      "source_type": "news",
+      "quote": "Earlier, we faced multiple challenges, including fake delivery attempts and issues with last-mile fulfilment, particularly for COD orders.",
+      "statement": "A D2C brand co-founder cites fake delivery attempts on COD orders as a past problem.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": null,
+      "url": "https://www.cioandleader.com/ai-helps-d2c-brands-improve-delivery-completion-rates-by-11-in-tier-2-beyond-velocity-data-shows/",
+      "title": "AI helps D2C brands improve delivery completion rates by 11% in Tier-2 & beyond, Velocity data shows - CIO&Leader",
+      "published_at": null
+    },
+    {
+      "ref": "ev-42",
+      "source_type": "other",
+      "quote": "Escalate option has been changed to Fake attempt wherein the sellers need to provide the proof either as an audio file or image as a proof for raising an escalation. Also, the fake attempt will be available only for 48 hours after the RTO has been initiated. … Whatsapp communication for the buyers is active for all the sellers and we will be sending a whatsapp message to the buyers for taking the reattempt request.",
+      "statement": "A Shiprocket support briefing (2021) shows a 'Fake attempt' escalation needing audio/image proof within 48 hours of RTO, and WhatsApp messages to buyers already sent by Shiprocket.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "Shiprocket",
+      "url": "https://sites.google.com/view/breafingshiprocket/17-november-2021",
+      "title": "BRIEFING SHIPROCKET - 17 November 2021",
+      "published_at": null
+    },
+    {
+      "ref": "ev-43",
+      "source_type": "company_site",
+      "quote": "Benchmark: Every eligible discrepancy disputed within the 5-day window. A dispute rate below 80% means charges are being absorbed without challenge. … Pre-upload product images in iCarry® panel for standard SKUs to enable automatic dispute triggering.",
+      "statement": "iCarry's audit guide expects every eligible discrepancy disputed within 5 days and offers automatic dispute triggering from pre-uploaded images.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0397f9aa-423a-4192-b28c-a1d80edc1a8a",
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": "iCarry",
+      "url": "https://www.icarry.in/pages/blog/shipping-audit-8-monthly-checks-recover-margin.html",
+      "title": "Shipping Audit: 8 Monthly Checks to Recover Lost Margin",
+      "published_at": null
+    },
+    {
+      "ref": "ev-44",
+      "source_type": "industry_publication",
+      "quote": "One of the most ignored issues in D2C logistics India is weight disputes. … Capture actual weight at dispatch. Record timestamp. Use standardized packaging.",
+      "statement": "A D2C logistics playbook calls weight disputes an ignored issue and recommends capturing weight and timestamp at dispatch.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": null,
+      "url": "https://bombax.in/blog/d2c-logistics-playbook-india-0-to-10-crore",
+      "title": "D2C Logistics Playbook India From 0 To 10 Crore Revenue",
+      "published_at": null
+    },
+    {
+      "ref": "ev-45",
+      "source_type": "company_site",
+      "quote": "You do not need to photograph every parcel if that is impractical. Prioritise high-value orders, bulky products, unusual bundles, and shipments close to a weight slab.",
+      "statement": "An aggregator advises against photographing every parcel and suggests sampling risky ones, i.e. per-parcel proof is seen as impractical.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "415acb42-9607-4181-aa53-9f8897a37682"
+      ],
+      "company_name": null,
+      "url": "https://www.shipmozo.com/blog/weight-discrepancy-in-shipping",
+      "title": "What Is a Weight Discrepancy in Shipping and How Do You Dispute It?",
+      "published_at": null
+    },
+    {
+      "ref": "ev-46",
+      "source_type": "company_site",
+      "quote": "Common evidence gaps include footage that is not timestamped, documentation that covers a general packing area rather than a specific order, proof submitted after the claim window has closed",
+      "statement": "Claims fail when packing proof isn't timestamped, isn't order-specific or is late, which supports AWB-indexed proof.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "415acb42-9607-4181-aa53-9f8897a37682",
+        "1ee38e56-ea35-4275-8235-2444a3455cc0"
+      ],
+      "company_name": null,
+      "url": "https://www.ginesys.in/blog/marketplace-claim-proof-requirements",
+      "title": "Marketplace Claim Rejections: Proof Requirements for Sellers",
+      "published_at": null
+    },
+    {
+      "ref": "ev-47",
+      "source_type": "company_site",
+      "quote": "Adoption of VMS is mandatory for sellers wishing to remain eligible for Flipkart’s Seller Protection Fund (SPF).",
+      "statement": "Packing-video capture is already required by Flipkart for SPF eligibility, so many sellers already record per-order packing proof.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "415acb42-9607-4181-aa53-9f8897a37682"
+      ],
+      "company_name": null,
+      "url": "https://wareiq.com/resources/blogs/flipkart-video-management-system-vms/",
+      "title": "Flipkart Video Management System (VMS) Guide for Sellers [2026]",
+      "published_at": null
+    },
+    {
+      "ref": "ev-48",
+      "source_type": "company_site",
+      "quote": "Record packing sessions with video to keep proof for disputes and customer claims. … $15 / month … Up to 1,000 orders per month",
+      "statement": "HyprPack (Shopify) records AWB-scanned packing videos for disputes, priced from $15/month for 1,000 orders.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "415acb42-9607-4181-aa53-9f8897a37682",
+        "6acdb5b9-3d8e-4231-a5c9-d8bb171c59b7"
+      ],
+      "company_name": "HyprPack",
+      "url": "https://pickyourapp.com/products/packflow-2",
+      "title": "HyprPack",
+      "published_at": null
+    },
+    {
+      "ref": "ev-49",
+      "source_type": "company_site",
+      "quote": "Simply scan a shipping label barcode to start recording, then scan a done code to stop and upload the video. … $29.99 / month",
+      "statement": "VuDrop starts/stops packing recordings from label scans, priced from $29.99/month.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "415acb42-9607-4181-aa53-9f8897a37682",
+        "6acdb5b9-3d8e-4231-a5c9-d8bb171c59b7"
+      ],
+      "company_name": "VuDrop",
+      "url": "https://pickyourapp.com/products/vudrop",
+      "title": "VuDrop ‑ Packing Video Proof",
+      "published_at": null
+    },
+    {
+      "ref": "ev-50",
+      "source_type": "directory",
+      "quote": "ClaimVMS is a web-based video management system (VMS) that records packing videos and associates them with AWB numbers.",
+      "statement": "ClaimVMS links packing videos to AWB numbers for claims.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "415acb42-9607-4181-aa53-9f8897a37682"
+      ],
+      "company_name": "ClaimVMS",
+      "url": "https://saascity.io/live/claimvms",
+      "title": "ClaimVMS | Live on SaaSCity",
+      "published_at": null
+    },
+    {
+      "ref": "ev-51",
+      "source_type": "news",
+      "quote": "The tool allows D2C brands and online sellers to automatically record short, timestamped videos linked to each order ID during the packing and return inspection process, offering visual evidence for every transaction.",
+      "statement": "Unicommerce launched UniCapture, order-linked packing videos for D2C brands.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "415acb42-9607-4181-aa53-9f8897a37682"
+      ],
+      "company_name": "Unicommerce",
+      "url": "https://textilevaluechain.in/unicommerce-launches-unicapture-video-verification-tool",
+      "title": "Unicommerce Launches UniCapture Video Verification Tool",
+      "published_at": null
+    },
+    {
+      "ref": "ev-52",
+      "source_type": "industry_publication",
+      "quote": "GETIDA charges a 25% commission on recovered funds and waives that commission on the first $400 for new accounts.",
+      "statement": "In the analogous Amazon FBA reimbursement market, contingency pricing of ~25% of recovered funds is standard (US market, not India).",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6acdb5b9-3d8e-4231-a5c9-d8bb171c59b7"
+      ],
+      "company_name": "GETIDA",
+      "url": "https://amplisell.com/blog-posts/best-amazon-reimbursement-services-for-fba-brands",
+      "title": "9 Best Amazon Reimbursement Services for FBA Brands",
+      "published_at": null
+    },
+    {
+      "ref": "ev-53",
+      "source_type": "company_site",
+      "quote": "They order but don’t take products, and we had to bear the RTO charges. … Now, we get 30000-40000 orders a month.",
+      "statement": "The Hatke (Delhi fashion brand on Shiprocket) bore RTO charges on refused COD orders and ships 30,000-40,000 orders a month.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e"
+      ],
+      "company_name": "The Hatke",
+      "url": "https://www.shiprocket.in/blog/mihir-mittal-the-hatke/",
+      "title": "How Shiprocket Helped The Hatke Overcome COD Barriers and Deliver Seamlessly - Shiprocket",
+      "published_at": null
+    },
+    {
+      "ref": "ev-54",
+      "source_type": "company_site",
+      "quote": "For Cash on Delivery (COD) orders, a nominal shipping charge is applicable. All shipments are handled by reliable courier partners such as Blue Dart, Delhivery, and other logistics partners through Shiprocket (third-party courier aggregator) to ensure safe and insured deliveries.",
+      "statement": "Janasya offers COD and ships via Shiprocket.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Janasya",
+      "url": "https://janasya.com/pages/shipping-policy",
+      "title": "Shipping policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-55",
+      "source_type": "company_site",
+      "quote": "Udhna Udhyog Nagar, Udhna, Surat, Gujarat – 394210, India",
+      "statement": "Janasya is based in Surat, Gujarat.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Janasya",
+      "url": "https://janasya.com/pages/contact-us",
+      "title": "Contact us",
+      "published_at": null
+    },
+    {
+      "ref": "ev-56",
+      "source_type": "company_site",
+      "quote": "Track your order anytime at svastika.shiprocket.co … Free shipping for all orders across India — prepaid or COD.",
+      "statement": "Svastika tracks orders on a Shiprocket page and offers COD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Svastika",
+      "url": "https://svastika.in/pages/shipping-policy",
+      "title": "Shipping Policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-57",
+      "source_type": "company_site",
+      "quote": "Kailas Corporate Lounge, Vikhroli (W) Mumbai - 400079 Maharashtra, India",
+      "statement": "Svastika is based in Mumbai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Svastika",
+      "url": "https://svastika.in/pages/contact",
+      "title": "Contact",
+      "published_at": null
+    },
+    {
+      "ref": "ev-58",
+      "source_type": "company_site",
+      "quote": "COD orders: Returned to us automatically if undeliverable.",
+      "statement": "Claura offers COD and absorbs returned undeliverable COD orders.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Claura",
+      "url": "https://claura.in/pages/shipping-policy",
+      "title": "Shipping Policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-59",
+      "source_type": "company_site",
+      "quote": "These Terms are governed by the laws of India. Exclusive jurisdiction lies with the courts of Delhi.",
+      "statement": "Claura operates under Indian law with Delhi jurisdiction.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Claura",
+      "url": "https://claura.in/policies/terms-of-service",
+      "title": "Terms of service",
+      "published_at": null
+    },
+    {
+      "ref": "ev-60",
+      "source_type": "company_site",
+      "quote": "For damaged, defective, or incorrect items, a complete unboxing video is mandatory. … For COD orders, a partial advance payment is required.",
+      "statement": "Comet (sneakers) requires unboxing videos for claims and partial advance on COD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Comet",
+      "url": "https://www.wearcomet.com/pages/returns-and-exchanges",
+      "title": "Returns & Exchanges | 7-Day Trial Policy | Comet",
+      "published_at": null
+    },
+    {
+      "ref": "ev-61",
+      "source_type": "company_site",
+      "quote": "Business day: Monday to Saturday, excluding public holidays in Bangalore, India.",
+      "statement": "Comet operates from Bangalore.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Comet",
+      "url": "https://www.wearcomet.com/policies/shipping-policy",
+      "title": "Shipping policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-62",
+      "source_type": "company_site",
+      "quote": "Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts located in Jaipur, Rajasthan.",
+      "statement": "Fashion Capital is based in Jaipur.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Fashion Capital",
+      "url": "https://thefashioncapital.in/pages/contact",
+      "title": "Contact Us",
+      "published_at": null
+    },
+    {
+      "ref": "ev-63",
+      "source_type": "company_site",
+      "quote": "She started a small Instagram page, sourcing thrifted pieces from across the country, photographing them in a makeshift home setup, and selling them one DM at a time.",
+      "statement": "Fashion Capital began as an Instagram-led apparel seller.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Fashion Capital",
+      "url": "https://thefashioncapital.in/pages/about-us",
+      "title": "About Us",
+      "published_at": null
+    },
+    {
+      "ref": "ev-64",
+      "source_type": "company_site",
+      "quote": "Shop No-2056, International Fashion Market, Punagam, Surat, India-395010",
+      "statement": "Gopi Kanya is based in Surat.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gopi Kanya",
+      "url": "https://www.gopikanya.com/pages/contact",
+      "title": "Contact",
+      "published_at": null
+    },
+    {
+      "ref": "ev-65",
+      "source_type": "company_site",
+      "quote": "We offer free shipping all over India.",
+      "statement": "Gopi Kanya ships sarees free across India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gopi Kanya",
+      "url": "https://www.gopikanya.com/pages/shipping-policy",
+      "title": "Shipping Policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-66",
+      "source_type": "company_site",
+      "quote": "Saloni Panwar - Fashion Designer Gulabo Jaipur is inspired by the colors and prints of Rajasthan. Brought to you in beautiful designed fabrics stitched with Love at Jaipur, the Pink City of India.",
+      "statement": "Gulabo Jaipur is a Jaipur ethnic-wear brand; its designer is named on the About page.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gulabo Jaipur",
+      "url": "https://www.gulabojaipur.com/pages/about-us",
+      "title": "Saloni Panwar",
+      "published_at": null
+    },
+    {
+      "ref": "ev-67",
+      "source_type": "company_site",
+      "quote": "Available executive will offer you the option for partial COD, where you will be required to pay a 30% advance amount",
+      "statement": "Gulabo Jaipur offers partial COD with a 30% advance.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gulabo Jaipur",
+      "url": "https://www.gulabojaipur.com/pages/shipping-and-delivery",
+      "title": "Shipping and Delivery",
+      "published_at": null
+    },
+    {
+      "ref": "ev-68",
+      "source_type": "company_site",
+      "quote": "Shalini Bhatheja The Founder",
+      "statement": "The Jaipur Studio's founder is named on its About page.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Jaipur Studio",
+      "url": "https://thejaipurstudio.com/pages/about-us",
+      "title": "About Us",
+      "published_at": null
+    },
+    {
+      "ref": "ev-69",
+      "source_type": "company_site",
+      "quote": "COD orders do not qualify for free shipping. A base charge of Rs.100 per order is levied on all COD orders.",
+      "statement": "The Jaipur Studio offers COD with a Rs.100 charge.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Jaipur Studio",
+      "url": "https://thejaipurstudio.com/pages/shipping-policy",
+      "title": "Shipping Policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-70",
+      "source_type": "company_site",
+      "quote": "506. Ashok Chowk, Mukti Marg, Adarsh Nagar, Near Geeta Bhawan Jaipur-302004",
+      "statement": "The Jaipur Studio is in Jaipur.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Jaipur Studio",
+      "url": "https://thejaipurstudio.com/pages/contact",
+      "title": "Contact",
+      "published_at": null
+    },
+    {
+      "ref": "ev-71",
+      "source_type": "company_site",
+      "quote": "Gurukul Towers, above Mamta Hospital, near Uma Talkies, Laxmipuri, Kolhapur 416002",
+      "statement": "Kalapuri is based in Kolhapur.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kalapuri",
+      "url": "https://kalapuri.com/pages/contact",
+      "title": "Contact",
+      "published_at": null
+    },
+    {
+      "ref": "ev-72",
+      "source_type": "company_site",
+      "quote": "Our footwear are made with genuine leather and are durable enough to last several years",
+      "statement": "Kalapuri sells leather footwear online.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kalapuri",
+      "url": "https://kalapuri.com/pages/new-faq",
+      "title": "NEW FAQ",
+      "published_at": null
+    },
+    {
+      "ref": "ev-73",
+      "source_type": "company_site",
+      "quote": "Madina S Khan & Shahbaaz Khan founded Off Duty India in the year 2019.",
+      "statement": "Off Duty India (denim) was founded in 2019 by two named co-founders.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Off Duty India",
+      "url": "https://offduty.in/pages/about-us",
+      "title": "About Us",
+      "published_at": null
+    },
+    {
+      "ref": "ev-74",
+      "source_type": "company_site",
+      "quote": "For Cash on Delivery (COD) orders, the order is confirmed at the time of placement. … 9th Floor, Unit No. 921, Ijmima Complex, Malad Link Road, Mumbai — 400064, Maharashtra, India",
+      "statement": "Off Duty India offers COD and is based in Mumbai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Off Duty India",
+      "url": "https://offduty.in/policies/shipping-policy",
+      "title": "Shipping policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-75",
+      "source_type": "company_site",
+      "quote": "FUNKY KALAKAR PVT LTD, Floor 2, 207, Diamond Queen Building, Plot 198, Raja Rammohan Roy Marg, Mumbai, Maharashtra – 400004",
+      "statement": "Planet Paaduks (footwear) is based in Mumbai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Planet Paaduks",
+      "url": "https://www.planetpaaduks.in/pages/contact",
+      "title": "Address",
+      "published_at": null
+    },
+    {
+      "ref": "ev-76",
+      "source_type": "company_site",
+      "quote": "Partial COD is available.",
+      "statement": "Planet Paaduks offers partial COD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Planet Paaduks",
+      "url": "https://www.planetpaaduks.in/policies/shipping-policy",
+      "title": "Shipping policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-77",
+      "source_type": "company_site",
+      "quote": "Sage by Mala (a unit of Earth Trend Fashions Pvt Ltd) Plot 232, Udyog Vihar Phase VI, Sector 37, Gurgaon 122004, India",
+      "statement": "Sage by Mala is based in Gurgaon.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Sage by Mala",
+      "url": "https://sagebymala.com/pages/contact",
+      "title": "Contact Us | Sage By Mala",
+      "published_at": null
+    },
+    {
+      "ref": "ev-78",
+      "source_type": "company_site",
+      "quote": "Secure checkoutCards, UPI, Apple Pay and cash on delivery.",
+      "statement": "Sage by Mala accepts cash on delivery.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Sage by Mala",
+      "url": "https://sagebymala.com",
+      "title": "Premium Western Wear for Women XS-5XL | Sage By Mala",
+      "published_at": null
+    },
+    {
+      "ref": "ev-79",
+      "source_type": "company_site",
+      "quote": "Founded in 2017 in Mumbai, 9shines Label quickly became a leading nighty brand in India. … Krutika Bhupta: A dynamo from Hyderabad, she ventured to Mumbai for education and corporate experience. At 26, she founded 9shines Label",
+      "statement": "9shines Label is a Mumbai-founded womenswear brand; its founder is named on the About page.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "9shines Label",
+      "url": "https://www.9shineslabel.com/pages/about-us",
+      "title": "About Us | Story Behind 9shines and Our Passion for Fashion.",
+      "published_at": null
+    },
+    {
+      "ref": "ev-80",
+      "source_type": "company_site",
+      "quote": "All Cash on Delivery (COD) orders carry a ₹99 COD handling charge (inclusive of GST)",
+      "statement": "9shines Label offers COD with a ₹99 handling charge.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "9shines Label",
+      "url": "https://www.9shineslabel.com/policies/shipping-policy",
+      "title": "Shipping policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-81",
+      "source_type": "company_site",
+      "quote": "HOUSE OF VRAJBHOOMI PRIVATE LIMITED Ground floor, 1, Rangkunj Society Naranpura Cross Roads, Ahmedabad 380013, Gujarat, India",
+      "statement": "Vraj:bhoomi is based in Ahmedabad.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Vraj:bhoomi",
+      "url": "https://vrajbhoomi.in/pages/get-in-touch",
+      "title": "Get In Touch",
+      "published_at": null
+    },
+    {
+      "ref": "ev-82",
+      "source_type": "company_site",
+      "quote": "At Vraj:bhoomi, we capture the true essence of hand-block printing",
+      "statement": "Vraj:bhoomi sells hand-block-printed apparel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Vraj:bhoomi",
+      "url": "https://vrajbhoomi.in/pages/about-us",
+      "title": "About Us",
+      "published_at": null
+    },
+    {
+      "ref": "ev-83",
+      "source_type": "company_site",
+      "quote": "All COD orders will be verified post order purchase, before being dispatched. … Typically, orders take 6-10 working days post dispatch from Mumbai to reach anywhere in India.",
+      "statement": "Zouk verifies COD orders before dispatch and ships from Mumbai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Zouk",
+      "url": "https://zouk.co.in/policies/shipping-policy",
+      "title": "Shipping policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-84",
+      "source_type": "company_site",
+      "quote": "Cash on Delivery (up to ₹1,00,000) ₹200",
+      "statement": "Ranna Gill offers COD with a ₹200 fee.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ranna Gill",
+      "url": "https://rannagill.co.in/pages/shipping-exchanges",
+      "title": "Shipping & Exchanges – Ranna Gill | Secure Delivery & Easy Exchanges",
+      "published_at": null
+    },
+    {
+      "ref": "ev-85",
+      "source_type": "company_site",
+      "quote": "CHANKAYA MALL, NEW DELHI",
+      "statement": "Ranna Gill has stores in New Delhi.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ranna Gill",
+      "url": "https://rannagill.co.in",
+      "title": "Luxury Designer Clothing for Women Online - Ranna Gill India",
+      "published_at": null
+    },
+    {
+      "ref": "ev-86",
+      "source_type": "company_site",
+      "quote": "Shilpi Yadav, Founder & Creative Director",
+      "statement": "Khara Kapas's founder is named on its About page.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Khara Kapas",
+      "url": "https://kharakapas.com/pages/about-us",
+      "title": "Khara Kapas Our Story | Art, Cotton & Conscious Fashion",
+      "published_at": null
+    },
+    {
+      "ref": "ev-87",
+      "source_type": "company_site",
+      "quote": "Grand View High Street, Unit 14B, First floor, Golf Course Ext Rd, Sec 58, Gurugram, HR 122098",
+      "statement": "Khara Kapas has a store in Gurugram.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Khara Kapas",
+      "url": "https://kharakapas.com/pages/our-stores",
+      "title": "Contact Us | Khara Kapas",
+      "published_at": null
+    },
+    {
+      "ref": "ev-88",
+      "source_type": "company_site",
+      "quote": "We have a great network of shipping partners like Delhivery in India",
+      "statement": "Luxeartisanship ships domestically via Delhivery.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Luxeartisanship",
+      "url": "https://luxeartisanship.com/pages/shipping-policy",
+      "title": "Shipping Policy",
+      "published_at": null
+    },
+    {
+      "ref": "ev-89",
+      "source_type": "company_site",
+      "quote": "COD AVAILABLE NOW … Sector 140A, Noida, Uttar Pradesh 201304",
+      "statement": "Luxeartisanship offers COD and is based in Noida.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Luxeartisanship",
+      "url": "https://luxeartisanship.com/pages/contact",
+      "title": "Contact Luxeartisanship – We’re Here to Help You Connect Art",
+      "published_at": null
+    },
+    {
+      "ref": "ev-90",
+      "source_type": "company_site",
+      "quote": "Cash on Delivery (COD) is available only upon request. … Sasitrends, based in Chennai, Tamil Nadu, India",
+      "statement": "Sasitrends offers COD on request and is based in Chennai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Sasitrends",
+      "url": "https://www.sasitrends.com/pages/shipping-policy",
+      "title": "Sasitrends: Fast Shipping, Reliable Delivery & Quality Assurance",
+      "published_at": null
+    },
+    {
+      "ref": "ev-91",
+      "source_type": "company_site",
+      "quote": "We ship all orders using professional courier services like Blue Dart, Delhivery, and DTDC",
+      "statement": "Sasitrends ships via Blue Dart, Delhivery and DTDC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Sasitrends",
+      "url": "https://www.sasitrends.com/pages/shipping-policy",
+      "title": "Sasitrends: Fast Shipping, Reliable Delivery & Quality Assurance",
+      "published_at": null
+    },
+    {
+      "ref": "ev-92",
+      "source_type": "company_site",
+      "quote": "owns a Delhi-based fashion brand – The Hatke.",
+      "statement": "The Hatke is a Delhi-based fashion brand.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Hatke",
+      "url": "https://www.shiprocket.in/blog/mihir-mittal-the-hatke/",
+      "title": "How Shiprocket Helped The Hatke Overcome COD Barriers and Deliver Seamlessly - Shiprocket",
+      "published_at": null
+    },
+    {
+      "ref": "ev-93",
+      "source_type": "company_site",
+      "quote": "The Rawbare experience store is open in Andheri West, Mumbai",
+      "statement": "Rawbare (eyewear) has a store in Mumbai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Rawbare",
+      "url": "https://rawbare.com",
+      "title": "Rawbare | Polarized UV400 Sunglasses for Men, Women & Kids",
+      "published_at": null
+    },
+    {
+      "ref": "ev-94",
+      "source_type": "company_site",
+      "quote": "COD orders include additional shipping charges, applied at checkout.",
+      "statement": "Rawbare offers COD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Rawbare",
+      "url": "https://rawbare.com",
+      "title": "Rawbare | Polarized UV400 Sunglasses for Men, Women & Kids",
+      "published_at": null
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "569ad0d8-cd62-41ad-84b7-4d2fdfb6a46e",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Only vendor estimates exist: Rs18-35 per flagged order (Rs90k-1.75 lakh/month at 5,000 orders) from Shipway; Rs10-50 per flagged shipment from Eshopbox; 2-5% of freight at 10,000+ parcels from Prozo.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22",
+            "ev-21",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "A worked example from a reconciliation vendor puts permanent weight leakage at ~Rs84,000 on Rs58 lakh monthly spend (~1.4%), and COD exceptions at 0.4-1.2% of COD value, suggesting recoverable amounts for a 300-5,000 parcel seller may be small.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-25",
+            "ev-26"
+          ]
+        },
+        {
+          "statement": "Individual sellers report charges of Rs100-150 per extra kg and losing whole made-to-order products to fake RTOs, but no seller-stated monthly total was found.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-05",
+            "ev-39"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "1ee38e56-ea35-4275-8235-2444a3455cc0",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Disputes require 4-5 photos of the parcel on a scale with tape measurements; sellers who pre-upload such images still report losing disputes.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-01"
+          ]
+        },
+        {
+          "statement": "Couriers and aggregators advise photographing shipments as proof; Shiprocket's freeze needs 5 package images per SKU.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16",
+            "ev-11"
+          ]
+        },
+        {
+          "statement": "No source documents a warehouse SOP from a D2C brand of the ICP size.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "0397f9aa-423a-4192-b28c-a1d80edc1a8a",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Estimates of flagged shipments range from 4-9% of AWBs to 5-20%; one seller reports 90% of orders flagged.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-24",
+            "ev-27",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Windows are short (7 working days on Shiprocket, 10 days on Velocity, 3-7 days typical) and missed ones auto-accept; Shiprocket's billing timeline averages 21 days.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-06",
+            "ev-17",
+            "ev-23",
+            "ev-09"
+          ]
+        },
+        {
+          "statement": "Contest success: one vendor example assumes 40% of flagged AWBs won with evidence; seller complaints say disputes were rejected despite proof. No aggregator publishes a success rate.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-25",
+            "ev-02"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "415acb42-9607-4181-aa53-9f8897a37682",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Packing-video capture is already mandatory for Flipkart SPF eligibility and many cheap AWB-scan-triggered tools exist, so packers do adopt capture when a platform requires it.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-47",
+            "ev-48",
+            "ev-49"
+          ]
+        },
+        {
+          "statement": "An aggregator advises photographing only risky parcels, not every parcel, as per-parcel capture is impractical.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-45"
+          ]
+        },
+        {
+          "statement": "No evidence on the ~3-second step limit for packers.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "abe78bd1-da1e-4cec-822b-cb0489ea2ec0",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "COD remittance is reconciled by matching Shopify order exports to courier remittance files, usually in spreadsheets or not at all; estimates range from 30 min/week to 3-5 working days/month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-32",
+            "ev-33",
+            "ev-34",
+            "ev-30"
+          ]
+        },
+        {
+          "statement": "Companies staff this work with accounts executives, and dedicated tools (Cointab, BUSY Recom) exist.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-37",
+            "ev-35",
+            "ev-38"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "12ab8b95-9c6c-42e8-8a10-63551d0442b0",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Shiprocket exposes a public API including wallet/statements and discrepancy details (JWT, 10-day token), so reading data need not depend on scraping.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-15"
+          ]
+        },
+        {
+          "statement": "Disputes themselves are only accepted through the panel, once per order, so filing on a seller's behalf may still need panel access.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "6acdb5b9-3d8e-4231-a5c9-d8bb171c59b7",
+      "status": "no_evidence_found",
+      "summary": [
+        {
+          "statement": "No Indian seller evidence on paying a subscription plus a share of recoveries. Analogues: Amazon FBA recovery services charge ~25% contingency (US), and packing-video tools sell from $15-30/month.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-52",
+            "ev-48",
+            "ev-49"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "What dispute success rate do ICP sellers actually get on Shiprocket/Delhivery/Xpressbees, and how much is lost to auto-accepts per month?",
+      "category": "frequency",
+      "priority": "high"
+    },
+    {
+      "question": "Will aggregators' own auto-dispute and weight-freeze features (Velocity, Shiprocket, iCarry) leave enough unrecovered money for a third-party overlay?",
+      "category": "alternatives",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Shiprocket Weight Dispute Management / Weight Freeze",
+      "url": "https://www.shiprocket.in/weight-dispute-management/",
+      "kind": "indirect",
+      "description": "Aggregator's own panel flow: 7-day dispute window, image-based disputes, escalation, SKU weight freeze and a 'zero weight discrepancy' assurance program.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-06",
+        "ev-10",
+        "ev-11",
+        "ev-12",
+        "ev-13"
+      ],
+      "sentiment": [
+        {
+          "statement": "Sellers complain disputes are rejected despite photo proof and that discrepancies get auto-accepted before they act.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-04",
+            "ev-05"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Velocity Shipping",
+      "url": "https://www.velocity.in",
+      "kind": "indirect",
+      "description": "Aggregator that auto-disputes discrepancies with AI image checks and handles 40-50% of claims without the brand.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-17",
+        "ev-19"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "Eshopbox Weight Overcharge Protection",
+      "url": "https://www.eshopbox.com",
+      "kind": "indirect",
+      "description": "Fulfilment provider that auto-raises weight disputes; targets brands shipping 1,000+ orders/month.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-20"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "ProShip by Prozo",
+      "url": "https://www.prozo.com/logistics/weight-discrepancy-management/",
+      "kind": "direct",
+      "description": "Automated weight-discrepancy workflow across 30+ couriers with evidence management and invoice adjustment.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-28"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "JetPost TrueWeight Shield",
+      "url": "https://thejetpost.in/trueweight-shield",
+      "kind": "indirect",
+      "description": "Aggregator offering weight debits within 48h of dispatch instead of weeks later.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-29"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "iCarry automatic dispute triggering",
+      "url": "https://www.icarry.in",
+      "kind": "indirect",
+      "description": "Aggregator that auto-triggers weight disputes from pre-uploaded SKU images.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-43"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "BUSY Recom",
+      "url": "https://busy.in",
+      "kind": "direct",
+      "description": "Courier invoice reconciliation that imports Shiprocket/Delhivery invoices and flags weight/zone/COD overcharges.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-38"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "Cointab",
+      "url": "https://www.cointab.in",
+      "kind": "direct",
+      "description": "Named as Shopify + courier reconciliation software (COD remittance matching).",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-35"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "Shipmozo COD dashboard",
+      "url": "https://www.shipmozo.com",
+      "kind": "indirect",
+      "description": "Aggregator with D+1/D+2 COD remittance and itemised AWB-level remittance reports.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-30"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Packing-video tools (HyprPack, VuDrop, ClaimVMS, Unicommerce UniCapture, Flipkart VMS)",
+      "url": "https://pickyourapp.com/products/packflow-2",
+      "kind": "direct",
+      "description": "AWB/order-linked packing video capture for dispute proof; cheap SaaS tiers already exist.",
+      "pricing_note": "HyprPack from $15/month (1,000 orders); VuDrop from $29.99/month (cited pages).",
+      "evidence_refs": [
+        "ev-48",
+        "ev-49",
+        "ev-50",
+        "ev-51",
+        "ev-47"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "Spreadsheets / manual reconciliation",
+      "url": null,
+      "kind": "manual",
+      "description": "Google Sheets VLOOKUP of Shopify orders against courier remittance files; manual photo/video proof at packing.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-33",
+        "ev-34",
+        "ev-01"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "In-house accounts staff",
+      "url": null,
+      "kind": "service",
+      "description": "Accounts executives hired to run COD reconciliation with courier partners.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-37"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Sellers dispute inside the aggregator's own panel with 4-5 scale/tape photos within a 7-day window; unanswered discrepancies auto-accept.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-06",
+        "ev-10"
+      ]
+    },
+    {
+      "statement": "Aggregators and fulfilment providers increasingly auto-dispute or pre-freeze weights themselves (Shiprocket Weight Freeze, Velocity, Eshopbox, iCarry).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-11",
+        "ev-17",
+        "ev-20",
+        "ev-43"
+      ]
+    },
+    {
+      "statement": "COD remittance is reconciled manually in spreadsheets or by gut feel; dedicated tools (Cointab, BUSY Recom) and aggregator dashboards exist.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-32",
+        "ev-33",
+        "ev-35",
+        "ev-38"
+      ]
+    },
+    {
+      "statement": "Packing proof is captured with order/AWB-linked video tools, which Flipkart already mandates for seller protection.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-48",
+        "ev-51",
+        "ev-47"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Janasya",
+      "website": "https://janasya.com",
+      "icp_id": null,
+      "location": "Surat, Gujarat",
+      "industry": "Women's ethnic apparel D2C",
+      "description": "Surat apparel D2C brand offering COD and shipping through Shiprocket: a direct fit for the overlay.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-55"
+      },
+      "technologies": [
+        "Shiprocket"
+      ],
+      "evidence_refs": [
+        "ev-54",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Apparel D2C with COD.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Ships via Shiprocket (aggregator).",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-02",
+      "name": "Svastika",
+      "website": "https://svastika.in",
+      "icp_id": null,
+      "location": "Mumbai, Maharashtra",
+      "industry": "Home decor / spiritual decor D2C",
+      "description": "Mumbai home-decor D2C using a Shiprocket tracking page and offering COD (secondary ICP).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      },
+      "technologies": [
+        "Shiprocket"
+      ],
+      "evidence_refs": [
+        "ev-56",
+        "ev-57"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Home decor D2C with COD (secondary ICP).",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Tracking page hosted on shiprocket.co.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Claura",
+      "website": "https://claura.in",
+      "icp_id": null,
+      "location": "Delhi",
+      "industry": "Women's apparel D2C",
+      "description": "Women's co-ords/dresses D2C offering COD and absorbing undeliverable COD returns.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-58",
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Apparel D2C with COD.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Policy notes COD orders return automatically if undeliverable (RTO exposure).",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "Comet",
+      "website": "https://www.wearcomet.com",
+      "icp_id": null,
+      "location": "Bangalore, Karnataka",
+      "industry": "Sneakers / footwear D2C",
+      "description": "Bangalore sneaker D2C that requires partial advance on COD and unboxing videos for claims.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-60",
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Footwear D2C with COD.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Partial-advance COD suggests RTO cost sensitivity.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Fashion Capital",
+      "website": "https://thefashioncapital.in",
+      "icp_id": null,
+      "location": "Jaipur, Rajasthan",
+      "industry": "Women's apparel D2C",
+      "description": "Jaipur apparel brand that started on Instagram; fits the Instagram-to-site D2C profile.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-63",
+        "ev-62"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Apparel D2C, Instagram origin.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Gopi Kanya",
+      "website": "https://www.gopikanya.com",
+      "icp_id": null,
+      "location": "Surat, Gujarat",
+      "industry": "Sarees D2C",
+      "description": "Surat saree seller shipping free across India.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-64"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Apparel D2C shipping nationally.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Gulabo Jaipur",
+      "website": "https://www.gulabojaipur.com",
+      "icp_id": null,
+      "location": "Jaipur, Rajasthan",
+      "industry": "Ethnic apparel D2C",
+      "description": "Jaipur ethnic-wear brand offering partial COD.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66",
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Apparel D2C with (partial) COD.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Saloni Panwar",
+          "role": "Fashion Designer",
+          "email": null,
+          "evidence_ref": "ev-66"
+        }
+      ]
+    },
+    {
+      "ref": "co-08",
+      "name": "The Jaipur Studio",
+      "website": "https://thejaipurstudio.com",
+      "icp_id": null,
+      "location": "Jaipur, Rajasthan",
+      "industry": "Women's ethnic apparel D2C",
+      "description": "Jaipur women's apparel D2C charging Rs.100 on COD orders.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-70"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-68",
+        "ev-69",
+        "ev-70"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Apparel D2C with COD.",
+          "evidence_refs": [
+            "ev-69"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Shalini Bhatheja",
+          "role": "Founder",
+          "email": null,
+          "evidence_ref": "ev-68"
+        }
+      ]
+    },
+    {
+      "ref": "co-09",
+      "name": "Kalapuri",
+      "website": "https://kalapuri.com",
+      "icp_id": null,
+      "location": "Kolhapur, Maharashtra",
+      "industry": "Leather footwear (Kolhapuri) D2C",
+      "description": "Kolhapur leather-footwear seller shipping online.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-71",
+        "ev-72"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Footwear D2C.",
+          "evidence_refs": [
+            "ev-72"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "Off Duty India",
+      "website": "https://offduty.in",
+      "icp_id": null,
+      "location": "Mumbai, Maharashtra",
+      "industry": "Denim / women's apparel D2C",
+      "description": "Mumbai denim D2C offering COD.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-73",
+        "ev-74"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Apparel D2C with COD.",
+          "evidence_refs": [
+            "ev-74"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Madina S Khan",
+          "role": "Co-founder",
+          "email": null,
+          "evidence_ref": "ev-73"
+        },
+        {
+          "name": "Shahbaaz Khan",
+          "role": "Co-founder",
+          "email": null,
+          "evidence_ref": "ev-73"
+        }
+      ]
+    },
+    {
+      "ref": "co-11",
+      "name": "Planet Paaduks",
+      "website": "https://www.planetpaaduks.in",
+      "icp_id": null,
+      "location": "Mumbai, Maharashtra",
+      "industry": "Footwear D2C",
+      "description": "Mumbai footwear D2C offering partial COD.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-75"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-75",
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Footwear D2C with partial COD.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "Sage by Mala",
+      "website": "https://sagebymala.com",
+      "icp_id": null,
+      "location": "Gurgaon, Haryana",
+      "industry": "Women's western wear D2C",
+      "description": "Gurgaon womenswear D2C accepting COD.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77",
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Apparel D2C with COD.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "9shines Label",
+      "website": "https://www.9shineslabel.com",
+      "icp_id": null,
+      "location": "Mumbai, Maharashtra",
+      "industry": "Women's nightwear D2C",
+      "description": "Mumbai-founded nightwear D2C charging a COD handling fee.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-79"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-79",
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Apparel D2C with COD.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Krutika Bhupta",
+          "role": "Founder",
+          "email": null,
+          "evidence_ref": "ev-79"
+        }
+      ]
+    },
+    {
+      "ref": "co-14",
+      "name": "Vraj:bhoomi",
+      "website": "https://vrajbhoomi.in",
+      "icp_id": null,
+      "location": "Ahmedabad, Gujarat",
+      "industry": "Hand-block-printed apparel D2C",
+      "description": "Ahmedabad hand-block apparel brand selling online.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-81"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-82",
+        "ev-81"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Apparel D2C.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "Zouk",
+      "website": "https://zouk.co.in",
+      "icp_id": null,
+      "location": "Mumbai, Maharashtra",
+      "industry": "Bags and accessories D2C",
+      "description": "Mumbai bags D2C that verifies COD orders before dispatch (likely above the 10-50 headcount band).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-83"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-83"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Accessories D2C with COD; adjacent category.",
+          "evidence_refs": [
+            "ev-83"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Pre-dispatch COD verification indicates RTO concern.",
+          "evidence_refs": [
+            "ev-83"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Ranna Gill",
+      "website": "https://rannagill.co.in",
+      "icp_id": null,
+      "location": "New Delhi",
+      "industry": "Designer womenswear",
+      "description": "Delhi designer womenswear with COD up to ₹1 lakh (premium; may be larger than ICP).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-85"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-84",
+        "ev-85"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Apparel with COD, but premium/retail-led.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "Khara Kapas",
+      "website": "https://kharakapas.com",
+      "icp_id": null,
+      "location": "Gurugram / New Delhi",
+      "industry": "Women's cotton apparel",
+      "description": "Delhi-NCR apparel brand with stores and online sales.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-87"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-86",
+        "ev-87"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Apparel brand; omnichannel.",
+          "evidence_refs": [
+            "ev-87"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Shilpi Yadav",
+          "role": "Founder & Creative Director",
+          "email": null,
+          "evidence_ref": "ev-86"
+        }
+      ]
+    },
+    {
+      "ref": "co-18",
+      "name": "Luxeartisanship",
+      "website": "https://luxeartisanship.com",
+      "icp_id": null,
+      "location": "Noida, Uttar Pradesh",
+      "industry": "Home decor / artisan products",
+      "description": "Noida home-decor seller shipping via Delhivery with COD (secondary ICP).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-89"
+      },
+      "technologies": [
+        "Delhivery"
+      ],
+      "evidence_refs": [
+        "ev-88",
+        "ev-89"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Home decor D2C with COD.",
+          "evidence_refs": [
+            "ev-89"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Uses Delhivery.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "Sasitrends",
+      "website": "https://www.sasitrends.com",
+      "icp_id": null,
+      "location": "Chennai, Tamil Nadu",
+      "industry": "Fashion jewellery D2C",
+      "description": "Chennai jewellery D2C using multiple couriers and COD on request.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-90"
+      },
+      "technologies": [
+        "Blue Dart",
+        "Delhivery",
+        "DTDC"
+      ],
+      "evidence_refs": [
+        "ev-90",
+        "ev-91"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Fashion D2C; COD on request.",
+          "evidence_refs": [
+            "ev-90"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Multi-courier (Blue Dart, Delhivery, DTDC).",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "The Hatke",
+      "website": "https://thehatke.com",
+      "icp_id": null,
+      "location": "Delhi",
+      "industry": "Fashion apparel and accessories D2C",
+      "description": "Delhi fashion brand on Shopify shipping 30,000-40,000 orders/month via Shiprocket with COD RTO pain (above ICP volume).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-92"
+      },
+      "technologies": [
+        "Shiprocket",
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-92",
+        "ev-53"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Fashion D2C with COD; volume above ICP.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Shiprocket customer per Shiprocket case study.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Reports bearing RTO charges on refused COD orders.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-21",
+      "name": "Rawbare",
+      "website": "https://rawbare.com",
+      "icp_id": null,
+      "location": "Mumbai, Maharashtra",
+      "industry": "Eyewear D2C",
+      "description": "Mumbai sunglasses D2C offering COD (adjacent category).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-93"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-93",
+        "ev-94"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "D2C with COD; adjacent category.",
+          "evidence_refs": [
+            "ev-94"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about their tools.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
