@@ -1,0 +1,2523 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "dbd454e2-9776-492b-baa5-9f562858e0f4",
+    "researcher": "claude-code",
+    "started_at": "2026-11-05T14:17:40Z",
+    "finished_at": "2026-11-05T15:40:00Z",
+    "queries": [
+      "Thumbtack leads fake shared contractors complaint reddit",
+      "Angi HomeAdvisor lead credit request refund process bad leads contractor",
+      "HomeAdvisor leads worth it contractor cost per lead booked job rate",
+      "Thumbtack refund policy leads pros credit invalid lead",
+      "FTC HomeAdvisor order lead quality misrepresented service providers $7.2 million",
+      "Jobber lead source tracking report \"lead source\" home service",
+      "Thumbtack works great for my business profitable pro \"worth it\" handyman cleaning (contradiction)",
+      "contractor track lead sources spreadsheet cost per lead ROI template home services",
+      "software automatically request Thumbtack Angi lead refunds credits for contractors",
+      "Thumbtack community pros refund approved easy \"refund\" lead \"got my refund\" (contradiction)",
+      "community.thumbtack.com spending per month leads cost per booked job tracking",
+      "\"Tack Tools Pro\" Thumbtack",
+      "Thumbtack pro insights dashboard spend jobs hired ROI business report for pros",
+      "reddit house cleaning business Thumbtack Angi leads waste of money shared with other cleaners",
+      "Angi new pricing pay per booked job pros 2025 2026 leads change (contradiction)",
+      "Google Local Services Ads dispute lead credit invalid lead automatic credit help",
+      "CallRail home services track lead source calls ROI Thumbtack Angi attribution",
+      "Tack Tools Pro Thumbtack lead response refund recovery Fair Credit",
+      "\"Thumbtack Top Pro\" handyman / cleaning / lawn care / tile company sites (prospecting, several variants)",
+      "\"Super Service Award\" handyman company owner (prospecting)",
+      "handyman \"owner\" \"years of experience\" handyman services llc meet the owner (prospecting)"
+    ],
+    "notes": "Evidence is mostly pro forums (Thumbtack Community, windowcleaner.com), platform help pages, FTC coverage and vendor/agency pages; complaint bias is strong. Many sources were unfetchable for Preuve (BBB, Trustpilot, FTC.gov, Jobber help, HomeAdvisor help, Alignable, G2) and were not cited. Tack Tools Pro (a Thumbtack lead-response tool with a 'Fair Credit' refund-drafting feature, reported launched 2026) surfaced in search but its press release was not readable, so it is mentioned in the report only, not cited. Prospects: 19 companies (short of the 20 target); Thumbtack/Angi profile pages are not fetchable, so only companies' own sites were used; several have only first-name owners and most lack size data. No people's names are used in evidence except contacts printed on companies' own pages."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://community.thumbtack.com/discussion/1732/thumbtack-s-refund-policy-is-a-lie",
+      "title": "Thumbtack’s Refund Policy",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Recently, we experienced an influx of bot-generated leads, resulting in over $1,000 in wasted ad spend. Despite meeting the refund criteria, our requests were denied.",
+      "statement": "A Thumbtack pro reports over $1,000 of spend wasted on bot-generated leads, with refund requests initially denied.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02",
+        "3957c090-b7b1-48bd-a540-807838a03daa",
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://community.thumbtack.com/discussion/1732/thumbtack-s-refund-policy-is-a-lie",
+      "title": "Thumbtack’s Refund Policy",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Disconnected or fake phone numbers. … 30+ identical leads in just 10-15 minutes.",
+      "statement": "The same pro describes fake phone numbers and 30+ identical leads arriving within 10-15 minutes.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://community.thumbtack.com/discussion/1732/thumbtack-s-refund-policy-is-a-lie",
+      "title": "Thumbtack’s Refund Policy",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "it looks like the vast majority of those leads were refunded",
+      "statement": "A Thumbtack moderator replied that most of those bot leads had in fact been refunded.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://community.thumbtack.com/discussion/1732/thumbtack-s-refund-policy-is-a-lie",
+      "title": "Thumbtack’s Refund Policy",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Our refunds team reviews refund requests on a lead by lead basis (so when reviewing an individual lead they may not see anything suspicious), however our Trust and Safety team has a different process that can detect spam leads and refund them - those are 2 separate processes.",
+      "statement": "Thumbtack runs two separate refund paths (per-lead refund review and a Trust and Safety spam process), so refunds can arrive later without the pro's request being approved.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://community.thumbtack.com/discussion/1732/thumbtack-s-refund-policy-is-a-lie",
+      "title": "Thumbtack’s Refund Policy",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "There is nothing in Thumbtack's refund policy or Terms of Use about non-responsive customers, so those would not be eligible for a refund.",
+      "statement": "Per a Thumbtack moderator, non-responsive customers are not refundable, which limits the pool of claimable refunds.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469",
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://community.thumbtack.com/discussion/1732/thumbtack-s-refund-policy-is-a-lie",
+      "title": "Thumbtack’s Refund Policy",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Thumbtack abandoned this 48 hour policy a few years ago.",
+      "statement": "A pro reports Thumbtack dropped an older 48-hour refund rule for unopened leads, i.e. the platform has tightened refund rules before.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://intercom.help/angi/en/articles/11403440-how-to-request-a-lead-credit",
+      "title": "How to Request a Lead Credit | Angi Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The lead must be less than 45 days old. … You should have attempted to call the homeowner within 24 hours of being sent the lead.",
+      "statement": "Angi credit requests require the lead to be under 45 days old and a call attempt within 24 hours.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://intercom.help/angi/en/articles/11403440-how-to-request-a-lead-credit",
+      "title": "How to Request a Lead Credit | Angi Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The following situations are accounted for in our lead pricing, so they are not eligible for credits: … The homeowner does not answer your calls or return your messages. … The homeowner is gathering multiple quotes or is in the “shopping phase.”",
+      "statement": "Angi excludes unresponsive and shopping homeowners from credits, so much of the 'waste' pros complain about is not refundable.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469",
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://intercom.help/angi/en/articles/11403440-how-to-request-a-lead-credit",
+      "title": "How to Request a Lead Credit | Angi Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Credits issued to an account are automatically applied toward future lead charges. Please note that credits will expire if not used within six months from the date issued.",
+      "statement": "Angi refunds are account credits that expire after six months, not cash.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://intercom.help/angi/en/articles/11403440-how-to-request-a-lead-credit",
+      "title": "How to Request a Lead Credit | Angi Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Invalid contact info: The phone number is disconnected, not in service, or does not belong to the homeowner listed. … Duplicate lead: You were charged twice for the same lead/homeowner within 45 days.",
+      "statement": "Angi lists invalid contact info and duplicate charges as creditable reasons, i.e. a defined category of claimable waste exists.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469",
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://community.thumbtack.com/discussion/1697/refunds-for-scam-leads-and-minors",
+      "title": "Refunds for Scam Leads and Minors",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I have been with Thumbtack for over 10 years and I have spent well over $200,000 on marketing with Thumbtack alone. In 2024 year to date, I've spent upwards of $23,000.",
+      "statement": "One Thumbtack pro reports spending over $23,000 on Thumbtack in part of 2024.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://community.thumbtack.com/discussion/1697/refunds-for-scam-leads-and-minors",
+      "title": "Refunds for Scam Leads and Minors",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Thumbtacks' lead review team sparingly provides refunds, even for scams or requests from minors.",
+      "statement": "A long-time pro says Thumbtack rarely grants refunds even for scam leads.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469",
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://community.thumbtack.com/discussion/1697/refunds-for-scam-leads-and-minors",
+      "title": "Refunds for Scam Leads and Minors",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "the constant struggle to get refunds for fake or bogus leads has become exhausting and stressful.",
+      "statement": "Another pro describes chasing refunds for fake leads as exhausting.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://community.thumbtack.com/discussion/1697/refunds-for-scam-leads-and-minors",
+      "title": "Refunds for Scam Leads and Minors",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I have written in depth letters (with no response) and completed surveys detailing simply why the numbers (cost per lead versus number of discovery calls that lead to a booking and then the lifetime customer value) don't currently add up.",
+      "statement": "A pro already works out cost per lead versus bookings by hand to judge the channel.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517",
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://community.thumbtack.com/discussion/comment/7176/",
+      "title": "Fake leads",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I left two large California based leads companies Homeguide and Angi, for the above reasons. Didin't have the time or resources to argue for the refunds.",
+      "statement": "A Milwaukee tile/bath contractor left Angi and HomeGuide partly because they lacked time to argue for refunds.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469",
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://community.thumbtack.com/discussion/comment/7427/",
+      "title": "Leads/hired & Income/advertisement RATIOS",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I would really love to know if a few others pro would share 2 ratios. It is not something I can get from Thumbtack or online.",
+      "statement": "A Thumbtack Top Pro says lead-to-hire and income-to-spend ratios are not available from Thumbtack.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://community.thumbtack.com/discussion/comment/7427/",
+      "title": "Leads/hired & Income/advertisement RATIOS",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "(me, to make $100K I must spend $50K, 8 years ago to make $100K I spent $20K)",
+      "statement": "That pro reports lead spend rising from 20% to 50% of revenue earned from Thumbtack.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://community.thumbtack.com/discussion/comment/7427/",
+      "title": "Leads/hired & Income/advertisement RATIOS",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "you can only see some relevant numbers after a few months or a year, and know how much you spent over how much you made.",
+      "statement": "The pro says ROI only becomes visible after months, suggesting no per-lead tracking.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://community.thumbtack.com/discussion/comment/7427/",
+      "title": "Leads/hired & Income/advertisement RATIOS",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "As for ROI, my Thumbtack spend during that period accounted for roughly 45% of the revenue generated by those clients.",
+      "statement": "A second pro computed Thumbtack spend at about 45% of resulting revenue, so some pros already do the math manually.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa",
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://community.thumbtack.com/discussion/comment/8002/",
+      "title": "How Leads are priced",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "The lead went out to 2 additional pros, totaling 3 including me. … How much was this lead? $83.25.",
+      "statement": "A Thumbtack handyman paid $83.25 for a furniture-assembly lead shared with two other pros.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02",
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://community.thumbtack.com/discussion/comment/8002/",
+      "title": "How Leads are priced",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "That is why tracking matters. I would look at cost per booked job, which services convert best, and which customers become repeat clients.",
+      "statement": "A cleaning pro on the forum advises tracking cost per booked job, implying it is done manually if at all.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://community.thumbtack.com/discussion/comment/6319",
+      "title": "Doing a end of the year calculation on leads that I pay for and did not get hired for",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I think of the cost of leads as an advertising expense. So far, it is a good ROI for me.",
+      "statement": "A Thumbtack pro reports good ROI on lead spend.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://community.thumbtack.com/discussion/comment/1539",
+      "title": "Problems With Lead Refunds",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "There are also several others with refund requests that are clearly following Thumbtack protocols and then denied.",
+      "statement": "An 8-year Thumbtack pro reports refund requests denied despite following protocol.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://community.thumbtack.com/discussion/comment/4942/",
+      "title": "Leads, unreponsive customer,",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I asked for a refund as I have no way to verify if the lead is valid or not, Thumbtack disapproved my request … Is there a way to get a refund it added up to a few hundred dollars",
+      "statement": "A handyman's denied refunds for unresponsive/invalid leads added up to a few hundred dollars in a month.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa",
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://community.thumbtack.com/discussion/comment/4942/",
+      "title": "Leads, unreponsive customer,",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Thumbtack is earning money from several pros from one lead.",
+      "statement": "A pro complains one customer request is charged to several pros.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://techcrunch.com/2023/01/23/the-ftc-fines-homeadvisor-up-to-7-2m-for-lying-about-lead-quality-and-other-matters/",
+      "title": "The FTC orders HomeAdvisor to pay up to $7.2M for lying about lead quality and other matters | TechCrunch",
+      "source_type": "news",
+      "published_at": "2023-01-23",
+      "quote": "The Commission found that HomeAdvisor told service providers its leads resulted in home improvement jobs at higher rates than its own data supported",
+      "statement": "The FTC found HomeAdvisor overstated how often its leads became jobs.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02",
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "HomeAdvisor"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://techcrunch.com/2023/01/23/the-ftc-fines-homeadvisor-up-to-7-2m-for-lying-about-lead-quality-and-other-matters/",
+      "title": "The FTC orders HomeAdvisor to pay up to $7.2M for lying about lead quality and other matters | TechCrunch",
+      "source_type": "news",
+      "published_at": "2023-01-23",
+      "quote": "The FTC’s complaint also said many of the leads didn’t match the types of services the providers offered or were outside their preferred geographic area, despite HomeAdvisor’s claims to the contrary.",
+      "statement": "The FTC complaint alleged many HomeAdvisor leads were off-service or out-of-area.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "HomeAdvisor"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://hookagency.com/blog/home-advisor-reviews/",
+      "title": "HomeAdvisor Reviews 2026: Is It Worth It For Contractors?",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "have rejected countless requests for credits even when we have a “number that has been recently disconnected.” … After 3 years of fighting these issues, we are done and will be moving our business else where, I’m tired of fighting these credits.",
+      "statement": "An HVAC contractor (BBB review quoted by Hook Agency) says HomeAdvisor rejected credits even for disconnected numbers and quit after 3 years of fighting.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469",
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "HomeAdvisor"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://hookagency.com/blog/home-advisor-reviews/",
+      "title": "HomeAdvisor Reviews 2026: Is It Worth It For Contractors?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Leads are often sent to several pros, so you race on speed and price",
+      "statement": "A contractor marketing agency (a competitor for budget) lists shared leads as a key HomeAdvisor drawback.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "HomeAdvisor"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://hookagency.com/blog/home-advisor-reviews/",
+      "title": "HomeAdvisor Reviews 2026: Is It Worth It For Contractors?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Other niches that seem to do well on there: Handymen, Pool services, Sewer repair, building ponds, excavation, and some general contractors.",
+      "statement": "Even a critical agency notes handymen and some niches do well on HomeAdvisor.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "HomeAdvisor"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://hookagency.com/blog/home-advisor-reviews/",
+      "title": "HomeAdvisor Reviews 2026: Is It Worth It For Contractors?",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hook Agency is a marketing agency for home service contractors, so we compete with lead services for your budget.",
+      "statement": "Marketing agencies position themselves as an alternative to paying for shared leads.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hook Agency"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.handymanstartup.com/home-advisor-pro-review-what-you-need-to-know/",
+      "title": "HomeAdvisor Pro Review: What You NEED to Know",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "In my first year of business, I spent $1,152 advertising with HA and gained $4,425 in business directly from leads received.",
+      "statement": "A handyman reports roughly 3.8x return on HomeAdvisor spend in year one and knew the figure without special tooling.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa",
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "HomeAdvisor"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.handymanstartup.com/home-advisor-pro-review-what-you-need-to-know/",
+      "title": "HomeAdvisor Pro Review: What You NEED to Know",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "I’ve personally dealt with dozens of bad leads. Some of them are “dead leads” who don’t even answer the phone or respond when you follow up with them.",
+      "statement": "The same handyman reports dozens of bad or dead HomeAdvisor leads.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "HomeAdvisor"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.handymanstartup.com/home-advisor-pro-review-what-you-need-to-know/",
+      "title": "HomeAdvisor Pro Review: What You NEED to Know",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "However, I think that a big source of these complaints is business owners who can’t close the sale.",
+      "statement": "He attributes many complaints to contractors' poor closing rather than lead quality.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "HomeAdvisor"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://community.windowcleaner.com/t/lead-sources-good-bad-or-ugly/55799",
+      "title": "Lead sources - Good, Bad or Ugly",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "The lead is sent to 3-4 different window cleaning companies.",
+      "statement": "A window cleaner reports each Angi lead went to 3-4 competitors.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://community.windowcleaner.com/t/lead-sources-good-bad-or-ugly/55799",
+      "title": "Lead sources - Good, Bad or Ugly",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I guess overall it was ok. I tripled my investment.",
+      "statement": "The same window cleaner says Angi tripled his investment over three months.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://community.windowcleaner.com/t/lead-sources-good-bad-or-ugly/55799",
+      "title": "Lead sources - Good, Bad or Ugly",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "In December, I called to cancel, but the customer service rep offered me $395 in free leads. Since then I’ve gone through about $250 of that and have gotten no business.",
+      "statement": "Promotional lead credits produced no business for that cleaner.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://help.housecallpro.com/en/articles/14890593-marketing-dashboard-roi-table",
+      "title": "Marketing Dashboard: ROI Table | Housecall Pro Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Each row represents a lead source, such as Google, Thumbtack, Angi, or referrals. The columns show the results attributed to that source.",
+      "statement": "Housecall Pro's ROI table already reports results per lead source including Thumbtack and Angi, contradicting 'FSM tools don't audit lead spend'.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b6ad0fa0-c0a7-420b-a3b9-739246daa8f0",
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Housecall Pro"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://help.housecallpro.com/en/articles/14890593-marketing-dashboard-roi-table",
+      "title": "Marketing Dashboard: ROI Table | Housecall Pro Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A large No lead source total usually means the applicable lead-source field was not completed. … ROI and ROAS can only be calculated after you enter your spending for each lead source.",
+      "statement": "Housecall Pro's ROI depends on manually entered spend and consistently filled lead-source fields, a data-discipline gap.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b6ad0fa0-c0a7-420b-a3b9-739246daa8f0",
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Housecall Pro"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://help.housecallpro.com/en/articles/14890593-marketing-dashboard-roi-table",
+      "title": "Marketing Dashboard: ROI Table | Housecall Pro Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "- Cost per job … - Cost per scheduled job",
+      "statement": "Housecall Pro's ROI table can show cost per job and cost per scheduled job by source.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b6ad0fa0-c0a7-420b-a3b9-739246daa8f0",
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Housecall Pro"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://docs.digitalshiftmedia.com/en/where-do-i-find-my-call-tracking-settings-and-lead-source-in-my-field-service-software",
+      "title": "Where do I find my call tracking settings and lead source in my field service software?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "A handful of sources fill themselves in without anyone touching them, including Google Reserve, online booking on your own site, Yelp, and Thumbtack. … Jobber puts lead source on the client, not on the job.",
+      "statement": "Some FSM setups auto-fill Thumbtack as a source; Jobber stores lead source on the client.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b6ad0fa0-c0a7-420b-a3b9-739246daa8f0",
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Jobber"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://docs.digitalshiftmedia.com/en/where-do-i-find-my-call-tracking-settings-and-lead-source-in-my-field-service-software",
+      "title": "Where do I find my call tracking settings and lead source in my field service software?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Less useful for judging last month's ad spend.",
+      "statement": "Jobber's client-level source field is described as less useful for judging recent ad spend.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b6ad0fa0-c0a7-420b-a3b9-739246daa8f0",
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Jobber"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://www.workiz.com/blog/field-service/free-template-lead-tracking-dashboard/",
+      "title": "FREE TEMPLATE: Lead Tracking Dashboard - Workiz",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I was spending thousands of dollars every month on advertising my locksmith business, and I had no idea what lead source was actually bringing in customers.",
+      "statement": "Workiz's founder built the product partly because he could not tell which lead source produced customers.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Workiz"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://www.workiz.com/blog/field-service/free-template-lead-tracking-dashboard/",
+      "title": "FREE TEMPLATE: Lead Tracking Dashboard - Workiz",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Just get your technicians to ask every customer where they heard about your business, log their responses in the spreadsheet",
+      "statement": "Workiz offers a free spreadsheet template where technicians log lead sources manually.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "Workiz"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://pipeline-marketing.pages.dev/how-to/track-lead-sources/",
+      "title": "How to Track Where Your Leads Come From | PipelineOn",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Third-party platforms like Angi, Thumbtack, Yelp, and HomeAdvisor present attribution challenges because they control the customer interaction.",
+      "statement": "A contractor marketing guide says marketplaces are hard to attribute because they control the customer interaction.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://pipeline-marketing.pages.dev/how-to/track-lead-sources/",
+      "title": "How to Track Where Your Leads Come From | PipelineOn",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "You don't need complex software to track attribution. A spreadsheet can work.",
+      "statement": "The same guide recommends a spreadsheet as sufficient for lead-source tracking.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://sourceloop.ai/solutions/home-services/",
+      "title": "Marketing Attribution Tool for Home Services Business",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "See cost per booked job by channel, roll revenue up to source, and capture leads from phone, web, and Local Services Ads, all built for service-area businesses.",
+      "statement": "SourceLoop sells cost-per-booked-job attribution by channel for home services (ads/calls focus).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "SourceLoop"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://rationalgo.ai/resources/app-builder/thumbtack-pro-lead-tracking-conversion-dashboard",
+      "title": "Build a Thumbtack Pro Lead Tracking and Conversion Dashboard",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Build a Thumbtack lead tracking dashboard that logs every lead I get, its cost, whether I won the job, and the final job value.",
+      "statement": "RationalGo markets a DIY app-builder prompt for a Thumbtack lead-cost and win-rate tracker.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "bba4e38c-047f-4915-80c9-5e538940a517"
+      ],
+      "company_name": "RationalGo"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://support.google.com/localservices/answer/15100654",
+      "title": "About Automated Local Services Ads lead credits",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Charged leads get reassessed by our models over time, and may be issued credits automatically if later determined to be low quality.",
+      "statement": "Google Local Services Ads now credits low-quality leads automatically, removing the manual claim step.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Google"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://support.google.com/localservices/answer/15100654",
+      "title": "About Automated Local Services Ads lead credits",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Google no longer supports credits for “job type not serviced” and “geo not serviced” leads.",
+      "statement": "Google narrowed creditable reasons, showing platforms tighten refund rules.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Google"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.sociusmarketing.com/blog/what-googles-new-automated-lead-credit-system-means-for-your-local-services-ads/",
+      "title": "What Google's New Automated Lead Credit System Means for Your Local Services Ads",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Google is ending the manual lead dispute option. … In fact, for some accounts with large budgets, this amounted to hundreds of dollars a month back in their pockets!",
+      "statement": "An agency says manual LSA disputes were worth hundreds of dollars a month to large accounts before Google removed them.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469",
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Google"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://www.lilachbullock.com/is-thumbtack-legit/",
+      "title": "Is Thumbtack Legit? Leads, Refunds and the Guarantee",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Thumbtack's Fair Shot Refund policy says you're refunded automatically if a customer doesn't reply to any pro within 72 hours, as long as you responded within four business hours and kept the conversation on Thumbtack.",
+      "statement": "A blog summarizing Thumbtack help pages says Thumbtack now auto-refunds when the customer replies to no pro within 72 hours.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9fcd2839-9f53-42f3-b9cb-af88f303d469"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://startupfortune.com/angi-is-betting-its-marketplace-reset-on-ai-agents/",
+      "title": "Angi is betting its marketplace reset on AI agents - Startup Fortune",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Angi has said pros could eventually be charged per lead, per appointment booked or per job won.",
+      "statement": "Angi has floated moving to per-appointment or per-job pricing, which would shrink the paid-for-bad-lead problem.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://startupfortune.com/angi-is-betting-its-marketplace-reset-on-ai-agents/",
+      "title": "Angi is betting its marketplace reset on AI agents - Startup Fortune",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "nearly 200,000 active pros across North America and Europe",
+      "statement": "Angi reports nearly 200,000 active pros, an upper bound on one marketplace's paying base.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.housecallpro.com/resources/thumbtack-vs-angi/",
+      "title": "Thumbtack vs. Angi: Which is better for contractors?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Expect competition: Thumbtack says it limits competition, but doesn’t publish a cap; Angi may match a request with up to five pros.",
+      "statement": "Angi may match one request with up to five pros; Thumbtack publishes no cap.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c3ae26ad-17c3-40d4-8297-e47f37a2ee02"
+      ],
+      "company_name": "Angi"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://community.thumbtack.com/discussion/comment/6336/",
+      "title": "Thumbtack Front Desk Not Working/ Thumbtack Refuses to Provide Refunds",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I have been a Thumbtack pro for over 10 years, paying Thumbtack well over $10,000 a year for leads.",
+      "statement": "A Thumbtack pro reports paying over $10,000 a year for leads.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Thumbtack"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.juliacleanpro.com/",
+      "title": "House Cleaning & Maid Services in Edmond, OK | Julia Clean Pro",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "House Cleaning Services in Edmond, OK … Top Pro • 55+ Verified Hires … Hi, I’m Julia, owner and dedicated cleaner behind Julia Clean Pro.",
+      "statement": "Owner-operated house cleaner in Edmond, OK showing Thumbtack Top Pro status and 55+ verified hires.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Julia Clean Pro"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://sandiagreenclean.com/sandia-green-clean-top-pro-online/",
+      "title": "Sandia Green Clean: Top Pro Online",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Recently, our company was moved into Thumbtack’s Top Pro program, which is a huge honor … you’re taking care of our home, Albuquerque, too.",
+      "statement": "Albuquerque home cleaner that was a Thumbtack Top Pro.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Sandia Green Clean"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.valleysbestcleaners.com/post/2019-thumbtack-top-pro",
+      "title": "2019 Thumbtack Top Pro",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Valley's Best Cleaners was just awarded the \"Thumbtack Top Pro\" status for 2019!",
+      "statement": "Valley's Best Cleaners was a 2019 Thumbtack Top Pro.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Valley's Best Cleaners"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.valleysbestcleaners.com/",
+      "title": "Valley's Best Carpet and Tile Cleaning | tile and grout cleaning | Peoria, AZ, USA",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Commercial & Residential Cleaning Services Serving Phoenix, AZ and Peoria, AZ and all surrounding areas.",
+      "statement": "Valley's Best Cleaners serves Phoenix and Peoria, AZ.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Valley's Best Cleaners"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://handymanrescue.team/",
+      "title": "Home - Handyman Rescue Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "2018 Thumbtack Top Pro … 600 1st Ave, Suite 330, Seattle, WA 98104",
+      "statement": "Seattle handyman/remodeling firm listing a 2018 Thumbtack Top Pro award.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Handyman Rescue Team"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://hedgehoghs.com/about/",
+      "title": "About - Hedgehog Home Services, LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hedgehog Home Services was founded in 2017 with a simple goal: … We serve homeowners and property managers throughout Hillsboro, Beaverton, Tigard, Aloha, Tualatin, Lake Oswego, and Forest Grove. … We use scheduling systems to prevent overbooking.",
+      "statement": "Small Oregon home-repair company that uses scheduling systems.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hedgehog Home Services"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://upkeep.today/thumbtack-top-pro/",
+      "title": "ThumbtackTop Pro - Upkeep Lawn Care",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Update: We’ve been named a Thumbtack Top Pro for 2016, 2017 and 2018. We have since, stopped using Thumbtack because their business practices and ethics do not align with ours. … Upkeep, LLC … Lexington, Kentucky",
+      "statement": "Lexington lawn care company that stopped using Thumbtack over its business practices.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3957c090-b7b1-48bd-a540-807838a03daa"
+      ],
+      "company_name": "Upkeep Lawn Care"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://upkeep.today/thumbtack-top-pro/",
+      "title": "ThumbtackTop Pro - Upkeep Lawn Care",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Matt is a founder and partner of Upkeep.",
+      "statement": "Upkeep names a founder and partner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Upkeep Lawn Care"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://discardjunk.com/junk-removal-sacramento/",
+      "title": "Thumbtack Top Pro Sacramento 2024 & 2025 | Discard Junk",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Thumbtack named Discard Junk Removal a Top Pro two years running, in 2024 and 2025. … A family-owned junk removal crew from Midtown Sacramento. The owner answers the phone, and we’re licensed and insured.",
+      "statement": "Family-owned Sacramento junk removal crew, Thumbtack Top Pro 2024 and 2025.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Discard Junk Removal"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://prodryfloorcare.com/about-us/",
+      "title": "Cincinnati's Top Rated Floor Cleaners - ProDry Floor Care",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are family owned and operated. … we have been voted as the #1 Carpet Cleaning Company in the Cincinnati Area on Thumbtack. … Just check out our reviews on sites like Google, Angi and Thumbtack",
+      "statement": "Family-owned Cincinnati floor/carpet cleaner active on Thumbtack and Angi.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ProDry Floor Care"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.westcoastpowervac.com/thumbtack-top-pro-2025-trusted-air-duct-cleaning-in-the-puget-sound",
+      "title": "Thumbtack Top Pro 2025: Trusted Air Duct Cleaning in the Puget Sound",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "West Coast Power-Vac has been recognized as a Thumbtack Top Pro for 2025 … We proudly serve homeowners in Bonney Lake, Puyallup, Sumner, Auburn, Enumclaw, Tacoma, Gig Harbor, Vashon, Seattle, Issaquah, and surrounding Puget Sound communities.",
+      "statement": "Puget Sound air duct cleaner, Thumbtack Top Pro 2025.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "West Coast Power-Vac"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.elitehomeservicesmi.com/",
+      "title": "Elite Home Services | Premium Home Services in West Michigan",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "West Michigan's Project Concierge … Elite Home Services is an owner-operated local company — run by a business owner with more than two decades of experience",
+      "statement": "Owner-operated West Michigan multi-trade home services company.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Elite Home Services"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://hmmhkb.com/2019-angies-list-super-service-award/",
+      "title": "2019 Angie’s List Super Service Award",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Barrington, IL April 4, 2020 – Handy Men & Mrs. Helper Kitchen & Bath is proud to announce that it has earned the home service industry’s coveted Angie’s List Super Service Award (SSA). … Handy Men & Mrs. Helper Kitchen & Bath has been listed on Angie’s List since 2003.",
+      "statement": "Barrington, IL handyman/kitchen-bath firm listed on Angie's List since 2003.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Handy Men & Mrs. Helper Kitchen & Bath"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://hmmhkb.com/2019-angies-list-super-service-award/",
+      "title": "2019 Angie’s List Super Service Award",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Andrew Bigane / Owner",
+      "statement": "Names the owner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Handy Men & Mrs. Helper Kitchen & Bath"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://turn2ushandyman.com/awards-and-recognition/",
+      "title": "Awards and recognition",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "said Turn2Us Handyman Services CEO Josh Goode. … Only about 5 percent of the companies Turn2Us Handyman Services competes with in the Chattanooga market are able to earn our Super Service Award",
+      "statement": "Chattanooga handyman company that won an Angie's List award; names its CEO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Turn2Us Handyman Services"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.specialtyhms.com/about/",
+      "title": "About Specialty Handyman Services - Our Story & Values",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Your handyman for Anderson, Clemson, Pendleton, Seneca, the Upstate South Carolina area",
+      "statement": "Specialty Handyman Services serves Upstate South Carolina.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Specialty Handyman Services"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://www.specialtyhms.com/about/",
+      "title": "About Specialty Handyman Services - Our Story & Values",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Jorge Garcia is the proud owner and operator of Specialty Handyman Services",
+      "statement": "Names the owner-operator.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Specialty Handyman Services"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.specialtyhms.com/about/",
+      "title": "About Specialty Handyman Services - Our Story & Values",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Stephanie Garcia is the CEO of Specialty Handyman Services",
+      "statement": "Names the CEO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Specialty Handyman Services"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.allstarhandymanllc.com/",
+      "title": "All-star handyman LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our primary service area includes anything within 20 miles of Roseville, MN. … Hi, My name is Josiah and I am the owner of All-Star Handyman.",
+      "statement": "Owner-run handyman in Roseville, MN.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "All-Star Handyman"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.allstarhandymanllc.com/",
+      "title": "All-star handyman LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our client software provides a seamless experience from first contact to job completion. With automated invoicing and secure online payment options",
+      "statement": "All-Star Handyman uses client software with automated invoicing.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b6ad0fa0-c0a7-420b-a3b9-739246daa8f0"
+      ],
+      "company_name": "All-Star Handyman"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://iloveahandyman.com/about/",
+      "title": "About - A Handy Man LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I’m a professional handyman and the owner of A Handy Man LLC. … 9116 W Bowles Ave, Unit 15c Littleton, CO 80123",
+      "statement": "Solo handyman in Littleton, CO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "A Handy Man LLC"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.hunterhandymanservicesllc.com/about",
+      "title": "About | Hunter Handyman Services LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hunter Handyman Services has been serving the Illinois Valley area since 2021. … Owner Chris Hunter has over 20 years of experience in home repair",
+      "statement": "Illinois handyman company; names the owner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hunter Handyman Services"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://www.markshandyman.services/",
+      "title": "Mark's Handyman Service LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "33020 10th Ave SW, Federal Way, WA 98023, United States of America",
+      "statement": "Mark's Handyman Service is in Federal Way, WA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Mark's Handyman Service"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://www.markshandyman.services/",
+      "title": "Mark's Handyman Service LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Small Jobs Are My Specialty",
+      "statement": "Solo small-jobs handyman.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Mark's Handyman Service"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://sharktilellc.com/",
+      "title": "Tile Installation Aspen, Woody Creek, Snowmass Village, Old Snowmass, Basalt, El Jebel, Carbondale all in Colorado | Tile Contractor | Shark Tile LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Aspen, Woody Creek, Snowmass Village, Old Snowmass, Basalt, El Jebel, Carbondale all in Colorado … Top Pros are among the highest-rated, most popular professionals on Thumbtack.",
+      "statement": "Colorado tile installer that shows Thumbtack Top Pro badges on its site.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Shark Tile LLC"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://www.yourtileguy.com/",
+      "title": "Tile Installation NYC | Tile Installer & Contractor Queens, Brooklyn, Manhattan",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "As your local tile installer & contractor, we've been serving Queens, Manhattan, and Brooklyn homes for over 15 years",
+      "statement": "NYC tile installer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Your Tile Guy"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "bba4e38c-047f-4915-80c9-5e538940a517",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Pros report that lead-to-hire and spend-to-revenue ratios are not available from Thumbtack and only become visible after months.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16",
+            "ev-18"
+          ]
+        },
+        {
+          "statement": "Marketplace leads are described as hard to attribute because the platform controls the customer interaction.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-45"
+          ]
+        },
+        {
+          "statement": "Where tracking happens it is manual: owner math, spreadsheets or templates where staff log the source.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14",
+            "ev-19",
+            "ev-44",
+            "ev-46"
+          ]
+        },
+        {
+          "statement": "Housecall Pro's ROI table already reports cost per job by source including Thumbtack and Angi, but it depends on manually entered spend and filled lead-source fields.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38",
+            "ev-39",
+            "ev-40"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "c3ae26ad-17c3-40d4-8297-e47f37a2ee02",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Shared leads are structural: Angi may match a request with up to five pros, and pros report leads going to 3-4 competitors.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-55",
+            "ev-35",
+            "ev-20"
+          ]
+        },
+        {
+          "statement": "Pros describe bursts of bot/fake leads and 'dozens' of dead leads; the FTC found HomeAdvisor overstated lead-to-job rates and sent off-service/out-of-area leads.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-02",
+            "ev-33",
+            "ev-26",
+            "ev-27"
+          ]
+        },
+        {
+          "statement": "No source gives a representative rate of invalid leads; evidence is anecdotal and complaint-biased.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "9fcd2839-9f53-42f3-b9cb-af88f303d469",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Refunds are manual, per-lead requests with conditions (Angi: under 45 days, call within 24h) and are paid as expiring account credits.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-09"
+          ]
+        },
+        {
+          "statement": "Pros report frequent denials and that fighting for credits is exhausting or not worth the time; some left platforms over it.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-12",
+            "ev-13",
+            "ev-15",
+            "ev-28",
+            "ev-23"
+          ]
+        },
+        {
+          "statement": "The refundable pool is narrow: unresponsive or shopping homeowners are explicitly not creditable on Angi or Thumbtack.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-08",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Platforms are automating credits themselves (Google LSA auto-credits; Thumbtack Fair Shot auto-refund) while also narrowing creditable reasons.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-49",
+            "ev-52",
+            "ev-50",
+            "ev-06"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "3957c090-b7b1-48bd-a540-807838a03daa",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Individual pros report spend of $10k-$23k+ a year on Thumbtack and lead cost at 45-50% of resulting revenue.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-56",
+            "ev-11",
+            "ev-17",
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "Reported unrecovered waste ranges from a few hundred dollars a month to over $1,000 in a bot-lead burst.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-24",
+            "ev-01"
+          ]
+        },
+        {
+          "statement": "Other pros report positive ROI (about 3x on Angi/HomeAdvisor), so waste is not universal.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-32",
+            "ev-36",
+            "ev-22"
+          ]
+        },
+        {
+          "statement": "Because most waste (no response, shopping, lost bids) is non-refundable, the claimable dollar amount per contractor is likely much smaller than total 'wasted' spend.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-08",
+            "ev-05"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "b6ad0fa0-c0a7-420b-a3b9-739246daa8f0",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Housecall Pro and Jobber both have lead-source fields; Housecall Pro has a marketing ROI table with spend and cost per job by source.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38",
+            "ev-40",
+            "ev-41"
+          ]
+        },
+        {
+          "statement": "These depend on manual spend entry and consistent source tagging, which is often incomplete.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39",
+            "ev-42"
+          ]
+        },
+        {
+          "statement": "Some solo pros use client software with automated invoicing, but how many target-ICP pros use any FSM was not found.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-76"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "Of a contractor's monthly marketplace spend, what share is actually refundable under current Thumbtack/Angi rules (vs. non-refundable no-response or lost bids)?",
+      "category": "cost",
+      "priority": "high"
+    },
+    {
+      "question": "Do target pros already use Housecall Pro/Jobber lead-source ROI reports, and why or why not?",
+      "category": "alternatives",
+      "priority": "medium"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Housecall Pro (Marketing ROI table)",
+      "url": "https://www.housecallpro.com",
+      "kind": "indirect",
+      "description": "FSM with a marketing ROI table showing spend, jobs, cost per job and ROI per lead source including Thumbtack and Angi; spend entered manually.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-38",
+        "ev-39",
+        "ev-40"
+      ],
+      "sentiment": [
+        {
+          "statement": "Its own docs note ROI requires manual spend entry and that blank lead-source fields are common.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Jobber (lead source field/report)",
+      "url": "https://www.getjobber.com",
+      "kind": "indirect",
+      "description": "FSM storing lead source on the client; can auto-fill via UTM or request form.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-41",
+        "ev-42"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "SourceLoop",
+      "url": "https://sourceloop.ai",
+      "kind": "indirect",
+      "description": "Attribution tool showing cost per booked job by channel, tied to Jobber invoices; focused on ads and calls, not marketplace refunds.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-47"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Workiz free lead tracking template",
+      "url": "https://www.workiz.com",
+      "kind": "manual",
+      "description": "Free spreadsheet template where technicians log lead source and revenue per job.",
+      "pricing_note": "Template is free.",
+      "evidence_refs": [
+        "ev-43",
+        "ev-44"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "Spreadsheets / owner math",
+      "url": null,
+      "kind": "manual",
+      "description": "Pros compute cost per booked job and spend-to-revenue by hand or in a spreadsheet.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-46",
+        "ev-14",
+        "ev-19"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "RationalGo App Builder",
+      "url": "https://rationalgo.ai",
+      "kind": "manual",
+      "description": "No-code builder marketed for a DIY Thumbtack lead tracking and ROI dashboard.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-48"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Google Local Services Ads automated lead credits",
+      "url": "https://support.google.com/localservices/answer/15100654",
+      "kind": "indirect",
+      "description": "Platform-side automatic crediting of low-quality leads, replacing manual disputes.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-49",
+        "ev-50",
+        "ev-51"
+      ],
+      "sentiment": [
+        {
+          "statement": "An agency notes the removed manual disputes had been worth hundreds of dollars a month to large accounts.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-51"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-08",
+      "name": "Thumbtack refund process and Fair Shot Refund",
+      "url": "https://www.thumbtack.com",
+      "kind": "indirect",
+      "description": "Native per-lead refund requests, a Trust and Safety spam-refund process, and a reported automatic refund when a customer replies to no pro within 72 hours.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-04",
+        "ev-52",
+        "ev-03"
+      ],
+      "sentiment": [
+        {
+          "statement": "Pros complain refunds are sparingly granted and denials are common.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-12",
+            "ev-23"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-09",
+      "name": "Angi lead credit requests",
+      "url": "https://www.angi.com",
+      "kind": "indirect",
+      "description": "Native credit request flow for invalid contact info, wrong location, service mismatch, duplicates and paused-lead charges.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-07",
+        "ev-10",
+        "ev-09",
+        "ev-08"
+      ],
+      "sentiment": [
+        {
+          "statement": "A contractor says HomeAdvisor rejected countless credit requests even for disconnected numbers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-28"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-10",
+      "name": "Contractor marketing agencies (e.g. Hook Agency)",
+      "url": "https://hookagency.com",
+      "kind": "service",
+      "description": "Agencies pitch owned channels (SEO, LSA) as the way out of shared marketplace leads.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-31",
+        "ev-29"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most pros track lead-source ROI manually (owner math, spreadsheets, templates) or not at all.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-14",
+        "ev-46",
+        "ev-44",
+        "ev-16"
+      ]
+    },
+    {
+      "statement": "FSMs like Housecall Pro and Jobber already offer lead-source reporting, with Housecall Pro showing cost per job by source, but rely on manual spend entry and tagging.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-38",
+        "ev-39",
+        "ev-41"
+      ]
+    },
+    {
+      "statement": "Refunds are claimed one by one through each platform's own flow, and platforms are increasingly automating credits themselves.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-07",
+        "ev-49",
+        "ev-52"
+      ]
+    },
+    {
+      "statement": "Some pros respond by leaving marketplaces for owned channels, often with agency help.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-15",
+        "ev-28",
+        "ev-31"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Julia Clean Pro",
+      "website": "https://www.juliacleanpro.com",
+      "icp_id": null,
+      "location": "Edmond, OK",
+      "industry": "Residential house cleaning",
+      "description": "Owner-operated cleaner actively buying Thumbtack leads (Top Pro, 55+ hires) - core solo ICP.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-57"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Solo owner-operated cleaner with an active Thumbtack presence.",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Top Pro with 55+ verified hires implies sustained Thumbtack lead purchases.",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Julia",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-57"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "Sandia Green Clean",
+      "website": "https://sandiagreenclean.com",
+      "icp_id": null,
+      "location": "Albuquerque, NM",
+      "industry": "Residential house cleaning",
+      "description": "Local home cleaning company with Thumbtack Top Pro history.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small local home cleaner using Thumbtack.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Thumbtack Top Pro (2018 post, updated 2026).",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Valley's Best Cleaners",
+      "website": "https://www.valleysbestcleaners.com",
+      "icp_id": null,
+      "location": "Peoria, AZ",
+      "industry": "House, carpet and tile cleaning",
+      "description": "Small Phoenix-area cleaner with Thumbtack Top Pro history.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-59",
+        "ev-60"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small residential cleaner in the US using Thumbtack.",
+          "evidence_refs": [
+            "ev-59",
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "2019 Thumbtack Top Pro.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "Handyman Rescue Team",
+      "website": "https://handymanrescue.team",
+      "icp_id": null,
+      "location": "Seattle, WA",
+      "industry": "Handyman and remodeling",
+      "description": "Seattle handyman/remodeler that has used Thumbtack; may be above the 1-5 size band.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Handyman/remodeling firm with Thumbtack history; size unknown and possibly larger than the solo ICP.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Lists Thumbtack Top Pro 2018 and Porch awards.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Hedgehog Home Services",
+      "website": "https://hedgehoghs.com",
+      "icp_id": null,
+      "location": "Hillsboro, OR",
+      "industry": "Home repair, carpentry, small remodeling",
+      "description": "Small home-repair company (team page lists five people) that has a Thumbtack Top Pro page on its site.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      },
+      "technologies": [
+        "scheduling software"
+      ],
+      "evidence_refs": [
+        "ev-62"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small home-repair team in Washington County, OR.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Uses scheduling systems and digital invoices.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "Thumbtack Top Pro page exists but its body text was not fetchable.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Upkeep Lawn Care",
+      "website": "https://upkeep.today",
+      "icp_id": null,
+      "location": "Lexington, KY",
+      "industry": "Residential lawn care",
+      "description": "Lawn care company that churned off Thumbtack - useful as a lapsed-user interview.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-63",
+        "ev-64"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small lawn care firm; former heavy Thumbtack user (75 hires).",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Publicly stopped using Thumbtack over its practices - direct pain signal.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Matt",
+          "role": "Founder and Partner",
+          "email": null,
+          "evidence_ref": "ev-64"
+        }
+      ]
+    },
+    {
+      "ref": "co-07",
+      "name": "Discard Junk Removal",
+      "website": "https://discardjunk.com",
+      "icp_id": null,
+      "location": "Sacramento, CA",
+      "industry": "Residential junk removal",
+      "description": "Family-owned, owner-answered crew with 341+ Thumbtack jobs - active lead buyer.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-65"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Owner-run home-service crew in the US.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Thumbtack Top Pro in 2024 and 2025.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "ProDry Floor Care",
+      "website": "https://prodryfloorcare.com",
+      "icp_id": null,
+      "location": "Greater Cincinnati, OH",
+      "industry": "Carpet and floor cleaning",
+      "description": "Family-owned cleaner (sister of a house-cleaning business) using both Thumbtack and Angi.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small family-run cleaning business.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Present on both Thumbtack and Angi - multi-marketplace.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "West Coast Power-Vac",
+      "website": "https://www.westcoastpowervac.com",
+      "icp_id": null,
+      "location": "Puget Sound, WA",
+      "industry": "Air duct and dryer vent cleaning",
+      "description": "Home-service cleaner with current Thumbtack Top Pro status.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Residential cleaning trade; size unknown.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Thumbtack Top Pro 2025.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "Elite Home Services",
+      "website": "https://www.elitehomeservicesmi.com",
+      "icp_id": null,
+      "location": "West Michigan",
+      "industry": "Handyman, cleaning, flooring, exterior",
+      "description": "Owner-operated multi-service home company; no marketplace signal found.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-68"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-68"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Owner-operated home services; no evidence of lead-marketplace spend.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Handy Men & Mrs. Helper Kitchen & Bath",
+      "website": "https://hmmhkb.com",
+      "icp_id": null,
+      "location": "Barrington, IL",
+      "industry": "Handyman and kitchen/bath",
+      "description": "Family-owned handyman firm with a long Angi (Angie's List) history.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-69"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-69",
+        "ev-70"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Family-owned handyman/remodel firm; size unknown.",
+          "evidence_refs": [
+            "ev-69"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "On Angie's List since 2003; award winner.",
+          "evidence_refs": [
+            "ev-69"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Andrew Bigane",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-70"
+        }
+      ]
+    },
+    {
+      "ref": "co-12",
+      "name": "Turn2Us Handyman Services",
+      "website": "https://turn2ushandyman.com",
+      "icp_id": null,
+      "location": "Chattanooga, TN",
+      "industry": "Handyman",
+      "description": "Handyman company with Angi (Angie's List) presence.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-71"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Handyman company; size unknown.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "2017 Angie's List Super Service Award.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Josh Goode",
+          "role": "CEO",
+          "email": null,
+          "evidence_ref": "ev-71"
+        }
+      ]
+    },
+    {
+      "ref": "co-13",
+      "name": "Specialty Handyman Services",
+      "website": "https://www.specialtyhms.com",
+      "icp_id": null,
+      "location": "Upstate South Carolina",
+      "industry": "Handyman and remodeling",
+      "description": "Owner-operated handyman business; no marketplace signal found.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-72"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-72",
+        "ev-73",
+        "ev-74"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Owner-operated handyman in the US.",
+          "evidence_refs": [
+            "ev-72",
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Jorge Garcia",
+          "role": "Owner and Operator",
+          "email": null,
+          "evidence_ref": "ev-73"
+        },
+        {
+          "name": "Stephanie Garcia",
+          "role": "CEO",
+          "email": null,
+          "evidence_ref": "ev-74"
+        }
+      ]
+    },
+    {
+      "ref": "co-14",
+      "name": "All-Star Handyman LLC",
+      "website": "https://www.allstarhandymanllc.com",
+      "icp_id": null,
+      "location": "Roseville, MN",
+      "industry": "Handyman",
+      "description": "Husband-and-wife handyman business already using client/FSM software.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-75"
+      },
+      "technologies": [
+        "client management software"
+      ],
+      "evidence_refs": [
+        "ev-75",
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Solo/micro owner-operated handyman.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Uses client software with automated invoicing (likely an FSM).",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No marketplace signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Josiah",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-75"
+        }
+      ]
+    },
+    {
+      "ref": "co-15",
+      "name": "A Handy Man LLC",
+      "website": "https://iloveahandyman.com",
+      "icp_id": null,
+      "location": "Littleton, CO",
+      "industry": "Handyman",
+      "description": "Solo owner-operator handyman.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Solo owner-operator handyman.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No marketplace signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Hunter Handyman Services",
+      "website": "https://www.hunterhandymanservicesllc.com",
+      "icp_id": null,
+      "location": "Illinois Valley, IL",
+      "industry": "Handyman",
+      "description": "Owner-led handyman business founded 2021.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-78"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Owner-led handyman; has crews so may exceed 5.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Chris Hunter",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-78"
+        }
+      ]
+    },
+    {
+      "ref": "co-17",
+      "name": "Mark's Handyman Service LLC",
+      "website": "https://www.markshandyman.services",
+      "icp_id": null,
+      "location": "Federal Way, WA",
+      "industry": "Handyman",
+      "description": "Solo small-jobs handyman.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-79"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-79",
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Solo handyman focused on small jobs.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Shark Tile LLC",
+      "website": "https://sharktilellc.com",
+      "icp_id": null,
+      "location": "Aspen area, CO",
+      "industry": "Tile installation",
+      "description": "Small tile installer showing Thumbtack Top Pro badges - tile is a named ICP trade.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-81"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-81"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Small tile contractor in the US with Thumbtack presence.",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Displays Thumbtack Top Pro badges.",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "Your Tile Guy",
+      "website": "https://www.yourtileguy.com",
+      "icp_id": null,
+      "location": "Queens, NY",
+      "industry": "Tile installation",
+      "description": "Local NYC tile installer; no marketplace signal found.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-82"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Tile installer; size unknown.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
