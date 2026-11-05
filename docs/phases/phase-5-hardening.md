@@ -1,6 +1,6 @@
 # Phase 5 — Hardening (overview)
 
-- **Status:** In progress — split into 5A–5D at kickoff (2026-11-04)
+- **Status:** Done (2026-11-05) — split into 5A–5D at kickoff (2026-11-04)
 - **Goal:** Make Preuve safe to use for more than one person, and deployable, for $0.
 - **PRD refs:** §6 (teams), §36 Safety, §37 Privacy & compliance, §49 (multi-user teams)
 
@@ -35,4 +35,4 @@ Billing. CRM integrations (PRD §49, later). SSO / OAuth providers.
 - [x] Users only see their own workspace's data (tested at the API level). — 5A
 - [x] Deleting a contact removes their personal data and suppresses the address. — 5B
 - [x] A security review has been done and its findings addressed. — 5C
-- [ ] Production deploy works from CI with migrations; backups are verified by a restore. — 5D
+- [x] Production deploy works from CI with migrations; backups are verified by a restore. — 5D

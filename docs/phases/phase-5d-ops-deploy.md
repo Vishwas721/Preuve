@@ -1,6 +1,6 @@
 # Phase 5D — Ops & deploy
 
-- **Status:** In progress (kickoff 2026-11-05)
+- **Status:** Done (2026-11-05)
 - **Goal:** Run Preuve in production on this machine for $0, deploy it reproducibly from CI-built
   images, and be able to recover it.
 
@@ -82,13 +82,37 @@ Self-hosted error dashboards. Kubernetes.
 
 ## Acceptance criteria
 
-- [ ] Production images build in CI and are pushed to GHCR; both run as non-root.
-- [ ] The CI deploy smoke test brings the stack up from those images with migrations applied.
-- [ ] The stack runs on this machine via `deploy.sh`, healthy, with the real data migrated in.
-- [ ] Backups run on schedule and are verified by a restore (in CI and locally).
-- [ ] Unsubscribe links work through the production stack's URL.
-- [ ] Logs are structured JSON with request ids; Sentry is off unless configured (tested).
-- [ ] The legal checklist exists and is linked from the README.
+- [x] Production images build in CI and are pushed to GHCR; both run as non-root (uid 10001;
+      `ghcr.io/vishwas721/preuve-api` and `preuve-web`, tagged with the commit and `latest`,
+      publicly pullable).
+- [x] The CI deploy smoke test brings the stack up from those images with migrations applied
+      (run 41975973235: health ok, `alembic current` at head, `/login` served, `/api/ideas` 401
+      signed out; the pushed images are the ones that were tested).
+- [x] The stack runs on this machine via `deploy.sh`, healthy, with the real data migrated in
+      (first with local builds, then from the GHCR images; 2 cases and 61 exhibits).
+- [x] Backups run on schedule and are verified by a restore (in CI and locally: 35 tables,
+      row counts match).
+- [x] Unsubscribe links work through the production stack's URL (a real signed link opened at
+      `http://localhost:3100/api/unsubscribe/…`, confirmed, address suppressed in the right
+      workspace; the form posts back to the same proxied URL).
+- [x] Logs are structured JSON with request ids; Sentry is off unless configured (tested).
+- [x] The legal checklist exists and is linked from the README.
+
+## Verification (2026-11-05)
+
+- API: ruff clean; **336 tests** pass (observability 6). Web: lint, typecheck and build pass.
+- CI (all three jobs green): images built, the production stack deployed with generated secrets,
+  smoke checks, `backup.sh` + `verify-backup.sh` OK, images pushed to GHCR.
+- Local: `deploy.sh --build`, then the dev data restored with `restore.sh` (safety backup taken
+  first), `backup.sh` + `verify-backup.sh` OK, then `deploy.sh` pulling the CI images; every
+  service healthy (api, worker, web, postgres, redis, searxng, backup), Ollama on the host
+  reachable from the containers; logs are JSON lines; the app loads in Chrome at 1360 px and
+  390 px with no overflow and no console errors; `X-Powered-By` hidden.
+- Fixed during the build: settings crashed on import inside a container (the repo-root lookup
+  assumed the repo layout); Git Bash rewrote container paths in `docker exec` arguments and then
+  host paths for `docker compose` (scripts now disable that conversion and pass native paths);
+  `restore.sh` pulled from GHCR when the stack used local builds (the local image names now live
+  in `.env.prod`); health checks made the HTTP client log every 15 s (now warnings only).
 
 ## Notes
 
@@ -97,3 +121,11 @@ Self-hosted error dashboards. Kubernetes.
 - From 5A: rewrites are compiled at build time, hence the build-time `PREUVE_API_INTERNAL_URL`.
 - The dev stack (`infra/docker-compose.yml`) is unchanged and uses different ports, so both can
   exist side by side (memory permitting).
+- **Two copies of the data now exist:** the dev database (`infra/docker-compose.yml`, port 5435)
+  is untouched; the production stack (`http://localhost:3100`) has a copy restored from it on
+  2026-11-05. Use the production one from here on; first-run setup is still to do there.
+- `infra/.env.prod` has generated secrets but no `GEMINI_API_KEY` or SMTP/IMAP settings: copy
+  them from `.env` if you want those features in production.
+- GitHub warns that `actions/checkout@v4`, `setup-node@v4`, `pnpm/action-setup@v4` and
+  `astral-sh/setup-uv@v6` run on deprecated Node 20; Dependabot (5C) will propose upgrades.
+- Going public later: `docs/operations.md` → "Going public".
