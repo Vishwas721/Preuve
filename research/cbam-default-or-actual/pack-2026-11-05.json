@@ -1,0 +1,1502 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "3b504d74-ae74-40d9-b914-ca54653fe612",
+    "researcher": "claude-code",
+    "started_at": "2026-11-05T12:00:00+05:30",
+    "finished_at": "2026-11-05T14:30:00+05:30",
+    "queries": [
+      "CBAM Indian MSME exporters steel default values penalty EU buyers 2026",
+      "CBAM Ludhiana fastener exporters emissions data EU buyers orders",
+      "CBAM default values mark-up 2026 10% 20% 30% implementing regulation actual emissions verification",
+      "CBAM downstream extension 180 products proposal December 2025 steel aluminium",
+      "CBAM 50 tonne threshold de minimis exemption small importers 2026 omnibus (contradiction)",
+      "India EU FTA CBAM MSME relief 2026 exporters steel aluminium",
+      "EEPC India CBAM help desk MSME exporters free support emissions calculation (contradiction)",
+      "CBAM verification cost India accredited verifier shortage exporters fee",
+      "CBAM software Indian exporters MSME CleanCarbon TSC NetZero CBAM calculator free default vs actual",
+      "government scheme bear 90% MSME CBAM compliance cost India 2026 status",
+      "EU importers prefer default values CBAM verified data not worth it cost small volumes (contradiction)",
+      "Indian coal-based DRI induction furnace steel actual emissions higher than CBAM default values (contradiction)",
+      "CBAM supplier information page fasteners distributor suppliers emissions data request template Europe",
+      "EU importer aluminium extrusions India supplier CBAM data request supplier portal"
+    ],
+    "notes": "Unfetchable and excluded: alcircle, Business Standard, Moneylife, Eurometal, SteelRadar (Indian Steel Association quote that actual can exceed default), Angel One, Kotak Neo. Founder-named competitors Sphera, Normative, Coolset, osapiens were not separately evidenced; CBAMBOO and The Sustainability Cloud were. Some cost and impact claims come from CBAM vendors (CleanCarbon.ai, GreenSutra) with a commercial interest. Prospects: primary ICP is EU importers; many EU fastener distributor sites blocked Preuve's fetcher, so the list is short. No contacts recorded."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://thewire.in/environment/how-the-eus-carbon-border-tax-is-reshaping-indian-msmes",
+      "title": "How the EU's Carbon Border Tax is Reshaping Indian MSMEs (The Wire)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "A fastener and steel products exporter, a typical Indian MSME, was informed by its customers in Denmark and Germany that Carbon Border Adjustment Mechanism (CBAM) reports had become mandatory. Lacking any in-house capacity to comply, the firm hired a consultant at an annual cost of nearly Rs 2 lakh.",
+      "statement": "An Indian fastener MSME told by Danish and German customers that CBAM reports were mandatory hired a consultant for about Rs 2 lakh a year.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "50f2503c-730b-4bd8-98bd-bff3b386220c",
+        "41ee3bdc-b16d-43bd-81b2-3505e6944a03",
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://thewire.in/environment/how-the-eus-carbon-border-tax-is-reshaping-indian-msmes",
+      "title": "How the EU's Carbon Border Tax is Reshaping Indian MSMEs (The Wire)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The company has since received compliance warnings and reported losing orders.",
+      "statement": "The same exporter received compliance warnings and reported losing orders.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://thewire.in/environment/how-the-eus-carbon-border-tax-is-reshaping-indian-msmes",
+      "title": "How the EU's Carbon Border Tax is Reshaping Indian MSMEs (The Wire)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "IamSMEofIndia’s survey found that 35% of member firms had already received requests for emissions-related data, either directly from European customers or through Indian firms supplying European markets. Yet none reported receiving any assistance from buyers in understanding CBAM requirements or building compliance capacity.",
+      "statement": "In an MSME association survey, 35% of firms had received emissions-data requests, and none had received help from buyers, which argues against buyers sponsoring supplier packs.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b8f089a0-f240-4da5-a684-8ad1eeee6dea",
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://thewire.in/environment/how-the-eus-carbon-border-tax-is-reshaping-indian-msmes",
+      "title": "How the EU's Carbon Border Tax is Reshaping Indian MSMEs (The Wire)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "According to his firm’s survey, 41% of responding firms have invested in solar power or energy-efficient equipment over the past two years. Yet only 24% measure their emissions.",
+      "statement": "Only 24% of surveyed MSMEs measure their emissions.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "50f2503c-730b-4bd8-98bd-bff3b386220c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://thewire.in/environment/how-the-eus-carbon-border-tax-is-reshaping-indian-msmes",
+      "title": "How the EU's Carbon Border Tax is Reshaping Indian MSMEs (The Wire)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "A typical exporter often sources components from dozens of small vendors, many of whom do not have machine-level energy meters or systems to measure emissions.",
+      "statement": "Exporters' many small vendors often lack meters or systems to measure emissions.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "50f2503c-730b-4bd8-98bd-bff3b386220c",
+        "41ee3bdc-b16d-43bd-81b2-3505e6944a03"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://thewire.in/environment/how-the-eus-carbon-border-tax-is-reshaping-indian-msmes",
+      "title": "How the EU's Carbon Border Tax is Reshaping Indian MSMEs (The Wire)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "While welcoming the Union government’s proposal to bear up to 90% of MSME compliance costs",
+      "statement": "The Indian government has proposed bearing up to 90% of MSME CBAM compliance costs.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "41ee3bdc-b16d-43bd-81b2-3505e6944a03",
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://knnindia.co.in/news/newsdetails/msme/indian-steel-msme-exporters-hit-as-eus-cbam-payment-phase-begins",
+      "title": "Indian Steel MSME Exporters Hit As EU's CBAM Payment Phase Begins (KNN India)",
+      "source_type": "news",
+      "published_at": "2026-01-29",
+      "quote": "at least 10 Indian consignments have been held at European ports this month over missing or incomplete carbon declarations. … another lost a 7,000-tonne steel order after CBAM added Rs 5–6 crore to costs, making the deal unviable.",
+      "statement": "In January 2026, at least 10 Indian consignments were held at EU ports over carbon declarations, and one exporter lost a 7,000-tonne order to CBAM costs (claims by a CBAM vendor's founder).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://knnindia.co.in/news/newsdetails/msme/indian-steel-msme-exporters-hit-as-eus-cbam-payment-phase-begins",
+      "title": "Indian Steel MSME Exporters Hit As EU's CBAM Payment Phase Begins (KNN India)",
+      "source_type": "news",
+      "published_at": "2026-01-29",
+      "quote": "Carbon levies for many MSMEs have tripled to EUR 240–300 per tonne under the EU’s punitive default emissions values",
+      "statement": "Default values put carbon levies for many MSMEs at EUR 240-300 per tonne.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://knnindia.co.in/news/newsdetails/msme/indian-steel-msme-exporters-hit-as-eus-cbam-payment-phase-begins",
+      "title": "Indian Steel MSME Exporters Hit As EU's CBAM Payment Phase Begins (KNN India)",
+      "source_type": "news",
+      "published_at": "2026-01-29",
+      "quote": "Exporters report that the biggest hurdle is the lack of reliable emissions data from dozens of small suppliers in their value chains",
+      "statement": "Exporters say the biggest hurdle is missing emissions data from their many small suppliers.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "50f2503c-730b-4bd8-98bd-bff3b386220c",
+        "41ee3bdc-b16d-43bd-81b2-3505e6944a03"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://www.steelorbis.com/steel-news/latest-news/gtri-eus-cbam-effective-january-1-likely-to-force-indian-steel-exporters-to-cut-prices-by-15-22-1427205.htm",
+      "title": "GTRI: EU's CBAM likely to force Indian steel exporters to cut prices by 15-22% (SteelOrbis)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Without this discipline, exporters face default emission values set by the EU- intentionally conservative and often 30-80 percent higher than actual emissions",
+      "statement": "GTRI says EU defaults are often 30-80% higher than actual emissions.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://www.steelorbis.com/steel-news/latest-news/gtri-eus-cbam-effective-january-1-likely-to-force-indian-steel-exporters-to-cut-prices-by-15-22-1427205.htm",
+      "title": "GTRI: EU's CBAM likely to force Indian steel exporters to cut prices by 15-22% (SteelOrbis)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "expected to hurt Indian exports with exporters may be forced to cut prices 15-22 percent",
+      "statement": "GTRI expects Indian steel exporters may have to cut prices 15-22% so EU importers can pay CBAM.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.downtoearth.org.in/economy/eus-carbon-rules-enter-implementation-phase-putting-indian-msmes-under-pressure",
+      "title": "EU's carbon rules enter implementation phase, putting Indian MSMEs under pressure (Down To Earth)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Some smaller European buyers that previously purchased one or two containers, typically 20 to 25 tonnes, have disappeared.",
+      "statement": "A Gujarat stainless steel maker says smaller European buyers of 20-25 tonnes have disappeared because of CBAM cost and paperwork.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://www.downtoearth.org.in/economy/eus-carbon-rules-enter-implementation-phase-putting-indian-msmes-under-pressure",
+      "title": "EU's carbon rules enter implementation phase, putting Indian MSMEs under pressure (Down To Earth)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "We have been consulting experts for months to get everything in place so we can get necessary compliances and certifications done … He estimates that compliance and certification could cost a company Rs 5-10 million, depending on the manufacturing capacity.",
+      "statement": "A Kolkata steel MD has consulted experts for months and estimates compliance and certification at Rs 5-10 million per company.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "50f2503c-730b-4bd8-98bd-bff3b386220c",
+        "41ee3bdc-b16d-43bd-81b2-3505e6944a03"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://www.downtoearth.org.in/economy/eus-carbon-rules-enter-implementation-phase-putting-indian-msmes-under-pressure",
+      "title": "EU's carbon rules enter implementation phase, putting Indian MSMEs under pressure (Down To Earth)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Consultants are available, but many are still learning the requirements and are not readily accessible across the country.",
+      "statement": "Consultants exist but many are still learning and hard to reach across India.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://www.downtoearth.org.in/economy/eus-carbon-rules-enter-implementation-phase-putting-indian-msmes-under-pressure",
+      "title": "EU's carbon rules enter implementation phase, putting Indian MSMEs under pressure (Down To Earth)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Obtaining the emissions data needed from electricity suppliers has been difficult, despite writing several times over the past 8-9 months to CESC.",
+      "statement": "A West Bengal fabricator has struggled for 8-9 months to get emissions data from its power utility.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "50f2503c-730b-4bd8-98bd-bff3b386220c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.downtoearth.org.in/economy/eus-carbon-rules-enter-implementation-phase-putting-indian-msmes-under-pressure",
+      "title": "EU's carbon rules enter implementation phase, putting Indian MSMEs under pressure (Down To Earth)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Normally, we start getting orders for the next year in October,",
+      "statement": "A fabricated-steel exporter says EU orders that normally start in October are being held back.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.fabory.com/en/group/news/CBAM-blind-spot",
+      "title": "CBAM and fasteners: what buyers need to know | Fabory",
+      "source_type": "company_site",
+      "published_at": "2026-07-02",
+      "quote": "Without it, importers default to the highest possible emissions assumptions, and the cost passed through to the buyer reflects that worst-case calculation.",
+      "statement": "An EU fastener distributor says that without verified data, importers use worst-case defaults and pass that cost on.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": "Fabory"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.fabory.com/en/group/news/CBAM-blind-spot",
+      "title": "CBAM and fasteners: what buyers need to know | Fabory",
+      "source_type": "company_site",
+      "published_at": "2026-07-02",
+      "quote": "More than 85% of fastener volume consumed in the EU and UK is sourced from outside the EU, predominantly Asia.",
+      "statement": "Over 85% of EU/UK fastener volume is imported, mostly from Asia.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Fabory"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://www.fabory.com/en/group/news/CBAM-blind-spot",
+      "title": "CBAM and fasteners: what buyers need to know | Fabory",
+      "source_type": "company_site",
+      "published_at": "2026-07-02",
+      "quote": "CBAM gives us a lever: we can use it to ensure that carbon emissions decline over time and to shape our supply chain around partners who are both able and willing to invest in the necessary measures.",
+      "statement": "Fabory plans to shape its supply base around suppliers willing to invest in CBAM measures, i.e. emissions data becomes a supplier-selection criterion.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": "Fabory"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://www.bossard.com/ch-en/about-us/supplier-portal/cbam-help-center/",
+      "title": "Bossard CBAM Help Center for Suppliers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Reporting of required data will be possible by Bossard’s Supplier Portal, either by directly inputting or by uploading the completed EFDA template.",
+      "statement": "Bossard collects supplier CBAM data through its own portal using the free EFDA template.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "50f2503c-730b-4bd8-98bd-bff3b386220c",
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": "Bossard"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://fastenerandfixing.com/insight/efda-s-tools-to-cope-with-cbam",
+      "title": "EFDA's tools to cope with CBAM (Fastener + Fixing Magazine)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Despite all our efforts, the number of suppliers that returned the template with specific emission values was only 12% a few months ago.",
+      "statement": "Only 12% of suppliers returned the EFDA template with specific emission values.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "50f2503c-730b-4bd8-98bd-bff3b386220c",
+        "b8f089a0-f240-4da5-a684-8ad1eeee6dea"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://fastenerandfixing.com/insight/efda-s-tools-to-cope-with-cbam",
+      "title": "EFDA's tools to cope with CBAM (Fastener + Fixing Magazine)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "the EFDA CBAM Working Group, together with the consultancy Carboneer, has added an EFDA Calculator to the EFDA Template. The EFDA Calculator makes it easier for fastener manufacturers to calculate the data to be supplied for direct and indirect emissions.",
+      "statement": "The EU fastener distributors' association gives suppliers a free template with a built-in emissions calculator.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://fastenerandfixing.com/insight/efda-s-tools-to-cope-with-cbam",
+      "title": "EFDA's tools to cope with CBAM (Fastener + Fixing Magazine)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "For this reason, EFDA is advocating for fasteners to be excluded from the scope of CBAM.",
+      "statement": "EFDA lobbies to exclude fasteners from CBAM, a regulatory risk for a fastener-focused product.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://greensutra.in/question/cbam-mark-up-default-values-steel/",
+      "title": "CBAM Mark-Up on Steel Default Values | GreenSutra",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CBAM default values for steel carry a regulatory mark-up of 10 percent in 2026, 20 percent in 2027 and 30 percent from 2028 onwards under Implementing Regulation (EU) 2025/2621.",
+      "statement": "Default values carry a mark-up rising from 10% (2026) to 30% (2028+).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": "GreenSutra"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://greensutra.in/cbam-cost-calculator/",
+      "title": "CBAM Cost Calculator | GreenSutra",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A free estimate of the CBAM cost EU buyers face on goods of India origin, year by year from 2026 to 2034. The calculator compares Commission default values, including the mark-up, with verified actual emissions, and shows the saving that verified data delivers at the negotiation table.",
+      "statement": "GreenSutra already publishes a free default-vs-verified CBAM cost calculator for India-origin goods, which is the idea's proposed 'cheapest test'.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": "GreenSutra"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://greensutra.in/question/cbam-actual-data-vs-default-values-cost/",
+      "title": "CBAM Default Values vs Verified Data: Cost | GreenSutra",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The declarant surrenders 4.708 minus 1.336, or 3.372 certificates, about EUR 278 at the third-quarter 2026 price of EUR 82.32.",
+      "statement": "On defaults, one tonne of Indian hot-rolled steel imported in Q3 2026 costs the EU importer about EUR 278 in certificates.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": "GreenSutra"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://www.tribuneindia.com/news/business/sepc-set-up-by-ministry-of-commerce-and-industry-launches-carbon-cell-with-cleancarbon-ai-to-empower-indian-exporters-on-cbam-compliance/amp",
+      "title": "SEPC launches Carbon Cell with Cleancarbon.ai (Tribune)",
+      "source_type": "news",
+      "published_at": "2025-08-15",
+      "quote": "launched “Carbon Cell”, a dedicated end-to-end Carbon Border Adjustment Mechanism (CBAM) reporting support platform.",
+      "statement": "A Commerce Ministry export promotion council (SEPC) has launched a CBAM support platform with CleanCarbon.ai, occupying the export-promotion-body channel.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": "CleanCarbon.ai"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://www.freepressjournal.in/business/govt-may-reimburse-cbam-certification-costs-for-small-steel-exporters-under-export-scheme",
+      "title": "Govt May Reimburse CBAM Certification Costs For Small Steel Exporters (Free Press Journal)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "eligible micro and small exporters may receive reimbursement of up to 90% of the certification and verification expenses. … The certification process is expected to cost around Rs 10 lakh per company",
+      "statement": "A proposed scheme would reimburse up to 90% of CBAM certification and verification costs (about Rs 10 lakh per company) for micro and small exporters.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "41ee3bdc-b16d-43bd-81b2-3505e6944a03"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://greensutra.in/question/when-will-cbam-verifiers-be-accredited/",
+      "title": "When Will First CBAM Verifiers Be Accredited? | GreenSutra",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "As of 11 October 2026, no accredited verifier list had been published on the Commission verification page.",
+      "statement": "As of October 2026 no accredited CBAM verifier had been listed, so the 'actual data' path is not yet usable for most exporters.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "41ee3bdc-b16d-43bd-81b2-3505e6944a03"
+      ],
+      "company_name": "GreenSutra"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://kpmg.com/uk/en/insights/tax/tmd-uk-cbam-gets-practical.html",
+      "title": "UK CBAM gets practical (KPMG)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Businesses should compare the cost and effort of obtaining verified actual emissions data against the potential liability associated with the applicable default value.",
+      "statement": "KPMG advises importers to weigh the cost of verified data against the default-value liability, which is the decision the idea targets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://www.orfonline.org/expert-speak/it-s-not-the-carbon-tax-it-s-the-paperwork",
+      "title": "It's Not the Carbon Tax, It's the Paperwork (ORF)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As of 2025, India has a limited pool of auditors familiar with EU standards.",
+      "statement": "India has few auditors familiar with EU standards.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "41ee3bdc-b16d-43bd-81b2-3505e6944a03"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.flexport.com/blog/cbam-update-a-welcome-break-for-small-importers/",
+      "title": "CBAM Update: A Welcome Break for Small Importers | Flexport",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "You’re no longer required to collect or justify actual emissions data … Reports will not be considered incomplete if actual data is missing",
+      "statement": "After the simplification, importers can declare on defaults without collecting actual data.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b8f089a0-f240-4da5-a684-8ad1eeee6dea",
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.flexport.com/blog/cbam-update-a-welcome-break-for-small-importers/",
+      "title": "CBAM Update: A Welcome Break for Small Importers | Flexport",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "No Reporting Required for Imports Under 50 Tons Annually",
+      "statement": "Importers under 50 tonnes a year are exempt, so small EU buyers of a tiny exporter may need no data at all.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b8f089a0-f240-4da5-a684-8ad1eeee6dea"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.fastmarkets.com/insights/inside-the-default-benchmark-spread-reshaping-eu-steel-trade/",
+      "title": "Inside the default-benchmark spread reshaping EU steel trade (Fastmarkets)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Indian coal-based DRI has less scope to do so because the published default is closer to the physical emissions of the process. In that case, verification can remove the penalty embedded in the default methodology, but not the emissions inherent in the production route itself.",
+      "statement": "For Indian coal-based DRI steel, the default is close to real emissions, so verification saves little: 'actual' may not pay off for many Indian inputs.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.fastmarkets.com/insights/inside-the-default-benchmark-spread-reshaping-eu-steel-trade/",
+      "title": "Inside the default-benchmark spread reshaping EU steel trade (Fastmarkets)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Across hot-rolled coil, the defaults imply an average effective tariff rate of more than 15% in 2026 unless action is taken to verify emissions or shift trade flows.",
+      "statement": "Defaults imply an effective tariff of over 15% on hot-rolled coil in 2026.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.basispointinsight.com/Story/-india-s-metal-exports-to-eu-plunge-24--as-cbam-reporting-hits-msmes-_30e1360663c9.html",
+      "title": "India's Metal Exports to EU Plunge 24% (BasisPointInsight)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As a result, several firms have stopped exporting to the EU, leading to a 24.4% drop in India’s steel and aluminum exports, from $7.71 billion in 2023-24 to $5.82 billion in 2024-25.",
+      "statement": "India's steel and aluminium exports to the EU fell 24.4% in FY25, attributed by GTRI to CBAM compliance.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "24fe78c2-79cc-471d-9aa3-ef2aad4d5263"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://indiaseatradenews.com/eu-carbon-tax-expansion-a-high-stakes-hurdle-for-msme-steel-and-aluminum-exporters/",
+      "title": "EU Carbon Tax Expansion: A High-Stakes Hurdle for MSME Steel and Aluminum Exporters (India Seatrade News)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "proposing to bring approximately 180 additional steel and aluminum-intensive products under its carbon tax regime by January 1, 2028.",
+      "statement": "About 180 downstream products may enter CBAM from 2028 (proposal, not yet adopted).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://fastenerandfixing.com/management-systems/get-on-top-of-cbam-with-the-cbamboo-platform",
+      "title": "Get on top of CBAM with the CBAMBOO platform",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "if someone asks me which industry CBAM is hitting harder than any other, my answer is simple – fasteners.",
+      "statement": "CBAMBOO's CEO says fasteners are the industry hit hardest by CBAM.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "CBAMBOO"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://fastenerandfixing.com/management-systems/get-on-top-of-cbam-with-the-cbamboo-platform",
+      "title": "Get on top of CBAM with the CBAMBOO platform",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "CBAM requires primary data from each supplier of imports, with an information flow that ultimately must be chased back to the original manufacturer of the products.",
+      "statement": "CBAMBOO serves importers chasing data back through supply chains.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": "CBAMBOO"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://cleancarbon.ai/",
+      "title": "CleanCarbon.ai home page",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "At Bhansali Component & Fasteners, we were able to see enhancement in our CBAM sustainability reporting after CleanCarbon.ai helped us in setting up an operational CBAM reporting and data management plan.",
+      "statement": "An Indian fastener exporter credits CleanCarbon.ai for its CBAM reporting set-up.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "50f2503c-730b-4bd8-98bd-bff3b386220c",
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": "CleanCarbon.ai"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://cleancarbon.ai/",
+      "title": "CleanCarbon.ai home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Trusted by 200 Exporters for CBAM Advisory Worldwide",
+      "statement": "CleanCarbon.ai claims 200 exporter clients for CBAM advisory.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": "CleanCarbon.ai"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://www.thesustainabilitycloud.com/blog/cbam-reporting-in-efda-template/",
+      "title": "Effortless CBAM Reporting for Fastener Distributors | The Sustainability Cloud",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Moreover, the TSC NetZero helps compile the emissions data and submit them to EU importers using the EFDA template.",
+      "statement": "The Sustainability Cloud's tool compiles exporter data into the EFDA template for EU importers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": "The Sustainability Cloud"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://cbamguide.com/tools/supplier-request/",
+      "title": "CBAM Supplier Data Request Generator | CBAM Guide",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Getting actual emissions data from a non-EU supplier is the hardest part of CBAM, and it decides whether you pay on real figures or on default values with a mark-up.",
+      "statement": "A free supplier data-request generator exists for EU importers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b8f089a0-f240-4da5-a684-8ad1eeee6dea"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://knnindia.co.in/news/newsdetails/sectors/commerce-ministry-holds-awareness-session-on-eu-cbam-rules-for-exporters",
+      "title": "Commerce Ministry Holds Awareness Session on EU CBAM Rules (KNN India)",
+      "source_type": "news",
+      "published_at": "2026-08-19",
+      "quote": "The session, held in collaboration with the National Accreditation Board for Certification Bodies (NABCB) and Engineering Export Promotion Council (EEPC) at Vanijya Bhawan, was attended by around 100 exporters and industry stakeholders.",
+      "statement": "Government and EEPC run free CBAM awareness sessions for exporters.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "239ef82f-7422-4ecc-9e24-ea78fc906c9d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://www.carbonchain.com/blog/navigating-cbam-changes-what-importers-and-manufacturers-must-prepare-for",
+      "title": "Navigating CBAM changes | CarbonChain",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The key change in this update is the new de minimis threshold, designed to remove small and medium-sized enterprises (SMEs) from the reporting scope.",
+      "statement": "The 50-tonne de minimis is designed to remove small EU importers from scope.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b8f089a0-f240-4da5-a684-8ad1eeee6dea"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://www.reyher.de/en/company",
+      "title": "About REYHER",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Today, REYHER with an annual turnover of around 430 million euros counts as one of the leading trading companies in Europe and supplies over 12,000 customers worldwide from the central location in the Hamburg district of Altona.",
+      "statement": "REYHER is a Hamburg fastener trading company.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "REYHER"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.reyher.de/en/company",
+      "title": "About REYHER",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "our 960 staff ensure a daily product availability rate of over 99 percent.",
+      "statement": "REYHER has 960 staff.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "REYHER"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://www.fastbolt.com/",
+      "title": "Fastbolt Gruppe",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Die Firma Fastbolt wurde 1982 gegründet und vertreibt seither als Volumenimporteur Verbindungselemente an europäische Schraubenhändler.",
+      "statement": "Fastbolt is a volume importer of fasteners selling to European distributors.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Fastbolt"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://www.fastbolt.com/",
+      "title": "Fastbolt Gruppe",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Durch unsere Standorte in Deutschland, England, Portugal und China gelingt es uns gleichermaßen Kundennähe in Europa wie auch eine permanente Präsenz in den sich stetig weiterentwickelnden Beschaffungsmärkten Asiens sicherzustellen.",
+      "statement": "Fastbolt has sites in Germany, England, Portugal and China and sources from Asia.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Fastbolt"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://arvidnilsson.se/",
+      "title": "Arvid Nilsson",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "levererar vi säkra och hållbara fästelement till återförsäljare inom industri- och byggbranschen.",
+      "statement": "Arvid Nilsson supplies fasteners to industrial and construction resellers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Arvid Nilsson Sverige AB"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.efda-fastenerdistributors.org/members",
+      "title": "EFDA Members",
+      "source_type": "directory",
+      "published_at": null,
+      "quote": "Arvid Nilsson Sverige AB (Sweden)",
+      "statement": "Arvid Nilsson is a Swedish EFDA (MEFDA) member.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Arvid Nilsson Sverige AB"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.heco.se/",
+      "title": "Heco Nordiska",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Heco Skruvspecialisten är en del av Heco Nordiska, en heltäckande leverantör av byggrelaterad infästning till den nordiska industrin och detaljhandeln.",
+      "statement": "Heco Nordiska supplies construction fasteners to Nordic industry and retail.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Heco Nordiska AB"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.efda-fastenerdistributors.org/members",
+      "title": "EFDA Members",
+      "source_type": "directory",
+      "published_at": null,
+      "quote": "Heco Nordiska AB (Sweden)",
+      "statement": "Heco Nordiska is a Swedish EFDA (MEFDA) member.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Heco Nordiska AB"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.wuerth-industrie.com/web/de/wuerthindustrie/wuerthindustrie_cteilepartner.php",
+      "title": "Würth Industrie Service",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Im Mittelpunkt unserer Versorgungslösungen steht unser europäisches Logistikzentrum in Bad Mergentheim.",
+      "statement": "Würth Industrie Service runs its European logistics centre in Bad Mergentheim, Germany.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Würth Industrie Service"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "50f2503c-730b-4bd8-98bd-bff3b386220c",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Exporters typically hire consultants (about Rs 2 lakh a year in one case) or spend months with experts; few measure emissions (24%).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-13",
+            "ev-04"
+          ]
+        },
+        {
+          "statement": "Data must come from many small vendors and utilities that lack meters or don't respond.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-05",
+            "ev-09",
+            "ev-15"
+          ]
+        },
+        {
+          "statement": "Fastener importers collect data through the free EFDA template and their own supplier portals, but only 12% of suppliers returned specific values.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-20",
+            "ev-21"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "b8f089a0-f240-4da5-a684-8ad1eeee6dea",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "35% of surveyed MSMEs had received emissions-data requests from EU customers or intermediaries.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-03"
+          ]
+        },
+        {
+          "statement": "Importers may now declare on defaults without collecting actual data, and importers under 50 tonnes a year are exempt, so many small buyers may never ask.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-32",
+            "ev-33",
+            "ev-45"
+          ]
+        },
+        {
+          "statement": "No source measures how often buyers specifically ask for verified actual data rather than any data.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "41ee3bdc-b16d-43bd-81b2-3505e6944a03",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Reported costs range from about Rs 2 lakh a year for a consultant to Rs 10 lakh for certification and Rs 5-10 million for full compliance.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-28",
+            "ev-13"
+          ]
+        },
+        {
+          "statement": "A proposed government scheme would reimburse up to 90% of certification and verification costs for micro and small exporters.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-28",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "Verification capacity is scarce: no accredited CBAM verifier was listed as of October 2026.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29",
+            "ev-31"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "24fe78c2-79cc-471d-9aa3-ef2aad4d5263",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "On defaults, importers price the worst case and push it back onto suppliers through price cuts (15-22% estimated) or lost orders; small EU buyers have disappeared for some exporters.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-17",
+            "ev-11",
+            "ev-02",
+            "ev-12",
+            "ev-07"
+          ]
+        },
+        {
+          "statement": "EU distributors are starting to select suppliers able to provide emissions data.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "For coal-based Indian steel routes, defaults are close to real emissions, so verified data may save little.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "ba00d38d-6035-4aa8-a743-dc94adb60e4a",
+      "status": "no_evidence_found",
+      "summary": [
+        {
+          "statement": "No public evidence on who approves compliance purchases inside small exporters; needs interviews.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "239ef82f-7422-4ecc-9e24-ea78fc906c9d",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Exporters use consultants and Indian CBAM vendors (CleanCarbon.ai, The Sustainability Cloud, GreenSutra); importers use CBAMBOO and portals.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-40",
+            "ev-42",
+            "ev-39",
+            "ev-20"
+          ]
+        },
+        {
+          "statement": "Free tools already cover the decision step: GreenSutra's default-vs-verified calculator and the EFDA calculator.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25",
+            "ev-22"
+          ]
+        },
+        {
+          "statement": "The export-promotion channel is already taken: SEPC launched a CBAM platform with CleanCarbon.ai.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27"
+          ]
+        },
+        {
+          "statement": "Consultants are often still learning and hard to reach outside major centres.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "For the target products and input routes (e.g. coal-based DRI or induction-furnace steel), how often is verified actual data meaningfully below the default?",
+      "category": "other",
+      "priority": "high"
+    },
+    {
+      "question": "What would an exporter pay for a decision pack when GreenSutra's calculator is free and 90% of verification may be reimbursed?",
+      "category": "budget",
+      "priority": "high"
+    },
+    {
+      "question": "What share of EU buyers of small Indian exporters import over 50 tonnes a year and so need CBAM data at all?",
+      "category": "frequency",
+      "priority": "medium"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "GreenSutra",
+      "url": "https://greensutra.in",
+      "kind": "direct",
+      "description": "Indian CBAM consultancy with a free default-vs-verified cost calculator for India-origin goods and data preparation for verification.",
+      "pricing_note": "Calculator free",
+      "evidence_refs": [
+        "ev-25",
+        "ev-26",
+        "ev-24",
+        "ev-29"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-02",
+      "name": "CleanCarbon.ai",
+      "url": "https://cleancarbon.ai",
+      "kind": "direct",
+      "description": "Indian CBAM compliance, reporting and verification platform; partner of SEPC's Carbon Cell; claims 200 exporter clients.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-27",
+        "ev-40",
+        "ev-41"
+      ],
+      "sentiment": [
+        {
+          "statement": "A fastener exporter credits it with setting up CBAM reporting.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-40"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "The Sustainability Cloud (TSC NetZero)",
+      "url": "https://www.thesustainabilitycloud.com",
+      "kind": "direct",
+      "description": "Indian sustainability software with a CBAM tool that compiles exporter data into the EFDA template.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-42"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "EFDA template and calculator",
+      "url": "https://www.efda-fastenerdistributors.org",
+      "kind": "manual",
+      "description": "Free supplier template with built-in emissions calculator from the EU fastener distributors' association, used by importers such as Bossard.",
+      "pricing_note": "Free",
+      "evidence_refs": [
+        "ev-22",
+        "ev-21",
+        "ev-20"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "CBAMBOO",
+      "url": null,
+      "kind": "indirect",
+      "description": "Importer-side CBAM platform focused on fastener supply chains.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-38",
+        "ev-39"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Consultants",
+      "url": null,
+      "kind": "service",
+      "description": "CBAM consultants hired by exporters, often on annual fees.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-01",
+        "ev-13",
+        "ev-14"
+      ],
+      "sentiment": [
+        {
+          "statement": "Exporters say many consultants are still learning and are hard to access across India.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-07",
+      "name": "Government support (SEPC Carbon Cell, awareness sessions, proposed 90% reimbursement)",
+      "url": null,
+      "kind": "indirect",
+      "description": "Free or subsidised support routes for MSME exporters.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-27",
+        "ev-44",
+        "ev-28"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "Accepting default values",
+      "url": null,
+      "kind": "manual",
+      "description": "Importers declare on EU defaults without supplier data, allowed since the simplification.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-32",
+        "ev-17"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Many importers simply declare on default values, which is allowed, and push the cost back onto suppliers through price.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-32",
+        "ev-17",
+        "ev-11"
+      ]
+    },
+    {
+      "statement": "Exporters who respond hire consultants or Indian CBAM vendors.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-01",
+        "ev-13",
+        "ev-40"
+      ]
+    },
+    {
+      "statement": "Fastener importers collect data with the free EFDA template and calculator via their own portals.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-20",
+        "ev-22"
+      ]
+    },
+    {
+      "statement": "Free calculators already compare default and verified costs for Indian goods.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-25"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Fabory",
+      "website": "https://www.fabory.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Fastener import and distribution",
+      "description": "Fastener distributor publicly discussing CBAM defaults vs verified supplier data and supplier selection.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-17",
+        "ev-19",
+        "ev-18"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Publicly frames verified supplier data as a lever and plans to select suppliers on it; location not evidenced on a fetched page.",
+          "evidence_refs": [
+            "ev-17",
+            "ev-19",
+            "ev-18"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-02",
+      "name": "Bossard",
+      "website": "https://www.bossard.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Fastener import and distribution",
+      "description": "Fastener distributor running a CBAM supplier portal on the EFDA template.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-20"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Already collects supplier CBAM data via its own portal (a possible sponsor, or a reason suppliers need no extra tool).",
+          "evidence_refs": [
+            "ev-20"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "REYHER",
+      "website": "https://www.reyher.de",
+      "icp_id": null,
+      "location": "Hamburg, Germany",
+      "industry": "Fastener import and distribution",
+      "description": "Large Hamburg fastener trader; CN 7318 importer profile.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-50",
+        "ev-51"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "EU fastener trader within the ICP size band; no CBAM-specific evidence found.",
+          "evidence_refs": [
+            "ev-50",
+            "ev-51"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-50"
+      },
+      "size_estimate": {
+        "min": 960,
+        "max": 960,
+        "signal": "Site: 960 staff",
+        "evidence_ref": "ev-51"
+      }
+    },
+    {
+      "ref": "co-04",
+      "name": "Fastbolt",
+      "website": "https://www.fastbolt.com",
+      "icp_id": null,
+      "location": "Germany",
+      "industry": "Fastener import and distribution",
+      "description": "Volume importer of fasteners sourcing from Asia for European distributors.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-52",
+        "ev-53"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Volume importer, so above the 50-tonne threshold and a direct CBAM declarant.",
+          "evidence_refs": [
+            "ev-52",
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-53"
+      }
+    },
+    {
+      "ref": "co-05",
+      "name": "Arvid Nilsson Sverige AB",
+      "website": "https://arvidnilsson.se",
+      "icp_id": null,
+      "location": "Sweden",
+      "industry": "Fastener import and distribution",
+      "description": "Swedish fastener supplier to industrial and construction resellers; EFDA member.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-54",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "EFDA member fastener supplier; import volumes unknown.",
+          "evidence_refs": [
+            "ev-54",
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-55"
+      }
+    },
+    {
+      "ref": "co-06",
+      "name": "Heco Nordiska AB",
+      "website": "https://www.heco.se",
+      "icp_id": null,
+      "location": "Sweden",
+      "industry": "Fastener import and distribution",
+      "description": "Nordic construction-fastener supplier; EFDA member.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-56",
+        "ev-57"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "EFDA member; import volumes unknown.",
+          "evidence_refs": [
+            "ev-56",
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      }
+    },
+    {
+      "ref": "co-07",
+      "name": "Würth Industrie Service",
+      "website": "https://www.wuerth-industrie.com",
+      "icp_id": null,
+      "location": "Bad Mergentheim, Germany",
+      "industry": "Fastener import and distribution",
+      "description": "C-parts supplier with a European logistics centre in Germany.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Large C-parts supplier; no CBAM-specific evidence found.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      }
+    }
+  ]
+}
