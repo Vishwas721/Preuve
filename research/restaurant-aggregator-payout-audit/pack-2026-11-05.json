@@ -1,0 +1,1792 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "639c2ad4-b6e1-4a60-9667-fe45b2192591",
+    "researcher": "claude-code",
+    "started_at": "2026-11-05T09:00:00+05:30",
+    "finished_at": "2026-11-05T12:30:00+05:30",
+    "queries": [
+      "Swiggy Zomato payout reconciliation restaurant deductions mismatch",
+      "Zomato restaurant partner payout deducted wrongly complaint",
+      "NRAI Zomato Swiggy commission restaurants complaint CCI deductions",
+      "aggregator reconciliation software restaurants India Swiggy Zomato settlement",
+      "reddit restaurant owner Swiggy Zomato payout deductions reconcile",
+      "Cointab Swiggy Zomato reconciliation restaurants",
+      "job \"aggregator reconciliation\" Swiggy Zomato cloud kitchen accounts executive",
+      "[contradiction] Swiggy Zomato payout transparency improved restaurant partners new payout dashboard",
+      "GetMyRefund restaurant Swiggy Zomato deduction recovery",
+      "Restroworks OR Posist OR Rista aggregator reconciliation Swiggy Zomato payout",
+      "Zomato restaurant partner payout dispute raise ticket help centre payout FAQ",
+      "cloud kitchen owner reconciliation Swiggy Zomato hours every week spreadsheet",
+      "multi-brand cloud kitchen company Bengaluru our brands Swiggy Zomato",
+      "cloud kitchen startup Mumbai Pune our brands delivery-only multiple brands",
+      "Delhi NCR Gurgaon cloud kitchen company multiple virtual brands founders",
+      "Hyderabad Chennai cloud kitchen brand portfolio company brands list",
+      "\"multi-brand cloud kitchen\" India company website about us",
+      "\"cloud kitchen\" brands available on Swiggy and Zomato our kitchens India",
+      "\"house of brands\" cloud kitchen India delivery brands",
+      "\"cloud kitchen\" Pune our brands contact us",
+      "\"cloud kitchen\" Bangalore small company brands Koramangala HSR Indiranagar",
+      "\"virtual brands\" restaurant India cloud kitchens Gurugram Noida Delhi"
+    ],
+    "notes": "Most order-level reconciliation evidence comes from vendors selling reconciliation (Petpooja, UrbanPiper, Terra Insight, BillNote, restaurantdaily); news evidence (2025-2026) is mostly about unconsented ad/discount deductions rather than arithmetic settlement errors. Contradiction searches were run on platform transparency and error rarity; Swiggy's <1% claim, Petpooja's 'some find everything lines up' and the small-recovery estimate are included. No independent survey of time spent or error rates was found. Dispute windows conflict across sources (7-14 vs ~90 days). Cointab (cointab.in) failed TLS verification and a job posting on foundit.in returned 403; both were left out. Prospecting fell short: only 8 companies with fetchable own sites were found (target 20+); many small cloud kitchens have no site, JS-only sites or unresolvable domains. Contacts only for Kouzina (team page). Several prospects are larger than the 5-50 employee ICP band."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://www.urbanpiper.com/blog/save-money-by-identifying-payment-errors-on-zomato-swiggy",
+      "title": "[[Blog Title]]",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "One of our restaurant partners, The Pizza Bakery, was spending 3-5 hours of weekly manual effort doing this to ensure that they were being paid fairly.",
+      "statement": "UrbanPiper reports a multi-outlet restaurant customer spent 3-5 hours a week manually checking aggregator payout sheets against sales.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0939e49d-abcd-4ecc-809e-d2285c0e6444",
+        "dc5e4ced-6e35-460a-a855-cefd8e4bf15e"
+      ],
+      "company_name": "The Pizza Bakery"
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://www.urbanpiper.com/case-study/the-pizza-bakery-reconciliation-tool",
+      "title": "Build the future of your restaurant.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "They were working almost half a day every week on reconciling payout reports. Despite a large amount of manual effort, there seemed to be a high propensity for error.",
+      "statement": "In a vendor case study, the restaurant's accountants and auditors spent almost half a day weekly reconciling payout reports, with frequent errors.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0939e49d-abcd-4ecc-809e-d2285c0e6444",
+        "dc5e4ced-6e35-460a-a855-cefd8e4bf15e"
+      ],
+      "company_name": "The Pizza Bakery"
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://www.urbanpiper.com/case-study/the-pizza-bakery-reconciliation-tool",
+      "title": "Build the future of your restaurant.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With 19 restaurants across 2 platforms, The Pizza Bakery gets 38 reports weekly and 152 reports monthly from food apps.",
+      "statement": "A 19-outlet chain receives 38 payout reports a week from two aggregators, which drives the reconciliation workload.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0939e49d-abcd-4ecc-809e-d2285c0e6444"
+      ],
+      "company_name": "The Pizza Bakery"
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://www.urbanpiper.com/case-study/the-pizza-bakery-reconciliation-tool",
+      "title": "Build the future of your restaurant.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I realized that UrbanPiper is best suited to carry out this reconciliation because it already has our order data on the POS.",
+      "statement": "The customer chose its existing POS vendor for reconciliation because the POS already held its order data, an advantage for POS-bundled tools over a standalone tool.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd",
+        "51079200-a7a5-4704-89fd-aa4fb95d2e1b"
+      ],
+      "company_name": "The Pizza Bakery"
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://www.urbanpiper.com/case-study/the-pizza-bakery-reconciliation-tool",
+      "title": "Build the future of your restaurant.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Pizza Bakery explored a few companies offering reconciliation solutions but decided to not go ahead with them due to certain gaps in their product. … Since Pizza Bakery was already using UrbanPiper’s restaurant management platform, they turned to us looking for a solution.",
+      "statement": "The restaurant evaluated other reconciliation vendors before choosing its POS vendor's tool; the decision was driven at co-founder level per the case study.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd",
+        "51079200-a7a5-4704-89fd-aa4fb95d2e1b"
+      ],
+      "company_name": "The Pizza Bakery"
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://www.urbanpiper.com/blog/are-you-leaving-money-on-the-table",
+      "title": "[[Blog Title]]",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "To accomplish reconciliation, dedicated staff are required to manually download, tens to hundreds of documents/files (depend's on the size of your operation), with confusing formats, from multiple websites/sources.",
+      "statement": "UrbanPiper describes reconciliation as a manual job of downloading many differently formatted files, done by dedicated staff.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "dc5e4ced-6e35-460a-a855-cefd8e4bf15e",
+        "0939e49d-abcd-4ecc-809e-d2285c0e6444"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://www.urbanpiper.com/blog/are-you-leaving-money-on-the-table",
+      "title": "[[Blog Title]]",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For larger operations, this becomes a nightmare exponentially, as the number of outlets and platforms grows. … It's goes even a notch upwards if you are running multiple brands from a single physical outlet.",
+      "statement": "The vendor says reconciliation difficulty grows with outlets and platforms and is worse for multi-brand kitchens.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0939e49d-abcd-4ecc-809e-d2285c0e6444",
+        "dc5e4ced-6e35-460a-a855-cefd8e4bf15e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://www.urbanpiper.com/blog/are-you-leaving-money-on-the-table",
+      "title": "[[Blog Title]]",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For example, The restaurant is not required to shoulder the discount burden for coupons sponsered by Banks, Credit card companies or Payment gateways. … However it may have been added under your account head in the payout sheet.",
+      "statement": "The vendor gives a concrete error type: bank- or wallet-sponsored coupon discounts wrongly charged to the restaurant in the payout sheet.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://www.urbanpiper.com/blog/save-money-by-identifying-payment-errors-on-zomato-swiggy",
+      "title": "[[Blog Title]]",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Food delivery giants such as Zomato and Swiggy process over 1.5 million orders every single day. Given the scale at which they operate, there are bound to be a few mistakes in their payouts.",
+      "statement": "UrbanPiper asserts payout mistakes occur at aggregator scale, but gives no rate.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://blog.petpooja.com/operations-workflows/smart-restaurants-reconcile-thousands-orders-in-minutes/",
+      "title": "How Smart Restaurants Reconcile Orders in Minutes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "At 80+ daily orders, a manual CSV comparison takes 2-3 hours per week.",
+      "statement": "Petpooja estimates 2-3 hours a week of manual reconciliation at 80+ daily orders.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0939e49d-abcd-4ecc-809e-d2285c0e6444"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://blog.petpooja.com/operations-workflows/smart-restaurants-reconcile-thousands-orders-in-minutes/",
+      "title": "How Smart Restaurants Reconcile Orders in Minutes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Some owners run it, find everything lines up, and drop to a monthly check with an easy mind.",
+      "statement": "Petpooja itself says some owners find their payouts line up and drop to a monthly check, i.e. errors are not universal.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://blog.petpooja.com/operations-workflows/smart-restaurants-reconcile-thousands-orders-in-minutes/",
+      "title": "How Smart Restaurants Reconcile Orders in Minutes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "There is no minimum, but the payoff becomes tangible once you cross 30-40 online transactions daily. Below that, differences are infrequent and small.",
+      "statement": "Below 30-40 online orders a day, Petpooja says differences are infrequent and small, which limits value for small outlets.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://blog.petpooja.com/operations-workflows/smart-restaurants-reconcile-thousands-orders-in-minutes/",
+      "title": "How Smart Restaurants Reconcile Orders in Minutes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Status mismatches. An order your POS recorded as delivered but the platform settled as cancelled, or vice versa. These are the costliest because the full order value stays unsettled until it is raised.",
+      "statement": "Petpooja names delivered-vs-cancelled status mismatches as the most common and costliest reconciliation difference.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://blog.petpooja.com/operations-workflows/smart-restaurants-reconcile-thousands-orders-in-minutes/",
+      "title": "How Smart Restaurants Reconcile Orders in Minutes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Petpooja POSS includes a built-in reconciliation report that runs this comparison against the payout statement you share, at no extra cost.",
+      "statement": "The market-leading POS bundles payout reconciliation at no extra cost, which caps what a standalone tool can charge its users.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://blog.petpooja.com/operations-workflows/smart-restaurants-reconcile-thousands-orders-in-minutes/",
+      "title": "How Smart Restaurants Reconcile Orders in Minutes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Your partner agreement sets a window for raising a query on a payout, and it is usually short.",
+      "statement": "Petpooja says the contractual window to query a payout is usually short, which makes timely detection urgent.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.petpooja.com/poss/online-order-reconciliation",
+      "title": "Online Order Reconciliation Software for Restaurants | Petpooja",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Orders marked delivered on Petpooja but cancelled on the payout, or vice versa. Surfaced side-by-side, ready to raise with the aggregator. … Per-order view of commissions charged and discounts applied. Cross-verify against your contract in one glance.",
+      "statement": "Petpooja's product page shows an order-level reconciliation report with status mismatches and per-order commission checks.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.terra-insight.com/insights/swiggy-restaurant-settlement-reconciliation/",
+      "title": "Swiggy Restaurant Settlement Reconciliation: Food vs Instamart Payouts | Terra Insight",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Swiggy Partner Portal enforces a 7 to 14 day dispute window for settlement entries. A penalty or commission variance not raised within this window becomes permanent.",
+      "statement": "A reconciliation vendor states Swiggy's dispute window is 7-14 days; other sources say ~90 days, so the window is uncertain.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.terra-insight.com/insights/swiggy-restaurant-settlement-reconciliation/",
+      "title": "Swiggy Restaurant Settlement Reconciliation: Food vs Instamart Payouts | Terra Insight",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Swiggy aggregator payout reconciliation through payment gateway reconciliation is on the TransactIG roadmap; the deduction stack is denser than card or UPI settlement.",
+      "statement": "Terra Insight's TransactIG lists Swiggy payout reconciliation as a roadmap item, not a shipped product.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://restaurantdaily.vercel.app/tools/aggregator-payout",
+      "title": "Aggregator payout reconciliation India — Swiggy / Zomato payout checker",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A restaurant doing ₹10 lakh/month in aggregator revenue may have ₹5,000–15,000 in unrecovered discrepancies annually if reconciliation is not done.",
+      "statement": "A free-tool publisher estimates only ₹5,000-15,000 a year of unrecovered discrepancies on ₹10 lakh/month of aggregator revenue, below the idea's ₹799-1,999/month price.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://restaurantdaily.vercel.app/tools/aggregator-payout",
+      "title": "Aggregator payout reconciliation India — Swiggy / Zomato payout checker",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Swiggy (via Swiggy for Restaurant app → Help → Payments), Zomato (via Zomato for Business → Support → Payments). The sooner the ticket is raised, the more likely a resolution — most platforms have a 90-day window to dispute charges.",
+      "statement": "Disputes are raised as tickets in each platform's partner app; this source cites a ~90-day window.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://restaurantdaily.vercel.app/tools/aggregator-payout",
+      "title": "Aggregator payout reconciliation India — Swiggy / Zomato payout checker",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Escalate if unresolved in 15 days. Platform support tickets have SLAs of 7–15 days. If unresolved, escalate to your Key Account Manager (KAM) or the platform's restaurant partner WhatsApp group.",
+      "statement": "The described dispute path is partner-app ticket, then account manager or partner WhatsApp group escalation.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://odishatv.in/news/viral/zomato-hidden-fees-restaurant-owner-left-with-rs-415-from-rs-16486-earnings-sparks-outrage-264612",
+      "title": "Zomato’s hidden fees: Restaurant owner left with Rs 415 from Rs 16,486 earnings; sparks outrage",
+      "source_type": "news",
+      "published_at": "2025-06-01",
+      "quote": "From February to May 2025, his restaurant generated 36 orders worth Rs 16,486.70, but after Zomato’s deductions, he received a mere Rs 415.48, a staggering 97.5% deduction.",
+      "statement": "A small Noida restaurant reported 97.5% of four months of Zomato order value deducted, mostly as growth-services charges.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://odishatv.in/news/viral/zomato-hidden-fees-restaurant-owner-left-with-rs-415-from-rs-16486-earnings-sparks-outrage-264612",
+      "title": "Zomato’s hidden fees: Restaurant owner left with Rs 415 from Rs 16,486 earnings; sparks outrage",
+      "source_type": "news",
+      "published_at": "2025-06-01",
+      "quote": "The biggest culprit, as in his screenshots, was Zomato’s “Investments in growth services and miscellaneous deductions,” which alone accounted for Rs 9,884.98 across the cycles.",
+      "statement": "Most of the deduction in this case was growth-services (ads) charges, which the owner alleged were unconsented, rather than order-level settlement errors.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://www.freepressjournal.in/viral/noida-restaurant-owner-quits-zomato-allegedly-over-hidden-charges-unauthorised-ads-and-lack-of-support",
+      "title": "Noida Restaurant Owner Quits Zomato Allegedly Over Hidden Charges, Unauthorised Ads And Lack Of Support",
+      "source_type": "news",
+      "published_at": "2025-06-01",
+      "quote": "The restaurant owner also shared screenshots showing that they received zero payouts for the last two months, despite continuing to take orders.",
+      "statement": "The same Noida restaurant reported two months of zero payouts while still taking orders.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://www.theweek.in/news/biz-tech/2026/07/30/wont-take-orders-anymore-why-bengaluru-restaurants-are-threatening-to-boycott-zomato-swiggy.html",
+      "title": "‘Won’t take orders anymore’: Why Bengaluru restaurants are threatening to boycott Zomato, Swiggy",
+      "source_type": "news",
+      "published_at": "2026-07-30",
+      "quote": "The association, along with other restaurant groups, has asked the platforms for a written response, demanding transparency in their payouts. … They also add that the platforms often charge them for advertising without explicit consent.",
+      "statement": "Bengaluru's hotel association demanded payout transparency and complained of advertising charges without consent (July 2026).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://www.businesstoday.in/india/story/bengaluru-restaurants-to-boycott-swiggy-zomato-from-august-15-heres-why-545884-2026-07-29",
+      "title": "Bengaluru restaurants to boycott Swiggy, Zomato from August 15. Here's why - BusinessToday",
+      "source_type": "news",
+      "published_at": "2026-07-29",
+      "quote": "A comprehensive, itemised monthly settlement report on deductions … Allocation of a dedicated relationship manager for individual restaurants to quickly resolve payment discrepancies",
+      "statement": "Restaurant associations' formal demands include itemised settlement reports and a relationship manager to resolve payment discrepancies, showing the dispute process is a pain point.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c",
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://www.thenewsminute.com/money/nrai-vs-aggregators-association-files-addl-info-cci-against-swiggy-zomato-152242",
+      "title": "NRAI vs aggregators: Association files addl info with CCI against Swiggy, Zomato",
+      "source_type": "news",
+      "published_at": "2021-08-02",
+      "quote": "NRAI said there have been numerous instances of delay in payment by Zomato and Swiggy which has affected the entire cash flow of its partners.",
+      "statement": "NRAI told the CCI of numerous payment delays by both aggregators (2021).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://www.medianama.com/2026/04/223-swiggy-ad-charges-without-consent-unauthorized-deductions-restaurants/",
+      "title": "Swiggy ran ads without restaurant partners' consent",
+      "source_type": "news",
+      "published_at": "2026-04-01",
+      "quote": "A third owner running a chain of six restaurants found Rs 16 lakhs deducted across all outlets since January, in small amounts spread across each restaurant with no email, message, or notification.",
+      "statement": "A six-outlet chain reportedly found Rs 16 lakh of small unnotified deductions spread across outlets, the kind of pattern only a systematic audit catches.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://www.medianama.com/2026/04/223-swiggy-ad-charges-without-consent-unauthorized-deductions-restaurants/",
+      "title": "Swiggy ran ads without restaurant partners' consent",
+      "source_type": "news",
+      "published_at": "2026-04-01",
+      "quote": "After official channels failed, the owner used a private consumer resolution service, GetMyRefund, which charges no upfront fee and takes 10% of any recovered amount. The owner recovered approximately 70% of the claimed amount.",
+      "statement": "A contingency recovery service (10% of recovered amount) exists and recovered ~70% of one chain's claim, evidence that contingency pricing is accepted.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c",
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://www.medianama.com/2026/04/223-swiggy-ad-charges-without-consent-unauthorized-deductions-restaurants/",
+      "title": "Swiggy ran ads without restaurant partners' consent",
+      "source_type": "news",
+      "published_at": "2026-04-01",
+      "quote": "When the owner tried raising a complaint, the partner dashboard returned a “User JSON error”, blocking it entirely.",
+      "statement": "One owner reports the partner dashboard blocked a complaint with an error.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://www.medianama.com/2026/04/223-swiggy-ad-charges-without-consent-unauthorized-deductions-restaurants/",
+      "title": "Swiggy ran ads without restaurant partners' consent",
+      "source_type": "news",
+      "published_at": "2026-04-01",
+      "quote": "MediaNama could not independently verify the claims made in the Reddit posts.",
+      "statement": "The MediaNama cases are unverified Reddit accounts.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.outlookbusiness.com/news/restaurants-allege-zomato-swiggy-charge-them-for-ads-discounts-without-consent",
+      "title": "Restaurants Allege Zomato, Swiggy Charge Them for Ads, Discounts Without Consent – Outlook Business",
+      "source_type": "news",
+      "published_at": "2025-06-01",
+      "quote": "Out of over 3,50,000 restaurant partners that engage with Swiggy, this issue affects fewer than 1%. Complaints are logged through our ticketing system and resolved within 24 hours.",
+      "statement": "A source close to Swiggy says unconsented charges affect fewer than 1% of 3.5 lakh partners and are resolved within 24 hours.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4",
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.outlookbusiness.com/news/restaurants-allege-zomato-swiggy-charge-them-for-ads-discounts-without-consent",
+      "title": "Restaurants Allege Zomato, Swiggy Charge Them for Ads, Discounts Without Consent – Outlook Business",
+      "source_type": "news",
+      "published_at": "2025-06-01",
+      "quote": "Our multi-factor authentication system ensures that partners retain complete control and give explicit consent, which is registered before any changes go live.",
+      "statement": "Zomato says its consent system gives partners control before ads or discounts go live.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.outlookbusiness.com/news/restaurants-allege-zomato-swiggy-charge-them-for-ads-discounts-without-consent",
+      "title": "Restaurants Allege Zomato, Swiggy Charge Them for Ads, Discounts Without Consent – Outlook Business",
+      "source_type": "news",
+      "published_at": "2025-06-01",
+      "quote": "Even ads that are OTP-approved for a fixed period often auto-renew without notice and run beyond the agreed dates, with deductions going unnoticed until final payout.",
+      "statement": "Restaurateurs report approved ads auto-renewing, with deductions only noticed at payout.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.outlookbusiness.com/news/restaurants-allege-zomato-swiggy-charge-them-for-ads-discounts-without-consent",
+      "title": "Restaurants Allege Zomato, Swiggy Charge Them for Ads, Discounts Without Consent – Outlook Business",
+      "source_type": "news",
+      "published_at": "2025-06-01",
+      "quote": "co-founder of Glisco Kitchens, discovered unauthorised ad charges during a May 2024 audit. Initially, Swiggy claimed the restaurant had placed the ad, but later admitted it was a backend error and that the charges were meant for another outlet.",
+      "statement": "A multi-brand cloud kitchen found mis-assigned ad charges through its own audit, and Swiggy admitted a backend error.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4",
+        "dc5e4ced-6e35-460a-a855-cefd8e4bf15e"
+      ],
+      "company_name": "Glisco Kitchens"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.outlookbusiness.com/news/restaurants-allege-zomato-swiggy-charge-them-for-ads-discounts-without-consent",
+      "title": "Restaurants Allege Zomato, Swiggy Charge Them for Ads, Discounts Without Consent – Outlook Business",
+      "source_type": "news",
+      "published_at": "2025-06-01",
+      "quote": "Swiggy is a constant nightmare. Every month, something goes wrong, … citing unexplained “ad overdelivery” deductions of ₹250–₹300 per outlet",
+      "statement": "An industry consortium founder reports something goes wrong every month, citing unexplained per-outlet deductions of ₹250-300.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://www.outlookbusiness.com/news/restaurants-allege-zomato-swiggy-charge-them-for-ads-discounts-without-consent",
+      "title": "Restaurants Allege Zomato, Swiggy Charge Them for Ads, Discounts Without Consent – Outlook Business",
+      "source_type": "news",
+      "published_at": "2025-06-01",
+      "quote": "Restaurants were charged ₹4,000 per outlet in membership fees without approval. One group with 16 outlets reported over ₹1.4 lakh deducted in just four to five months.",
+      "statement": "A 16-outlet group reported over ₹1.4 lakh of unapproved membership deductions in 4-5 months.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/their-discount-our-loss-bengaluru-eateries-flag-hidden-discounts-by-food-delivery-platforms-3978905",
+      "title": "Their discount, our loss: Bengaluru eateries flag hidden discounts by food delivery platforms",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "It is an endlessly long ordeal, and many restaurants give up the fight. For each platform, we have a point of contact, but the platform routinely changes the contact without informing the restaurant",
+      "statement": "A Bengaluru operator of three food businesses says disputes are an endless ordeal and many restaurants give up.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/their-discount-our-loss-bengaluru-eateries-flag-hidden-discounts-by-food-delivery-platforms-3978905",
+      "title": "Their discount, our loss: Bengaluru eateries flag hidden discounts by food delivery platforms",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "We had to go back and forth with Swiggy for almost two years to get the money back. Only in March 2026 did they repay Rs 10 lakh",
+      "statement": "A restaurant and cloud-kitchen chain took nearly two years to recover Rs 10 lakh of a Rs 13 lakh discount loss from Swiggy.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c",
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/their-discount-our-loss-bengaluru-eateries-flag-hidden-discounts-by-food-delivery-platforms-3978905",
+      "title": "Their discount, our loss: Bengaluru eateries flag hidden discounts by food delivery platforms",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "These include auto-applied discounts and ad spends without consent, rising commissions, unexplained deductions, and delayed or missing payments.",
+      "statement": "NRAI's Bengaluru chapter says members consistently report unexplained deductions and delayed or missing payments.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "cc61f3f6-05e2-4a17-a456-53980bdcf2a4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://lapaasvoice.com/swiggy-to-refund-unauthorised-charges-after-bengaluru-boycott-calls/",
+      "title": "Swiggy to Refund Charges After Bengaluru Boycott Threat",
+      "source_type": "news",
+      "published_at": "2026-08-01",
+      "quote": "Swiggy has agreed to refund promotional charges that Bengaluru restaurants say were imposed without their prior consent",
+      "statement": "Collective action by associations got Swiggy to agree refunds, an alternative to per-restaurant audits.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "25f3ae3b-6e75-48b8-a47c-171f08812a6c",
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://lapaasvoice.com/swiggy-to-refund-unauthorised-charges-after-bengaluru-boycott-calls/",
+      "title": "Swiggy to Refund Charges After Bengaluru Boycott Threat",
+      "source_type": "news",
+      "published_at": "2026-08-01",
+      "quote": "newer competitors such as Rapido’s Ownly are attempting to attract restaurants with a zero-commission model.",
+      "statement": "Zero-commission entrants (Rapido's Ownly) could reduce the deduction stack the audit targets.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://billnote.in/blog-reconcilliation.html",
+      "title": "Start.ly — Agency One Page Parallax Template",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Downloading six different reports from the aggregator's dashboard and matching every order manually, calculating your GST liability, and checking if the aggregator has deducted the commission correctly and no additional fees are charged is next to impossible.",
+      "statement": "BillNote (a POS vendor) describes manual weekly matching of multiple aggregator reports as next to impossible for a multi-brand outlet.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "dc5e4ced-6e35-460a-a855-cefd8e4bf15e",
+        "0939e49d-abcd-4ecc-809e-d2285c0e6444"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://billnote.in/blog-reconcilliation.html",
+      "title": "Start.ly — Agency One Page Parallax Template",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With the BillNote Account Reconciliation feature, you don’t have to handle different accounts for different aggregator's.",
+      "statement": "BillNote offers an aggregator reconciliation feature inside its POS.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://www.myndsolution.com/a-leading-multi-brand-restaurant-company/",
+      "title": "A Leading Multi-Brand Restaurant Company",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our client is a prominent multi-brand restaurant enterprise, operating a diverse portfolio of approximately 200 locations across India. … MYND deployed a comprehensive managed services framework designed to digitize and centralize the reconciliation lifecycle.",
+      "statement": "MYND sells aggregator reconciliation as an outsourced managed service to a 200-location restaurant group.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://open.money/solutions/hospitality",
+      "title": "Hospitality Banking & Multi-Property Treasury · Open Money",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "F&B finance teams spend Saturdays reconciling aggregator settlement reports against bank credits. Open's agent does it Friday night, pings only on variance.",
+      "statement": "Open Money markets an agent that reconciles Swiggy/Zomato settlements for F&B finance teams.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd",
+        "dc5e4ced-6e35-460a-a855-cefd8e4bf15e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://sidekyk-website.sidekykpoc.workers.dev/restaurants/ai-swiggy-payout-audit-unauthorized-discounts/",
+      "title": "What AI sees in your Swiggy payout that you scroll past — SideKyk",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "That is what SideKyk is being built for: a team of AI agents living in your WhatsApp — an ops agent for settlement audits … We're opening the restaurants vertical to a waitlist first.",
+      "statement": "SideKyk is building the same WhatsApp-based settlement-audit wedge, currently waitlist only.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0cedf0bf-2925-4f24-86f1-c51984e781cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://blog.petpooja.com/templates-checklist/cloud-kitchen-operations-sop-checklist/",
+      "title": "Free Cloud Kitchen Operations SOP Manual for India (2025-26)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Without tracking commissions weekly and reconciling payouts, cloud kitchens often don't realise they're losing money on specific items.",
+      "statement": "Petpooja's cloud-kitchen SOP treats weekly commission/payout reconciliation as a standard task.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "dc5e4ced-6e35-460a-a855-cefd8e4bf15e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://kouzinafoodtech.com/about-us",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Contact No. 439, First Floor, 17th Cross Rd, Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
+      "statement": "Kouzina's contact address is in HSR Layout, Bengaluru.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kouzina Food Tech"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://kouzinafoodtech.com/",
+      "title": "Kouzina | Cloud Kitchen Partner Program & Multi-Brand Food Franchises in India",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Kouzina is a leading next generation food business that creates delicious food experiences for consumers through multiple food brands powered by delivery and takeaway. … Right now, we have thirteen brands, Each one is based on a different cuisine, with a unique identity built around it.",
+      "statement": "Kouzina runs thirteen delivery-led brands.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kouzina Food Tech"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://kouzinafoodtech.com/about-us",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Gautam Balijepalli Founder & CEO",
+      "statement": "Kouzina team page lists its Founder & CEO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Kouzina Food Tech"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://kouzinafoodtech.com/about-us",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Aparna G K Head of Finance",
+      "statement": "Kouzina team page lists its Head of Finance.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Kouzina Food Tech"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://kouzinafoodtech.com/about-us",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mahesh Madiyala Founder & COO",
+      "statement": "Kouzina team page lists its Founder & COO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Kouzina Food Tech"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.gliscokitchens.com/",
+      "title": "Glisco Kitchens — Good Food Brings People Together.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Glisco is a multi-brand kitchen. Indian, global, breakfast, bakery, Asian — all of it comes out of the same building.",
+      "statement": "Glisco Kitchens runs several brands out of one kitchen.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Glisco Kitchens"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://hustlershospitality.com/",
+      "title": "India's Most Organized & Profitable 36 QSR & Cloud kitchen brands Franchise",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "HO - Gundecha Onclave, 5A3, Khairani Rd, Saki Naka, Mumbai, Maharashtra - 400072",
+      "statement": "Hustlers Hospitality's head office is in Mumbai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hustlers Hospitality"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://hustlershospitality.com/",
+      "title": "India's Most Organized & Profitable 36 QSR & Cloud kitchen brands Franchise",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Fastest Growing Company with 36+ Food & beverage brands & Multiple Internet restaurants With a mix of cloud kitchens and Quick service restaurants",
+      "statement": "Hustlers Hospitality runs 36+ brands across cloud kitchens and QSRs.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hustlers Hospitality"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.urbanpiper.com/case-study/the-pizza-bakery-reconciliation-tool",
+      "title": "Build the future of your restaurant.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With humble beginnings in Bengaluru, the Pizza Bakery has now expanded across the city through a Cloud Kitchen-styled model of operations",
+      "statement": "The Pizza Bakery operates across Bengaluru on a cloud-kitchen-style model.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Pizza Bakery"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://thepizzabakery.in/",
+      "title": "The Pizza Bakery",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "DELIVERY KITCHENS Arekere RR Nagar Sahakar Nagar Yelahanka Banashankari Sarjapur Electronic City Mahadevapura Rajajinagar HSR Layout",
+      "statement": "The Pizza Bakery lists ten delivery kitchens in Bengaluru.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Pizza Bakery"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.thenoshhouse.com/about",
+      "title": "Fresh. Real. No CompromisE.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "hello@thenoshhouse.com Bangalore (Karnataka)",
+      "statement": "The Nosh House is based in Bangalore.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Nosh House"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.thenoshhouse.com/",
+      "title": "EVENTS WITH NOSH",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Nosh House | Fresh Food Delivery in Bangalore",
+      "statement": "The Nosh House is a delivery-focused food business in Bangalore.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Nosh House"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.saladdays.co/354997",
+      "title": "Salad Days Richmond Road - Fresh Healthy Food Delivery in Bengaluru",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Plot No. 250, Udyog Vihar Phase 1, Gurgaon, Haryana, India – 122016",
+      "statement": "Salad Days lists a Gurgaon address.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Salad Days"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.saladdays.co/354997",
+      "title": "Salad Days Richmond Road - Fresh Healthy Food Delivery in Bengaluru",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Salad Days Richmond Road - Fresh Healthy Food Delivery in Bengaluru",
+      "statement": "Salad Days runs delivery outlets including in Bengaluru.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Salad Days"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.curefoods.in/",
+      "title": "Creating iconic food brands",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Curefoods is a Bengaluru-headquartered house of food brands",
+      "statement": "Curefoods is a Bengaluru-headquartered multi-brand food company.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Curefoods"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://hunansquare.com/",
+      "title": "Hunan Square",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "No. 155, Legacy building, Neeladri Nagar, Electronics City Phase 1, Electronic City, Bengaluru, Karnataka 560100",
+      "statement": "Hunan Square is in Electronic City, Bengaluru.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hunan Square"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://hunansquare.com/",
+      "title": "Hunan Square",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A Pan-Asian Restaurant IN ELECTRONIC CITY",
+      "statement": "Hunan Square is a pan-Asian restaurant.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Hunan Square"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "dc5e4ced-6e35-460a-a855-cefd8e4bf15e",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Without a POS that bundles reconciliation, restaurants download each aggregator's payout file and match it to POS sales by hand in spreadsheets, often through dedicated accounts staff.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-06",
+            "ev-43",
+            "ev-02"
+          ]
+        },
+        {
+          "statement": "Some restaurants catch errors only through periodic audits of their own accounts.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-35"
+          ]
+        },
+        {
+          "statement": "POS vendors (Petpooja, UrbanPiper, BillNote) and finance tools (Open Money) now automate order-level matching for their own users.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14",
+            "ev-04",
+            "ev-44",
+            "ev-46"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "cc61f3f6-05e2-4a17-a456-53980bdcf2a4",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Unconsented ad, discount and fee deductions are widely and repeatedly reported in 2025-2026 by restaurants and associations in Bengaluru and Noida and on Reddit.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-40",
+            "ev-25",
+            "ev-34",
+            "ev-36",
+            "ev-28",
+            "ev-22"
+          ]
+        },
+        {
+          "statement": "Order-level settlement errors (status mismatches, wrongly charged coupons) are described mainly by vendors selling reconciliation, with no measured error rate.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-13",
+            "ev-08",
+            "ev-09"
+          ]
+        },
+        {
+          "statement": "Counter-evidence: Swiggy says under 1% of partners are affected, Petpooja says some owners find payouts line up, and differences are small below 30-40 orders a day.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-32",
+            "ev-11",
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "One estimate puts unrecovered discrepancies at ₹5,000-15,000 a year for ₹10 lakh/month of aggregator revenue, so per-outlet recoverable money may be small outside the large unconsented-charge cases.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "Much of the reported loss is unconsented promotions and ad charges, not arithmetic errors, so an audit must check deductions against consent, not only orders against payouts.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-23",
+            "ev-35",
+            "ev-39"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "0939e49d-abcd-4ecc-809e-d2285c0e6444",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Vendor estimates of manual reconciliation time range from 2-3 hours a week at 80+ daily orders to 3-5 hours, or half a day, a week for a multi-outlet chain.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-01",
+            "ev-02"
+          ]
+        },
+        {
+          "statement": "The workload rises with outlets, platforms and brands per kitchen.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-03"
+          ]
+        },
+        {
+          "statement": "All time figures come from vendors; no independent survey of owners' time was found.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "25f3ae3b-6e75-48b8-a47c-171f08812a6c",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Disputes are raised as tickets in each platform's partner app, then escalated to account managers or partner WhatsApp groups.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-20",
+            "ev-21"
+          ]
+        },
+        {
+          "statement": "Owners describe the process as slow and often abandoned: one chain took nearly two years to recover Rs 10 lakh, and one complaint was blocked by a dashboard error.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38",
+            "ev-39",
+            "ev-30"
+          ]
+        },
+        {
+          "statement": "Dispute windows are reported inconsistently (7-14 days vs ~90 days), but vendors agree late queries risk being lost.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-17",
+            "ev-20",
+            "ev-15"
+          ]
+        },
+        {
+          "statement": "Alternatives are a contingency recovery service charging 10% of recoveries and collective association pressure, which won Swiggy refunds in Bengaluru.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29",
+            "ev-41"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "51079200-a7a5-4704-89fd-aa4fb95d2e1b",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "In the one documented purchase, a restaurant co-founder drove the reconciliation tool choice after evaluating several vendors.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-05",
+            "ev-04"
+          ]
+        },
+        {
+          "statement": "Mid-size operators have finance heads who may evaluate such tools.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-52"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "0cedf0bf-2925-4f24-86f1-c51984e781cd",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Petpooja bundles order-level aggregator reconciliation into POSS at no extra cost; UrbanPiper and BillNote offer it inside their platforms.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14",
+            "ev-16",
+            "ev-04",
+            "ev-44"
+          ]
+        },
+        {
+          "statement": "Standalone options exist or are emerging: Open Money's agent, Terra Insight's TransactIG (roadmap), SideKyk (WhatsApp, waitlist), MYND's managed service and the GetMyRefund contingency service.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-46",
+            "ev-18",
+            "ev-47",
+            "ev-45",
+            "ev-29"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "What share of payout losses are order-level settlement errors versus unconsented ads, discounts and fees, and does the tool need consent records to catch the latter?"
+    },
+    {
+      "question": "How much money per outlet per month is actually recoverable once structural deductions are excluded?"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Petpooja (POSS reconciliation)",
+      "url": "https://www.petpooja.com/poss/online-order-reconciliation",
+      "kind": "indirect",
+      "description": "Market-leading Indian restaurant POS with a built-in order-level Swiggy/Zomato payout reconciliation report for its POS users.",
+      "pricing_note": "Reconciliation included in Petpooja POSS at no extra cost (per Petpooja blog).",
+      "evidence_refs": [
+        "ev-16",
+        "ev-14",
+        "ev-13"
+      ],
+      "sentiment": [
+        {
+          "statement": "Petpooja itself notes some owners find their payouts line up and move to monthly checks.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-11"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "UrbanPiper Reconciliation Tool",
+      "url": "https://www.urbanpiper.com/case-study/the-pizza-bakery-reconciliation-tool",
+      "kind": "indirect",
+      "description": "Reconciliation of aggregator payout sheets against sales data held in UrbanPiper's Prime POS/Hub.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-06",
+        "ev-02",
+        "ev-04"
+      ],
+      "sentiment": [
+        {
+          "statement": "A 19-outlet customer says the tool reduced manual effort and errors and chose it because UrbanPiper already held its POS order data.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "BillNote",
+      "url": "https://billnote.in/blog-reconcilliation.html",
+      "kind": "indirect",
+      "description": "Restaurant POS with an aggregator account-reconciliation feature that computes expected payouts and GST.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-43",
+        "ev-44"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Open Money (hospitality)",
+      "url": "https://open.money/solutions/hospitality",
+      "kind": "direct",
+      "description": "Business banking platform with an agent that reconciles Swiggy/Zomato settlements against bank credits at outlet level.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-46"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "Terra Insight / TransactIG",
+      "url": "https://www.terra-insight.com/insights/swiggy-restaurant-settlement-reconciliation/",
+      "kind": "direct",
+      "description": "Reconciliation software publishing aggregator-reconciliation designs; Swiggy payout reconciliation is on its roadmap.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-18",
+        "ev-17"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "SideKyk",
+      "url": "https://sidekyk-website.sidekykpoc.workers.dev/restaurants/ai-swiggy-payout-audit-unauthorized-discounts/",
+      "kind": "direct",
+      "description": "AI agents on WhatsApp that audit Swiggy/Zomato settlements and draft disputes; restaurants vertical is waitlist-only.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-47"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "MYND Integrated Solutions",
+      "url": "https://www.myndsolution.com/a-leading-multi-brand-restaurant-company/",
+      "kind": "service",
+      "description": "Managed-services finance outsourcing that centralised aggregator reconciliation for a ~200-location restaurant group.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-45"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "GetMyRefund",
+      "url": "https://www.medianama.com/2026/04/223-swiggy-ad-charges-without-consent-unauthorized-deductions-restaurants/",
+      "kind": "service",
+      "description": "Private resolution service that pursued unauthorised Swiggy deductions for a restaurant chain on contingency.",
+      "pricing_note": "No upfront fee; 10% of recovered amount (per MediaNama).",
+      "evidence_refs": [
+        "ev-29"
+      ],
+      "sentiment": [
+        {
+          "statement": "The chain recovered about 70% of the claimed amount after official channels failed.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-09",
+      "name": "Spreadsheets and accountants (manual)",
+      "url": null,
+      "kind": "manual",
+      "description": "Downloading each payout file and matching it to POS exports in Excel, by owners, accountants or auditors.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-06",
+        "ev-02",
+        "ev-10"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Restaurant associations (NRAI, BBHA)",
+      "url": null,
+      "kind": "service",
+      "description": "Collective negotiation and boycott threats that won refunds of unconsented promotional charges in Bengaluru.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-41",
+        "ev-25",
+        "ev-26"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most restaurants without a reconciliation-enabled POS match payout files to POS exports manually in spreadsheets, taking roughly 2-5 hours a week by vendor estimates.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-06",
+        "ev-10",
+        "ev-01"
+      ]
+    },
+    {
+      "statement": "Petpooja and UrbanPiper users get order-level reconciliation bundled into their POS, at no extra cost in Petpooja's case.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-14",
+        "ev-04"
+      ]
+    },
+    {
+      "statement": "Disputes go through partner-app tickets and account managers; when these fail, owners use public pressure, associations or contingency recovery services.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-21",
+        "ev-41",
+        "ev-29",
+        "ev-38"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Kouzina Food Tech",
+      "website": "https://kouzinafoodtech.com",
+      "icp_id": null,
+      "location": "HSR Layout, Bengaluru",
+      "industry": "Multi-brand cloud kitchens",
+      "description": "Bengaluru operator of thirteen delivery-led brands (WarmOven and others), with a named Head of Finance.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-49"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-49",
+        "ev-50",
+        "ev-51",
+        "ev-52",
+        "ev-53"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Multi-brand delivery operator in a metro; likely larger than the 1-10 outlet ICP.",
+          "evidence_refs": [
+            "ev-50",
+            "ev-49"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Has a dedicated finance head who could own payout reconciliation.",
+          "evidence_refs": [
+            "ev-52"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Gautam Balijepalli",
+          "role": "Founder & CEO",
+          "email": null,
+          "evidence_ref": "ev-51"
+        },
+        {
+          "name": "Aparna G K",
+          "role": "Head of Finance",
+          "email": null,
+          "evidence_ref": "ev-52"
+        },
+        {
+          "name": "Mahesh Madiyala",
+          "role": "Founder & COO",
+          "email": null,
+          "evidence_ref": "ev-53"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "Glisco Kitchens",
+      "website": "https://www.gliscokitchens.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Multi-brand cloud kitchen",
+      "description": "Multi-brand cloud kitchen that found mis-assigned Swiggy ad charges through its own audit.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-54",
+        "ev-35"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Multi-brand kitchen running several brands from one building.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 5,
+          "rationale": "Publicly reported discovering unauthorised Swiggy ad charges during an audit.",
+          "evidence_refs": [
+            "ev-35"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Hustlers Hospitality",
+      "website": "https://hustlershospitality.com",
+      "icp_id": null,
+      "location": "Saki Naka, Mumbai",
+      "industry": "Cloud kitchen and QSR brands",
+      "description": "Mumbai company running 36+ cloud-kitchen and QSR brands, including franchised kitchens.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-55"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-55",
+        "ev-56"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Multi-brand cloud kitchen operator; franchise model may spread payouts across franchisees.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "The Pizza Bakery",
+      "website": "https://thepizzabakery.in",
+      "icp_id": null,
+      "location": "Bengaluru",
+      "industry": "Pizza chain with delivery kitchens",
+      "description": "Bengaluru pizza chain with dine-in outlets and ten delivery kitchens; already reconciles via UrbanPiper.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      },
+      "technologies": [
+        "UrbanPiper"
+      ],
+      "evidence_refs": [
+        "ev-57",
+        "ev-58",
+        "ev-01",
+        "ev-02",
+        "ev-04"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Multi-outlet cloud-kitchen-style chain; above the 1-10 outlet band.",
+          "evidence_refs": [
+            "ev-58",
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 1,
+          "rationale": "Already uses UrbanPiper's reconciliation tool, so a weak switching prospect.",
+          "evidence_refs": [
+            "ev-04"
+          ]
+        },
+        "other_signals": {
+          "rating": 5,
+          "rationale": "Documented half-day weekly manual reconciliation before automating.",
+          "evidence_refs": [
+            "ev-02",
+            "ev-01"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "The Nosh House",
+      "website": "https://www.thenoshhouse.com",
+      "icp_id": null,
+      "location": "Bangalore",
+      "industry": "Delivery kitchen",
+      "description": "Bangalore delivery-first kitchen selling several menus (pizza, breakfast, bowls) on Swiggy and Zomato.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-59",
+        "ev-60"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small delivery-focused kitchen in a metro; brand count not stated.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Salad Days",
+      "website": "https://www.saladdays.co",
+      "icp_id": null,
+      "location": "Gurgaon (HQ); outlets incl. Bengaluru",
+      "industry": "Delivery-only healthy food chain",
+      "description": "Delivery-focused healthy food brand with outlets in multiple cities.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-61",
+        "ev-62"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Delivery-first, but single-brand.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Curefoods",
+      "website": "https://www.curefoods.in",
+      "icp_id": null,
+      "location": "Bengaluru",
+      "industry": "Multi-brand food company",
+      "description": "Bengaluru house of delivery-led brands; far above the ICP size band.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Multi-brand, but a large company likely to build in-house.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "Hunan Square",
+      "website": "https://hunansquare.com",
+      "icp_id": null,
+      "location": "Electronic City, Bengaluru",
+      "industry": "Pan-Asian restaurant",
+      "description": "Independent Bengaluru restaurant; fits the secondary or single-outlet ICP rather than the primary one.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-64"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Independent restaurant, not a multi-brand cloud kitchen.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
