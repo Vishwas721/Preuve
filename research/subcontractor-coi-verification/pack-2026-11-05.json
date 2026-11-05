@@ -1,0 +1,2230 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "1e5751b0-a185-40b9-a004-972ce52c872d",
+    "researcher": "claude-code",
+    "started_at": "2026-11-05T09:00:00Z",
+    "finished_at": "2026-11-05T12:00:00Z",
+    "queries": [
+      "subcontractor certificate of insurance tracking spreadsheet reddit general contractor",
+      "COI tracking software pricing small contractors per vendor",
+      "\"certificates of insurance\" subcontractor job posting project coordinator \"track\"",
+      "reddit COI compliance portal subcontractor hate myCOI OR Jones OR TrustLayer login",
+      "insurance agent complaints COI compliance portals certificate requests vendors brokers burden",
+      "general contractor lawsuit subcontractor not named additional insured endorsement missing certificate of insurance case",
+      "contractortalk.com certificate of insurance general contractor requests additional insured hassle",
+      "workers comp premium audit charged for uninsured subcontractor no certificate of insurance contractor",
+      "small general contractor \"spreadsheet\" COI tracking works fine \"don't need\" software subcontractors (contradiction)",
+      "CertifiKit pricing COI tracking",
+      "TrustLayer pricing plans vendors per year",
+      "myCOI illumend pricing self-service plan",
+      "\"subcontractor compliance\" coordinator job general contractor \"certificates of insurance\" salary",
+      "property management job vendor certificates of insurance track expiration commercial property administrator",
+      "prospect searches: commercial general contractor team pages by region (OH, NC, WI/MN/IA, TX/CO/UT, MI/IN/KY, GA/TN/SC, PA/NJ/VA, KC/Omaha/Des Moines, Boise/Reno, New England, Phoenix/Las Vegas, Charlotte/Nashville/Louisville)"
+    ],
+    "notes": "Review sites (G2, Capterra, TrustRadius, Software Advice), Reddit, BiggerPockets, ContractorTalk and InsuranceJournal forums were blocked or unfetchable, so no first-hand user reviews of incumbents are included; portal/review-delay claims come from competitors' own comparison pages and are marked as such. Many cost/time figures are vendor marketing. CertifiKit's site did not resolve and SmartCompliance's timed out; neither has first-party evidence. Prospecting found 15 companies (target was 20+): many small-GC sites returned 403/timeouts or had no team page. Headcount was stated for only one company; Gillis Gilkerson's own site returned 403, so it is cited via its public CFMA forum post. Rockford may exceed the 10-100 employee band."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://www.wayup.com/i-j-Project-Coordinator-Ocean-Coast-Electric-LLC-136971641293601/",
+      "title": "Ocean Coast Electric LLC: Project Coordinator",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Manage Certificates of Insurance (COIs) for projects, vendors, and company compliance, including expiration tracking and renewals",
+      "statement": "A contractor's project coordinator posting lists managing COIs, expiration tracking and renewals as a core duty, alongside Excel and Procore/Sage skills.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad91c8b-6f73-43e9-834c-46a2049d7452"
+      ],
+      "company_name": "Ocean Coast Electric LLC"
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://www.wayup.com/i-j-Construction-Project-Coordinator-Commercial-Construction-Base-Salary-to-60k-year-Arlington-Hei-AllSearch-Professional-Staffing-223286182404698/",
+      "title": "Construction Project Coordinator - Commercial Construction - Arlington Heights, IL",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Manage subcontractor compliance documentation including Certificates of Insurance (COIs), W-9s, and subcontract agreements … Base salary in the 55k - 60k/year range",
+      "statement": "A commercial GC pays a project coordinator $55k-60k a year whose duties include managing subcontractor COI compliance documentation (one of several duties).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad91c8b-6f73-43e9-834c-46a2049d7452",
+        "ebfc4aae-2c3e-45a2-b8b2-d9a6f01d091d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://host.pcrecruiter.net/pcrbin/jobboard/job/Project-Coordinator---Construction/b/SAQEL2A6IVORY2YUSZTZHQK3457ZGRTVBPDPIULUQCCN5YCDF25J73BSQZHLNEQ",
+      "title": "Project Coordinator - Construction",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Support Project Manager and Controller in all project reporting … Ensure all certificates of insurance for each subcontractor are accurate, current and in compliance with the contract documents",
+      "statement": "A construction project coordinator role checks each subcontractor's COI against contract documents and reports to the PM and Controller.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad91c8b-6f73-43e9-834c-46a2049d7452",
+        "2756929b-a971-4ffb-b9ce-e54c25600a91"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4195669",
+      "title": "POWERHOUSE - Project Coordinator - Commercial Construction",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "ensuring all required Certificates of Insurance are complete and up-to-date. … Confirm and enter data into tracking spreadsheets to ensure compliance with the Scope of Work.",
+      "statement": "A commercial construction firm's coordinator keeps subcontractor COIs complete and up to date and maintains tracking spreadsheets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ad91c8b-6f73-43e9-834c-46a2049d7452"
+      ],
+      "company_name": "Powerhouse"
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://apply.workable.com/rockford/jobs/view/ED9BECE9B9.md",
+      "title": "Rockford - Construction Project Coordinator (Grand Rapids)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Coordinate lien waivers, insurance certificates, and subcontract compliance requirements.",
+      "statement": "Rockford's project coordinator role includes coordinating subcontractor insurance certificates.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ad91c8b-6f73-43e9-834c-46a2049d7452"
+      ],
+      "company_name": "Rockford Construction"
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://cafe.cfma.org/discussion/certificate-of-insurance-best-practices",
+      "title": "CFMA discussion: Certificate of Insurance Best Practices",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Currently, we are using CMiC which tracks the insurance information and flags any vendors that are out of compliance based on the COI date we have input.",
+      "statement": "A regional GC tracks COIs inside its construction ERP (CMiC), keyed manually from COI dates, rather than a dedicated COI tool.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad91c8b-6f73-43e9-834c-46a2049d7452",
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": "Gillis Gilkerson"
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://cafe.cfma.org/discussion/certificate-of-insurance-best-practices",
+      "title": "CFMA discussion: Certificate of Insurance Best Practices",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Controller Gillis Gilkerson Salisbury MD",
+      "statement": "The person asking peers about COI process at this regional GC is its Controller, on a construction-finance (CFMA) forum: a finance role owns the process here.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2756929b-a971-4ffb-b9ce-e54c25600a91"
+      ],
+      "company_name": "Gillis Gilkerson"
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://dev.to/robertatkinson3570/existing-coi-software-costs-6k-15kyear-here-3oem",
+      "title": "Existing COI Software Costs $6K-$15K/Year",
+      "source_type": "other",
+      "published_at": null,
+      "quote": "The first vendor I talked to quoted me $12,000 a year. The second came in at $8,400. … These SMB firms dont buy the enterprise tools. They stick with spreadsheets.",
+      "statement": "A property manager (now building a competing tool) reports enterprise COI quotes of $8.4k-$12k/year and says SMB firms stay on spreadsheets instead.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46",
+        "1ad91c8b-6f73-43e9-834c-46a2049d7452",
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://dev.to/robertatkinson3570/existing-coi-software-costs-6k-15kyear-here-3oem",
+      "title": "Existing COI Software Costs $6K-$15K/Year",
+      "source_type": "other",
+      "published_at": null,
+      "quote": "Free tier (20 vendors): … Starter at $49/month: This is the tier I would have bought two years ago. It handles everything a 50-150 vendor operation needs.",
+      "statement": "COIPulse, an indie COI tool with AI extraction, already sells a free 20-vendor tier and $49/month for 50-150 vendors, half the idea's $99 price point.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145",
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46"
+      ],
+      "company_name": "COIPulse"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://www.getbcs.com/pricing-and-plans",
+      "title": "COI Tracking Software Pricing & Plans | bcs",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "bcs COI tracking software is free for up to 25 vendors, with all software features included. There's no credit card required and no trial period. Self-service plans run $11.40/vendor/year ($0.95/vendor/month).",
+      "statement": "bcs publishes self-serve pricing: free to 25 vendors, then $0.95/vendor/month with no minimum (about $71/month at 75 vendors), undercutting the idea's $99 tier.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145",
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46"
+      ],
+      "company_name": "bcs"
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://www.getbcs.com/pricing-and-plans",
+      "title": "COI Tracking Software Pricing & Plans | bcs",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Full-service compliance management, where bcs handles vendor outreach and renewals end-to-end, starts at $17.80/vendor/year with a $10,000 annual minimum.",
+      "statement": "Full-service (outsourced review) COI compliance carries a $10,000 annual minimum at bcs.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46",
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": "bcs"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.getbcs.com/pricing-and-plans",
+      "title": "COI Tracking Software Pricing & Plans | bcs",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "- Certificate of Insurance Data Extractor - Automated COI Requests - Automated Deficiency Notices",
+      "statement": "bcs's free tier already includes COI data extraction, automated COI requests and automated deficiency notices: the idea's core features.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": "bcs"
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://www.getbcs.com/pricing-and-plans",
+      "title": "COI Tracking Software Pricing & Plans | bcs",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For context: bcs clients managing 200+ vendors report saving 15–20 hours per week on compliance management.",
+      "statement": "Vendor-reported: firms with 200+ vendors save 15-20 hours/week with COI software (vendor claim, larger than the target segment).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ebfc4aae-2c3e-45a2-b8b2-d9a6f01d091d"
+      ],
+      "company_name": "bcs"
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://www.vertikalrms.com/article/how-much-does-coi-tracking-software-cost-2026-pricing-guide/",
+      "title": "How Much Does COI Tracking Software Cost? 2026 Pricing Guide (Vertikal RMS)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CertFocus by Vertikal RMS self-service costs $6–$8 per vendor per year with a $7,500 minimum. Full-service with credentialed insurance professionals costs $13–$29 per vendor per year with a $10,000 minimum.",
+      "statement": "CertFocus publishes a $7,500 self-service and $10,000 full-service annual minimum, confirming the idea's claim about incumbent minimums.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46",
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": "Vertikal RMS (CertFocus)"
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://www.vertikalrms.com/article/how-much-does-coi-tracking-software-cost-2026-pricing-guide/",
+      "title": "How Much Does COI Tracking Software Cost? 2026 Pricing Guide (Vertikal RMS)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Implementation fee of $3,500–$4,800",
+      "statement": "CertFocus also charges a $3,500-$4,800 implementation fee.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46"
+      ],
+      "company_name": "Vertikal RMS (CertFocus)"
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.vertikalrms.com/article/how-much-does-coi-tracking-software-cost-2026-pricing-guide/",
+      "title": "How Much Does COI Tracking Software Cost? 2026 Pricing Guide (Vertikal RMS)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Work may have to stop when vendor certificates expire mid-project or when compliance audits show that there is missing documentation that should have been caught earlier.",
+      "statement": "A vendor names mid-project expirations and compliance audits as the events that force urgent COI reviews (vendor framing).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "8f133230-1457-4f1e-bd1f-3d368d5176b9"
+      ],
+      "company_name": "Vertikal RMS (CertFocus)"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.vertikalrms.com/article/how-much-does-coi-tracking-software-cost-2026-pricing-guide/",
+      "title": "How Much Does COI Tracking Software Cost? 2026 Pricing Guide (Vertikal RMS)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "| SmartCompliance | $2,000–$4,000 | $40–$80 | OCR processing, custom rules | Outdates OCR, manual corrections needed, lengthy setup |",
+      "statement": "A competitor's table lists SmartCompliance at $2,000-$4,000/year and criticises its OCR as needing manual corrections (competitor-authored).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": "SmartCompliance"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://billyforinsurance.com/resources/coi-tracking-software-comparison-2026/",
+      "title": "COI Tracking Software in 2026: An Honest Comparison | Billy",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Requiring vendors to create accounts dramatically reduces submission rates. No-login submission is a meaningful operational difference, not a minor convenience.",
+      "statement": "A COI vendor states that requiring vendor accounts reduces submission rates (vendor claim, unquantified).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "6729c974-5b47-430b-bf7c-be67ac317d22"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://billyforinsurance.com/resources/coi-tracking-software-comparison-2026/",
+      "title": "COI Tracking Software in 2026: An Honest Comparison | Billy",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "COI review speed can slow during peak renewal periods … Requires vendor login for document submission (reduces compliance rates)",
+      "statement": "Per a competitor's comparison, myCOI requires vendor logins and its review can slow at peak renewal times.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6729c974-5b47-430b-bf7c-be67ac317d22",
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": "myCOI"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://billyforinsurance.com/resources/coi-tracking-software-comparison-2026/",
+      "title": "COI Tracking Software in 2026: An Honest Comparison | Billy",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Requires vendor and tenant logins (reduces submission rates)",
+      "statement": "Per a competitor's comparison, CertFocus requires vendor and tenant logins.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6729c974-5b47-430b-bf7c-be67ac317d22",
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": "Vertikal RMS (CertFocus)"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://billyforinsurance.com/resources/coi-tracking-software-comparison-2026/",
+      "title": "COI Tracking Software in 2026: An Honest Comparison | Billy",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The RiskBot AI delivers real-time color-coded compliance feedback with no-login vendor submissions",
+      "statement": "bcs already offers no-login vendor submission with instant AI compliance feedback, so 'no portal' is not unique.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "6729c974-5b47-430b-bf7c-be67ac317d22",
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": "bcs"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://billyforinsurance.com/resources/coi-tracking-software-comparison-2026/",
+      "title": "COI Tracking Software in 2026: An Honest Comparison | Billy",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "- AI review of endorsements, not just COI existence - No-login vendor submission",
+      "statement": "Billy markets AI endorsement review and no-login vendor submission for GCs, the idea's two headline features.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145",
+        "6729c974-5b47-430b-bf7c-be67ac317d22"
+      ],
+      "company_name": "Billy"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://getjones.com/",
+      "title": "Jones: Insurance Compliance at Scale for the Built World",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "AI Agents and insurance specialists review COIs, endorsements and full policies at scale … Allows vendors to easily submit their updated COIs through low-friction, no-login links.",
+      "statement": "Jones reviews COIs and endorsements with AI plus specialists and lets vendors submit via no-login links.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145",
+        "6729c974-5b47-430b-bf7c-be67ac317d22"
+      ],
+      "company_name": "Jones"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://hello.trustlayer.io/starter-waitlist",
+      "title": "TrustLayer Starter",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "TrustLayer Starter is not a trial—it’s a permanent free plan for businesses managing fewer than 50 vendors.",
+      "statement": "TrustLayer offers a permanent free plan below 50 vendors, which covers much of the idea's 20-75 vendor target at $0.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145",
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46"
+      ],
+      "company_name": "TrustLayer"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://www.xpay.sh/saas-pricing/mycoi-software/",
+      "title": "myCOI Pricing 2026 (xpay)",
+      "source_type": "directory",
+      "published_at": null,
+      "quote": "myCOI pricing is sales-led — no self-serve tiers are published. All advertised tiers route to a sales contact form.",
+      "statement": "myCOI publishes no self-serve pricing; all tiers go through sales.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145",
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46"
+      ],
+      "company_name": "myCOI"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://certkeeper.pages.dev/",
+      "title": "CertKeeper",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CertKeeper tracks subcontractor insurance certificates, flags upcoming expirations, and sends renewal reminders — without forcing your subs into a new portal or your team into a full construction platform.",
+      "statement": "CertKeeper is a pre-launch tool pitching the same 'no sub portal' wedge to GCs, with ACORD 25 parsing and 90/60/30-day reminders.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145",
+        "6729c974-5b47-430b-bf7c-be67ac317d22"
+      ],
+      "company_name": "CertKeeper"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://dev.to/crawde/why-spreadsheets-are-the-1-compliance-risk-for-general-contractors-9",
+      "title": "Why Spreadsheets Are the #1 Compliance Risk for General Contractors",
+      "source_type": "other",
+      "published_at": null,
+      "quote": "VendorShield starts at $49/month flat. No per-vendor fees. No per-certificate charges.",
+      "statement": "VendorShield, another small COI tool for GCs, sells at $49/month flat.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145",
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46"
+      ],
+      "company_name": "VendorShield"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://dev.to/crawde/why-spreadsheets-are-the-1-compliance-risk-for-general-contractors-9",
+      "title": "Why Spreadsheets Are the #1 Compliance Risk for General Contractors",
+      "source_type": "other",
+      "published_at": null,
+      "quote": "Every general contractor I've talked to tracks subcontractor insurance the same way: a spreadsheet, a shared drive folder full of PDFs, and someone's inbox. … Most GCs estimate 8-12 hours per week on COI administration.",
+      "statement": "A vendor-founder says GCs track COIs in spreadsheets, PDFs and inboxes and estimate 8-12 hours/week on it (unsourced vendor claim).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ad91c8b-6f73-43e9-834c-46a2049d7452",
+        "ebfc4aae-2c3e-45a2-b8b2-d9a6f01d091d"
+      ],
+      "company_name": "VendorShield"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://idea-certtrack-lite-coi-tracking-expiry-alert.pages.dev/blog/why-small-agencies-track-cois-in-spreadsheets/",
+      "title": "CertTrack Lite blog",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Pricing starts at $29/month for the Starter plan, which covers solo agents and small contractors managing up to 50 active certificates.",
+      "statement": "CertTrack Lite targets small contractors at $29/month, more evidence of low-priced entrants.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145",
+        "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46"
+      ],
+      "company_name": "CertTrack Lite"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://imagetotable.ai/blog/batch-subcontractor-coi-tracking-general-contractor",
+      "title": "Track 50+ Subcontractor COIs Without Dedicated Compliance Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The spreadsheet is the universal starting point — free, flexible, and adequate when you have eight subcontractors. At thirty, it becomes the bottleneck.",
+      "statement": "Even a vendor concedes a spreadsheet is adequate for very small sub counts; pain starts around 30 subs.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ad91c8b-6f73-43e9-834c-46a2049d7452"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://imagetotable.ai/blog/batch-subcontractor-coi-tracking-general-contractor",
+      "title": "Track 50+ Subcontractor COIs Without Dedicated Compliance Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A mid-sized general contractor with three active projects and 45 subcontractors processes roughly 180 certificate of insurance updates per year",
+      "statement": "Vendor estimate: a 45-sub GC handles about 180 COI updates a year (about 15 hours of data entry at 5 minutes each).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ebfc4aae-2c3e-45a2-b8b2-d9a6f01d091d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://imagetotable.ai/blog/batch-subcontractor-coi-tracking-general-contractor",
+      "title": "Track 50+ Subcontractor COIs Without Dedicated Compliance Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "batch AI extraction that reads COI fields into your existing spreadsheet, eliminating the data entry without requiring a platform migration or a new software budget.",
+      "statement": "General AI document-extraction tools are pitched as a way to keep the spreadsheet and skip COI software.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b5b26189-2c08-4227-b202-2622ee295145"
+      ],
+      "company_name": "ImageToTable"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.insurancebusinessmag.com/us/news/risk-compliance-legal/arkansas-court-rules-insurer-owes-nothing-to-contractor-left-off-policy-568482.aspx",
+      "title": "Arkansas court rules insurer owes nothing to contractor left off policy",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "A certificate of liability insurance, no matter how reassuring it may look, does not create coverage. If a general contractor needs to be covered under a subcontractor's policy, the subcontractor must actually request an additional-insured endorsement from their insurer, and the insurer must actually add it.",
+      "statement": "A 2026 Arkansas appeals ruling left a GC uncovered because it held a certificate but no additional-insured endorsement; the article says the cost exceeded $1.2 million.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8f133230-1457-4f1e-bd1f-3d368d5176b9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.insurancebusinessmag.com/us/news/risk-compliance-legal/arkansas-court-rules-insurer-owes-nothing-to-contractor-left-off-policy-568482.aspx",
+      "title": "Arkansas court rules insurer owes nothing to contractor left off policy",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Anything short of that leaves the general contractor exposed, as Chuck Hamilton and Union learned at a cost that ultimately exceeded $1.2 million.",
+      "statement": "The missing endorsement cost the GC and its insurer more than $1.2 million.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8f133230-1457-4f1e-bd1f-3d368d5176b9"
+      ],
+      "company_name": "Chuck Hamilton Construction"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://getjones.com/blog/the-jones-insurance-insider-may-2023-how-an-additional-insured-status-mistake-left-a-construction-company-unprotected-in-a-multimillion-dollar-suit",
+      "title": "How an Additional Insured status mistake left a construction company unprotected in a multimillion-dollar suit",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A California judge ruled that an insurer had no duty to indemnify a general contractor, even though the GC was listed as a certificate holder on the COI.",
+      "statement": "A California GC listed only as certificate holder (not additional insured) got no coverage in a scaffolding-fall suit.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8f133230-1457-4f1e-bd1f-3d368d5176b9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.iamagazine.com/2026/02/28/magic-in-a-bottle-challenges-and-opportunities-with-certificates-of-insurance/",
+      "title": "Magic in a Bottle: Challenges and Opportunities with Certificates of Insurance",
+      "source_type": "industry_publication",
+      "published_at": "2026-02-28",
+      "quote": "One industry analysis found that in construction, 45% to 55% of initial COI submissions are rejected for errors or missing information, according to some industry estimates.",
+      "statement": "Trade press (citing industry estimates) says roughly half of initial construction COI submissions are rejected, so deficiency follow-up is common.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6729c974-5b47-430b-bf7c-be67ac317d22",
+        "ebfc4aae-2c3e-45a2-b8b2-d9a6f01d091d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://www.iamagazine.com/2026/02/28/magic-in-a-bottle-challenges-and-opportunities-with-certificates-of-insurance/",
+      "title": "Magic in a Bottle: Challenges and Opportunities with Certificates of Insurance",
+      "source_type": "industry_publication",
+      "published_at": "2026-02-28",
+      "quote": "Fulfilling COI requests can consume substantial staff time, often without direct revenue.",
+      "statement": "On the broker side, issuing COIs is unpaid work, which explains broker resistance to extra steps such as portals.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6729c974-5b47-430b-bf7c-be67ac317d22"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://amp.insurancejournal.com/magazines/mag-features/2025/06/16/826189.htm",
+      "title": "Viewpoint: Certificates of Insurance…Or How I Got a Job in the Prison Laundry",
+      "source_type": "industry_publication",
+      "published_at": "2025-06-16",
+      "quote": "requiring the agents of subs of the contractor to upload COIs to this system while charging the agent $15 for this honor and privilege.",
+      "statement": "An agent-side columnist describes a large contractor's COI system that made subs' agents upload COIs and charged them $15 each: brokers resent portals.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6729c974-5b47-430b-bf7c-be67ac317d22"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.statefarm.com/small-business-solutions/insurance/premium-audit",
+      "title": "State Farm: Premium Audits",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If such Certificate of Insurance is not available at the time of audit, the subcontractor's total cost may be added to your payroll.",
+      "statement": "At the workers' comp premium audit, a missing subcontractor COI can add that sub's whole cost to the contractor's payroll (premium base).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8f133230-1457-4f1e-bd1f-3d368d5176b9",
+        "ebfc4aae-2c3e-45a2-b8b2-d9a6f01d091d"
+      ],
+      "company_name": "State Farm"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://jrvrgroup.com/falls-lake-insurance/loss-control/loss-control-resource-library/uninsured-subcontractors-can-carry-a-high-price",
+      "title": "Uninsured Subcontractors Can Carry a High Price (Falls Lake)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "These may be requested during the premium audit process, claims process or during a loss control inspection.",
+      "statement": "A carrier names premium audits, claims and loss-control inspections as the moments when subcontractor COIs get demanded.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8f133230-1457-4f1e-bd1f-3d368d5176b9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://dev.to/robertatkinson3570/your-vendors-hate-your-coi-process-too-and-it-1k7c",
+      "title": "Your Vendors Hate Your COI Process Too",
+      "source_type": "other",
+      "published_at": null,
+      "quote": "every time I needed an updated certificate, it turned into a 3-week email chain.",
+      "statement": "A property manager (now a COI-tool founder) says getting updated certificates by email took 3-week chains, so the email status quo is painful too.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6729c974-5b47-430b-bf7c-be67ac317d22",
+        "ebfc4aae-2c3e-45a2-b8b2-d9a6f01d091d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://dev.to/robertatkinson3570/your-vendors-hate-your-coi-process-too-and-it-1k7c",
+      "title": "Your Vendors Hate Your COI Process Too",
+      "source_type": "other",
+      "published_at": null,
+      "quote": "Let me upload it myself. Vendors hate emailing PDFs back and forth. … Give them a portal or a link where they can upload directly.",
+      "statement": "The same source says vendors prefer uploading themselves via a portal or link rather than emailing PDFs, the opposite of the 'subs hate portals' premise.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6729c974-5b47-430b-bf7c-be67ac317d22"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://www.netvendor.com/blog/coi-tracking-simplified-a-smarter-way-to-manage-vendor-insurance",
+      "title": "How to Track COI Expiration Across Multiple Properties (NetVendor)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Horizon Realty Advisors, a multifamily and student housing operator managing 600+ vendors, recovered 30 hours per week and $30K+ in annual labor savings after replacing manual COI tracking with automation.",
+      "statement": "Vendor case study: a 600+ vendor property operator saved 30 hours/week and $30k+/year by automating COI tracking.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ebfc4aae-2c3e-45a2-b8b2-d9a6f01d091d"
+      ],
+      "company_name": "NetVendor"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://taylor-coakley.squarespace.com/meet-the-team",
+      "title": "Meet the Team | Building Excellence",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Established in 2007, Building Excellence, LLC is a full-service general contractor serving Southern Arizona.",
+      "statement": "Building Excellence is a Tucson-area general contractor.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Building Excellence, LLC"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://taylor-coakley.squarespace.com/meet-the-team",
+      "title": "Meet the Team | Building Excellence",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Taylor Coakley Project Coordinator",
+      "statement": "Team page lists a Project Coordinator.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Building Excellence, LLC"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://taylor-coakley.squarespace.com/meet-the-team",
+      "title": "Meet the Team | Building Excellence",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Patti Del Principe project Administrator",
+      "statement": "Team page lists a Project Administrator.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Building Excellence, LLC"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://taylor-coakley.squarespace.com/meet-the-team",
+      "title": "Meet the Team | Building Excellence",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "FIELD TEAM - Building Excellence has 10 field personnel who are skilled in various trade disciplines.",
+      "statement": "Building Excellence has 9 named office staff plus 10 field personnel (~19 people).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Building Excellence, LLC"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.andrewgc.com/about/",
+      "title": "About - Andrew General Contractors",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Commercial General Contractor in Orlando",
+      "statement": "Andrew General Contractors is a commercial GC in Orlando.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Andrew General Contractors"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://www.andrewgc.com/about/",
+      "title": "About - Andrew General Contractors",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Todd Andrew President",
+      "statement": "Team page lists the President.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Andrew General Contractors"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://www.andrewgc.com/about/",
+      "title": "About - Andrew General Contractors",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Megan Yeomans Director of Finance",
+      "statement": "Team page lists the Director of Finance.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Andrew General Contractors"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.andrewgc.com/about/",
+      "title": "About - Andrew General Contractors",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Connor Andrew Director of Operations",
+      "statement": "Team page lists the Director of Operations.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Andrew General Contractors"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://ctwilson.com/",
+      "title": "Commercial General Contractor: C.T. Wilson",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CT Wilson Construction Company is a third-generation, family-owned commercial general contractor with offices in Durham and Greensboro, North Carolina.",
+      "statement": "C.T. Wilson is a family-owned commercial GC in Durham and Greensboro, NC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "C.T. Wilson Construction"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://ctwilson.com/our-team/",
+      "title": "Our Team - CT Wilson Construction",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Charlie Wilson President",
+      "statement": "Team page lists the President.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "C.T. Wilson Construction"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://ctwilson.com/our-team/",
+      "title": "Our Team - CT Wilson Construction",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Devin Hill Vice President of Administration",
+      "statement": "Team page lists the VP of Administration.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "C.T. Wilson Construction"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://workmancommercial.com/",
+      "title": "Workman Commercial Construction",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Recognized by Austin Architects as One of the Best Commercial Contractors to work with in Austin in 2021 & 2023",
+      "statement": "Workman Commercial is an Austin-area commercial GC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Workman Commercial Construction"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://workmancommercial.com/our-team/",
+      "title": "Our Executive Team - Workman",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Travis Thrift President & CEO",
+      "statement": "Team page lists the President & CEO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Workman Commercial Construction"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://workmancommercial.com/our-team/",
+      "title": "Our Executive Team - Workman",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Emma Thrift Vice President",
+      "statement": "Team page lists the Vice President, who oversees accounting and administration.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Workman Commercial Construction"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://sdclifton.com/about-us/",
+      "title": "About Us - SD Clifton Construction",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Founded in Augusta, GA, Clifton Construction has become a leading General Contractor in the Southeast, completing around 800 diverse projects over three decades.",
+      "statement": "Clifton Construction is a commercial GC based in Augusta, GA with a Columbia, SC office.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "SD Clifton Construction"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.samuelsgroup.net/about",
+      "title": "About The Samuels Group",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Midwest commercial construction contractors, design-build, and furniture solution firms with offices in Wausau, Wisconsin and West Des Moines, Iowa.",
+      "statement": "The Samuels Group is a commercial contractor in Wausau, WI and West Des Moines, IA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Samuels Group"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://apply.workable.com/rockford/jobs/view/ED9BECE9B9.md",
+      "title": "Rockford - Construction Project Coordinator",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Office Location: 601 First Street NW, Grand Rapids, MI 49504",
+      "statement": "Rockford is based in Grand Rapids, MI.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Rockford Construction"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.hpcummings.com/",
+      "title": "HP Cummings Construction Company",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are now focused on serving Vermont and New Hampshire communities with offices located in Barre, VT and Woodsville, NH.",
+      "statement": "HP Cummings is a general contractor/CM with offices in Barre, VT and Woodsville, NH.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "HP Cummings Construction Company"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://neighborsconstruction.com/",
+      "title": "Neighbors Construction | General Contractors Kansas City",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A 3rd generation family company, we’re one of the top General Contractors in Kansas City",
+      "statement": "Neighbors Construction is a family-owned Kansas City-area GC (Olathe, KS).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Neighbors Construction Company"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://jlncontracting.com/",
+      "title": "JLN Contracting",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "In 2022, JLN Contracting designed and built its Corporate Headquarters in Cromwell, Connecticut.",
+      "statement": "JLN Contracting is a commercial GC headquartered in Cromwell, CT with a New Hampshire office.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "JLN Contracting"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://cooperbuild.com/?p=1225",
+      "title": "CooperBuild",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CooperBuild is a New York City general contractor and full-service construction company founded in 2012, with 300+ completed residential and commercial projects",
+      "statement": "CooperBuild is a New York City GC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "CooperBuild"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://www.wrightcontracting.com/about/",
+      "title": "Wright Contracting - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With offices in Santa Rosa and Napa, Wright Contracting general contractors have been building wineries, schools, hospitals and much more",
+      "statement": "Wright Contracting is a commercial GC in Santa Rosa and Napa, CA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Wright Contracting"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.uhccorp.com/contact-us/",
+      "title": "Contact Us - UHC Construction Services",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Cleveland Headquarters 41 Leonard Ave Northfield, OH 44067",
+      "statement": "UHC Construction Services is headquartered in Northfield, OH.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "UHC Construction Services"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.uhccorp.com/about-us/",
+      "title": "About - UHC Construction Services",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We also possess deep networks of vetted, nationwide subcontractors to source optimal quality and pricing.",
+      "statement": "UHC relies on a nationwide subcontractor network, implying many subs to qualify and track.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "UHC Construction Services"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.bremik.com/about/",
+      "title": "About | Bremik Construction",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We have a passion for preserving and repurposing the rich history of Oregon’s commercial buildings.",
+      "statement": "Bremik Construction is an Oregon commercial GC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bremik Construction"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "1ad91c8b-6f73-43e9-834c-46a2049d7452",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Small and mid-size contractors assign COI collection, expiry tracking and contract-compliance checks to project coordinators/administrators.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-02",
+            "ev-03",
+            "ev-04",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Tracking is done in spreadsheets, PDFs and inboxes, or in a construction ERP with manually entered COI dates.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04",
+            "ev-06",
+            "ev-28",
+            "ev-08"
+          ]
+        },
+        {
+          "statement": "Smaller firms often stay on spreadsheets rather than buy enterprise tools; a spreadsheet is seen as adequate for very small sub counts.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-08",
+            "ev-30"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "ebfc4aae-2c3e-45a2-b8b2-d9a6f01d091d",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "COI work is one duty of $55k-60k/year coordinator roles; no posting isolates how many hours it takes.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02"
+          ]
+        },
+        {
+          "statement": "Vendor estimates range from ~15 hours/year of data entry at 45 subs to 8-12 hours/week; these are unsourced vendor claims.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-31",
+            "ev-28",
+            "ev-13",
+            "ev-43"
+          ]
+        },
+        {
+          "statement": "A missing sub COI at workers' comp premium audit can add that sub's full cost to the contractor's payroll base.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "2756929b-a971-4ffb-b9ce-e54c25600a91",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "In the evidence, the people engaging on COI process are finance roles (a Controller asking peers on CFMA; coordinators reporting to PM and Controller).",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-07",
+            "ev-03"
+          ]
+        },
+        {
+          "statement": "No evidence found showing who signs off on purchasing COI software at a small GC.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "b5b26189-2c08-4227-b202-2622ee295145",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Dedicated tools exist at every price point: enterprise (CertFocus, myCOI, Jones), freemium (bcs free to 25 vendors, TrustLayer free under 50) and indie $29-49/month tools.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14",
+            "ev-25",
+            "ev-23",
+            "ev-10",
+            "ev-24",
+            "ev-09",
+            "ev-27",
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "Some GCs use their ERP (CMiC) or generic AI extraction into a spreadsheet instead of a dedicated tool.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-06",
+            "ev-32"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "6729c974-5b47-430b-bf7c-be67ac317d22",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Brokers bear unpaid COI workload and resent contractor systems that make them upload (one charged agents $15 per upload).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38",
+            "ev-37"
+          ]
+        },
+        {
+          "statement": "Competitors claim login requirements reduce vendor submission rates, but this is unquantified vendor marketing.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-18",
+            "ev-19",
+            "ev-20"
+          ]
+        },
+        {
+          "statement": "No-login submission links already exist at bcs, Billy and Jones, and one source says vendors want an upload link rather than emailing PDFs.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-21",
+            "ev-22",
+            "ev-23",
+            "ev-42"
+          ]
+        },
+        {
+          "statement": "Email-only chasing is also painful: one property manager describes 3-week email chains per certificate.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-41"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "b289cbf3-3bae-42ca-8daa-0cc66a9d3e46",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Incumbent minimums are real: CertFocus $7,500 self-service / $10,000 full-service plus implementation; bcs full-service $10,000.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14",
+            "ev-15",
+            "ev-11"
+          ]
+        },
+        {
+          "statement": "But self-serve pricing far below $99/month already exists: bcs at $0.95/vendor/month, TrustLayer free under 50 vendors, indie tools at $29-49/month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-24",
+            "ev-09",
+            "ev-27",
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "No evidence found of what small GCs currently budget for COI tooling.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "8f133230-1457-4f1e-bd1f-3d368d5176b9",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Workers' comp premium audits, claims and loss-control inspections are when subcontractor COIs get demanded.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-40",
+            "ev-39"
+          ]
+        },
+        {
+          "statement": "Claims where the GC lacked an actual additional-insured endorsement have left GCs uncovered (a 2026 Arkansas case exceeding $1.2M; a California scaffolding case).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33",
+            "ev-34",
+            "ev-35"
+          ]
+        },
+        {
+          "statement": "Mid-project expirations and owner/audit requests for proof also trigger reviews (vendor framing).",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-16"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "Would small GCs pay $99/month when bcs (free to 25 vendors, then $0.95/vendor/month) and TrustLayer (free under 50) already exist?",
+      "category": "budget",
+      "priority": "high"
+    },
+    {
+      "question": "Does endorsement-level parsing (AI/waiver language on attached CG 20 10/20 37 pages) measurably beat bcs/Billy/Jones accuracy?",
+      "category": "alternatives",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "bcs",
+      "url": "https://www.getbcs.com",
+      "kind": "direct",
+      "description": "COI tracking with AI extraction, automated requests and deficiency notices, no-login vendor submission; self-serve or full-service.",
+      "pricing_note": "Free to 25 vendors; self-service $0.95/vendor/month; full-service from $17.80/vendor/year with $10,000 annual minimum.",
+      "evidence_refs": [
+        "ev-10",
+        "ev-11",
+        "ev-12",
+        "ev-21"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-02",
+      "name": "CertFocus (Vertikal RMS)",
+      "url": "https://www.vertikalrms.com",
+      "kind": "direct",
+      "description": "COI tracking with AI verification, self-service or full-service with credentialed reviewers.",
+      "pricing_note": "Self-service $6-8/vendor/year, $7,500 minimum; full-service $13-29/vendor/year, $10,000 minimum; $3,500-4,800 implementation.",
+      "evidence_refs": [
+        "ev-14",
+        "ev-15",
+        "ev-20"
+      ],
+      "sentiment": [
+        {
+          "statement": "A competitor's comparison says CertFocus requires vendor and tenant logins.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-20"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "myCOI / illumend",
+      "url": "https://mycoitracking.com",
+      "kind": "direct",
+      "description": "Established COI tracking platform plus managed service; sales-led pricing.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-25",
+        "ev-19"
+      ],
+      "sentiment": [
+        {
+          "statement": "A competitor's comparison says myCOI requires vendor login and review can slow during peak renewals.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-04",
+      "name": "TrustLayer",
+      "url": "https://www.trustlayer.io",
+      "kind": "direct",
+      "description": "AI-driven vendor compliance and COI tracking; free Starter plan under 50 vendors.",
+      "pricing_note": "Free under 50 vendors; paid tiers quote-based.",
+      "evidence_refs": [
+        "ev-24"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "Jones",
+      "url": "https://getjones.com",
+      "kind": "direct",
+      "description": "AI plus specialist review of COIs, endorsements and policies for construction and CRE; no-login vendor links.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-23",
+        "ev-35"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Billy",
+      "url": "https://billyforinsurance.com",
+      "kind": "direct",
+      "description": "Construction-focused COI compliance with AI endorsement review, no-login submission and ERP integrations.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-22",
+        "ev-18"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "SmartCompliance",
+      "url": "https://www.smartcompliance.co",
+      "kind": "direct",
+      "description": "COI tracking with OCR and custom rules.",
+      "pricing_note": "$2,000-$4,000/year per a competitor's table.",
+      "evidence_refs": [
+        "ev-17"
+      ],
+      "sentiment": [
+        {
+          "statement": "A competitor's table says its OCR needs manual corrections and setup is lengthy.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-17"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-08",
+      "name": "CertKeeper",
+      "url": "https://certkeeper.pages.dev",
+      "kind": "direct",
+      "description": "Pre-launch no-portal COI tracker for GCs: forward ACORD 25s by email, reminders at 90/60/30 days.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-26"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "COIPulse",
+      "url": "https://dev.to/robertatkinson3570/existing-coi-software-costs-6k-15kyear-here-3oem",
+      "kind": "direct",
+      "description": "Indie AI COI tracker for property managers.",
+      "pricing_note": "Free to 20 vendors; $49/month Starter; $129 Pro; $299 Growth.",
+      "evidence_refs": [
+        "ev-09"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "VendorShield",
+      "url": "https://dev.to/crawde/why-spreadsheets-are-the-1-compliance-risk-for-general-contractors-9",
+      "kind": "direct",
+      "description": "Indie COI tracker for GCs and property managers with PDF parsing and vendor portal.",
+      "pricing_note": "$49/month flat.",
+      "evidence_refs": [
+        "ev-27"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "CertTrack Lite",
+      "url": "https://idea-certtrack-lite-coi-tracking-expiry-alert.pages.dev",
+      "kind": "direct",
+      "description": "Low-cost COI expiry tracker for agents and small contractors.",
+      "pricing_note": "From $29/month.",
+      "evidence_refs": [
+        "ev-29"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "NetVendor",
+      "url": "https://www.netvendor.com",
+      "kind": "indirect",
+      "description": "Vendor management for property managers with COI compliance tied to PMS systems.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-43"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-13",
+      "name": "CMiC (construction ERP)",
+      "url": "https://cmicglobal.com",
+      "kind": "indirect",
+      "description": "Construction ERP used to store COI dates and flag out-of-compliance vendors.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-06"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-14",
+      "name": "AI extraction to spreadsheet (ImageToTable)",
+      "url": "https://imagetotable.ai",
+      "kind": "indirect",
+      "description": "Generic AI document extraction that fills a COI spreadsheet.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-32"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-15",
+      "name": "Spreadsheets, shared drives and email",
+      "url": null,
+      "kind": "manual",
+      "description": "Excel/Google Sheets plus inbox follow-up, maintained by project coordinators.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-08",
+        "ev-28",
+        "ev-04",
+        "ev-30"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-16",
+      "name": "Full-service COI outsourcing (bcs / CertFocus full-service)",
+      "url": "https://www.getbcs.com/pricing-and-plans",
+      "kind": "service",
+      "description": "Outsourced certificate review and vendor chasing.",
+      "pricing_note": "$10,000 annual minimums.",
+      "evidence_refs": [
+        "ev-11",
+        "ev-14"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Coordinators at small GCs track COIs in spreadsheets, shared folders and email, or key COI dates into a construction ERP such as CMiC.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-04",
+        "ev-06",
+        "ev-28"
+      ]
+    },
+    {
+      "statement": "Firms that buy software choose between sales-led incumbents with $7,500-$10,000 minimums and self-serve tools that are free at low vendor counts (bcs, TrustLayer).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-14",
+        "ev-10",
+        "ev-24",
+        "ev-25"
+      ]
+    },
+    {
+      "statement": "A wave of indie tools (CertKeeper, COIPulse, VendorShield, CertTrack Lite) already targets the sub-$100/month small-contractor segment, one with the same no-portal pitch.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-26",
+        "ev-09",
+        "ev-27",
+        "ev-29"
+      ]
+    },
+    {
+      "statement": "Outsourced full-service review is available but carries $10,000 annual minimums.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-11",
+        "ev-14"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Building Excellence, LLC",
+      "website": "https://taylor-coakley.squarespace.com",
+      "icp_id": null,
+      "location": "Tucson, AZ",
+      "industry": "Commercial general contracting",
+      "description": "Small Southern Arizona GC with two project coordinators and a project administrator: the users who chase sub COIs.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-44"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-44",
+        "ev-47",
+        "ev-45",
+        "ev-46"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Full-service GC of roughly 19 people with dedicated coordinator/admin staff.",
+          "evidence_refs": [
+            "ev-44",
+            "ev-47"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Taylor Coakley",
+          "role": "Project Coordinator",
+          "email": null,
+          "evidence_ref": "ev-45"
+        },
+        {
+          "name": "Patti Del Principe",
+          "role": "Project Administrator",
+          "email": null,
+          "evidence_ref": "ev-46"
+        }
+      ],
+      "size_estimate": {
+        "min": 19,
+        "max": 19,
+        "signal": "Team page: 9 named staff plus 10 field personnel",
+        "evidence_ref": "ev-47"
+      }
+    },
+    {
+      "ref": "co-02",
+      "name": "Andrew General Contractors",
+      "website": "https://www.andrewgc.com",
+      "icp_id": null,
+      "location": "Orlando, FL",
+      "industry": "Commercial general contracting",
+      "description": "Owner-led Orlando commercial GC with a Director of Finance and Director of Operations (buyer roles).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-48"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-48",
+        "ev-49",
+        "ev-50",
+        "ev-51"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional commercial GC with owner, finance and ops leaders named.",
+          "evidence_refs": [
+            "ev-48"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Todd Andrew",
+          "role": "President",
+          "email": null,
+          "evidence_ref": "ev-49"
+        },
+        {
+          "name": "Megan Yeomans",
+          "role": "Director of Finance",
+          "email": null,
+          "evidence_ref": "ev-50"
+        },
+        {
+          "name": "Connor Andrew",
+          "role": "Director of Operations",
+          "email": null,
+          "evidence_ref": "ev-51"
+        }
+      ]
+    },
+    {
+      "ref": "co-03",
+      "name": "C.T. Wilson Construction",
+      "website": "https://ctwilson.com",
+      "icp_id": null,
+      "location": "Durham and Greensboro, NC",
+      "industry": "Commercial general contracting",
+      "description": "Third-generation family-owned regional commercial GC with a VP of Administration.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-52"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-52",
+        "ev-53",
+        "ev-54"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Family-owned regional commercial GC.",
+          "evidence_refs": [
+            "ev-52"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Charlie Wilson",
+          "role": "President",
+          "email": null,
+          "evidence_ref": "ev-53"
+        },
+        {
+          "name": "Devin Hill",
+          "role": "Vice President of Administration",
+          "email": null,
+          "evidence_ref": "ev-54"
+        }
+      ]
+    },
+    {
+      "ref": "co-04",
+      "name": "Workman Commercial Construction",
+      "website": "https://workmancommercial.com",
+      "icp_id": null,
+      "location": "Austin / New Braunfels, TX",
+      "industry": "Commercial general contracting",
+      "description": "Family-oriented Central Texas commercial GC; VP oversees accounting and compliance.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-55"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-55",
+        "ev-56",
+        "ev-57"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small commercial GC with owner-operators.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Travis Thrift",
+          "role": "President & CEO",
+          "email": null,
+          "evidence_ref": "ev-56"
+        },
+        {
+          "name": "Emma Thrift",
+          "role": "Vice President",
+          "email": null,
+          "evidence_ref": "ev-57"
+        }
+      ]
+    },
+    {
+      "ref": "co-05",
+      "name": "SD Clifton Construction",
+      "website": "https://sdclifton.com",
+      "icp_id": null,
+      "location": "Augusta, GA",
+      "industry": "Commercial general contracting",
+      "description": "Regional Southeast commercial GC (Augusta GA, Columbia SC).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional commercial GC with two offices.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "The Samuels Group",
+      "website": "https://www.samuelsgroup.net",
+      "icp_id": null,
+      "location": "Wausau, WI",
+      "industry": "Commercial general contracting",
+      "description": "Midwest commercial design-build contractor with two offices.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Regional commercial contractor; also a furniture business.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Rockford Construction",
+      "website": "https://www.rockfordconstruction.com",
+      "icp_id": null,
+      "location": "Grand Rapids, MI",
+      "industry": "Commercial general contracting",
+      "description": "Commercial builder whose coordinator job includes subcontractor insurance certificates (may be above the 100-employee band).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-60",
+        "ev-05"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Commercial GC; size unknown and possibly larger than the ICP.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Hiring a coordinator whose duties include insurance certificates.",
+          "evidence_refs": [
+            "ev-05"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "Gillis Gilkerson",
+      "website": "https://www.ggibuilds.com",
+      "icp_id": null,
+      "location": "Salisbury, MD",
+      "industry": "Commercial general contracting",
+      "description": "Delmarva GC whose Controller asked peers about COI practice; tracks COIs in CMiC by manually input dates.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-07"
+      },
+      "technologies": [
+        "CMiC"
+      ],
+      "evidence_refs": [
+        "ev-06",
+        "ev-07"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional GC actively discussing its COI process.",
+          "evidence_refs": [
+            "ev-06"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Controller publicly asked about per-job COI practice; current tracking relies on manual date entry in CMiC.",
+          "evidence_refs": [
+            "ev-06",
+            "ev-07"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "HP Cummings Construction Company",
+      "website": "https://www.hpcummings.com",
+      "icp_id": null,
+      "location": "Barre, VT / Woodsville, NH",
+      "industry": "Commercial general contracting",
+      "description": "Long-established VT/NH GC and CM.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional GC/CM.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "Neighbors Construction Company",
+      "website": "https://neighborsconstruction.com",
+      "icp_id": null,
+      "location": "Olathe, KS",
+      "industry": "Commercial general contracting",
+      "description": "Third-generation family GC in the Kansas City metro.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Family-owned regional GC.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "JLN Contracting",
+      "website": "https://jlncontracting.com",
+      "icp_id": null,
+      "location": "Cromwell, CT",
+      "industry": "Commercial general contracting",
+      "description": "New England commercial GC with CT and NH offices.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional commercial GC.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "CooperBuild",
+      "website": "https://cooperbuild.com",
+      "icp_id": null,
+      "location": "New York, NY",
+      "industry": "Commercial general contracting",
+      "description": "NYC residential/commercial GC running many concurrent subs.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-64"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-64"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "GC, partly residential.",
+          "evidence_refs": [
+            "ev-64"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Wright Contracting",
+      "website": "https://www.wrightcontracting.com",
+      "icp_id": null,
+      "location": "Santa Rosa, CA",
+      "industry": "Commercial general contracting",
+      "description": "North Bay commercial GC (wineries, schools, healthcare).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-65"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Regional commercial GC.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "UHC Construction Services",
+      "website": "https://www.uhccorp.com",
+      "icp_id": null,
+      "location": "Northfield, OH",
+      "industry": "Commercial general contracting",
+      "description": "Family-owned national retail/commercial GC using a nationwide subcontractor network.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66",
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Program GC using many subcontractors across states.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "Bremik Construction",
+      "website": "https://www.bremik.com",
+      "icp_id": null,
+      "location": "Portland, OR",
+      "industry": "Commercial general contracting",
+      "description": "Oregon commercial GC doing TI, education, healthcare and civic work.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-68"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-68"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Commercial GC; size unknown.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the COI tooling they use.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
