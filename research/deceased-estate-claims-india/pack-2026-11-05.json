@@ -1,0 +1,1764 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "385da3c4-df12-48a4-b913-3e1c5171a27b",
+    "researcher": "claude-code",
+    "started_at": "2026-11-05T09:10:00+05:30",
+    "finished_at": "2026-11-05T11:40:00+05:30",
+    "queries": [
+      "NRI deceased parent bank account claim India experience reddit",
+      "legal heir certificate transmission mutual fund demat bank claim months ordeal India",
+      "RBI 2025 directions settlement of claims deceased customers banks 15 days",
+      "unclaimed deposits DEA Fund crore UDGAM portal claim 2025",
+      "\"unclaimed\" mutual funds insurance provident fund India crore heirs unaware",
+      "deceased estate asset tracing service India NRI claim settlement company",
+      "site:reddit.com father passed away bank accounts mutual funds claim India nominee legal heir",
+      "\"transmission\" mutual fund after death \"was easy\" nominee experience smooth process India (contradiction)",
+      "FamEase estate settlement NRI post-death documentation India startup",
+      "IBA common application form deceased claim settlement banks SOP 2026 (contradiction)",
+      "inter-regulatory working group single portal unclaimed financial assets RBI (contradiction)",
+      "Mint \"Without wills, death sparks a costly legal ordeal for NRIs\"",
+      "chartered accountant firm transmission of shares legal heir succession certificate services NRI deceased claim",
+      "law firm India succession certificate NRI estate settlement services Mumbai Delhi Bangalore",
+      "IEPF claim recovery service firm unclaimed shares deceased legal heir fees percentage",
+      "\"legal heir certificate\" tahsildar delay months bribe complaint",
+      "CAMS KFintech consolidated account statement PAN deceased find all mutual fund folios heirs MF Central",
+      "estate settlement service India startup after death bank insurance claims concierge fee family",
+      "advocates succession certificate legal heir certificate NRI services law firm Chennai Hyderabad Pune Kolkata",
+      "chartered accountants transmission of securities claim settlement of deceased services firm India NRI estate",
+      "law firm probate letters of administration succession certificate NRI practice area India",
+      "succession certificate lawyers firm our team NRI inheritance Bangalore OR Chennai OR Hyderabad",
+      "CA firm India estate planning succession services NRI chartered accountants Mumbai wills transmission"
+    ],
+    "notes": "Forum evidence comes from reddit.sentinel-team.org, a public Reddit mirror (reddit.com itself did not appear in search results); usernames omitted. Several strong sources were unfetchable by Preuve (Business Standard, Moneylife, Mint via Magzter, ICICI NRI articles, Value Research, YourStory on FinPeace) and were left out. The founder-named adjacent players RegisterKaro and LegalKart were not researched. Prospecting found 8 firms with fetchable own-site evidence, short of the 20+ target; no contacts were recorded because no firm page pairs a name with a title in a way that fits the ICP roles. The buyer-within-family unknown found no public evidence."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://www.businesstoday.in/nri/invest/story/nris-losing-crores-in-india-banker-blames-it-one-brutal-legal-document-497801-2025-10-11",
+      "title": "'NRIs losing crores in India': Banker blames it one brutal legal document - BusinessToday",
+      "source_type": "news",
+      "published_at": "2025-10-11",
+      "quote": "It’s not cheap either. Ahuja pegs the total cost at ₹10–20 lakh, with court fees in Delhi reaching 4% of estate value. … The entire ordeal can drag on for 6 to 18 months.",
+      "statement": "A banker quoted by Business Today puts the cost of getting a succession certificate without a registered will at Rs 10-20 lakh and the duration at 6-18 months.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "52591a38-e9ec-4586-be5a-8998764cd502",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://www.businesstoday.in/nri/invest/story/nris-losing-crores-in-india-banker-blames-it-one-brutal-legal-document-497801-2025-10-11",
+      "title": "'NRIs losing crores in India': Banker blames it one brutal legal document - BusinessToday",
+      "source_type": "news",
+      "published_at": "2025-10-11",
+      "quote": "For NRIs, the process is even more complex. Foreign documents must be apostilled, powers of attorney granted, and multiple affidavits and indemnities submitted in Indian courts",
+      "statement": "For NRI heirs the succession process adds apostilled documents, powers of attorney and multiple affidavits and indemnities.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://insights.dsij.in/dsijarticledetail/rs-98073-crore-in-unclaimed-bank-deposits-how-to-find-forgotten-money-through-rbis-udgam-portal-58952",
+      "title": "Rs 98,073 Crore in Unclaimed Bank Deposits (DSIJ)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Finance Ministry data shared in Parliament showed that Rs 98,073 crore had been transferred to the DEA Fund as of January 31, 2026",
+      "statement": "Rs 98,073 crore of unclaimed bank deposits had been transferred to RBI's DEA Fund as of 31 Jan 2026 (Finance Ministry data).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://insights.dsij.in/dsijarticledetail/rs-98073-crore-in-unclaimed-bank-deposits-how-to-find-forgotten-money-through-rbis-udgam-portal-58952",
+      "title": "Rs 98,073 Crore in Unclaimed Bank Deposits (DSIJ)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "In some cases, nominees or legal heirs may not even know that an account or fixed deposit exists, or may lack the documents required to establish their claim.",
+      "statement": "Heirs sometimes do not know an account or FD exists, or lack the documents to claim it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://insights.dsij.in/dsijarticledetail/rs-98073-crore-in-unclaimed-bank-deposits-how-to-find-forgotten-money-through-rbis-udgam-portal-58952",
+      "title": "Rs 98,073 Crore in Unclaimed Bank Deposits (DSIJ)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "However, UDGAM only helps locate the deposit; it does not process or settle the claim. Once a deposit is identified, the claimant must approach the concerned bank and follow its documentation and claim process.",
+      "statement": "RBI's UDGAM portal only locates unclaimed deposits; the claim itself still runs through each bank's own process.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://insights.dsij.in/dsijarticledetail/rs-98073-crore-in-unclaimed-bank-deposits-how-to-find-forgotten-money-through-rbis-udgam-portal-58952",
+      "title": "Rs 98,073 Crore in Unclaimed Bank Deposits (DSIJ)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "In October 2025, the RBI introduced an incentive scheme under which banks can receive 5 per cent to 7.5 per cent of the unclaimed deposit amount, subject to a prescribed cap, for every successfully settled claim.",
+      "statement": "Since October 2025 banks earn 5-7.5% (capped) of each unclaimed deposit claim they settle, which pushes banks themselves to trace and settle claims.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://www.businesstoday.in/personal-finance/news/story/rs-22-lakh-crore-unclaimed-funds-lie-idle-across-banks-epf-insurance-stocks-mfs-524958-2026-04-10",
+      "title": "Rs 2.2 lakh crore unclaimed: Funds lie idle across banks, EPF, insurance, stocks, MFs - BusinessToday",
+      "source_type": "news",
+      "published_at": "2026-04-10",
+      "quote": "There is no unified registry, forcing investors or heirs to search across multiple platforms.",
+      "statement": "There is no unified registry of unclaimed assets; heirs must search separate platforms per asset class.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://www.businesstoday.in/personal-finance/news/story/rs-22-lakh-crore-unclaimed-funds-lie-idle-across-banks-epf-insurance-stocks-mfs-524958-2026-04-10",
+      "title": "Rs 2.2 lakh crore unclaimed: Funds lie idle across banks, EPF, insurance, stocks, MFs - BusinessToday",
+      "source_type": "news",
+      "published_at": "2026-04-10",
+      "quote": "However, claim processing is decentralised. Investors or legal heirs must approach the respective institution — bank, insurer, AMC, or registrar — with supporting documents such as identity proof, death certificates (if applicable), and succession papers. This procedural friction often delays or discourages recovery.",
+      "statement": "Claims are filed separately with each bank, insurer, AMC or registrar, and this friction often delays or discourages recovery.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b",
+        "52591a38-e9ec-4586-be5a-8998764cd502"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://insights.dsij.in/dsijarticledetail/rs-98073-crore-in-unclaimed-bank-deposits-how-to-find-forgotten-money-through-rbis-udgam-portal-58952",
+      "title": "Rs 98,073 Crore in Unclaimed Bank Deposits (DSIJ)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Its nationwide “Your Money, Your Right” campaign was conducted between October and December 2025, with special camps organised across 748 districts to help people trace and claim forgotten assets. … As of February 28, 2026, unclaimed financial assets worth Rs 5,777 crore relating to 22.95 lakh claims had been returned to rightful owners",
+      "statement": "A free government campaign (Oct-Dec 2025, camps in 748 districts) helped return Rs 5,777 crore across 22.95 lakh claims, a free alternative for tracing and claiming.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://www.devdiscourse.com/article/law-order/3848814-73000-crore-in-unclaimed-financial-assets-govt-steps-up-drive-to-reunite-citizens-with-their-money",
+      "title": "₹73,000 Crore+ in Unclaimed Financial Assets: Govt Steps Up Drive (Devdiscourse)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "In a significant upcoming reform, RBI has also constituted an Inter-Regulatory Working Group to develop a single integrated portal, aiming to provide a one-stop solution for all unclaimed financial assets.",
+      "statement": "RBI has set up an inter-regulatory working group to build a single portal for all unclaimed financial assets, which would cover part of the tracing step for free.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://www.devdiscourse.com/article/law-order/3848814-73000-crore-in-unclaimed-financial-assets-govt-steps-up-drive-to-reunite-citizens-with-their-money",
+      "title": "₹73,000 Crore+ in Unclaimed Financial Assets: Govt Steps Up Drive (Devdiscourse)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Additionally, the Indian Banks' Association (IBA) has introduced a Common Application Form and SOP via bank portals to standardize and simplify claims.",
+      "statement": "IBA has introduced a common claim application form and SOP across banks, reducing per-bank variation in bank claims.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.theweek.in/wire-updates/business/2025/11/27/dcm62-biz-finmin-unclaimed-assets.html",
+      "title": "FinMin RBI working on portal to help citizens claim unclaimed assets (PTI via The Week)",
+      "source_type": "news",
+      "published_at": "2025-11-27",
+      "quote": "The finance ministry is working with the Reserve Bank to develop a unified portal to enable savers and retail investors to claim all unclaimed assets across asset classes such as bank deposits, pension fund, shares, and dividends",
+      "statement": "The Finance Ministry and RBI are building a unified portal to claim unclaimed assets across bank deposits, pension funds, shares and dividends.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://upstox.com/news/market-news/financial-regulations/sebi-moots-simplified-claim-process-for-heirs-of-deceased-investors/article-190647/",
+      "title": "SEBI moots simplified claim process for heirs of deceased investors (Upstox)",
+      "source_type": "news",
+      "published_at": "2026-03-13",
+      "quote": "They may also offer an online facility for submitting and tracking claims. … Transmission cases should be processed within 21 calendar days from the receipt of all required documents",
+      "statement": "SEBI's proposal adds standard forms, optional online claim tracking and a 21-day processing limit for securities transmission.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://upstox.com/news/market-news/financial-regulations/sebi-moots-simplified-claim-process-for-heirs-of-deceased-investors/article-190647/",
+      "title": "SEBI moots simplified claim process for heirs of deceased investors (Upstox)",
+      "source_type": "news",
+      "published_at": "2026-03-13",
+      "quote": "However, in cases where no nomination or will exists, the process becomes more complex as intermediaries are required to ensure that securities are transferred to the rightful heirs, SEBI noted.",
+      "statement": "SEBI acknowledges that claims without a nomination or will are more complex.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://reddit.sentinel-team.org/posts/1pafk9k/snapshots/2025-12-26T05%3A20%3A46.906552Z",
+      "title": "Reddit thread (mirror): claiming late father's mutual funds without nominee",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I am not an Indian resident so not too familiar with Indian laws. My father passed away in India a few years ago and he had some mutual funds (Tata, ICICI Prudential) without a nominee. … Additionally, I have to pay the state government a stamp duty (which is about 8% or so) on the assets value.",
+      "statement": "A non-resident heir with un-nominated mutual funds (over Rs 50 lakh each) asks a forum how to claim them, years after the death, and expects about 8% duty.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397",
+        "52591a38-e9ec-4586-be5a-8998764cd502"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://reddit.sentinel-team.org/posts/1rr4iew/snapshots/2026-03-12T09%3A00%3A06.045053Z",
+      "title": "Reddit thread (mirror): SBI refusing nominee PPF claim",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Once we submitted legal heir docs, they told that we need to give surety of same amount to get the money since it was very huge sum. All this back and forth took us a year.",
+      "statement": "A forum user reports a year of back-and-forth with SBI to claim a deceased parent's FDs despite being the nominee.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "52591a38-e9ec-4586-be5a-8998764cd502",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://reddit.sentinel-team.org/posts/1rr6d7u/snapshots/2026-03-13T19%3A51%3A07.733385Z",
+      "title": "Reddit thread (mirror): SBI refusing nominee PPF claim",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "He didn't leave a will so I had to get a succession from court and finally submitted the claim in 2025 the bank is still processing",
+      "statement": "A user whose father died in 2020 only submitted the claim in 2025 after a court succession process, and it is still pending.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "52591a38-e9ec-4586-be5a-8998764cd502",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://reddit.sentinel-team.org/posts/1rr6d7u/snapshots/2026-03-13T19%3A51%3A07.733385Z",
+      "title": "Reddit thread (mirror): SBI refusing nominee PPF claim",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Ombudsman is your friend. I got a favourable redress all for one of my grievance with bank. It was also related to death and nomination.",
+      "statement": "Some heirs resolve stuck bank death claims for free through the RBI Ombudsman.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://reddit.sentinel-team.org/posts/1t84opp/snapshots/2026-05-15T18%3A05%3A05.305487Z",
+      "title": "Reddit thread (mirror): is this everyone's experience after a parent's death?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Visited the SBI branch 4 times and been turned away each time for a different missing document",
+      "statement": "A family was turned away from an SBI branch four times, each time for a different missing document.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "52591a38-e9ec-4586-be5a-8998764cd502",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://reddit.sentinel-team.org/posts/1t84opp/snapshots/2026-05-15T18%3A05%3A05.305487Z",
+      "title": "Reddit thread (mirror): is this everyone's experience after a parent's death?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Discovered his EPF account only because they found an old payslip — EPFO had no way to search by name … Found a second bank account at a co-operative bank they didn't even know existed",
+      "statement": "The same family found an EPF account only through an old payslip and found an unknown co-operative bank account by chance.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://reddit.sentinel-team.org/posts/1t84opp/snapshots/2026-05-15T18%3A05%3A05.305487Z",
+      "title": "Reddit thread (mirror): is this everyone's experience after a parent's death?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "He took 2 months of unpaid leave to handle this.",
+      "statement": "The heir took two months of unpaid leave to handle the estate paperwork.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "52591a38-e9ec-4586-be5a-8998764cd502"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://reddit.sentinel-team.org/posts/1t84opp/snapshots/2026-05-15T18%3A05%3A05.305487Z",
+      "title": "Reddit thread (mirror): is this everyone's experience after a parent's death?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Yeah, pretty common unfortunately. Most families get stuck in the \"one more document needed\" loop for months. The worst part is usually discovering accounts or policies nobody knew existed.",
+      "statement": "A commenter says the 'one more document' loop and discovering unknown accounts are common.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://reddit.sentinel-team.org/posts/1t84opp/snapshots/2026-05-15T18%3A05%3A05.305487Z",
+      "title": "Reddit thread (mirror): is this everyone's experience after a parent's death?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "It is not everyone's experience. Nominees, wills and trusts are the way to go and you won't have to bother about most of these.",
+      "statement": "Another commenter says families with nominees, wills or trusts avoid most of this.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://www.lawyersclubindia.com/forum/-help-need-to-apply-for-succession-certificate-at-kolkata-wb-134940.asp",
+      "title": "Lawyers Club India forum: succession certificate at Kolkata",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "My father (NRI) died in a road accident in a foregin country in the year 2003. … Bank is now telling us that the rest of the amount can be claimed ONLY by means of Succession Certificate.",
+      "statement": "An heir of an NRI who died abroad in 2003 is still being asked for a succession certificate to claim the remaining bank balance.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://nriinformation.com/nri-info/death-of-parent-in-india",
+      "title": "When a parent dies in India, NRI checklist (nriinformation.com)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "So what genuinely needs your presence? Honestly, less than families fear. … But registering the death, ordering certificates, filing insurance and EPF claims, starting mutation, and instructing a lawyer can all be set in motion from where you are, often before you travel at all.",
+      "statement": "An NRI guide says most steps can be started remotely, so heirs need to be present less than they fear.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://nriinformation.com/nri-info/death-of-parent-in-india",
+      "title": "When a parent dies in India, NRI checklist (nriinformation.com)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The bank releases the balance to the nominee against just three things: the claim form, the death certificate, and an officially valid identity and address document of the nominee.",
+      "statement": "Under the 2025 RBI rules, a nominee gets a bank balance against only a claim form, death certificate and ID.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://nriinformation.com/nri-info/death-of-parent-in-india",
+      "title": "When a parent dies in India, NRI checklist (nriinformation.com)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "run a CAMS or KFintech (the registrars that keep mutual-fund records) consolidated statement on the deceased's PAN (Permanent Account Number, India's tax ID) to surface every mutual-fund folio, because families routinely miss old investments nobody remembered.",
+      "statement": "A free CAMS/KFintech consolidated statement on the deceased's PAN surfaces mutual-fund folios, and families routinely miss old investments.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://nriinformation.com/nri-info/death-of-parent-in-india",
+      "title": "When a parent dies in India, NRI checklist (nriinformation.com)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "For anything beyond a single clean account with a nominee, an India-qualified lawyer or chartered accountant pays for themselves quickly",
+      "statement": "The guide recommends a lawyer or CA for anything beyond a single clean nominated account.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://nriinformation.com/nri-info/death-of-parent-in-india",
+      "title": "When a parent dies in India, NRI checklist (nriinformation.com)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "You execute a POA in your country of residence, in favour of a trusted person in India, authorising them to deal with the banks, file claim forms, pursue mutation, and represent you in the succession process.",
+      "statement": "Overseas heirs typically work through a power of attorney given to a trusted person in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://upstox.com/news/personal-finance/latest-updates/what-is-a-consolidated-account-statement-cas-and-how-does-it-help-legal-heirs-trace-investments/article-195688/",
+      "title": "What is a CAS and how does it help legal heirs trace investments? (Upstox)",
+      "source_type": "news",
+      "published_at": "2026-06-19",
+      "quote": "Yes, heirs through this important financial document can ascertain the different securities and mutual funds held in the deceased investor’s name. … However, it does not include information relating to physical share certificates or traditional savings and investment products.",
+      "statement": "The Consolidated Account Statement lets heirs find a deceased person's demat and MF holdings, but it misses physical shares and traditional savings products.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://assetlyhq.com/blog/how-to-get-succession-certificate-india-nri/",
+      "title": "Succession Certificate in India: Process, Cost and Time | Assetly Blog",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The harder part for NRIs is rarely the court. It is assembling the document set across time zones and family members",
+      "statement": "An NRI property platform says the hard part for NRIs is assembling documents across time zones and family members.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://assetlyhq.com/blog/how-to-get-succession-certificate-india-nri/",
+      "title": "Succession Certificate in India: Process, Cost and Time | Assetly Blog",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Uncontested: 4 to 7 months.",
+      "statement": "Assetly estimates 4-7 months for an uncontested succession certificate.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "52591a38-e9ec-4586-be5a-8998764cd502"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.theweek.in/thewallet/investment/Crusader-of-lost-assets.html",
+      "title": "Crusader of lost assets (The Week)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "But neither Gemmell’s family nor his executors, the National Westminster Bank, had any clue of his Indian assets. … And what started off as just an interest soon laid the foundation for Fundtracers, Gujral’s Delhi-based company set up in 2006.",
+      "statement": "Fundtracers, a Delhi firm founded in 2006, traces Indian assets that overseas families did not know existed.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": "Fundtracers"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.theweek.in/thewallet/investment/Crusader-of-lost-assets.html",
+      "title": "Crusader of lost assets (The Week)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Gujral works with three lawyers, a chartered accountant and a couple of researchers. … “The fee varies from case to case.",
+      "statement": "Fundtracers' asset tracing combines lawyers, a CA and researchers, with case-by-case fees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d"
+      ],
+      "company_name": "Fundtracers"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://sharesamadhan.com/nri-samadhan",
+      "title": "NRI Samadhan by Share Samadhan",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We assist in the process of all types of Unclaimed investments recovery for NRIs, from Indian shares to bank assets and mutual funds.",
+      "statement": "Share Samadhan sells unclaimed-investment recovery for NRIs across shares, bank assets and mutual funds.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397",
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": "Share Samadhan"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://sharesamadhan.com/nri-samadhan",
+      "title": "NRI Samadhan by Share Samadhan",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Share Samadhan’s expert research team can trace unclaimed investments for NRIs with minimal information. No physical visit to India is required.",
+      "statement": "Share Samadhan offers tracing of unknown investments for NRIs without a visit to India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969",
+        "61b5fa1f-c3c1-484c-b911-e44c31973397"
+      ],
+      "company_name": "Share Samadhan"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://sharesamadhan.com/nri-samadhan",
+      "title": "NRI Samadhan by Share Samadhan",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Apart from that they helped me claim MFs, Bonds and Savings Balances which were really old! SS is doing a lovely service to help us ease our stress and recover our funds.",
+      "statement": "A Share Samadhan customer review says the firm also recovered old mutual funds, bonds and savings balances.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d"
+      ],
+      "company_name": "Share Samadhan"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://www.famease.in",
+      "title": "Estate Settlement & Family Succession Documentation Support | FamEase",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "FamEase helps families, legal heirs, and NRIs navigate succession formalities and estate administration in India. Our guided support organizes required paperwork, account claims, title transfers, and institutional submissions through one clear workspace.",
+      "statement": "FamEase already offers a guided workspace for heirs and NRIs covering paperwork, account claims and institutional submissions.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397"
+      ],
+      "company_name": "FamEase"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.famease.in",
+      "title": "Estate Settlement & Family Succession Documentation Support | FamEase",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Organize records for survivor claims, fixed deposit liquidations, locker inventories, and account closure formalities across financial institutions.",
+      "statement": "FamEase covers claims across financial institutions.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": "FamEase"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.thebridgechronicle.com/news/surakshakadi-transforms-asset-transfer-into-a-hassle-free-experience",
+      "title": "Surakshakadi Transforms Asset Transfer into a Hassle-Free Experience (Bridge Chronicle)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Currently, approximately 6,500 users have downloaded the app. While some features are complimentary, more complex services involving documentation are chargeable.",
+      "statement": "Surakshakadi (Pune) offers an asset transfer service; about 6,500 app downloads, with paid documentation services.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Surakshakadi"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://businessindia.co/magazine/fintech/how-easy-is-to-get-your-dead-money",
+      "title": "How easy is to get your 'Dead money' (Business India)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Beginning with EasyClaims One step, it is a stress-free solution to all the unnecessary hassle involved in submitting claims post a bereavement. This service helps in simplifying the paperwork; it initiates legal documentation and creates submission-ready claim dockets.",
+      "statement": "EasyInherit's EasyClaims creates submission-ready claim dockets after a bereavement, which is close to the proposed claim-packet product.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": "EasyInherit"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://businessindia.co/magazine/fintech/how-easy-is-to-get-your-dead-money",
+      "title": "How easy is to get your 'Dead money' (Business India)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Imagine a widow having to claim Rs65,000 lying in the bank where she was not a nominee. She would be required to produce paperwork for which a tout or agent will quote Rs30,000.",
+      "statement": "EasyInherit's founder says agents may quote Rs 30,000 to do the paperwork for a Rs 65,000 non-nominee claim, so fees can be large relative to small claims.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "52591a38-e9ec-4586-be5a-8998764cd502",
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d"
+      ],
+      "company_name": "EasyInherit"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://businessindia.co/magazine/fintech/how-easy-is-to-get-your-dead-money",
+      "title": "How easy is to get your 'Dead money' (Business India)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "In India, the traditional players in the space of inheritance are the lawyers.",
+      "statement": "Lawyers are the traditional providers for inheritance work in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://inc42.com/startups/how-yellow-plans-to-bring-order-to-estate-planning/",
+      "title": "How Yellow Plans To Bring Order To The Broken Estate Planning Market (Inc42)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Via its dedicated offering called Yellow Smart, the startup also supports families through everything that follows after a death.",
+      "statement": "Yellow (Bengaluru, funded) offers Yellow Smart, a post-death service for families.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [],
+      "company_name": "Yellow"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://inc42.com/startups/how-yellow-plans-to-bring-order-to-estate-planning/",
+      "title": "How Yellow Plans To Bring Order To The Broken Estate Planning Market (Inc42)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Families often don’t even know what assets exist until it’s too late, and then spend years caught in confusion and legal hurdles trying to recover them.",
+      "statement": "Yellow's founders say families often don't know what assets exist and spend years recovering them.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969",
+        "52591a38-e9ec-4586-be5a-8998764cd502"
+      ],
+      "company_name": "Yellow"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://inc42.com/startups/how-yellow-plans-to-bring-order-to-estate-planning/",
+      "title": "How Yellow Plans To Bring Order To The Broken Estate Planning Market (Inc42)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Reports suggest that fewer than 10% of Indians create a formal will in their lifetime",
+      "statement": "Fewer than 10% of Indians reportedly make a formal will, so most estates go through the heavier no-will route.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://getbelong.com/blog/nri-tax/inherit-mutual-funds-shares-and-demat-accounts/",
+      "title": "How NRIs Inherit Mutual Funds, Shares and Demat Accounts | Belong",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The first family's mother had registered nominees on every folio and her demat account. Her UAE-based daughter completed transmission into an NRO-linked NRI folio with her KYC and the death certificate. Smooth, and reasonably quick.",
+      "statement": "Where nominees were registered, a UAE-based daughter completed transmission smoothly and fairly quickly.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397",
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://www.indialaw.in/expertise/trusts-estate-planning/",
+      "title": "Trusts & Estate Planning Law Firm in India | IndiaLaw",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Probate proceedings and succession certificate applications … Resolving inheritance disputes involving NRIs",
+      "statement": "IndiaLaw LLP lists probate, succession certificate applications and NRI inheritance disputes as services.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d"
+      ],
+      "company_name": "IndiaLaw LLP"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.indialaw.in/connect/",
+      "title": "Contact Us | IndiaLaw",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Fort, Mumbai – 400 001",
+      "statement": "IndiaLaw LLP's registered office is in Fort, Mumbai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "IndiaLaw LLP"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://ksandk.com/services/nri-legal-services/",
+      "title": "Best NRI Legal Services in India | KSK",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "KSK’s PAN India service model with offices in New Delhi, Mumbai, Bangalore, Chennai, Hyderabad, Kochi, Kolkata, Pune and Mangalore and with 120+ professionals",
+      "statement": "King Stubb & Kasiva has offices in nine Indian cities and 120+ professionals.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "King Stubb & Kasiva"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://ksandk.com/services/nri-legal-services/",
+      "title": "Best NRI Legal Services in India | KSK",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Resolution of disputes relating to the succession and inheritance of the property",
+      "statement": "KSK's NRI practice covers succession and inheritance matters.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d"
+      ],
+      "company_name": "King Stubb & Kasiva"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.maheshwariandco.com/practice-areas/nri-legal-services/",
+      "title": "NRI Legal Services in India | MAHESHWARI & CO.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With a network spanning major cities in India including offices in New Delhi, Mumbai, Bangalore and beyond, MAHESHWARI & CO. provides seamless NRI legal services.",
+      "statement": "Maheshwari & Co. has offices in New Delhi, Mumbai and Bangalore serving NRIs.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Maheshwari & Co."
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.maheshwariandco.com/practice-areas/nri-legal-services/",
+      "title": "NRI Legal Services in India | MAHESHWARI & CO.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "In regard to NRI legal services our advisory includes resolving property disputes, obtaining succession certificates, drafting the power of attorney documents and managing properties on behalf of absentee owners.",
+      "statement": "Maheshwari & Co. obtains succession certificates and drafts powers of attorney for NRIs.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d",
+        "61b5fa1f-c3c1-484c-b911-e44c31973397"
+      ],
+      "company_name": "Maheshwari & Co."
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.indialawoffices.com/practice/nri-services.html",
+      "title": "NRI Services Law Firm | India Law Offices",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Represent the NRI’s before different jurisdictional courts for obtaining probate of the will, letters of administration, succession certificate and legal heir certificate.",
+      "statement": "India Law Offices represents NRIs in obtaining probate, letters of administration, succession and legal heir certificates.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d",
+        "61b5fa1f-c3c1-484c-b911-e44c31973397"
+      ],
+      "company_name": "India Law Offices"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.indialawoffices.com/bangalore-civil-litigation-lnheritance-law-firm.html",
+      "title": "Civil Litigation & Inheritance Law Practice at Bangalore | India Law Offices",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Since 2003, India Law Offices is a widely recognized law firm in Bangalore with its presence in more than 69 Indian cities",
+      "statement": "India Law Offices is a Bangalore-listed firm present in 69+ Indian cities.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "India Law Offices"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://bhattandjoshiassociates.com/the-importance-of-a-succession-certificate-in-share-transmission/",
+      "title": "The Importance of a Succession Certificate in Share Transmission - Bhatt & Joshi Associates",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "In order to get a succession certificate, an individual with a vested interest must adhere to a prescribed legal process, commencing with the submission of a formal request to the appropriate district court.",
+      "statement": "Bhatt & Joshi Associates publishes guidance on succession certificates for share transmission.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d"
+      ],
+      "company_name": "Bhatt & Joshi Associates"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://bhattandjoshiassociates.com/contact-us/",
+      "title": "Contact Us - Bhatt & Joshi Associates",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Contact Bhatt & Joshi Associates | Ahmedabad Law Firm Office Address",
+      "statement": "Bhatt & Joshi Associates is an Ahmedabad law firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Bhatt & Joshi Associates"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.sansalegal.com/post/how-to-transfer-shares-and-mutual-funds-after-the-holder-s-death-in-india",
+      "title": "How to Transfer Shares and Mutual Funds After the Holder's Death in India | Sansa Legal",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Without a nominee, the legal heirs must establish their entitlement, and the documentation becomes heavier.",
+      "statement": "Sansa Legal publishes guidance on transmission of shares and mutual funds after death.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "d9270f06-4d82-4811-903e-da73b4b45b3b"
+      ],
+      "company_name": "Sansa Kanoon Pranali Partners"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.sansalegal.com/",
+      "title": "Sansa Kanoon Pranali Partners | legal services",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Sansa Kanoon Pranali Partners is a full-service law firm in India",
+      "statement": "Sansa Kanoon Pranali Partners is a full-service law firm in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Sansa Kanoon Pranali Partners"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://advocategandhi.com/succession-certificate-nri-a-comprehensive-guide-for-non-resident-indians-to-claim-inheritance-in-india/",
+      "title": "Succession Certificate & NRI - Dr. Abhishek Gandhi",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For Non-Resident Indians (NRIs), this process becomes even more complex due to cross-border",
+      "statement": "A Delhi advocate's guide says the succession process is more complex for NRIs due to cross-border factors.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "61b5fa1f-c3c1-484c-b911-e44c31973397"
+      ],
+      "company_name": "Dr. Abhishek Gandhi, Advocate"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://advocategandhi.com/contact/",
+      "title": "Contact - Dr. Abhishek Gandhi",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "E-45, Third Floor, Lajpat Nagar I, … New Delhi – 110024",
+      "statement": "The practice's office is in Lajpat Nagar, New Delhi.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Dr. Abhishek Gandhi, Advocate"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://theclassicpartners.com/inheritance-2/",
+      "title": "Best CA in Mumbai for Inheritance | The Classic Partners",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Assisting with transmission of securities and bank accounts … Coordinating with legal counsel on succession documentation",
+      "statement": "The Classic Partners (CA firm) assists NRIs with transmission of securities and bank accounts and coordinates with legal counsel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d"
+      ],
+      "company_name": "The Classic Partners LLP"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://theclassicpartners.com/inheritance-2/",
+      "title": "Best CA in Mumbai for Inheritance | The Classic Partners",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Identifying all inherited assets — property, securities, bank deposits — and their current status.",
+      "statement": "The Classic Partners' process starts with an inventory of all inherited assets, which is part of the proposed product.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0a0fb8a1-9436-4d50-93af-10065c0cb90d",
+        "e2fd863c-23c5-4a65-bedd-59aa5a293969"
+      ],
+      "company_name": "The Classic Partners LLP"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://theclassicpartners.com/inheritance/",
+      "title": "Inheritance - theclassicpartners.com",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Chartered Accountants in Andheri, Mumbai — helping founders, corporates and NRIs stay compliant",
+      "statement": "The Classic Partners is a CA firm in Andheri, Mumbai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "The Classic Partners LLP"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "e2fd863c-23c5-4a65-bedd-59aa5a293969",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "There is no unified registry; heirs search separate portals per asset class (UDGAM, MITRA/MF Central, Bima Bharosa, EPFO, IEPF), and UDGAM only locates deposits.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Families find assets through documents left behind (e.g. an old payslip revealing an EPF account) and by chance, and often miss some entirely.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-20",
+            "ev-22",
+            "ev-04"
+          ]
+        },
+        {
+          "statement": "Free tools cover part of the tracing: a CAMS/KFintech or depository CAS on the deceased's PAN surfaces MF and demat holdings, but not physical shares or traditional savings.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27",
+            "ev-30"
+          ]
+        },
+        {
+          "statement": "A single government portal for all unclaimed assets is being built, which would cover much of the 'where could the money be?' step for free.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "Paid tracers already exist (Share Samadhan, Fundtracers).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36",
+            "ev-33"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "52591a38-e9ec-4586-be5a-8998764cd502",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Without a will or nominee, a succession certificate takes about 4-18 months and can cost several percent of the estate in court fees and lawyer fees.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-32",
+            "ev-15"
+          ]
+        },
+        {
+          "statement": "Heirs report repeated branch visits, months of unpaid leave and claims taking a year or several years.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19",
+            "ev-21",
+            "ev-16",
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "No source measured the hours spent coordinating across institutions specifically; the evidence is anecdotal.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "b3b42575-91a8-4b71-9a91-b78295b0a5eb",
+      "status": "no_evidence_found",
+      "summary": [
+        {
+          "statement": "No public evidence was found on who in a family decides to hire an outside service; this needs interviews.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "61b5fa1f-c3c1-484c-b911-e44c31973397",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Overseas heirs usually act through a power of attorney given to someone in India, plus apostilled documents and affidavits.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29",
+            "ev-02"
+          ]
+        },
+        {
+          "statement": "The hard part is assembling documents across time zones and family members rather than the court itself.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "An NRI guide says most steps can be started remotely, and where nominees were registered, an overseas heir completed transmission smoothly.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25",
+            "ev-47"
+          ]
+        },
+        {
+          "statement": "Services already sell remote NRI estate coordination (FamEase, Share Samadhan, law firms).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38",
+            "ev-35",
+            "ev-55"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "0a0fb8a1-9436-4d50-93af-10065c0cb90d",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Lawyers are the traditional providers; guides recommend a lawyer or CA for anything beyond a clean nominated account.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-43",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "Law firms obtain succession and legal heir certificates and powers of attorney for NRIs, and CA firms coordinate transmission and inventory inherited assets.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-55",
+            "ev-56",
+            "ev-64",
+            "ev-65"
+          ]
+        },
+        {
+          "statement": "No evidence was found on whether advisors use any tool to track multi-institution claims.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "d9270f06-4d82-4811-903e-da73b4b45b3b",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "The main hurdles are missing nominations and wills (forcing succession or legal heir certificates), unknown accounts, missing documents and branch-level refusals.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04",
+            "ev-14",
+            "ev-19",
+            "ev-24",
+            "ev-46"
+          ]
+        },
+        {
+          "statement": "Decentralised, per-institution claim processing delays or discourages recovery.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-08"
+          ]
+        },
+        {
+          "statement": "Regulators are reducing these hurdles: RBI's 2025 rules let nominees claim with three documents, IBA has a common form, SEBI proposes 21-day processing with tracking, and banks earn an incentive per settled claim.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-26",
+            "ev-11",
+            "ev-13",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "Where nominees, wills or trusts exist, most of the pain is avoided.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23",
+            "ev-47"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "How does the offer differentiate from existing post-death services (FamEase, EasyInherit, Yellow Smart, Share Samadhan) and what do they charge?",
+      "category": "alternatives",
+      "priority": "high"
+    },
+    {
+      "question": "Once the unified government unclaimed-assets portal launches, what tracing work is still worth paying for?",
+      "category": "alternatives",
+      "priority": "high"
+    },
+    {
+      "question": "What share of estates lack nominations or wills, i.e. still need the heavy succession route after the 2025-26 reforms?",
+      "category": "frequency",
+      "priority": "medium"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "FamEase",
+      "url": "https://www.famease.in",
+      "kind": "direct",
+      "description": "Estate settlement and succession documentation service for families and NRIs: account claims, title transfers and institutional submissions in one tracked workspace.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-38",
+        "ev-39"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-02",
+      "name": "EasyInherit",
+      "url": null,
+      "kind": "direct",
+      "description": "Inheritance platform whose EasyClaims service prepares submission-ready claim dockets after a death.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-41",
+        "ev-42"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "Yellow (Yellow Smart)",
+      "url": null,
+      "kind": "direct",
+      "description": "Funded Bengaluru estate-planning startup; Yellow Smart supports families after a death, including asset transfers.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-44",
+        "ev-45"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Share Samadhan",
+      "url": "https://sharesamadhan.com",
+      "kind": "service",
+      "description": "Unclaimed-investment tracing and recovery service, including for NRIs, across shares, bank assets, MFs and PF.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-35",
+        "ev-36",
+        "ev-37"
+      ],
+      "sentiment": [
+        {
+          "statement": "A customer review praises recovery of old MFs, bonds and savings balances.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-37"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-05",
+      "name": "Surakshakadi",
+      "url": null,
+      "kind": "indirect",
+      "description": "Pune legal-tech app for e-wills, a digital asset wallet and a paid asset transfer service.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-40"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Fundtracers",
+      "url": null,
+      "kind": "service",
+      "description": "Delhi asset-tracing firm that finds forgotten Indian assets for overseas families and obtains succession certificates.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-33",
+        "ev-34"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Government portals (UDGAM, MITRA, Bima Bharosa) and the planned unified portal",
+      "url": null,
+      "kind": "indirect",
+      "description": "Free regulator search portals per asset class; RBI and the Finance Ministry are building one integrated portal.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-05",
+        "ev-10",
+        "ev-12",
+        "ev-09"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "Consolidated Account Statement (CAS) via CAMS/KFintech/NSDL/CDSL",
+      "url": null,
+      "kind": "manual",
+      "description": "Free statement on the deceased's PAN listing MF and demat holdings.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-27",
+        "ev-30"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "Local lawyers and CAs",
+      "url": null,
+      "kind": "service",
+      "description": "Advocates and chartered accountants who obtain succession/legal heir certificates, draft POAs and coordinate transmission.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-43",
+        "ev-28",
+        "ev-55",
+        "ev-64"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Families trace assets themselves from documents left behind and through separate free portals and CAS statements; some assets are found by chance or missed.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-20",
+        "ev-27",
+        "ev-05",
+        "ev-07"
+      ]
+    },
+    {
+      "statement": "Heirs file separately with each institution and escalate stuck claims through branch visits or the RBI Ombudsman.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-08",
+        "ev-19",
+        "ev-18"
+      ]
+    },
+    {
+      "statement": "For anything complex, families hire a local lawyer or CA, and NRIs work through a power of attorney.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-28",
+        "ev-29",
+        "ev-55"
+      ]
+    },
+    {
+      "statement": "Paid tracers and estate-settlement services already exist (Share Samadhan, Fundtracers, FamEase, EasyInherit, Yellow).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-35",
+        "ev-33",
+        "ev-38",
+        "ev-41",
+        "ev-44"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "IndiaLaw LLP",
+      "website": "https://www.indialaw.in",
+      "icp_id": null,
+      "location": "Mumbai (offices in 8 cities)",
+      "industry": "Legal / accounting services",
+      "description": "Law firm with an NRI succession practice: probate, succession certificates and NRI inheritance disputes.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-51"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-50",
+        "ev-51"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Lists succession certificate and NRI inheritance work.",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-02",
+      "name": "King Stubb & Kasiva",
+      "website": "https://ksandk.com",
+      "icp_id": null,
+      "location": "New Delhi, Mumbai, Bangalore and 6 other cities",
+      "industry": "Legal / accounting services",
+      "description": "National firm with an NRI legal wing covering succession and inheritance.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-52"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-52",
+        "ev-53"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "NRI succession practice, but larger than the ICP's 5-50 band.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "size_estimate": {
+        "min": 120,
+        "max": null,
+        "signal": "Site: 120+ professionals",
+        "evidence_ref": "ev-52"
+      }
+    },
+    {
+      "ref": "co-03",
+      "name": "Maheshwari & Co.",
+      "website": "https://www.maheshwariandco.com",
+      "icp_id": null,
+      "location": "New Delhi, Mumbai, Bangalore",
+      "industry": "Legal / accounting services",
+      "description": "Law firm whose NRI practice obtains succession certificates and drafts powers of attorney.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-54"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-54",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Directly offers succession certificates and POAs for NRIs.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "India Law Offices",
+      "website": "https://www.indialawoffices.com",
+      "icp_id": null,
+      "location": "Bangalore / pan-India",
+      "industry": "Legal / accounting services",
+      "description": "Firm representing NRIs for probate, letters of administration, succession and legal heir certificates.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-56",
+        "ev-57"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Lists the exact certificates the idea's claims depend on.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Bhatt & Joshi Associates",
+      "website": "https://bhattandjoshiassociates.com",
+      "icp_id": null,
+      "location": "Ahmedabad",
+      "industry": "Legal / accounting services",
+      "description": "Ahmedabad law firm publishing succession certificate and share transmission guidance.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-58",
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Writes on succession certificates; no explicit estate-claims service found.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Sansa Kanoon Pranali Partners",
+      "website": "https://www.sansalegal.com",
+      "icp_id": null,
+      "location": "Bangalore",
+      "industry": "Legal / accounting services",
+      "description": "Full-service firm publishing guidance on transmission of shares and MFs after death.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-60",
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Publishes transmission guidance; mainly a corporate practice.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Dr. Abhishek Gandhi, Advocate",
+      "website": "https://advocategandhi.com",
+      "icp_id": null,
+      "location": "New Delhi",
+      "industry": "Legal / accounting services",
+      "description": "Delhi advocate publishing an NRI succession certificate guide.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62",
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Targets NRI succession certificate seekers.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "The Classic Partners LLP",
+      "website": "https://theclassicpartners.com",
+      "icp_id": null,
+      "location": "Andheri, Mumbai",
+      "industry": "Legal / accounting services",
+      "description": "CA firm advising NRIs on inheritance: asset inventory, transmission support and coordination with legal counsel.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-64",
+        "ev-65",
+        "ev-66"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "CA firm already doing inventory and transmission coordination for NRI heirs (channel partner or competitor).",
+          "evidence_refs": [
+            "ev-64",
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence about tools used.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
