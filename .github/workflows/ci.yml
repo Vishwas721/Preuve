@@ -65,3 +65,51 @@ jobs:
       - run: pnpm build
       # Supply chain (Phase 5C): runtime dependencies only, high or critical fails the build.
       - run: pnpm audit --prod --audit-level high
+
+  # Phase 5D: build the production images, deploy them as the production stack, smoke-test it
+  # (health, migrations, pages, backup verified by a restore), then on main push the very
+  # images that were tested to GHCR.
+  deploy-smoke:
+    needs: [api, web]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    env:
+      COMPOSE: docker compose -p preuve-prod --env-file infra/.env.prod -f infra/docker-compose.prod.yml
+    steps:
+      - uses: actions/checkout@v4
+      - name: Production settings with generated secrets
+        run: |
+          cp infra/.env.prod.example infra/.env.prod
+          for k in POSTGRES_PASSWORD OUTREACH_SECRET SEARXNG_SECRET; do
+            sed -i "s|^$k=\$|$k=$(openssl rand -hex 32)|" infra/.env.prod
+          done
+          sed -i 's|^PREUVE_TAG=.*|PREUVE_TAG=ci|' infra/.env.prod
+          printf 'PREUVE_API_IMAGE=preuve-api\nPREUVE_WEB_IMAGE=preuve-web\n' >> infra/.env.prod
+      - name: Build and deploy
+        run: bash infra/scripts/deploy.sh --build --tag ci
+      - name: Smoke checks
+        run: |
+          curl -fsS http://localhost:3100/api/health
+          curl -fsS http://localhost:3100/api/auth/status | grep -q '"needs_setup":true'
+          curl -fsS -o /dev/null http://localhost:3100/login
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:3100/api/ideas)" = 401
+          $COMPOSE exec -T api alembic current | grep -q '(head)'
+          $COMPOSE ps --format '{{.Service}} {{.Status}}'
+      - name: Backup, then verify it by a restore
+        run: bash infra/scripts/backup.sh && bash infra/scripts/verify-backup.sh
+      - name: Logs on failure
+        if: failure()
+        run: $COMPOSE logs --tail 80
+      - name: Push the tested images to GHCR
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          owner="$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')"
+          echo '${{ secrets.GITHUB_TOKEN }}' | docker login ghcr.io -u '${{ github.actor }}' --password-stdin
+          for img in api web; do
+            for tag in '${{ github.sha }}' latest; do
+              docker tag "preuve-$img:ci" "ghcr.io/$owner/preuve-$img:$tag"
+              docker push "ghcr.io/$owner/preuve-$img:$tag"
+            done
+          done
