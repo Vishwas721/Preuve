@@ -29,6 +29,12 @@ Git Bash.
 The local model runs on the host: Ollama must be running there (`OLLAMA_URL` reaches it as
 `host.docker.internal`).
 
+## Everyday use (Windows)
+
+`preuve.cmd` at the repo root wraps all of this: `preuve` (start, waits until healthy, opens
+the browser), `preuve stop`, `preuve status`, `preuve logs`, `preuve update` (runs `deploy.sh`),
+`preuve backup`. It starts Docker Desktop and Ollama if they aren't running.
+
 ## Updating
 
 ```bash

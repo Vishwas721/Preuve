@@ -30,6 +30,17 @@ Evidence-driven customer validation for startup ideas.
 - [Ollama](https://ollama.com) with a model pulled: `ollama pull qwen2.5:7b`
 - Optional: a Gemini API key from Google AI Studio
 
+## Quick start (Windows): one command
+
+```powershell
+.\preuve.cmd            # start the app -> http://localhost:3100 (opens the browser)
+.\preuve.cmd dev        # development setup -> http://localhost:3000 (API, worker, web windows)
+.\preuve.cmd stop       # stop it   (status | logs | update | backup also available)
+```
+
+It starts Docker Desktop and Ollama if needed. The app needs `infra\.env.prod` (see
+[`docs/operations.md`](docs/operations.md)); the development setup needs `.env` (below).
+
 ## Setup
 
 ```bash
