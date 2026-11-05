@@ -21,10 +21,24 @@ function Stat({ value, label }: { value: number | string; label: string }) {
   );
 }
 
+type Order = "research" | "recent" | "score";
+
+const ORDERS: { key: Order; label: string; heading: string }[] = [
+  { key: "research", label: "Research", heading: "highest research score first: who to contact next" },
+  { key: "score", label: "Validation", heading: "highest validation score first" },
+  { key: "recent", label: "Recent", heading: "most recent activity first" },
+];
+
+function sortCases(items: PortfolioItem[], order: Order): PortfolioItem[] {
+  if (order === "recent") return items;
+  const key = (i: PortfolioItem) => (order === "research" ? i.research_score.total : (i.validation?.score ?? -1));
+  return [...items].sort((a, b) => key(b) - key(a));
+}
+
 export default function CaseBoard() {
   const [items, setItems] = useState<PortfolioItem[] | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [order, setOrder] = useState<"recent" | "score">("recent");
+  const [order, setOrder] = useState<Order>("research");
 
   const load = useCallback(
     () =>
@@ -93,20 +107,20 @@ export default function CaseBoard() {
       <section className="pt-10" aria-labelledby="cases-heading">
         <div className="mb-6 flex flex-wrap items-baseline justify-between gap-3">
           <h2 id="cases-heading" className="eyebrow">
-            Cases · {order === "score" ? "highest validation score first" : "most recent activity first"}
+            Cases · {ORDERS.find((o) => o.key === order)?.heading}
           </h2>
           <div className="flex gap-1 text-xs" role="group" aria-label="Sort cases">
-            {(["recent", "score"] as const).map((o) => (
+            {ORDERS.map((o) => (
               <button
-                key={o}
-                aria-pressed={order === o}
-                onClick={() => setOrder(o)}
+                key={o.key}
+                aria-pressed={order === o.key}
+                onClick={() => setOrder(o.key)}
                 className={cn(
                   "rounded-md px-2.5 py-1 transition-colors hover:bg-accent",
-                  order === o ? "bg-accent font-medium" : "text-muted-foreground",
+                  order === o.key ? "bg-accent font-medium" : "text-muted-foreground",
                 )}
               >
-                {o === "recent" ? "Recent" : "Score"}
+                {o.label}
               </button>
             ))}
           </div>
@@ -143,10 +157,7 @@ export default function CaseBoard() {
 
         {items && items.length > 0 && (
           <ul className="grid gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
-            {(order === "score"
-              ? [...items].sort((a, b) => (b.validation?.score ?? -1) - (a.validation?.score ?? -1))
-              : items
-            ).map((item, i) => (
+            {sortCases(items, order).map((item, i) => (
               <CaseFolder key={item.id} item={item} index={i} caseNo={items.indexOf(item) + 1} />
             ))}
           </ul>

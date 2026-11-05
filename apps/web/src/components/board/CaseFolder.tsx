@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import Link from "next/link";
 
+import { BAND_LABEL } from "@/components/overview/ResearchScoreSection";
 import { RECOMMENDATION } from "@/components/verdict/DecisionPanel";
 import { EvidenceBalance } from "@/components/viz/EvidenceBalance";
 import { ScoreFigure } from "@/components/viz/ScoreBar";
@@ -75,12 +76,16 @@ export function CaseFolder({ item, index, caseNo }: { item: PortfolioItem; index
                 {item.title}
               </h3>
             </div>
-            <ScoreFigure score={item.validation?.score ?? null} label="validation" className="shrink-0" />
+            <div className="flex shrink-0 gap-3">
+              <ScoreFigure score={item.research_score.total} label="research" />
+              <ScoreFigure score={item.validation?.score ?? null} label="validation" />
+            </div>
           </div>
           <p className="-mt-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
+            {BAND_LABEL[item.research_score.band]} ·{" "}
             {item.validation
               ? `${RECOMMENDATION[item.validation.recommendation].label}${item.validation.stale ? " · evidence changed" : ""}`
-              : "Not scored yet"}
+              : "validation not scored yet"}
           </p>
 
           <p className="line-clamp-3 min-h-[3.75rem] font-display text-[1.02rem] italic leading-snug text-ink-soft">

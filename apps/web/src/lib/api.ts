@@ -334,6 +334,26 @@ export interface ProspectDetail extends ProspectSummary {
 
 // ---------- portfolio (Phase 1E) ----------
 
+// ---------- research score (Phase 6) ----------
+
+export type ResearchBand = "strong" | "promising" | "weak";
+
+export interface ResearchDimension {
+  key: "problem" | "pain" | "balance" | "questions" | "alternatives" | "reachability";
+  label: string;
+  points: number;
+  max: number;
+  reason: string;
+  gaps: string[];
+}
+
+export interface ResearchScore {
+  total: number;
+  band: ResearchBand;
+  dimensions: ResearchDimension[];
+  version: number;
+}
+
 export interface PortfolioItem {
   id: string;
   title: string;
@@ -361,6 +381,7 @@ export interface PortfolioItem {
     stale: boolean;
     computed_at: string;
   } | null;
+  research_score: { total: number; band: ResearchBand; version: number };
   funnel: { sent: number; replies: number; interviews_done: number; pilot_or_better: number };
   created_at: string;
   last_activity: string;
@@ -1170,6 +1191,7 @@ export const api = {
   deleteWtp: (ideaId: string, wtpId: string) => request<void>(`/ideas/${ideaId}/wtp/${wtpId}`, { method: "DELETE" }),
 
   getScore: (ideaId: string) => request<ScoreStatus>(`/ideas/${ideaId}/score`),
+  getResearchScore: (ideaId: string) => request<ResearchScore>(`/ideas/${ideaId}/research-score`),
   recomputeScore: (ideaId: string) => request<ValidationScore>(`/ideas/${ideaId}/score`, { method: "POST" }),
 
   listExperiments: (ideaId: string) => request<Experiment[]>(`/ideas/${ideaId}/experiments`),
