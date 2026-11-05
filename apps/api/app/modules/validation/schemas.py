@@ -65,6 +65,24 @@ class ScoreStatus(BaseModel):
     stale: bool
 
 
+class ResearchDimensionRead(BaseModel):
+    key: str
+    label: str
+    points: int
+    max: int
+    reason: str
+    gaps: list[str]
+
+
+class ResearchScoreRead(BaseModel):
+    """Phase 6: ranks ideas on verified web evidence before outreach. Computed live."""
+
+    total: int
+    band: str  # strong | promising | weak
+    dimensions: list[ResearchDimensionRead]
+    version: int
+
+
 class ScoreSummary(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 

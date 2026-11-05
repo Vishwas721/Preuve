@@ -11,7 +11,13 @@ from app.modules.ideas import service as ideas
 from app.modules.ideas.models import Idea
 from app.modules.interviews import service as interviews
 from app.modules.outreach import service as outreach
-from app.modules.portfolio.schemas import EvidenceTally, Funnel, PortfolioItem, Validation
+from app.modules.portfolio.schemas import (
+    EvidenceTally,
+    Funnel,
+    PortfolioItem,
+    ResearchScore,
+    Validation,
+)
 from app.modules.prospects import service as prospects
 from app.modules.research import service as research
 from app.modules.responses import service as responses
@@ -46,6 +52,7 @@ async def _item(session: AsyncSession, idea: Idea) -> PortfolioItem:
     scores = [r["score"] for r in rows if r["score"] is not None]
     snap = await validation.latest(session, idea.id)
     commitments = await wtp.list_signals(session, idea.id)
+    rscore = await validation.research_score_for(session, idea)
     return PortfolioItem(
         id=idea.id,
         title=idea.title,
@@ -69,6 +76,7 @@ async def _item(session: AsyncSession, idea: Idea) -> PortfolioItem:
         )
         if snap
         else None,
+        research_score=ResearchScore(total=rscore.total, band=rscore.band, version=rscore.version),
         funnel=Funnel(
             sent=await outreach.sent_count(session, idea.id),
             replies=len(await responses.list_responses(session, idea.id)),

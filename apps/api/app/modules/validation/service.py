@@ -17,11 +17,12 @@ from app.modules.competitors import service as competitors
 from app.modules.ideas.models import Idea, ValidationState
 from app.modules.interviews import service as interviews
 from app.modules.outreach import service as outreach
+from app.modules.prospects import service as prospects
 from app.modules.research import service as research
 from app.modules.research.matching import quote_key
 from app.modules.research.pack import domain_key
 from app.modules.responses import service as responses
-from app.modules.validation import scoring
+from app.modules.validation import research_score, scoring
 from app.modules.validation.models import ValidationScore
 from app.modules.wtp import service as wtp
 
@@ -268,3 +269,51 @@ async def recompute(session: AsyncSession, idea: Idea) -> ValidationScore:
     await session.commit()
     await session.refresh(row)
     return row
+
+
+# ---------- research score (Phase 6) ----------
+
+
+async def research_score_input(
+    session: AsyncSession, idea: Idea
+) -> research_score.ResearchScoreInput:
+    """Research-only inputs: verified web evidence, findings, competitors and prospects."""
+    unknowns = await analysis.list_unknowns(session, idea.id)
+    category = {u.id: u.category.value for u in unknowns}
+    items = tuple(
+        scoring.ResearchItem(
+            evidence_id=str(e["id"]),
+            domain=domain_key(e["final_url"] or e["url"]),
+            stance=e["stance"].value,
+            relevance=e["relevance"].value,
+            verification=e["verification"].value,
+            unknown_categories=tuple(
+                sorted({category[u] for u in e["unknown_ids"] if u in category})
+            ),
+        )
+        for e in await research.list_evidence(session, idea.id)  # not dismissed
+        if e["origin"].value == "research"
+    )
+    findings = {
+        f.unknown_id: f.status.value for f in await research.latest_findings(session, idea.id)
+    }
+    rows = await prospects.list_prospects(session, idea.id)
+    return research_score.ResearchScoreInput(
+        research=items,
+        questions=tuple(
+            research_score.QuestionInput(str(u.id), u.priority.value, findings.get(u.id))
+            for u in unknowns
+        ),
+        competitor_evidence=tuple(
+            tuple(str(x) for x in c["evidence_ids"])
+            for c in await competitors.list_competitors(session, idea.id)
+        ),
+        companies=len(rows),
+        contacts=sum(r["contacts"] for r in rows),
+    )
+
+
+async def research_score_for(
+    session: AsyncSession, idea: Idea
+) -> research_score.ResearchScoreResult:
+    return research_score.research_score(await research_score_input(session, idea))

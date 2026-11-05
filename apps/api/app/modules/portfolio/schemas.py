@@ -25,6 +25,14 @@ class Validation(BaseModel):
     computed_at: datetime
 
 
+class ResearchScore(BaseModel):
+    """Phase 6 research score, computed live from verified web evidence."""
+
+    total: int
+    band: str  # strong | promising | weak
+    version: int
+
+
 class Funnel(BaseModel):
     """First-party counts, live (PRD §27, §47)."""
 
@@ -50,6 +58,7 @@ class PortfolioItem(BaseModel):
     unknowns_answered: int
     busy: bool  # an analysis run or research import is in progress
     validation: Validation | None
+    research_score: ResearchScore
     funnel: Funnel
     created_at: datetime
     last_activity: datetime
