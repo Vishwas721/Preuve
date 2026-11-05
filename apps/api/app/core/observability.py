@@ -60,6 +60,9 @@ def configure_logging(log_format: str = "text", level: str = "INFO") -> None:
         lg.propagate = True
     # uvicorn's access log prints full URLs (query strings included): ours replaces it.
     logging.getLogger("uvicorn.access").disabled = True
+    # Outbound HTTP calls (health checks every 15 s, fetches) would drown the log at INFO.
+    for name in ("httpx", "httpcore"):
+        logging.getLogger(name).setLevel(logging.WARNING)
 
 
 class RequestContextMiddleware:

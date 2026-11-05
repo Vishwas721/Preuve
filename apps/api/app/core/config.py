@@ -7,7 +7,9 @@ from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 # Repo root `.env` (apps/api/app/core/config.py -> ../../../../.env), then a local one.
 DEV_OUTREACH_SECRET = "dev-outreach-secret-change-me"
-_REPO_ROOT = Path(__file__).resolve().parents[4]
+_HERE = Path(__file__).resolve()
+# In a container the code sits less deep; then there's no repo .env and settings come from env.
+_REPO_ROOT = _HERE.parents[4] if len(_HERE.parents) > 4 else _HERE.parents[-1]
 
 
 class Settings(BaseSettings):
