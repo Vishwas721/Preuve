@@ -9,6 +9,8 @@ Evidence-driven customer validation for startup ideas.
 - Product spec: [`docs/PRD.md`](docs/PRD.md)
 - Architecture: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) and [`docs/adr/`](docs/adr/)
 - Build phases: [`docs/ROADMAP.md`](docs/ROADMAP.md) (one doc per phase in [`docs/phases/`](docs/phases/))
+- Running in production: [`docs/operations.md`](docs/operations.md) · before real outreach:
+  [`docs/legal-checklist.md`](docs/legal-checklist.md)
 
 ## Stack
 
