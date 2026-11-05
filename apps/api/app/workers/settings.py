@@ -3,6 +3,7 @@
 from arq import cron
 
 from app.core.config import get_settings
+from app.core.observability import configure_logging, init_sentry
 from app.workers.jobs import (
     analyze_interview,
     analyze_response,
@@ -17,6 +18,10 @@ from app.workers.jobs import (
     verify_research_import,
 )
 from app.workers.queue import redis_settings
+
+_settings = get_settings()
+configure_logging(_settings.log_format, _settings.log_level)
+init_sentry(_settings.sentry_dsn, _settings.environment, "worker")
 
 
 class WorkerSettings:

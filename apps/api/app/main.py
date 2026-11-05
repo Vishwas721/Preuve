@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from app.core.deps import get_principal
 from app.core.middleware import BodySizeLimitMiddleware, SecurityHeadersMiddleware
+from app.core.observability import RequestContextMiddleware, configure_logging, init_sentry
 from app.core.ratelimit import limit_private, limit_public
 from app.modules.analysis.router import router as analysis_router
 from app.modules.auth.router import admin_router, reset_public_router
@@ -75,6 +76,8 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 def create_app() -> FastAPI:
     settings = get_settings()
     dev = settings.environment == "development"
+    configure_logging(settings.log_format, settings.log_level)
+    init_sentry(settings.sentry_dsn, settings.environment, "api")
     app = FastAPI(
         title=settings.app_name,
         version="0.1.0",
@@ -96,6 +99,8 @@ def create_app() -> FastAPI:
     # Outermost last: sizes are checked before anything else runs; headers go on every reply.
     app.add_middleware(BodySizeLimitMiddleware, max_bytes=settings.max_request_bytes)
     app.add_middleware(SecurityHeadersMiddleware, hsts=not dev)
+    # Outermost: every request (even a 413) gets a request id and one log line.
+    app.add_middleware(RequestContextMiddleware)
 
     for r in PUBLIC_ROUTERS:
         app.include_router(r, dependencies=[Depends(limit_public)])

@@ -82,6 +82,11 @@ class Settings(BaseSettings):
 
     # Behind a reverse proxy / Cloudflare Tunnel (5D): take the client IP from its headers.
     trust_proxy_headers: bool = False
+    # Phase 5D: `json` in production (one object per line, with request ids).
+    log_format: str = "text"
+    log_level: str = "INFO"
+    # Optional error reporting; empty = off, nothing leaves the machine.
+    sentry_dsn: str = ""
     max_request_bytes: int = 5_000_000
 
     @model_validator(mode="after")
