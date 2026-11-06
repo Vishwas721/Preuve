@@ -1,6 +1,6 @@
 # Phase 6B — Research score v2 (stop saturation, price in crowding)
 
-- **Status:** In progress (kickoff 2026-11-06)
+- **Status:** Done (2026-11-06)
 - **Goal:** Make the research score separate ideas after thorough research. Version 1 maxed out
   problem, pain and alternatives for every well-researched idea, so ideas were ranked mostly on
   prospect counts. It also ignored the most common finding: the wedge is already taken.
@@ -59,11 +59,11 @@ No changes. The endpoint and portfolio field keep their shape, and `version` bec
 
 ## Acceptance criteria
 
-- [ ] Problem and pain never reach their max with finite evidence, and weighting by source type works (tests).
-- [ ] Open space falls with direct and indirect competitors, and manual or service alternatives don't count (tests).
-- [ ] Validation-score inputs and hashes are unchanged (the existing validation tests pass).
-- [ ] Live: the 8 researched cases spread more widely than v1's 73–87, and crowded wedges rank lower.
-- [ ] `ruff check`, `ruff format --check`, `pytest`, web lint and typecheck pass.
+- [x] Problem and pain never reach their max with finite evidence, and weighting by source type works (tests).
+- [x] Open space falls with direct and indirect competitors, and manual or service alternatives don't count (tests).
+- [x] Validation-score inputs and hashes are unchanged (the existing validation tests pass).
+- [x] Live: the 8 researched cases spread more widely than v1's 73–87, and crowded wedges rank lower.
+- [x] `ruff check`, `ruff format --check`, `pytest`, web lint and typecheck pass.
 
 ## Open questions (settled at kickoff)
 
@@ -71,3 +71,26 @@ No changes. The endpoint and portfolio field keep their shape, and `version` bec
   the competitor kind assigned during research is the deterministic signal.
 - *Keep "alternatives mapped"?* No. Mapping alternatives is research hygiene, not idea quality,
   and it double-counted against open space.
+
+## Notes
+
+- **Live check (2026-11-06), 10 researched cases.** v2 totals range 40–66, against 73–87 in v1:
+
+  | v2 | Case |
+  |---|---|
+  | 66 | lead-spend auditor |
+  | 59 | COI verification |
+  | 58 | invoice workbench |
+  | 58 | courier audit |
+  | 57 | Swiggy/Zomato audit |
+  | 56 | EU withdrawal |
+  | 52 | CBAM |
+  | 51 | deceased-estate claims |
+  | 47 | wholesale reorder portal |
+  | 40 | client video review |
+
+  The live values match an offline simulation run with the same module on the packs.
+- **Open space** is 0 for the six cases whose research found two or more evidenced direct competitors (or many indirect ones). Lead-spend (9) and the India cases (3–4) keep some room.
+- **Problem** now spans 9–16 of 25 and no longer saturates.
+- **Pain** is 0 for the wholesale case because none of its supporting evidence was linked to a cost, urgency or frequency unknown. That is a property of the pack, not a rule defect.
+- **Still coarse.** Totals 56–59 are within noise of each other, so treat the score as a sorting aid. It is not a verdict.
