@@ -1,0 +1,2510 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "05463b24-7ec4-4474-b6cc-213743391496",
+    "researcher": "claude-code",
+    "started_at": "2026-11-06T10:50:00Z",
+    "finished_at": "2026-11-06T13:00:00Z",
+    "queries": [
+      "Frame.io v4 Premiere markers comments sync broken reddit",
+      "Frame.io v4 complaints slow playback presentation mode removed editors",
+      "frame.io review link blocked by corporate firewall client cannot open",
+      "Premiere Pro 25.6 Frame.io integration rebuilt comments markers fixed (contradiction)",
+      "Frame.io v4 DaVinci Resolve integration not supported legacy",
+      "video review platform custom domain white label review links client approval agency",
+      "Frame.io v4 permissions folder level restrict freelancer access only one folder",
+      "Frame.io v4 presentation share legacy feature missing",
+      "Frame.io v4 review love / much better / huge improvement editors (contradiction)",
+      "Frame.io alternative 2026 video review tools comparison Resolve Premiere integration",
+      "Vimeo review page timecoded comments clients pricing video review feature",
+      "Blackmagic Cloud presentations DaVinci Resolve client review comments markers",
+      "post-production coordinator job Frame.io client review links manage feedback",
+      "Cloudflare R2 pricing zero egress fees per GB month",
+      "post-production industry number of establishments United States census video editing small firms",
+      "frame.io link blocked client IT department / firewall / security can't view video review",
+      "boutique post-production studio editorial company team page editor founder small",
+      "independent editorial house commercial editing boutique Los Angeles New York our team editors",
+      "corporate video production company post-production small team producer editor Chicago Austin Denver",
+      "editorial post-production company Chicago Executive Producer editors commercial boutique contact",
+      "post-production studio small team editors colorist corporate brands about us US",
+      "independent post-production company Austin / Nashville / Portland editorial color finishing boutique founded team page",
+      "shoots.video post-production directories: Denver, Austin, Seattle, Atlanta, Boston, Chicago"
+    ],
+    "notes": "Scope: public evidence on Frame.io v4 pain (Premiere/AE marker and comment sync, performance, corporate-network blocking, permissions, presentation), the competitive set, pricing and storage cost. Most pain evidence is Adobe Community threads (2024-2026); Reddit (r/editors, r/premiere) is disallowed by robots.txt for Preuve, so the loudest public complaints could not be cited. help.frame.io, blog.frame.io, Capterra/G2/Trustpilot, PetaPixel and the Blackmagic forum were also unfetchable. Evidence is anecdotal (individual forum posts); no survey or count of affected editors was found. No direct evidence was found for: client corporate IT blocking Frame.io review links specifically (only adjacent cases: an Adobe InDesign review link failing on a corporate network, an org blocking shortened links, uploads failing behind a firewall), lost presentation mode (fxguide instead describes v4's branded Share Builder), slow client playback (only slow panel uploads), or willingness to pay $29/seat (competitors price at $10-25/seat). Contradiction searches: Adobe 25.6 panel rebuild, positive v4 coverage, Frame.io pricing/restricted folders, native Resolve review. Prospects: 17 companies, short of the 20+ target - many boutique editorial sites were image-only, unresolvable or blocked; no fetched page states headcount, so size_estimate is omitted; no company-specific problem evidence was found. Contacts only from companies' own pages; Lightsail's location is cited from a public Denver directory listing. The Frame.io pricing quote comes from the --full fetch of frame.io/pricing."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://community.adobe.com/bug-reports-728/frameiov4-bug-hunt-missing-features-1331750",
+      "title": "FrameIOv4 Bug Hunt/Missing Features (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Sequence markers don't upload with the sequence. This happens within the v4 Panel or with markers embedded into the file and manually (worked in v3) … No option to manually sync markers like with v3.",
+      "statement": "A Premiere editor reports that in the Frame.io v4 panel sequence markers no longer upload and markers cannot be synced manually, both of which worked in v3.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://community.adobe.com/bug-reports-728/frameiov4-bug-hunt-missing-features-1331750",
+      "title": "FrameIOv4 Bug Hunt/Missing Features (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Uploading via the panel seems to be throttled, its painfully slow to upload(2mbit compared to 10+ on chrome/frameIO transfer)",
+      "statement": "The same editor reports v4 panel uploads are much slower than browser uploads.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "company_name": null,
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://community.adobe.com/bug-reports-728/frameiov4-bug-hunt-missing-features-1331750",
+      "title": "FrameIOv4 Bug Hunt/Missing Features (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I'm experiencing several bugs in the 'new' v4 panel and like many I regret updating. Shame really as it was a huge selling point and time saver.",
+      "statement": "An editor says the Premiere integration was a major selling point and time saver, and regrets updating to v4.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "8de8c29f-d0c6-437c-8729-0884dea918f6"
+      ]
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://community.adobe.com/bug-reports-728/frameiov4-bug-hunt-missing-features-1331750",
+      "title": "FrameIOv4 Bug Hunt/Missing Features (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I'm the Product Manager of the Frame.io integrations into Premiere Pro, and therefore directly responsible for the issues you're seeing. We're aware of a number of these issues",
+      "statement": "Adobe's product manager for the Premiere integration publicly acknowledged the marker issues, so the incumbent is actively working on them.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://community.adobe.com/bug-reports-728/frame-io-v4-keeps-overwriting-comments-markers-in-premiere-pro-pro-1332248",
+      "title": "Frame.IO (V4) keeps overwriting comments markers in Premiere Pro (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Frame.IO V4 is overwriting & deleting comments markers on my sequences in Premiere Pro, and I need it to stop making my comments markers revert to the previously saved version on Frame.IO",
+      "statement": "An editor reports v4 overwrites and deletes comment markers in Premiere sequences.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://community.adobe.com/questions-729/pr-25-frame-io-v4-export-timeline-markers-as-comments-1419813",
+      "title": "PR 25 + Frame.io v4: Export timeline markers as comments (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "When exporting the timeline, I no longer see an option to publish the markers as comments. In general, version 4 seems to be much more limited in Premiere than version 3.",
+      "statement": "After upgrading to v4 an editor can no longer export timeline markers as Frame.io comments.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://community.adobe.com/questions-729/frameio-seems-to-be-broken-1420069",
+      "title": "FrameIO seems to be broken (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Having finally got almost every client to use frameIO for logging their notes it now doesn't work and I have to work off printouts again!",
+      "statement": "An editor whose clients give notes in Frame.io says v4 broke the notes-to-timeline workflow and they are back to printed notes.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "8de8c29f-d0c6-437c-8729-0884dea918f6"
+      ]
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://community.adobe.com/questions-729/frameio-seems-to-be-broken-1420069",
+      "title": "FrameIO seems to be broken (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I asked FrameIO how to do it and they said that feature has been removed from v4 for now. … We all seriously need to look elsewhere now major workflow features are being removed",
+      "statement": "Frame.io support reportedly told the editor that importing notes was removed from v4 for now; the editor says users need to look elsewhere.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f",
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://community.adobe.com/questions-729/review-with-frame-io-not-working-1419231",
+      "title": "\"Review with Frame.io\" Not working (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "my team and I switched from Wipster to Frame.io because we found the native integration in Adobe Premiere Pro very useful. However, since the update to Frame.io version 4, the connection via “Window → Review with Frame.io” has stopped working",
+      "statement": "A team chose Frame.io over Wipster specifically for the Premiere integration, which stopped working after v4; the NLE integration drives tool choice.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f",
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa"
+      ]
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://community.adobe.com/bug-reports-528/frame-io-v4-completely-broken-in-after-effects-1631068",
+      "title": "Frame.io v4 completely broken in After Effects (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Unfortunately going to Window > Frame.io V4 does absolutely nothing. … I have a corporate Adobe account and they don’t give us access to the beta versions, so this fancy new “upgrade” to v4 has crippled my workflow.",
+      "statement": "An After Effects user on AE 2026 reports the v4 panel does nothing and the forced upgrade crippled their workflow.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://community.adobe.com/bug-reports-528/frame-io-v4-completely-broken-in-after-effects-1631068",
+      "title": "Frame.io v4 completely broken in After Effects (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "As a temporary solution, a little help, Gemini made me a script",
+      "statement": "The workaround was a self-made script that imports a Frame.io comments CSV as markers, i.e. a manual stop-gap.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f",
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://community.adobe.com/t5/premiere-pro-discussions/frameio-isn-t-broken-25-6-1/m-p/15602311",
+      "title": "FrameIO isn't broken 25.6.1 ! (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "FrameIO v4 updated panel in 25.6.1 is a little better but still doesn't export … not able to use markers in the timeline. FrameIO is truly broken, anyone know any decent alternatives I need to carry on working somehow!",
+      "statement": "Even after Adobe's rebuilt panel (25.6.1) a user still cannot use markers in the timeline and asks for alternatives.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f",
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://community.adobe.com/announcements-732/now-in-beta-all-new-frame-io-panel-311901",
+      "title": "Now in Beta: All NEW Frame.io panel (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "We just rebuilt the Frame.io V4 panel from the ground up, and it's is now in Premiere Pro (beta) 25.6. … Comments in Frame.io are now tied to markers in your sequence, rather than the original timestamp.",
+      "statement": "Adobe rebuilt the Premiere Frame.io panel in 25.6 and says comments are now tied to sequence markers, directly targeting the marker-sync complaint.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://community.adobe.com/questions-729/frame-io-v4-features-don-t-work-with-legacy-connections-1419243",
+      "title": "Frame.io V4 features don't work with legacy connections (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Yet the final cut pro integration doesn’t work, … THIS IS THE KIND OF STUFF THAT FORCES US TO FIND OTHER SOFTWARE TO USE.",
+      "statement": "A paying user says broken v4 integrations (Final Cut Pro, Zapier) are pushing them to find other software.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://community.adobe.com/questions-729/issue-with-frame-io-v4-in-premiere-pro-1417323",
+      "title": "Issue with Frame.io V4 in Premiere Pro (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "The V3 panel allowed me to save a local version of the exported file, but I don't see that option anywhere in the V4 panel. … Seems like some of the V3 functionality is lost.",
+      "statement": "Another Premiere user reports lost v3 panel functionality after the upgrade.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://community.adobe.com/questions-729/timeline-markers-are-not-getting-exported-as-comments-on-frame-io-1417289/index2.html",
+      "title": "Timeline markers are not getting exported as comments on Frame.io (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "The upload on Frame.io ends with the error for comments (image attached). As a result, the comments are not getting added for another person to review.",
+      "statement": "Marker-to-comment export errors also occurred on Premiere 23.3 (pre-v4), so marker sync has been fragile for years, not only since v4.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.provideocoalition.com/?p=30804",
+      "title": "Hands On With the New Frame.io Panel for Adobe Premiere Pro (ProVideo Coalition)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "There’s also an option to Import Comments that have been placed by an outside collaborator in Frame.io. Those comments are instantly placed in the timeline as Markers.",
+      "statement": "The original Frame.io Premiere panel imported client comments as timeline markers; this is the workflow editors say v4 broke.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://community.adobe.com/questions-671/share-for-review-urls-not-working-890485",
+      "title": "Share for Review URLs not working (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "When you click the URL it redirects to assets.adobe.com/cloud-documents and we can't get to the review link. The URL works when we're not on our corporate network.",
+      "statement": "An Adobe review link (InDesign Share for Review, not Frame.io) failed only on a corporate network, showing corporate networks can block Adobe-hosted review links.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "company_name": null,
+      "unknown_ids": [
+        "3f182b53-bfa4-4ea7-8b25-5dc253186db8"
+      ]
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://community.adobe.com/questions-729/frame-io-review-links-options-around-length-1403012",
+      "title": "Frame.io Review Links - Options around Length (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "They cannot share shortened links in their organisation due to security restrictions. Frame.io currently only gives users the option to share a shortened URLs when sharing links for review.",
+      "statement": "A Frame.io customer's organisation blocks shortened links for security, so Frame.io review links were unusable for them.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "3f182b53-bfa4-4ea7-8b25-5dc253186db8"
+      ]
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://community.adobe.com/questions-729/frame-io-will-not-completely-upload-premiere-video-sequence-or-directly-to-frame-io-project-folder-1411070",
+      "title": "Frame.io will not completely upload Premiere video sequence (Adobe Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I get the video to show it is uploading to 98% to 100% but it never finishes! … I’m behind a firewall.",
+      "statement": "A corporate (Enterprise CC) user behind a firewall cannot complete Frame.io uploads.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "company_name": null,
+      "unknown_ids": [
+        "3f182b53-bfa4-4ea7-8b25-5dc253186db8"
+      ]
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://www.fxguide.com/?p=408924",
+      "title": "Frame.io releases version 4 (fxguide)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "the new Share Builder, which lets you fine-tune every element of your media presentation … The whole Frame.io presentation to your client looks professional and completely proprietary to your company.",
+      "statement": "Frame.io v4 ships a branded Share Builder for client presentations, which weakens the 'lost presentation mode' and branding wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://www.fxguide.com/?p=408924",
+      "title": "Frame.io releases version 4 (fxguide)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The platform sold to Adobe in 2021 and today has 4 million users.",
+      "statement": "Frame.io reported 4 million users at the v4 launch, so the incumbent is large and entrenched.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": null,
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://frame.io/pricing",
+      "title": "Frame.io pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Pro 15 dollars $ 15 per member per month + tax … Team 25 dollars $ 25 per member per month + tax … Restricted projects & folders",
+      "statement": "Frame.io charges $15 (Pro) and $25 (Team) per member per month, and the Team plan already includes restricted projects and folders.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": "Frame.io",
+      "unknown_ids": [
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa",
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://frame.io/pricing",
+      "title": "Frame.io pricing FAQ",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "No. You can securely share assets with anyone outside your Frame.io account for free via Share links, which don't require them to sign up or log in.",
+      "statement": "Frame.io share links already need no login for clients, so a no-login player is not a differentiator on its own.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": "Frame.io",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://www.playbook.com/blog/best-frame-io-alternatives-for-video-teams-2026/",
+      "title": "Best Frame.io Alternatives for Video and Creative Teams in 2026 (Playbook)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "native DaVinci Resolve support never followed. Frame.io's own support documentation confirms the integration only covers Resolve 16 Studio and 17 Studio, which leaves current Resolve users without a native path. Frame.io is also bundled into Adobe Creative Cloud Pro, Premiere, and After Effects subscriptions now.",
+      "statement": "Frame.io v4 has no native DaVinci Resolve integration for current Resolve versions, and it is bundled into Creative Cloud subscriptions.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f",
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa"
+      ]
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://air.inc/resources/best-frame-io-alternatives",
+      "title": "Best Frame.io Alternatives for Marketing Video Teams (Air)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "It now covers images and documents too, and has a DaVinci Resolve workflow through mounted storage, so no one is cut off. Frame.io for Creative Cloud also comes with select Adobe subscriptions as a smaller tier of two users and five projects.",
+      "statement": "A small Frame.io tier comes free with some Adobe subscriptions, which raises the bar for a paid $29 seat for small teams.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": null,
+      "unknown_ids": [
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa",
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://help.cloud.blackmagicdesign.com/presentations/",
+      "title": "Blackmagic Cloud Presentations (help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Reviewers can add markers, comments and annotations to a presentation. These will then automatically be applied to the DaVinci Resolve timeline … You can share presentations with anyone, even if they don’t have a Blackmagic Cloud account.",
+      "statement": "Blackmagic Cloud Presentations already sync reviewer markers into the Resolve timeline, with no account needed for reviewers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": "Blackmagic Design",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://help.cloud.blackmagicdesign.com/presentations/",
+      "title": "Blackmagic Cloud Presentations (help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "You can create up to 20 presentations in a free Blackmagic Cloud account in your personal profile.",
+      "statement": "Resolve's native review has a free tier of 20 presentations.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "company_name": "Blackmagic Design",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f",
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa"
+      ]
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://help.cloud.blackmagicdesign.com/presentations/adding-markers/",
+      "title": "Blackmagic Cloud Presentations: Adding Markers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Markers update in real time between all users and immediately appear in the DaVinci Resolve timeline used to make the clip.",
+      "statement": "Blackmagic says markers from presentations appear immediately in the Resolve timeline.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": "Blackmagic Design",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://pageproof.com/learn/video-review-and-approval-now-inside-davinci-resolve-studio",
+      "title": "PageProof plugin for DaVinci Resolve Studio",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "the PageProof plugin for DaVinci Resolve Studio … alongside plugins for Adobe Premiere Pro, After Effects, and Final Cut Pro.",
+      "statement": "PageProof sells review plugins for Resolve Studio, Premiere, After Effects and Final Cut Pro.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "PageProof",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://reevu-co.pages.dev/",
+      "title": "RevCut video review tool",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Starting with DaVinci Resolve, our plugin brings RevCut comments as timeline markers, and lets you render & upload directly from the Deliver page.",
+      "statement": "RevCut, a small editor-built tool, already offers a Resolve plugin that imports client comments as markers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "company_name": "RevCut",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://reevu-co.pages.dev/",
+      "title": "RevCut video review tool",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Max €29/ month Studio capacity. You + 3 editors.",
+      "statement": "RevCut charges EUR 29 per month for four seats, including white-label shared pages, far below $29 per seat.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": "RevCut",
+      "unknown_ids": [
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa",
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://reevu-co.pages.dev/",
+      "title": "RevCut video review tool",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "RevCut exists because two of my biggest clients refused the big players. GDPR, and the AI training buried in their contracts.",
+      "statement": "An editor built their own review tool because clients refused the big platforms, a sign that client-side policy blocks incumbent review tools.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": "RevCut",
+      "unknown_ids": [
+        "3f182b53-bfa4-4ea7-8b25-5dc253186db8",
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.dropbox.com/replay",
+      "title": "Dropbox Replay",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "$10 / month per user (billed annually as $120 / year) … Replay integrates with editing software such as Adobe Premiere Pro, Adobe After Effects, Apple Final Cut Pro, Blackmagic Design DaVinci Resolve, and Avid Pro Tools.",
+      "statement": "Dropbox Replay costs $10-12 per user per month and integrates with Premiere, After Effects, Final Cut Pro and Resolve.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": "Dropbox",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa",
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://krock.io/pricing/",
+      "title": "Krock.io pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "PRO $10 / PER USER Unlimited Team size From 2Tb Storage Everything in Free, plus - Unlimited reviewers - Unlimited Projects - Unlimited Workspaces - 4K Playback - Custom branding",
+      "statement": "Krock.io Pro costs $10 per user with unlimited reviewers and custom branding.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": "Krock.io",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa"
+      ]
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://krock.io/pricing/",
+      "title": "Krock.io pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Krock.io has been a very good replacement for the former used frame.io.",
+      "statement": "A Krock.io customer testimonial says they replaced Frame.io with it; switching away from Frame.io happens.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "company_name": "Krock.io",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://www.wipster.io/pricing",
+      "title": "Wipster pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Reviewers are always unlimited.",
+      "statement": "Wipster includes unlimited free reviewers; free client reviewers are table stakes.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Wipster",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://www.wipster.io/blog/best-frame.io-alternatives-in-2026",
+      "title": "The 7 Best Frame.io Alternatives for Video Teams in 2026 (Wipster)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Maybe the per-seat pricing is getting expensive as your client roster grows. Maybe your stakeholders aren't video editors and find the interface overwhelming.",
+      "statement": "A competitor frames per-seat cost and client-facing complexity as reasons teams leave Frame.io (vendor claim).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "company_name": "Wipster",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa"
+      ]
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://vimeo.com/product/time-coded-video-feedback",
+      "title": "Time-coded video feedback (Vimeo)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Vimeo's Adobe Premiere Pro integration pulls time-coded comments onto the editor's timeline as markers, so the note lands next to the frame it references.",
+      "statement": "Vimeo also syncs review comments into Premiere as markers, with accountless reviewer links.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "company_name": "Vimeo",
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+        "7ba7e7c6-289a-455b-8c12-21a8608c384f"
+      ]
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://filebase.com/blog/cloudflare-r2-pricing-costs-savings-and-alternatives-in-2026/",
+      "title": "Cloudflare R2 Pricing (Filebase)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "With R2, Cloudflare does not charge egress fees for data transferred to the Internet.",
+      "statement": "Zero-egress object storage exists (R2, $0.015/GB-month standard storage per the same page), which limits the playback-bandwidth cost risk.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": null,
+      "unknown_ids": [
+        "13587aef-eb9c-4763-85e4-3eabc93a7afa"
+      ]
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://www.ssw.com.au/rules/review-videos-collaboratively/",
+      "title": "Do you use dedicated collaborative software for video reviews? (SSW Rules)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "To review and comment on video projects in Frame.io you don't need an account, it will simply prompt you to put in your name and email address.",
+      "statement": "A consultancy's internal rule standardises on Frame.io for client video review and notes reviewers need no account.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "company_name": null,
+      "unknown_ids": [
+        "b866edc0-a8b7-46e7-86a2-e9acca2af28e"
+      ]
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://www.bungalow5.tv/",
+      "title": "Bungalow 5",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "LOS ANGELES 809 Hampton Drive Venice, CA 90291 Founder/ Executive Producer Josianne Côté josianne@bungalow5.tv",
+      "statement": "Bungalow 5 is in Venice, CA; its founder and executive producer is listed with an email.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Bungalow 5",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://www.bungalow5.tv/",
+      "title": "Bungalow 5",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Head of production Lauren Wilson lauren@bungalow5.tv",
+      "statement": "Bungalow 5 lists a head of production.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Bungalow 5",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://www.bungalow5.tv/about",
+      "title": "About | Bungalow 5",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "with over 25 years of experience in Advertising, Television, Film, and Interactive",
+      "statement": "Bungalow 5's founder has 25+ years in advertising and film post.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Bungalow 5",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://exileedit.com/contact",
+      "title": "Contact | EXILE",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "EXILE is an award-winning boutique editorial company founded in 2014 … With offices in New York and Los Angeles",
+      "statement": "EXILE is a boutique editorial company with offices in New York and Los Angeles.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "EXILE",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://exileedit.com/contact",
+      "title": "Contact | EXILE",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Jennifer Locke Executive Producer",
+      "statement": "EXILE lists an LA executive producer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "EXILE",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://exileedit.com/contact",
+      "title": "Contact | EXILE",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CL Kumpata Managing Partner / EP",
+      "statement": "EXILE lists a managing partner / EP.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "EXILE",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.abandoneditorial.com/contact",
+      "title": "Contact | Abandon Editorial",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "EXECUTIVE PRODUCER JOANNA HALL joanna@abandoneditorial.com los angeles office 634 La Peer Dr. West Hollywood, CA 90069",
+      "statement": "Abandon Editorial is in West Hollywood, CA; its executive producer is listed with an email.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Abandon Editorial",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://www.abandoneditorial.com/",
+      "title": "Abandon Editorial",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We believe editors are more than the last stop in the process.",
+      "statement": "Abandon positions itself as an editor-led editorial house.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Abandon Editorial",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://thedeneditorial.com/about",
+      "title": "About | The Den Editorial",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Den Editorial is a woman-owned, bi-coastal edit house built around a thoughtfully curated roster of storytellers and artists. With welcoming spaces in both LA and NY",
+      "statement": "The Den is a woman-owned bicoastal edit house in LA and NY.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "The Den Editorial",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://thedeneditorial.com/contact",
+      "title": "Contact | The Den Editorial",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "532 Colorado Ave, Santa Monica, CA 90401 NY 50 Eldridge Street, 6th Floor NY, NY 10002 LauRenn Reed Executive Producer",
+      "statement": "The Den lists addresses in Santa Monica and New York and an executive producer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "The Den Editorial",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://thedeneditorial.com/about",
+      "title": "About | The Den Editorial",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our editors are available to work in either location—or remotely around the globe",
+      "statement": "The Den's editors work remotely as well as in-house, so remote client review matters.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "The Den Editorial",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://www.mackcut.com/about",
+      "title": "About | Mackcut",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Independent film editing shop specializing in commercials & short-form content. Facilities Include: 13 Avid Suites",
+      "statement": "Mackcut is an independent editing shop with 13 Avid suites.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Mackcut",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.mackcut.com/contact",
+      "title": "Contact | Mackcut",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Gina Pagano … executive producer",
+      "statement": "Mackcut lists an executive producer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Mackcut",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.mackcut.com/contact",
+      "title": "Contact | Mackcut",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "907 Broadway, 5th Fl New York, NY 10010",
+      "statement": "Mackcut is in New York, NY.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Mackcut",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.optimus.com/contact",
+      "title": "Contact | Optimus",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "EP/Managing Director Brian Hrastar",
+      "statement": "Optimus lists an EP / managing director.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Optimus",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.optimus.com/contact",
+      "title": "Contact | Optimus",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Executive Producer Tracy Spera",
+      "statement": "Optimus lists an executive producer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Optimus",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.optimus.com/contact",
+      "title": "Contact | Optimus",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "161 E. Grand Ave. Chicago, IL 60611",
+      "statement": "Optimus is in Chicago, IL.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Optimus",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.thisishike.com/about",
+      "title": "About | Hike Creative",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A creative production studio , partnering with brands of all shapes and sizes",
+      "statement": "Hike is a creative production studio working with brands.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Hike Creative",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.thisishike.com/about",
+      "title": "About | Hike Creative",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Full service, woman-owned, Chicago-based (but working globally)",
+      "statement": "Hike is Chicago-based.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Hike Creative",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.thisishike.com/contact",
+      "title": "Contact | Hike Creative",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CO-FOUNDER & EP Megan St. John megan@thisishike.com",
+      "statement": "Hike lists its co-founder and EP with an email.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Hike Creative",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.jumppoint.tv/",
+      "title": "Jump Point",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We create thoughtfully engineered, visually arresting content. From concept to completion, we make videos, animations, visual effects, and commercial photography to help companies stand out",
+      "statement": "Jump Point makes videos and animation for companies.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Jump Point",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.jumppoint.tv/",
+      "title": "Jump Point",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "4140 N. Kedzie Ave. Chicago, IL 60618",
+      "statement": "Jump Point is in Chicago, IL.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Jump Point",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.lightsail.co/about",
+      "title": "About | Lightsail",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Meet Tom Barr Owner, Founder, Executive Producer, All-Hats Wearer",
+      "statement": "Lightsail lists its owner / founder / EP.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Lightsail",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://www.lightsail.co/about",
+      "title": "About | Lightsail",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Meet Jordan Busekrus Field Director, Editor",
+      "statement": "Lightsail lists a field director / editor.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Lightsail",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.shoots.video/production/denver/post-production/",
+      "title": "Top Denver Post Production Services (Shoots.video)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Top Denver, CO Post Production Services … Lightsail helps high achieving teams produce brand-aligned and brand-elevating content",
+      "statement": "A Denver post-production directory lists Lightsail.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Lightsail",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.lightsail.co/about",
+      "title": "About | Lightsail",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For 10 years, Tom ran Lightsail as a one man show and kept growing this company year over year.",
+      "statement": "Lightsail was a one-person company for ten years and has since added staff.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Lightsail",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://picturethis.ca/",
+      "title": "Picture This Productions",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Picture This Productions, a bilingual, full-service video production agency based in Montreal, helps businesses, organizations, and industry leaders",
+      "statement": "Picture This is a Montreal video production agency serving businesses.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Picture This Productions",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://picturethis.ca/about/",
+      "title": "About | Picture This Productions",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Maureen Marovitch Creative Director | Co-Founder",
+      "statement": "Picture This lists a co-founder / creative director.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Picture This Productions",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://picturethis.ca/about/",
+      "title": "About | Picture This Productions",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "David Finch Senior Producer | Co-Founder",
+      "statement": "Picture This lists a co-founder / senior producer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Picture This Productions",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.onpointvideo.ca/",
+      "title": "On Point Video Productions",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "primarily in B2B technology and manufacturing markets in and around Toronto, Canada.",
+      "statement": "On Point is a Toronto B2B video producer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "On Point Video Productions",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://onpointvideo.ca/about/",
+      "title": "About | On Point Video Productions",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We deliver turnkey videos — from scripting, to filming, thru editing",
+      "statement": "On Point delivers turnkey corporate videos including editing.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "On Point Video Productions",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://superdeepmedia.com/about/",
+      "title": "About | SUPER DEEP Media",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Gregory Brian Cooke Founder · Executive Producer · Filmmaker",
+      "statement": "SUPER DEEP Media lists its founder / EP.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "SUPER DEEP Media",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://superdeepmedia.com/about/",
+      "title": "About | SUPER DEEP Media",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Be it narrative content, documentary content, commercials, or corporate video – SUPER DEEP Media creates ideas and tells epic stories.",
+      "statement": "SUPER DEEP Media produces commercials and corporate video.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "SUPER DEEP Media",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://superdeepmedia.com/about/",
+      "title": "About | SUPER DEEP Media",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Born and raised on Chicago’s South Side",
+      "statement": "The founder is from Chicago (company location inferred; the Chicago directory also lists it).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "SUPER DEEP Media",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.fourwindscreative.com/",
+      "title": "Four Winds Creative",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Four Winds Creative is a professional video and animation studio in the San Francisco Bay Area. Specializing in visual storytelling for the top technology companies in the world.",
+      "statement": "Four Winds Creative is a Bay Area video studio serving tech companies.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Four Winds Creative",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.tbdpost.com/",
+      "title": "TBD Post",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "TBD Post is a full-service post production facility and editorial studio in Austin, TX",
+      "statement": "TBD Post is a post facility and editorial studio in Austin, TX.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "TBD Post",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://tbdpost.com/about",
+      "title": "About | TBD Post",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Rachel Kichler Executive Producer",
+      "statement": "TBD Post lists an executive producer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "TBD Post",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://www.tbdpost.com/",
+      "title": "TBD Post",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Co-founded in 2012 by editor Ted Griffis and colorist Brandon Thomas",
+      "statement": "TBD Post was co-founded by an editor and a colorist.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "TBD Post",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://www.cosmicpictures.com/studio",
+      "title": "About | Cosmic Pictures",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Visitors and creators at Cosmic's 3000 sq ft headquarters, located in downtown Salt Lake City",
+      "statement": "Cosmic Pictures is in Salt Lake City.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Cosmic Pictures",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://www.cosmicpictures.com/studio",
+      "title": "About | Cosmic Pictures",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "we’ve grown into a go-to production studio and post house",
+      "statement": "Cosmic Pictures is a production studio and post house.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Cosmic Pictures",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://sunsetedit.com/contact",
+      "title": "Contact | Sunset Edit",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Nazeli Kodjoian Founder/Executive Producer nazeli@sunsetedit.com",
+      "statement": "Sunset Edit lists its founder / EP with an email.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Sunset Edit",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://sunsetedit.com/contact",
+      "title": "Contact | Sunset Edit",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Kevin Filippini Partner/Executive Producer kevin@sunsetedit.com",
+      "statement": "Sunset Edit lists a partner / EP with an email.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Sunset Edit",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://sunsetedit.com/contact",
+      "title": "Contact | Sunset Edit",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "849 Seward St Los Angeles, CA 90038",
+      "statement": "Sunset Edit is in Los Angeles.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Sunset Edit",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://telideo.com/",
+      "title": "Telideo Productions",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Telideo Productions is a full-service Denver video production company",
+      "statement": "Telideo is a Denver video production company.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Telideo Productions",
+      "unknown_ids": []
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://telideo.com/",
+      "title": "Telideo Productions",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We specialize in producing original video and animated content for websites, advertising campaigns, employee training, corporate events",
+      "statement": "Telideo produces corporate and training video.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "company_name": "Telideo Productions",
+      "unknown_ids": []
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "7ba7e7c6-289a-455b-8c12-21a8608c384f",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Before v4, the Frame.io Premiere panel imported client comments as timeline markers; editors say v4 stopped markers uploading or syncing and removed the export-markers-as-comments option.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-17",
+            "ev-01",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "When the integration fails, editors fall back to printed notes or self-made scripts that import comment CSVs as markers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-11"
+          ]
+        },
+        {
+          "statement": "Resolve users can get reviewer markers straight into the timeline through Blackmagic Cloud Presentations; Vimeo, Dropbox Replay, PageProof and RevCut also offer NLE integrations.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29",
+            "ev-39",
+            "ev-34",
+            "ev-30",
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "How common each method is among boutiques was not found.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "3f182b53-bfa4-4ea7-8b25-5dc253186db8",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Only adjacent cases were found: an Adobe-hosted review link failing on a corporate network, an organisation that cannot use Frame.io's shortened links for security reasons, and uploads stalling behind a firewall.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18",
+            "ev-19",
+            "ev-20"
+          ]
+        },
+        {
+          "statement": "One editor built their own review tool because two large clients refused the big platforms over GDPR and AI-training terms.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33"
+          ]
+        },
+        {
+          "statement": "No evidence on how often client IT blocks Frame.io review links; the frequency is unknown.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "8de8c29f-d0c6-437c-8729-0884dea918f6",
+      "status": "no_evidence_found",
+      "summary": [
+        {
+          "statement": "Editors describe the broken marker sync as crippling or forcing them back to printouts, but no source quantifies time per project.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-07",
+            "ev-10",
+            "ev-03"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "b866edc0-a8b7-46e7-86a2-e9acca2af28e",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Workarounds include printed notes and home-made CSV-to-marker scripts.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-11"
+          ]
+        },
+        {
+          "statement": "Alternatives with NLE integrations are Dropbox Replay, Krock.io, Wipster, Vimeo, PageProof, RevCut and, for Resolve, Blackmagic Cloud Presentations.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34",
+            "ev-35",
+            "ev-37",
+            "ev-39",
+            "ev-30",
+            "ev-31",
+            "ev-27"
+          ]
+        },
+        {
+          "statement": "Adobe rebuilt the Premiere panel in 25.6 to tie comments to markers, though at least one user still reports markers unusable in 25.6.1.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-13",
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "Frame.io itself already offers restricted folders, no-login share links and branded presentations, so some wedge features are not gaps.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23",
+            "ev-24",
+            "ev-21"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "36b8a473-f83e-4528-b039-51c09d0550db",
+      "status": "no_evidence_found",
+      "summary": []
+    },
+    {
+      "unknown_id": "13587aef-eb9c-4763-85e4-3eabc93a7afa",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Current per-seat prices: Frame.io $15 (Pro) and $25 (Team) per member per month, Dropbox Replay $10-12 per user, Krock.io $10 per user; RevCut charges EUR 29 per month for four seats.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23",
+            "ev-34",
+            "ev-35",
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "A small Frame.io tier is bundled with some Creative Cloud subscriptions, and Blackmagic Cloud has a free tier of 20 presentations.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-26",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "Zero-egress storage such as Cloudflare R2 limits playback bandwidth cost.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-40"
+          ]
+        },
+        {
+          "statement": "No evidence that boutiques would pay $29 per editor seat; market prices sit at $10-25.",
+          "kind": "inference",
+          "evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Frame.io (Adobe)",
+      "url": "https://frame.io",
+      "kind": "direct",
+      "description": "Incumbent cloud review and approval tool with Premiere/After Effects panels, no-login client share links, branded shares and restricted folders on the Team plan.",
+      "pricing_note": "Pro $15 and Team $25 per member per month (frame.io/pricing); a small tier is bundled with some Creative Cloud plans.",
+      "evidence_refs": [
+        "ev-23",
+        "ev-24",
+        "ev-21",
+        "ev-26",
+        "ev-22"
+      ],
+      "sentiment": [
+        {
+          "statement": "Editors complain that v4 broke Premiere marker/comment sync (markers not uploading, being overwritten, export option removed).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-05",
+            "ev-06",
+            "ev-07"
+          ]
+        },
+        {
+          "statement": "Adobe rebuilt the Premiere panel in 25.6 and says comments are now tied to sequence markers; at least one user says 25.6.1 still cannot use markers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-13",
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "Frame.io v4 has no native integration for current DaVinci Resolve versions.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Blackmagic Cloud Presentations",
+      "url": "https://help.cloud.blackmagicdesign.com/presentations/",
+      "kind": "indirect",
+      "description": "Resolve's native client review: reviewer markers and comments appear in the Resolve timeline; reviewers need no account.",
+      "pricing_note": "Up to 20 presentations free in a personal Blackmagic Cloud account (help page).",
+      "evidence_refs": [
+        "ev-27",
+        "ev-28",
+        "ev-29"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "Dropbox Replay",
+      "url": "https://www.dropbox.com/replay",
+      "kind": "direct",
+      "description": "Review and approval add-on with integrations for Premiere, After Effects, Final Cut Pro, Resolve and Pro Tools.",
+      "pricing_note": "$10/user/month billed annually or $12 monthly; requires a Dropbox Plus or higher plan.",
+      "evidence_refs": [
+        "ev-34"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Krock.io",
+      "url": "https://krock.io",
+      "kind": "direct",
+      "description": "Video review platform with unlimited reviewers, custom branding and an Adobe CC extension.",
+      "pricing_note": "Free plan; Pro $10 per user per month (krock.io/pricing).",
+      "evidence_refs": [
+        "ev-35",
+        "ev-36"
+      ],
+      "sentiment": [
+        {
+          "statement": "A customer testimonial on Krock's site says it replaced Frame.io for them.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-05",
+      "name": "Wipster",
+      "url": "https://www.wipster.io",
+      "kind": "direct",
+      "description": "Video review tool with unlimited reviewers and Premiere/After Effects integrations.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-37",
+        "ev-38",
+        "ev-09"
+      ],
+      "sentiment": [
+        {
+          "statement": "One team left Wipster for Frame.io because of Frame.io's native Premiere integration.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-09"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-06",
+      "name": "Vimeo Review",
+      "url": "https://vimeo.com/product/time-coded-video-feedback",
+      "kind": "indirect",
+      "description": "Time-coded review inside Vimeo with accountless reviewer links and a Premiere integration that pulls comments in as markers.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-39"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "PageProof",
+      "url": "https://pageproof.com",
+      "kind": "direct",
+      "description": "Proofing platform with plugins for Resolve Studio, Premiere, After Effects and Final Cut Pro.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-30"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "RevCut",
+      "url": "https://reevu-co.pages.dev",
+      "kind": "direct",
+      "description": "Editor-built review tool with a Resolve plugin that imports client comments as timeline markers; white-label pages on higher tiers.",
+      "pricing_note": "EUR 5-149/month; Max EUR 29/month for 4 seats (owner + 3 editors).",
+      "evidence_refs": [
+        "ev-31",
+        "ev-32",
+        "ev-33"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "Printed notes and home-made CSV-to-marker scripts",
+      "url": null,
+      "kind": "manual",
+      "description": "When integrations break, editors work from printed client notes or self-made scripts that import exported Frame.io comment CSVs as markers.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-11",
+        "ev-07"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most teams still use Frame.io, which offers no-login client share links and a Premiere panel; v4 broke parts of the marker workflow and Adobe rebuilt the panel in 25.6.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-24",
+        "ev-13",
+        "ev-01"
+      ]
+    },
+    {
+      "statement": "Resolve users have native Blackmagic Cloud Presentations whose markers land in the Resolve timeline, plus third-party plugins (PageProof, RevCut).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-27",
+        "ev-29",
+        "ev-30",
+        "ev-31"
+      ]
+    },
+    {
+      "statement": "Cheaper review tools with NLE integrations exist at about $10 per user per month (Dropbox Replay, Krock.io), and Vimeo also syncs comments into Premiere.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-34",
+        "ev-35",
+        "ev-39"
+      ]
+    },
+    {
+      "statement": "When integrations break, editors fall back to printed notes or home-made scripts that import CSV comments as markers.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-07",
+        "ev-11"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Bungalow 5",
+      "website": "https://www.bungalow5.tv",
+      "icp_id": null,
+      "location": "Venice, CA",
+      "industry": "Editorial / post-production boutique",
+      "description": "Women-owned editorial boutique with a roster of about nine editors cutting brand commercials.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-42"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-42",
+        "ev-43",
+        "ev-44"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Boutique editorial house sending cuts to brand and agency clients.",
+          "evidence_refs": [
+            "ev-42",
+            "ev-44"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Josianne Côté",
+          "role": "Founder / Executive Producer",
+          "email": "josianne@bungalow5.tv",
+          "evidence_ref": "ev-42"
+        },
+        {
+          "name": "Lauren Wilson",
+          "role": "Head of production",
+          "email": "lauren@bungalow5.tv",
+          "evidence_ref": "ev-43"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "EXILE",
+      "website": "https://exileedit.com",
+      "icp_id": null,
+      "location": "Los Angeles, CA and New York, NY",
+      "industry": "Editorial boutique",
+      "description": "Bicoastal boutique editorial company offering editorial plus in-house VFX.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-45"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-45",
+        "ev-46",
+        "ev-47"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Self-described boutique editorial company.",
+          "evidence_refs": [
+            "ev-45"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Jennifer Locke",
+          "role": "Executive Producer",
+          "email": null,
+          "evidence_ref": "ev-46"
+        },
+        {
+          "name": "CL Kumpata",
+          "role": "Managing Partner / EP",
+          "email": null,
+          "evidence_ref": "ev-47"
+        }
+      ]
+    },
+    {
+      "ref": "co-03",
+      "name": "Abandon Editorial",
+      "website": "https://www.abandoneditorial.com",
+      "icp_id": null,
+      "location": "West Hollywood, CA",
+      "industry": "Editorial boutique",
+      "description": "Small editor-led editorial house cutting commercials for agencies and brands.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-48"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-48",
+        "ev-49"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Editor-led commercial editorial boutique.",
+          "evidence_refs": [
+            "ev-49"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "JOANNA HALL",
+          "role": "Executive Producer",
+          "email": "joanna@abandoneditorial.com",
+          "evidence_ref": "ev-48"
+        }
+      ]
+    },
+    {
+      "ref": "co-04",
+      "name": "The Den Editorial",
+      "website": "https://thedeneditorial.com",
+      "icp_id": null,
+      "location": "Santa Monica, CA and New York, NY",
+      "industry": "Editorial boutique",
+      "description": "Woman-owned bicoastal boutique edit house whose editors also work remotely.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-51"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-50",
+        "ev-51",
+        "ev-52"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Boutique edit house; remote editing increases reliance on online review.",
+          "evidence_refs": [
+            "ev-50",
+            "ev-52"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "LauRenn Reed",
+          "role": "Executive Producer",
+          "email": null,
+          "evidence_ref": "ev-51"
+        }
+      ]
+    },
+    {
+      "ref": "co-05",
+      "name": "Mackcut",
+      "website": "https://www.mackcut.com",
+      "icp_id": null,
+      "location": "New York, NY",
+      "industry": "Editorial boutique",
+      "description": "Independent commercial editing shop in New York.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-55"
+      },
+      "technologies": [
+        "Avid"
+      ],
+      "evidence_refs": [
+        "ev-53",
+        "ev-54",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Independent editorial shop; size above the core 2-25 range is unclear.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 1,
+          "rationale": "Cuts on Avid, which a Premiere/Resolve marker plugin would not cover.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Gina Pagano",
+          "role": "Executive Producer",
+          "email": "gina@mackcut.com",
+          "evidence_ref": "ev-54"
+        }
+      ]
+    },
+    {
+      "ref": "co-06",
+      "name": "Optimus",
+      "website": "https://www.optimus.com",
+      "icp_id": null,
+      "location": "Chicago, IL",
+      "industry": "Editorial, design and audio post",
+      "description": "Chicago post house (editorial, design, audio) with a New York office; likely at the upper end of the size range.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-56",
+        "ev-57",
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Post house; probably larger than a 2-25 person boutique.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Brian Hrastar",
+          "role": "EP / Managing Director",
+          "email": null,
+          "evidence_ref": "ev-56"
+        },
+        {
+          "name": "Tracy Spera",
+          "role": "Executive Producer",
+          "email": null,
+          "evidence_ref": "ev-57"
+        }
+      ]
+    },
+    {
+      "ref": "co-07",
+      "name": "Hike Creative",
+      "website": "https://www.thisishike.com",
+      "icp_id": null,
+      "location": "Chicago, IL",
+      "industry": "Production and post studio",
+      "description": "Woman-owned Chicago production studio making commercials and branded content for brands.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-59",
+        "ev-60",
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Production studio delivering cuts to brand clients.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Megan St. John",
+          "role": "Co-Founder & EP",
+          "email": "megan@thisishike.com",
+          "evidence_ref": "ev-61"
+        }
+      ]
+    },
+    {
+      "ref": "co-08",
+      "name": "Jump Point",
+      "website": "https://www.jumppoint.tv",
+      "icp_id": null,
+      "location": "Chicago, IL",
+      "industry": "Video agency",
+      "description": "Chicago video agency producing videos for companies.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62",
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Video agency serving corporate clients.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Lightsail",
+      "website": "https://www.lightsail.co",
+      "icp_id": null,
+      "location": "Denver, CO",
+      "industry": "Corporate video production",
+      "description": "Small Denver brand/corporate video company that grew from a one-person shop.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-64",
+        "ev-65",
+        "ev-66",
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small corporate video producer delivering to business clients.",
+          "evidence_refs": [
+            "ev-66",
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Tom Barr",
+          "role": "Owner / Founder / Executive Producer",
+          "email": null,
+          "evidence_ref": "ev-64"
+        },
+        {
+          "name": "Jordan Busekrus",
+          "role": "Field Director, Editor",
+          "email": null,
+          "evidence_ref": "ev-65"
+        }
+      ]
+    },
+    {
+      "ref": "co-10",
+      "name": "Picture This Productions",
+      "website": "https://picturethis.ca",
+      "icp_id": null,
+      "location": "Montreal, QC, Canada",
+      "industry": "Corporate and TV video production",
+      "description": "Montreal corporate and TV production company with in-house post-production.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-68"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-68",
+        "ev-69",
+        "ev-70"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Corporate video producer with in-house editing.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Maureen Marovitch",
+          "role": "Creative Director / Co-Founder",
+          "email": null,
+          "evidence_ref": "ev-69"
+        },
+        {
+          "name": "David Finch",
+          "role": "Senior Producer / Co-Founder",
+          "email": null,
+          "evidence_ref": "ev-70"
+        }
+      ]
+    },
+    {
+      "ref": "co-11",
+      "name": "On Point Video Productions",
+      "website": "https://onpointvideo.ca",
+      "icp_id": null,
+      "location": "Toronto, ON, Canada",
+      "industry": "Corporate video production (solo)",
+      "description": "Owner-operated Toronto B2B video producer; the freelance end of the ICP.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-71",
+        "ev-72"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Freelance-scale corporate video producer sending cuts to B2B clients.",
+          "evidence_refs": [
+            "ev-71",
+            "ev-72"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "SUPER DEEP Media",
+      "website": "https://superdeepmedia.com",
+      "icp_id": null,
+      "location": "Chicago, IL",
+      "industry": "Production and post",
+      "description": "Small Chicago production company offering post-production for commercials and corporate video.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-75"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-73",
+        "ev-74",
+        "ev-75"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small production/post company with corporate clients.",
+          "evidence_refs": [
+            "ev-74"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Gregory Brian Cooke",
+          "role": "Founder / Executive Producer",
+          "email": null,
+          "evidence_ref": "ev-73"
+        }
+      ]
+    },
+    {
+      "ref": "co-13",
+      "name": "Four Winds Creative",
+      "website": "https://fourwindscreative.com",
+      "icp_id": null,
+      "location": "San Francisco Bay Area, CA",
+      "industry": "Corporate video and animation",
+      "description": "Bay Area studio making video for tech companies, a corporate-client ICP fit.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-76"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Sends cuts to corporate (tech) clients.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "TBD Post",
+      "website": "https://tbdpost.com",
+      "icp_id": null,
+      "location": "Austin, TX",
+      "industry": "Post-production facility",
+      "description": "Austin editorial and finishing studio serving agencies and brands; editor- and colorist-founded.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77",
+        "ev-78",
+        "ev-79"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Post facility; may be above 25 people.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Rachel Kichler",
+          "role": "Executive Producer",
+          "email": null,
+          "evidence_ref": "ev-78"
+        },
+        {
+          "name": "Ted Griffis",
+          "role": "Co-founder, Editor",
+          "email": null,
+          "evidence_ref": "ev-79"
+        }
+      ]
+    },
+    {
+      "ref": "co-15",
+      "name": "Cosmic Pictures",
+      "website": "https://www.cosmicpictures.com",
+      "icp_id": null,
+      "location": "Salt Lake City, UT",
+      "industry": "Production studio and post house",
+      "description": "Salt Lake City production and post house serving agencies and brands.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-80"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-80",
+        "ev-81"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Production and post house.",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Sunset Edit",
+      "website": "https://sunsetedit.com",
+      "icp_id": null,
+      "location": "Los Angeles, CA",
+      "industry": "Post-production house",
+      "description": "Los Angeles post house cutting commercials and music videos.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-84"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-82",
+        "ev-83",
+        "ev-84"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Post house in LA; size not stated.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Nazeli Kodjoian",
+          "role": "Founder / Executive Producer",
+          "email": "nazeli@sunsetedit.com",
+          "evidence_ref": "ev-82"
+        },
+        {
+          "name": "Kevin Filippini",
+          "role": "Partner / Executive Producer",
+          "email": "kevin@sunsetedit.com",
+          "evidence_ref": "ev-83"
+        }
+      ]
+    },
+    {
+      "ref": "co-17",
+      "name": "Telideo Productions",
+      "website": "https://telideo.com",
+      "icp_id": null,
+      "location": "Denver, CO",
+      "industry": "Corporate video production",
+      "description": "Denver corporate video and animation producer.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-85"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-85",
+        "ev-86"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Corporate video producer sending cuts to business clients.",
+          "evidence_refs": [
+            "ev-86"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of their review or NLE tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of review-tool pain found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
