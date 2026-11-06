@@ -281,12 +281,13 @@ async def research_score_input(
     unknowns = await analysis.list_unknowns(session, idea.id)
     category = {u.id: u.category.value for u in unknowns}
     items = tuple(
-        scoring.ResearchItem(
+        research_score.ResearchSource(
             evidence_id=str(e["id"]),
             domain=domain_key(e["final_url"] or e["url"]),
             stance=e["stance"].value,
             relevance=e["relevance"].value,
             verification=e["verification"].value,
+            source_type=getattr(e["source_type"], "value", str(e["source_type"])),
             unknown_categories=tuple(
                 sorted({category[u] for u in e["unknown_ids"] if u in category})
             ),
@@ -304,8 +305,11 @@ async def research_score_input(
             research_score.QuestionInput(str(u.id), u.priority.value, findings.get(u.id))
             for u in unknowns
         ),
-        competitor_evidence=tuple(
-            tuple(str(x) for x in c["evidence_ids"])
+        competitors=tuple(
+            research_score.CompetitorEntry(
+                kind=getattr(c["kind"], "value", str(c["kind"])),
+                evidence_ids=tuple(str(x) for x in c["evidence_ids"]),
+            )
             for c in await competitors.list_competitors(session, idea.id)
         ),
         companies=len(rows),

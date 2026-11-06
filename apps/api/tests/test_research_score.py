@@ -1,4 +1,4 @@
-"""Phase 6 research score: pure rules plus the endpoint and portfolio field."""
+"""Research score v2 (Phase 6B): pure rules plus the endpoint and portfolio field."""
 
 import uuid
 
@@ -7,85 +7,113 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 
 from app.modules.research import service as research
 from app.modules.validation.research_score import (
+    CompetitorEntry,
     QuestionInput,
     ResearchScoreInput,
+    ResearchSource,
     research_score,
 )
-from app.modules.validation.scoring import ResearchItem
 from tests.research_fixtures import evidence_item, pack
 from tests.test_research_service import FakeFetcher
 
 _n = 0
 
 
-def item(domain, stance="supports", cats=(), verification="verified", relevance="high"):
+def src(
+    domain,
+    stance="supports",
+    source_type="forum",
+    cats=(),
+    verification="verified",
+    relevance="high",
+):
     global _n
     _n += 1
-    return ResearchItem(f"ev-{_n}", domain, stance, relevance, verification, tuple(cats))
+    return ResearchSource(
+        f"ev-{_n}", domain, stance, relevance, verification, source_type, tuple(cats)
+    )
 
 
 def dims(result):
     return {d.key: d.points for d in result.dimensions}
 
 
-def test_empty_input_scores_zero() -> None:
+def score(**kw):
+    return dims(research_score(ResearchScoreInput(**kw)))
+
+
+def test_empty_input_scores_zero_except_open_space() -> None:
     r = research_score(ResearchScoreInput())
-    assert r.total == 0 and r.band == "weak"
-    assert all(d.points == 0 for d in r.dimensions)
     assert sum(d.max for d in r.dimensions) == 100
+    assert dims(r) == {
+        "problem": 0,
+        "pain": 0,
+        "balance": 0,
+        "questions": 0,
+        "open_space": 15,
+        "reachability": 0,
+    }
+    assert r.band == "weak" and r.version == 2
 
 
-def test_domains_count_once_and_only_verified_medium_high() -> None:
+def test_only_verified_medium_high_and_once_per_domain() -> None:
     research = (
-        item("a.com"),
-        item("a.com"),  # same domain: one source
-        item("b.com", relevance="medium"),
-        item("c.com", relevance="low"),  # low relevance: not counted
-        item("d.com", verification="unverifiable"),  # not counted
+        src("a.com"),
+        src("a.com"),  # same domain: one source
+        src("c.com", relevance="low"),  # not counted
+        src("d.com", verification="unverifiable"),  # not counted
     )
-    r = research_score(ResearchScoreInput(research=research))
-    assert dims(r)["problem"] == 6  # a.com + b.com
+    assert score(research=research)["problem"] == score(research=(src("a.com"),))["problem"]
+
+
+def test_source_type_weighting() -> None:
+    forums = tuple(src(f"f{i}.com", source_type="forum") for i in range(4))
+    vendors = tuple(src(f"v{i}.com", source_type="company_site") for i in range(4))
+    assert score(research=forums)["problem"] > score(research=vendors)["problem"]
+    # a domain counts at its best source type
+    mixed = (src("x.com", source_type="company_site"), src("x.com", source_type="forum"))
+    assert score(research=mixed)["problem"] == score(research=(src("y.com"),))["problem"]
+
+
+def test_problem_and_pain_never_saturate() -> None:
+    def problem_for(n):
+        return score(research=tuple(src(f"s{i}.com", cats=("cost",)) for i in range(n)))
+
+    small, big, huge = problem_for(5), problem_for(20), problem_for(200)
+    assert small["problem"] < big["problem"] < huge["problem"] <= 25
+    assert big["problem"] < 25 and big["pain"] < 15
+    assert small["pain"] < big["pain"]
 
 
 def test_pain_needs_cost_urgency_or_frequency_link() -> None:
-    research = (
-        item("a.com", cats=("cost",)),
-        item("b.com", cats=("buyer",)),
-        item("c.com", cats=("urgency", "other")),
-    )
-    assert dims(research_score(ResearchScoreInput(research=research)))["pain"] == 6
+    research = (src("a.com", cats=("buyer",)), src("b.com", cats=("other",)))
+    assert score(research=research)["pain"] == 0
+    assert score(research=(src("a.com", cats=("urgency",)),))["pain"] > 0
 
 
-def test_caps_hold() -> None:
-    research = tuple(item(f"s{i}.com", cats=("frequency",)) for i in range(20))
-    r = research_score(
-        ResearchScoreInput(
-            research=research,
-            competitor_evidence=tuple((x.evidence_id,) for x in research),
-            companies=40,
-            contacts=40,
-        )
-    )
-    d = dims(r)
-    assert (d["problem"], d["pain"], d["balance"], d["alternatives"], d["reachability"]) == (
-        30,
-        15,
-        20,
-        5,
-        15,
-    )
-    assert all(x.points <= x.max for x in r.dimensions)
+def test_balance() -> None:
+    eight = tuple(src(f"s{i}.com") for i in range(8))
+    assert score(research=eight)["balance"] == 20
+    mixed = eight[:4] + tuple(src(f"c{i}.com", stance="contradicts") for i in range(4))
+    assert score(research=mixed)["balance"] == 10
+    assert score(research=(src("one.com"),))["balance"] == 2  # 20 * 1 * 1/8
+    assert score(research=(src("x.com", stance="contradicts"),))["balance"] == 0
 
 
-def test_contradictions_lower_balance_and_thin_evidence_is_damped() -> None:
-    six = tuple(item(f"s{i}.com") for i in range(6))
-    assert dims(research_score(ResearchScoreInput(research=six)))["balance"] == 20
-    mixed = six[:3] + tuple(item(f"c{i}.com", stance="contradicts") for i in range(3))
-    assert dims(research_score(ResearchScoreInput(research=mixed)))["balance"] == 10
-    thin = (item("one.com"),)  # 1 of 5 sources needed for full balance
-    assert dims(research_score(ResearchScoreInput(research=thin)))["balance"] == 4
-    only_contra = (item("x.com", stance="contradicts"),)
-    assert dims(research_score(ResearchScoreInput(research=only_contra)))["balance"] == 0
+def test_open_space_falls_with_evidenced_direct_and_indirect_competitors() -> None:
+    e = src("a.com")
+    u = src("b.com", verification="unverifiable")
+
+    def open_space(*entries):
+        return score(research=(e, u), competitors=entries)["open_space"]
+
+    assert open_space() == 15
+    assert open_space(CompetitorEntry("direct", (e.evidence_id,))) == 12
+    assert open_space(CompetitorEntry("indirect", (e.evidence_id,))) == 14
+    assert open_space(CompetitorEntry("manual", (e.evidence_id,))) == 15  # not crowding
+    assert open_space(CompetitorEntry("service", (e.evidence_id,))) == 15
+    assert open_space(CompetitorEntry("direct", (u.evidence_id,))) == 15  # unverified: ignored
+    assert open_space(*[CompetitorEntry("direct", (e.evidence_id,))] * 6) == 0  # floored
 
 
 def test_questions_weighted_by_priority() -> None:
@@ -94,29 +122,21 @@ def test_questions_weighted_by_priority() -> None:
         QuestionInput("q2", "medium", "partially_answered"),  # 1 of 2
         QuestionInput("q3", "low", None),  # 0 of 1
     )
-    assert dims(research_score(ResearchScoreInput(questions=qs)))["questions"] == 10  # 15*4/6
+    assert score(questions=qs)["questions"] == 7  # 10*4/6
 
 
-def test_alternatives_need_verified_evidence() -> None:
-    v, u = item("a.com"), item("b.com", verification="unverifiable")
-    r = research_score(
-        ResearchScoreInput(
-            research=(v, u), competitor_evidence=((v.evidence_id,), (u.evidence_id,), ())
-        )
-    )
-    assert dims(r)["alternatives"] == 1
+def test_reachability_caps() -> None:
+    assert score(companies=40, contacts=40)["reachability"] == 15
+    assert score(companies=3, contacts=1)["reachability"] == 4
 
 
-def test_deterministic_and_bands() -> None:
+def test_deterministic() -> None:
     inp = ResearchScoreInput(
-        research=tuple(item(f"s{i}.com", cats=("cost",)) for i in range(10)),
+        research=tuple(src(f"s{i}.com", cats=("cost",)) for i in range(10)),
         questions=(QuestionInput("q", "high", "answered"),),
         companies=3,
-        contacts=1,
     )
-    a, b = research_score(inp), research_score(inp)
-    assert a == b
-    assert a.total == 30 + 15 + 20 + 15 + 0 + 4 and a.band == "strong"
+    assert research_score(inp) == research_score(inp)
 
 
 PAGE = "Our project coordinators spend most of Friday compiling weekly progress reports."
@@ -144,15 +164,16 @@ async def test_endpoint_and_portfolio(
     assert r.status_code == 200
     data = r.json()
     by_key = {d["key"]: d for d in data["dimensions"]}
-    assert by_key["problem"]["points"] == 3  # only the verified a.com counts
-    assert by_key["balance"]["points"] == 4
-    assert data["total"] == sum(d["points"] for d in data["dimensions"]) and data["version"] == 1
+    assert by_key["problem"]["points"] == 4  # one verified forum domain: round(25*3/18)
+    assert by_key["balance"]["points"] == 2
+    assert by_key["open_space"]["points"] == 15
+    assert data["total"] == sum(d["points"] for d in data["dimensions"]) and data["version"] == 2
 
     board = (await client.get("/portfolio")).json()
     assert board[0]["research_score"] == {
         "total": data["total"],
         "band": data["band"],
-        "version": 1,
+        "version": 2,
     }
 
 

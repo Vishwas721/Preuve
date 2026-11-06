@@ -3,33 +3,54 @@
 A pure function of `ResearchScoreInput`, built by the validation service from stored rows. No LLM.
 It never changes an idea's state or the validation score (Phase 4); it only orders the case board.
 
-Rules are documented in docs/phases/phase-6-research-score.md; keep the two in sync and bump
-`RESEARCH_SCORE_VERSION` whenever a rule or constant changes.
+Rules are documented in docs/phases/phase-6b-research-score-v2.md (v1: phase-6-research-score.md);
+keep the two in sync and bump `RESEARCH_SCORE_VERSION` whenever a rule or constant changes.
 """
 
 from dataclasses import asdict, dataclass, field
 
-from app.modules.validation.scoring import ResearchItem
+RESEARCH_SCORE_VERSION = 2  # 2: source-type weights, diminishing returns, open space
 
-RESEARCH_SCORE_VERSION = 1
-
-# ---------- constants (agreed at Phase 6 kickoff) ----------
+# ---------- constants (agreed at Phase 6B kickoff) ----------
 
 COUNTED_RELEVANCE = ("medium", "high")
-PROBLEM_PER_DOMAIN, PROBLEM_MAX = 3, 30
+SOURCE_WEIGHT = {
+    "forum": 3,
+    "review": 3,
+    "job_posting": 3,
+    "news": 2,
+    "industry_publication": 2,
+    "report": 2,
+}  # anything else (company_site, directory, other) weighs 1
+DEFAULT_WEIGHT = 1
+PROBLEM_MAX, PROBLEM_HALF = 25, 15
 PAIN_CATEGORIES = ("cost", "urgency", "frequency")
-PAIN_PER_DOMAIN, PAIN_MAX = 3, 15
-BALANCE_MAX, BALANCE_FULL_AT = 20, 5  # full balance needs >= 5 independent sources
-QUESTIONS_MAX = 15
+PAIN_MAX, PAIN_HALF = 15, 9
+BALANCE_MAX, BALANCE_FULL_AT = 20, 8  # full balance needs >= 8 independent sources
+QUESTIONS_MAX = 10
 PRIORITY_WEIGHT = {"high": 3, "medium": 2, "low": 1}
 FINDING_CREDIT = {"answered": 1.0, "partially_answered": 0.5, "no_evidence_found": 0.0}
-ALTERNATIVES_PER_COMPETITOR, ALTERNATIVES_MAX = 1, 5
+OPEN_SPACE_MAX = 15
+CROWDING_PENALTY = {"direct": 3, "indirect": 1}  # manual / service alternatives don't crowd
 PROSPECT_PER_COMPANY, PROSPECT_COMPANY_MAX = 1, 10
 PROSPECT_PER_CONTACT, PROSPECT_CONTACT_MAX = 1, 5
 BAND_STRONG, BAND_PROMISING = 60, 40
 
 
 # ---------- inputs ----------
+
+
+@dataclass(frozen=True)
+class ResearchSource:
+    """One research-origin evidence row that isn't dismissed."""
+
+    evidence_id: str
+    domain: str
+    stance: str  # supports | contradicts | neutral
+    relevance: str  # high | medium | low
+    verification: str  # verified | unverifiable
+    source_type: str = "other"
+    unknown_categories: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -40,10 +61,16 @@ class QuestionInput:
 
 
 @dataclass(frozen=True)
+class CompetitorEntry:
+    kind: str  # direct | indirect | manual | service
+    evidence_ids: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
 class ResearchScoreInput:
-    research: tuple[ResearchItem, ...] = ()
+    research: tuple[ResearchSource, ...] = ()
     questions: tuple[QuestionInput, ...] = ()
-    competitor_evidence: tuple[tuple[str, ...], ...] = ()  # per competitor: its evidence ids
+    competitors: tuple[CompetitorEntry, ...] = ()
     companies: int = 0
     contacts: int = 0
 
@@ -76,62 +103,73 @@ def _clamp(points: float, cap: int) -> int:
     return max(0, min(cap, round(points)))
 
 
-def _counted(items: tuple[ResearchItem, ...]) -> list[ResearchItem]:
+def _diminishing(weight: float, cap: int, half: float) -> int:
+    """`cap × W / (W + half)`: more evidence always helps a little, and never saturates."""
+    return _clamp(cap * weight / (weight + half), cap) if weight > 0 else 0
+
+
+def _counted(items: tuple[ResearchSource, ...]) -> list[ResearchSource]:
     return [r for r in items if r.verification == "verified" and r.relevance in COUNTED_RELEVANCE]
 
 
-def _domains(items: list[ResearchItem], stance: str) -> set[str]:
-    return {r.domain for r in items if r.stance == stance}
+def _domain_weights(items: list[ResearchSource]) -> dict[str, int]:
+    """Each domain counts once, at the weight of its best source type."""
+    best: dict[str, int] = {}
+    for r in items:
+        w = SOURCE_WEIGHT.get(r.source_type, DEFAULT_WEIGHT)
+        best[r.domain] = max(best.get(r.domain, 0), w)
+    return best
 
 
 def _plural(n: int, word: str) -> str:
     return f"{n} {word}{'' if n == 1 else 's'}"
 
 
+def _first_hand(weights: dict[str, int]) -> int:
+    return sum(1 for w in weights.values() if w == 3)
+
+
 def research_score(inp: ResearchScoreInput) -> ResearchScoreResult:
     counted = _counted(inp.research)
-    support = _domains(counted, "supports")
-    contra = _domains(counted, "contradicts")
-    s, c = len(support), len(contra)
+    supporting = [r for r in counted if r.stance == "supports"]
+    support_w = _domain_weights(supporting)
+    contra = {r.domain for r in counted if r.stance == "contradicts"}
+    s, c = len(support_w), len(contra)
     dims: list[ResearchDimension] = []
 
     # Problem evidence
-    problem = _clamp(PROBLEM_PER_DOMAIN * s, PROBLEM_MAX)
+    problem = _diminishing(sum(support_w.values()), PROBLEM_MAX, PROBLEM_HALF)
+    first = _first_hand(support_w)
     dims.append(
         ResearchDimension(
             "problem",
             "Problem evidence",
             problem,
             PROBLEM_MAX,
-            f"{_plural(s, 'independent source')} with verified evidence supporting the problem.",
-            []
-            if problem >= PROBLEM_MAX
-            else [
-                f"Find {-(-(PROBLEM_MAX - problem) // PROBLEM_PER_DOMAIN)} more independent "
-                "sources describing the problem."
-            ],
+            f"{_plural(s, 'independent source')} support the problem, {first} of them first-hand "
+            "(forums, reviews, job postings).",
+            ["Find people describing the problem first-hand: forums, reviews, job postings."]
+            if first < 5
+            else [],
         )
     )
 
     # Pain depth
-    pain_domains = {
-        r.domain
-        for r in counted
-        if r.stance == "supports" and set(r.unknown_categories) & set(PAIN_CATEGORIES)
-    }
-    pain = _clamp(PAIN_PER_DOMAIN * len(pain_domains), PAIN_MAX)
+    pain_w = _domain_weights(
+        [r for r in supporting if set(r.unknown_categories) & set(PAIN_CATEGORIES)]
+    )
+    pain = _diminishing(sum(pain_w.values()), PAIN_MAX, PAIN_HALF)
     dims.append(
         ResearchDimension(
             "pain",
             "Pain depth",
             pain,
             PAIN_MAX,
-            f"{_plural(len(pain_domains), 'source')} showing cost, urgency or frequency.",
-            []
-            if pain >= PAIN_MAX
-            else [
-                "Find evidence of what the problem costs, how often it happens or how urgent it is."
-            ],
+            f"{_plural(len(pain_w), 'source')} showing cost, urgency or frequency, "
+            f"{_first_hand(pain_w)} first-hand.",
+            ["Find first-hand evidence of what the problem costs or how often it happens."]
+            if _first_hand(pain_w) < 3
+            else [],
         )
     )
 
@@ -188,20 +226,24 @@ def research_score(inp: ResearchScoreInput) -> ResearchScoreResult:
         )
     )
 
-    # Alternatives mapped
+    # Open space: evidenced direct and indirect competitors crowd the wedge
     verified_ids = {r.evidence_id for r in inp.research if r.verification == "verified"}
-    mapped = sum(1 for ids in inp.competitor_evidence if set(ids) & verified_ids)
-    alternatives = _clamp(ALTERNATIVES_PER_COMPETITOR * mapped, ALTERNATIVES_MAX)
+    evidenced = [c for c in inp.competitors if set(c.evidence_ids) & verified_ids]
+    direct = sum(1 for c in evidenced if c.kind == "direct")
+    indirect = sum(1 for c in evidenced if c.kind == "indirect")
+    crowding = sum(CROWDING_PENALTY.get(c.kind, 0) for c in evidenced)
+    open_space = _clamp(OPEN_SPACE_MAX - crowding, OPEN_SPACE_MAX)
     dims.append(
         ResearchDimension(
-            "alternatives",
-            "Alternatives mapped",
-            alternatives,
-            ALTERNATIVES_MAX,
-            f"{_plural(mapped, 'alternative')} backed by verified evidence.",
-            []
-            if alternatives >= ALTERNATIVES_MAX
-            else ["Map how the problem is solved today, with sources."],
+            "open_space",
+            "Open space",
+            open_space,
+            OPEN_SPACE_MAX,
+            f"{_plural(direct, 'direct competitor')} and "
+            f"{_plural(indirect, 'indirect competitor')} with verified evidence.",
+            ["The wedge is crowded: show what you do that the direct competitors don't."]
+            if direct >= 2
+            else [],
         )
     )
 
