@@ -1,0 +1,2698 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "eebdab69-d27f-463c-b627-4fa057431917",
+    "researcher": "claude-code",
+    "started_at": "2026-11-06T08:00:00Z",
+    "finished_at": "2026-11-06T12:30:00Z",
+    "queries": [
+      "Shopify withdrawal button EU June 2026 app",
+      "\"withdrawal function\" directive 2023/2673 19 June 2026 online shops",
+      "Shopify community EU withdrawal button \"Widerrufsbutton\"",
+      "Loop Returns pricing per month per return fee Shopify",
+      "Redo returns \"free returns\" coverage fee merchant revenue share how Redo makes money",
+      "Shopify self-serve returns withdrawal EU right of withdrawal Shopify help center 2026",
+      "Shopify app return coverage merchant keeps 100% of fee \"return insurance\" self-funded",
+      "reddit shopify Loop returns too expensive switched",
+      "ReturnGO EU withdrawal button",
+      "AfterShip Returns EU right of withdrawal button support",
+      "Sendcloud withdrawal button returns portal EU 2026",
+      "\"Vertrag widerrufen\" pages Shopify Mode Label Brillen Accessoires Widerrufsbutton",
+      "\"withdraw from contract here\" apparel brand store EU",
+      "\"pages/withdrawal\" OR \"pages/eu-withdrawal\" sunglasses eyewear brand withdraw from contract",
+      "UK clothing brand \"EU withdrawal\" page \"withdraw from contract\" Shopify",
+      "\"Withdraw from contract\" \"confirm withdrawal\" jewellery brand pages",
+      "\"Vertrag hier widerrufen\" Mode Online Shop pages widerruf Label",
+      "\"right of withdrawal\" \"withdrawal form\" eyewear sunglasses brand online store pages EU customers 2026"
+    ],
+    "notes": "Contradiction searches: Shopify native solution, incumbents' withdrawal features, free withdrawal apps, DIY builds, self-funded protection apps. EUR-Lex returned no text to Preuve's fetcher, so the legal requirements are cited from law-firm and vendor summaries (Legal500, Corso, Outvio). Sendcloud's withdrawal help article returned 403 and is not cited. Reddit is cited via an archived snapshot site. Prospects: 20 EU/UK-based apparel, eyewear, jewellery and accessories brands, located through their own terms, imprint or about pages. The primary ICP is 'global, 25-100 staff'. No company headcount was verified, so size_estimate is omitted everywhere and some prospects (Finisterre, Lucy & Yak, PDPAOLA, RIXO) may be above the $1-15M GMV band. Shopify use is shown only where a page shows Shop Pay, 'Powered by Shopify' or Shopify Payments. US brands shipping into the EU were not prospected. No job postings were found or used. The buyer unknown has no evidence."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://www.corso.com/post-purchase-resource-center/eu-right-of-withdrawal-what-shopify-merchants-need-to-know",
+      "title": "EU right of withdrawal: what Shopify merchants need to know | Corso",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Starting June 19, 2026, every online store selling to EU consumers must provide a dedicated digital withdrawal function, a \"withdrawal button,\" that lets shoppers cancel a purchase in two clicks from the same interface where they bought it.",
+      "statement": "Since 19 June 2026 every online store selling to EU consumers must offer a dedicated digital withdrawal function.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c232d45d-9f17-4cf8-95d0-a191f1a0884b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://www.corso.com/post-purchase-resource-center/eu-right-of-withdrawal-what-shopify-merchants-need-to-know",
+      "title": "EU right of withdrawal: what Shopify merchants need to know | Corso",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "non-compliant merchants face fines of up to 4% of annual turnover and an automatic extension of the withdrawal period from 14 days to 12 months plus 14 days for every affected order.",
+      "statement": "A returns vendor states non-compliance risks fines up to 4% of turnover and a withdrawal period extended to 12 months plus 14 days.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c232d45d-9f17-4cf8-95d0-a191f1a0884b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://www.corso.com/post-purchase-resource-center/eu-right-of-withdrawal-what-shopify-merchants-need-to-know",
+      "title": "EU right of withdrawal: what Shopify merchants need to know | Corso",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "In January 2026, the European Commission opened infringement procedures against 21 Member States for failing to communicate complete transposition measures.",
+      "statement": "National transposition was late in most Member States, so the rules differ in timing and detail across countries.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://www.corso.com/post-purchase-resource-center/eu-right-of-withdrawal-what-shopify-merchants-need-to-know",
+      "title": "EU right of withdrawal: what Shopify merchants need to know | Corso",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Retention offers and friction cannot be placed in the withdrawal path. Retention offers are permitted only after the withdrawal is completed and confirmed.",
+      "statement": "A statutory withdrawal must be kept separate from exchange-first / retention return flows, which is a design constraint for returns apps.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://www.legal500.com/intelligence/germany/consumer-protection/eu-consumer-law-new-withdrawal-button-requirements-for-online-contracts",
+      "title": "EU Consumer Law: New 'Withdrawal Button' Requirements For Online Contracts",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Failure to comply with the new requirements by June 19, 2026, may result in cease-and-desist actions under the Unfair Trades Act (UWG) and/or fines of up to two million Euros or 4% of annual turnover.",
+      "statement": "In Germany non-compliance can trigger UWG cease-and-desist actions and fines up to EUR 2m or 4% of turnover.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c232d45d-9f17-4cf8-95d0-a191f1a0884b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://www.legal500.com/intelligence/germany/consumer-protection/eu-consumer-law-new-withdrawal-button-requirements-for-online-contracts",
+      "title": "EU Consumer Law: New 'Withdrawal Button' Requirements For Online Contracts",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Where multiple contracts exist simultaneously, the consumer must be able to clearly distinguish which contract (or which parts of the contract) the withdrawal relates to",
+      "statement": "German law requires the flow to let consumers withdraw from specific contracts or parts of an order, which simple contact forms do not handle.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://community.shopify.com/t/eu-withdrawal-button-requirement-starts-june-19-2026/637624",
+      "title": "EU withdrawal button requirement starts June 19, 2026 - Shopify Community",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "The concern is that Shopify’s native solution works through Customer Accounts, so the customer needs to sign in with an email/verification code.",
+      "statement": "Merchants doubt Shopify's native self-serve flow meets the no-login requirement because it runs through customer accounts.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://community.shopify.com/t/eu-withdrawal-button-requirement-starts-june-19-2026/637624",
+      "title": "EU withdrawal button requirement starts June 19, 2026 - Shopify Community",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I tested a few other apps as well, including Revoq, but some of them mainly just collected submissions or changed status internally.",
+      "statement": "A merchant/implementer found several withdrawal-button apps only collect submissions rather than manage the return/refund.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://community.shopify.com/t/eu-withdrawal-button-requirement-starts-june-19-2026/637624",
+      "title": "EU withdrawal button requirement starts June 19, 2026 - Shopify Community",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Many merchants are pairing this with returns apps, or custom metafields, to log requests and automate fulfillment holds.",
+      "statement": "Merchants combine a withdrawal form with returns apps or custom metafields to log requests and hold fulfilment.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://changelog.shopify.com/posts/self-serve-returns-now-support-cancellations",
+      "title": "Self-serve returns now support cancellations - Shopify Changelog",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Buyers can now request order cancellations through self-serve, in addition to requesting returns. … This enables merchants selling in the EU to offer a withdrawal policy",
+      "statement": "Shopify shipped native self-serve cancellations plus returns (June 18, 2026), positioned for the EU withdrawal right.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://help.shopify.com/en/manual/fulfillment/managing-orders/returns/return-rules",
+      "title": "Setting up return and cancellation rules - Shopify Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "To meet the directive, customers need to be able to withdraw at any point before delivery and for 14 days after delivery. … Using these tools doesn't automatically make your store compliant.",
+      "statement": "Shopify documents a native setup for the withdrawal right but says its tools don't automatically make a store compliant.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://reddit.sentinel-team.org/posts/1u84cub/snapshots/2026-06-18T10%3A14%3A31.783557Z",
+      "title": "r/shopify snapshot (archived): native withdrawal button",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Is a partial implementation and not even compliant, basically they added the form directly in the customer accounts on the order section",
+      "statement": "A merchant judges Shopify's native implementation partial and non-compliant because it sits inside customer accounts.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://reddit.sentinel-team.org/posts/1u84cub/snapshots/2026-06-18T10%3A14%3A31.783557Z",
+      "title": "r/shopify snapshot (archived): native withdrawal button",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I was scrambling to figure this out. Caught a post on Linkedin from someone at Redo saying they have free solution to get my site compliant for the EU changes.",
+      "statement": "Merchants were scrambling before the deadline, and an incumbent (Redo) offered the fix for free.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "c232d45d-9f17-4cf8-95d0-a191f1a0884b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://reddit.sentinel-team.org/posts/1u37377/snapshots/2026-06-12T16%3A59%3A37.413431Z",
+      "title": "r/shopify snapshot (archived): Shopify compliance features",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Well, I spent half the day working with Claude on a custom app, and it's live and working.",
+      "statement": "Some merchants build the withdrawal flow themselves in half a day.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "e91cd6e8-972b-44bf-be9b-a4a69544537f",
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://reddit.sentinel-team.org/posts/1u37377/snapshots/2026-06-12T16%3A59%3A37.413431Z",
+      "title": "r/shopify snapshot (archived): Shopify compliance features",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "If I need to use a 3rd party app, does that mean I'm turning over sensitive customer information to a 3rd party hosting service? I avoid doing this like it's the plague.",
+      "statement": "Some merchants resist adding third-party apps for this because of customer-data sharing.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e91cd6e8-972b-44bf-be9b-a4a69544537f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://apps.shopify.com/eu-withdrawal-compliance",
+      "title": "EU Withdrawal Button by CL | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Confirmation emails reach both customer and merchant, every request lands in a dashboard with an audit-ready timeline per withdrawal",
+      "statement": "A withdrawal-button app (free plan with unlimited withdrawals) already offers dashboard, emails and audit timeline.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "e91cd6e8-972b-44bf-be9b-a4a69544537f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://apps.shopify.com/widerruf-app",
+      "title": "EasyWi: EU Withdrawal Button | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "On Pro it can create the Shopify return and cancel unfulfilled orders automatically.",
+      "statement": "Cheap withdrawal apps already link withdrawals to Shopify returns and cancellations.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://letsmetrix.com/app/withdrawly/alternatives",
+      "title": "Withdrawly alternatives | LetsMetrix",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "44 apps compete with Withdrawly: EU Form & Button in Returns and exchanges, ranked by how closely they substitute for it.",
+      "statement": "The Shopify withdrawal-function app niche is crowded (44 competing apps for one listing).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://letsmetrix.com/app/withdrawly/alternatives",
+      "title": "Withdrawly alternatives | LetsMetrix",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Easily comply with EU withdrawal requirements 2023/2673 … Free planFree trialPaid from $9.99/mo",
+      "statement": "The leading withdrawal app (about 2,323 reviews per LetsMetrix) has a free plan and paid tiers from $9.99/mo, showing demand exists but is captured at low prices.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "e91cd6e8-972b-44bf-be9b-a4a69544537f",
+        "2f495644-f4c9-44e8-a095-7c58bb4592dd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://letsmetrix.com/app/withdrawly/alternatives",
+      "title": "Withdrawly alternatives | LetsMetrix",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Returns portal with EU withdrawal button, exchanges & refunds",
+      "statement": "At least one app (easyReturns, from $19/mo per LetsMetrix) already combines a returns portal with the withdrawal button.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://letsmetrix.com/app/withdrawly/alternatives",
+      "title": "Withdrawly alternatives | LetsMetrix",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Returns, upsell, order editing & EU withdrawal in one platform",
+      "statement": "PostCo markets returns and EU withdrawal in one platform.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://help.loopreturns.com/en/articles/12837505",
+      "title": "EU Right of Withdrawal: Manual Configuration | Loop Help",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Note: Loop's native EU Withdrawal flow is strongly recommended.",
+      "statement": "Loop has shipped a native EU withdrawal flow.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": "Loop Returns"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://help.loopreturns.com/en/articles/12837505",
+      "title": "EU Right of Withdrawal: Manual Configuration | Loop Help",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Note: United Kingdom is listed in Order location but is not an EU/EFTA market.",
+      "statement": "Loop notes the UK is not an EU/EFTA market for this directive.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Loop Returns"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://redo.com/tools/eu-right-of-withdrawal-faq",
+      "title": "EU Right of Withdrawal: Merchant FAQ | Redo",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "No. The withdrawal function is included with the Redo returns platform at no additional cost. It is not a separately priced compliance add-on.",
+      "statement": "Redo bundles the withdrawal function into its returns platform at no extra cost.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "e91cd6e8-972b-44bf-be9b-a4a69544537f"
+      ],
+      "company_name": "Redo"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://redo.com/tools/eu-right-of-withdrawal-faq",
+      "title": "EU Right of Withdrawal: Merchant FAQ | Redo",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "No. Due to Brexit, the UK is not subject to EU consumer protection law and does not fall under this directive.",
+      "statement": "The withdrawal-button mandate does not apply in the UK, weakening the UK half of the pitch.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "c232d45d-9f17-4cf8-95d0-a191f1a0884b"
+      ],
+      "company_name": "Redo"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://help.returnzap.com/article/105-eu-withdrawal-returns",
+      "title": "EU Withdrawal Returns | ReturnZap Help",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "ReturnZap includes a dedicated withdrawal workflow that makes your return portal compliant with the EU Consumer Rights Directive. It runs alongside your standard returns process",
+      "statement": "ReturnZap already runs withdrawals and returns side by side in one portal, the proposed 'one dashboard' wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": "ReturnZap"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://support.aftership.com/en/returns/articles/15897323-set-up-eu-right-of-withdrawal-for-aftership-returns",
+      "title": "Set up EU Right of Withdrawal for AfterShip Returns",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Plans: Available on all AfterShip Returns plans, there's no plan requirement to use this feature.",
+      "statement": "AfterShip Returns offers EU withdrawal on all plans, with a Shopify widget.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": "AfterShip"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://returnzap.com/compare/returnzap-vs-loop-returns",
+      "title": "ReturnZap vs Loop Returns",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Loop’s published plans start at $155/month plus per return fees.",
+      "statement": "A competitor states Loop starts at $155/month plus per-return fees.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c232d45d-9f17-4cf8-95d0-a191f1a0884b"
+      ],
+      "company_name": "Loop Returns"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://apps.shopify.com/loop-returns/reviews?rating=1",
+      "title": "Loop Returns reviews (1-star) | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "We were initially told 30% revenue share on Checkout+ with no monthly retainer … Then we were quoted $800+ per month for a business processing around 120 returns per month and 2500-5000 tracking orders.",
+      "statement": "A merchant reports Loop quoted a 30-40% revenue share on Checkout+ coverage fees and $800+/month for ~120 returns/month.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c232d45d-9f17-4cf8-95d0-a191f1a0884b",
+        "e91cd6e8-972b-44bf-be9b-a4a69544537f"
+      ],
+      "company_name": "Loop Returns"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://apps.shopify.com/loop-returns/reviews?rating=1",
+      "title": "Loop Returns reviews (1-star) | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Zero revenue share required, all the money is yours and you have the exact same features.",
+      "statement": "The same merchant says a self-run prepaid-label fee keeps all the money, supporting the merchant-owned coverage idea but also showing it can be done without a dedicated app.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "e91cd6e8-972b-44bf-be9b-a4a69544537f",
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "Loop Returns"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://apps.shopify.com/loop-returns/reviews?rating=1",
+      "title": "Loop Returns reviews (1-star) | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "European brands, beware! Lots of promises until you sign, then no one is available for the onboarding. Support is almost non existent for EU brands",
+      "statement": "An EU brand complains Loop's onboarding/support for EU brands is weak.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": "Loop Returns"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://apps.shopify.com/loop-returns/reviews?rating=3",
+      "title": "Loop Returns reviews (3-star) | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Fairly expensive for what is ultimately a pretty simple service",
+      "statement": "A merchant calls Loop fairly expensive for a simple service.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c232d45d-9f17-4cf8-95d0-a191f1a0884b"
+      ],
+      "company_name": "Loop Returns"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://apps.shopify.com/loop-returns/reviews?rating=3",
+      "title": "Loop Returns reviews (3-star) | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Loop Returns doesn’t work well with Shopify Markets Pro making international returns challenging.",
+      "statement": "A merchant reports Loop handles international (Markets Pro) returns poorly.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": "Loop Returns"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://redo.com/landing-pages/returnsv5",
+      "title": "Redo returns landing page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "40–60% add a small coverage fee at checkout. Nothing's pre-checked. … Our revenue comes from shoppers who opt in, never from you.",
+      "statement": "Redo's model funds returns from a shopper-paid checkout coverage fee that Redo keeps.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "e91cd6e8-972b-44bf-be9b-a4a69544537f"
+      ],
+      "company_name": "Redo"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.clickpost.ai/en-us/alternatives/redo",
+      "title": "The Best 7 Redo Alternatives for Returns (2026 Pricing) | ClickPost",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Some shoppers read it as a surprise charge, and if opt-in runs low, more of the label cost lands back on you.",
+      "statement": "A competitor notes the coverage-fee model shifts label cost back to merchants when opt-in is low.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e91cd6e8-972b-44bf-be9b-a4a69544537f"
+      ],
+      "company_name": "Redo"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://apps.shopify.com/navidium-shipping-protection",
+      "title": "Navidium Shipping Protection | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Keep all fees, manage your own claims, and route profit to your store.",
+      "statement": "Self-funded, merchant-keeps-the-fee protection widgets already exist on Shopify (402 reviews).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": "Navidium"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://pickyourapp.com/collections/orders-and-shipping-returns-and-warranty-warranties-and-insurance/products/insure-booster",
+      "title": "InsureBooster Order Protection",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Self-funded order protection. Set your own fees and keep 100% of the revenue. No third-party insurer or commission.",
+      "statement": "Another app already sells a self-funded, keep-100%-of-fees protection widget.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": "InsureBooster"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://apps.shopify.com/returngo",
+      "title": "ReturnGO Returns & Exchanges | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "110 returns included/month. $1.25 per extra return.",
+      "statement": "ReturnGO's Premium plan includes 110 returns/month and charges $1.25 per extra return.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c232d45d-9f17-4cf8-95d0-a191f1a0884b"
+      ],
+      "company_name": "ReturnGO"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.movingprimates.de/en/blog/shopify-change-log/eu-right-of-withdrawal-in-shopify-managed-markets-what-international-stores-now-need-to-implement-in-practice",
+      "title": "EU right of withdrawal in Shopify Managed Markets | moving primates",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "A note that is only visible in the Shopify admin is of little use if the warehouse is already printing the shipping label in parallel.",
+      "statement": "Pre-shipment withdrawals must reach the warehouse/OMS quickly; admin-only notes fail when the 3PL is already shipping.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "6338b4e2-0194-45a7-b479-c3f2d18dff72"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.movingprimates.de/en/blog/shopify-change-log/eu-right-of-withdrawal-in-shopify-managed-markets-what-international-stores-now-need-to-implement-in-practice",
+      "title": "EU right of withdrawal in Shopify Managed Markets | moving primates",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Managed Markets does not automatically include: … coordination with the warehouse, shipping service provider, or returns platform,",
+      "statement": "Shopify Managed Markets does not coordinate withdrawals with warehouse, carrier or returns platform.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "6338b4e2-0194-45a7-b479-c3f2d18dff72"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://www.digismoothie.com/blog/eu-withdrawal-button",
+      "title": "EU Withdrawal Button on Shopify | Digismoothie",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Note that the app does not cancel orders or issue refunds on its own, so the eligibility check still sits with your team.",
+      "statement": "Some withdrawal tools (Consentmo) only log requests; cancellations and refunds stay manual.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://outvio.com/blog/eu-withdrawal-button/",
+      "title": "EU Withdrawal Button Directive | Outvio",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Brief your warehouse and customer support teams on the expected uptick in return volume.",
+      "statement": "A returns vendor expects an uptick in return volume from the withdrawal button.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2f495644-f4c9-44e8-a095-7c58bb4592dd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://community.shopify.com/t/shopify-native-solution-to-the-eu-withdrawal-legislation/637898",
+      "title": "Shopify native solution to the EU Withdrawal legislation - Shopify Community",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "We have put in place an interim solution, but if anyone at shopify reads this, can you please reply?",
+      "statement": "A merchant had to build an interim solution and asked Shopify for a native one.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://www.tomwoodproject.com/pages/withdrawal",
+      "title": "Withdrawal - Tom Wood",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If you HAVE NOT received a shipping confirmation: Please contact our support team immediately at hello@tomwoodproject.com for assistance on how to proceed.",
+      "statement": "A jewellery brand handles pre-shipment withdrawals by email to support while post-shipment ones go through a returns portal: two separate paths.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "Tom Wood"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://apps.shopify.com/withdrawal-button-easyreturn",
+      "title": "Withdrawal Button - EasyReturn | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Includes consumer-paid return shipments and a store terms audit.",
+      "statement": "A free withdrawal app already bundles consumer-paid return shipments.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://www.tamaracomolli.com/en/pages/imprint",
+      "title": "Imprint - Tamara Comolli",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Address: NEWTON Munich Ridlerstrasse 57 80339 Munich",
+      "statement": "Tamara Comolli Fine Jewelry GmbH is based in Munich, Germany.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tamara Comolli"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://www.tamaracomolli.com/en/pages/imprint",
+      "title": "Imprint - Tamara Comolli",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Managing Directors: Olivia Crouan · Martin Kammermeier",
+      "statement": "Managing directors listed on the imprint.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tamara Comolli"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.tamaracomolli.com/en/pages/widerruf",
+      "title": "Widerruf - Tamara Comolli",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Right of withdrawal Withdraw from the contract",
+      "statement": "The store has implemented a 'Withdraw from the contract' function.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "Tamara Comolli"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://wildling.shoes/pages/impressum",
+      "title": "Impressum | Wildling Shoes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Wildling Shoes GmbH Walbach 9 51766 Engelskirchen Deutschland",
+      "statement": "Wildling Shoes GmbH is based in Engelskirchen, Germany.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Wildling Shoes"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://wildling.shoes/pages/impressum",
+      "title": "Impressum | Wildling Shoes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Geschäftsführer:in: Anna Yona und Ran Yona",
+      "statement": "Managing directors listed on the imprint.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Wildling Shoes"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://wildling.shoes",
+      "title": "Wildling Shoes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Umtausch, Rückgabe & Reklamation Widerruf erklären",
+      "statement": "The store offers separate exchange/return and 'declare withdrawal' entries.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "Wildling Shoes"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://komono.com/pages/about",
+      "title": "About - KOMONO",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Founded in 2009 in Belgium by ex-professional snowboarders Anton Janssens and Raf Maes, KOMONO breaks convention",
+      "statement": "KOMONO (sunglasses, opticals, watches) was founded in Belgium by Anton Janssens and Raf Maes.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "KOMONO"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://finisterre.com/policies/terms-of-service",
+      "title": "Terms of service - Finisterre",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Registered Office Unit 6 Wheal Kitty Workshops, St Agnes, Cornwall TR5 0RD, UK",
+      "statement": "Finisterre UK Limited is registered in Cornwall, UK.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Finisterre"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://finisterre.com",
+      "title": "Finisterre Official Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "American Express PayPal Apple Pay Shop Pay Google Pay Klarna",
+      "statement": "Checkout offers Shop Pay (Shopify).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Finisterre"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://organicbasics.com/policies/terms-of-service",
+      "title": "Terms of service - Organic Basics",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Organic Basics ApS is governed by Danish law and registered in Denmark at: Organic Basics ApS, Prags Boulevard 49B",
+      "statement": "Organic Basics ApS is registered in Copenhagen, Denmark.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Organic Basics"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://organicbasics.com",
+      "title": "Organic Basics",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "2026, Organic Basics EU Powered by Shopify",
+      "statement": "The EU store runs on Shopify.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Organic Basics"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://lucyandyak.com",
+      "title": "Lucy & Yak",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Bath, Bond Street Brighton, North Road Brighton, Ship Street Bristol, Park Street",
+      "statement": "Lucy & Yak operates UK stores (Bath, Brighton, Bristol...).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lucy & Yak"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://lucyandyak.com",
+      "title": "Lucy & Yak",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Payment methods PayPal Apple Pay Google Pay Shop Pay Visa",
+      "statement": "Checkout offers Shop Pay (Shopify).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lucy & Yak"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.hey-honey.de/policies/terms-of-service",
+      "title": "Terms of service - Hey Honey",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "your contractual partner is Warrior GmbH, Dorfstraße 7, 21398 Neetze, Germany.",
+      "statement": "Hey Honey's seller is Warrior GmbH in Neetze, Germany.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hey Honey"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.hey-honey.de/pages/impressum",
+      "title": "Hey Honey",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Founded in Hamburg in 2015 by sisters Imke von Johnston and Janka Oeljeschlager",
+      "statement": "Founders named on the brand's own page.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hey Honey"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.hey-honey.de",
+      "title": "Hey Honey | Yoga and Active Wear",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Help Center Returns Care Guide FAQ & Shipping Withdrawal",
+      "statement": "The store has separate Returns and Withdrawal entries in its help menu.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "Hey Honey"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.pdpaola.com/policies/terms-of-service",
+      "title": "Terms of service | PDPAOLA",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Owner name: SASMAT RETAIL S.L.",
+      "statement": "PDPAOLA is operated by Sasmat Retail S.L. in Barcelona.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "PDPAOLA"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.pdpaola.com",
+      "title": "PDPAOLA | Official Site",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "PDPAOLA Withdrawal from the Contract",
+      "statement": "The store has a 'Withdrawal from the Contract' entry.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "PDPAOLA"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://bravafabrics.com/policies/terms-of-service",
+      "title": "Terms of service - Brava Fabrics",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "owned by Brava Fabrics, S.L. (hereinafter, Brava Fabrics), Aribau 179 2-2, 08036 Barcelona, Spain",
+      "statement": "Brava Fabrics S.L. is based in Barcelona, Spain.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Brava Fabrics"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://bravafabrics.com",
+      "title": "Brava Fabrics",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "MobilePay Satispay Shop Pay Union Pay Visa",
+      "statement": "Checkout offers Shop Pay (Shopify).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Brava Fabrics"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.astridandmiyu.com",
+      "title": "Astrid & Miyu",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Astrid & Miyu are a contemporary London-based jewellery brand",
+      "statement": "Astrid & Miyu is a London-based jewellery brand.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Astrid & Miyu"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://nayestones.com/policies/terms-of-service",
+      "title": "Terms of service - Nayestones",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "having its registered office in 70 Rue Emile Féron, 1060 Brussels",
+      "statement": "Nayestones' operating entity is registered in Brussels, Belgium.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nayestones"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://nayestones.com/pages/withdrawal",
+      "title": "Withdrawal - Nayestones",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "You can use the withdrawal form below to submit your request. You will receive a confirmation of receipt by email.",
+      "statement": "Nayestones handles withdrawals with a simple message-style form.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "Nayestones"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://www.cassandragoad.com/policies/terms-of-service",
+      "title": "Terms of service - Cassandra Goad",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "whose registered office is at Hanover House, 13 Victoria Road, Darlington, County Durham DL1 5SF",
+      "statement": "Cassandra Goad's operator is registered in England.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cassandra Goad"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://www.cassandragoad.com/policies/terms-of-service",
+      "title": "Terms of service - Cassandra Goad",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "All card payments will be processed by our partner Shopify International Limited.",
+      "statement": "Payments run through Shopify.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cassandra Goad"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.cassandragoad.com/pages/eu-withdrawal-form",
+      "title": "Right of Withdrawal - Cassandra Goad",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "This form is for formally withdrawing from your purchase contract. It is separate from our standard returns process",
+      "statement": "A UK jeweller ships to the EU and runs a withdrawal form separate from its returns process.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9296c260-77dc-46bb-a180-9842bcbc95c5",
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "Cassandra Goad"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://laurelleantiquejewellery.com/pages/right-of-withdrawal",
+      "title": "Right of Withdrawal - Laurelle Antique Jewellery",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Laurelle Antique Jewellery England: 0333 700 4500",
+      "statement": "Laurelle Antique Jewellery is based in England.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Laurelle Antique Jewellery"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://laurelleantiquejewellery.com/pages/right-of-withdrawal",
+      "title": "Right of Withdrawal - Laurelle Antique Jewellery",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Submitting this form constitutes your official written notice under Article 11 of Directive 2011/83/EU.",
+      "statement": "A UK jeweller runs its own EU withdrawal notice form.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "Laurelle Antique Jewellery"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.holzkern.com/policies/terms-of-service",
+      "title": "AGB - Holzkern",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Holzkern - eine Marke der Time for Nature GmbH Autokaderstraße 33/11.3 1210 Wien Österreich",
+      "statement": "Holzkern (watches, jewellery, accessories) is based in Vienna, Austria.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Holzkern"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.holzkern.com",
+      "title": "Holzkern",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Datenschutzanfragen Vertrag widerrufen HOLZKERN",
+      "statement": "The store has a 'Vertrag widerrufen' (withdraw from contract) link.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27f42ea9-fbec-419f-a386-e380e8e05fa1"
+      ],
+      "company_name": "Holzkern"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://colorfulstandard.com/policies/legal-notice",
+      "title": "Legal notice - Colorful Standard",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Antwerp VOLKSTRAAT 34 Berlin MÜNZSTRAßE 11A Brussels RUE DES MINIMES 9",
+      "statement": "Colorful Standard runs stores in Antwerp, Berlin and Brussels.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Colorful Standard"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://colorfulstandard.com",
+      "title": "Colorful Standard",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "MobilePay PayPal Satispay Shop Pay Union Pay Visa",
+      "statement": "Checkout offers Shop Pay (Shopify).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Colorful Standard"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.lanius.com/policies/terms-of-service",
+      "title": "AGB - LANIUS",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "LANIUS GmbH (vertreten durch die Geschäftsführerin Claudia Lanius) Rolandstraße 63 50677 Köln Deutschland",
+      "statement": "LANIUS GmbH is based in Cologne; managing director named.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "LANIUS"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://melawear.de/policies/terms-of-service",
+      "title": "AGB - MELAWEAR",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "mela wear GmbH, Schillerstraße 50-52, 34117 Kassel",
+      "statement": "MELAWEAR is based in Kassel, Germany.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "MELAWEAR"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://recolution.de/policies/terms-of-service",
+      "title": "AGB - recolution",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "recolution GmbH & Co. KG Borsteler Chaussee 85-99a, Haus 12 22453 Hamburg",
+      "statement": "recolution is based in Hamburg, Germany.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "recolution"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://rixo.co.uk/policies/terms-of-service",
+      "title": "Terms of service - RIXO",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Rixo Limited is a company incorporated in England.",
+      "statement": "RIXO is a London fashion brand incorporated in England.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "RIXO"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://www.wearetala.com/policies/terms-of-service",
+      "title": "Terms of service - TALA",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "WEARETALA is a site operated by We Are TALA Limited. We are registered in England and Wales",
+      "statement": "TALA (activewear) is registered in England and Wales.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "TALA"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://www.hey-honey.de",
+      "title": "Hey Honey | Yoga and Active Wear",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "MobilePay PayPal Satispay Shop Pay Twint Union Pay Visa",
+      "statement": "Checkout offers Shop Pay (Shopify).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hey Honey"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://www.holzkern.com",
+      "title": "Holzkern",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Google Pay Maestro PayPal Shop Pay Union Pay Visa",
+      "statement": "Checkout offers Shop Pay (Shopify).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Holzkern"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://laurelleantiquejewellery.com/pages/right-of-withdrawal",
+      "title": "Right of Withdrawal - Laurelle Antique Jewellery",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mastercard PayPal Satispay Shop Pay Union Pay Visa",
+      "statement": "Checkout offers Shop Pay (Shopify).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Laurelle Antique Jewellery"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "2f495644-f4c9-44e8-a095-7c58bb4592dd",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "The withdrawal function has been mandatory for every online store selling to EU consumers since 19 June 2026, so every in-scope order now needs a compliant path.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01"
+          ]
+        },
+        {
+          "statement": "The leading withdrawal app has a free plan and paid tiers from $9.99/mo. LetsMetrix shows about 2,323 reviews for it, so demand for a withdrawal function was widespread but has been met at very low prices.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "Vendors expect the button to raise return volume, but no source measures how often individual brands get withdrawal requests.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-42"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "27f42ea9-fbec-419f-a386-e380e8e05fa1",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Merchants use their returns app's withdrawal mode, a standalone withdrawal-button app, Shopify's native self-serve cancellations, or a custom form or app.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-09",
+            "ev-10",
+            "ev-14",
+            "ev-22",
+            "ev-24"
+          ]
+        },
+        {
+          "statement": "Several EU/UK brands run a withdrawal entry or form separate from their returns flow, and some handle pre-shipment withdrawals by email to support.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44",
+            "ev-71",
+            "ev-51",
+            "ev-61",
+            "ev-68"
+          ]
+        },
+        {
+          "statement": "Some merchants built the flow themselves in about half a day.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "c232d45d-9f17-4cf8-95d0-a191f1a0884b",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "The cost of non-compliance can be high: fines of up to 4% of turnover (EUR 2m in Germany), UWG cease-and-desist actions, and a withdrawal period that a vendor says extends to 12 months plus 14 days.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Returns software costs are material at the high end: Loop from $155/month plus per-return fees, ReturnGO at $1.25 per extra return, and one merchant quoted $800+/month for about 120 returns/month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-28",
+            "ev-38",
+            "ev-29",
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "No source quantifies the staff time brands spend handling withdrawals.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "9296c260-77dc-46bb-a180-9842bcbc95c5",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Merchants report gaps: Shopify's native flow sits behind customer-account login, and some button apps only collect submissions without cancelling or refunding.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-12",
+            "ev-08",
+            "ev-41"
+          ]
+        },
+        {
+          "statement": "Loop gets complaints about price, weak EU onboarding and support, and international (Markets Pro) returns.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-32",
+            "ev-31",
+            "ev-33"
+          ]
+        },
+        {
+          "statement": "The main incumbents already ship withdrawal flows next to their returns portals, often at no extra cost (Loop, Redo, ReturnZap, AfterShip), and cheap combined apps exist (easyReturns, PostCo, EasyWi). The claim that returns apps handle withdrawals poorly is largely out of date.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22",
+            "ev-24",
+            "ev-26",
+            "ev-27",
+            "ev-20",
+            "ev-21",
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "The button requirement does not apply in the UK, so the UK half of the compliance pitch is weak.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25",
+            "ev-23"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "385ff39c-783b-4b58-91de-2fc8c9fe93d6",
+      "status": "no_evidence_found",
+      "summary": []
+    },
+    {
+      "unknown_id": "e91cd6e8-972b-44bf-be9b-a4a69544537f",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "One merchant objects to Loop's 30-40% Checkout+ revenue share and says merchants can keep all of the fee by selling a prepaid label themselves.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29",
+            "ev-30"
+          ]
+        },
+        {
+          "statement": "Redo funds labels from a shopper-paid coverage fee that it keeps, and a competitor notes that low opt-in shifts label cost back to the merchant.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34",
+            "ev-35"
+          ]
+        },
+        {
+          "statement": "Self-funded, keep-100%-of-fees protection widgets already exist on Shopify (Navidium, InsureBooster), so the model itself is not new.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36",
+            "ev-37"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "6338b4e2-0194-45a7-b479-c3f2d18dff72",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Pre-shipment withdrawals need to reach the warehouse or OMS quickly, and Shopify Managed Markets does not coordinate with the warehouse, carrier or returns platform.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39",
+            "ev-40"
+          ]
+        },
+        {
+          "statement": "No merchant source was found that ranks 3PL integration as a buying criterion.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "With incumbents bundling withdrawal for free and the mandate EU-only, what would make a Shopify brand switch returns platforms for this product?",
+      "category": "alternatives",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Loop Returns",
+      "url": "https://www.loopreturns.com",
+      "kind": "direct",
+      "description": "Shopify returns/exchanges platform with a native EU withdrawal flow and Checkout+ shopper-paid coverage.",
+      "pricing_note": "Per a competitor (ReturnZap): published plans start at $155/month plus per-return fees.",
+      "evidence_refs": [
+        "ev-22",
+        "ev-28",
+        "ev-29",
+        "ev-32",
+        "ev-31",
+        "ev-33"
+      ],
+      "sentiment": [
+        {
+          "statement": "A merchant calls Loop fairly expensive for a simple service.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "A merchant reports being quoted a 30-40% Checkout+ revenue share and $800+/month for ~120 returns/month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "An EU brand reports weak onboarding and support for EU brands; another reports poor Markets Pro international returns.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-31",
+            "ev-33"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Redo",
+      "url": "https://redo.com",
+      "kind": "direct",
+      "description": "Free-to-merchant returns platform funded by a shopper-paid checkout coverage fee; withdrawal function included at no extra cost.",
+      "pricing_note": "Software free to merchants; revenue from shopper coverage fee (or a flat per-return fee alternative).",
+      "evidence_refs": [
+        "ev-24",
+        "ev-34",
+        "ev-25",
+        "ev-13",
+        "ev-35"
+      ],
+      "sentiment": [
+        {
+          "statement": "A merchant scrambling before the deadline reports Redo offered a free compliance setup.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-13"
+          ]
+        },
+        {
+          "statement": "A competitor notes low coverage opt-in shifts label cost back to merchants.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-35"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "ReturnZap",
+      "url": "https://returnzap.com",
+      "kind": "direct",
+      "description": "Shopify returns app with a dedicated withdrawal mode running alongside the standard returns portal.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-26",
+        "ev-28"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "AfterShip Returns",
+      "url": "https://www.aftership.com",
+      "kind": "direct",
+      "description": "Returns app offering EU right-of-withdrawal setup and a Shopify withdrawal widget on all plans.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-27"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "ReturnGO",
+      "url": "https://returngo.ai",
+      "kind": "direct",
+      "description": "Shopify returns and exchanges platform with per-return overage pricing; no withdrawal feature seen on its listing.",
+      "pricing_note": "Premium plan: 110 returns included/month, $1.25 per extra return (Shopify App Store listing).",
+      "evidence_refs": [
+        "ev-38"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "EU Withdrawal Button by CL (Clevyre)",
+      "url": "https://apps.shopify.com/eu-withdrawal-compliance",
+      "kind": "direct",
+      "description": "Standalone withdrawal button/form app: no-login two-step flow, emails, dashboard with audit timeline; free plan with unlimited withdrawals.",
+      "pricing_note": "Free plan with unlimited withdrawals; Pro paid tier.",
+      "evidence_refs": [
+        "ev-16"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "EasyWi: EU Withdrawal Button",
+      "url": "https://apps.shopify.com/widerruf-app",
+      "kind": "direct",
+      "description": "Withdrawal button app that on Pro creates Shopify returns and cancels unfulfilled orders automatically.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-17"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "EW: EU Withdrawal Button & Form",
+      "url": "https://apps.shopify.com/eu-widerrufsbutton",
+      "kind": "direct",
+      "description": "Leading Shopify withdrawal app by review count per LetsMetrix; free plan, paid from $9.99/mo.",
+      "pricing_note": "Free plan; paid from $9.99/mo (LetsMetrix listing).",
+      "evidence_refs": [
+        "ev-19",
+        "ev-18"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "easyReturns",
+      "url": "https://letsmetrix.com/app/withdrawly/alternatives",
+      "kind": "direct",
+      "description": "Returns portal with EU withdrawal button, exchanges and refunds in one app.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-20"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "PostCo Returns & Exchanges",
+      "url": "https://postco360.com",
+      "kind": "direct",
+      "description": "Returns, upsell, order editing and EU withdrawal in one platform.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-21"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "Shopify self-serve returns and cancellations",
+      "url": "https://www.shopify.com",
+      "kind": "indirect",
+      "description": "Native per-market return and cancellation rules (June 2026) positioned for the EU withdrawal right; runs through customer accounts.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-10",
+        "ev-11",
+        "ev-07",
+        "ev-12"
+      ],
+      "sentiment": [
+        {
+          "statement": "Merchants doubt the native flow meets the no-login requirement because it runs through customer accounts.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-12"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-12",
+      "name": "Navidium Shipping Protection",
+      "url": "https://apps.shopify.com/navidium-shipping-protection",
+      "kind": "indirect",
+      "description": "Self-funded checkout protection widget where the merchant keeps all fees and manages claims (shipping protection, not returns).",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-36"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-13",
+      "name": "InsureBooster Order Protection",
+      "url": "https://pickyourapp.com/collections/orders-and-shipping-returns-and-warranty-warranties-and-insurance/products/insure-booster",
+      "kind": "indirect",
+      "description": "Self-funded order protection; merchant keeps 100% of fees.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-37"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-14",
+      "name": "Withdrawal Button - EasyReturn",
+      "url": "https://apps.shopify.com/withdrawal-button-easyreturn",
+      "kind": "direct",
+      "description": "Free withdrawal app with consumer-paid return shipments and a store terms audit.",
+      "pricing_note": "Free (Shopify App Store listing).",
+      "evidence_refs": [
+        "ev-45"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-15",
+      "name": "Custom forms / DIY",
+      "url": null,
+      "kind": "manual",
+      "description": "Theme-level forms, Shopify Flow, or custom apps built in-house; email to support for pre-shipment withdrawals.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-14",
+        "ev-09",
+        "ev-44",
+        "ev-43",
+        "ev-30"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most returns platforms (Loop, Redo, ReturnZap, AfterShip) shipped a withdrawal mode next to their returns portal by mid-2026, often at no extra cost.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-22",
+        "ev-24",
+        "ev-26",
+        "ev-27"
+      ]
+    },
+    {
+      "statement": "Dozens of cheap or free standalone withdrawal-button apps exist on the Shopify App Store.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-18",
+        "ev-19",
+        "ev-16"
+      ]
+    },
+    {
+      "statement": "Shopify added native self-serve cancellations and per-market return rules, though merchants question its no-login compliance.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-10",
+        "ev-07",
+        "ev-12"
+      ]
+    },
+    {
+      "statement": "Some merchants handle it manually: forms, emails to support, Flow/metafields, or a custom app built in half a day.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-14",
+        "ev-09",
+        "ev-44",
+        "ev-68"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Tamara Comolli",
+      "website": "https://www.tamaracomolli.com",
+      "icp_id": null,
+      "location": "Munich, Germany",
+      "industry": "Fine jewellery",
+      "description": "German jewellery brand selling online across the EU; has a 'Withdraw from the contract' function.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-46"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-46",
+        "ev-47",
+        "ev-48"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Jewellery/accessories brand with EU online store; size unknown.",
+          "evidence_refs": [
+            "ev-46"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Store exposes a withdrawal entry point, so it already handles the EU withdrawal workflow.",
+          "evidence_refs": [
+            "ev-48"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Olivia Crouan",
+          "role": "Managing Director",
+          "email": null,
+          "evidence_ref": "ev-47"
+        },
+        {
+          "name": "Martin Kammermeier",
+          "role": "Managing Director",
+          "email": null,
+          "evidence_ref": "ev-47"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "Wildling Shoes",
+      "website": "https://wildling.shoes",
+      "icp_id": null,
+      "location": "Engelskirchen, Germany",
+      "industry": "Footwear and apparel",
+      "description": "German DTC minimalist-shoe and apparel brand with separate return and 'Widerruf erklären' flows.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-49"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-49",
+        "ev-50",
+        "ev-51"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "DTC footwear/apparel brand selling online in the EU; size unknown.",
+          "evidence_refs": [
+            "ev-49"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Runs separate exchange/return and withdrawal entries, the split the idea targets.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Anna Yona",
+          "role": "Geschäftsführerin (Managing Director)",
+          "email": null,
+          "evidence_ref": "ev-50"
+        },
+        {
+          "name": "Ran Yona",
+          "role": "Geschäftsführer (Managing Director)",
+          "email": null,
+          "evidence_ref": "ev-50"
+        }
+      ]
+    },
+    {
+      "ref": "co-03",
+      "name": "KOMONO",
+      "website": "https://komono.com",
+      "icp_id": null,
+      "location": "Antwerp, Belgium",
+      "industry": "Eyewear and watches",
+      "description": "Belgian sunglasses/opticals/watches brand; eyewear is a core ICP vertical.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-52"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-52"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Eyewear/accessories brand founded in Belgium; size unknown.",
+          "evidence_refs": [
+            "ev-52"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Anton Janssens",
+          "role": "Co-founder",
+          "email": null,
+          "evidence_ref": "ev-52"
+        },
+        {
+          "name": "Raf Maes",
+          "role": "Co-founder",
+          "email": null,
+          "evidence_ref": "ev-52"
+        }
+      ]
+    },
+    {
+      "ref": "co-04",
+      "name": "Finisterre",
+      "website": "https://finisterre.com",
+      "icp_id": null,
+      "location": "St Agnes, Cornwall, UK",
+      "industry": "Outdoor apparel",
+      "description": "UK outdoor apparel brand on Shopify.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-53"
+      },
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-53",
+        "ev-54"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "UK apparel brand selling online; may exceed the $15M GMV band (size not verified).",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Checkout/footer shows Shop Pay or Powered by Shopify, indicating a Shopify store.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Organic Basics",
+      "website": "https://organicbasics.com",
+      "icp_id": null,
+      "location": "Copenhagen, Denmark",
+      "industry": "Apparel / basics",
+      "description": "Danish DTC basics brand running an EU Shopify store.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-55"
+      },
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-55",
+        "ev-56"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Online-first DTC apparel brand in the EU.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Checkout/footer shows Shop Pay or Powered by Shopify, indicating a Shopify store.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Lucy & Yak",
+      "website": "https://lucyandyak.com",
+      "icp_id": null,
+      "location": "Brighton, UK",
+      "industry": "Apparel",
+      "description": "UK independent clothing brand on Shopify with UK stores.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      },
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-57",
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "UK apparel brand; likely above the GMV band (not verified).",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Checkout/footer shows Shop Pay or Powered by Shopify, indicating a Shopify store.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Hey Honey",
+      "website": "https://www.hey-honey.de",
+      "icp_id": null,
+      "location": "Neetze / Hamburg, Germany",
+      "industry": "Activewear",
+      "description": "German activewear brand on Shopify with separate Returns and Withdrawal help entries.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-59",
+        "ev-60",
+        "ev-61",
+        "ev-83"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent family-run DTC apparel brand in the EU.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Checkout/footer shows Shop Pay or Powered by Shopify, indicating a Shopify store.",
+          "evidence_refs": [
+            "ev-83"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Store exposes a withdrawal entry point, so it already handles the EU withdrawal workflow.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Imke von Johnston",
+          "role": "Co-founder",
+          "email": null,
+          "evidence_ref": "ev-60"
+        },
+        {
+          "name": "Janka Oeljeschlager",
+          "role": "Co-founder",
+          "email": null,
+          "evidence_ref": "ev-60"
+        }
+      ]
+    },
+    {
+      "ref": "co-08",
+      "name": "PDPAOLA",
+      "website": "https://www.pdpaola.com",
+      "icp_id": null,
+      "location": "Barcelona, Spain",
+      "industry": "Jewellery",
+      "description": "Spanish jewellery brand with a 'Withdrawal from the Contract' entry.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62",
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Accessories brand selling online across the EU; may be above the GMV band (not verified).",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Store exposes a withdrawal entry point, so it already handles the EU withdrawal workflow.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Brava Fabrics",
+      "website": "https://bravafabrics.com",
+      "icp_id": null,
+      "location": "Barcelona, Spain",
+      "industry": "Apparel",
+      "description": "Spanish DTC apparel brand on Shopify.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-64"
+      },
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "DTC apparel brand in the EU.",
+          "evidence_refs": [
+            "ev-64"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Checkout/footer shows Shop Pay or Powered by Shopify, indicating a Shopify store.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "Astrid & Miyu",
+      "website": "https://www.astridandmiyu.com",
+      "icp_id": null,
+      "location": "London, UK",
+      "industry": "Jewellery",
+      "description": "London-based jewellery brand.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "UK accessories brand; size unknown.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Nayestones",
+      "website": "https://nayestones.com",
+      "icp_id": null,
+      "location": "Antwerp / Brussels, Belgium",
+      "industry": "Jewellery",
+      "description": "Belgian jewellery brand using a simple message-style withdrawal form.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-67",
+        "ev-68"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small EU jewellery brand; likely below the GMV band (not verified).",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Uses a basic contact-style withdrawal form rather than a two-step flow.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "Cassandra Goad",
+      "website": "https://www.cassandragoad.com",
+      "icp_id": null,
+      "location": "England, UK",
+      "industry": "Fine jewellery",
+      "description": "UK jeweller on Shopify with an EU withdrawal form separate from its returns process.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-69"
+      },
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-69",
+        "ev-70",
+        "ev-71"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "UK accessories brand shipping into the EU; size unknown.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Payments processed by Shopify International Limited.",
+          "evidence_refs": [
+            "ev-70"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Runs withdrawals separately from returns, the split the idea aims to unify.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Laurelle Antique Jewellery",
+      "website": "https://laurelleantiquejewellery.com",
+      "icp_id": null,
+      "location": "England, UK",
+      "industry": "Jewellery",
+      "description": "UK jeweller with its own EU withdrawal notice form.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-72"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-72",
+        "ev-73",
+        "ev-85"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "UK accessories seller shipping into the EU; size unknown.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Checkout/footer shows Shop Pay or Powered by Shopify, indicating a Shopify store.",
+          "evidence_refs": [
+            "ev-85"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Store exposes a withdrawal entry point, so it already handles the EU withdrawal workflow.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Holzkern",
+      "website": "https://www.holzkern.com",
+      "icp_id": null,
+      "location": "Vienna, Austria",
+      "industry": "Watches, jewellery and accessories",
+      "description": "Austrian accessories brand on Shopify with a 'Vertrag widerrufen' link.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-74",
+        "ev-75",
+        "ev-84"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "DTC accessories brand in the EU.",
+          "evidence_refs": [
+            "ev-74"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Checkout/footer shows Shop Pay or Powered by Shopify, indicating a Shopify store.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Store exposes a withdrawal entry point, so it already handles the EU withdrawal workflow.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "Colorful Standard",
+      "website": "https://colorfulstandard.com",
+      "icp_id": null,
+      "location": "Copenhagen, Denmark (stores across the EU)",
+      "industry": "Apparel",
+      "description": "Danish apparel brand on Shopify with EU stores.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-76"
+      },
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-76",
+        "ev-77"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Apparel brand selling across the EU; size unknown.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Checkout/footer shows Shop Pay or Powered by Shopify, indicating a Shopify store.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "LANIUS",
+      "website": "https://www.lanius.com",
+      "icp_id": null,
+      "location": "Cologne, Germany",
+      "industry": "Apparel",
+      "description": "German sustainable fashion label selling online.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-78"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "EU apparel brand; size unknown.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Claudia Lanius",
+          "role": "Geschäftsführerin (Managing Director)",
+          "email": null,
+          "evidence_ref": "ev-78"
+        }
+      ]
+    },
+    {
+      "ref": "co-17",
+      "name": "MELAWEAR",
+      "website": "https://melawear.de",
+      "icp_id": null,
+      "location": "Kassel, Germany",
+      "industry": "Apparel and bags",
+      "description": "German sustainable apparel/backpack brand selling online.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-79"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-79"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "EU apparel/accessories brand; size unknown.",
+          "evidence_refs": [
+            "ev-79"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "recolution",
+      "website": "https://recolution.de",
+      "icp_id": null,
+      "location": "Hamburg, Germany",
+      "industry": "Apparel",
+      "description": "German sustainable apparel brand selling online.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-80"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "EU apparel brand; size unknown.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "RIXO",
+      "website": "https://rixo.co.uk",
+      "icp_id": null,
+      "location": "London, UK",
+      "industry": "Womenswear",
+      "description": "London womenswear brand selling online.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-81"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-81"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "UK apparel brand; may be above the GMV band (not verified).",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "TALA",
+      "website": "https://www.wearetala.com",
+      "icp_id": null,
+      "location": "London, UK",
+      "industry": "Activewear",
+      "description": "UK activewear brand selling online.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-82"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "UK DTC apparel brand; size unknown.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No Shopify signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No withdrawal-handling signal captured.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
