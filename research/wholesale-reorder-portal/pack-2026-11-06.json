@@ -1,0 +1,2086 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "04f65536-87f5-4fc4-8c87-8d993674af12",
+    "researcher": "claude-code",
+    "started_at": "2026-11-06T08:30:00Z",
+    "finished_at": "2026-11-06T06:32:29Z",
+    "queries": [
+      "Faire commission 15% reorders brands complain reddit",
+      "Faire commission fees brands 2025 opening order 25% reorder 15% $10 fee",
+      "move wholesale reorders off Faire to Shopify own wholesale portal brand",
+      "Shopify B2B available on Basic Grow Advanced plans 2025 wholesale",
+      "Tundra wholesale marketplace shutting down",
+      "Faire anti-circumvention policy brands retailers ordering off platform",
+      "boutique owner prefer order through Faire instead of brand's own wholesale site net 60 free shipping",
+      "Brandboom pricing plans wholesale brands",
+      "Shopify Handshake wholesale shut down brands",
+      "reddit smallbusiness Faire 15% reorder commission \"my own\" stockists wholesale",
+      "Faire shows competing brands to retailers on brand page \"similar brands\" complaint makers",
+      "Shopify app wholesale reorder reminders stockists \"reorder\" automation B2B app",
+      "\"wholesale coordinator\" job \"Faire\" reorders stockists Shopify brand",
+      "retailer opinion Faire convenience one place to order all brands boutique owner",
+      "\"shop wholesale on Faire\" stationery brand stockists USA",
+      "\"wholesale\" \"order through Faire\" candle company \"stockists\" handmade US",
+      "\"we are available on Faire\" wholesale page \"retailers\" independent brand home goods apparel",
+      "\"wholesale\" page \"Faire\" \"reorder\" independent brand \"our stockists\" made in USA",
+      "letterpress greeting card company wholesale \"Faire\" \"sales reps\" wholesale page Shopify",
+      "\"wholesale\" \"you can also find us on Faire\" handmade brand \"based in\" USA",
+      "\"order wholesale directly\" OR \"wholesale portal\" \"or on Faire\" small batch brand Shopify",
+      "candle company wholesale page \"Shop on Faire\" \"apply\" \"net 30\" Shopify small batch USA",
+      "stationery brand wholesale \"Faire\" \"wholesale site\" login retailers \"reorder\"",
+      "brand wholesale page \"direct wholesale\" discount \"instead of Faire\" save retailers order direct"
+    ],
+    "notes": "Faire.com pages (support, blog, brand pages) return 403 to Preuve's fetcher, so Faire fees/policies are cited via third-party guides. Prospects: 11 companies found, short of the 20+ target - Faire brand pages are unfetchable and many brand sites lack fetchable about/location pages; 2 prospects have no verified location. Preuve API was down during part of the run; idea created after research, unknown links mapped afterwards. Prospect contacts only from brands' own pages; no emails guessed."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://craftybase.com/blog/how-much-does-faire-charge",
+      "title": "How Much Does Faire Charge? A Complete Guide to Faire Fees",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Faire charges brands a 15% commission on marketplace orders, a one-time $10 fee on each new retailer’s first order, plus payment processing of 1.9%-3.5% depending on how fast you want to be paid.",
+      "statement": "Current Faire brand fees: 15% commission on marketplace orders, a one-time $10 new-retailer fee, plus 1.9-3.5% processing.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://craftybase.com/blog/how-much-does-faire-charge",
+      "title": "How Much Does Faire Charge? A Complete Guide to Faire Fees",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "reorders are much cleaner: a flat 15% commission plus processing, no $10 fee, so your effective rate settles around 17-18% on every repeat order",
+      "statement": "Marketplace reorders cost brands about 17-18% all-in on every repeat order.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://craftybase.com/blog/how-much-does-faire-charge",
+      "title": "How Much Does Faire Charge? A Complete Guide to Faire Fees",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "0% commission on orders from retailers you bring to Faire yourself via your Faire Direct link",
+      "statement": "Faire already offers 0% commission (processing only) on orders from retailers a brand brings itself via Faire Direct, so the 15% reorder fee applies only to Faire-sourced retailers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://eightx.co/blog/faire-wholesale-take-rate-margin-impact",
+      "title": "Faire's take rate: what wholesale does to your margin",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Even a theoretical 100% reorder book never catches direct wholesale. The 15% reorder commission alone is higher than the 8-10% a sales rep takes",
+      "statement": "A DTC finance firm models Faire's 15% reorder commission as structurally more expensive than direct wholesale, even for an all-reorder book.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://eightx.co/blog/faire-wholesale-take-rate-margin-impact",
+      "title": "Faire's take rate: what wholesale does to your margin",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "a boutique that likes your product might reorder once or twice a year, not quarterly. That puts a realistic year-one reorder rate somewhere in the 20-35% band",
+      "statement": "Boutiques reorder only once or twice a year, so the reorder revenue a portal could save is smaller than a quarterly cadence would suggest.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0b8561c5-bb59-4acd-b1d7-7d756fb0afdb"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://eightx.co/blog/faire-wholesale-take-rate-margin-impact",
+      "title": "Faire's take rate: what wholesale does to your margin",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The real strategy is to treat marketplace Faire as a discovery cost for the first 12 months, then migrate high-value accounts to Faire Direct.",
+      "statement": "The recommended fix for reorder commission is migrating accounts to Faire Direct (0%), not to a separate portal.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://eightx.co/blog/faire-wholesale-take-rate-margin-impact",
+      "title": "Faire's take rate: what wholesale does to your margin",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "If you have fewer than 50 active wholesale accounts, or you are testing whether wholesale even works for your brand, or you are entering a new geographic market cold, Faire's discovery engine is worth the margin sacrifice.",
+      "statement": "For brands with under 50 accounts, the same analysis says Faire's commission is worth paying, which overlaps the low end of the 30-300 stockist ICP.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3bdad69e-070d-489b-9403-5b02b9f65405"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://emily-kerr-65ok.squarespace.com/growingsteadyblog/tips-and-reviews-of-faire",
+      "title": "Faire Wholesale Reviews 2026: Is It Worth It for Independent Brands?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "they take 25% of my sales, which is high when my prices have already been cut in half. … part of me also feels helpless because I don't have a robust enough retailer base to not use it.",
+      "statement": "A maker describes Faire's take as high on already-halved wholesale prices but feels dependent on it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://emily-kerr-65ok.squarespace.com/growingsteadyblog/tips-and-reviews-of-faire",
+      "title": "Faire Wholesale Reviews 2026: Is It Worth It for Independent Brands?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Commission rates and payment processing fees are charged on every wholesale order, for every store, for the lifetime of that store relationship.",
+      "statement": "Faire fees recur on every order for the lifetime of each stockist relationship.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://emily-kerr-65ok.squarespace.com/growingsteadyblog/tips-and-reviews-of-faire",
+      "title": "Faire Wholesale Reviews 2026: Is It Worth It for Independent Brands?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Making reorders easier for existing stockists Even shops you found yourself may prefer the convenience of the platform.",
+      "statement": "Even stockists a brand found itself may prefer reordering on Faire for convenience.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://emily-kerr-65ok.squarespace.com/growingsteadyblog/tips-and-reviews-of-faire",
+      "title": "Faire Wholesale Reviews 2026: Is It Worth It for Independent Brands?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Faire is 100% fine with you contacting stores off-platform — you just can't move the ordering off-platform.",
+      "statement": "Brands may contact Faire stockists off-platform but may not move their ordering off Faire.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://emily-kerr-65ok.squarespace.com/growingsteadyblog/tips-and-reviews-of-faire",
+      "title": "Faire Wholesale Reviews 2026: Is It Worth It for Independent Brands?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I don't mind Faire’s commission fees because I'm not spending money on advertising.",
+      "statement": "Some makers accept Faire's commission as a substitute for advertising spend.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3bdad69e-070d-489b-9403-5b02b9f65405",
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://emily-kerr-65ok.squarespace.com/growingsteadyblog/tips-and-reviews-of-faire",
+      "title": "Faire Wholesale Reviews 2026: Is It Worth It for Independent Brands?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "When I search for our brand from a separate account, our designs are very difficult to find—even when searching specifically for “concrete cigar ashtrays.” Instead, the results are flooded with mass-produced items",
+      "statement": "A brand reports its own products being buried by competing mass-produced items in Faire search.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://emily-kerr-65ok.squarespace.com/growingsteadyblog/can-makers-contact-stockists-outside-of-faires-platform",
+      "title": "Can Makers Contact Stockists Outside of Faire's Platform?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "you cannot move stockists who found you on Faire off the platform to save on commission — that's explicitly against their terms of service",
+      "statement": "Moving Faire-sourced stockists off-platform to save commission is against Faire's terms, which blocks the portal's core savings for those accounts.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://emily-kerr-65ok.squarespace.com/growingsteadyblog/can-makers-contact-stockists-outside-of-faires-platform",
+      "title": "Can Makers Contact Stockists Outside of Faire's Platform?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Automations are particularly useful -- set up a reorder reminder or a milestone email once, and they run without you thinking about them.",
+      "statement": "Faire's built-in CRM already offers automated reorder reminders to stockists.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://changelog.shopify.com/posts/key-b2b-features-now-available-on-non-plus-plans",
+      "title": "Key B2B features now available on non-Plus plans (Shopify changelog)",
+      "source_type": "company_site",
+      "published_at": "2026-04-02",
+      "quote": "Merchants on Basic, Grow, and Advanced plans can start selling wholesale using native B2B features, available in their admin. This includes up to 3 active B2B catalogs (assigned via Markets), company profiles, payment terms, volume pricing, ACH payments (U.S. only), and vaulted credit cards.",
+      "statement": "Since April 2026 Shopify's native B2B (company profiles, payment terms, volume pricing) is on all paid plans, not Plus only as the idea assumes.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.shopifreaks.com/shopify-extends-key-native-b2b-features-to-all-merchants-at-no-extra-cost/",
+      "title": "Shopify extends key native B2B features to all merchants at no extra cost",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "my condolences to the hundreds of B2B-enablement apps in the Shopify App Store that just became redundant",
+      "statement": "Commentators see native Shopify B2B as making many third-party wholesale apps redundant.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.sparklayer.io/shopify-b2b-without-plus/",
+      "title": "Shopify B2B Without Plus & Why You Still Require A Wholesale Plugin",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Net payment terms: offer Net 30, Net 60, and similar terms natively at checkout",
+      "statement": "Native Shopify B2B on all paid plans offers Net 30/60 terms at checkout.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "a7bc10a9-b580-4eff-9b7b-629f0ffca1f1"
+      ],
+      "company_name": "SparkLayer"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://www.sparklayer.io/shopify-b2b-without-plus/",
+      "title": "Shopify B2B Without Plus & Why You Still Require A Wholesale Plugin",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Shopify does not currently include a native tool for sales reps to log in as a buyer account and place orders on their behalf.",
+      "statement": "A wholesale-app vendor says native Shopify B2B still lacks rep ordering (it also lists no quoting or PO automation), leaving gaps for apps.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "SparkLayer"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://apps.shopify.com/repeatly-reorders",
+      "title": "Repeatly — Wholesale Reorders (Shopify App Store)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Repeatly uses paid Shopify order history to identify wholesale buyers due to reorder and reconstruct their usual basket. Review the basket, then send a draft order and Shopify invoice.",
+      "statement": "A Shopify app already sends wholesale buyers a pre-filled reorder draft order and invoice based on their order history.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Repeatly"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://apps.shopify.com/repeatly-reorders",
+      "title": "Repeatly — Wholesale Reorders (Shopify App Store)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "0.0 (0 Reviews) … Launched June 10, 2026",
+      "statement": "Repeatly launched in June 2026 and has no reviews yet, so adoption is unproven.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "3bdad69e-070d-489b-9403-5b02b9f65405",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Repeatly"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://apps.shopify.com/reorder-nudge-b2b-reorders",
+      "title": "Reorder Nudge: B2B Reorders (Shopify App Store)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "One click creates a draft order with the items of their last order. Shopify applies the company's current catalog prices and payment terms, then emails your store's invoice",
+      "statement": "Another Shopify app emails B2B buyers their usual order as a draft at current prices and payment terms.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Reorder Nudge"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://apps.shopify.com/b2boptix",
+      "title": "B2BOptix: AI Reorder Assistant (Shopify App Store)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "B2B merchants lose repeat revenue when buyers forget to restock between orders.",
+      "statement": "A third Shopify app targets the same reorder gap with recommendations in cart and checkout.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "B2BOptix"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://brandboom.com/vs/sparklayer",
+      "title": "Brandboom vs SparkLayer",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Sync your Shopify store with Brandboom in real time. Keep using Shopify for D2C while running wholesale through Brandboom.",
+      "statement": "Brandboom runs wholesale ordering alongside a Shopify DTC store.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Brandboom"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://craftybase.com/blog/faire-wholesale-alternatives",
+      "title": "7 Faire Wholesale Alternatives for Small Brands (2026)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "They charge a monthly subscription fee ($150/month) rather than a per-order commission.",
+      "statement": "Stockist, a boutique wholesale marketplace, charges a flat $150/month instead of commission.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "3bdad69e-070d-489b-9403-5b02b9f65405",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Stockist"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://craftybase.com/blog/faire-wholesale-alternatives",
+      "title": "7 Faire Wholesale Alternatives for Small Brands (2026)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "building a private wholesale portal using apps like Wholesale Club, Wholesale Gorilla, or Bold Custom Pricing",
+      "statement": "Private wholesale portals on Shopify are already built with apps such as Wholesale Club, Wholesale Gorilla and Bold Custom Pricing.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://craftybase.com/blog/faire-wholesale-alternatives",
+      "title": "7 Faire Wholesale Alternatives for Small Brands (2026)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Many brands use Faire for finding new boutiques and then migrate their best accounts to direct wholesale to reduce ongoing commission costs.",
+      "statement": "The Faire-for-discovery, direct-for-reorders pattern the idea targets is already common practice.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://resolvepay.com/blog/tundra-shut-down",
+      "title": "Tundra Shut Down: What Wholesale Marketplaces Offer Net Terms Now?",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Resolve Pay can help qualified sellers offer terms across online and offline transactions without depending on one marketplace.",
+      "statement": "Independent B2B net-terms providers such as Resolve exist for brands selling direct.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+        "a7bc10a9-b580-4eff-9b7b-629f0ffca1f1"
+      ],
+      "company_name": "Resolve"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://resolvepay.com/blog/tundra-shut-down",
+      "title": "Tundra Shut Down: What Wholesale Marketplaces Offer Net Terms Now?",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Abound, Bulletin, Handshake, and JuniperMarket should not be presented as active marketplace alternatives because their former wholesale marketplace operations have closed or changed substantially.",
+      "statement": "Handshake, one of the founder-listed alternatives, is no longer an active wholesale marketplace.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Handshake"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://plottdata.com/blogs/tundra-wholesale-guide",
+      "title": "Tundra Wholesale 2026: What Happened & Best Alternatives",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Tundra, the zero-commission online wholesale marketplace, shut down in 2023.",
+      "statement": "Tundra, a founder-listed zero-commission alternative, shut down in 2023.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Tundra"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://wholesalehelper.io/blog/selling-on-faire-vs-having-your-own-store/",
+      "title": "Selling on Faire Vs Having Your Own Wholesale Store [2026]",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Faire owns the retailer relationship. You don’t get contact details for buyers who find you through the marketplace.",
+      "statement": "Brands don't get contact details for retailers who find them on Faire, which limits who a portal could invite.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://wholesalehelper.io/blog/selling-on-faire-vs-having-your-own-store/",
+      "title": "Selling on Faire Vs Having Your Own Wholesale Store [2026]",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "You’ll be competing with other businesses selling similar products on Faire.",
+      "statement": "On Faire, brands sell alongside competing brands with similar products.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://form.jotform.com/262286929128165",
+      "title": "Wholesale Coordinator — Flea Style (Dallas, TX)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Accurately enter and manage wholesale orders through systems such as Shopify B2B, Faire, and FashionGo.",
+      "statement": "A Dallas brand pays a full-time coordinator to manage wholesale orders across Shopify B2B, Faire and FashionGo.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Flea Style"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://form.jotform.com/262286929128165",
+      "title": "Wholesale Coordinator — Flea Style (Dallas, TX)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Manage the full sales cycle—from outreach and onboarding to reordering and retention.",
+      "statement": "Reordering and retention are explicit duties in a brand-side wholesale role.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Flea Style"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://apps.shopify.com/faire-buy-wholesale/reviews",
+      "title": "Reviews: Faire: Buy Wholesale (Shopify App Store)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Many appreciate access to thousands of unique wholesale brands, smooth dropshipping and deliveries, and responsive support",
+      "statement": "Retailers (1,344 reviews) value Faire's breadth of brands and ordering experience.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://apps.shopify.com/faire-buy-wholesale/reviews",
+      "title": "Reviews: Faire: Buy Wholesale (Shopify App Store)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "The site is extremely easy to navigate and terms are wonderful.",
+      "statement": "A retailer cites Faire's payment terms as a reason they like ordering there.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+        "a7bc10a9-b580-4eff-9b7b-629f0ffca1f1",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://karenruffles.substack.com/p/how-faire-an-indie-guide-to-the-wholesale-marketplace-for-makers-and-retailers",
+      "title": "How Faire? An indie guide to the wholesale marketplace, for makers and retailers",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "by taking a percentage of the proceeds on some sales, Faire are able to offer terms that individual makers often can't. These include net 60",
+      "statement": "A maker notes that Faire's commission funds Net 60 terms that individual makers often can't offer.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+        "a7bc10a9-b580-4eff-9b7b-629f0ffca1f1"
+      ],
+      "company_name": "Faire"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://ladyfingersletterpress.com/pages/wholesale",
+      "title": "Wholesale — Ladyfingers Letterpress",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Save 15% on every order when you place your order through our Wholesale Site!",
+      "statement": "A stationery brand discounts orders placed on its own wholesale site, steering retailers away from Faire.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "f3af2b05-4444-4f8b-9db7-2c9cc396ab13"
+      ],
+      "company_name": "Ladyfingers Letterpress"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://ladyfingersletterpress.com/pages/about-us",
+      "title": "About Us — Ladyfingers Letterpress",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ladyfingers Letterpress is a Queer and Trans-owned-and-operated stationery and gift brand based in Colorado Springs, Colorado, founded by designer+printmaker couple, Arley Torsone and Morgan Calderini.",
+      "statement": "Ladyfingers Letterpress is a stationery brand in Colorado Springs, CO, founded by Arley Torsone and Morgan Calderini.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ladyfingers Letterpress"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://idlewildco.com/pages/wholesale",
+      "title": "Wholesale — Idlewild Co.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Direct Accounts will be billed electronically & enjoy shipping priorities as well as exclusive discounts. … We're a Top Shop! Take advantage of Faire Promotions, Markets, and 1 year of FREE SHIPPING for new accounts!",
+      "statement": "Idlewild Co. runs direct wholesale accounts with discounts alongside a Faire shop.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Idlewild Co."
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://idlewildco.com/pages/wholesale",
+      "title": "Wholesale — Idlewild Co.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "New Direct Accounts will be billed via credit card for their opening order, but may request NET30 terms for reorders.",
+      "statement": "Some brands already extend Net 30 on direct reorders themselves.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+        "a7bc10a9-b580-4eff-9b7b-629f0ffca1f1"
+      ],
+      "company_name": "Idlewild Co."
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://idlewildco.com/pages/our-story",
+      "title": "Our Story — Idlewild Co.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Idlewild Co. is a boutique paper goods & gift product company, founded in 2010 by artist & designer, Katie Gastley.",
+      "statement": "Idlewild Co. is a paper goods and gift brand founded by Katie Gastley.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Idlewild Co."
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://idlewildco.com/pages/our-story",
+      "title": "Our Story — Idlewild Co.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "In 2013 Idlewild Co. relocated to the sunny shores of Vero Beach, Florida, where the team operates from today.",
+      "statement": "Idlewild Co. operates from Vero Beach, Florida.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Idlewild Co."
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://idlewildco.com/pages/our-story",
+      "title": "Our Story — Idlewild Co.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "OPERATIONS DIRECTOR Natalia Melendez",
+      "statement": "Idlewild Co.'s operations director is named on its team page.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Idlewild Co."
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://tinyhooray.com/pages/wholesale",
+      "title": "Wholesale — Tiny Hooray",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If you are not in an area covered by one of our sales reps, we’ve partnered with Faire to make online ordering easier.",
+      "statement": "Tiny Hooray sells wholesale via regional reps plus Faire.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Tiny Hooray"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://tinyhooray.com/pages/about",
+      "title": "About Tiny Hooray",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Tiny Hooray is a one woman show, and Beth Roszkowski is the wearer of all the hats at this small but mighty enterprise.",
+      "statement": "Tiny Hooray is run by one person, Beth Roszkowski.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Tiny Hooray"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://tinyhooray.com/pages/about",
+      "title": "About Tiny Hooray",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "All items start with silly, hand drawn doodles and sentiments Beth thinks about while sitting in DC-area traffic.",
+      "statement": "Tiny Hooray is based in the Washington, DC area.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Tiny Hooray"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.sweetwaterdecor.com/pages/wholesale",
+      "title": "Wholesale — Sweet Water Decor",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Option 1: Shop Directly From Our Website … Option 2: Sign Up for Faire Wholesale … Free Returns, Net 60 Terms, + Free Shipping for a Year",
+      "statement": "Sweet Water Decor offers direct wholesale on its own site alongside Faire, which advertises Net 60 terms to retailers.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "a7bc10a9-b580-4eff-9b7b-629f0ffca1f1"
+      ],
+      "company_name": "Sweet Water Decor"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://www.sweetwaterdecor.com/pages/about-us",
+      "title": "Our Story — Sweet Water Decor",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Founded in 2014 by Pittsburgh-native Melissa Horvath, Sweet Water Decor began in a basement with a love for candles, coffee, and meaningful design. Today, we’re a growing team of 40+",
+      "statement": "Sweet Water Decor (Pittsburgh) was founded by Melissa Horvath and has a team of 40+.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Sweet Water Decor"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://www.sweetwaterdecor.com/pages/about-us",
+      "title": "Our Story — Sweet Water Decor",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Each of our candles & reed diffusers is crafted by our team in Pittsburgh, PA.",
+      "statement": "Sweet Water Decor is located in Pittsburgh, PA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Sweet Water Decor"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://rockportcandle.com/pages/wholesale",
+      "title": "Wholesale — Rockport Candle Company",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Prefer to shop on Faire? Click HERE for our direct shopping link. Not all of our products available on Faire",
+      "statement": "Rockport Candle runs a direct wholesale application plus a Faire Direct link.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Rockport Candle Company"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://rockportcandle.com/pages/our-story",
+      "title": "Our Story — Rockport Candle Company",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "What started in a tiny shop on Bearskin Neck has grown over the past ten years",
+      "statement": "Rockport Candle started in a shop on Bearskin Neck in Rockport, Massachusetts.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Rockport Candle Company"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://www.frostbeardstudio.com/pages/wholesale",
+      "title": "Wholesale — Frostbeard Studio",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Payment: All orders must be prepaid via credit card or PayPal at checkout. … You can either shop directly on Faire or fill out our inquiry form to apply for a direct wholesale account.",
+      "statement": "Frostbeard offers Faire or a direct wholesale shop, but direct orders must be prepaid (no terms).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+        "99587fd1-68ac-4a18-b379-2f1400117a18",
+        "a7bc10a9-b580-4eff-9b7b-629f0ffca1f1"
+      ],
+      "company_name": "Frostbeard Studio"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.frostbeardstudio.com/pages/our-story",
+      "title": "Frostbeard Studio — Our Story",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We're a small handmade business based out of Minneapolis, Minnesota",
+      "statement": "Frostbeard Studio is based in Minneapolis, MN.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Frostbeard Studio"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://loyalstricklin.com/pages/wholesale",
+      "title": "Wholesale — Loyal Stricklin",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "All existing customers, please email us your order at info@loyalstricklin.com",
+      "statement": "Loyal Stricklin takes wholesale reorders by email (manual process).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Loyal Stricklin"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://loyalstricklin.com/",
+      "title": "Loyal Stricklin — Denim, Workwear and Leather Goods, Nashville TN",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Loyal Stricklin is owned and operated by Michael Stricklin in Nashville, Tennessee, with help from his small team of craftsmen and women",
+      "statement": "Loyal Stricklin is owned and operated by Michael Stricklin in Nashville, TN.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Loyal Stricklin"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://guttersnipepress.com/pages/wholesale",
+      "title": "Become a Retailer — Guttersnipe Press",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Shop Wholesale Now! Head to wholesale.guttersnipepress.com and log in to order! … Guttersnipe Press is also available on Faire.",
+      "statement": "Guttersnipe Press runs its own wholesale ordering site alongside Faire.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Guttersnipe Press"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://guttersnipepress.com/pages/wholesale",
+      "title": "Become a Retailer — Guttersnipe Press",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Guttersnipe Press is available in fine, independent retailers from St. John's to Ketchikan to the Florida Keys, and everywhere in between!",
+      "statement": "Guttersnipe Press sells to independent retailers across the US.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Guttersnipe Press"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://guttersnipepress.com/",
+      "title": "Guttersnipe Press Greetings",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Premium Tees from Guttersnipe Press, custom printed to order in Charlotte, NC.",
+      "statement": "Guttersnipe Press produces in Charlotte, NC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Guttersnipe Press"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://westlandpress.com/pages/about",
+      "title": "About — Westland Press",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are a family owned and operated letterpress print shop. Our greeting cards are letterpress printed by hand, with antique equipment, in Portland, Oregon.",
+      "statement": "Westland Press is a family-owned letterpress card maker in Portland, OR.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Westland Press"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.luckybeepress.com/",
+      "title": "Lucky Bee Press",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "home shop catalog wholesale Faire wholesale contact stocklist story",
+      "statement": "Lucky Bee Press lists both its own wholesale page and Faire wholesale in its site navigation.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Lucky Bee Press"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.luckybeepress.com/stocklist",
+      "title": "Stocklist — Lucky Bee Press",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Lucky Bee Press greeting cards are sold at the following retailers: ARIZONA An Open Invitation",
+      "statement": "Lucky Bee Press publishes a stockist list of US retailers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Lucky Bee Press"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://slightlystationery.com/pages/wholesale",
+      "title": "Wholesale — Slightly Stationery",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Here are two easy ways to order from us. Click whichever option suits you best! … Shop on Faire: Slightly Stationery on Faire | Paloma Paper on Faire",
+      "statement": "Slightly Stationery routes wholesale via its catalog/reps or Faire.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Slightly Stationery"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://porchlightpress.com/pages/wholesale",
+      "title": "Wholesale — Porchlight Press",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Please use the link below to go to our wholesale shop on Faire. If you're new to Faire, you will receive 50% off (up to $100 discount) for your first order with us and free shipping for 1 year",
+      "statement": "Some brands send all wholesale buyers, including their own leads, to Faire via a Direct link rather than running their own portal.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "34786d68-d739-4e12-bb5e-432167242812",
+        "99587fd1-68ac-4a18-b379-2f1400117a18"
+      ],
+      "company_name": "Porchlight Press"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "99587fd1-68ac-4a18-b379-2f1400117a18",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Brands handle reorders through Faire (marketplace or Faire Direct at 0% commission), by email, or on their own password-protected Shopify wholesale site, sometimes with a discount for ordering direct.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-03",
+            "ev-55",
+            "ev-38",
+            "ev-57",
+            "ev-48"
+          ]
+        },
+        {
+          "statement": "Money cost on Faire is about 17-18% of each marketplace reorder (15% commission plus processing).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-02"
+          ]
+        },
+        {
+          "statement": "Time cost is real enough that brands hire coordinators to enter wholesale orders across Shopify B2B, Faire and FashionGo and to manage reordering; no hours figure was found.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33",
+            "ev-34"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "0b8561c5-bb59-4acd-b1d7-7d756fb0afdb",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "One DTC finance analysis estimates boutiques reorder once or twice a year, a 20-35% year-one reorder rate.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "No evidence found on the share of a brand's wholesale revenue that comes from reorders.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "f3af2b05-4444-4f8b-9db7-2c9cc396ab13",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Brands stay on Faire for reorders because retailers like its convenience, breadth and terms, even shops the brand found itself.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-35",
+            "ev-36"
+          ]
+        },
+        {
+          "statement": "Faire's commission funds Net 60 terms that makers often can't offer themselves.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-37"
+          ]
+        },
+        {
+          "statement": "Faire's terms forbid moving stockists Faire sourced off-platform to save commission, and brands don't get those retailers' contact details.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14",
+            "ev-11",
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "Makers call the fee high but feel dependent on Faire; some accept it as an advertising substitute.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-08",
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "For brand-sourced retailers the commission problem is already solved by Faire Direct (0%).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-03",
+            "ev-06"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "3bdad69e-070d-489b-9403-5b02b9f65405",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "In the small brands found, the owner or founder runs the business (e.g. a one-person brand, an owner-operated workshop), so the owner is the likely buyer.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-46",
+            "ev-56",
+            "ev-49"
+          ]
+        },
+        {
+          "statement": "No evidence found on budgets for wholesale tools; a flat-fee wholesale marketplace charges $150/month as a reference point.",
+          "kind": "assumption",
+          "evidence_ids": [
+            "ev-25"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "5de9972a-3e06-43aa-839f-14bdd08fb83f",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Retailers cite Faire's payment terms as a reason they like ordering there.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36",
+            "ev-37"
+          ]
+        },
+        {
+          "statement": "Pre-filled reorder drafts are already offered by 2026 Shopify apps, but they have no reviews, so retailer and brand uptake is unknown.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-20",
+            "ev-21",
+            "ev-22"
+          ]
+        },
+        {
+          "statement": "No evidence found on how stockists value case-pack rules in reorders.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "34786d68-d739-4e12-bb5e-432167242812",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Native Shopify B2B on all paid plans since April 2026 covers catalogs, payment terms and volume pricing, and commentators say it made many B2B apps redundant.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16",
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "Vendors say native B2B still lacks rep ordering and quoting, the gap apps like SparkLayer and Brandboom target.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19",
+            "ev-24"
+          ]
+        },
+        {
+          "statement": "No brand-side reviews of SparkLayer or Wholesale Club were fetched; strengths and weaknesses here come from vendor pages.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "a7bc10a9-b580-4eff-9b7b-629f0ffca1f1",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Practices vary: some brands extend Net 30 on direct reorders themselves, others require prepayment for direct orders.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-41",
+            "ev-53"
+          ]
+        },
+        {
+          "statement": "Native Shopify B2B now offers Net 30/60 at checkout, and independent net-terms providers such as Resolve exist.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "Faire's Net 60 is a retailer draw that individual makers often can't match.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-37",
+            "ev-48"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "What share of a typical brand's Faire reorder revenue comes from Faire-sourced retailers (locked to Faire) versus brand-sourced ones (already 0% via Faire Direct)?",
+      "category": "cost",
+      "priority": "high"
+    },
+    {
+      "question": "What would make a reorder portal win over the free native Shopify B2B and the 2026 reorder-nudge apps?",
+      "category": "alternatives",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Faire (marketplace + Faire Direct + CRM)",
+      "url": "https://www.faire.com",
+      "kind": "indirect",
+      "description": "Wholesale marketplace; 0% commission on brand-sourced retailers via Faire Direct and built-in reorder-reminder automations.",
+      "pricing_note": "15% commission on marketplace orders + one-time $10 new-retailer fee + 1.9-3.5% processing; 0% on Faire Direct orders",
+      "evidence_refs": [
+        "ev-01",
+        "ev-03",
+        "ev-15"
+      ],
+      "sentiment": [
+        {
+          "statement": "Brands call the commission high on already-halved prices; others accept it as an advertising substitute.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-08",
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "Retailers praise its brand breadth, ease and terms.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-35",
+            "ev-36"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Shopify B2B (native)",
+      "url": "https://www.shopify.com",
+      "kind": "indirect",
+      "description": "Native wholesale on all paid plans since April 2026: company profiles, up to 3 catalogs, payment terms, volume pricing.",
+      "pricing_note": "Included at no additional cost on Basic, Grow and Advanced plans",
+      "evidence_refs": [
+        "ev-16",
+        "ev-18"
+      ],
+      "sentiment": [
+        {
+          "statement": "Commentators say it made many B2B apps redundant, though rep ordering and quoting are missing.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-17",
+            "ev-19"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "Repeatly — Wholesale Reorders",
+      "url": "https://apps.shopify.com/repeatly-reorders",
+      "kind": "direct",
+      "description": "Shopify app that finds wholesale buyers due to reorder, rebuilds their usual basket and sends a draft order and invoice.",
+      "pricing_note": "Free plan (5 nudges/month); paid Pro plan",
+      "evidence_refs": [
+        "ev-20",
+        "ev-21"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Reorder Nudge: B2B Reorders",
+      "url": "https://apps.shopify.com/reorder-nudge-b2b-reorders",
+      "kind": "direct",
+      "description": "Shopify app that learns each B2B location's reorder rhythm and emails its usual order as a draft at current B2B prices and terms.",
+      "pricing_note": "Free plan (10 reorder emails/month); paid Pro plan",
+      "evidence_refs": [
+        "ev-22"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "B2BOptix: AI Reorder Assistant",
+      "url": "https://apps.shopify.com/b2boptix",
+      "kind": "direct",
+      "description": "Shopify app surfacing per-buyer reorder recommendations in cart and checkout.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-23"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "SparkLayer",
+      "url": "https://www.sparklayer.io",
+      "kind": "indirect",
+      "description": "B2B/wholesale layer for Shopify filling gaps in native B2B.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-18",
+        "ev-19"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Brandboom",
+      "url": "https://brandboom.com",
+      "kind": "indirect",
+      "description": "Wholesale ordering, line sheets and rep tools synced with Shopify.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-24"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "Stockist",
+      "url": "https://stocksmith.io/blog/faire-wholesale-alternatives",
+      "kind": "indirect",
+      "description": "Boutique wholesale marketplace charging a flat monthly fee instead of commission.",
+      "pricing_note": "$150/month flat (per a third-party roundup)",
+      "evidence_refs": [
+        "ev-25"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "Shopify wholesale apps (Wholesale Club, Wholesale Gorilla, Bold Custom Pricing)",
+      "url": "https://apps.shopify.com",
+      "kind": "indirect",
+      "description": "Apps used to build a private, password-protected wholesale portal on a brand's Shopify store.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-26"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Resolve",
+      "url": "https://resolvepay.com",
+      "kind": "service",
+      "description": "B2B net-terms and AR provider letting sellers offer terms outside marketplaces.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-28"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "Email / manual reorders and own wholesale site",
+      "url": "https://loyalstricklin.com/pages/wholesale",
+      "kind": "manual",
+      "description": "Brands take reorders by email or on their own wholesale login, often with a discount for ordering direct.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-55",
+        "ev-38",
+        "ev-57"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "Handshake (Shopify)",
+      "url": "https://www.handshake.com",
+      "kind": "indirect",
+      "description": "Founder-listed alternative; its wholesale marketplace operations have closed or changed substantially.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-29"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-13",
+      "name": "Tundra",
+      "url": "https://www.tundra.com",
+      "kind": "indirect",
+      "description": "Founder-listed zero-commission wholesale marketplace; shut down in 2023.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-30"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Brands keep Faire for discovery and move their own accounts to Faire Direct (0% commission) or a direct wholesale site.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-03",
+        "ev-06",
+        "ev-27"
+      ]
+    },
+    {
+      "statement": "Native Shopify B2B on all paid plans now covers wholesale catalogs and Net 30/60 terms; new apps add pre-filled reorder drafts.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-16",
+        "ev-18",
+        "ev-20",
+        "ev-22"
+      ]
+    },
+    {
+      "statement": "The boring answer is common: reorders by email or a password-protected wholesale page, often with a direct-order discount.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-55",
+        "ev-38",
+        "ev-57"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Ladyfingers Letterpress",
+      "website": "https://ladyfingersletterpress.com",
+      "icp_id": null,
+      "location": "Colorado Springs, CO",
+      "industry": "Stationery and gifts",
+      "description": "Stationery brand selling via its own wholesale site (15% off for ordering direct) and Faire; already steers reorders off Faire.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-39"
+      },
+      "technologies": [
+        "Shopify",
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-38",
+        "ev-39"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent stationery brand wholesaling widely (states 1,000+ stores, above the 30-300 band).",
+          "evidence_refs": [
+            "ev-39"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Shopify-powered site with a separate wholesale site and Faire.",
+          "evidence_refs": [
+            "ev-38"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Discounts direct wholesale orders to pull buyers off Faire.",
+          "evidence_refs": [
+            "ev-38"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Arley Torsone",
+          "role": "Co-founder",
+          "email": null,
+          "evidence_ref": "ev-39"
+        },
+        {
+          "name": "Morgan Calderini",
+          "role": "Co-founder",
+          "email": null,
+          "evidence_ref": "ev-39"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "Idlewild Co.",
+      "website": "https://idlewildco.com",
+      "icp_id": null,
+      "location": "Vero Beach, FL",
+      "industry": "Paper goods and gifts",
+      "description": "Paper goods brand running direct wholesale accounts (with Net 30 on reorders) alongside a Faire Top Shop.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-43"
+      },
+      "technologies": [
+        "Shopify",
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-40",
+        "ev-41",
+        "ev-42",
+        "ev-43",
+        "ev-44"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Boutique gift brand selling to hundreds of stores via Faire and direct.",
+          "evidence_refs": [
+            "ev-40",
+            "ev-42"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Wholesale page links to a Faire shop; direct accounts billed electronically.",
+          "evidence_refs": [
+            "ev-40"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Offers direct-account discounts and Net 30 on reorders, the workflow the portal targets.",
+          "evidence_refs": [
+            "ev-40",
+            "ev-41"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Katie Gastley",
+          "role": "Founder & Executive Creative Director",
+          "email": null,
+          "evidence_ref": "ev-42"
+        },
+        {
+          "name": "Natalia Melendez",
+          "role": "Operations Director",
+          "email": null,
+          "evidence_ref": "ev-44"
+        }
+      ]
+    },
+    {
+      "ref": "co-03",
+      "name": "Tiny Hooray",
+      "website": "https://tinyhooray.com",
+      "icp_id": null,
+      "location": "Washington, DC area",
+      "industry": "Stationery and gifts",
+      "description": "One-person stationery brand selling via regional reps and Faire.",
+      "size_estimate": {
+        "min": 1,
+        "max": 1,
+        "signal": "About page: 'a one woman show'",
+        "evidence_ref": "ev-46"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-47"
+      },
+      "technologies": [
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-45",
+        "ev-46",
+        "ev-47"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small stationery brand with rep network plus Faire.",
+          "evidence_refs": [
+            "ev-45"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Faire for non-rep areas.",
+          "evidence_refs": [
+            "ev-45"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No direct reorder signal.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Beth Roszkowski",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-46"
+        }
+      ]
+    },
+    {
+      "ref": "co-04",
+      "name": "Sweet Water Decor",
+      "website": "https://www.sweetwaterdecor.com",
+      "icp_id": null,
+      "location": "Pittsburgh, PA",
+      "industry": "Candles and home decor",
+      "description": "Candle/home brand offering direct wholesale on its Shopify site plus Faire and FashionGo.",
+      "size_estimate": {
+        "min": 40,
+        "max": null,
+        "signal": "About page: 'a growing team of 40+'",
+        "evidence_ref": "ev-49"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-50"
+      },
+      "technologies": [
+        "Shopify",
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-48",
+        "ev-49",
+        "ev-50"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Home/candle brand with direct wholesale accounts and Faire.",
+          "evidence_refs": [
+            "ev-48"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Shopify store with wholesale login; also Faire and Shopify Collective.",
+          "evidence_refs": [
+            "ev-48"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Runs a direct-order option with reorder minimums next to Faire.",
+          "evidence_refs": [
+            "ev-48"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Melissa Horvath",
+          "role": "Founder",
+          "email": null,
+          "evidence_ref": "ev-49"
+        }
+      ]
+    },
+    {
+      "ref": "co-05",
+      "name": "Rockport Candle Company",
+      "website": "https://rockportcandle.com",
+      "icp_id": null,
+      "location": "Rockport, MA",
+      "industry": "Candles and home fragrance",
+      "description": "Candle brand taking direct wholesale applications plus a Faire Direct link.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-52"
+      },
+      "technologies": [
+        "Shopify",
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-51",
+        "ev-52"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small candle brand selling wholesale direct and via Faire.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Wholesale line sheet plus Faire Direct link.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No reorder-specific signal.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Frostbeard Studio",
+      "website": "https://www.frostbeardstudio.com",
+      "icp_id": null,
+      "location": "Minneapolis, MN",
+      "industry": "Candles",
+      "description": "Book-themed candle maker offering Faire or a direct wholesale shop that requires prepayment.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-54"
+      },
+      "technologies": [
+        "Shopify",
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-53",
+        "ev-54"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Handmade candle brand selling to bookstores and boutiques.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Direct online wholesale shop plus Faire.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Direct orders must be prepaid; no terms offered directly.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Loyal Stricklin",
+      "website": "https://loyalstricklin.com",
+      "icp_id": null,
+      "location": "Nashville, TN",
+      "industry": "Menswear and leather goods",
+      "description": "Shopify apparel/leather brand taking wholesale reorders by email.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-56"
+      },
+      "technologies": [
+        "Shopify",
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-55",
+        "ev-56"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small US-made apparel brand with wholesale accounts.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Shopify store; email-based wholesale.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Manual email reorders for existing customers.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Michael Stricklin",
+          "role": "Owner and operator",
+          "email": null,
+          "evidence_ref": "ev-56"
+        }
+      ]
+    },
+    {
+      "ref": "co-08",
+      "name": "Guttersnipe Press",
+      "website": "https://guttersnipepress.com",
+      "icp_id": null,
+      "location": "Charlotte, NC",
+      "industry": "Greeting cards and stickers",
+      "description": "Card brand with its own wholesale login site plus Faire, selling to independent retailers across the US.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [
+        "Shopify",
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-57",
+        "ev-58",
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Indie card brand selling to independent retailers via own site and Faire.",
+          "evidence_refs": [
+            "ev-57",
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Shopify store plus separate wholesale site and Faire.",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Already runs a direct wholesale ordering site.",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Westland Press",
+      "website": "https://westlandpress.com",
+      "icp_id": null,
+      "location": "Portland, OR",
+      "industry": "Letterpress greeting cards",
+      "description": "Family-owned letterpress card maker (listed on Faire per search results; not verified on its own site).",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      },
+      "technologies": [
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-60"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Small card maker; Faire presence not shown on its own pages.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "Lucky Bee Press",
+      "website": "https://www.luckybeepress.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Greeting cards",
+      "description": "Card brand with its own wholesale page, a Faire wholesale link and a published US stockist list.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-61",
+        "ev-62"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Card brand with many US stockists and both direct and Faire wholesale.",
+          "evidence_refs": [
+            "ev-61",
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Faire wholesale link in navigation.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Slightly Stationery",
+      "website": "https://slightlystationery.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Stationery",
+      "description": "Stationery brand taking wholesale by catalog/rep email or Faire.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "Faire"
+      ],
+      "evidence_refs": [
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Stationery brand using Faire plus email ordering.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Faire shop links.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
