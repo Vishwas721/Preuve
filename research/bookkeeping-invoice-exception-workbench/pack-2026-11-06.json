@@ -1,0 +1,3058 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "adb50db9-e660-4912-9689-665efda2eda7",
+    "researcher": "claude-code",
+    "started_at": "2026-11-06T09:00:00Z",
+    "finished_at": "2026-11-06T12:30:00Z",
+    "queries": [
+      "Dext supplier rules wrong tax rate keeps reverting bookkeeper frustrated",
+      "Hubdoc duplicate bills Xero bookkeeper reddit",
+      "Dext Prepare duplicate detection supplier rules help article",
+      "Dext Precision duplicate transactions incorrect VAT coding inconsistencies check",
+      "accountingweb Dext supplier rules time spent reviewing bookkeeper",
+      "Dext reviews cons extraction errors bookkeeper still have to check every",
+      "Dext AI Assist learns from corrections suggestions bookkeepers launch",
+      "reddit bookkeeping Dext Hubdoc wrong supplier OR wrong tax fixing every month",
+      "Lightyear AP automation accountants learns supplier coding Xero Australia",
+      "bookkeeper job Dext Hubdoc processing supplier invoices reviewing coding job description UK",
+      "Hubdoc supplier remember account code tax rate idea xero product ideas",
+      "Dext pricing accountants bookkeepers practice plan per client price AI Assist add-on cost",
+      "accountingweb any answers Dext Hubdoc AutoEntry which is best errors coding",
+      "bookkeepers duplicate bills Xero paid supplier twice Hubdoc Dext forum",
+      "Xero community Hubdoc auto publish wrong contact tax rate frustrating",
+      "Keeper file review bookkeeping firms QuickBooks Xero anomalies duplicate bills pricing per client",
+      "XBert pricing accounting practices Xero alerts",
+      "bookkeeping practice survey time spent data entry review capacity shortage 2025 UK Australia bookkeepers",
+      "Xero JAX bill capture replaces Hubdoc 2026 (contradiction: native tools solve it)",
+      "Dext supplier rules auto-publish percentage documents no review case study (contradiction: configuration solves it)",
+      "accounting firms app fatigue too many apps tech stack consolidation survey (contradiction: adoption barrier)",
+      "bookkeeping firm UK/AU Dext Xero trades construction hospitality (prospects)"
+    ],
+    "notes": "Preuve was down for the first part of the run; fetches use the local fetcher and were unaffected. Problem evidence is mostly feature-request forums (Xero product ideas, Dext UserVoice) and one small hands-on review; no practice-level error rates or minutes-per-invoice were found. Capterra, G2, TrustRadius, AccountingWEB and UK Business Forums were blocked by robots. The strongest finding is contradicting: Dext AI Assist (Mar 2026) and Dext's partner plans explicitly target practice-level repeat corrections. Buyer unknown: no evidence. 23 prospects (12 AU, 11 UK; none US): sizes only where stated (3 firms); contacts only where name+title is on the firm's own page (Lucent's names are on a Dext case study, so not used). Several prospects are 1-5 person firms below the primary ICP's 5-30 band. No ICP id was returned by context, so icp_id is null."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://productideas.xero.com/forums/967130-contacts-documents/suggestions/45227854-hubdoc-ability-to-also-flag-duplicates-when-the",
+      "title": "Hubdoc - Ability to also flag duplicates when the invoice number is the same",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Currently Hubdoc only flags an invoice as a duplicate if the supplier, invoice date AND invoice amount exactly match. This means if any of these are adjusted or Hubdoc doesn't pick up the exact correct details, the invoice wouldn't be flagged as a duplicate and could be double booked or worse double paid.",
+      "statement": "A Xero product-ideas request says Hubdoc only flags a duplicate when supplier, date and amount all match exactly, so mis-read or adjusted invoices can be double booked or double paid.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Hubdoc"
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://productideas.xero.com/forums/967130-contacts-documents/suggestions/45227854-hubdoc-ability-to-also-flag-duplicates-when-the",
+      "title": "Hubdoc - Ability to also flag duplicates when the invoice number is the same",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "we currently spend a significant amount of time reviewing and removing duplicate bills. If Hubdoc handled this automatically, it would save us a substantial amount of time.",
+      "statement": "A commenter on the same request says their team spends a significant amount of time reviewing and removing duplicate bills.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "45550df6-222b-401f-bbc3-2553b19175ab",
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699"
+      ],
+      "company_name": "Hubdoc"
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://dext.uservoice.com/forums/965900-join-our-feedback-community/suggestions/45150646-identify-duplicate-invoice-numbers",
+      "title": "Identify duplicate invoice numbers",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "But if there’s a reissued invoice for example which has the same invoice number but a different amount, there’s a risk that this will be pushed through twice given Dext will not merge / reject the invoice as a duplicate invoice. … Heaps of double payments made for some clients.",
+      "statement": "A Dext feedback request says reissued invoices with the same number but a different amount are not caught as duplicates; one commenter reports many double payments for clients.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "45550df6-222b-401f-bbc3-2553b19175ab",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://dext.uservoice.com/forums/965900-join-our-feedback-community/suggestions/49585085-configurable-rounding-method-for-tax-calculation",
+      "title": "Configurable Rounding Method for Tax Calculation",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I'm seeing frequent cases where the tax calculated by Dext differs by a penny or so from the tax calculated by the retailer on a receipt. This has to be dealt with before publishing. … This happens frequently to me and is such a pain to deal with",
+      "statement": "Dext users report frequent penny-level tax rounding differences that must be fixed by hand before publishing.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://dext.uservoice.com/forums/965900-join-our-feedback-community/suggestions/49156022-extract-vat-based-on-currency",
+      "title": "Extract VAT based on Currency",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "When we upload receipts in non-GBP currencies, Dext appears to automatically read and include the VAT. While this is helpful for GBP transactions, it creates complications for non-GBP payments, as we then have to manually adjust the VAT to zero before exporting to Xero.",
+      "statement": "A UK Dext user has to manually zero VAT on every non-GBP receipt before export to Xero and asks for supplier-specific rules to handle it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://productideas.xero.com/forums/967130-contacts-documents/suggestions/45114592-hubdoc-enable-reconciliation-to-xero-when-alloca",
+      "title": "Hubdoc - Enable reconciliation to Xero when allocating to 0% tax account",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "if any portion of an invoice is allocated to an account in Xero that has a 0% tax rate, Publishing to Xero fails with the error message \"Validation Err. Line item tax amounts do not total to document tax amount\".",
+      "statement": "A Hubdoc user reports that split invoices with a 0% tax portion fail to publish to Xero with a tax validation error.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Hubdoc"
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://productideas.xero.com/forums/967139-purchase-orders-bills-inventory/suggestions/44961229-bills-prompt-an-alert-for-duplicate-purchase-inv",
+      "title": "Bills - Prompt an alert for duplicate Purchase Invoice references when approving from list",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Having duplicate bills has meant that our clients have paid twice for supplies and it can be hard to get the money back",
+      "statement": "A Xero user (commenting on a duplicate-bill request) says duplicate bills led clients to pay suppliers twice, and recovering the money is hard.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "45550df6-222b-401f-bbc3-2553b19175ab"
+      ],
+      "company_name": "Xero"
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://invoicedataextraction.com/blog/prevent-duplicate-bills-in-quickbooks-online",
+      "title": "How to Prevent Duplicate Bills in QuickBooks Online",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "that warning only checks whether the same vendor already has the same bill number on file. It can still miss near-duplicates caused by invoice-number formatting differences, inconsistent vendor names, repeated imports, or a bill that later reappears as a separate bank or expense record.",
+      "statement": "A vendor blog explains that QuickBooks Online's duplicate-bill warning only matches same vendor + same bill number, so near-duplicates and inconsistent vendor names slip through (US relevance).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "QuickBooks Online"
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://marcandrews.com/dext-vs-hubdoc-2026-best-receipt-scanner-for-uk-firms/",
+      "title": "Dext Vs Hubdoc 2026: An Honest, Half-Tested Comparison",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "one supplier name was tidied and one was left alone, so the normalisation is not applied uniformly, which matters if you are matching extracted suppliers against names already sitting in a ledger. … Dext has a dedicated field for it, sitting directly under Supplier in the detail panel. On both of the documents where I checked that field, it came back empty.",
+      "statement": "A small UK hands-on test of Dext found the supplier VAT number field left empty on both invoices checked and supplier names normalised inconsistently (3 synthetic invoices only).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://saas-expert.pages.dev/articles/dext-review/",
+      "title": "Dext Review 2026: Receipt Capture and Bookkeeping Automation Fit | SaaS Expert",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Tax treatment, supplier rules, project coding, classes, tracking categories, and unusual expenses still need review. The point is to reduce typing and chasing, not to remove financial judgment.",
+      "statement": "An independent Dext review says tax treatment, supplier rules and coding still need human review after capture.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://www.patronaccounting.com/glossary/accounting/hubdoc-automation",
+      "title": "Hubdoc Automation: Meaning and Example | Patron Accounting",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Auto-syncing before verifying extraction: Turning on auto-sync while Hubdoc still misreads amounts posts wrong bills → confirm extraction accuracy for a supplier before enabling auto-sync.",
+      "statement": "An accounting-firm glossary warns that Hubdoc auto-sync posts wrong bills if extraction has not been verified, i.e. firms keep a manual check before posting.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c341ed01-4e11-42cb-b85b-50bceff6c376",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Hubdoc"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://dext.com/au/blog/single/how-dext-ai-assist-cut-manual-bookkeeping-for-2-firms",
+      "title": "How Dext AI Assist Cut Manual Bookkeeping for two Firms",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Manual data entry disproportionately burdens firms serving high-volume, multi-supplier clients. Hospitality clients in particular generate large volumes of supplier bills, making them one of the clearest use cases for automated invoice coding.",
+      "statement": "Dext's own case study says the burden is concentrated in firms serving high-volume, multi-supplier clients such as hospitality.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://dext.com/uk/blog/single/do-more-with-dext-guide-to-everyday-automation-wins",
+      "title": "Do More with Dext: Guide to Everyday Automation Wins",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Duplicate document submissions happen more than you'd think. … Once a duplicate is published to your accounting software, it's a pain to fix it there.",
+      "statement": "Dext's own guide says duplicate submissions are common and painful to fix once published to the ledger.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://www.cpapracticeadvisor.com/2026/03/30/dext-launches-time-spent-to-give-accountants-and-bookkeepers-real-visibility-into-team-productivity/180507/",
+      "title": "Dext Unveils Time Spent to Give Accountants and Bookkeepers Real Visibility Into Team Productivity",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Globally, firms are under increasing pressure to deliver more work, faster, without a corresponding increase in resources. Ongoing talent shortages and rising client expectations are making it harder for firms to scale through hiring alone.",
+      "statement": "Trade press (on a Dext launch) reports firms under pressure to do more work without more staff amid talent shortages.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "87db348c-4e16-47a9-9a24-14a61d81458d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://quickbooks.intuit.com/uk/press/surge-in-demand-for-accountants-and-bookkeepers-spurs-tech-adoption-with-personalised-client-service/",
+      "title": "Surge in Demand for Accountants and Bookkeepers Spurs Tech Adoption with Personalised Client Service",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "accountants are planning to invest an average of £30,000 in tech over the next 12 months — a 50% increase from last year’s £21,000 average",
+      "statement": "Intuit's 2024 UK accountant survey says firms plan to invest on average £30,000 in tech over 12 months, up 50%.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "87db348c-4e16-47a9-9a24-14a61d81458d"
+      ],
+      "company_name": "Intuit QuickBooks"
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://apps.xero.com/uk/app/hubdoc/reviews",
+      "title": "Hubdoc Reviews and Ratings — Xero App Store UK",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "3.3 out of 5 stars 232 Reviews 5 star 42 % 4 star 10 % 3 star 10 % 2 star 10 % 1 star 28 % … The app continues to disconnect from Xero making reconciliations time consuming and frustrating.",
+      "statement": "Hubdoc's UK Xero App Store rating is 3.3/5 with 28% one-star reviews, suggesting Hubdoc users are a less satisfied segment.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1",
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699"
+      ],
+      "company_name": "Hubdoc"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://dext.com/uk/partner/product/dext-ai-assist-bookkeeping-agent",
+      "title": "AI agent for Accounting Practices | Dext AI Assist",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Built into Dext, AI Assist learns how your practice treats a supplier, a tax code or a client that never quite fits the pattern. … Review every suggestion, apply automation practice-wide or client by client, and turn it off wherever your judgement says otherwise.",
+      "statement": "Dext AI Assist learns practice-level supplier and tax-code treatments from corrections and applies them practice-wide or per client with review, which is the idea's core wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.accountantsdaily.com.au/technology/22268-dext-launches-ai-agent-to-automate-bookkeeping-decisions",
+      "title": "Dext launches AI agent to automate bookkeeping decisions",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Built into the Dext platform, AI Assist learns how users work in Dext from their decisions, preferences and edits … While document capture and data extraction are now highly automated, workflows often still depend on human judgement.",
+      "statement": "Accountants Daily (AU) reports Dext launched AI Assist to learn from users' edits; Dext itself frames post-extraction judgement work as the remaining problem.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://dext.com/en/news/dext-expands-ai-assist-with-core-guidance",
+      "title": "Dext expands AI Assist with Core guidance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Since being enabled, AI Assist agents have automated 83% of edits … Core guidance is included in all Dext partner subscriptions at no additional cost.",
+      "statement": "Dext claims AI Assist has automated 83% of edits and bundles 'Core guidance' into every partner subscription at no extra cost (UK and Australia from May 2026).",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1",
+        "45550df6-222b-401f-bbc3-2553b19175ab"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://dext.com/en/partner/pricing",
+      "title": "Dext Partner Pricing | Plans for Accounting Practices",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Advanced adds the team, workflow and insight tools that stop the same corrections being made twice once the practice is bigger than one person. … Start with the client who generates the most corrections, and see how many of them still need making.",
+      "statement": "Dext's partner pricing page markets its Advanced plan explicitly on stopping repeat corrections, the same pitch as the idea.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://dext.com/uk/blog/single/top-5-features-in-dext-prepare-you-probably-dont-know-about",
+      "title": "Top 5 Features in Dext You Probably Don’t Know About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "we created Supplier Rules and Auto-Categorisation so you don’t need to review predictable paperwork from regular suppliers or customers. … You can use Supplier Rules to assign a default category, description, currency, invoice due date, tax rate, payment method, paid/unpaid status and more.",
+      "statement": "Dext Supplier Rules set default category, tax rate and more per supplier so predictable documents need no review, i.e. configuration addresses much of the repeat-supplier problem.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1",
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://help.dext.com/en/articles/216124-how-dext-handles-duplicate-cost-documents",
+      "title": "How Dext handles duplicate Cost documents | Dext Help Centre",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "You can set the mode as an account-wide default, for one supplier, or for several suppliers at once. … You can then open the two items side by side, confirm whether they're the same purchase, and choose what happens to each.",
+      "statement": "Dext already offers per-supplier duplicate detection with a side-by-side review of suspected duplicates.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1",
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://apps.xero.com/uk/app/dext-precision",
+      "title": "Dext Precision Xero Integration Reviews & Features — Xero App Store UK",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Dext Precision can identify duplicate contacts, mis-coded invoices and irregular transactions based on contact history for checking, fixing or dismissing.",
+      "statement": "Dext Precision (ex-Xavier) already flags mis-coded invoices and irregular transactions per contact history across a practice's Xero clients.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Dext Precision"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://apps.xero.com/au/industry/accounting/app/xbert",
+      "title": "XBert Xero Integration Reviews & Features — Xero App Store AU",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "150+ built-in data quality checks run continuously across your whole client base, detecting financial risk, anomalies and patterns no team could catch by reviewing files one at a time — GST and VAT coding errors, duplicate invoices and payments … Proposed, not posted: a human reviews every resolution.",
+      "statement": "XBert runs 150+ checks across a practice's client base (GST/VAT coding errors, duplicate invoices and payments) with human-approved fixes, overlapping the idea's flagging layer.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "XBert"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://support.xbert.io/en/articles/11068726-duplicate-bill-raised-advanced",
+      "title": "Duplicate Bill Raised Advanced | XBert Support Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The \"Duplicate bill raised advanced\" XBert looks for the same supplier bill entered more than once, even when the two entries carry different reference numbers.",
+      "statement": "XBert has a duplicate-bill check that catches duplicates even when reference numbers differ.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "XBert"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://productideas.xero.com/forums/967139-purchase-orders-bills-inventory/suggestions/44961229-bills-prompt-an-alert-for-duplicate-purchase-inv",
+      "title": "Bills - Prompt an alert for duplicate Purchase Invoice references when approving from list",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Xero will compare the contact, reference and amount of bills and credit notes to identify and help you review possible duplicates.",
+      "statement": "Xero has shipped native duplicate-bill detection that compares contact, reference and amount.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "Xero"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://www.xero.com/uk/accounting-software/store-files/",
+      "title": "Smart Document Capture Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "See your original document next to the Xero data-entry screen so you can double-check the info … Xero spots if you accidentally upload a document twice, so you avoid duplicate records",
+      "statement": "Xero's native Smart Document capture shows the source document beside the entry screen and flags double uploads.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc",
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1"
+      ],
+      "company_name": "Xero"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://support.approvalmax.com/en/articles/413768-how-does-the-feature-xero-bill-duplication-control-work",
+      "title": "How does the feature Xero Bill Duplication Control work? | ApprovalMax Help Centre",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "ApprovalMax identifies Bills that might potentially be duplicates and notifies Requesters, Reviewers and Approvers at every stage with a respective message to ensure their awareness.",
+      "statement": "ApprovalMax flags potential duplicate bills at every approval stage for Xero.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "ApprovalMax"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://apps.xero.com/au/app/lightyear",
+      "title": "Lightyear Xero Integration Reviews & Features — Xero App Store AU",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Automated Coding: Assign account codes, tax rates, and tracking categories automatically based on your predefined rules — eliminating manual coding errors and ensuring your financial data is consistent and audit-ready in Xero.",
+      "statement": "Lightyear (AU) applies rule-based account and tax coding to supplier invoices before Xero sync.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "Lightyear"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://tekpon.com/software/keeper/reviews/",
+      "title": "Keeper Reviews 2025: Pricing & Features - Tekpon 2026",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "It provides file review features to detect and rectify coding errors without leaving the platform.",
+      "statement": "Keeper (US) offers file review to detect and fix coding errors for QuickBooks/Xero bookkeeping firms.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "Keeper"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://receiptor.ai/blog/best-hubdoc-alternatives-for-xero-users",
+      "title": "Best Hubdoc Alternatives for Xero Users (2026)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "It combines mathematical validation, conditional AI review, legal entity assignment, duplicate handling, and related-document grouping with the Xero handoff.",
+      "statement": "Receiptor AI positions itself as a Hubdoc alternative with validation, AI review and duplicate handling.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "Receiptor AI"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://ustechautomations.com/resources/blog/dext-vs-hubdoc-2026",
+      "title": "Dext vs Hubdoc for Bookkeepers Weighing Cost in 2026",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Skip an extra queue when the client is on Growing or Established, Hubdoc supplier rules already post clean header bills, and the only leftover work is the bank match your staff already do in Xero.",
+      "statement": "Even a vendor that sells an exception queue advises skipping it when supplier rules already post clean bills.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1",
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "US Tech Automations"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://ustechautomations.com/resources/blog/dext-vs-hubdoc-2026",
+      "title": "Dext vs Hubdoc for Bookkeepers Weighing Cost in 2026",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "A proposed US Tech Automations design can pre-build the exception queue, the duplicate check, and the escalation to a named reviewer",
+      "statement": "A US automation agency offers to build an exception queue with duplicate checks on Zapier/Make/n8n as a service.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "US Tech Automations"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://ustechautomations.com/resources/blog/dext-vs-hubdoc-2026",
+      "title": "Dext vs Hubdoc for Bookkeepers Weighing Cost in 2026",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "AI Assist is $10.5 per month until 31 January 2027",
+      "statement": "A pricing review (checked Oct 2026) lists Dext AI Assist at $10.5/month on the business plan.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "87db348c-4e16-47a9-9a24-14a61d81458d",
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.cpapracticeadvisor.com/2026/03/30/dext-launches-time-spent-to-give-accountants-and-bookkeepers-real-visibility-into-team-productivity/180507/",
+      "title": "Dext Unveils Time Spent to Give Accountants and Bookkeepers Real Visibility Into Team Productivity",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "In January 2026, Dext processed 31.4 million receipts and invoices globally. Based on an estimated three to four minutes to manually process each document, this represents more than two million hours of administrative work. … Using Dext, users completed this work in approximately 206,000 hours, reducing processing time by more than 90%.",
+      "statement": "Dext's figures imply roughly 24 seconds of remaining handling time per document (206,000 h / 31.4M docs), so the residual review time per document that a new tool could save is small.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "45550df6-222b-401f-bbc3-2553b19175ab"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://apps.xero.com/uk/app/dext/reviews",
+      "title": "Dext Reviews and Ratings — Xero App Store UK",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "4.8 out of 5 stars 1119 Reviews 5 star 90 % … Really easy to use and saves us so much time. It learns the codes and automatically applies them.",
+      "statement": "Dext is rated 4.8/5 from 1,119 reviews on the UK Xero App Store, with users praising that it learns and applies codes.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d506d1b7-d530-4df9-9ff3-829ae612bbf1",
+        "60c9d3bd-3a18-4f73-903b-ac49be3cddfc"
+      ],
+      "company_name": "Dext"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://www.accountingtoday.com/news/more-than-a-third-of-firms-have-standardized-tech-stacks",
+      "title": "More than a third of firms have standardized tech stacks",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Accounting firms are getting tired of switching between applications that don't integrate, so more than a third have already standardized their tech stacks for both staff and clients.",
+      "statement": "Accounting Today reports firms are tired of switching between non-integrated apps and are standardising stacks, a headwind for another add-on layer.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c341ed01-4e11-42cb-b85b-50bceff6c376"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://www.cpapracticeadvisor.com/2026/07/02/the-2026-accountant-technology-survey-turning-data-revelations-into-a-firm-of-the-future/185807/",
+      "title": "The 2026 Accountant Technology Survey: Turning Data Revelations into a Firm of the Future",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Firms are navigating dozens of tools and an expanding suite of AI capabilities, with no clear playbook for how it all fits together.",
+      "statement": "Intuit's 2026 accountant tech survey commentary describes 'digital overwhelm' from dozens of tools.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c341ed01-4e11-42cb-b85b-50bceff6c376"
+      ],
+      "company_name": "Intuit QuickBooks"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://digit.business/about-us",
+      "title": "About Digit | Digit Books Pty Ltd, Perth Xero Bookkeeping Firm",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Outsourced bookkeeping, payroll and business advisory for Australian businesses. Founded in Perth in 2013 by Andrew Erkins and Leah Moore.",
+      "statement": "Digit is a Perth-founded outsourced bookkeeping firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Digit"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://digit.business/industry/trades-construction",
+      "title": "Bookkeeping for Trades & Construction in Australia | Digit",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Connect SimPro, Dext, and Pinch to Xero. Automate data flow between job management and accounts",
+      "statement": "Digit's trades page connects Dext to Xero for trades clients.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Digit"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://digit.business/about-us",
+      "title": "About Digit | Digit Books Pty Ltd, Perth Xero Bookkeeping Firm",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "30+ across Australia and the Philippines",
+      "statement": "Digit states a team of 30+.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Digit"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://digit.business/about-us",
+      "title": "About Digit | Digit Books Pty Ltd, Perth Xero Bookkeeping Firm",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Andrew Erkins, Founder & CEO, founded Digit in 2013",
+      "statement": "Named founder and CEO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Digit"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://digit.business/about-us",
+      "title": "About Digit | Digit Books Pty Ltd, Perth Xero Bookkeeping Firm",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Leah Moore, Founder & Managing Partner, founded Digit with Andrew and leads client service delivery.",
+      "statement": "Named founder and managing partner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Digit"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://www.rainforestbookkeeping.com.au/about",
+      "title": "About Us | Rainforest Bookkeeping",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Michele is an Australian Certified Bookkeeper, Registered BAS Agent, and founder of Rainforest Bookkeeping—a 100% cloud-based practice from day one.",
+      "statement": "Rainforest Bookkeeping is an Australian cloud bookkeeping practice; Michele is its founder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Rainforest Bookkeeping"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://www.rainforestbookkeeping.com.au/about",
+      "title": "About Us | Rainforest Bookkeeping",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "✅ Trusted Xero, Dext, Xbert, Ecommerce specialists",
+      "statement": "Rainforest uses Xero, Dext and XBert.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Rainforest Bookkeeping"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://www.rainforestbookkeeping.com.au/about",
+      "title": "About Us | Rainforest Bookkeeping",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We’re a small team of experienced, certified bookkeepers and certified trainers who work with small businesses in trades, plumbingm construction, e-commerce, professional and personal services.",
+      "statement": "Small team serving trades, construction and e-commerce.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Rainforest Bookkeeping"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://entirebookkeepers.com.au/",
+      "title": "Home - Entire Bookkeepers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are proud to be a member of The Institute of Certified Bookkeepers, Xero advisor and payroll certified, plus we are registered BAS agents",
+      "statement": "Entire Bookkeepers is an ICB member, Xero advisor and registered BAS agent.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Entire Bookkeepers"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://entirebookkeepers.com.au/about/",
+      "title": "About - Entire Bookkeepers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Entire Bookkeepers office is located on the sunny Gold Coast in Queensland.",
+      "statement": "Located on the Gold Coast, QLD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Entire Bookkeepers"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://entirebookkeepers.com.au/about/",
+      "title": "About - Entire Bookkeepers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Odette Pieterse … MANAGING DIRECTOR",
+      "statement": "Named managing director.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Entire Bookkeepers"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://northernbeachesbookkeepingsolutions.com.au/about/",
+      "title": "About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We’re a small but mighty team of qualified bookkeepers and BAS Agents based in Belrose on Sydney’s Northern Beaches.",
+      "statement": "NBBS is a bookkeeping team based in Belrose, Sydney.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Northern Beaches Bookkeeping Solutions"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://northernbeachesbookkeepingsolutions.com.au/builder-and-tradie-bookkeeping/",
+      "title": "Expert Xero Bookkeeping for Tradies and Builders in Sydney",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The best piece of advice we offer all our tradie clients is to work with Dext to take care of their mounting pile of paperwork. We will set you up on Dext which is a fantastic Xero add on.",
+      "statement": "NBBS puts tradie clients on Dext with Xero.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Northern Beaches Bookkeeping Solutions"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://northernbeachesbookkeepingsolutions.com.au/about/",
+      "title": "About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Led by Coralie Downie, the business owner, our team of four consists of Coralie, Cathy, Andrea and Ellie",
+      "statement": "Team of four led by the business owner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Northern Beaches Bookkeeping Solutions"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://www.diversebc.com.au/trade-construction",
+      "title": "Trade & Construction Bookkeeping | Diverse — Diverse Business Consultants",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Diverse provides outsourced Xero bookkeeping for Australian builders and trade businesses with a crew.",
+      "statement": "Diverse offers outsourced Xero bookkeeping for builders and trades.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Diverse Business Consultants"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.diversebc.com.au/about-us",
+      "title": "About Diverse Business Consultants | Australian Bookkeeping Team — Diverse Business Consultants",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "✓ Dext Advanced Partner",
+      "statement": "Diverse is a Dext Advanced Partner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Diverse Business Consultants"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.diversebc.com.au/about-us",
+      "title": "About Diverse Business Consultants | Australian Bookkeeping Team — Diverse Business Consultants",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ten plus years later, Diverse is 34 people strong.",
+      "statement": "Diverse has 34 people.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Diverse Business Consultants"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.diversebc.com.au/about-us",
+      "title": "About Diverse Business Consultants | Australian Bookkeeping Team — Diverse Business Consultants",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Sarah Parkinson, Diverse CEO",
+      "statement": "Named CEO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Diverse Business Consultants"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://vncaustralia.com.au/",
+      "title": "Best Bookkeeping Services in Australia | VNC Australia",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "VNC provides the best bookkeeping services in Australia for Inventory Heavy Businesses like Wholesalers, Distributors, Manufacturers, Retailers or Ecommerce Sellers.",
+      "statement": "VNC offers bookkeeping in Australia for wholesalers and distributors.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "VNC Australia"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://vncaustralia.com.au/",
+      "title": "Best Bookkeeping Services in Australia | VNC Australia",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Accounts Payable Automation (Dext, Hubdoc)",
+      "statement": "VNC uses Dext/Hubdoc for AP automation.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "VNC Australia"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://cafebookkeepers.com.au/",
+      "title": "Hospitality Bookkeepers & Accountants",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Working with 130+ businesses within hospitality, we understand weekly reporting is crucial.",
+      "statement": "Cafe Bookkeepers works with 130+ hospitality businesses.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cafe Bookkeepers"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://cafebookkeepers.com.au/meet-the-team",
+      "title": "Meet the Team — Hospitality Bookkeepers & Accountants",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We’re Cafe Bookkeepers, based in Alexandria, Sydney.",
+      "statement": "Based in Alexandria, Sydney.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cafe Bookkeepers"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://cafebookkeepers.com.au/meet-the-team",
+      "title": "Meet the Team — Hospitality Bookkeepers & Accountants",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Nick Hazel … Director",
+      "statement": "Named director.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cafe Bookkeepers"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://cafebookkeepers.com.au/meet-the-team",
+      "title": "Meet the Team — Hospitality Bookkeepers & Accountants",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Toshio Ishikura … Senior Bookkeeper",
+      "statement": "Named senior bookkeeper.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cafe Bookkeepers"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.bookbalance.com.au/",
+      "title": "Book Balance | Bookkeeper & BAS Agent — Sydney's North Shore",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Registered BAS Agent, Small Business Mentor, Project & Production Accounting Specialist & Xero Certified Advisor — Sydney's North Shore & Australia-wide remotely.",
+      "statement": "Book Balance is a Sydney North Shore BAS agent and Xero advisor.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Book Balance"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.bookbalance.com.au/about-1",
+      "title": "About Wendy Maloney | Bookkeeper, BAS Agent & Production Accounting Specialist Sydney — Book Balance Bookkeeping & BAS Agent Services",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hi, I'm Wendy Maloney — founder of Book Balance and a registered BAS Agent",
+      "statement": "Named founder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Book Balance"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://baslink.com.au/about-us/",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I established BASLink Bookkeeping in 2014 and am a qualified accountant, registered BAS Agent and Xero Certified Advisor.",
+      "statement": "BASLink is a Xero-certified BAS agent bookkeeping firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "BASLink Bookkeeping"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://baslink.com.au/about-us/",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Although based on the Central Coast of NSW, we offer remote services and can work with you from anywhere in Australia.",
+      "statement": "Based on the Central Coast, NSW.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "BASLink Bookkeeping"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://baslink.com.au/about-us/",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Subcontractors and Tradesmen form a very large part of our clientele",
+      "statement": "Clientele is largely subcontractors and tradesmen.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "BASLink Bookkeeping"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.lucentadvisory.com.au/",
+      "title": "Lucent Advisory | Outsourced business support services",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our connected model brings together bookkeeping, accounting, tax, payroll, HR, and strategic business advisory – all working in one streamlined workflow.",
+      "statement": "Lucent offers bookkeeping among its services.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lucent Advisory"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://dext.com/uk/blog/single/how-lucent-advisory-saves-over-100-hours-per-month-with-dext-prepare",
+      "title": "How Lucent Advisory Saves Over 100 Hours per Month with Dext Prepare",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Lucent Advisory, based in Adelaide, offers a wide-range of services including bookkeeping, tax, advisory, CFO support, payroll and HR.",
+      "statement": "Dext case study: Lucent is based in Adelaide.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lucent Advisory"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://dext.com/uk/blog/single/how-lucent-advisory-saves-over-100-hours-per-month-with-dext-prepare",
+      "title": "How Lucent Advisory Saves Over 100 Hours per Month with Dext Prepare",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With Xero as their main accounting software, the team benefits from the seamless integration with Dext Prepare",
+      "statement": "Lucent uses Xero with Dext Prepare.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lucent Advisory"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.amandabellbookkeeping.com.au/",
+      "title": "Bookkeeping for Tradies on the Northern Beaches",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Bookkeeping for Tradies & Small to Medium Businesses on the Northern Beaches",
+      "statement": "Bookkeeping for tradies on Sydney's Northern Beaches.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Amanda Bell Bookkeeping"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.amandabellbookkeeping.com.au/amanda-bell-bookkeeper-bas-agent-xero-specialist-warriewoodbookkeeper.html",
+      "title": "Bookkeeping for Tradies on the Northern Beaches",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I am a Xero Certified Advisor and am Xero Payroll Certified.",
+      "statement": "Xero certified.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Amanda Bell Bookkeeping"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://tradeguardian.com.au/",
+      "title": "Trade Guardian",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Trade Guardian provides bookkeeping, payroll and administration support services to",
+      "statement": "Trade Guardian provides bookkeeping to trades businesses.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Trade Guardian"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://tradeguardian.com.au/",
+      "title": "Trade Guardian",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "grow our business beyond Canberra into several locations across Australia!",
+      "statement": "Testimonial places clients in Canberra, Australia.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Trade Guardian"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://premierbookkeeping.co.uk/",
+      "title": "Premier Bookkeeping & Business Services | Banbury, Oxfordshire",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Premier Bookkeeping & Business Services is a trusted bookkeeping firm based in Banbury, Oxfordshire, with over two decades of experience in bookkeeping and management reporting.",
+      "statement": "Premier is a Banbury bookkeeping firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Premier Bookkeeping & Business Services"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://premierbookkeeping.co.uk/",
+      "title": "Premier Bookkeeping & Business Services | Banbury, Oxfordshire",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Certified Xero and Dext experts. Work with us from anywhere in the UK — fully virtual.",
+      "statement": "Premier is certified in Xero and Dext.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Premier Bookkeeping & Business Services"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.booksandbusiness.co.uk/bookkeeping-services",
+      "title": "Bookkeeping Services Surrey | Books & Business",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Support with QuickBooks, Xero, and Dext to keep systems efficient and easy to use.",
+      "statement": "Books & Business supports QuickBooks, Xero and Dext.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Books & Business"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.booksandbusiness.co.uk/bookkeeping-services",
+      "title": "Bookkeeping Services Surrey | Books & Business",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We support sole traders, contractors, and small businesses across Surrey and the UK",
+      "statement": "Based in Surrey, UK.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Books & Business"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://www.booksandbusiness.co.uk/about-us",
+      "title": "About Books & Business | Surrey Bookkeeping Services",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Books & Business is led by Vivian Marsden, an AAT Level 4 qualified bookkeeper with over 25 years’ experience supporting small businesses.",
+      "statement": "Named leader of the firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Books & Business"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://brickbooksandpayroll.com/",
+      "title": "Construction Accountants for Trades | CIS Specialists",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CIS, VAT reverse charge, payroll and year end accounts, handled by a practice that works with nothing else. Based in Bedford, working with Trades and Construction businesses across the country",
+      "statement": "Brickbooks is a Bedford practice working only with trades and construction.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Brickbooks & Payroll"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://brickbooksandpayroll.com/bookkeeping/",
+      "title": "Construction Bookkeeping for Builders & Trades: From £45/mo",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Invoices with VAT or CIS shown wrongly are picked up, and the supplier is asked for a corrected invoice.",
+      "statement": "Brickbooks describes catching supplier invoices with wrong VAT/CIS as part of its service.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Brickbooks & Payroll"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://brickbooksandpayroll.com/bookkeeping/",
+      "title": "Construction Bookkeeping for Builders & Trades: From £45/mo",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Your Xero subscription is separate, in your own name, so your records always stay yours.",
+      "statement": "Brickbooks works in Xero.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Brickbooks & Payroll"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://www.b4bookkeeping.co.uk/",
+      "title": "B4Bookkeeping | Bookkeepers | Chichester PO20 | PO19",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are Chichester bookkeepers who love to help you with your books",
+      "statement": "B4Bookkeeping is a Chichester bookkeeping firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "B4Bookkeeping"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://www.b4bookkeeping.co.uk/meet-the-team",
+      "title": "Chichester Accountants based team has been doing bookkeeping over 10 years B4Bookkeeping",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With over 250 clients we have experience in every Sector, from £m Retailers to the local plumber.",
+      "statement": "B4Bookkeeping has 250+ clients.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "B4Bookkeeping"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://www.b4bookkeeping.co.uk/",
+      "title": "B4Bookkeeping | Bookkeepers | Chichester PO20 | PO19",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Bookkeeping: We will manage all your bookkeeping online with Xero or FreeAgent",
+      "statement": "Uses Xero or FreeAgent.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "B4Bookkeeping"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://constructlinkfinance.co.uk/compliance/",
+      "title": "Construction Bookkeeping, VAT & CIS | ConstructLink",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We support Xero and QuickBooks Online only and review your existing accounting setup before recommending any change.",
+      "statement": "ConstructLink works on Xero and QBO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ConstructLink"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://constructlinkfinance.co.uk/why-constructlink/",
+      "title": "Why ConstructLink | ConstructLink",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Support shaped around the structures, tax responsibilities and workflows common in small construction and trade businesses.",
+      "statement": "ConstructLink serves small construction and trade businesses.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ConstructLink"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://tradermate.co.uk/about-us/",
+      "title": "About us - Tradermate",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We only use Xero for our tradespeople’s bookkeeping, and we love Dext for the electronic document capture feature it offers.",
+      "statement": "Tradermate uses Xero and Dext for tradespeople.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tradermate"
+    },
+    {
+      "ref": "ev-89",
+      "url": "https://tradermate.co.uk/about-us/",
+      "title": "About us - Tradermate",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "members of the FSB and Chichester Chamber of Commerce and Industry",
+      "statement": "Member of the Chichester Chamber of Commerce.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tradermate"
+    },
+    {
+      "ref": "ev-90",
+      "url": "https://aceybookkeeping.co.uk/xero-bookkeeping-services/",
+      "title": "Bookkeeping Services UK 2026: What It Costs | Acey",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "At Acey Bookkeeping we are a mother and daughter team based in Rochester with more than 40 years of combined experience, and we are certified Xero advisors.",
+      "statement": "Acey Bookkeeping is a Rochester firm of certified Xero advisors.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Acey Bookkeeping"
+    },
+    {
+      "ref": "ev-91",
+      "url": "https://aceybookkeeping.co.uk/xero-bookkeeping-services/",
+      "title": "Bookkeeping Services UK 2026: What It Costs | Acey",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Pulling supplier bills and receipts in through Hubdoc or Dext, checking VAT is captured correctly, and attaching the evidence to each transaction.",
+      "statement": "Acey's service explicitly includes checking VAT captured by Hubdoc/Dext on supplier bills.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Acey Bookkeeping"
+    },
+    {
+      "ref": "ev-92",
+      "url": "https://aceybookkeeping.co.uk/about/",
+      "title": "Anne & Lisa - Bookkeepers at Acey Bookkeeping | Medway, Kent.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hi, I’m Anne Collins – Financial Director, business financial partner, auditor, qualified ICB L3 bookkeeper and payroll expert",
+      "statement": "Named Financial Director.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Acey Bookkeeping"
+    },
+    {
+      "ref": "ev-93",
+      "url": "https://aceybookkeeping.co.uk/about/",
+      "title": "Anne & Lisa - Bookkeepers at Acey Bookkeeping | Medway, Kent.",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hi, I’m Lisa Pirie – Operations Director, business financial partner and qualified ICB L3 bookkeeper",
+      "statement": "Named Operations Director.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Acey Bookkeeping"
+    },
+    {
+      "ref": "ev-94",
+      "url": "https://www.ookkee.co.uk/",
+      "title": "Outsourced bookkeeping with insights and clarity | Ookkee",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Utilising a complimentary suite of cloud technology and streamlined processes, we save businesses money on their accounting",
+      "statement": "Ookkee is an outsourced cloud bookkeeping firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ookkee"
+    },
+    {
+      "ref": "ev-95",
+      "url": "https://www.ookkee.co.uk/our-team",
+      "title": "Our Team — Ookkee - Outsourced Bookkeeping with Insights and Clarity",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Client Manager - Bournemouth",
+      "statement": "Team page lists Bournemouth staff.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ookkee"
+    },
+    {
+      "ref": "ev-96",
+      "url": "https://www.ookkee.co.uk/our-team",
+      "title": "Our Team — Ookkee - Outsourced Bookkeeping with Insights and Clarity",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Paul Clarke - Co-Founder",
+      "statement": "Named co-founder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ookkee"
+    },
+    {
+      "ref": "ev-97",
+      "url": "https://www.ookkee.co.uk/our-team",
+      "title": "Our Team — Ookkee - Outsourced Bookkeeping with Insights and Clarity",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Todd Robertson - Practice Manager",
+      "statement": "Named practice manager.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ookkee"
+    },
+    {
+      "ref": "ev-98",
+      "url": "https://www.ghld.uk.com/services/business-services/bookkeeping-vat/",
+      "title": "Bookkeeping & VAT Services | Harrow",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our team are experts in the leading software packages including QuickBooks, Xero and Sage.",
+      "statement": "GHLD's bookkeepers work in QuickBooks, Xero and Sage.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "GHLD"
+    },
+    {
+      "ref": "ev-99",
+      "url": "https://www.ghld.uk.com/sectors/hospitality/",
+      "title": "Accountants for Hospitality | Harrow",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Accountants for Hospitality | Harrow",
+      "statement": "GHLD (Harrow) serves hospitality.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "GHLD"
+    },
+    {
+      "ref": "ev-100",
+      "url": "https://easysolutionsgroup.squarespace.com/xero-for-you",
+      "title": "XERO Bookkeeping and Tax Accountant",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We offer a complete online Xero cloud bookkeeping and accounting solutions in Gloucester, London and across the UK for small businesses like yours",
+      "statement": "Easy Solutions offers Xero bookkeeping in Gloucester and London.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Easy Solutions Group"
+    },
+    {
+      "ref": "ev-101",
+      "url": "https://easysolutionsgroup.squarespace.com/xero-for-you",
+      "title": "XERO Bookkeeping and Tax Accountant",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We organise your bookkeeping with Xero and Hubdoc",
+      "statement": "Uses Xero and Hubdoc.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Easy Solutions Group"
+    },
+    {
+      "ref": "ev-102",
+      "url": "https://thetaxcom.co.uk/why-choose-bookkeeping-services-in-manchester/",
+      "title": "Why Businesses Choose Bookkeeping Services in Manchester",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We operate from our Manchester office, giving local bookkeeping support to small limited companies, sole traders, landlords, and growing companies.",
+      "statement": "The Taxcom provides bookkeeping from Manchester.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Taxcom"
+    },
+    {
+      "ref": "ev-103",
+      "url": "https://thetaxcom.co.uk/why-choose-bookkeeping-services-in-manchester/",
+      "title": "Why Businesses Choose Bookkeeping Services in Manchester",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Digital receipt capture through apps like Dext or the built-in tools in Xero and QuickBooks cuts the risk of lost paperwork.",
+      "statement": "Mentions Dext and Xero/QuickBooks capture.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Taxcom"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "73bf9a23-1e8b-4a37-bb9b-eaeda0e55699",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Users of Hubdoc, Dext and Xero publicly report duplicate bills slipping through capture-tool checks (reissued/amended invoices, mis-read fields), including double payments to suppliers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-03",
+            "ev-07"
+          ]
+        },
+        {
+          "statement": "Dext users describe tax rounding and foreign-currency VAT corrections as frequent, manual pre-publish fixes.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Supplier-identification issues are evidenced only by one small hands-on test (inconsistent supplier-name normalisation, empty VAT-number field), not by practice data.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-09"
+          ]
+        },
+        {
+          "statement": "No source gives a rate (errors per 100 documents) for any practice; frequency is anecdotal.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "45550df6-222b-401f-bbc3-2553b19175ab",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "One team says it spends a 'significant amount of time' reviewing and removing duplicate bills, but no minutes per invoice are given.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02"
+          ]
+        },
+        {
+          "statement": "Dext's own January 2026 figures (31.4M documents processed in ~206,000 hours) imply about 24 seconds of handling per document inside Dext, so the residual review time available to save is small per document.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-35"
+          ]
+        },
+        {
+          "statement": "Dext claims AI Assist already automates 83% of edits, which would shrink the remaining correction time further if accurate.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-19"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "60c9d3bd-3a18-4f73-903b-ac49be3cddfc",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Firms prevent repeat errors mainly with capture-tool configuration: Dext Supplier Rules (default category, tax rate, auto-publish) and Hubdoc supplier publishing rules.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-21",
+            "ev-11"
+          ]
+        },
+        {
+          "statement": "Dext AI Assist (launched March 2026) learns practice-level supplier and tax treatments from corrections and applies them practice-wide or per client with review; Dext's Advanced plan is marketed on stopping repeat corrections.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-17",
+            "ev-18",
+            "ev-20"
+          ]
+        },
+        {
+          "statement": "Post-capture checks already exist in Dext Precision, XBert, Xero's native duplicate detection and ApprovalMax.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23",
+            "ev-24",
+            "ev-26",
+            "ev-28"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "d506d1b7-d530-4df9-9ff3-829ae612bbf1",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Documented capture-tool gaps: Hubdoc duplicate matching needs supplier, date and amount to match exactly; Dext does not catch same-number invoices with changed amounts; QuickBooks only matches vendor + bill number.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-03",
+            "ev-08"
+          ]
+        },
+        {
+          "statement": "Reviewers say tax treatment and supplier rules still need human review after capture.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10"
+          ]
+        },
+        {
+          "statement": "Several gaps (per-supplier duplicate review, side-by-side comparison, learned supplier treatments) are already addressed inside Dext, and well-configured supplier rules are said to make an extra review queue unnecessary.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22",
+            "ev-17",
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "Hubdoc is the less satisfied segment (3.3/5 on the UK Xero App Store vs Dext 4.8/5).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16",
+            "ev-36"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "87db348c-4e16-47a9-9a24-14a61d81458d",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Firms face capacity pressure (more work without more staff) and UK accountants plan higher tech spend.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-14",
+            "ev-15"
+          ]
+        },
+        {
+          "statement": "Duplicate payments damage client trust and are hard to recover.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07"
+          ]
+        },
+        {
+          "statement": "No evidence ties these specific errors to firm profitability figures.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "403edc5d-7012-4509-998a-a453d563dd20",
+      "status": "no_evidence_found",
+      "summary": []
+    },
+    {
+      "unknown_id": "c341ed01-4e11-42cb-b85b-50bceff6c376",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Practitioners caution against auto-posting before extraction is verified, consistent with the idea's read-only stance.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-11"
+          ]
+        },
+        {
+          "statement": "Firms report tool overload and are standardising their stacks, a headwind for another add-on.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-37",
+            "ev-38"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "For practices already on Dext Advanced with AI Assist, what share of documents still need a manual correction after publish-review, and how many minutes per month does that take?",
+      "category": "cost",
+      "priority": "high"
+    },
+    {
+      "question": "Is the reachable market mainly Hubdoc/AutoEntry/QuickBooks-capture practices that lack Dext's learning layer?",
+      "category": "alternatives",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Dext (Prepare + AI Assist)",
+      "url": "https://dext.com",
+      "kind": "direct",
+      "description": "Capture tool with supplier rules, per-supplier duplicate review and AI Assist that learns practice-level supplier/tax corrections; covers most of the proposed wedge.",
+      "pricing_note": "AI Assist listed at $10.5/month on the business plan (third-party pricing review, Oct 2026); Core guidance included in partner subscriptions at no extra cost.",
+      "evidence_refs": [
+        "ev-17",
+        "ev-19",
+        "ev-20",
+        "ev-21",
+        "ev-22",
+        "ev-34"
+      ],
+      "sentiment": [
+        {
+          "statement": "Rated 4.8/5 from 1,119 UK Xero App Store reviews; users praise that it learns and applies codes.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36"
+          ]
+        },
+        {
+          "statement": "Users complain about missed same-number duplicates and tax rounding fixes.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-03",
+            "ev-04"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Dext Precision",
+      "url": "https://dext.com",
+      "kind": "direct",
+      "description": "Practice-wide data health checks on Xero files: mis-coded invoices and irregular transactions by contact history.",
+      "evidence_refs": [
+        "ev-23"
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "XBert",
+      "url": "https://www.xbert.io",
+      "kind": "direct",
+      "description": "150+ data-quality checks across a practice's client files (GST/VAT coding, duplicate invoices/payments) with human-approved fixes.",
+      "evidence_refs": [
+        "ev-24",
+        "ev-25"
+      ]
+    },
+    {
+      "ref": "comp-04",
+      "name": "Hubdoc",
+      "url": "https://www.hubdoc.com",
+      "kind": "indirect",
+      "description": "Xero's capture tool with supplier publishing rules and exact-match duplicate detection.",
+      "evidence_refs": [
+        "ev-01",
+        "ev-11",
+        "ev-16"
+      ],
+      "sentiment": [
+        {
+          "statement": "Rated 3.3/5 with 28% one-star reviews on the UK Xero App Store.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-05",
+      "name": "Xero native duplicate detection and Smart Document capture",
+      "url": "https://www.xero.com",
+      "kind": "indirect",
+      "description": "Native duplicate-bill review (contact, reference, amount) and capture showing the source document beside the entry screen.",
+      "evidence_refs": [
+        "ev-26",
+        "ev-27"
+      ]
+    },
+    {
+      "ref": "comp-06",
+      "name": "ApprovalMax",
+      "url": "https://www.approvalmax.com",
+      "kind": "indirect",
+      "description": "Bill approval workflow for Xero that flags potential duplicates at every approval stage.",
+      "evidence_refs": [
+        "ev-28"
+      ]
+    },
+    {
+      "ref": "comp-07",
+      "name": "Lightyear",
+      "url": "https://www.lightyear.cloud",
+      "kind": "indirect",
+      "description": "AP automation with rule-based account/tax coding and price verification before Xero sync.",
+      "evidence_refs": [
+        "ev-29"
+      ]
+    },
+    {
+      "ref": "comp-08",
+      "name": "Keeper",
+      "url": "https://keeper.app",
+      "kind": "indirect",
+      "description": "US bookkeeping-firm platform with file review to detect coding errors in QuickBooks/Xero.",
+      "evidence_refs": [
+        "ev-30"
+      ]
+    },
+    {
+      "ref": "comp-09",
+      "name": "Receiptor AI",
+      "url": "https://receiptor.ai",
+      "kind": "direct",
+      "description": "Hubdoc alternative with mathematical validation, AI review and duplicate handling.",
+      "evidence_refs": [
+        "ev-31"
+      ]
+    },
+    {
+      "ref": "comp-10",
+      "name": "US Tech Automations (Zapier/Make/n8n exception queues)",
+      "url": "https://ustechautomations.com",
+      "kind": "service",
+      "description": "Agency building custom exception queues and duplicate checks on automation platforms.",
+      "evidence_refs": [
+        "ev-33"
+      ]
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Practices rely on capture-tool configuration (Dext Supplier Rules, Hubdoc supplier publishing rules) plus a human review before publish.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-21",
+        "ev-11",
+        "ev-10"
+      ]
+    },
+    {
+      "statement": "Dext now learns practice-level corrections with AI Assist and markets stopping repeat corrections directly.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-17",
+        "ev-20"
+      ]
+    },
+    {
+      "statement": "Post-capture checks come from data-health tools (Dext Precision, XBert) and native ledger duplicate detection (Xero, QuickBooks).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-23",
+        "ev-24",
+        "ev-26",
+        "ev-08"
+      ]
+    },
+    {
+      "statement": "Some practices sell the checking itself as a service step (catching wrong VAT/CIS on supplier invoices, checking VAT capture).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-81",
+        "ev-91"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Digit",
+      "website": "https://digit.business",
+      "icp_id": null,
+      "location": "Perth, WA, Australia",
+      "industry": "Outsourced bookkeeping",
+      "description": "Perth outsourced Xero bookkeeping firm (30+ staff) with a trades/construction service that runs Dext into Xero.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-39"
+      },
+      "technologies": [
+        "Xero",
+        "Dext",
+        "simPRO"
+      ],
+      "evidence_refs": [
+        "ev-39",
+        "ev-40",
+        "ev-41"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Mid-sized outsourced bookkeeping firm serving trades.",
+          "evidence_refs": [
+            "ev-39",
+            "ev-41"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Uses Dext with Xero for trades clients.",
+          "evidence_refs": [
+            "ev-40"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Andrew Erkins",
+          "role": "Founder & CEO",
+          "email": null,
+          "evidence_ref": "ev-42"
+        },
+        {
+          "name": "Leah Moore",
+          "role": "Founder & Managing Partner",
+          "email": null,
+          "evidence_ref": "ev-43"
+        }
+      ],
+      "size_estimate": {
+        "min": 30,
+        "max": null,
+        "signal": "About page: 30+ across Australia and the Philippines",
+        "evidence_ref": "ev-41"
+      }
+    },
+    {
+      "ref": "co-02",
+      "name": "Rainforest Bookkeeping",
+      "website": "https://www.rainforestbookkeeping.com.au",
+      "icp_id": null,
+      "location": "Australia",
+      "industry": "Bookkeeping",
+      "description": "Small Australian cloud bookkeeping team on Xero + Dext (and already XBert) serving trades and construction.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-44"
+      },
+      "technologies": [
+        "Xero",
+        "Dext",
+        "XBert"
+      ],
+      "evidence_refs": [
+        "ev-44",
+        "ev-45",
+        "ev-46"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small bookkeeping practice serving trades/construction.",
+          "evidence_refs": [
+            "ev-46"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "States Xero, Dext and XBert (a competing review layer).",
+          "evidence_refs": [
+            "ev-45"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Entire Bookkeepers",
+      "website": "https://entirebookkeepers.com.au",
+      "icp_id": null,
+      "location": "Gold Coast, QLD, Australia",
+      "industry": "Bookkeeping",
+      "description": "Gold Coast bookkeeping firm, Xero advisor and BAS agent.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-48"
+      },
+      "technologies": [
+        "Xero"
+      ],
+      "evidence_refs": [
+        "ev-47",
+        "ev-48"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Bookkeeping firm on Xero; sector and size not stated.",
+          "evidence_refs": [
+            "ev-47"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Xero advisor; capture tool not stated.",
+          "evidence_refs": [
+            "ev-47"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Odette Pieterse",
+          "role": "Managing Director",
+          "email": null,
+          "evidence_ref": "ev-49"
+        }
+      ]
+    },
+    {
+      "ref": "co-04",
+      "name": "Northern Beaches Bookkeeping Solutions",
+      "website": "https://northernbeachesbookkeepingsolutions.com.au",
+      "icp_id": null,
+      "location": "Belrose, Sydney, Australia",
+      "industry": "Bookkeeping",
+      "description": "Four-person Sydney bookkeeping team specialising in builders and tradies, onboarding them to Dext + Xero.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-50"
+      },
+      "technologies": [
+        "Xero",
+        "Dext"
+      ],
+      "evidence_refs": [
+        "ev-50",
+        "ev-51",
+        "ev-52"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small trades-focused bookkeeping firm.",
+          "evidence_refs": [
+            "ev-50",
+            "ev-51"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Uses Dext and Xero for tradie clients.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Coralie Downie",
+          "role": "Business owner",
+          "email": null,
+          "evidence_ref": "ev-52"
+        }
+      ],
+      "size_estimate": {
+        "min": 4,
+        "max": 4,
+        "signal": "About page: team of four",
+        "evidence_ref": "ev-52"
+      }
+    },
+    {
+      "ref": "co-05",
+      "name": "Diverse Business Consultants",
+      "website": "https://www.diversebc.com.au",
+      "icp_id": null,
+      "location": "Queensland, Australia (remote team)",
+      "industry": "Outsourced bookkeeping",
+      "description": "34-person Australian outsourced Xero bookkeeping firm, Dext Advanced Partner, serving builders, trades and hospitality.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-53"
+      },
+      "technologies": [
+        "Xero",
+        "Dext"
+      ],
+      "evidence_refs": [
+        "ev-53",
+        "ev-54",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Mid-sized outsourced bookkeeping firm focused on trades.",
+          "evidence_refs": [
+            "ev-53",
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Dext Advanced Partner on Xero.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Sarah Parkinson",
+          "role": "CEO",
+          "email": null,
+          "evidence_ref": "ev-56"
+        }
+      ],
+      "size_estimate": {
+        "min": 34,
+        "max": 34,
+        "signal": "About page: 34 people strong",
+        "evidence_ref": "ev-55"
+      }
+    },
+    {
+      "ref": "co-06",
+      "name": "VNC Australia",
+      "website": "https://vncaustralia.com.au",
+      "icp_id": null,
+      "location": "Australia",
+      "industry": "Bookkeeping",
+      "description": "Bookkeeping firm for wholesale/distribution clients (high supplier-invoice volume) using Dext/Hubdoc.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      },
+      "technologies": [
+        "Dext",
+        "Hubdoc",
+        "Xero",
+        "QuickBooks"
+      ],
+      "evidence_refs": [
+        "ev-57",
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Serves wholesale/inventory-heavy clients with many supplier bills.",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Dext and Hubdoc for AP automation.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Cafe Bookkeepers",
+      "website": "https://cafebookkeepers.com.au",
+      "icp_id": null,
+      "location": "Alexandria, Sydney, Australia",
+      "industry": "Bookkeeping (hospitality)",
+      "description": "Sydney bookkeeping firm serving 130+ hospitality clients, the segment with the heaviest supplier-bill volume.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-59",
+        "ev-60"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Hospitality-only bookkeeping firm with 130+ clients.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Nick Hazel",
+          "role": "Director",
+          "email": null,
+          "evidence_ref": "ev-61"
+        },
+        {
+          "name": "Toshio Ishikura",
+          "role": "Senior Bookkeeper",
+          "email": null,
+          "evidence_ref": "ev-62"
+        }
+      ]
+    },
+    {
+      "ref": "co-08",
+      "name": "Book Balance",
+      "website": "https://www.bookbalance.com.au",
+      "icp_id": null,
+      "location": "Sydney North Shore, Australia",
+      "industry": "Bookkeeping",
+      "description": "Small Sydney bookkeeping practice on Xero serving tradies and cafés.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [
+        "Xero"
+      ],
+      "evidence_refs": [
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small bookkeeping practice.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Xero certified advisor.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Wendy Maloney",
+          "role": "Founder",
+          "email": null,
+          "evidence_ref": "ev-64"
+        }
+      ]
+    },
+    {
+      "ref": "co-09",
+      "name": "BASLink Bookkeeping",
+      "website": "https://baslink.com.au",
+      "icp_id": null,
+      "location": "Central Coast, NSW, Australia",
+      "industry": "Bookkeeping",
+      "description": "Central Coast bookkeeping firm on Xero whose clients are largely trades and subcontractors.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [
+        "Xero"
+      ],
+      "evidence_refs": [
+        "ev-65",
+        "ev-66",
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Trades-heavy bookkeeping practice.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Xero certified.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "Lucent Advisory",
+      "website": "https://www.lucentadvisory.com.au",
+      "icp_id": null,
+      "location": "Adelaide, SA, Australia",
+      "industry": "Accounting and bookkeeping",
+      "description": "Adelaide firm with an outsourced bookkeeping line on Xero + Dext (Dext case-study customer).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-69"
+      },
+      "technologies": [
+        "Xero",
+        "Dext"
+      ],
+      "evidence_refs": [
+        "ev-68",
+        "ev-69",
+        "ev-70"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Firm with a dedicated bookkeeping service line.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Xero + Dext Prepare.",
+          "evidence_refs": [
+            "ev-70"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Amanda Bell Bookkeeping",
+      "website": "https://www.amandabellbookkeeping.com.au",
+      "icp_id": null,
+      "location": "Northern Beaches, Sydney, Australia",
+      "industry": "Bookkeeping",
+      "description": "Sole-practitioner tradie bookkeeper on Xero (likely too small for a per-practice subscription).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      },
+      "technologies": [
+        "Xero"
+      ],
+      "evidence_refs": [
+        "ev-71",
+        "ev-72"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Sole practitioner; trades focus.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Xero certified.",
+          "evidence_refs": [
+            "ev-72"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "Trade Guardian",
+      "website": "https://tradeguardian.com.au",
+      "icp_id": null,
+      "location": "Canberra, Australia",
+      "industry": "Bookkeeping (trades)",
+      "description": "Trades bookkeeping/admin service; weak match (no tools or team stated).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-73",
+        "ev-74"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Trades bookkeeping, little detail.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Premier Bookkeeping & Business Services",
+      "website": "https://premierbookkeeping.co.uk",
+      "icp_id": null,
+      "location": "Banbury, Oxfordshire, UK",
+      "industry": "Bookkeeping",
+      "description": "UK bookkeeping firm, certified Xero and Dext, with CIS/construction clients.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-75"
+      },
+      "technologies": [
+        "Xero",
+        "Dext"
+      ],
+      "evidence_refs": [
+        "ev-75",
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Established UK bookkeeping firm.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Xero + Dext.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Books & Business",
+      "website": "https://www.booksandbusiness.co.uk",
+      "icp_id": null,
+      "location": "Surrey, UK",
+      "industry": "Bookkeeping",
+      "description": "Surrey bookkeeping firm and Dext Partner on QuickBooks/Xero serving trades.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-78"
+      },
+      "technologies": [
+        "Xero",
+        "QuickBooks",
+        "Dext"
+      ],
+      "evidence_refs": [
+        "ev-77",
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small UK bookkeeping firm.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "QuickBooks, Xero and Dext.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Vivian Marsden",
+          "role": "Lead bookkeeper (leads the firm)",
+          "email": null,
+          "evidence_ref": "ev-79"
+        }
+      ]
+    },
+    {
+      "ref": "co-15",
+      "name": "Brickbooks & Payroll",
+      "website": "https://brickbooksandpayroll.com",
+      "icp_id": null,
+      "location": "Bedford, UK",
+      "industry": "Bookkeeping (construction)",
+      "description": "Construction-only Bedford bookkeeping practice on Xero that already catches wrong VAT/CIS on supplier invoices.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-80"
+      },
+      "technologies": [
+        "Xero"
+      ],
+      "evidence_refs": [
+        "ev-80",
+        "ev-81",
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Construction-only bookkeeping practice.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Xero; capture tool not stated.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Explicitly handles wrong VAT/CIS on supplier invoices.",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "B4Bookkeeping",
+      "website": "https://www.b4bookkeeping.co.uk",
+      "icp_id": null,
+      "location": "Chichester, UK",
+      "industry": "Bookkeeping",
+      "description": "Chichester bookkeeping firm with 250+ clients including trades, on Xero.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-83"
+      },
+      "technologies": [
+        "Xero",
+        "FreeAgent"
+      ],
+      "evidence_refs": [
+        "ev-83",
+        "ev-84",
+        "ev-85"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Bookkeeping firm with 250+ clients.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Xero/FreeAgent.",
+          "evidence_refs": [
+            "ev-85"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "ConstructLink",
+      "website": "https://constructlinkfinance.co.uk",
+      "icp_id": null,
+      "location": "UK",
+      "industry": "Bookkeeping (construction)",
+      "description": "UK construction/trades bookkeeping service on Xero/QBO using Hubdoc or QuickBooks receipt capture. Location shown only by its CIS/UK focus.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-87"
+      },
+      "technologies": [
+        "Xero",
+        "QuickBooks Online",
+        "Hubdoc"
+      ],
+      "evidence_refs": [
+        "ev-86",
+        "ev-87"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Construction-focused bookkeeping.",
+          "evidence_refs": [
+            "ev-87"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Xero/QBO only.",
+          "evidence_refs": [
+            "ev-86"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Tradermate",
+      "website": "https://tradermate.co.uk",
+      "icp_id": null,
+      "location": "Chichester, West Sussex, UK",
+      "industry": "Bookkeeping (trades)",
+      "description": "Small UK trades bookkeeping team on Xero + Dext.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-89"
+      },
+      "technologies": [
+        "Xero",
+        "Dext"
+      ],
+      "evidence_refs": [
+        "ev-88",
+        "ev-89"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Trades-only bookkeeping team.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Xero + Dext.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "Acey Bookkeeping",
+      "website": "https://aceybookkeeping.co.uk",
+      "icp_id": null,
+      "location": "Rochester, Kent, UK",
+      "industry": "Bookkeeping",
+      "description": "Kent Xero bookkeeping firm that pulls supplier bills via Hubdoc/Dext and checks VAT capture for builders and cafés.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-90"
+      },
+      "technologies": [
+        "Xero",
+        "Hubdoc",
+        "Dext"
+      ],
+      "evidence_refs": [
+        "ev-90",
+        "ev-91"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small bookkeeping firm serving builders and hospitality.",
+          "evidence_refs": [
+            "ev-90"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Hubdoc/Dext with Xero.",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Describes VAT-capture checking on supplier bills as a service step.",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Anne Collins",
+          "role": "Financial Director",
+          "email": null,
+          "evidence_ref": "ev-92"
+        },
+        {
+          "name": "Lisa Pirie",
+          "role": "Operations Director",
+          "email": null,
+          "evidence_ref": "ev-93"
+        }
+      ]
+    },
+    {
+      "ref": "co-20",
+      "name": "Ookkee",
+      "website": "https://www.ookkee.co.uk",
+      "icp_id": null,
+      "location": "Bournemouth, UK",
+      "industry": "Outsourced bookkeeping",
+      "description": "South-coast UK outsourced bookkeeping firm with a multi-person team (tools not stated in fetched text).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-95"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-94",
+        "ev-95"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Outsourced bookkeeping firm with a staffed team.",
+          "evidence_refs": [
+            "ev-94"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Paul Clarke",
+          "role": "Co-Founder",
+          "email": null,
+          "evidence_ref": "ev-96"
+        },
+        {
+          "name": "Todd Robertson",
+          "role": "Practice Manager",
+          "email": null,
+          "evidence_ref": "ev-97"
+        }
+      ]
+    },
+    {
+      "ref": "co-21",
+      "name": "GHLD",
+      "website": "https://www.ghld.uk.com",
+      "icp_id": null,
+      "location": "Harrow, London, UK",
+      "industry": "Accounting with bookkeeping",
+      "description": "Harrow accounting firm with a bookkeeping line and a hospitality specialism.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-99"
+      },
+      "technologies": [
+        "Xero",
+        "QuickBooks",
+        "Sage"
+      ],
+      "evidence_refs": [
+        "ev-98",
+        "ev-99"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Accounting firm with bookkeeping line.",
+          "evidence_refs": [
+            "ev-98"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "QuickBooks/Xero/Sage.",
+          "evidence_refs": [
+            "ev-98"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-22",
+      "name": "Easy Solutions Group",
+      "website": "https://easysolutionsgroup.squarespace.com",
+      "icp_id": null,
+      "location": "Gloucester and London, UK",
+      "industry": "Bookkeeping",
+      "description": "UK Xero + Hubdoc bookkeeping provider (Hubdoc users have weaker duplicate checks).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-100"
+      },
+      "technologies": [
+        "Xero",
+        "Hubdoc"
+      ],
+      "evidence_refs": [
+        "ev-100",
+        "ev-101"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small bookkeeping provider.",
+          "evidence_refs": [
+            "ev-100"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Xero + Hubdoc.",
+          "evidence_refs": [
+            "ev-101"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-23",
+      "name": "The Taxcom",
+      "website": "https://thetaxcom.co.uk",
+      "icp_id": null,
+      "location": "Manchester, UK",
+      "industry": "Accounting with bookkeeping",
+      "description": "Manchester firm offering bookkeeping; mentions Dext/Xero/QuickBooks capture generically.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-102"
+      },
+      "technologies": [
+        "Xero",
+        "QuickBooks"
+      ],
+      "evidence_refs": [
+        "ev-102",
+        "ev-103"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Bookkeeping line at an accounting firm.",
+          "evidence_refs": [
+            "ev-102"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Mentions Dext only generically.",
+          "evidence_refs": [
+            "ev-103"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
