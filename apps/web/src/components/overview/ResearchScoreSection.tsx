@@ -71,7 +71,7 @@ export function ResearchScoreSection() {
               <p className="text-sm text-muted-foreground">Nothing more to gain from desk research. Contact customers.</p>
             )}
             <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
-              Rules v{score.version} · verified, medium/high-relevance sources only · one count per domain
+              Rules v{score.version} · verified, medium/high-relevance sources only · one count per domain · first-hand sources weigh most · direct competitors reduce open space
             </p>
           </div>
         </div>

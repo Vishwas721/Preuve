@@ -339,7 +339,7 @@ export interface ProspectDetail extends ProspectSummary {
 export type ResearchBand = "strong" | "promising" | "weak";
 
 export interface ResearchDimension {
-  key: "problem" | "pain" | "balance" | "questions" | "alternatives" | "reachability";
+  key: "problem" | "pain" | "balance" | "questions" | "open_space" | "reachability";
   label: string;
   points: number;
   max: number;
