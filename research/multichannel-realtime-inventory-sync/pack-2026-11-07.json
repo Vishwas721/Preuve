@@ -1,0 +1,3066 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "9e5ced59-7d26-4168-a8dc-e7273f7fecd1",
+    "researcher": "claude-code",
+    "started_at": "2026-11-07T09:00:00Z",
+    "finished_at": "2026-11-07T13:30:00Z",
+    "queries": [
+      "Shopify TikTok Shop oversold inventory sync delay reddit",
+      "Shopify community overselling Amazon inventory sync not updating",
+      "TikTok Shop seller cancellation rate oversold penalty policy",
+      "Amazon cancellation rate 2.5% seller-fulfilled out of stock account health",
+      "\"oversold\" reddit r/FulfillmentByAmazon Shopify inventory sync cancelled orders",
+      "Shopify Marketplace Connect pricing Amazon inventory sync free 50 orders",
+      "TikTok Shop Shopify app inventory sync real-time help center sync frequency",
+      "Unicommerce EasyEcom Flipkart Meesho Amazon Shopify inventory sync overselling India sellers",
+      "\"buffer\" stock oversell \"never had an issue\" Shopify Amazon inventory sync works fine community",
+      "Sellbrite pricing plans sync every 15 minutes order volume",
+      "CedCommerce TikTok Shop integration Shopify app reviews inventory sync",
+      "Flipkart seller cancellation penalty out of stock seller cancellation fee",
+      "TikTok Shop app for Shopify inventory sync real-time official Shopify help center",
+      "job ecommerce operations TikTok Shop Amazon Shopify inventory oversell",
+      "Linnworks pricing per month minimum small sellers too expensive review",
+      "survey ecommerce sellers overselling percent stockouts multichannel inventory accuracy report",
+      "reddit shopify oversold TikTok Shop inventory sync app cancel orders",
+      "Sumtracker Babymaxi case study overselling incidents",
+      "ecommerce operations manager job TikTok Shop Amazon Shopify inventory greenhouse lever workable",
+      "modernretail brand sells on TikTok Shop Amazon and its Shopify site oversold inventory",
+      "Shopify App Store reviews of QuickSync for TikTok Shop, CedCommerce TikTok Shop, CS Amazon Integration & Sync, Marketplace Connect (prospect sourcing)"
+    ],
+    "notes": "Contradiction searches: 'sync works fine'/buffers, native TikTok/Marketplace Connect real-time claims, and vendor real-time claims. Amazon Seller Central help (cancellation rate), Capterra, linnworks.com, unicommerce.com, ProductHunt and most job boards were unfetchable, so Amazon's 2.5% threshold is cited from a seller-education publisher (SalesDuo). Reddit is cited via an archived snapshot. Prevalence figures (Nventory survey, Sumtracker case study) are vendor-published. No independent data on oversell frequency per peak or dollar cost per oversell; no merchant states a required latency. Prospects: 22 US Shopify merchants found via store names printed next to their reviews of Shopify-TikTok Shop / Amazon / marketplace sync apps on the Shopify App Store (reviews attributed by page order: store info follows its review), located via their own contact/about pages. Four use Marketplace Connect (eBay/Amazon/Walmart) rather than TikTok/Amazon-specific apps. Headcount verified only for Bjorem Speech; MERIT Beauty is likely above the SMB band; Tampon Tribe and RivaMira state only 'US'. Contacts only where the company's own page names an owner/founder (3). India ICP not prospected."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://community.shopify.com/t/best-way-to-keep-shopify-and-amazon-inventory-in-sync/561926",
+      "title": "Best way to keep Shopify and Amazon inventory in sync?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "A sale goes through on Amazon and Shopify doesn’t update fast enough… then the same item sells on Shopify and we end up overselling. Super frustrating.",
+      "statement": "A Shopify + Amazon seller on the Shopify Community says Shopify does not update fast enough after an Amazon sale, so the same item sells twice and they oversell.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://community.shopify.com/t/best-way-to-keep-shopify-and-amazon-inventory-in-sync/561926",
+      "title": "Best way to keep Shopify and Amazon inventory in sync?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Shopify has no native real-time inventory sync with Amazon or FBA. Inventory can lag, and overselling is common without third-party help.",
+      "statement": "A reply in the same thread states Shopify has no native real-time inventory sync with Amazon/FBA and that overselling is common without a third-party app.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://community.shopify.com/t/best-way-to-keep-shopify-and-amazon-inventory-in-sync/561926",
+      "title": "Best way to keep Shopify and Amazon inventory in sync?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "These integrations rarely fail loudly — they drop specific SKUs … If your overselling is concentrated on a few SKUs rather than spread across the catalogue, it’s almost certainly that, not latency.",
+      "statement": "A reply argues that most oversells come from sync tools silently dropping specific (mis-mapped) SKUs rather than from sync latency.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "51b86eaf-53db-4ab7-a08e-b844ba8b472e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://community.shopify.com/t/best-way-to-keep-shopify-and-amazon-inventory-in-sync/561926",
+      "title": "Best way to keep Shopify and Amazon inventory in sync?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Check that the tool is actually working, weekly. Pull an inventory export from both sides within the same hour and diff them on SKU.",
+      "statement": "The same reply recommends a weekly manual diff of inventory exports by SKU to catch silent sync failures, which is the job a discrepancy checker would automate.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "51b86eaf-53db-4ab7-a08e-b844ba8b472e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://community.shopify.com/t/best-way-to-keep-shopify-and-amazon-inventory-in-sync/561926",
+      "title": "Best way to keep Shopify and Amazon inventory in sync?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "The app will also allow you to sync inventory in near real-time, using your Shopify catalog as the source of truth.",
+      "statement": "Shopify Marketplace Connect support says its app syncs Shopify and Amazon inventory in near real time, so the native connector already claims low latency.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Shopify Marketplace Connect"
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://community.shopify.com/t/marketplace-connect-not-syncing-inventory/311671",
+      "title": "Marketplace Connect not syncing inventory",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Now, I sell something on eBay and it stays in my stock on the website. This has led to several items overselling (and then having to refund customers) and it’s frustrating.",
+      "statement": "A Marketplace Connect user says marketplace sales no longer reduce Shopify stock, causing several oversells and refunds.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "1343d269-2c13-448e-b147-994784321134",
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Shopify Marketplace Connect"
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://community.shopify.com/t/marketplace-connect-not-syncing-inventory/311671",
+      "title": "Marketplace Connect not syncing inventory",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I have oversold 3 items this week - all of which I only have one of. … I am at risk of losing (my 20 years of business) ebay store, please assist",
+      "statement": "Another merchant in the thread oversold 3 single-unit items in one week and fears losing a 20-year-old eBay store.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "1343d269-2c13-448e-b147-994784321134",
+        "42a08dd7-cc6e-4aae-900c-58c6cbdb9727"
+      ],
+      "company_name": "Shopify Marketplace Connect"
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://community.shopify.com/t/amazon-channel-inventory-changes-not-syncing-from-shopify-to-amazon/52971",
+      "title": "Amazon Channel",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Does anyone have any ideas for workarounds to prevent overselling product you don’t have if Shopify is failing to keep the inventory up-to-date in Amazon? … I have hundreds of products and trying to manually manage inventory on Amazon seems intractable if not impossible",
+      "statement": "A merchant reports the Shopify Amazon channel stopped syncing inventory and that manual management of hundreds of products is not feasible.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "51b86eaf-53db-4ab7-a08e-b844ba8b472e",
+        "42a08dd7-cc6e-4aae-900c-58c6cbdb9727"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://apps.shopify.com/reviews/585898",
+      "title": "Reviews: Sellbrite - Easily sell on Amazon, eBay, Etsy, Walmart & more | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "This is causing us to over sell items on amazon, which in turn means we have had to cancel way too many orders. Amazon has already suspended us once before, and now we face suspension again as our cancellation rate has skyrocketed.",
+      "statement": "A Sellbrite reviewer says sync failures caused Amazon oversells and cancellations, one past Amazon suspension and a looming second one.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1343d269-2c13-448e-b147-994784321134",
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Sellbrite"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://apps.shopify.com/reviews/1726057",
+      "title": "Reviews: Sellbrite - Easily sell on Amazon, eBay, Etsy, Walmart & more | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "We’ve been experiencing serious issues with Sellbrite allowing Amazon to oversell our inventory for over a month now.",
+      "statement": "Another Sellbrite reviewer reports Amazon oversells for over a month because inventory was not syncing from Shopify.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Sellbrite"
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://apps.shopify.com/sellbrite/reviews",
+      "title": "Reviews: Sellbrite - Easily sell on Amazon, eBay, Etsy, Walmart & more | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Started out with the free plan, which does clearly start that each update is every 2 hours. Once we increased sales on Etsy, we needed to upgrade to the first tier paid plan, where the updates are every 15 minutes.",
+      "statement": "A Sellbrite reviewer says the free plan updates every 2 hours and the first paid tier every 15 minutes: batch intervals, as the idea assumes.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Sellbrite"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://apps.shopify.com/sellbrite/reviews",
+      "title": "Reviews: Sellbrite - Easily sell on Amazon, eBay, Etsy, Walmart & more | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "I have now received the information that free plans sync only every 2 hours and paid plans sync every 15 minutes. … With free plan you still have the risk of overselling if you get an order within the 2 hour sync cycle.",
+      "statement": "Another Sellbrite reviewer had oversold products and learned of the 2-hour/15-minute sync intervals only afterwards.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1"
+      ],
+      "company_name": "Sellbrite"
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://apps.shopify.com/sellbrite/reviews",
+      "title": "Reviews: Sellbrite - Easily sell on Amazon, eBay, Etsy, Walmart & more | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "We had 2 orders on eBay for products no longer available. We had to cancel the orders. … We have about 20,000 products, of which 622 on eBay. Impossible to keep checking each and every product one by one.",
+      "statement": "A Sellbrite reviewer had to cancel eBay orders for items that sold out months earlier and says checking 622 listings by hand is impossible.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "51b86eaf-53db-4ab7-a08e-b844ba8b472e",
+        "1343d269-2c13-448e-b147-994784321134"
+      ],
+      "company_name": "Sellbrite"
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://support.sellbrite.com/en/articles/4169890-what-is-the-sellbrite-free-plan",
+      "title": "What is the Sellbrite Free Plan? | Sellbrite Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "It also has slower sync frequencies for Inventory Sync, Price Sync, and order imports.",
+      "statement": "Sellbrite's help center confirms its free plan has slower inventory sync frequencies.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Sellbrite"
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://support.sellbrite.com/en/articles/3367150-which-sellbrite-plan-is-right-for-me",
+      "title": "Which Sellbrite Plan is Right for Me? | Sellbrite Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Sellbrite offers a free plan for small businesses processing fewer than 30 orders per month. Paid plans starts at just $29 per month. … Paid plans also include enhanced features such as in-app chat support and improved synchronization speeds for more frequent updates.",
+      "statement": "Sellbrite paid plans start at $29/month, with faster sync sold as a paid feature, and pricing tiers by order volume.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Sellbrite"
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://community.shopify.com/t/why-arent-my-tiktok-orders-processing-correctly/286722/4",
+      "title": "Why aren't my TikTok orders processing correctly?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "We had a bunch of orders come through to Shopify early this morning but when we went into TikTok we found they were all placed last week. Really frustrating as this will have a significant impact on our fulfillment KPI’s.",
+      "statement": "A merchant reports TikTok Shop orders reaching Shopify a week late via the native connector, hurting fulfillment KPIs.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok/reviews",
+      "title": "Reviews: QuickSync for TikTok Shop - Sync TikTok Shop stock, products and eligible orders | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Had to drop a point because the tool randomly stopped syncing and I was not alerted. … Update 3: this app randomly stops syncing with no warning. Do not recommend unless you plan on checking daily to make sure it is syncing",
+      "statement": "A QuickSync (Shopify-TikTok Shop) reviewer says the app repeatedly stopped syncing without any alert, so they must check it daily.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4",
+        "51b86eaf-53db-4ab7-a08e-b844ba8b472e"
+      ],
+      "company_name": "QuickSync for TikTok Shop"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok/reviews",
+      "title": "Reviews: QuickSync for TikTok Shop - Sync TikTok Shop stock, products and eligible orders | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "The app is highly unreliable, working properly less than 10% of the time. When integration errors occur, it takes up to a week to resolve them",
+      "statement": "Another QuickSync reviewer says the app worked properly less than 10% of the time and errors took up to a week to fix.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "QuickSync for TikTok Shop"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://apps.shopify.com/cedcommerce-tiktok-shop/reviews?page=3",
+      "title": "Reviews: CedCommerce TikTok Shop - Award-Winning TikTok App – List Fast, Sync Smart, Fulfill Easy | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Do not pay for the yearly subscription. This app has caused me countless headaches. SKU's will auto sync even when I manually disconnect them and literally change the SKU. So when I'm running a preorder on Shopify, the items will randomly show as in stock on TikTok. This causes me to have to cancel orders, or dispatch them late. Both HUGE issues when it comes to TikTok Shop's strict SLA. Also the syncing will just … Patria Studios United States",
+      "statement": "A US merchant using the CedCommerce TikTok Shop app says preorder items randomly show in stock on TikTok, forcing cancellations or late dispatch under TikTok's strict SLA.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "1343d269-2c13-448e-b147-994784321134",
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Patria Studios"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://apps.shopify.com/marketplace-connect/reviews?page=2",
+      "title": "Reviews: Shopify Marketplace Connect - Sell on Amazon, Target Plus, Walmart, and eBay from Shopify | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "I do not recommend this add on, when it works its great but when it doesn't work you end up with overselling items and listings not syncing. I have been a user for a long time but for the past month … Krafft Liquidations United States",
+      "statement": "A US Marketplace Connect user says that when the app fails they end up overselling and listings stop syncing.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1"
+      ],
+      "company_name": "Krafft Liquidations"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://apps.shopify.com/marketplace-connect/reviews?page=2",
+      "title": "Reviews: Shopify Marketplace Connect - Sell on Amazon, Target Plus, Walmart, and eBay from Shopify | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Does what you need it to do... usually. The main problems we have with this app: - Doesn't properly sync inventory: this is a huge one because ebay will penalize you for cancelling an order for being … Tokullectibles United States",
+      "statement": "A US Marketplace Connect user says the app does not properly sync inventory and that eBay penalizes out-of-stock cancellations.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "1343d269-2c13-448e-b147-994784321134"
+      ],
+      "company_name": "Tokullectibles"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://apps.shopify.com/amazon-3/reviews?page=2",
+      "title": "Reviews: CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "I paid $150 for this app and completed a Zoom walkthrough where I was assured my Amazon listings would sync with Shopify. Despite going through every product with support and being told it would be fixed, my Amazon store still shows zero inventory and nothing is syncing. It's been weeks, and this … Curated Home Decor United States",
+      "statement": "A US merchant paid $150 for a Shopify-Amazon sync app and weeks later still had zero inventory showing on Amazon.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "1343d269-2c13-448e-b147-994784321134"
+      ],
+      "company_name": "Curated Home Decor"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://apps.shopify.com/marketplace-connect/reviews?page=1",
+      "title": "Reviews: Shopify Marketplace Connect - Sell on Amazon, Target Plus, Walmart, and eBay from Shopify | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "If I could give it zero stars, I would. Sync does not work. Screws up prices and inventory - your two most important data points. Oh, it also chokes trying to upload images. Cost me a lot of money in … Alternate Worlds Magic United States",
+      "statement": "A US Marketplace Connect user says sync does not work, corrupts prices and inventory and cost them a lot of money in mistakes.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "1343d269-2c13-448e-b147-994784321134"
+      ],
+      "company_name": "Alternate Worlds Magic"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://apps.shopify.com/marketplace-connect",
+      "title": "Shopify Marketplace Connect - Sell on Amazon, Target Plus, Walmart, and eBay from Shopify | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Manage listings, orders, & inventory in Shopify with real-time integration … First 50 marketplace-synced orders/mo free, 1% fee per additional synced-order, capped at $99/month",
+      "statement": "Shopify's own Marketplace Connect markets real-time inventory integration with Amazon, Walmart, eBay and Target Plus, free for 50 orders/month then 1% per order capped at $99/month.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Shopify Marketplace Connect"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://salesduo.com/blog/amazon-canceled-orders-fbm-prevention-guide",
+      "title": "Amazon Canceled Orders: FBM Prevention Guide (2026)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Amazon expects the Pre-Fulfillment Cancel Rate (PFCR) for seller-fulfilled orders to be under 2.5% for the past 7 days. If you fulfilled 80 FBM orders during that time span, 2 seller cancellations are 2.5%, which is above what Amazon allows.",
+      "statement": "Amazon's seller-fulfilled cancellation threshold is 2.5% over 7 days; at 80 orders a week, two cancellations reach it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1343d269-2c13-448e-b147-994784321134",
+        "42a08dd7-cc6e-4aae-900c-58c6cbdb9727"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://salesduo.com/blog/amazon-canceled-orders-fbm-prevention-guide",
+      "title": "Amazon Canceled Orders: FBM Prevention Guide (2026)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Out of stock — item unavailable after order received | ❌ Yes — always counts … At 2.5% and above, Amazon may deactivate seller-fulfilled offers.",
+      "statement": "Out-of-stock cancellations always count against Amazon's cancellation rate, and at 2.5%+ Amazon may deactivate seller-fulfilled offers.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1343d269-2c13-448e-b147-994784321134",
+        "42a08dd7-cc6e-4aae-900c-58c6cbdb9727"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://salesduo.com/blog/amazon-canceled-orders-fbm-prevention-guide",
+      "title": "Amazon Canceled Orders: FBM Prevention Guide (2026)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Set safety stock buffers per channel. If you have 10 units, list 8 on Amazon and 8 on Shopify (not 10 on each). The 2-unit buffer absorbs overlap.",
+      "statement": "A common, free mitigation is per-channel safety buffers (listing fewer units than on hand).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "51b86eaf-53db-4ab7-a08e-b844ba8b472e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://www.hubfluence.io/blog/tiktok-shop-order-cancellation-and-sfcr",
+      "title": "TikTok Shop Cancellations and SFCR",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Out of stock. You sold an item you could not actually fulfill, so the order has to be cancelled. … They can trigger enforcement. Consistently poor fulfillment performance can lead to enforcement actions and lost Account Health Rating points.",
+      "statement": "On TikTok Shop, out-of-stock cancellations count as seller-fault cancellations, which can trigger enforcement and lost Account Health points.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1343d269-2c13-448e-b147-994784321134",
+        "42a08dd7-cc6e-4aae-900c-58c6cbdb9727"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://www.hubfluence.io/blog/tiktok-shop-order-cancellation-and-sfcr",
+      "title": "TikTok Shop Cancellations and SFCR",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Overselling is the number one cause of out-of-stock cancellations.",
+      "statement": "A TikTok Shop agency guide calls overselling the number one cause of out-of-stock cancellations.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1343d269-2c13-448e-b147-994784321134",
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://www.bigseller.com/blog/articleDetails/tiktok-shop-order-cancellation.4027.htm",
+      "title": "TikTok Shop Order Cancellation Rules Every Seller Must Know (2025)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Failure to follow these requirements can lead to enforcement actions, including penalties and accumulated violation points. Frequent or repeated offenses will trigger heavier consequences.",
+      "statement": "TikTok Shop cancellation-rule breaches lead to penalties and violation points, escalating with repeat offenses.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1343d269-2c13-448e-b147-994784321134"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://www.theweek.in/news/biz-tech/2026/08/25/why-amazon-flipkart-will-penalise-sellers-more-this-festive-season.html",
+      "title": "Why Amazon, Flipkart will penalise sellers more this festive season",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Under the new policy, the cancellation fee is 10 per cent for orders below ₹10,000, and 8 per cent for orders between ₹10,001 and ₹50,000. … It will only apply when the seller themselves cancels the order",
+      "statement": "Amazon India charges sellers a cancellation fee of 10% of order value (under ₹10,000) for seller-initiated cancellations, effective August 2026.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1343d269-2c13-448e-b147-994784321134"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.theweek.in/news/biz-tech/2026/08/25/why-amazon-flipkart-will-penalise-sellers-more-this-festive-season.html",
+      "title": "Why Amazon, Flipkart will penalise sellers more this festive season",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "An order automatically cancelled after three missed dispatch deadlines, or an order cancelled by the seller itself, will be fined ₹60 per shipment.",
+      "statement": "Flipkart fines sellers ₹60 per seller-cancelled shipment from August 2026.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1343d269-2c13-448e-b147-994784321134"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.webgility.com/company/press/inventory-survey",
+      "title": "New 'In-House Inventory Management Techniques and Trends' survey | Webgility Press",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "38% of sellers say their top challenges are stock issues like overselling, restocking, overstocking, and supply chain delays. … 53% of sellers spend between 1 and 10 hours a week on inventory management.",
+      "statement": "Webgility's survey of 800 sellers: 38% name stock issues (overselling among them) as top challenges; 53% spend 1-10 hours a week on inventory.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "1343d269-2c13-448e-b147-994784321134"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://nventory.io/blog/73-percent-sellers-cant-answer-inventory-question",
+      "title": "73% of Sellers Fail This Inventory Question",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "We asked 200 multichannel sellers this question. We gave them 5 minutes to answer. 73% could not do it. … And every single one of them had experienced overselling in the prior 90 days.",
+      "statement": "A sync vendor's own survey of 200 multichannel sellers says 73% could not state available-to-promise stock and all had oversold in the prior 90 days (vendor-run, unverified).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.sumtracker.com/case-study/how-babymaxi-manages-multi-location-inventory-on-shopify",
+      "title": "Table of contents",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Inventory was spread across locations with no centralized view, leading to 5-7 overselling incidents per month and ~10 hours per week spent on manual tracking.",
+      "statement": "A Sumtracker case study reports a Shopify brand had 5-7 oversells a month and ~10 hours/week of manual tracking before adopting sync (vendor-published).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "1343d269-2c13-448e-b147-994784321134"
+      ],
+      "company_name": "Babymaxi"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://channeldock.com/en/blogs/marketplace-stock-buffer-rules/",
+      "title": "Marketplace Stock Buffer Rules: Stop Overselling Without Freezing Growth | ChannelDock",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The counter-intuitive part: a stock buffer is not a replacement for inventory sync. If the source stock is wrong, a buffer only delays the mistake.",
+      "statement": "Buffers are a common mitigation, but a vendor notes they do not fix wrong source stock.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "51b86eaf-53db-4ab7-a08e-b844ba8b472e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://app.qureos.com/jobs/e-commerce-operations-specialist-shopify-tiktok-shop-3pl-1767255228046",
+      "title": "SKINN hiring E-Commerce Operations Specialist (Shopify, TikTok Shop & 3PL)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "We are seeking a hands-on, technically strong E-Commerce Operations Specialist to manage and support daily operations across Shopify, TikTok Shop, and our 3PL/WMS. … especially during high-volume TikTok Live sales. … Identify, investigate and resolve order and inventory sync issues across platforms.",
+      "statement": "SKINN Cosmetics posted an e-commerce operations specialist role whose duties include resolving inventory sync issues across Shopify and TikTok Shop, especially during TikTok Live peaks.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9b94d41c-963b-4193-9d3f-94d87f97dac9",
+        "51b86eaf-53db-4ab7-a08e-b844ba8b472e"
+      ],
+      "company_name": "SKINN Cosmetics"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://reddit.sentinel-team.org/posts/1u3i84m/snapshots/2026-06-12T16%3A59%3A37.413431Z",
+      "title": "Post Snapshot",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I’m trying to understand the cleanest setup for: * Syncing inventory between Amazon, Shopify, and TikTok Shop … * Avoiding oversells or weird fulfillment delays … Curious if anyone has actually gotten this working reliably, or if it’s more trouble than it’s worth.",
+      "statement": "A Reddit seller (archived snapshot) using Amazon FBA asks how to sync inventory across Amazon, Shopify and TikTok Shop and avoid oversells, doubting anyone has it working reliably.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161",
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://appnavigator.io/app/easecommerce/reviews/2242120",
+      "title": "Vlado's Himalayan Organics review for Ease Commerce",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "We run our own Shopify store plus sell on Amazon, Flipkart and Meesho, and stock used to drift between them constantly — we'd sell something on Shopify that was already gone on a marketplace.",
+      "statement": "An Indian D2C brand on Shopify + Amazon + Flipkart + Meesho says stock drifted constantly and they oversold before adopting Ease Commerce.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Ease Commerce"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.syncio.co/pricing",
+      "title": "Pricing – Syncio",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "11-100 Orders with synced products $19/mo 101-1,000 Orders with synced products $49/mo 1,001-10,000 Orders with synced products $99/mo",
+      "statement": "Syncio prices by synced-order volume at $19/$49/$99 per month, almost exactly the idea's $29-$99 pricing hypothesis (but Syncio syncs Shopify-to-Shopify/WooCommerce, not marketplaces).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Syncio"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://apps.shopify.com/syncio",
+      "title": "Syncio Inventory Sync - Increase sales through multi-store inventory syncing | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Inventory sync & real time stock adjustment using SKU or barcode",
+      "statement": "Syncio advertises real-time stock adjustment between stores.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Syncio"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://www.sumtracker.com/pricing",
+      "title": "Pricing | Sumtracker",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Sumtracker's Manage plan starts at $59/month (USD) for up to 2,500 sales orders per year and includes multi-channel inventory sync … Real time Inventory sync between multiple stores",
+      "statement": "Sumtracker sells real-time multichannel inventory sync from $59/month, priced by order volume.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Sumtracker"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://www.getonecart.com/integrations/shopify/tiktokshop/",
+      "title": "OneCart | Multi-Channel E-Commerce - Shopify TikTok Shop Integration: Sync Inventory & Orders",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our instant, 24/7 synchronization updates Shopify and TikTok Shop within seconds of any change.",
+      "statement": "OneCart already claims Shopify-TikTok Shop inventory sync within seconds, the idea's core wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "OneCart"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://ownbase.helpscoutdocs.com/article/16-how-inventory-sync-works",
+      "title": "How Inventory Sync works",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ownbase will keep the inventory up-to-date between Shopify and TikTok Shop in real-time with the following mechanism: … Note that if you manually update inventory on TikTok Seller Center, it will not update Shopify inventory.",
+      "statement": "Ownbase claims real-time Shopify-TikTok Shop inventory sync, with a documented gap for manual edits made in TikTok Seller Center.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4",
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Ownbase"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://apps.shopify.com/amazon-3",
+      "title": "CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Amazon importer and a real-time Amazon sync keep your Amazon inventory and Amazon orders updated to prevent overselling.",
+      "statement": "CS Amazon Integration & Sync advertises real-time Shopify-Amazon inventory sync to prevent overselling.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "CS Amazon Integration & Sync"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://apps.shopify.com/cedcommerce-tiktok-shop",
+      "title": "CedCommerce TikTok Shop - Award-Winning TikTok App – List Fast, Sync Smart, Fulfill Easy | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Designed for TikTok Shop, this Integration automates your workflow to simplify product listing, inventory syncing, and order fulfillment.",
+      "statement": "CedCommerce's TikTok Shop app for Shopify covers listing, inventory sync and order fulfillment.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "CedCommerce"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok",
+      "title": "QuickSync for TikTok Shop - Sync TikTok Shop stock, products and eligible orders | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Fulfilled by TikTok orders aren't supported. … Keep TikTok Shop stock up to date as your Shopify inventory changes … 2 shops included; extras $19/mo each.",
+      "statement": "QuickSync syncs Shopify stock to TikTok Shop on monthly plans but does not support Fulfilled-by-TikTok orders.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "QuickSync for TikTok Shop"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://apps.shopify.com/amazon-3/reviews?page=2",
+      "title": "Reviews: CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "I've tried many different apps to sync my Shopify products with Amazon and this by far is my favorite. It's easy to understand, provides a lot of customizations I can set up by using their rules feature along with frequent real time inventory updates pushed … VacationGrabs United States",
+      "statement": "A US merchant says a Shopify-Amazon app gives frequent real-time inventory updates pushed to Amazon and is their favorite after trying many.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4",
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "VacationGrabs"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://apps.shopify.com/amazon-3/reviews?page=1",
+      "title": "Reviews: CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "We were having trouble managing our Shopify and Amazon integration using Marketplace Connect. We decided to switch to this app and have no regrets. The app does a great job of syncing our orders and our inventory between Shopify and Amazon. Their customer … Só Dança USA United States",
+      "statement": "A US merchant switched from Marketplace Connect to another Amazon sync app and reports it syncs orders and inventory well; switching between apps is common.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Só Dança USA"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://www.sumtracker.com/blog/shopify-and-tiktok-shop-inventory-sync",
+      "title": "Shopify and TikTok Shop Inventory Sync: Complete Guide",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Not always. Small stores selling only on Shopify and TikTok Shop may rely on native integrations initially.",
+      "statement": "Even a sync vendor concedes small Shopify + TikTok Shop stores may get by on native integrations at first.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "42a08dd7-cc6e-4aae-900c-58c6cbdb9727",
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://sellercentral-europe.amazon.com/seller-forums/discussions/t/e158a83187238b0a25a18ef918950b3c",
+      "title": "Any thoughts on new Linnworks pricing plan?",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "So they are now £150 a month, with a limit of 1000 orders (fba order count as a half an order). Next pricing plan is £450. … Just sync quantities between ebay-amazon, and maybe print some invoices. As I use RM and DPD I can easily print labels from RM click and drop account (however it is called)/or buy shipping via amazon. £450 a month seems way to much for these basic tasks.",
+      "statement": "Sellers on Amazon's forum object to Linnworks' price rise (£150-£450/month) when they only need to sync quantities between channels: a price-driven switching trigger.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Linnworks"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://erpresearch.com/erp-add-ons/marketplace/linnworks/pricing",
+      "title": "Linnworks Pricing 2026: From $200/month",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Linnworks pricing: Quote-based on order volume; reported from around $200/month.",
+      "statement": "Linnworks is quote-based, reported from around $200/month.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "Linnworks"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://signup.easyecom.io/easyecom-vs-unicommerce",
+      "title": "Easyecom vs unicommerce",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "EasyEcom gives you enterprise-grade OMS + WMS with real-time inventory sync across 220+ Indian marketplaces",
+      "statement": "In India, EasyEcom sells real-time inventory sync across Indian marketplaces.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4"
+      ],
+      "company_name": "EasyEcom"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://bambuearth.com",
+      "title": "Bambu Earth Skincare | Discover your healthiest skin",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Bambu Earth 591 US Hwy 70 W Havelock, NC 28532",
+      "statement": "Bambu Earth's site lists its address in Havelock, NC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bambu Earth"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://cmpottery.com",
+      "title": "Cedar Mesa Pottery - Authentic Native American & Indian Pottery",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CONTACT US 333 S Main St Blanding, UT 84511",
+      "statement": "Cedar Mesa Pottery's site lists its address in Blanding, UT.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cedar Mesa Pottery"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.designedtoflaunt.com",
+      "title": "Designed To Flaunt | Kansas City Gifts & Custom Apparel",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "7940 Santa Fe Drive Overland Park, KS 66204",
+      "statement": "Designed To Flaunt runs a store in Overland Park, KS.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Designed To Flaunt"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.raisedhunting.com",
+      "title": "Raised Hunting",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "1221 E Buchanan St. Winterset IA 50273 United States",
+      "statement": "Raised Hunting HQ is in Winterset, IA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Raised Hunting"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://udderdelight.com",
+      "title": "Udder Delight Natural Skincare",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Udder Delight has been making natural skin care products since 1997. … Manufacturing & Retail Store: 5121 Hwy 180 | P.O. Box 268 Glenwood, NM 88039",
+      "statement": "Udder Delight makes natural skincare in Glenwood, NM, since 1997.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Udder Delight Natural Skincare"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.maverickdiscgolf.com",
+      "title": "Maverick Disc Golf Home",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Maverick's physical store 623 N. Central St., Ste C Olathe, KS 66061",
+      "statement": "Maverick Disc Golf has a physical store in Olathe, KS.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Maverick Disc Golf"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.kappahobby.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mail address: Kappa Hobby, 6748 Mission St #328, Daly City CA 94014, United States",
+      "statement": "Kappa Hobby's contact page lists a Daly City, CA address.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kappa Hobby"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.proluxcosmetics.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Trade name: Prolux Cosmetics … Physical address: Efon International Corp., 4150 Bandini Blvd , Vernon CA 90058, United States",
+      "statement": "Prolux Cosmetics is located in Vernon, CA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Prolux Cosmetics"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.bjoremspeech.com/pages/about",
+      "title": "About Bjorem Speech® | Meet the Team & Our Story",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "operates out of a 5,000-square-foot warehouse in beautiful Colorado. With a dedicated team of nine",
+      "statement": "Bjorem Speech operates from a warehouse in Colorado with a team of nine.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bjorem Speech"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.bjoremspeech.com/pages/about",
+      "title": "About Bjorem Speech® | Meet the Team & Our Story",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Jennie Bjorem M.A., CCC-SLP Founder & CEO",
+      "statement": "Bjorem Speech's about page names its founder and CEO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bjorem Speech"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.gigiandmax.com/pages/about-us",
+      "title": "Our Story",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are Kristin and Mike Gonzales, owners of Gigi and Max. … day to day operations from our office in Bettendorf, IA.",
+      "statement": "Gigi and Max is a husband-and-wife children's clothing brand run from Bettendorf, IA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gigi and Max"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://novellyyours.com/pages/about",
+      "title": "About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Novelly Yours was started by owner and candle-maker Brittany Smith in 2015. … Novelly Yours shop located in Oswego, Illinois.",
+      "statement": "Novelly Yours is an owner-run candle business in Oswego, Illinois.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Novelly Yours"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.meritbeauty.com/pages/about",
+      "title": "About MERIT Beauty: Clean Beauty Brand",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "MERIT is a global brand with teams in New York, Los Angeles, Toronto, London, and Paris.",
+      "statement": "MERIT Beauty has teams in New York and Los Angeles among other cities.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "MERIT Beauty"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://greenriverseeds.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Trade name: Green River Seeds … Physical address: PO Box 70, Ravenadale WA 98051, United States",
+      "statement": "Green River Seeds lists an address in Ravensdale area, WA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Green River Seeds"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.inheritco.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Trade name: Inherit Clothing Company … Physical address: Inherit Clothing Company , 702 Atlantic Ave, Morris MN 56267, United States",
+      "statement": "Inherit Clothing Company is in Morris, MN.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Inherit Co."
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://mantasleep.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Physical address: 680 S Cache Street Suite 100-14672, Jackson WY 83001, United States",
+      "statement": "Manta Sleep lists an address in Jackson, WY.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Manta Sleep"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://www.texaslifeoutfitters.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Physical address: Texas Life Outfitters, 2814 Main St, Ste 126, Dallas TX 75226, United States",
+      "statement": "Texas Life Outfitters is in Dallas, TX.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Texas Life Outfitters"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.wildoakboutique.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Physical address: Wild Oak Boutique, 4001 West 34th Street North, Sioux Falls SD 57107, United States",
+      "statement": "Wild Oak Boutique is in Sioux Falls, SD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Wild Oak Boutique"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://comphies.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "3297 Cypress Legends Circle Fort Myers, Florida 33905",
+      "statement": "Comphies lists an address in Fort Myers, Florida.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Comphies"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://tampontribe.com/pages/about-us",
+      "title": "Best Organic Feminine Hygiene Products - Tampon Tribe",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Tampon Tribe, co-founded by Jen and Gaby, friends from Australia and Brazil now based in the US",
+      "statement": "Tampon Tribe's founders are based in the US.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tampon Tribe"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://alternateworldsmagic.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Alternate Worlds Magic 9805 York Rd Suite 295 Cockeysville, MD 21030",
+      "statement": "Alternate Worlds Magic is in Cockeysville, MD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Alternate Worlds Magic"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://tokullectibles.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For returns, please use the following address: Box 351, Hamburg PA 19526",
+      "statement": "Tokullectibles' returns address is in Hamburg, PA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tokullectibles"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://rivamira.com/policies/contact-information",
+      "title": "Contact information",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Trade name: RivaMira … Physical address: United States",
+      "statement": "RivaMira's contact page gives its physical address only as United States.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "RivaMira"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://apps.shopify.com/amazon-3/reviews?page=1",
+      "title": "Reviews: CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "It's a good app that syncs Amazon orders with Shopify for me. Good support that helps me when I have an issue. … Bambu Earth United States",
+      "statement": "Bambu Earth (United States) reviewed the Shopify app CS Amazon Integration & Sync, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bambu Earth"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://apps.shopify.com/amazon-3/reviews?page=1",
+      "title": "Reviews: CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Got my Amazon sync running the way it should. … CMPottery United States",
+      "statement": "Cedar Mesa Pottery (United States) reviewed the Shopify app CS Amazon Integration & Sync, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cedar Mesa Pottery"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok/reviews?page=4",
+      "title": "Reviews: QuickSync for TikTok Shop - Sync TikTok Shop stock, products and eligible orders | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "After struggling to link TT Shop and Shopify with other apps I found this one. Joseph was great in getting our TT Shop synced with Shopify. The items are … Designed To Flaunt United States",
+      "statement": "Designed To Flaunt (United States) reviewed the Shopify app QuickSync for TikTok Shop, showing it runs a Shopify store connected to that channel and reports sync problems.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Designed To Flaunt"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://apps.shopify.com/amazon-3/reviews?page=2",
+      "title": "Reviews: CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "The app works great for us to connect our Amazon orders but mainly to have an app automatically send the tracking information back to Amazon. Had one issue with returns getting restocked automatically, but Harvey hopped … Raised Hunting United States",
+      "statement": "Raised Hunting (United States) reviewed the Shopify app CS Amazon Integration & Sync, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Raised Hunting"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://apps.shopify.com/amazon-3/reviews?page=3",
+      "title": "Reviews: CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "It was a little difficult at first, but not on the integration app side.  The integration app works great! I think on the Amazon side, they don't communicate clearly attribute criteria for all … Udder Delight Natural Skincare United States",
+      "statement": "Udder Delight Natural Skincare (United States) reviewed the Shopify app CS Amazon Integration & Sync, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Udder Delight Natural Skincare"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://apps.shopify.com/marketplace-connect/reviews?page=2",
+      "title": "Reviews: Shopify Marketplace Connect - Sell on Amazon, Target Plus, Walmart, and eBay from Shopify | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": ".  Over the last year I have had REPEATED problems of pictures not syncing properly with eBay.  Marketplace Connect would eventually fix them, but would tell … Maverick Disc Golf United States",
+      "statement": "Maverick Disc Golf (United States) reviewed the Shopify app Shopify Marketplace Connect, showing it runs a Shopify store connected to that channel and reports sync problems.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Maverick Disc Golf"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://apps.shopify.com/marketplace-connect/reviews?page=2",
+      "title": "Reviews: Shopify Marketplace Connect - Sell on Amazon, Target Plus, Walmart, and eBay from Shopify | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "This app is good when it work but all of sudden it cannot connect eBay. Customer support looked at the issue 3 weeks but still cannot come up with a resolution. This is affecting the daily operation … Kappa Hobby United States",
+      "statement": "Kappa Hobby (United States) reviewed the Shopify app Shopify Marketplace Connect, showing it runs a Shopify store connected to that channel and reports sync problems.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Kappa Hobby"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok/reviews?page=1",
+      "title": "Reviews: QuickSync for TikTok Shop - Sync TikTok Shop stock, products and eligible orders | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "My experience with this service has been nothing short of disappointing. The app is highly unreliable, working properly less than 10% of the time. When integration errors occur, it takes up to a week … Prolux Cosmetics United States",
+      "statement": "Prolux Cosmetics (United States) reviewed the Shopify app QuickSync for TikTok Shop, showing it runs a Shopify store connected to that channel and reports sync problems.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Prolux Cosmetics"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://apps.shopify.com/amazon-3/reviews?page=3",
+      "title": "Reviews: CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Wow, this app is a LIFE SAVER! We have really low shipping rates on Shopify that beat Amazon so shipping Amazon orders from Shopify saves us so much money! This app does it for you. It was seamless … Bjorem Speech® United States",
+      "statement": "Bjorem Speech (United States) reviewed the Shopify app CS Amazon Integration & Sync, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bjorem Speech"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok/reviews?page=2",
+      "title": "Reviews: QuickSync for TikTok Shop - Sync TikTok Shop stock, products and eligible orders | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Hmm, I'll be real honest here - the app is not very user friendly. The best part about this app is their customer service, they are always available to assist and will help you with your issue immediately. The app needs work though. I had uploaded a batch of product about a month ago, all was well, then I added another batch a … Gigi and Max United States",
+      "statement": "Gigi and Max (United States) reviewed the Shopify app QuickSync for TikTok Shop, showing it runs a Shopify store connected to that channel and reports sync problems.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1195c060-35d8-4ecf-a66a-2cdac8369161"
+      ],
+      "company_name": "Gigi and Max"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok/reviews?page=1",
+      "title": "Reviews: QuickSync for TikTok Shop - Sync TikTok Shop stock, products and eligible orders | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "I could not even get past the onboarding. The app was soooooo slow and it wouldn't even let me set up the initial settings. I will find something better, and I'm definitely not keeping it for $19/mo … Novelly Yours United States",
+      "statement": "Novelly Yours (United States) reviewed the Shopify app QuickSync for TikTok Shop, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Novelly Yours"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://apps.shopify.com/cedcommerce-tiktok-shop/reviews?page=1",
+      "title": "Reviews: CedCommerce TikTok Shop - Award-Winning TikTok App – List Fast, Sync Smart, Fulfill Easy | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "We were working toward a tight launch deadline and needed a fast, hassle-free solution. Aditi and the CedCommerce team provided excellent support throughout the integration, enabling us to get our … MERIT Beauty United States",
+      "statement": "MERIT Beauty (United States) reviewed the Shopify app CedCommerce TikTok Shop, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "MERIT Beauty"
+    },
+    {
+      "ref": "ev-89",
+      "url": "https://apps.shopify.com/cedcommerce-tiktok-shop/reviews?page=4",
+      "title": "Reviews: CedCommerce TikTok Shop - Award-Winning TikTok App – List Fast, Sync Smart, Fulfill Easy | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Amazing App-A Must-Have for TikTok Shop Sellers! The CedCommerce TikTok Shop Connector is an absolute game-changer! It syncs product inventory, prices, and product information accurately and … Green River Seeds United States",
+      "statement": "Green River Seeds (United States) reviewed the Shopify app CedCommerce TikTok Shop, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Green River Seeds"
+    },
+    {
+      "ref": "ev-90",
+      "url": "https://apps.shopify.com/amazon-3/reviews?page=5",
+      "title": "Reviews: CS Amazon Integration & Sync - Amazon Orders Sync for Amazon MCF, FBA & Amazon Dropshipping | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Great app experience.  Especially with customer service setup.  They were readily available to step me through how to get my inventory connected to Amazon and help me troubleshoot. … Inherit Co. United States",
+      "statement": "Inherit Co. (United States) reviewed the Shopify app CS Amazon Integration & Sync, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Inherit Co."
+    },
+    {
+      "ref": "ev-91",
+      "url": "https://apps.shopify.com/cedcommerce-tiktok-shop/reviews?page=3",
+      "title": "Reviews: CedCommerce TikTok Shop - Award-Winning TikTok App – List Fast, Sync Smart, Fulfill Easy | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Useful app, good support! … Manta Sleep United States",
+      "statement": "Manta Sleep (United States) reviewed the Shopify app CedCommerce TikTok Shop, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Manta Sleep"
+    },
+    {
+      "ref": "ev-92",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok/reviews?page=5",
+      "title": "Reviews: QuickSync for TikTok Shop - Sync TikTok Shop stock, products and eligible orders | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Joseph was unbelievable in helping me get everything set up he helped me step-by-step. Hopefully everyone can get … Texas Life Outfitters United States",
+      "statement": "Texas Life Outfitters (United States) reviewed the Shopify app QuickSync for TikTok Shop, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Texas Life Outfitters"
+    },
+    {
+      "ref": "ev-93",
+      "url": "https://apps.shopify.com/cedcommerce-tiktok-shop/reviews?page=4",
+      "title": "Reviews: CedCommerce TikTok Shop - Award-Winning TikTok App – List Fast, Sync Smart, Fulfill Easy | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "While the app itself works fine, I want to warn anyone considering custom work with this company. We’ve spent over $2,000 on custom development that still … Wild Oak Boutique United States",
+      "statement": "Wild Oak Boutique (United States) reviewed the Shopify app CedCommerce TikTok Shop, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Wild Oak Boutique"
+    },
+    {
+      "ref": "ev-94",
+      "url": "https://apps.shopify.com/cedcommerce-tiktok-shop/reviews?page=4",
+      "title": "Reviews: CedCommerce TikTok Shop - Award-Winning TikTok App – List Fast, Sync Smart, Fulfill Easy | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "I had originally used and removed this app, shopped around a bit to find something \"better\", and after a few other apps, including the one made by or for tiktok, came right back to this one. No other app allows full management as well as … Comphies Graphic Tees United States",
+      "statement": "Comphies (United States) reviewed the Shopify app CedCommerce TikTok Shop, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Comphies"
+    },
+    {
+      "ref": "ev-95",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok/reviews?page=6",
+      "title": "Reviews: QuickSync for TikTok Shop - Sync TikTok Shop stock, products and eligible orders | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Very easy to use and Great customer Service, Kudos to Omar who Helped me through the process … Tampon Tribe United States",
+      "statement": "Tampon Tribe (United States) reviewed the Shopify app QuickSync for TikTok Shop, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tampon Tribe"
+    },
+    {
+      "ref": "ev-96",
+      "url": "https://apps.shopify.com/cedcommerce-tiktok-shop/reviews?page=2",
+      "title": "Reviews: CedCommerce TikTok Shop - Award-Winning TikTok App – List Fast, Sync Smart, Fulfill Easy | Shopify App Store",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Great help and support! … RivaMira United States",
+      "statement": "RivaMira (United States) reviewed the Shopify app CedCommerce TikTok Shop, showing it runs a Shopify store connected to that channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "RivaMira"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "1ad33146-1b84-4d3c-9d4f-e7e706c0b3a1",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Merchants publicly describe repeated oversells when sync lags or fails: a Shopify+Amazon seller overselling because Shopify did not update fast enough, 3 single-unit oversells in one week, Amazon oversells lasting over a month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-07",
+            "ev-10",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "Vendor-published figures suggest oversells are common (a Sumtracker case study at 5-7 incidents a month before sync; an Nventory survey claiming all 200 multichannel sellers asked had oversold within 90 days), but these come from sellers of sync software.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-35",
+            "ev-34"
+          ]
+        },
+        {
+          "statement": "Webgility's survey of 800 sellers puts stock issues including overselling among the top challenges for 38%.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33"
+          ]
+        },
+        {
+          "statement": "No independent source gives an oversell rate per order or per peak event; frequency remains anecdotal.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "1343d269-2c13-448e-b147-994784321134",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Marketplace penalties are concrete: Amazon's seller-fulfilled cancellation threshold is 2.5% over 7 days (2 cancellations at 80 orders a week) and offers may be deactivated above it; out-of-stock cancellations always count.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25",
+            "ev-26"
+          ]
+        },
+        {
+          "statement": "TikTok Shop counts out-of-stock cancellations as seller-fault cancellations that can bring enforcement, violation points and lost Account Health points.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-28",
+            "ev-30"
+          ]
+        },
+        {
+          "statement": "In India, Amazon charges a 10% cancellation fee (orders under ₹10,000) and Flipkart ₹60 per seller-cancelled shipment since August 2026.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-31",
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "Merchants report a past Amazon suspension and a looming second one from oversell cancellations, customer refunds, a feared loss of a 20-year eBay store, and money lost to sync errors.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-09",
+            "ev-07",
+            "ev-06",
+            "ev-23"
+          ]
+        },
+        {
+          "statement": "No source quantifies a typical dollar loss per oversell for a small merchant.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "1195c060-35d8-4ecf-a66a-2cdac8369161",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Merchants use native connectors (Shopify Marketplace Connect, the TikTok Shop channel) or third-party apps (Sellbrite, QuickSync, CedCommerce, CS Amazon Sync, Sumtracker, Syncio).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-24",
+            "ev-47",
+            "ev-46",
+            "ev-45",
+            "ev-42"
+          ]
+        },
+        {
+          "statement": "Reported shortcomings are batch intervals on cheaper tiers (Sellbrite free plan every 2 hours, first paid tier every 15 minutes) and, more often, silent failures: apps stop syncing without alerts, drop SKUs, or mishandle preorders.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-11",
+            "ev-12",
+            "ev-17",
+            "ev-03",
+            "ev-19",
+            "ev-20"
+          ]
+        },
+        {
+          "statement": "Reliability rather than latency is the dominant complaint in reviews, and several vendors already advertise real-time or within-seconds sync.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-17",
+            "ev-18",
+            "ev-43",
+            "ev-45",
+            "ev-03"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "9b94d41c-963b-4193-9d3f-94d87f97dac9",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "In small Shopify brands the owners install and review the sync apps themselves; a larger brand hired an e-commerce operations specialist to resolve inventory sync issues across Shopify, TikTok Shop and its 3PL.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-37",
+            "ev-64",
+            "ev-65"
+          ]
+        },
+        {
+          "statement": "No evidence shows who signs off on the purchase in larger organisations.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "51b86eaf-53db-4ab7-a08e-b844ba8b472e",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Common mitigations are per-channel safety buffers, manual weekly diffs of inventory exports by SKU, and daily manual checks that the sync app is still running.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27",
+            "ev-04",
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "Buffers do not fix wrong source stock, and manual checking does not scale to hundreds or thousands of listings.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36",
+            "ev-08",
+            "ev-13"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "42a08dd7-cc6e-4aae-900c-58c6cbdb9727",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Accuracy matters most where marketplace thresholds are tight: on Amazon, two seller cancellations in an 80-order week reach the 2.5% limit.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25"
+          ]
+        },
+        {
+          "statement": "A sync vendor concedes small stores on only Shopify and TikTok Shop may rely on native integrations at first, so urgency likely rises with volume and channel count.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-50"
+          ]
+        },
+        {
+          "statement": "No merchant states a required latency (seconds vs minutes) in their own words.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "b7cc6c70-dd30-473f-aa1f-b90f75ebbae4",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Switching triggers in the evidence are price jumps (Linnworks to £150-£450/month for sellers who only need quantity sync) and unreliable sync with slow support.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-51",
+            "ev-49",
+            "ev-10",
+            "ev-18"
+          ]
+        },
+        {
+          "statement": "Merchants already pay in the hypothesis range: Sellbrite from $29/month, Syncio $19/$49/$99 by order volume, Sumtracker from $59/month, Marketplace Connect capped at $99/month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-15",
+            "ev-40",
+            "ev-42",
+            "ev-24"
+          ]
+        },
+        {
+          "statement": "Many low-cost apps already claim real-time sync, so a new entrant would have to win on verifiable reliability rather than speed alone.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-43",
+            "ev-42",
+            "ev-41",
+            "ev-45",
+            "ev-48"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Shopify Marketplace Connect",
+      "url": "https://apps.shopify.com/marketplace-connect",
+      "kind": "indirect",
+      "description": "Shopify's own connector for Amazon, Walmart, eBay and Target Plus listings, orders and inventory.",
+      "pricing_note": "First 50 marketplace-synced orders/month free, then 1% per order capped at $99/month.",
+      "evidence_refs": [
+        "ev-24",
+        "ev-05",
+        "ev-06"
+      ],
+      "sentiment": [
+        {
+          "statement": "Some merchants report sync failures that led to oversells, refunds and money lost.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-06",
+            "ev-23",
+            "ev-20"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Sellbrite",
+      "url": "https://www.sellbrite.com",
+      "kind": "direct",
+      "description": "Multichannel listing and inventory sync for Shopify merchants (Amazon, eBay, Etsy, Walmart).",
+      "pricing_note": "Free under 30 orders/month; paid plans from $29/month.",
+      "evidence_refs": [
+        "ev-15",
+        "ev-14",
+        "ev-11"
+      ],
+      "sentiment": [
+        {
+          "statement": "Reviewers complain about 2-hour and 15-minute sync intervals and oversells leading to cancellations and Amazon suspension risk.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-12",
+            "ev-09",
+            "ev-10"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "QuickSync for TikTok Shop",
+      "url": "https://apps.shopify.com/quicksync-for-tiktok",
+      "kind": "direct",
+      "description": "Shopify app syncing stock, products and seller-fulfilled orders with TikTok Shop.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-47",
+        "ev-17"
+      ],
+      "sentiment": [
+        {
+          "statement": "Criticised for silently stopping syncing and for unreliability.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-17",
+            "ev-18"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-04",
+      "name": "CedCommerce TikTok Shop",
+      "url": "https://apps.shopify.com/cedcommerce-tiktok-shop",
+      "kind": "direct",
+      "description": "Shopify integration for TikTok Shop listing, inventory sync and fulfillment.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-46",
+        "ev-19"
+      ],
+      "sentiment": [
+        {
+          "statement": "One merchant reports preorder items showing as in stock on TikTok, forcing cancellations.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-05",
+      "name": "CS Amazon Integration & Sync",
+      "url": "https://apps.shopify.com/amazon-3",
+      "kind": "direct",
+      "description": "Shopify-Amazon app advertising real-time Amazon inventory and order sync.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-45",
+        "ev-48"
+      ],
+      "sentiment": [
+        {
+          "statement": "One merchant calls its real-time updates their favourite after trying many; another paid $150 and still had zero inventory on Amazon.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-48",
+            "ev-22"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-06",
+      "name": "Sumtracker",
+      "url": "https://www.sumtracker.com",
+      "kind": "direct",
+      "description": "Inventory sync and replenishment for Shopify brands across Shopify, Amazon, eBay, Etsy and Walmart.",
+      "pricing_note": "Manage plan from $59/month for up to 2,500 orders/year.",
+      "evidence_refs": [
+        "ev-42",
+        "ev-35"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Syncio",
+      "url": "https://www.syncio.co",
+      "kind": "indirect",
+      "description": "Real-time inventory sync between Shopify (and WooCommerce) stores; not marketplaces.",
+      "pricing_note": "$19/$49/$99 per month by synced-order volume.",
+      "evidence_refs": [
+        "ev-40",
+        "ev-41"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "OneCart",
+      "url": "https://www.getonecart.com",
+      "kind": "direct",
+      "description": "Multichannel tool claiming Shopify-TikTok Shop inventory sync within seconds.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-43"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "Ownbase",
+      "url": "https://apps.shopify.com/ownbase",
+      "kind": "direct",
+      "description": "Shopify-TikTok Shop sync claiming real-time inventory updates.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-44"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Linnworks",
+      "url": "https://www.linnworks.com",
+      "kind": "indirect",
+      "description": "Multichannel commerce operations platform priced by order volume.",
+      "pricing_note": "Reported from around $200/month (quote-based).",
+      "evidence_refs": [
+        "ev-52",
+        "ev-51"
+      ],
+      "sentiment": [
+        {
+          "statement": "Sellers on Amazon's forum objected to price rises to £150-£450/month when they only need quantity sync.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-51"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-11",
+      "name": "EasyEcom",
+      "url": "https://www.easyecom.io",
+      "kind": "direct",
+      "description": "Indian OMS/WMS with real-time inventory sync across Indian marketplaces.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-53"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "Ease Commerce",
+      "url": "https://easecommerce.in",
+      "kind": "direct",
+      "description": "Indian tool syncing Shopify with Amazon, Flipkart and Meesho.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-39"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-13",
+      "name": "Safety buffers and manual checks",
+      "url": null,
+      "kind": "manual",
+      "description": "Holding back units per channel and diffing inventory exports by SKU by hand.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-27",
+        "ev-04",
+        "ev-36"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-14",
+      "name": "In-house e-commerce operations staff",
+      "url": null,
+      "kind": "service",
+      "description": "Hiring an operations specialist to resolve inventory sync issues across Shopify, TikTok Shop and the 3PL.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-37"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most merchants rely on a native connector or a $19-$99/month sync app, and many vendors already claim real-time sync.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-24",
+        "ev-40",
+        "ev-42",
+        "ev-43"
+      ]
+    },
+    {
+      "statement": "Merchants backstop the apps with safety buffers and manual SKU-level checks.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-27",
+        "ev-04",
+        "ev-17"
+      ]
+    },
+    {
+      "statement": "Larger brands hire operations staff to resolve sync issues during TikTok Live peaks.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-37"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Bambu Earth",
+      "website": "https://bambuearth.com",
+      "icp_id": null,
+      "location": "Havelock, NC",
+      "industry": "Natural skincare (DTC)",
+      "description": "Shopify skincare brand that syncs Amazon orders into Shopify with a third-party app.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-54"
+      },
+      "technologies": [
+        "Shopify",
+        "CS Amazon Integration & Sync"
+      ],
+      "evidence_refs": [
+        "ev-54",
+        "ev-77"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on Amazon.",
+          "evidence_refs": [
+            "ev-54",
+            "ev-77"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CS Amazon Integration & Sync on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-02",
+      "name": "Cedar Mesa Pottery",
+      "website": "https://cmpottery.com",
+      "icp_id": null,
+      "location": "Blanding, UT",
+      "industry": "Native American pottery retail/wholesale",
+      "description": "Shopify pottery retailer selling on Amazon via a Shopify-Amazon sync app.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-55"
+      },
+      "technologies": [
+        "Shopify",
+        "CS Amazon Integration & Sync"
+      ],
+      "evidence_refs": [
+        "ev-55",
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on Amazon.",
+          "evidence_refs": [
+            "ev-55",
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CS Amazon Integration & Sync on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Designed To Flaunt",
+      "website": "https://www.designedtoflaunt.com",
+      "icp_id": null,
+      "location": "Overland Park, KS",
+      "industry": "Gifts and custom apparel",
+      "description": "Shopify gift shop that struggled to link TikTok Shop and Shopify before adopting a sync app.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-56"
+      },
+      "technologies": [
+        "Shopify",
+        "QuickSync for TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-56",
+        "ev-79"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-56",
+            "ev-79"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed QuickSync for TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-79"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Its own review reports sync problems.",
+          "evidence_refs": [
+            "ev-79"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "Raised Hunting",
+      "website": "https://www.raisedhunting.com",
+      "icp_id": null,
+      "location": "Winterset, IA",
+      "industry": "Hunting scents and gear",
+      "description": "Shopify outdoor brand connecting Amazon orders and tracking to Shopify; had a returns-restock sync issue.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      },
+      "technologies": [
+        "Shopify",
+        "CS Amazon Integration & Sync"
+      ],
+      "evidence_refs": [
+        "ev-57",
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on Amazon.",
+          "evidence_refs": [
+            "ev-57",
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CS Amazon Integration & Sync on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Udder Delight Natural Skincare",
+      "website": "https://udderdelight.com",
+      "icp_id": null,
+      "location": "Glenwood, NM",
+      "industry": "Goat-milk skincare maker",
+      "description": "Small Shopify skincare maker listing on Amazon through a sync app after weeks of troubleshooting.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      },
+      "technologies": [
+        "Shopify",
+        "CS Amazon Integration & Sync"
+      ],
+      "evidence_refs": [
+        "ev-58",
+        "ev-81"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on Amazon.",
+          "evidence_refs": [
+            "ev-58",
+            "ev-81"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CS Amazon Integration & Sync on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Maverick Disc Golf",
+      "website": "https://www.maverickdiscgolf.com",
+      "icp_id": null,
+      "location": "Olathe, KS",
+      "industry": "Disc golf retail",
+      "description": "Shopify retailer with a physical store that syncs listings to marketplaces and reports repeated sync failures.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [
+        "Shopify",
+        "Shopify Marketplace Connect"
+      ],
+      "evidence_refs": [
+        "ev-59",
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US Shopify merchant selling on eBay/Amazon/Walmart via Marketplace Connect.",
+          "evidence_refs": [
+            "ev-59",
+            "ev-82"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Reviewed Shopify Marketplace Connect on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Its own review reports sync problems.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Kappa Hobby",
+      "website": "https://www.kappahobby.com",
+      "icp_id": null,
+      "location": "Daly City, CA",
+      "industry": "Anime figures and hobby retail",
+      "description": "Shopify hobby retailer whose marketplace connector suddenly stopped connecting to eBay for weeks.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      },
+      "technologies": [
+        "Shopify",
+        "Shopify Marketplace Connect"
+      ],
+      "evidence_refs": [
+        "ev-60",
+        "ev-83"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US Shopify merchant selling on eBay/Amazon/Walmart via Marketplace Connect.",
+          "evidence_refs": [
+            "ev-60",
+            "ev-83"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Reviewed Shopify Marketplace Connect on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-83"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Its own review reports sync problems.",
+          "evidence_refs": [
+            "ev-83"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "Prolux Cosmetics",
+      "website": "https://www.proluxcosmetics.com",
+      "icp_id": null,
+      "location": "Vernon, CA",
+      "industry": "Cosmetics and beauty accessories",
+      "description": "Shopify beauty retailer that found its Shopify-TikTok Shop sync app unreliable.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [
+        "Shopify",
+        "QuickSync for TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-61",
+        "ev-84"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-61",
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Reviewed QuickSync for TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Its own review reports sync problems.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Bjorem Speech",
+      "website": "https://www.bjoremspeech.com",
+      "icp_id": null,
+      "location": "Colorado",
+      "industry": "Speech-therapy materials publisher",
+      "description": "Shopify brand (team of nine) fulfilling Amazon orders from Shopify via a sync app.",
+      "size_estimate": {
+        "min": 9,
+        "max": 9,
+        "signal": "About page: dedicated team of nine",
+        "evidence_ref": "ev-62"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      },
+      "technologies": [
+        "Shopify",
+        "CS Amazon Integration & Sync"
+      ],
+      "evidence_refs": [
+        "ev-62",
+        "ev-85",
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on Amazon.",
+          "evidence_refs": [
+            "ev-62",
+            "ev-85"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CS Amazon Integration & Sync on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-85"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Jennie Bjorem",
+          "role": "Founder & CEO",
+          "email": null,
+          "evidence_ref": "ev-63"
+        }
+      ]
+    },
+    {
+      "ref": "co-10",
+      "name": "Gigi and Max",
+      "website": "https://www.gigiandmax.com",
+      "icp_id": null,
+      "location": "Bettendorf, IA",
+      "industry": "Children's clothing",
+      "description": "Owner-run Shopify brand selling on TikTok Shop that reports products and orders not syncing.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-64"
+      },
+      "technologies": [
+        "Shopify",
+        "QuickSync for TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-64",
+        "ev-86"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-64",
+            "ev-86"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Reviewed QuickSync for TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-86"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Its own review reports sync problems.",
+          "evidence_refs": [
+            "ev-86"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Mike Gonzales",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-64"
+        }
+      ]
+    },
+    {
+      "ref": "co-11",
+      "name": "Novelly Yours",
+      "website": "https://novellyyours.com",
+      "icp_id": null,
+      "location": "Oswego, IL",
+      "industry": "Candles and literary gifts",
+      "description": "Owner-run Shopify candle shop trying TikTok Shop sync apps.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-65"
+      },
+      "technologies": [
+        "Shopify",
+        "QuickSync for TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-65",
+        "ev-87"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-65",
+            "ev-87"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed QuickSync for TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-87"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Brittany Smith",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-65"
+        }
+      ]
+    },
+    {
+      "ref": "co-12",
+      "name": "MERIT Beauty",
+      "website": "https://www.meritbeauty.com",
+      "icp_id": null,
+      "location": "New York / Los Angeles",
+      "industry": "Beauty brand",
+      "description": "Larger Shopify beauty brand that integrated TikTok Shop under deadline with a connector; likely above the core SMB band.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [
+        "Shopify",
+        "CedCommerce TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-66",
+        "ev-88"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-66",
+            "ev-88"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CedCommerce TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Green River Seeds",
+      "website": "https://greenriverseeds.com",
+      "icp_id": null,
+      "location": "Ravensdale, WA",
+      "industry": "Seeds and garden supplies",
+      "description": "Shopify seed seller syncing inventory to TikTok Shop with a connector.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      },
+      "technologies": [
+        "Shopify",
+        "CedCommerce TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-67",
+        "ev-89"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-67",
+            "ev-89"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CedCommerce TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-89"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Inherit Co.",
+      "website": "https://www.inheritco.com",
+      "icp_id": null,
+      "location": "Morris, MN",
+      "industry": "Apparel",
+      "description": "Shopify apparel brand connecting inventory to Amazon via a sync app.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-68"
+      },
+      "technologies": [
+        "Shopify",
+        "CS Amazon Integration & Sync"
+      ],
+      "evidence_refs": [
+        "ev-68",
+        "ev-90"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on Amazon.",
+          "evidence_refs": [
+            "ev-68",
+            "ev-90"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CS Amazon Integration & Sync on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-90"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "Manta Sleep",
+      "website": "https://mantasleep.com",
+      "icp_id": null,
+      "location": "Jackson, WY",
+      "industry": "Sleep masks and sleep products",
+      "description": "Shopify sleep-products brand selling on TikTok Shop via a connector.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-69"
+      },
+      "technologies": [
+        "Shopify",
+        "CedCommerce TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-69",
+        "ev-91"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-69",
+            "ev-91"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CedCommerce TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Texas Life Outfitters",
+      "website": "https://www.texaslifeoutfitters.com",
+      "icp_id": null,
+      "location": "Dallas, TX",
+      "industry": "Apparel",
+      "description": "Shopify apparel shop setting up TikTok Shop sync.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-70"
+      },
+      "technologies": [
+        "Shopify",
+        "QuickSync for TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-70",
+        "ev-92"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-70",
+            "ev-92"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed QuickSync for TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-92"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "Wild Oak Boutique",
+      "website": "https://www.wildoakboutique.com",
+      "icp_id": null,
+      "location": "Sioux Falls, SD",
+      "industry": "Women's boutique apparel",
+      "description": "Shopify boutique using a TikTok Shop connector (spent $2,000+ on custom work).",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      },
+      "technologies": [
+        "Shopify",
+        "CedCommerce TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-71",
+        "ev-93"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-71",
+            "ev-93"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CedCommerce TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-93"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Comphies",
+      "website": "https://comphies.com",
+      "icp_id": null,
+      "location": "Fort Myers, FL",
+      "industry": "Graphic tees and gifts",
+      "description": "Veteran-owned Shopify apparel shop that tried several TikTok Shop apps, including TikTok's own.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-72"
+      },
+      "technologies": [
+        "Shopify",
+        "CedCommerce TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-72",
+        "ev-94"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-72",
+            "ev-94"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CedCommerce TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-94"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "Tampon Tribe",
+      "website": "https://tampontribe.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Organic period products",
+      "description": "Shopify brand syncing to TikTok Shop with a third-party app.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-73"
+      },
+      "technologies": [
+        "Shopify",
+        "QuickSync for TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-73",
+        "ev-95"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-73",
+            "ev-95"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed QuickSync for TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-95"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "Alternate Worlds Magic",
+      "website": "https://alternateworldsmagic.com",
+      "icp_id": null,
+      "location": "Cockeysville, MD",
+      "industry": "Games and hobby retail",
+      "description": "Shopify retailer that says marketplace sync corrupted prices and inventory and cost it money.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [
+        "Shopify",
+        "Shopify Marketplace Connect"
+      ],
+      "evidence_refs": [
+        "ev-74",
+        "ev-23"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US Shopify merchant selling on eBay/Amazon/Walmart via Marketplace Connect.",
+          "evidence_refs": [
+            "ev-74",
+            "ev-23"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Reviewed Shopify Marketplace Connect on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-23"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Its own review reports sync problems.",
+          "evidence_refs": [
+            "ev-23"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-21",
+      "name": "Tokullectibles",
+      "website": "https://tokullectibles.com",
+      "icp_id": null,
+      "location": "Hamburg, PA",
+      "industry": "Collectibles retail",
+      "description": "Shopify collectibles seller whose marketplace connector does not properly sync inventory, risking marketplace penalties.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-75"
+      },
+      "technologies": [
+        "Shopify",
+        "Shopify Marketplace Connect"
+      ],
+      "evidence_refs": [
+        "ev-75",
+        "ev-21"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US Shopify merchant selling on eBay/Amazon/Walmart via Marketplace Connect.",
+          "evidence_refs": [
+            "ev-75",
+            "ev-21"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Reviewed Shopify Marketplace Connect on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-21"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Its own review reports sync problems.",
+          "evidence_refs": [
+            "ev-21"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-22",
+      "name": "RivaMira",
+      "website": "https://rivamira.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Home and beauty essentials",
+      "description": "Small Shopify store scaling on TikTok Shop with a connector.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-76"
+      },
+      "technologies": [
+        "Shopify",
+        "CedCommerce TikTok Shop"
+      ],
+      "evidence_refs": [
+        "ev-76",
+        "ev-96"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US Shopify merchant selling on TikTok Shop.",
+          "evidence_refs": [
+            "ev-76",
+            "ev-96"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Reviewed CedCommerce TikTok Shop on the Shopify App Store, so it already uses a channel sync app.",
+          "evidence_refs": [
+            "ev-96"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
