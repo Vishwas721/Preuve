@@ -1,0 +1,2992 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "4c4e41fc-43c4-4a17-905f-20b0084228d4",
+    "researcher": "claude-code",
+    "started_at": "2026-11-07T09:00:00Z",
+    "finished_at": "2026-11-07T13:00:00Z",
+    "queries": [
+      "Mindbody price increase studio owners leaving reddit",
+      "Mindbody export client data switching software studio difficult credit card transfer",
+      "yoga studio owner members stopped coming win back email haven't seen you retention",
+      "reddit studio owner mindbody contract cancel yoga studio owner expensive switching",
+      "Momence OR Arketa free migration from Mindbody studio",
+      "Mindbody price increase 2024 studio owners letter fee increase news",
+      "site:reddit.com mindbody studio owner switching software (Reddit blocked by robots; used secondhand quotes)",
+      "site:reddit.com pilates studio owner retention members dropping off how do you follow up",
+      "Mindbody Marketing Suite automated lapsed clients email haven't visited automation (contradiction: incumbent solves it)",
+      "WellnessLiving OR Momence OR PushPress automation at-risk members win-back studio feature (contradiction)",
+      "pilates studio manager job retention reach out clients who haven't booked front desk job posting",
+      "Mindbody API developer pricing per site monthly fee third-party integration cost",
+      "Gleantap pricing fitness studio retention software Mindbody integration per month",
+      "Mindbody ClassPass Playlist private equity Vista price increases studios 2025",
+      "small yoga studio owner track attendance spreadsheet google sheets reach out students who stop coming",
+      "Mindbody migration consultant service studio software switch done-for-you setup (contradiction: migration is free)",
+      "boutique fitness studio owners survey technology spend software retention biggest challenge 2025 report",
+      "independent pilates / yoga / CrossFit / martial arts studio owner about us [various US cities] (prospects)"
+    ],
+    "notes": "Reddit (r/mindbody, r/pilates, r/gymowner) blocks Preuve's fetcher, so owner voices come secondhand from a competitor's (Vibefam) roundup that quotes threads verbatim; treat those as vendor-curated. Capterra/G2, Glofox, Gleantap, Zen Planner and gymdesk pages were blocked or rate-limited, so Glofox, Zen Planner and Gleantap have no first-hand evidence here. Much of the evidence on both sides is vendor marketing (competitors selling switches; Mindbody defending). No first-hand data on how often owners review attendance or on manager budget authority. 20 prospects (all US, primary ICP); sizes only where the studio states staff/teacher counts (4); contacts only where name+title appear on the studio's own page (11 people at 10 studios); one printed email (Marz Aerial). Several studios use Squarespace subdomains because that is the fetchable canonical URL. Full Circle Yoga is likely below the 50-member floor and Yoga Sanctuary is a nonprofit. No ICP id was returned by context, so icp_id is null."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://www.wellnessliving.com/blog/mindbody-pricing-driving-clients-change-software/",
+      "title": "MindBody Pricing is Driving Clients to Change Software in 2025",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "their recent pricing increases have caused many clients to move on to other more cost effective alternatives … A big reason for her departure from the platform was when the company raised the monthly cost of the software without giving clients any warning of the price increase.",
+      "statement": "A competitor (WellnessLiving) says Mindbody price increases drove studio owners to switch, including one owner who left after an unannounced monthly price rise. Vendor-published, self-interested.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://www.wellnessliving.com/blog/mindbody-pricing-driving-clients-change-software/",
+      "title": "MindBody Pricing is Driving Clients to Change Software in 2025",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "He grew tired of having to use third party software platforms and paying extra for the kinds of add-ons he wanted, and MindBody should have offered for free.",
+      "statement": "Same competitor story: a gym owner left Mindbody partly over paying for add-ons and third-party tools.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de",
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://vibefam.com/switching-from-mindbody-reddit-2026/",
+      "title": "Switching from Mindbody: What Reddit Recommends in 2026",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Massive price hikes after private equity buys the company. Support that's great during sales, then vanishes. Contracts that are nearly impossible to get out of. Marketplaces that basically compete with you for your own members.",
+      "statement": "A competitor's (Vibefam) roundup quotes a gym-owner Reddit post listing PE-driven price hikes, hard-to-exit contracts and marketplaces competing for members. Secondhand: Reddit itself is not fetchable.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de",
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://vibefam.com/switching-from-mindbody-reddit-2026/",
+      "title": "Switching from Mindbody: What Reddit Recommends in 2026",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Every year there's some new 'upgrade' nobody asked for and suddenly my bill is way higher than what I signed up for.",
+      "statement": "The same roundup quotes a three-year Mindbody customer complaining of yearly bill increases. Secondhand.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://vibefam.com/switching-from-mindbody-reddit-2026/",
+      "title": "Switching from Mindbody: What Reddit Recommends in 2026",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I just migrated all my data which I decided to have done manually rather than pay the $499 data fee to have mindbody provide it.",
+      "statement": "An operator (quoted secondhand) migrated data by hand rather than pay a $499 Mindbody data fee.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://vibefam.com/switching-from-mindbody-reddit-2026/",
+      "title": "Switching from Mindbody: What Reddit Recommends in 2026",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "MindBody has been our most seamless [migration] just because they have the cleanest export.\"[^5] The block is the friction to release it, not the file quality.",
+      "statement": "A rival-platform co-founder (quoted secondhand) says Mindbody's export file is the cleanest to migrate; the friction is getting it released.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://vibefam.com/switching-from-mindbody-reddit-2026/",
+      "title": "Switching from Mindbody: What Reddit Recommends in 2026",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hundreds of client records, including stored payment information for nearly 300 clients, did not transfer cleanly",
+      "statement": "An operator (quoted secondhand) reports stored payment data for nearly 300 clients failed to transfer during a migration to Arketa.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Arketa"
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://vibefam.com/switching-from-mindbody-reddit-2026/",
+      "title": "Switching from Mindbody: What Reddit Recommends in 2026",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Studios describe pulling numbers into Google Sheets weekly because Mindbody's native reports either take too long or return the wrong figures.",
+      "statement": "A competitor's summary of Reddit threads says studios pull Mindbody numbers into Google Sheets weekly. Secondhand, no counts.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "5cc0b148-e35e-44b9-ac1b-b8eeb1fdf4a9",
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://vibefam.com/switching-from-mindbody-reddit-2026/",
+      "title": "Switching from Mindbody: What Reddit Recommends in 2026",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "they were bought by a venture capital firm in 2025 and things have really started going downhill... they shut off most of our features even though we had paid $400 for their platform.",
+      "statement": "An operator (quoted secondhand) says Momence cut features after a 2025 acquisition, an example of ownership change triggering dissatisfaction.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de"
+      ],
+      "company_name": "Momence"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://www.mindbodyonline.com/business/education/blog/mindbody-contracts-cancellation-data",
+      "title": "Mindbody Contracts, Cancellation Policies, and Data Exports Explained | Mindbody",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Flexible terms based (e.g., 12, 24, or 36 months) on plan and business needs … Mindbody contracts automatically renew at the end of the current term unless the contract is terminated with proper notice by either party.",
+      "statement": "Mindbody's own page confirms 12/24/36-month terms that auto-renew unless notice is given, so the renewal date is a fixed decision point.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de",
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://www.mindbodyonline.com/business/education/blog/mindbody-contracts-cancellation-data",
+      "title": "Mindbody Contracts, Cancellation Policies, and Data Exports Explained | Mindbody",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Most month-to-month contracts begin with a standard 90-day minimum commitment.",
+      "statement": "Mindbody also offers month-to-month contracts after a 90-day minimum, which weakens the 'locked into long contracts' premise for some studios.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.mindbodyonline.com/business/education/blog/mindbody-contracts-cancellation-data",
+      "title": "Mindbody Contracts, Cancellation Policies, and Data Exports Explained | Mindbody",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mindbody allows you to export your business data in standard formats, such as CSV files. … If you have a large volume of data and need additional support, Mindbody offers a data export service for an added fee. This service is available for up to 30 days after cancellation",
+      "statement": "Mindbody says self-serve CSV exports (including visit records) exist, with a paid export service available for only 30 days after cancellation.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897",
+        "5cc0b148-e35e-44b9-ac1b-b8eeb1fdf4a9"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://www.mindbodyonline.com/business/education/blog/mindbody-contracts-cancellation-data",
+      "title": "Mindbody Contracts, Cancellation Policies, and Data Exports Explained | Mindbody",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For growing studios and multi-location brands, the operational cost of switching from Mindbody can outweigh the perceived savings.",
+      "statement": "Mindbody argues switching costs (rebuilding automations, retraining, payment reconnection) can outweigh savings; incumbent marketing.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://www.joinzipper.com/help-center-article/what-data-transfers-from-mindbody-mariana-tek-glofox-walla",
+      "title": "What Data Transfers from MindBody / Mariana Tek / Glofox / Walla — Zipper",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "MindBody — Uses its own payment processor. PAN transfer requires a formal data release request (takes 3–4 weeks).",
+      "statement": "A migration guide from Zipper says Mindbody card-number (PAN) transfer needs a formal release request taking 3-4 weeks.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://www.joinzipper.com/help-center-article/what-data-transfers-from-mindbody-mariana-tek-glofox-walla",
+      "title": "What Data Transfers from MindBody / Mariana Tek / Glofox / Walla — Zipper",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Glofox — Often Stripe-based. If both old and new accounts use Stripe infrastructure, PAN transfer may not be needed.",
+      "statement": "The same guide says Glofox (often Stripe-based) migrations may not need card transfer at all, so the card-token problem is mostly Mindbody-specific.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Glofox"
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.joinzipper.com/help-center-article/what-data-transfers-from-mindbody-mariana-tek-glofox-walla",
+      "title": "What Data Transfers from MindBody / Mariana Tek / Glofox / Walla — Zipper",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Class schedules | ❌ | Recreate in Zipper Calendar",
+      "statement": "Class schedules do not transfer and must be recreated after a migration to Zipper.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Zipper"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://jane.app/guide/importing-from-mindbody",
+      "title": "Importing from Mindbody",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If you have a lot of data Mindbody’s exporters sometimes seems to time out … Charts from Mindbody can be exported at a cost through their Subscriber Data Export service.",
+      "statement": "Jane's import guide says Mindbody's exporters can time out on large data and some records need the paid Subscriber Data Export.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://intercom.help/punchpass/en/articles/1033084-how-do-i-convert-to-punchpass-from-mindbody",
+      "title": "How do I convert to Punchpass from Mindbody? | Punchpass Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If you have a very basic MindBody plan, they may not give you access to the Visits Remaining Report.",
+      "statement": "Punchpass says basic Mindbody plans may lack the Visits Remaining report needed to move class-pack balances.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://intercom.help/punchpass/en/articles/1033084-how-do-i-convert-to-punchpass-from-mindbody",
+      "title": "How do I convert to Punchpass from Mindbody? | Punchpass Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Then you can collect your customers' credit card information (call them or talk to them next time they're in the studio) to keep them on track.",
+      "statement": "Punchpass's migration path has the studio re-collect members' cards by phone or in person.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Punchpass"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://backstage.tulasoftware.com/blog/2015/3/17/how-mindbody-is-holding-their-customers-hostage",
+      "title": "How mindbody is holding their customers hostage and propping up their valuation ahead of its IPO — Tula Blog",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Six hundred dollars. … This is how much money mindbody charges their customers if they want to get their student credit card data.",
+      "statement": "A 2015 competitor post said Mindbody charged $600 to release card data. Old and self-interested; shows the issue is long-standing.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://try.arketa.com/",
+      "title": "My Framer Site",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We handle the entire switch; zero revenue lost. … FREE MIGRATION",
+      "statement": "Arketa advertises free migration off Mindbody.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897",
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "Arketa"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://www.arketa.com/compare/arketa-vs-mindbody",
+      "title": "Arketa vs Mindbody (2026): Pricing, Features & Switching",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Branded app, marketing automations, and on-demand video are all included at a flat 2.9% + $0.30 processing rate. On Mindbody, those are paid add-ons",
+      "statement": "Arketa positions bundled branded app and marketing automation against Mindbody's paid add-ons.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc",
+        "ce8665d5-3324-4be6-a6c0-499c8af036de"
+      ],
+      "company_name": "Arketa"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://www.hellowalla.com/make-the-switch",
+      "title": "Switch to Walla: Studio Software Migration, Handled",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our dedicated onboarding team handles the heavy lifting, migrating your member profiles, recurring memberships, billing details, and class history. … In most cases, client cards migrate directly to Stripe from your previous platform.",
+      "statement": "Walla includes migration of members, memberships and (usually) cards as part of onboarding.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897",
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "Walla"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://www.mindbodyonline.com/business/compare/mindbody-vs-arketa",
+      "title": "Mindbody vs. Arketa | Mindbody",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We'll handle data migration from your current provider (including client details & inventory), and we'll complete your software setup free of charge",
+      "statement": "Mindbody itself offers free data migration and setup to studios switching in.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://pro.bsport.io/comparison-mindbody",
+      "title": "Mindbody",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Dedicated onboarding & migration specialists for every studio",
+      "statement": "bsport markets dedicated migration specialists to studios leaving Mindbody.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897",
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "bsport"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://marzaerial.kit.com/posts/marz-aerial-transition-to-momence-is-complete",
+      "title": "Marz Aerial Transition to Momence is COMPLETE!",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We have finished the data migration from MindBody to Momence … If you had an active Membership, class package, bookings for future classes, or anything else, all of those have been successfully transferred over to Momence.",
+      "statement": "A small North Carolina studio reports a completed Mindbody-to-Momence migration including memberships, class packs and future bookings.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897"
+      ],
+      "company_name": "Marz Aerial Arts & Fitness"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://www.mindbodyonline.com/business/education/blog/new-mindbody-pricing-united-states",
+      "title": "New Mindbody Pricing in the US: $79 per Month for Small Fitness and Wellness Businesses | Mindbody",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mindbody now starts at $79 USD per month, per location … predictive models that surface which clients are most likely to churn, the revenue at stake",
+      "statement": "Mindbody's US entry price is $79/month per location (Oct 2026) and includes churn-prediction models, undercutting both the price-hike story and the retention-gap story.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521",
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc",
+        "ce8665d5-3324-4be6-a6c0-499c8af036de"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://punchpass.com/resources/blog/lets-talk-about-mindbody-pricing-we-break-down-the-plans-features-and-more/",
+      "title": "Mindbody Pricing 2026: We Break Down the Plans, Features and More | Punchpass Blog",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ultimate: everything in Accelerate, plus automated email and text campaigns and templates",
+      "statement": "Per Punchpass's breakdown, Mindbody's automated email/text campaigns sit in the top (Ultimate) tier, so lower-tier studios lack them.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc",
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://mindbody.exceedlms.com/student/page/855918-we-miss-you",
+      "title": "We miss you!",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "While your goal might be retention, it’s just not feasible to track down every client who you haven’t seen in a while. … find the square that says ‘45 Day reengagement’ > Click turn on",
+      "statement": "Mindbody's training says manual follow-up of lapsed clients isn't feasible and offers a built-in '45 Day reengagement' automation.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521",
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://help.pushpress.com/en/articles/13515587-grow-how-the-at-risk-member-workflow-works",
+      "title": "Grow | How the At-Risk Member Workflow Works | PushPress Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The system flags them as at risk … Your team gets an internal notification … This check runs automatically each morning.",
+      "statement": "PushPress has a built-in at-risk workflow that flags members who stop checking in and alerts staff daily.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521",
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "PushPress"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://www.newswire.com/news/wellnessliving-launches-industrys-first-ai-powered-all-in-one-marketing",
+      "title": "WellnessLiving Launches Industry's First AI-Powered, All-in-One Marketing Automation System for Fitness, Wellness and Beauty Businesses",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Win-back automations re-engage lapsed clients from gyms, yoga studios, med spas, salons, and more.",
+      "statement": "WellnessLiving launched (Apr 2026) a native Marketing Suite with win-back automations.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521",
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "WellnessLiving"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.newswire.com/news/wellnessliving-launches-industrys-first-ai-powered-all-in-one-marketing",
+      "title": "WellnessLiving Launches Industry's First AI-Powered, All-in-One Marketing Automation System for Fitness, Wellness and Beauty Businesses",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "the average fitness facility retains just 66% of its members annually, and more than half of new members leave within their first year. For most business owners, the tools to address retention and engagement have been fragmented, expensive, and disconnected from the data that matters most.",
+      "statement": "WellnessLiving cites an HFA 2025 benchmark of 66% annual member retention and calls existing retention tools fragmented and expensive.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521"
+      ],
+      "company_name": "WellnessLiving"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://support.fitgrid.com/en/articles/2795614-why-win-backs-are-every-successful-studio-owner-s-secret-weapon",
+      "title": "Why Win-backs Are Every Successful Studio Owner's Secret Weapon | FitGrid Help Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "This FitGrid feature allows you to trigger automated messages to clients that have not visited your studio in a designated amount of time (lost accounts).",
+      "statement": "FitGrid sells instructor-signed win-back messages triggered by days since last visit.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "FitGrid"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.dailystory.com/blog/common-marketing-mistakes-made-by-mindbody-users/",
+      "title": "Common marketing mistakes made by Mindbody users",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A pilates studio discovered that nearly 30 percent of its past members had gone inactive without ever receiving a check-in message, reminder, or incentive to return.",
+      "statement": "DailyStory (a Mindbody add-on vendor) gives an anecdote of a Pilates studio whose lapsed members never got any follow-up.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521"
+      ],
+      "company_name": "DailyStory"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.dailystory.com/blog/common-marketing-mistakes-made-by-mindbody-users/",
+      "title": "Common marketing mistakes made by Mindbody users",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A multi-location studio spent several hours each week exporting Mindbody data just to send basic segmented campaigns.",
+      "statement": "Vendor anecdote: a studio spent several hours a week exporting Mindbody data for campaigns.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "5cc0b148-e35e-44b9-ac1b-b8eeb1fdf4a9"
+      ],
+      "company_name": "DailyStory"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.dailystory.com/blog/common-marketing-mistakes-made-by-mindbody-users/",
+      "title": "Common marketing mistakes made by Mindbody users",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mindbody shows attendance history, but it doesn’t proactively guide businesses toward structured win-back strategies.",
+      "statement": "DailyStory argues Mindbody lacks structured win-back guidance and positions its own add-on, i.e., the retention-add-on slot already has vendors.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc",
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521"
+      ],
+      "company_name": "DailyStory"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://apiant.com/blog/posts/mindbody-keap-winback-21-days/",
+      "title": "Mindbody and Keap: Catch Members at the 21-Day Mark Before They Quietly Quit",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "bringing back 22 percent of them recovers roughly 1 to 2 members a month. At a $169 unlimited tier, that is roughly $200 to $400 of recovered monthly revenue, or $3K to $5K a year.",
+      "statement": "An integration vendor's illustrative model for a 320-member studio puts recovered revenue at $200-400/month, which leaves thin room for a $49-99/month tool. Illustrative, not measured.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521"
+      ],
+      "company_name": "APIANT"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://apiant.com/blog/posts/mindbody-keap-winback-21-days/",
+      "title": "Mindbody and Keap: Catch Members at the 21-Day Mark Before They Quietly Quit",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "In Keap, you set up one sequence that runs automatically when an active member’s last visit crosses 21 days ago.",
+      "statement": "APIANT sells a Mindbody-to-Keap sync to run 21-day win-back sequences, another existing add-on route.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "APIANT"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.usecarly.com/blog/mindbody-api/",
+      "title": "Mindbody API: Metered Calls, Free Webhooks, Four Gates",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Around the same Mindbody data, Carly can follow up on failed payments, turn a first visit into a thoughtful next touch, reach clients before contracts lapse",
+      "statement": "Carly already sells waitlist filling, first-visit follow-up and lapse outreach on Mindbody data, the same wedge as the idea.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc"
+      ],
+      "company_name": "Carly"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.usecarly.com/blog/mindbody-api/",
+      "title": "Mindbody API: Metered Calls, Free Webhooks, Four Gates",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Calls are billed per-call on a monthly cycle with a free allowance below a set volume. … Request Live Access — a form plus billing information, then Mindbody manually reviews it and emails you on approval",
+      "statement": "Mindbody's API is metered per call and live access requires manual review, plus a per-site owner activation.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1620d646-538b-48a5-b5b1-8c0915b17897",
+        "1f202fdc-9619-4544-8bbd-30064ddd58a2"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://www.usecarly.com/blog/mindbody-api/",
+      "title": "Mindbody API: Metered Calls, Free Webhooks, Four Gates",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "So four distinct gates: Mindbody’s review, a credit card on file, a site-specific code you request per studio, and an action only the studio owner can take.",
+      "statement": "Connecting an add-on to a Mindbody site requires an action only the studio owner can take, so the owner is the gate for any integration.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "1f202fdc-9619-4544-8bbd-30064ddd58a2"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://sgbonline.com/exec-mindbody-survey-finds-fitness-industry-professionals-upbeat-about-2025/",
+      "title": "EXEC: Mindbody Survey Finds Fitness Industry Professionals Upbeat About 2025",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "When asked about their primary approach to retention, fitness operators overwhelmingly cited personalized outreach, with 56 percent of respondents identifying it as a top strategy.",
+      "statement": "Mindbody's 2025 survey (1,421 operators) found personalized outreach is the top retention approach (56%).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://sgbonline.com/exec-mindbody-survey-finds-fitness-industry-professionals-upbeat-about-2025/",
+      "title": "EXEC: Mindbody Survey Finds Fitness Industry Professionals Upbeat About 2025",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "37 percent use SMS at least once a month to reach clients.",
+      "statement": "37% of operators use SMS monthly to reach clients.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc",
+        "5cc0b148-e35e-44b9-ac1b-b8eeb1fdf4a9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://www.hapana.com/blog/technology-avoid-fitness-studio",
+      "title": "5 Technologies to Avoid Buying For Your Fitness Studio | Hapana",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Nearly nine in ten (86%) fitness studio owners in the U.S. use CRMs to streamline their operations … Nearly one in two (46%) fitness studio owners utilize their CRM to generate reports and analytics on customer data",
+      "statement": "Hapana's survey of US studio owners: 86% use a CRM and 46% use it for customer reports.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc",
+        "5cc0b148-e35e-44b9-ac1b-b8eeb1fdf4a9"
+      ],
+      "company_name": "Hapana"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://www.hapana.com/blog/technology-avoid-fitness-studio",
+      "title": "5 Technologies to Avoid Buying For Your Fitness Studio | Hapana",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "49% of fitness studio owners plan to invest in new equipment and technology next year, despite 57% believing that implementing technology creates operational challenges.",
+      "statement": "57% of studio owners say implementing technology creates operational challenges, a headwind for adding another tool.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de",
+        "1f202fdc-9619-4544-8bbd-30064ddd58a2"
+      ],
+      "company_name": "Hapana"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://www.hapana.com/blog/boutiques-fitness-studios-usa-industry-report-2024",
+      "title": "Boutiques & Fitness Studios: USA Industry Report 2024 | Hapana",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "61% – As living expenses increase, members are finding memberships less affordable",
+      "statement": "Hapana's 2024 report (324 US studio owners/managers): 61% say members find memberships less affordable, so churn pressure is real.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de"
+      ],
+      "company_name": "Hapana"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://www.mindbodyonline.com/business/education/blog/what-mindbody-really-costs-pilates-studios",
+      "title": "What Mindbody Really Costs and When It Pays for Itself for Pilates Studios | Mindbody",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Email and SMS marketing tools: $75-$250/month",
+      "statement": "Mindbody's own cost model for a small Pilates studio puts separate email/SMS marketing tools at $75-$250/month.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2e24ff72-f993-43fc-8263-34038a0c7fbc",
+        "1f202fdc-9619-4544-8bbd-30064ddd58a2"
+      ],
+      "company_name": "Mindbody"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://goteamup.com/blog/how-to-manage-customers-who-are-slipping-away",
+      "title": "How to manage customers who are slipping away? | TeamUp",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We noticed that you’re not attending classes at the same rate you used to. How are you doing? Is there anything holding you back?",
+      "statement": "TeamUp's guidance for slipping customers is a personal, hand-written check-in email.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521"
+      ],
+      "company_name": "TeamUp"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://pro.bsport.io/blog/communication-strategies-for-the-reentry-phase",
+      "title": "Win back members: proven communication tips",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Use your management software to tag or group these members and send tailored messages based on their reason for pausing.",
+      "statement": "bsport advises studios to tag lapsed members in their management software and message them.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521"
+      ],
+      "company_name": "bsport"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://jobs.lever.co/jetsetpilates/b1c418c3-c683-4b49-b4c2-3af73eaf495f",
+      "title": "JETSET Pilates - Studio Lead",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Recruit and retain clients, answer questions, solve problems, and refer comments and concerns appropriately. … Facilitate new sales, in conjunction with the General Manager/Owner-Operator by utilizing the Client Relationship Manager (CRM) system (AXLE).",
+      "statement": "A Pilates front-desk job lists retaining clients and CRM-driven sales with the owner-operator, so retention work sits with desk staff.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a95ec36c-b46c-4fb6-be8d-10b9b69e9521",
+        "1f202fdc-9619-4544-8bbd-30064ddd58a2"
+      ],
+      "company_name": "JETSET Pilates"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://athletechnews.com/classpass-moves-to-ease-studios-complaints-new-partner-policies-protections/",
+      "title": "ClassPass Adds New Studio-Friendly Policies, Protections",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "some fitness studio owners have grumbled that ClassPass, the class-booking platform presented as a way to fill empty class slots and reach newcomers, actually incentivizes consumers to hunt for the next discount rather than pay full price.",
+      "statement": "Trade press reports studio owners' complaints that ClassPass trains consumers to hunt discounts.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de"
+      ],
+      "company_name": "ClassPass"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://athletechnews.com/classpass-moves-to-ease-studios-complaints-new-partner-policies-protections/",
+      "title": "ClassPass Adds New Studio-Friendly Policies, Protections",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The move comes just six months after Playlist, ClassPass’ parent company, closed a $7.5 billion merger with fitness tech firm EGYM.",
+      "statement": "Mindbody/ClassPass parent Playlist closed a $7.5B merger with EGYM in early 2026, an ownership change of the kind that can trigger re-evaluation.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ce8665d5-3324-4be6-a6c0-499c8af036de"
+      ],
+      "company_name": "Playlist"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://dharamsalatc.com/",
+      "title": "Welcome to Dharamsala TC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "869 Robinwood Court Traverse City, MI 49686",
+      "statement": "Dharamsala TC is at 869 Robinwood Court, Traverse City, MI.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dharamsala TC"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://dharamsalatc.com/",
+      "title": "Welcome to Dharamsala TC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "New Member Special for Locals $99 2 Weeks Unlimited",
+      "statement": "Dharamsala TC runs a 2-week unlimited intro offer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dharamsala TC"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://dharamsalatc.com/about-us/",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are a women owned and operated yoga studio in Traverse City, Michigan.",
+      "statement": "Independent, owner-operated yoga studio.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dharamsala TC"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://dharamsalatc.com/about-us/",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Kay Epple Owner Operator + Instructor",
+      "statement": "Named owner-operator.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dharamsala TC"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://dharamsalatc.com/about-us/",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hilary Lee Owner Operator + Office Manager",
+      "statement": "Named owner-operator and office manager.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dharamsala TC"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.northernlifeyoga.com/about",
+      "title": "Yoga Studio in Sault Ste. Marie, MI | Northern Life Yoga",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "529 Court Street Sault Ste. Marie, Michigan 49783",
+      "statement": "Northern Life Yoga is in Sault Ste. Marie, MI.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Northern Life Yoga"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.northernlifeyoga.com/",
+      "title": "Sault Ste. Marie MI Yoga Studio | Northern Life Yoga",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Download fitDEGREE and create a profile to sign up for classes.",
+      "statement": "Books classes on fitDEGREE.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Northern Life Yoga"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.northernlifeyoga.com/",
+      "title": "Sault Ste. Marie MI Yoga Studio | Northern Life Yoga",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Start Your Intro Offer 2 weeks of unlimited classes for $39",
+      "statement": "Runs a $39 two-week intro offer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Northern Life Yoga"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.marzaerial.com/",
+      "title": "Marz Aerial Arts & Fitness",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "258 Kale Road (Pole Studio) 262 Kale Rd (Aerial Studio) New Bern, NC 28562",
+      "statement": "Marz Aerial is in New Bern, NC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Marz Aerial Arts & Fitness"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.marzaerial.com/",
+      "title": "Marz Aerial Arts & Fitness",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "At the very end of 2025, we started using Momence to facilitate online booking",
+      "statement": "Switched to Momence at the end of 2025.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Marz Aerial Arts & Fitness"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.marzaerial.com/",
+      "title": "Marz Aerial Arts & Fitness",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Most of our adult students attend classes using our Monthly Unlimited Membership ($150/month)",
+      "statement": "Membership-based studio at $150/month unlimited.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Marz Aerial Arts & Fitness"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.marzaerial.com/",
+      "title": "Marz Aerial Arts & Fitness",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Marzanne Owner, Instructor, Performer",
+      "statement": "Owner named (first name only) on team section.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Marz Aerial Arts & Fitness"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://www.marzaerial.com/",
+      "title": "Marz Aerial Arts & Fitness",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Reach out to Marzanne at marzanne@marzaerial.com",
+      "statement": "Owner's email printed on the site.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Marz Aerial Arts & Fitness"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.grayduckcrossfit.com/",
+      "title": "Gray Duck CrossFit | Best CrossFit Gym in Mankato, MN",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "55 Star St, Suite A, Mankato, MN 56001",
+      "statement": "Gray Duck CrossFit is in Mankato, MN.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gray Duck CrossFit"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.crossfit.com/gym/29984/gray-duck-crossfit",
+      "title": "Gray Duck CrossFit | CrossFit",
+      "source_type": "directory",
+      "published_at": null,
+      "quote": "At Gray Duck CrossFit in Mankato, MN, we’re a family-owned gym",
+      "statement": "CrossFit directory listing: family-owned gym.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gray Duck CrossFit"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.grayduckcrossfit.com/",
+      "title": "Gray Duck CrossFit | Best CrossFit Gym in Mankato, MN",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "WE ARE NOW OFFERING A TWO-WEEK FREE TRIAL FOR ALL NEW MEMBERS.",
+      "statement": "Runs a two-week free trial.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gray Duck CrossFit"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://www.moogiepilates.com/",
+      "title": "moogie pilates",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Moogie Pilates is a boutique contemporary Pilates studio in Austin, Texas",
+      "statement": "Moogie Pilates is in Austin, TX.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Moogie Pilates"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://www.moogiepilates.com/",
+      "title": "moogie pilates",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A note from the Owner, Olivia Hockaday:",
+      "statement": "Owner named on home page.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Moogie Pilates"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.moogiepilates.com/",
+      "title": "moogie pilates",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "New Client Specials 3 PRIVATES FOR $255 3 CLASSES FOR $99",
+      "statement": "Runs new-client specials.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Moogie Pilates"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.internalpilates.com/",
+      "title": "Internal",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A boutique reformer Pilates and fitness studio located in Columbus, OH",
+      "statement": "Internal Pilates is a boutique reformer studio in Columbus, OH.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Internal Pilates"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://theyogacenterretreat.com/our-founder-and-owners/",
+      "title": "Our Founder and Owners - The Yoga Center Retreat",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Yoga Center Retreat was founded in 2018 by Jennifer Gray",
+      "statement": "Founded 2018 by its owner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Yoga Center Retreat"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://theyogacenterretreat.com/our-founder-and-owners/",
+      "title": "Our Founder and Owners - The Yoga Center Retreat",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "offers the most eclectic and inclusive class offerings available in the Minneapolis area",
+      "statement": "Serves the Minneapolis area.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Yoga Center Retreat"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://theyogacenterretreat.com/our-founder-and-owners/",
+      "title": "Our Founder and Owners - The Yoga Center Retreat",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Jennifer Gray | founder & owner",
+      "statement": "Named founder and owner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Yoga Center Retreat"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://theyogacenterretreat.com/our-founder-and-owners/",
+      "title": "Our Founder and Owners - The Yoga Center Retreat",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "jennifer golden | owner",
+      "statement": "Named co-owner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Yoga Center Retreat"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.heightspilates.com/",
+      "title": "Pilates Raleigh",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Heights Pilates teaches the authentic Pilates method in Raleigh",
+      "statement": "Heights Pilates is in Raleigh, NC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Heights Pilates"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.heightspilates.com/",
+      "title": "Pilates Raleigh",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Small groups of 5 are assembled to ensure that the levels and exercises are suitable for all.",
+      "statement": "Small-group apparatus classes of 5.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Heights Pilates"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://remedy-movement.squarespace.com/about",
+      "title": "Remedy Movement",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "2010 Hillsborough Street Raleigh, NC 27607",
+      "statement": "Remedy Movement is in Raleigh, NC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Remedy Movement"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://remedy-movement.squarespace.com",
+      "title": "Raleigh, NC Pilates Studio | Reformer Pilates Classes | Remedy Movement",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Join our group Pilates apparatus classes for an energetic, flowing, and fun experience with a max of 6 students.",
+      "statement": "Group classes capped at 6.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Remedy Movement"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://moira-tomaso-gh02.squarespace.com/about",
+      "title": "About Willow — Willow Studio",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Conveniently located in the Green Hills area of Nashville",
+      "statement": "Willow Studio is in Nashville, TN.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Willow Studio"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://moira-tomaso-gh02.squarespace.com/instructors",
+      "title": "Instructors — Willow Studio",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Bambi Watt, studio owner",
+      "statement": "Named studio owner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Willow Studio"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://www.yogagardenmpls.com/about/teachers",
+      "title": "YOGA Garden | YG Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Laurel Van Matre E-RYT 500 (Owner/Founder of YOGA GARDEN)",
+      "statement": "Named owner/founder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "YOGA Garden"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://www.yogagardenmpls.com/about/teachers",
+      "title": "YOGA Garden | YG Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Her yoga studio, YOGA Garden, is considered one of the leading studios in Minneapolis.",
+      "statement": "YOGA Garden is in Minneapolis.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "YOGA Garden"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://cowbell-oarfish-8k4x.squarespace.com/about",
+      "title": "About Us and Meet Our Teachers — Tosa Yoga Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "In 2006, at 4 months pregnant, she opened her first studio space in Wauwatosa.",
+      "statement": "Tosa Yoga Center is in Wauwatosa, WI.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tosa Yoga Center"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://cowbell-oarfish-8k4x.squarespace.com/about",
+      "title": "About Us and Meet Our Teachers — Tosa Yoga Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Tosa Yoga Center is proud to have over two dozen teachers and front desk staff, offering around 28 in-person yoga classes per week",
+      "statement": "Over two dozen teachers and front-desk staff; about 28 classes a week.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tosa Yoga Center"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://cowbell-oarfish-8k4x.squarespace.com/about",
+      "title": "About Us and Meet Our Teachers — Tosa Yoga Center",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Melanie Landgraf taught herself yoga … As the studio owner, Melanie continues to run most aspects of the day-to-day business activities",
+      "statement": "Owner named; she runs day-to-day business.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tosa Yoga Center"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://www.pilatesbykahley.com/",
+      "title": "Pilates by Kahley",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Get Stronger. Move Smarter. Train in Kansas City or stream anywhere.",
+      "statement": "Pilates by Kahley trains clients in Kansas City.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Pilates by Kahley"
+    },
+    {
+      "ref": "ev-89",
+      "url": "https://www.pilatesbykahley.com/pages/about",
+      "title": "About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With a schedule of daily classes, Pilates by Kahley quickly grew to 10 instructors, 2,600 square feet and over 300 clients.",
+      "statement": "10 instructors and over 300 clients.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Pilates by Kahley"
+    },
+    {
+      "ref": "ev-90",
+      "url": "https://www.zinganobjj.com/about",
+      "title": "About Us | Zingano BJJ & Muay Thai",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "bring authentic, world-class Brazilian Jiu-Jitsu instruction to the Broomfield community",
+      "statement": "Zingano BJJ is in Broomfield, CO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Zingano BJJ"
+    },
+    {
+      "ref": "ev-91",
+      "url": "https://www.zinganobjj.com/about",
+      "title": "About Us | Zingano BJJ & Muay Thai",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "try Zingano BJJ FREE for 30 days.",
+      "statement": "Runs a 30-day free trial.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Zingano BJJ"
+    },
+    {
+      "ref": "ev-92",
+      "url": "https://www.slpy.xyz/",
+      "title": "Salt Lake Power Yoga",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "250 East Broadway, Suite 200, Salt Lake City, Utah 84111",
+      "statement": "SLPY is in Salt Lake City, UT.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Salt Lake Power Yoga"
+    },
+    {
+      "ref": "ev-93",
+      "url": "https://www.slpy.xyz/",
+      "title": "Salt Lake Power Yoga",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "14 day's of Unlimited Practice & 2 Buddy Passes for just $75",
+      "statement": "Runs a 14-day intro pass.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Salt Lake Power Yoga"
+    },
+    {
+      "ref": "ev-94",
+      "url": "https://shogunjiujitsu.com/",
+      "title": "Jiu Jitsu for Adults & Kids in Denver — Shōgun Jiu Jitsu",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "7100 Broadway, Ste 8B, Denver, CO 80221",
+      "statement": "Shogun Jiu Jitsu is in Denver, CO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Shōgun Jiu Jitsu"
+    },
+    {
+      "ref": "ev-95",
+      "url": "https://shogunjiujitsu.com/",
+      "title": "Jiu Jitsu for Adults & Kids in Denver — Shōgun Jiu Jitsu",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Month-to-month has no long-term agreement; a 12-month agreement is billed monthly for twelve months.",
+      "statement": "Sells month-to-month and 12-month memberships.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Shōgun Jiu Jitsu"
+    },
+    {
+      "ref": "ev-96",
+      "url": "https://cinnamon-gopher-mwlk.squarespace.com/about",
+      "title": "About 1 — Full Circle Yoga Studio",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Located near the corner of Stillwater and Forest Avenues in Orono, Maine, Full Circle Yoga was opened in 2002.",
+      "statement": "Full Circle Yoga is in Orono, ME.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Full Circle Yoga"
+    },
+    {
+      "ref": "ev-97",
+      "url": "https://cinnamon-gopher-mwlk.squarespace.com/about",
+      "title": "About 1 — Full Circle Yoga Studio",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "About Sandy Cyrus I am the owner/instructor at Full Circle Yoga.",
+      "statement": "Named owner/instructor.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Full Circle Yoga"
+    },
+    {
+      "ref": "ev-98",
+      "url": "https://ysmpls.squarespace.com/our-story",
+      "title": "Holistic, Nonprofit Yoga Studio — Yoga Sanctuary Minneapolis",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Yoga Sanctuary was created in South Minneapolis in 2012 by Executive Director and Founder Shelley Pagitt",
+      "statement": "Nonprofit yoga studio in South Minneapolis; named founder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Yoga Sanctuary"
+    },
+    {
+      "ref": "ev-99",
+      "url": "https://ysmpls.squarespace.com/our-story",
+      "title": "Holistic, Nonprofit Yoga Studio — Yoga Sanctuary Minneapolis",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "more than 20 collaborative teachers and leaders, many graduating from our 230 Hour Holistic Yoga Teacher Training Program, and over 1,000 student visits per month",
+      "statement": "20+ teachers and 1,000+ student visits a month.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Yoga Sanctuary"
+    },
+    {
+      "ref": "ev-100",
+      "url": "https://www.carolinayogacompany.com/",
+      "title": "Home - Carolina Yoga Company",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Durham Yoga Company is just north of the Downtown Loop, one block east of the Durham Farmer's Market and Central Park.",
+      "statement": "Carolina Yoga Company runs a Durham studio (and a Carrboro one).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Carolina Yoga Company"
+    },
+    {
+      "ref": "ev-101",
+      "url": "https://www.carolinayogacompany.com/",
+      "title": "Home - Carolina Yoga Company",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "New Students: 21 Days for $60 Buy Our Intro Offer Memberships",
+      "statement": "Runs a 21-day intro offer and memberships.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Carolina Yoga Company"
+    },
+    {
+      "ref": "ev-102",
+      "url": "https://www.yogaroomplymouth.com/",
+      "title": "Yoga Gift Cards | Plymouth Yoga Room in Plymouth, Michigan",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Contact Us 474 Forest Ave., Plymouth, MI, 48170",
+      "statement": "Plymouth Yoga Room is in Plymouth, MI.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Plymouth Yoga Room"
+    },
+    {
+      "ref": "ev-103",
+      "url": "https://www.yogaroomplymouth.com/",
+      "title": "Yoga Gift Cards | Plymouth Yoga Room in Plymouth, Michigan",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Member Video Login Student Course Login",
+      "statement": "Has member and course logins.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Plymouth Yoga Room"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "a95ec36c-b46c-4fb6-be8d-10b9b69e9521",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "The main platforms already ship automated lapse detection or win-back: Mindbody's '45 Day reengagement' automation and churn-prediction models, PushPress's daily at-risk workflow, and WellnessLiving's win-back automations (launched April 2026).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29",
+            "ev-27",
+            "ev-30",
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "Operators say personalized outreach is their top retention approach (56% in Mindbody's 2025 survey), and vendor guidance still describes hand-written check-in emails and tagging lapsed members.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-42",
+            "ev-48",
+            "ev-49"
+          ]
+        },
+        {
+          "statement": "Retention is part of front-desk duties in at least one Pilates job posting, done with the owner-operator through a CRM.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-50"
+          ]
+        },
+        {
+          "statement": "Add-on vendors give anecdotes of studios whose lapsed members got no follow-up, but these come from the vendors themselves.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34"
+          ]
+        },
+        {
+          "statement": "No source says what share of small studios actually turn on the built-in automations or keep them up to date.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "1620d646-538b-48a5-b5b1-8c0915b17897",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Leaving Mindbody involves a formal card-data (PAN) release that takes 3-4 weeks, paid export services for fuller data (a $499 fee is quoted secondhand), exporters that can time out, and reports missing on basic plans.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14",
+            "ev-12",
+            "ev-05",
+            "ev-17",
+            "ev-18"
+          ]
+        },
+        {
+          "statement": "Card migration can fail, and some migration paths have the studio collect members' cards again by hand.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "Contracts of 12/24/36 months auto-renew without notice, though month-to-month plans with a 90-day minimum also exist.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-11"
+          ]
+        },
+        {
+          "statement": "Arketa, Walla, bsport and Mindbody itself all advertise migration (including cards, in Walla's case) as free or included, and a small studio reports a full Mindbody-to-Momence transfer. A paid migration service would be competing against free.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-21",
+            "ev-23",
+            "ev-25",
+            "ev-24",
+            "ev-26"
+          ]
+        },
+        {
+          "statement": "The card problem is mostly specific to Mindbody: Stripe-based platforms such as Glofox may need no card transfer.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-15"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "5cc0b148-e35e-44b9-ac1b-b8eeb1fdf4a9",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Secondhand and vendor sources describe weekly pulls of Mindbody data into Google Sheets and several hours a week spent exporting data for campaigns.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-08",
+            "ev-35"
+          ]
+        },
+        {
+          "statement": "46% of US studio owners in a Hapana survey use their CRM for customer reports and analytics.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44"
+          ]
+        },
+        {
+          "statement": "No first-hand count of how often owners review attendance specifically to find lapsed members was found.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "ce8665d5-3324-4be6-a6c0-499c8af036de",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Reported switching triggers include price rises (some unannounced), paid add-ons, and ownership changes: private-equity owners in general, Momence's 2025 acquisition, and the 2026 Playlist-EGYM merger.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-04",
+            "ev-03",
+            "ev-02",
+            "ev-09",
+            "ev-52"
+          ]
+        },
+        {
+          "statement": "Auto-renewing fixed terms make the contract end date a predictable decision point.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-10"
+          ]
+        },
+        {
+          "statement": "Mindbody now advertises a $79/month US entry price, and 57% of owners say new technology creates operational challenges. Both work against urgency to switch or add tools.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27",
+            "ev-45"
+          ]
+        },
+        {
+          "statement": "Member affordability pressure (61% of owners) makes churn a live concern.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-46"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "1f202fdc-9619-4544-8bbd-30064ddd58a2",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "The studio owner is the gate for any Mindbody integration: activating an add-on needs an action only the owner can take.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-41"
+          ]
+        },
+        {
+          "statement": "In small studios the owner often also runs the front desk or office (an 'Owner Operator + Office Manager').",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-57"
+          ]
+        },
+        {
+          "statement": "No evidence was found on how much software spending studio managers can approve on their own.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "2e24ff72-f993-43fc-8263-34038a0c7fbc",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Retention add-ons that sit on top of the platform already exist: DailyStory, FitGrid win-backs, APIANT's Mindbody-to-Keap sync, and Carly (waitlist fill, first-visit and lapse follow-up).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36",
+            "ev-33",
+            "ev-38",
+            "ev-39"
+          ]
+        },
+        {
+          "statement": "Mindbody's own cost model puts separate email/SMS tools at $75-$250/month, and its automated campaigns sit in the top Ultimate tier.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-47",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "86% of US studio owners use a CRM and 37% of operators send SMS at least monthly.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44",
+            "ev-43"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": {
+    "problem": "Independent studios still lose members who quietly lapse, but their main platforms (Mindbody, PushPress, WellnessLiving) now ship lapse detection and win-back automations, often gated to higher tiers. Migration off Mindbody is slow mainly because of card-data release, but destination vendors already do migration for free.",
+    "users": "Studio owners, studio managers, and desk staff handling member outreach.",
+    "buyer": "Independent studio owners.",
+    "decision_maker": "Independent studio owners.",
+    "economic_value": "Recovering a few lapsed members a month (illustratively $200-$400/month for a ~300-member studio); migration savings are captured by free vendor onboarding.",
+    "geography": "United States",
+    "industry": "Boutique Fitness and Wellness Studios",
+    "rationale": [
+      {
+        "statement": "Native retention automations exist at Mindbody, PushPress and WellnessLiving, with Mindbody's full campaigns in its Ultimate tier.",
+        "kind": "fact",
+        "evidence_ids": [
+          "ev-29",
+          "ev-30",
+          "ev-31",
+          "ev-28"
+        ]
+      },
+      {
+        "statement": "Arketa, Walla, bsport and Mindbody advertise free migration, so a paid migration service competes with free.",
+        "kind": "inference",
+        "evidence_ids": [
+          "ev-21",
+          "ev-23",
+          "ev-25",
+          "ev-24"
+        ]
+      },
+      {
+        "statement": "An illustrative vendor model puts recovered revenue at $200-$400/month for a 320-member studio.",
+        "kind": "inference",
+        "evidence_ids": [
+          "ev-37"
+        ]
+      }
+    ]
+  },
+  "new_unknowns": [
+    {
+      "question": "What share of independent studios on Mindbody Starter/Accelerate (without Ultimate automations) would pay $49-$99/month for win-back on top, given the illustrative recovered revenue of a few hundred dollars a month?",
+      "category": "budget",
+      "priority": "high"
+    },
+    {
+      "question": "Do studios on Mindbody, PushPress or WellnessLiving actually turn on and maintain the native win-back automations, and if not, why?",
+      "category": "current_solution",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Mindbody",
+      "url": "https://www.mindbodyonline.com",
+      "kind": "indirect",
+      "description": "Incumbent studio platform; includes churn-prediction models at entry tier, a 45-day re-engagement automation, and full automated campaigns in its Ultimate tier; offers free migration in.",
+      "pricing_note": "From $79/month per location in the US (Mindbody blog, Oct 2026).",
+      "evidence_refs": [
+        "ev-27",
+        "ev-29",
+        "ev-28",
+        "ev-24",
+        "ev-10"
+      ],
+      "sentiment": [
+        {
+          "statement": "Studio owners (via competitor-published accounts) complain about price rises, add-on fees and export friction.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-04",
+            "ev-05"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "WellnessLiving",
+      "url": "https://www.wellnessliving.com",
+      "kind": "indirect",
+      "description": "All-in-one platform; launched a native Marketing Suite with lead-nurture, retention and win-back automations in April 2026.",
+      "evidence_refs": [
+        "ev-31",
+        "ev-32",
+        "ev-01"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "PushPress",
+      "url": "https://www.pushpress.com",
+      "kind": "indirect",
+      "description": "Gym platform with a built-in at-risk member workflow that flags members who stop checking in and alerts staff.",
+      "evidence_refs": [
+        "ev-30"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Arketa",
+      "url": "https://www.arketa.com",
+      "kind": "indirect",
+      "description": "Studio platform that advertises free migration from Mindbody and bundles branded app and marketing automations.",
+      "pricing_note": "Flat 2.9% + $0.30 processing (Arketa compare page).",
+      "evidence_refs": [
+        "ev-21",
+        "ev-22",
+        "ev-07"
+      ],
+      "sentiment": [
+        {
+          "statement": "One operator (quoted secondhand) reports stored payment data for ~300 clients failed to transfer to Arketa.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-05",
+      "name": "Walla",
+      "url": "https://www.hellowalla.com",
+      "kind": "indirect",
+      "description": "Boutique studio platform; onboarding team migrates members, memberships, history and usually cards to Stripe.",
+      "evidence_refs": [
+        "ev-23"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Momence",
+      "url": "https://momence.com",
+      "kind": "indirect",
+      "description": "Studio platform that studios migrate to from Mindbody.",
+      "evidence_refs": [
+        "ev-26",
+        "ev-09"
+      ],
+      "sentiment": [
+        {
+          "statement": "One operator (quoted secondhand) says features were cut after Momence's 2025 acquisition.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-09"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-07",
+      "name": "bsport",
+      "url": "https://pro.bsport.io",
+      "kind": "indirect",
+      "description": "Boutique studio platform marketing dedicated migration specialists to studios leaving Mindbody.",
+      "evidence_refs": [
+        "ev-25",
+        "ev-49"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "FitGrid",
+      "url": "https://www.fitgrid.com",
+      "kind": "direct",
+      "description": "Add-on sending instructor-signed win-back messages to clients after a set number of days without a visit.",
+      "evidence_refs": [
+        "ev-33"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "DailyStory",
+      "url": "https://www.dailystory.com",
+      "kind": "direct",
+      "description": "Marketing automation add-on for Mindbody users with inactivity-triggered win-back campaigns.",
+      "evidence_refs": [
+        "ev-36",
+        "ev-34"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Carly",
+      "url": "https://www.usecarly.com",
+      "kind": "direct",
+      "description": "AI agent on Mindbody data for waitlist filling, failed-payment follow-up, first-visit follow-up and contract-lapse outreach.",
+      "evidence_refs": [
+        "ev-39"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "APIANT CRMConnect (Mindbody to Keap)",
+      "url": "https://apiant.com",
+      "kind": "direct",
+      "description": "Integration syncing Mindbody visits into Keap to run 21-day win-back sequences.",
+      "evidence_refs": [
+        "ev-38",
+        "ev-37"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "TeamUp",
+      "url": "https://goteamup.com",
+      "kind": "indirect",
+      "description": "Studio platform; its guidance for slipping members is a personal check-in email.",
+      "evidence_refs": [
+        "ev-48"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-13",
+      "name": "Zipper",
+      "url": "https://www.joinzipper.com",
+      "kind": "indirect",
+      "description": "Studio platform with template-based imports from Mindbody, Mariana Tek, Glofox and Walla, and a separate card (PAN) transfer process.",
+      "evidence_refs": [
+        "ev-14",
+        "ev-15",
+        "ev-16"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-14",
+      "name": "Manual outreach and spreadsheets",
+      "url": null,
+      "kind": "manual",
+      "description": "Personal check-in emails and weekly exports of platform data into Google Sheets.",
+      "evidence_refs": [
+        "ev-42",
+        "ev-48",
+        "ev-08"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most studios rely on their core platform. Mindbody, PushPress and WellnessLiving each already include lapse detection or win-back automations, at least on some tiers.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-29",
+        "ev-30",
+        "ev-31",
+        "ev-28"
+      ]
+    },
+    {
+      "statement": "Personalized outreach by the owner or desk staff is the most-cited retention approach, sometimes supported by spreadsheets.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-42",
+        "ev-50",
+        "ev-08"
+      ]
+    },
+    {
+      "statement": "Add-on vendors (DailyStory, FitGrid, Carly, APIANT/Keap) already sell retention automation on Mindbody data.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-36",
+        "ev-33",
+        "ev-39",
+        "ev-38"
+      ]
+    },
+    {
+      "statement": "Platform migration is usually done for free by the destination vendor's onboarding team, with Mindbody card release as the slowest step.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-21",
+        "ev-23",
+        "ev-24",
+        "ev-14"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Dharamsala TC",
+      "website": "https://dharamsalatc.com",
+      "icp_id": null,
+      "location": "Traverse City, MI",
+      "industry": "Yoga studio",
+      "description": "Single-location, owner-operated yoga studio with an intro offer; one owner also runs the front desk.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-53"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-53",
+        "ev-54",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent single-location yoga studio with intro offer.",
+          "evidence_refs": [
+            "ev-55",
+            "ev-54"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Kay Epple",
+          "role": "Owner Operator + Instructor",
+          "email": null,
+          "evidence_ref": "ev-56"
+        },
+        {
+          "name": "Hilary Lee",
+          "role": "Owner Operator + Office Manager",
+          "email": null,
+          "evidence_ref": "ev-57"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "Northern Life Yoga",
+      "website": "https://www.northernlifeyoga.com",
+      "icp_id": null,
+      "location": "Sault Ste. Marie, MI",
+      "industry": "Yoga and Pilates studio",
+      "description": "Single-location yoga/Pilates studio (16 years) running intro offers on fitDEGREE.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      },
+      "technologies": [
+        "fitDEGREE"
+      ],
+      "evidence_refs": [
+        "ev-58",
+        "ev-59",
+        "ev-60"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent yoga/Pilates studio with intro offer.",
+          "evidence_refs": [
+            "ev-58",
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Uses fitDEGREE, not one of the named incumbents.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Marz Aerial Arts & Fitness",
+      "website": "https://www.marzaerial.com",
+      "icp_id": null,
+      "location": "New Bern, NC",
+      "industry": "Aerial and pole fitness studio",
+      "description": "Owner-led membership studio that migrated from Mindbody to Momence around end of 2025, i.e., a recent switcher.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [
+        "Momence",
+        "Mindbody (former)"
+      ],
+      "evidence_refs": [
+        "ev-61",
+        "ev-62",
+        "ev-63",
+        "ev-26"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent membership-based studio.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Just migrated Mindbody to Momence.",
+          "evidence_refs": [
+            "ev-62",
+            "ev-26"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Recently went through a platform migration; may be past the switching moment.",
+          "evidence_refs": [
+            "ev-26"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Marzanne",
+          "role": "Owner, Instructor, Performer",
+          "email": "marzanne@marzaerial.com",
+          "evidence_ref": "ev-64"
+        }
+      ]
+    },
+    {
+      "ref": "co-04",
+      "name": "Gray Duck CrossFit",
+      "website": "https://www.grayduckcrossfit.com",
+      "icp_id": null,
+      "location": "Mankato, MN",
+      "industry": "CrossFit gym",
+      "description": "Family-owned single-location CrossFit affiliate with a free-trial funnel.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66",
+        "ev-67",
+        "ev-68"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Family-owned independent CrossFit gym.",
+          "evidence_refs": [
+            "ev-67",
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Moogie Pilates",
+      "website": "https://www.moogiepilates.com",
+      "icp_id": null,
+      "location": "Austin, TX",
+      "industry": "Pilates studio",
+      "description": "Owner-led boutique Pilates studio with group and private sessions and intro specials.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-69"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-69",
+        "ev-71"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent boutique Pilates studio.",
+          "evidence_refs": [
+            "ev-69",
+            "ev-71"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Olivia Hockaday",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-70"
+        }
+      ]
+    },
+    {
+      "ref": "co-06",
+      "name": "Internal Pilates",
+      "website": "https://www.internalpilates.com",
+      "icp_id": null,
+      "location": "Columbus, OH",
+      "industry": "Reformer Pilates studio",
+      "description": "Small boutique reformer Pilates studio (located inside a yoga studio).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-72"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-72"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small independent reformer studio; scale unknown.",
+          "evidence_refs": [
+            "ev-72"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "The Yoga Center Retreat",
+      "website": "https://theyogacenterretreat.com",
+      "icp_id": null,
+      "location": "Minneapolis area, MN",
+      "industry": "Yoga studio",
+      "description": "Owner-run Twin Cities yoga studio with teacher training.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-73",
+        "ev-74"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent owner-run yoga studio.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Jennifer Gray",
+          "role": "Founder & Owner",
+          "email": null,
+          "evidence_ref": "ev-75"
+        },
+        {
+          "name": "Jennifer Golden",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-76"
+        }
+      ]
+    },
+    {
+      "ref": "co-08",
+      "name": "Heights Pilates",
+      "website": "https://www.heightspilates.com",
+      "icp_id": null,
+      "location": "Raleigh, NC",
+      "industry": "Classical Pilates studio",
+      "description": "Owner-founded classical Pilates studio with small-group capacity (spots are scarce, so waitlists/retention matter).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77",
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent boutique Pilates studio.",
+          "evidence_refs": [
+            "ev-77",
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Remedy Movement",
+      "website": "https://remedy-movement.squarespace.com",
+      "icp_id": null,
+      "location": "Raleigh, NC",
+      "industry": "Pilates and Gyrotonic studio",
+      "description": "Owner-directed boutique Pilates/Gyrotonic studio with capped group classes and teacher training.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-79"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-79",
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent boutique Pilates studio.",
+          "evidence_refs": [
+            "ev-79",
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "Willow Studio",
+      "website": "https://moira-tomaso-gh02.squarespace.com",
+      "icp_id": null,
+      "location": "Nashville, TN",
+      "industry": "Pilates and barre studio",
+      "description": "Long-running owner-led Pilates studio (since 1999) with reformer, mat and barre classes.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-81"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-81",
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent owner-led Pilates studio.",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Bambi Watt",
+          "role": "Studio owner",
+          "email": null,
+          "evidence_ref": "ev-82"
+        }
+      ]
+    },
+    {
+      "ref": "co-11",
+      "name": "YOGA Garden",
+      "website": "https://www.yogagardenmpls.com",
+      "icp_id": null,
+      "location": "Minneapolis, MN",
+      "industry": "Yoga studio",
+      "description": "Owner-founded Minneapolis yoga studio with a multi-teacher roster.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-84"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-84",
+        "ev-83"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent owner-founded yoga studio.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Laurel Van Matre",
+          "role": "Owner/Founder",
+          "email": null,
+          "evidence_ref": "ev-83"
+        }
+      ]
+    },
+    {
+      "ref": "co-12",
+      "name": "Tosa Yoga Center",
+      "website": "https://cowbell-oarfish-8k4x.squarespace.com",
+      "icp_id": null,
+      "location": "Wauwatosa, WI",
+      "industry": "Yoga studio",
+      "description": "Single-location owner-run yoga studio with front-desk staff and ~28 classes/week.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-85"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-85",
+        "ev-86"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent single-location studio with desk staff.",
+          "evidence_refs": [
+            "ev-86"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Melanie Landgraf",
+          "role": "Studio owner",
+          "email": null,
+          "evidence_ref": "ev-87"
+        }
+      ],
+      "size_estimate": {
+        "min": 24,
+        "max": null,
+        "signal": "About page: over two dozen teachers and front desk staff",
+        "evidence_ref": "ev-86"
+      }
+    },
+    {
+      "ref": "co-13",
+      "name": "Pilates by Kahley",
+      "website": "https://www.pilatesbykahley.com",
+      "icp_id": null,
+      "location": "Kansas City",
+      "industry": "Pilates studio",
+      "description": "Owner-operator Pilates studio with ~300 clients, near the top of the 50-300 member band.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-88"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-88",
+        "ev-89"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Owner-led studio around 300 clients.",
+          "evidence_refs": [
+            "ev-89"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "size_estimate": {
+        "min": 10,
+        "max": null,
+        "signal": "About page: 10 instructors, over 300 clients",
+        "evidence_ref": "ev-89"
+      }
+    },
+    {
+      "ref": "co-14",
+      "name": "Zingano BJJ",
+      "website": "https://www.zinganobjj.com",
+      "icp_id": null,
+      "location": "Broomfield, CO",
+      "industry": "Martial arts (BJJ/Muay Thai) academy",
+      "description": "Independent martial-arts academy with a free-trial funnel.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-90"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-90",
+        "ev-91"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent martial-arts academy.",
+          "evidence_refs": [
+            "ev-90",
+            "ev-91"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "Salt Lake Power Yoga",
+      "website": "https://www.slpy.xyz",
+      "icp_id": null,
+      "location": "Salt Lake City, UT",
+      "industry": "Hot yoga studio",
+      "description": "Local single-flagship hot yoga studio with an intro pass and on-demand library.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-92"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-92",
+        "ev-93"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent yoga studio with intro offer.",
+          "evidence_refs": [
+            "ev-92",
+            "ev-93"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Shōgun Jiu Jitsu",
+      "website": "https://shogunjiujitsu.com",
+      "icp_id": null,
+      "location": "Denver, CO",
+      "industry": "Martial arts (BJJ) academy",
+      "description": "Independent BJJ academy with recurring monthly memberships.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-94"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-94",
+        "ev-95"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Independent membership-based academy.",
+          "evidence_refs": [
+            "ev-95"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "Full Circle Yoga",
+      "website": "https://cinnamon-gopher-mwlk.squarespace.com",
+      "icp_id": null,
+      "location": "Orono, ME",
+      "industry": "Yoga studio",
+      "description": "Very small owner-instructor studio (500 sq ft); likely below the 50-member floor.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-96"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-96"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Very small single-room studio; may be under 50 members.",
+          "evidence_refs": [
+            "ev-96"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Sandy Cyrus",
+          "role": "Owner/Instructor",
+          "email": null,
+          "evidence_ref": "ev-97"
+        }
+      ]
+    },
+    {
+      "ref": "co-18",
+      "name": "Yoga Sanctuary",
+      "website": "https://ysmpls.squarespace.com",
+      "icp_id": null,
+      "location": "Minneapolis, MN",
+      "industry": "Nonprofit yoga studio",
+      "description": "Nonprofit community yoga studio; below-market pricing makes it a weaker buyer.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-98"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-98",
+        "ev-99"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Studio fits but nonprofit, low-price model.",
+          "evidence_refs": [
+            "ev-98",
+            "ev-99"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Shelley Pagitt",
+          "role": "Executive Director and Founder",
+          "email": null,
+          "evidence_ref": "ev-98"
+        }
+      ],
+      "size_estimate": {
+        "min": 20,
+        "max": null,
+        "signal": "Our Story: more than 20 collaborative teachers and leaders",
+        "evidence_ref": "ev-99"
+      }
+    },
+    {
+      "ref": "co-19",
+      "name": "Carolina Yoga Company",
+      "website": "https://www.carolinayogacompany.com",
+      "icp_id": null,
+      "location": "Durham and Carrboro, NC",
+      "industry": "Yoga studios",
+      "description": "Two-studio independent yoga company with intro offer and memberships.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-100"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-100",
+        "ev-101"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Two-location independent studio, within ICP.",
+          "evidence_refs": [
+            "ev-100",
+            "ev-101"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "Plymouth Yoga Room",
+      "website": "https://www.yogaroomplymouth.com",
+      "icp_id": null,
+      "location": "Plymouth, MI",
+      "industry": "Yoga studio",
+      "description": "Local yoga studio with member logins; little else public.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-102"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-102",
+        "ev-103"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Local yoga studio; scale unknown.",
+          "evidence_refs": [
+            "ev-102"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
