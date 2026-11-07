@@ -1,0 +1,2936 @@
+{
+ "meta": {
+  "schema_version": "1.2",
+  "method_version": "3",
+  "idea_id": "2a90717d-4f02-4cb6-9307-e36c88b9c9b4",
+  "researcher": "claude-code",
+  "started_at": "2026-11-07T09:00:00Z",
+  "finished_at": "2026-11-07T13:00:00Z",
+  "queries": [
+   "owner statements short term rental co-host spreadsheet reddit",
+   "Hospitable owner statements co-host property manager",
+   "Hostaway Vrbo rates not syncing PriceLabs",
+   "Guesty reviews pricing percentage of revenue complaints",
+   "site:reddit.com co-host owner statements software airbnb property manager",
+   "ownerrez forum owner statements co-host trust accounting",
+   "smart lock code not sent to guest Hostaway OR Guesty OR Hospitable issue",
+   "\"vacation rental\" \"owner statements\" job posting accountant property management",
+   "Hospitable owner statements feature launch owner portal payouts 2025",
+   "feedback.hospitable.com owner statement",
+   "ownerrez forum PriceLabs rates not syncing Airbnb wrong price",
+   "Airbnb co-host network growth number of co-hosts 2025",
+   "\"Hostaway\" booking fee percentage leaving forum",
+   "owner statements \"hours\" every month property manager vacation rental manual spreadsheet",
+   "Ownercenter owner statements vacation rental pricing",
+   "PriceLabs rate checker \"price discrepancy\" listing price not matching alert",
+   "Airbnb help co-host payouts split percentage set up listing owner (contradiction)",
+   "Guesty trustpilot reviews support billing sync issues",
+   "Smoobu owner statements property owner report feature",
+   "guest locked out smart lock code didn't work airbnb host forum PMS failed",
+   "co-hosting company prospect searches (TX, TN, AZ, FL, CO, NC, WI, OR, CA)",
+   "STR Hub property managers and co-hosts directory",
+   "onefinebnb Airbnb management comparisons (Gatlinburg, Nashville, Destin, Scottsdale)"
+  ],
+  "notes": "BiggerPockets (robots.txt), Capterra/G2 (robots.txt), Hostaway and Guesty help centers (HTTP 403) could not be fetched, so the richest co-host statement threads and review-site complaints are not cited. Forum evidence comes mainly from OwnerRez and Hospitable communities. No evidence found for Smoobu, Hostfully or Uplisting owner-statement limits. No public evidence on who makes the software decision beyond small managers paying for their own stack. Prospects: 19 companies with fetchable own sites (or the STR Hub public directory for location/size); only 3 named contacts (founders shown on own pages); several fits (WISH, Venturebnb, Feliz, Great Dwellings) are larger or less co-host-like than the 5-50 listing ICP. Under the 20 target. ICP ids were not exposed by context, so icp_id is null (primary ICP)."
+ },
+ "evidence": [
+  {
+   "ref": "ev-01",
+   "url": "https://ownerrez.com/forums/general-help/banking-accounting-and-property-management-best-solution",
+   "title": "Banking, accounting and property management -- best solution? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "This model, while \"clean\" from an accounting POV, is a freaking nightmare from a practical POV",
+   "statement": "A manager running owner statements in OwnerRez under a trust model calls the workflow a nightmare in practice.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-02",
+   "url": "https://ownerrez.com/forums/general-help/banking-accounting-and-property-management-best-solution",
+   "title": "Banking, accounting and property management -- best solution? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "REQUIRES manual entry of each expense and each rental amount received TWICE: (1) in OwnerRez in order to generate the Owner Statement; and (2) in the appropriate trust bank account",
+   "statement": "Generating owner statements forces double manual entry of every expense and rental amount (PMS plus trust bank account).",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339",
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-03",
+   "url": "https://ownerrez.com/forums/general-help/banking-accounting-and-property-management-best-solution",
+   "title": "Banking, accounting and property management -- best solution? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "If I want to avoid the QB Online subscription fees, which I (and every PM) very much do wish to avoid",
+   "statement": "The manager says property managers want to avoid extra accounting subscription fees.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-04",
+   "url": "https://ownerrez.com/forums/general-help/banking-accounting-and-property-management-best-solution",
+   "title": "Banking, accounting and property management -- best solution? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "At least $80/m at current price to Intuit for QB Online for two \"companies\"",
+   "statement": "The trust-accounting setup next to OwnerRez costs at least $80/month in QuickBooks Online alone.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6",
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-05",
+   "url": "https://ownerrez.com/forums/general-help/banking-accounting-and-property-management-best-solution",
+   "title": "Banking, accounting and property management -- best solution? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "this is a LOT of work with a great deal of chance for error",
+   "statement": "The manager describes the owner-statement and trust bookkeeping as a lot of work with high error risk.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339",
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-06",
+   "url": "https://ownerrez.com/forums/general-help/banking-accounting-and-property-management-best-solution",
+   "title": "Banking, accounting and property management -- best solution? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "I'm a licensed realtor/property manager and manage thirty condos other than my own two.",
+   "statement": "A second poster is a licensed property manager running thirty condos for owners: a small manager handling owner payouts herself.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "1628fa9b-0026-47cf-9c4d-d911a7177b16"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-07",
+   "url": "https://ownerrez.com/forums/general-help/banking-accounting-and-property-management-best-solution",
+   "title": "Banking, accounting and property management -- best solution? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "the OwnerRez PM statement, Tax Detail Report, and Owner Remittance Detail Report provide most of the info I need to accomplish this",
+   "statement": "The 30-condo manager says OwnerRez's existing PM statement and reports cover most of what she needs: the incumbent PMS mostly solves owner reporting.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-08",
+   "url": "https://ownerrez.com/forums/general-help/banking-accounting-and-property-management-best-solution",
+   "title": "Banking, accounting and property management -- best solution? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "What is does not give me is the dollar figure of exact money in and money out which is a REAL pain since I have to get that number manually.",
+   "statement": "Even with OwnerRez reports, the period cash-in vs. distributions reconciliation total has to be computed manually.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339",
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-09",
+   "url": "https://community.hospitable.com/hospitable-changelog-3/owner-statements-and-invoices-for-airbnb-co-hosts-are-here-370",
+   "title": "Owner Statements and Invoices for Airbnb co-hosts are here! (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "hospitable isn't pulling the correct amount that was actually paid via airbnb so it isn't accurate. I have had to revert back to the hacky workarounds.",
+   "statement": "A co-host using Hospitable's new co-host owner statements says the amounts do not match Airbnb's actual split payouts and reverted to workarounds.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339",
+    "e702247f-425e-43be-88f0-c8cb40117b08"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-10",
+   "url": "https://community.hospitable.com/hospitable-changelog-3/owner-statements-and-invoices-for-airbnb-co-hosts-are-here-370",
+   "title": "Owner Statements and Invoices for Airbnb co-hosts are here! (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "I do this reconciliation in a spreadsheet outside Hospitable",
+   "statement": "Another co-host reconciles Airbnb split payouts against owner statements in a spreadsheet outside the PMS.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-11",
+   "url": "https://community.hospitable.com/hospitable-changelog-3/owner-statements-and-invoices-for-airbnb-co-hosts-are-here-370",
+   "title": "Owner Statements and Invoices for Airbnb co-hosts are here! (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "On a split payout, Airbnb works out the co-host share its own way: (accommodation - the whole host service fee) × your %.",
+   "statement": "Airbnb computes co-host split payouts differently from typical management agreements, so agreement-based statements drift from actual payouts.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-12",
+   "url": "https://community.hospitable.com/hospitable-changelog-3/owner-statements-and-invoices-for-airbnb-co-hosts-are-here-370",
+   "title": "Owner Statements and Invoices for Airbnb co-hosts are here! (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "If you receive Airbnb co-host payouts, and have been using Owner Statements and Invoices anyways and utilizing hacky workarounds, we'd recommend you set up new Reservation commissions",
+   "statement": "Hospitable has shipped owner statements and invoices that handle Airbnb co-host payouts, directly targeting the co-host statement need.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-13",
+   "url": "https://community.hospitable.com/hospitable-changelog-3/owner-statements-and-invoices-for-airbnb-co-hosts-are-here-370",
+   "title": "Owner Statements and Invoices for Airbnb co-hosts are here! (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "Showing financial data in real time introduces so many inquires from owners",
+   "statement": "A manager with about 40 owners says real-time financial data in the owner portal triggers many owner questions.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-14",
+   "url": "https://www.travolution.com/news/hospitable-launches-owner-payouts-feature/",
+   "title": "Hospitable launches Owner Payouts feature (Travolution)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "Many managers still calculate payouts manually, enter figures one by one, or rely on a mix of spreadsheets and external tools.",
+   "statement": "Trade press (relaying the vendor) reports that many STR managers still calculate owner payouts manually or with spreadsheets.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339",
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-15",
+   "url": "https://www.travolution.com/news/hospitable-launches-owner-payouts-feature/",
+   "title": "Hospitable launches Owner Payouts feature (Travolution)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "Hospitable becomes the first PMS in the short-term rental (STR) sector to bring owner payments entirely in-house and fully integrated",
+   "statement": "Hospitable added native owner payouts tied to owner statements, weakening the premise that hosts must leave Hospitable for owner accounting.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-16",
+   "url": "https://www.travolution.com/news/hospitable-launches-owner-payouts-feature/",
+   "title": "Hospitable launches Owner Payouts feature (Travolution)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "The feature is available on the Mogul plan and currently supports bank accounts in the United States, the United Kingdom, and Australia.",
+   "statement": "Hospitable's owner payouts sit on its Mogul plan.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-17",
+   "url": "https://hospitable.com/features/owner-portal-statements",
+   "title": "Vacation Rental Owner Portal & Statements | Hospitable",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Publish monthly statements in a click. Owners are notified and can view or download them anytime.",
+   "statement": "Hospitable offers one-click monthly owner statements and an owner portal.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-18",
+   "url": "https://hospitable.com/features/owner-payouts",
+   "title": "Owner Payouts | Hospitable",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Your first payout run each month is free (includes one withdrawal + unlimited distributions). After that, a 1.5% fee capped at $5 applies.",
+   "statement": "Hospitable's owner payouts pricing: first monthly run free, then 1.5% capped at $5.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-19",
+   "url": "https://hospitable.com/features/owner-payouts",
+   "title": "Owner Payouts | Hospitable",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Hospitable is the only platform that offers Split Payouts - so you and your owners can be paid your share together, right after the guest checks in.",
+   "statement": "Hospitable also automates manager/owner split payouts for its own merchant-of-record bookings.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-20",
+   "url": "https://www.hostaway.com/features/owner-statement/",
+   "title": "Owner statements for property managers | Hostaway",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Generate, customize, and email professional owner statements in seconds, not hours.",
+   "statement": "Hostaway markets built-in owner statements and implies manual statements take hours.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-21",
+   "url": "https://www.ownerrez.com/support/articles/property-management-owner-statements",
+   "title": "Property management owner statements overview | OwnerRez",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "creating your own Statement View, which can then be selected for your monthly branded Owner Statements",
+   "statement": "OwnerRez offers configurable monthly branded owner statements.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-22",
+   "url": "https://help.hospitable.com/en/articles/8193712-create-owner-statements-using-hospitable-s-integrations",
+   "title": "Create Owner Statements Using Hospitable's Integrations",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Step 3: Utilize Hospitable's integrations with Clearing or VRPlatform",
+   "statement": "Hospitable has pointed managers to third-party tools (Clearing, VRPlatform) for owner statements.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-23",
+   "url": "https://www.airbnb.com/help/article/3389",
+   "title": "How co-host payouts work - Airbnb Help Centre",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Co-host payouts are then calculated using host's potential earnings amount per booking and the payout option set up by the host",
+   "statement": "Airbnb natively splits payouts between listing owner and co-host per booking, reducing the need for separate split accounting on Airbnb bookings.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-24",
+   "url": "https://www.airbnb.com/help/article/3389",
+   "title": "How co-host payouts work - Airbnb Help Centre",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Listing owners, however, don't have access to a co-host's transaction history.",
+   "statement": "Owners cannot see the co-host's Airbnb transaction history, leaving a reporting gap the co-host must fill.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-25",
+   "url": "https://foxbusiness.com/lifestyle/airbnb-unveils-new-co-host-network-boost-number-listings-platform",
+   "title": "Airbnb unveils new co-host network (FOX Business)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "The co-hosting network currently has more than 10,000 co-hosts to choose from",
+   "statement": "Airbnb launched its co-host network with more than 10,000 co-hosts.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "1628fa9b-0026-47cf-9c4d-d911a7177b16"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-26",
+   "url": "https://skift.com/?p=717219",
+   "title": "Airbnb CEO: Co-Host Initiative Is an 'Alternative' to Property Management Companies (Skift)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "20,000 people have expressed interest in becoming co-hosts since Airbnb launched an enhanced network in mid-October",
+   "statement": "Airbnb reported 20,000 people interested in becoming co-hosts shortly after the network launch, supporting the co-hosting growth claim.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "1628fa9b-0026-47cf-9c4d-d911a7177b16"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-27",
+   "url": "https://www.getclearing.co/blog-posts/how-to-transition-from-cohosting-to-trust-accounting",
+   "title": "How to Transition from Cohosting to Full Trust Accounting (Clearing)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Under cohosting, all guest payments go directly to the property owner or their business entity. The manager (cohost) invoices the owner separately for management fees, markups, or reimbursable expenses.",
+   "statement": "In the co-hosting model the owner receives guest payments and the co-host must invoice separately, which creates statement/invoice work.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-28",
+   "url": "https://www.getclearing.co/blog-posts/owner-statement-template",
+   "title": "Owner Statement Template for Vacation Rental Property Managers (Clearing)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Managing statements for dozens of properties by hand, across separate rental trust accounts and multiple owners, is where most managers start looking for vacation rental accounting software",
+   "statement": "Clearing says spreadsheet templates work for a handful of owners but break down at dozens of properties.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-29",
+   "url": "https://www.getclearing.co/blog-posts/owner-statement-template",
+   "title": "Owner Statement Template for Vacation Rental Property Managers (Clearing)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "If you're managing a handful of owners on a template like this, it works well.",
+   "statement": "For a handful of owners, a free spreadsheet template is said to work well, limiting the paid need at the low end of the 5-50 listing range.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339",
+    "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-30",
+   "url": "https://www.getclearing.co/blog-posts/owner-statement-template",
+   "title": "Owner Statement Template for Vacation Rental Property Managers (Clearing)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Clearing is AI-powered trust accounting for short-term rentals.",
+   "statement": "Clearing sells trust accounting and owner statements for STR managers.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": null
+  },
+  {
+   "ref": "ev-31",
+   "url": "https://www.vrplatform.app/blog/owner-statement-payout-guide-vacation-rental-managers",
+   "title": "Owner Statement & Payout Guide for STR Property Managers (VRPlatform)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Manual owner statements, disconnected spreadsheets, and PDF exports are the most common source of errors and the biggest time drain in property management accounting.",
+   "statement": "A vendor (VRPlatform) claims manual statements are the biggest time drain in PM accounting.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-32",
+   "url": "https://www.vrplatform.app/blog/owner-statement-payout-guide-vacation-rental-managers",
+   "title": "Owner Statement & Payout Guide for STR Property Managers (VRPlatform)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Most property managers send owner statements monthly, typically within the first 5",
+   "statement": "Owner statements are a monthly recurring task.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-33",
+   "url": "https://www.ycombinator.com/companies/topkey/jobs/ZM7KYzO-accountant-short-term-rental-property-management",
+   "title": "Accountant - Short-Term Rental / Property Management at Topkey",
+   "source_type": "job_posting",
+   "published_at": null,
+   "quote": "specifically describing your experience reconciling PMS data against a general ledger and any STR or vacation rental accounting work you've done",
+   "statement": "A YC-backed STR fintech hires accountants specifically for reconciling PMS data against the ledger: the reconciliation work is paid, specialised labor.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-34",
+   "url": "https://www.ycombinator.com/companies/topkey/jobs/ZM7KYzO-accountant-short-term-rental-property-management",
+   "title": "Accountant - Short-Term Rental / Property Management at Topkey",
+   "source_type": "job_posting",
+   "published_at": null,
+   "quote": "This helps finance teams save 40 hours a month and thousands of dollars in bookkeeping and reimbursable expenses.",
+   "statement": "Topkey claims its automation saves finance teams 40 hours a month (vendor claim, larger managers).",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-35",
+   "url": "https://ownerrez.com/forums/general-help/why-aren-t-pricelabs-rates-showing-in-my-api-integrated-vrbo-c",
+   "title": "Why aren't PriceLabs rates showing in my API (integrated) VRBO calendar? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "I ended up turning off Pricelabs rates because I was contacted by more than one potential guest asking why the rates displayed on the calendar were not the same rates that were shown in a quote",
+   "statement": "A host turned off PriceLabs after guests saw different Vrbo calendar rates and quotes; the fix was to stop using the pricing tool.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163",
+    "e702247f-425e-43be-88f0-c8cb40117b08"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-36",
+   "url": "https://ownerrez.com/forums/general-help/why-aren-t-pricelabs-rates-showing-in-my-api-integrated-vrbo-c",
+   "title": "Why aren't PriceLabs rates showing in my API (integrated) VRBO calendar? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "in one case the quoted rate was $1300 more than what the calendar rates showed.",
+   "statement": "One Vrbo calendar/quote mismatch reached $1,300.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-37",
+   "url": "https://ownerrez.com/forums/general-help/why-aren-t-pricelabs-rates-showing-in-my-api-integrated-vrbo-c",
+   "title": "Why aren't PriceLabs rates showing in my API (integrated) VRBO calendar? (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "VRBO make take a day to update with new rates, though, because of how their feed processing works.",
+   "statement": "OwnerRez staff say Vrbo can take a day to reflect new rates, a structural lag.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-38",
+   "url": "https://www.ownerrez.com:443/forums/general-help/airbnb-pricing-higher-than-what-i-have-set",
+   "title": "AirBNB pricing higher than what I have set (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "When you activate custom promos on Airbnb, that stops the rates sync from OwnerRez. As long as that custom promo is in place, the PriceLabs changes will not update.",
+   "statement": "Airbnb custom promotions silently stop PriceLabs/PMS rate sync; staff call it a frequent question.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-39",
+   "url": "https://www.ownerrez.com:443/forums/general-help/airbnb-pricing-higher-than-what-i-have-set",
+   "title": "AirBNB pricing higher than what I have set (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "This is a frequent question. It's a little startling when you see it happen.",
+   "statement": "OwnerRez support says Airbnb price drift from promotions is a frequent question.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-40",
+   "url": "https://www.ownerrez.com/forums/general-help/ownerrez-in-not-importing-prices-and-nightly-minimum-to-my-booking-platform",
+   "title": "Ownerrez in not importing prices and nightly minimum to my booking platform (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "neither prices, nor the new seasonal nightly minimum that I set in Ownerrez is actually being reflected on my calendars on Vrbo and Airbnb",
+   "statement": "A host's prices and minimum stays from OwnerRez/PriceLabs were not reflected on Vrbo and Airbnb.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-41",
+   "url": "https://www.ownerrez.com/forums/general-help/ownerrez-in-not-importing-prices-and-nightly-minimum-to-my-booking-platform",
+   "title": "Ownerrez in not importing prices and nightly minimum to my booking platform (OwnerRez forum)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "At this point, please write in to the Helpdesk for further assistance",
+   "statement": "Sync problems are resolved by writing to the PMS helpdesk case by case.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "e702247f-425e-43be-88f0-c8cb40117b08"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-42",
+   "url": "https://community.hospitable.com/industry-conversations-33/dynamic-pricing-syncing-issues-115",
+   "title": "Dynamic pricing syncing issues (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "even though i constantly sync it with pricelabs every day it defaults to the airbnb price",
+   "statement": "A Hospitable user saw Airbnb ignore PriceLabs prices despite daily syncing.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-43",
+   "url": "https://community.hospitable.com/industry-conversations-33/dynamic-pricing-syncing-issues-115",
+   "title": "Dynamic pricing syncing issues (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "the booking platform can reject the entire batch if ONE price is above the 10% threshold higher than the previous rates",
+   "statement": "Hospitable says a platform can reject a whole 12-month price batch if one price jumps over a 10% threshold, so prices can silently stop updating.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-44",
+   "url": "https://community.hospitable.com/industry-conversations-33/dynamic-pricing-syncing-issues-115",
+   "title": "Dynamic pricing syncing issues (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "Airbnb support is taking me around in circles",
+   "statement": "Hosts escalate pricing mismatches to Airbnb support with poor results.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "e702247f-425e-43be-88f0-c8cb40117b08"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-45",
+   "url": "https://community.hospitable.com/industry-conversations-33/dynamic-pricing-syncing-issues-115",
+   "title": "Dynamic pricing syncing issues (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "What I learned is that the syncing should be from PriceLabs",
+   "statement": "One host traced drift to a misconfigured PriceLabs-Airbnb-PMS connection and fixed it by reconnecting: many drift cases are one-off setup errors.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163",
+    "e702247f-425e-43be-88f0-c8cb40117b08"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-46",
+   "url": "https://community.hospitable.com/industry-conversations-33/dynamic-pricing-syncing-issues-115",
+   "title": "Dynamic pricing syncing issues (Hospitable Community)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "Hospitable will show you the source of your price for any given day",
+   "statement": "Hospitable already shows the price source per day, a partial built-in diagnostic.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "e702247f-425e-43be-88f0-c8cb40117b08"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-47",
+   "url": "https://help.pricelabs.co/portal/en/kb/articles/inconsistent-rates",
+   "title": "Inconsistent Rates (PriceLabs help)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "there can be a delay in when the PMS or Channel Manager sends out the prices that it was sent by PriceLabs. This delay in broadcast has occasionally led to a booking made at a less than ideal price.",
+   "statement": "PriceLabs acknowledges PMS broadcast delays occasionally cause bookings at a worse price.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-48",
+   "url": "https://www.rfp.wiki/specialty-industries/hospitality-travel/guesty",
+   "title": "Guesty - Reviews - Vacation Rental Management Software (RFP Wiki)",
+   "source_type": "review",
+   "published_at": null,
+   "quote": "VRBO and other sync edge cases can require manual cleanup.",
+   "statement": "A review aggregator lists Vrbo sync edge cases needing manual cleanup as a recurring Guesty concern.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "29075105-55cc-44ff-9233-7cb6bdee3163",
+    "e702247f-425e-43be-88f0-c8cb40117b08"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-49",
+   "url": "https://www.rfp.wiki/specialty-industries/hospitality-travel/guesty",
+   "title": "Guesty - Reviews - Vacation Rental Management Software (RFP Wiki)",
+   "source_type": "review",
+   "published_at": null,
+   "quote": "Support and billing resolution complaints show up repeatedly.",
+   "statement": "Guesty reviews repeatedly mention support and billing resolution complaints.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-50",
+   "url": "https://feedback.hospitable.com/p/manual-smart-lock-code-resync",
+   "title": "Manual smart lock code resync (Hospitable feedback board)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "When a smart lock code hasn't arrived but the lock has been fixed, there's no way to manually re-attempt sending the code",
+   "statement": "Hospitable users report no way to retry a failed door-code delivery; the request was rejected.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "1eff76d1-0514-4ae0-b302-6ef5cfafac51",
+    "e702247f-425e-43be-88f0-c8cb40117b08"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-51",
+   "url": "https://feedback.hospitable.com/p/manual-smart-lock-code-resync",
+   "title": "Manual smart lock code resync (Hospitable feedback board)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "Changing the reservation time to trigger a new code, but this risks disrupting automated messages",
+   "statement": "The workaround for failed lock codes is editing the reservation time, which risks breaking automated messages.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "1eff76d1-0514-4ae0-b302-6ef5cfafac51",
+    "e702247f-425e-43be-88f0-c8cb40117b08"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-52",
+   "url": "https://community.hospitable.com/hospitable-changelog-3/preventing-unnecessary-smart-lock-backup-code-messages-1326",
+   "title": "Preventing unnecessary smart lock backup code messages (Hospitable Community)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "the system could still trigger the backup code message, which sometimes confused guests.",
+   "statement": "Hospitable's lock-code logic sent unnecessary backup codes that confused guests.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "1eff76d1-0514-4ae0-b302-6ef5cfafac51"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-53",
+   "url": "https://community.hospitable.com/hospitable-changelog-3/preventing-unnecessary-smart-lock-backup-code-messages-1326",
+   "title": "Preventing unnecessary smart lock backup code messages (Hospitable Community)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "To prevent this, we ran an automated update for affected accounts.",
+   "statement": "Hospitable fixed this lock-code messaging issue itself, suggesting vendors patch such failures.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "1eff76d1-0514-4ae0-b302-6ef5cfafac51"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-54",
+   "url": "https://community.withairbnb.com/t5/Support-with-your-bookings/Smart-lock-auto-program-incorrect/m-p/2244469",
+   "title": "Smart-lock auto program incorrect (Airbnb Community Center)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "The door code sent in the guests' check in instructions was different than the suggested door code.",
+   "statement": "An Airbnb host's guest received a different code than the one programmed on the lock.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "1eff76d1-0514-4ae0-b302-6ef5cfafac51"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-55",
+   "url": "https://community.withairbnb.com/t5/Support-with-your-bookings/Smart-lock-auto-program-incorrect/m-p/2244469",
+   "title": "Smart-lock auto program incorrect (Airbnb Community Center)",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "This error caused the guest being unable to get access.",
+   "statement": "The code mismatch locked the guest out.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "1eff76d1-0514-4ae0-b302-6ef5cfafac51"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-56",
+   "url": "https://www.airbnb.com/help/article/3482",
+   "title": "Manage your guests' smart lock codes - Airbnb Help Centre",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We'll let you know right away that your lock is offline and provide you with info on how to resolve it as soon as possible.",
+   "statement": "Airbnb's native smart-lock integration already alerts hosts when a lock is offline.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "1eff76d1-0514-4ae0-b302-6ef5cfafac51"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-57",
+   "url": "https://www.airbnb.com/help/article/3482",
+   "title": "Manage your guests' smart lock codes - Airbnb Help Centre",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "When using PMS integration, all code generation and management is handled by your PMS.",
+   "statement": "With a PMS integration, lock-code troubleshooting sits in the PMS.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "1eff76d1-0514-4ae0-b302-6ef5cfafac51"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-58",
+   "url": "https://help.hosttools.com/en/articles/8160743-why-doesn-t-my-guest-have-a-code-set-on-my-lock",
+   "title": "Why doesn't my guest have a code set on my lock? (Host Tools)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "For last-minute Airbnb bookings, the guest's phone number can take a minute or two to sync after the reservation is confirmed.",
+   "statement": "Host Tools documents lock-code timing gaps for last-minute bookings.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "1eff76d1-0514-4ae0-b302-6ef5cfafac51"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-59",
+   "url": "https://www.ownerrez.com/leaving-hostaway-percent-booking-fee",
+   "title": "Looking to leave Hostaway because of new fees? (OwnerRez)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Hostaway recently introduced 1.8% booking fees which shocked the industry.",
+   "statement": "A competitor (OwnerRez) uses Hostaway's 1.8% booking fee as a switching argument (biased source).",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-60",
+   "url": "https://www.roommaster.com/blog/hostaway-pricing",
+   "title": "Hostaway Pricing 2026: Real Costs & Hidden Fees (Roommaster)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "The per-listing rate falls as you scale, so small operators pay the highest effective rate, and the transaction fees (1% on payments, 1.8% on booking-engine reservations) are separate from the subscription.",
+   "statement": "Hostaway's reported pricing charges small operators the highest per-listing rate plus transaction fees.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-61",
+   "url": "https://strspecialist.com/reviews/ownercenter-ops-review",
+   "title": "OwnerCenter Review & Pricing (STR Specialist)",
+   "source_type": "review",
+   "published_at": null,
+   "quote": "Pricing starts at $49/month per manager account. Ideal for agencies needing professional owner workflows, it lacks channel management and requires integration with a PMS.",
+   "statement": "OwnerCenter already sells an owner-statement/portal add-on at $49/month, the same price point as the idea.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-62",
+   "url": "https://www.rakidzich.com/articles/airbnb-owner-statement-template",
+   "title": "Airbnb Owner Statement Template for Co-Hosts",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "The worksheet has three layers: Airbnb-reported fields, co-host payout configuration data, and operator-entered lines.",
+   "statement": "Co-host owner statements are being published as spreadsheet templates.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-63",
+   "url": "https://www.getclearing.co/blog-posts/owner-statement-template",
+   "title": "Owner Statement Template for Vacation Rental Property Managers (Clearing)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Enter bookings manually or pull them from your PMS or reservation export",
+   "statement": "Free statement templates rely on manual entry or PMS exports.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-64",
+   "url": "https://stressfreecohosting.com",
+   "title": "Stress Free Co-Hosting - home",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "With Stress Free Co-Hosting, you keep your Airbnb and Vrbo listings in your name, your 5-star reviews stay with you, and rental income flows directly to your account.",
+   "statement": "Stress Free Co-Hosting co-hosts on owners' own Airbnb/Vrbo accounts with income going to the owner.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Stress Free Co-Hosting"
+  },
+  {
+   "ref": "ev-65",
+   "url": "https://stress-free-cohosting.pages.dev/about",
+   "title": "About Vince Lightbourn | Stress Free Co-Hosting",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Stress Free Co-Hosting serves homeowners in southwest Austin, Dripping Springs, Driftwood, Bee Cave, and Lakeway.",
+   "statement": "Stress Free Co-Hosting serves the Austin, Texas area.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Stress Free Co-Hosting"
+  },
+  {
+   "ref": "ev-66",
+   "url": "https://stress-free-cohosting.pages.dev/about",
+   "title": "About Vince Lightbourn | Stress Free Co-Hosting",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Meet Vince Founder of Stress Free Co-Hosting.",
+   "statement": "Vince is the founder of Stress Free Co-Hosting.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Stress Free Co-Hosting"
+  },
+  {
+   "ref": "ev-67",
+   "url": "https://www.theutmosthost.com/co-hosting",
+   "title": "Professional Co-hosting Services in Broken Bow, OK | The Utmost Host",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "You stay in control by choosing your trusted cleaning and maintenance teams while retaining ownership of your listings and reviews.",
+   "statement": "The Utmost Host co-hosts on owners' own listings.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "The Utmost Host"
+  },
+  {
+   "ref": "ev-68",
+   "url": "https://theutmosthost.com/about",
+   "title": "About Us | The Utmost Host",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Today, we manage a growing portfolio of luxury cabins in Broken Bow and Hochatown and are expanding into Frisco, TX. We serve property owners through our co-hosting model",
+   "statement": "The Utmost Host is a co-hosting company in Broken Bow/Hochatown, Oklahoma and Frisco, Texas.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "The Utmost Host"
+  },
+  {
+   "ref": "ev-69",
+   "url": "https://theutmosthost.com/about",
+   "title": "About Us | The Utmost Host",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Stacy Parkelj Founder",
+   "statement": "Stacy Parkelj is founder of The Utmost Host.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "The Utmost Host"
+  },
+  {
+   "ref": "ev-70",
+   "url": "https://theutmosthost.com/about",
+   "title": "About Us | The Utmost Host",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Nick Parkelj Co-founder & Head of Operations",
+   "statement": "Nick Parkelj is co-founder and head of operations.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "The Utmost Host"
+  },
+  {
+   "ref": "ev-71",
+   "url": "https://theutmosthost.com/about",
+   "title": "About Us | The Utmost Host",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Bobbi Lemery Host Coach Bobbi is an experienced STR operator and OwnerRez specialist",
+   "statement": "The Utmost Host's team includes an OwnerRez specialist, indicating OwnerRez in its stack.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "The Utmost Host"
+  },
+  {
+   "ref": "ev-72",
+   "url": "https://www.smokymountaincohosting.com/",
+   "title": "Smoky Mountain Cohosting",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "All booking income from Airbnb, VRBO, Booking.com, Wander, Google Vacations and direct channels are paid straight to you, never through us.",
+   "statement": "Smoky Mountain Cohosting's owners receive all booking income directly, so the co-host must invoice/settle separately across channels.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Smoky Mountain Cohosting"
+  },
+  {
+   "ref": "ev-73",
+   "url": "https://www.smokymountaincohosting.com/",
+   "title": "Smoky Mountain Cohosting",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Full-service, high-end Airbnb co-hosting for luxury vacation rentals in Gatlinburg, Pigeon Forge, and Sevierville",
+   "statement": "Smoky Mountain Cohosting operates in Gatlinburg/Pigeon Forge/Sevierville, Tennessee.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Smoky Mountain Cohosting"
+  },
+  {
+   "ref": "ev-74",
+   "url": "https://shorttermcoops.com",
+   "title": "Short Term Coops",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We manage 30 cabins across Gatlinburg, Pigeon Forge, Sevierville, and Wears Valley, Tennessee.",
+   "statement": "Short Term Coops manages 30 cabins in Tennessee.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Short Term Coops"
+  },
+  {
+   "ref": "ev-75",
+   "url": "https://shorttermcoops.com",
+   "title": "Short Term Coops",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Every expense is itemized on your monthly statement.",
+   "statement": "Short Term Coops produces monthly itemized owner statements.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Short Term Coops"
+  },
+  {
+   "ref": "ev-76",
+   "url": "https://www.beourguestpropertymanagement.com/",
+   "title": "Be Our Guest Property Management",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Central Oregon, including but not limited to: Bend, Sunriver, Redmond, Sisters",
+   "statement": "Be Our Guest Property Management serves Central Oregon and Portland.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Be Our Guest Property Management"
+  },
+  {
+   "ref": "ev-77",
+   "url": "https://www.beourguestpropertymanagement.com/",
+   "title": "Be Our Guest Property Management",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We also offer remote services for those that have dreamed of having virtual assistance with a personal feel for help with cohosting",
+   "statement": "Be Our Guest offers co-hosting services.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Be Our Guest Property Management"
+  },
+  {
+   "ref": "ev-78",
+   "url": "https://thecohostcompany.com",
+   "title": "The Cohost Company",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We thoughtfully manage unique stays across Joshua Tree and the High Desert",
+   "statement": "The Cohost Company manages vacation rentals in Joshua Tree, California.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "The Cohost Company"
+  },
+  {
+   "ref": "ev-79",
+   "url": "https://thecohostcompany.com",
+   "title": "The Cohost Company",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "In High Desert in California, USA",
+   "statement": "The Cohost Company is located in California, USA.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "The Cohost Company"
+  },
+  {
+   "ref": "ev-80",
+   "url": "https://casaprestada.com/",
+   "title": "Casa Prestada",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Casa Prestada is a veteran-owned, woman-led short-term property management company based in North Texas.",
+   "statement": "Casa Prestada is a small STR manager in North Texas.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Casa Prestada"
+  },
+  {
+   "ref": "ev-81",
+   "url": "https://casaprestada.com/",
+   "title": "Casa Prestada",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Small by Intent: Focused on quality over quantity.",
+   "statement": "Casa Prestada describes itself as small by intent.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Casa Prestada"
+  },
+  {
+   "ref": "ev-82",
+   "url": "https://elitelakerentals.com/",
+   "title": "Elite Lake Vacation Rentals",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Elite Lake Vacation Rentals is family-owned and based right in the Lake Geneva Area.",
+   "statement": "Elite Lake Vacation Rentals is a family-owned manager in the Lake Geneva area (Wisconsin).",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Elite Lake Vacation Rentals"
+  },
+  {
+   "ref": "ev-83",
+   "url": "https://elitelakerentals.com/",
+   "title": "Elite Lake Vacation Rentals",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We're a boutique management company, highly selective in the homes we represent.",
+   "statement": "Elite Lake is a boutique manager of owners' homes.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Elite Lake Vacation Rentals"
+  },
+  {
+   "ref": "ev-84",
+   "url": "https://hostboise.com/",
+   "title": "Host Boise",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Idaho's Top Vacation Rental Services for Airbnb Properties.",
+   "statement": "Host Boise provides vacation rental management in Idaho.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Host Boise"
+  },
+  {
+   "ref": "ev-85",
+   "url": "https://hostboise.com/",
+   "title": "Host Boise",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Host Boise provides a variety of vacation rental services, including full-service vacation home rental management",
+   "statement": "Host Boise offers full-service management for owners.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Host Boise"
+  },
+  {
+   "ref": "ev-86",
+   "url": "https://strhub.com/property-managers-and-co-hosts-directory/",
+   "title": "Property Managers and Co-Hosts Directory (STR Hub)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "WISHSTR manages over 100 vacation rentals in California, Arizona, and Tennessee.",
+   "statement": "WISH Short Term Rental manages 100+ rentals in CA, AZ and TN.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "WISH Short Term Rental"
+  },
+  {
+   "ref": "ev-87",
+   "url": "https://www.wishstr.com/",
+   "title": "WISH Short Term Rental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Direct Booking website and multiplatform advertising for owner's listings",
+   "statement": "WISH STR manages owners' listings across platforms.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "WISH Short Term Rental"
+  },
+  {
+   "ref": "ev-88",
+   "url": "https://zenhostproperties.com/",
+   "title": "Zen Host Properties",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Zen Host Properties Atlanta, Georgia, United States",
+   "statement": "Zen Host Properties is based in Atlanta, Georgia.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Zen Host Properties"
+  },
+  {
+   "ref": "ev-89",
+   "url": "https://zenhostproperties.com/",
+   "title": "Zen Host Properties",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "we manage all facets of property management, from marketing to guest communication",
+   "statement": "Zen Host Properties manages STRs for owners.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Zen Host Properties"
+  },
+  {
+   "ref": "ev-90",
+   "url": "https://www.mcniecemanagement.com/",
+   "title": "McNiece Management",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We service properties across the southeast United States.",
+   "statement": "McNiece Management services STRs in the southeast US.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "McNiece Management"
+  },
+  {
+   "ref": "ev-91",
+   "url": "https://www.mcniecemanagement.com/",
+   "title": "McNiece Management",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We leverage technologies to price your property dynamically so you always get top dollar in ever-changing markets.",
+   "statement": "McNiece Management uses dynamic pricing tools.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "McNiece Management"
+  },
+  {
+   "ref": "ev-92",
+   "url": "https://stayworkandplay.com",
+   "title": "Airbnb Cohost Professionals (SWAP CoHosting)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We are a couple from Austin, Texas that have stayed in over 150 Airbnbs",
+   "statement": "SWAP CoHosting is run by a couple from Austin, Texas.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "SWAP CoHosting"
+  },
+  {
+   "ref": "ev-93",
+   "url": "https://stayworkandplay.com",
+   "title": "Airbnb Cohost Professionals (SWAP CoHosting)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Instant Notifications for New Bookings + Access to the automatically updated financials & calendar 24/7!",
+   "statement": "SWAP CoHosting promises owners automatically updated financials, i.e. owner reporting.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "SWAP CoHosting"
+  },
+  {
+   "ref": "ev-94",
+   "url": "https://stayworkandplay.com",
+   "title": "Airbnb Cohost Professionals (SWAP CoHosting)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Our Owners get paid EVERY Tuesday & Friday for any bookings that have started!",
+   "statement": "SWAP CoHosting runs twice-weekly owner payouts, a payout/reconciliation workload.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "SWAP CoHosting"
+  },
+  {
+   "ref": "ev-95",
+   "url": "https://www.nesttogetherhosts.com/",
+   "title": "Nest Together Hosts",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Hire a Co-Host in California with Nest Together Hosts.",
+   "statement": "Nest Together Hosts is a California co-hosting company.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Nest Together Hosts"
+  },
+  {
+   "ref": "ev-96",
+   "url": "https://www.nesttogetherhosts.com/",
+   "title": "Nest Together Hosts",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We provide comprehensive, done-for-you cohosting and property management services for short- and mid-term rentals across the country.",
+   "statement": "Nest Together Hosts co-hosts across the US.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Nest Together Hosts"
+  },
+  {
+   "ref": "ev-97",
+   "url": "https://www.bonvoyageaz.com/",
+   "title": "BonVoyageAZ",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "SCOTTSDALE · PARADISE VALLEY · PHOENIX · NORTHERN ARIZONA",
+   "statement": "BonVoyageAZ manages vacation rentals in Arizona.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "BonVoyageAZ"
+  },
+  {
+   "ref": "ev-98",
+   "url": "https://www.bonvoyageaz.com/",
+   "title": "BonVoyageAZ",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Sub-60-minute guest response around the clock, monthly disbursements, and clear owner reporting.",
+   "statement": "BonVoyageAZ provides monthly disbursements and owner reporting.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "BonVoyageAZ"
+  },
+  {
+   "ref": "ev-99",
+   "url": "https://mytamparental.com",
+   "title": "My Tampa Rental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Competitive Management Rates from 10%-14% of revenue (based on the home).",
+   "statement": "My Tampa Rental manages STRs for owners at 10-14% of revenue.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "My Tampa Rental"
+  },
+  {
+   "ref": "ev-100",
+   "url": "https://mytamparental.com",
+   "title": "My Tampa Rental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Advanced software systems to splice the listing to multiple platforms and have a one source center for finances, scheduling, messaging and more.",
+   "statement": "My Tampa Rental runs multi-channel software including finances.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "My Tampa Rental"
+  },
+  {
+   "ref": "ev-101",
+   "url": "https://mytamparental.com",
+   "title": "My Tampa Rental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Welcome to My Tampa Rental!",
+   "statement": "My Tampa Rental is a Tampa, Florida manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "My Tampa Rental"
+  },
+  {
+   "ref": "ev-102",
+   "url": "https://strhub.com/property-managers-and-co-hosts-directory/",
+   "title": "Property Managers and Co-Hosts Directory (STR Hub)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Great Dwellings Inc Service Locations: Washington DC, Maryland, Virginia, Pennsylvania, Florida, California, Mexico",
+   "statement": "Great Dwellings serves several US states.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Great Dwellings"
+  },
+  {
+   "ref": "ev-103",
+   "url": "https://www.greatdwellings.com",
+   "title": "Great Dwellings",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Great Dwellings manages Short Term and Vacation Rentals for multi-family owners in the US and Latin America.",
+   "statement": "Great Dwellings manages STRs for owners.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Great Dwellings"
+  },
+  {
+   "ref": "ev-104",
+   "url": "https://venturebnb.com",
+   "title": "Venturebnb",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "240+homes under management across the US",
+   "statement": "Venturebnb manages 240+ homes across the US (above the 5-50 range).",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Venturebnb"
+  },
+  {
+   "ref": "ev-105",
+   "url": "https://venturebnb.com",
+   "title": "Venturebnb",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We help short term rental owners increase their take-home income without managing guests, cleaners, pricing, or maintenance themselves",
+   "statement": "Venturebnb manages STRs for owners.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Venturebnb"
+  },
+  {
+   "ref": "ev-106",
+   "url": "https://felizstays.com/",
+   "title": "Feliz Stays",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Our San Antonio-based team is available to assist before, during, and after your stay.",
+   "statement": "Feliz Stays is a San Antonio, Texas manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Feliz Stays"
+  },
+  {
+   "ref": "ev-107",
+   "url": "https://felizstays.com/",
+   "title": "Feliz Stays",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Feliz Stays offers professionally managed San Antonio vacation rentals",
+   "statement": "Feliz Stays manages vacation rentals.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Feliz Stays"
+  }
+ ],
+ "unknown_findings": [
+  {
+   "unknown_id": "9b8f0e8a-1246-409a-abfd-b2ea4b53d20d",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Owner statements are a monthly task and managers describe double manual entry and manual money-in/money-out reconciliation.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-32",
+      "ev-02",
+      "ev-08"
+     ]
+    },
+    {
+     "statement": "Reconciling PMS data against the ledger is specialised paid work (accountant job posting); vendors claim large time savings (40 h/month) but these are vendor figures for larger teams.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-33",
+      "ev-34"
+     ]
+    },
+    {
+     "statement": "No independent measurement of hours per month for a 5-50 listing co-host was found.",
+     "kind": "assumption",
+     "evidence_ids": []
+    }
+   ]
+  },
+  {
+   "unknown_id": "4c7f2eea-3b0d-4784-a2fc-a5b3174ac339",
+   "status": "answered",
+   "summary": [
+    {
+     "statement": "Pain points: double data entry, trust banking setup, manual reconciliation totals, and co-host split payouts that don't match statement math.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-01",
+      "ev-02",
+      "ev-08",
+      "ev-09",
+      "ev-11"
+     ]
+    },
+    {
+     "statement": "Co-hosts reconcile Airbnb split payouts in spreadsheets outside the PMS.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-10",
+      "ev-62"
+     ]
+    },
+    {
+     "statement": "Counter-evidence: Hospitable, Hostaway and OwnerRez already provide owner statements; Hospitable added co-host statements and payouts; one 30-unit manager says OwnerRez reports cover most needs; templates work for a handful of owners.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-17",
+      "ev-12",
+      "ev-15",
+      "ev-20",
+      "ev-07",
+      "ev-29"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "29075105-55cc-44ff-9233-7cb6bdee3163",
+   "status": "answered",
+   "summary": [
+    {
+     "statement": "Price drift between PriceLabs/PMS and Airbnb/Vrbo is real and recurring: Vrbo feed lag, Airbnb promotions stopping sync, batch rejections over a 10% jump, PMS broadcast delays.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-35",
+      "ev-37",
+      "ev-38",
+      "ev-39",
+      "ev-43",
+      "ev-47",
+      "ev-40"
+     ]
+    },
+    {
+     "statement": "Many cases trace to one-off configuration errors fixable by reconnecting, and PMSs show price sources per day.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-45",
+      "ev-46"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "e702247f-425e-43be-88f0-c8cb40117b08",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Hosts handle drift by writing to PMS helpdesks, escalating to Airbnb support, reconfiguring connections or turning the pricing tool off.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-41",
+      "ev-44",
+      "ev-45",
+      "ev-35"
+     ]
+    },
+    {
+     "statement": "Vrbo sync edge cases on Guesty require manual cleanup per review aggregation.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-48"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "1eff76d1-0514-4ae0-b302-6ef5cfafac51",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Lock-code failures happen (code mismatch locking a guest out, no retry button, confusing backup codes, last-minute timing gaps).",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-54",
+      "ev-55",
+      "ev-50",
+      "ev-51",
+      "ev-52",
+      "ev-58"
+     ]
+    },
+    {
+     "statement": "Airbnb and Hospitable already alert on offline locks or patch the issues themselves; frequency of failures is unknown.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-56",
+      "ev-53"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "6f5c88bd-2a2f-4520-8ba5-93b6a34124e6",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Cost sensitivity is visible: managers want to avoid extra subscriptions, and transaction/booking fees on Hostaway draw criticism.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-03",
+      "ev-04",
+      "ev-60",
+      "ev-59"
+     ]
+    },
+    {
+     "statement": "An owner-portal/statement add-on already exists at $49/month (OwnerCenter), the same price as the hypothesis.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-61"
+     ]
+    },
+    {
+     "statement": "Support quality is a recurring complaint for Guesty.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-49"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "1628fa9b-0026-47cf-9c4d-d911a7177b16",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "In small operations the manager/co-host runs and pays for the stack themselves (e.g., a licensed manager with 30 condos handling payouts).",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-06",
+      "ev-04"
+     ]
+    },
+    {
+     "statement": "The co-host pool is growing on Airbnb's network (10,000 at launch, 20,000 more interested).",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-25",
+      "ev-26"
+     ]
+    }
+   ]
+  }
+ ],
+ "hypothesis_update": null,
+ "new_unknowns": [
+  {
+   "question": "What share of 5-50 listing co-hosts already use Hospitable/OwnerRez owner statements and still reconcile Airbnb split payouts by hand?",
+   "category": "current_solution",
+   "priority": "high"
+  },
+  {
+   "question": "How often does PriceLabs-to-channel price drift cause a mispriced booking per listing per year, and what does it cost?",
+   "category": "cost",
+   "priority": "medium"
+  }
+ ],
+ "competitors": [
+  {
+   "ref": "comp-01",
+   "name": "Hospitable",
+   "url": "https://hospitable.com",
+   "kind": "direct",
+   "description": "PMS that now ships owner statements, an owner portal, Airbnb co-host statements/invoices and native owner payouts (Mogul plan).",
+   "pricing_note": "Owner payouts: first run each month free, then 1.5% capped at $5 (Mogul plan).",
+   "evidence_refs": [
+    "ev-17",
+    "ev-18",
+    "ev-15",
+    "ev-16",
+    "ev-12"
+   ],
+   "sentiment": [
+    {
+     "statement": "A co-host reports Hospitable's co-host statements don't match Airbnb's actual split payouts and reverted to workarounds.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-09"
+     ]
+    },
+    {
+     "statement": "Hospitable users report no way to retry a failed smart-lock code delivery.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-50"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-02",
+   "name": "Hostaway",
+   "url": "https://www.hostaway.com",
+   "kind": "indirect",
+   "description": "PMS with built-in owner statements, owner portal and bulk statement actions.",
+   "pricing_note": "Reported (not published) pricing; 1% payment and 1.8% booking-engine fees on top of subscription per Roommaster.",
+   "evidence_refs": [
+    "ev-20",
+    "ev-60"
+   ],
+   "sentiment": [
+    {
+     "statement": "Competitor marketing frames Hostaway's 1.8% booking fee as a reason to leave.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-59"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-03",
+   "name": "OwnerRez",
+   "url": "https://www.ownerrez.com",
+   "kind": "indirect",
+   "description": "PMS with PM owner statements and remittance reports; no built-in trust accounting.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-21",
+    "ev-07"
+   ],
+   "sentiment": [
+    {
+     "statement": "A 30-condo manager says OwnerRez reports cover most needs but the money-in vs money-out total is manual.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-07",
+      "ev-08"
+     ]
+    },
+    {
+     "statement": "Another manager calls the OwnerRez trust/statement workflow a practical nightmare with double entry.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-01",
+      "ev-02"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-04",
+   "name": "Guesty",
+   "url": "https://www.guesty.com",
+   "kind": "indirect",
+   "description": "Enterprise-leaning PMS with channel sync, owner portal and statements.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-48",
+    "ev-49"
+   ],
+   "sentiment": [
+    {
+     "statement": "Review aggregator: Vrbo sync edge cases need manual cleanup; support and billing complaints recur.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-48",
+      "ev-49"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-05",
+   "name": "Clearing",
+   "url": "https://www.getclearing.co",
+   "kind": "direct",
+   "description": "Trust accounting and owner/co-host statements for STR managers, integrated with PMSs.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-30",
+    "ev-28",
+    "ev-22"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-06",
+   "name": "VRPlatform (VRTrust)",
+   "url": "https://www.vrplatform.app",
+   "kind": "direct",
+   "description": "STR trust accounting that pulls PMS data and generates owner statements and portal.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-31",
+    "ev-22"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-07",
+   "name": "OwnerCenter",
+   "url": "https://www.ownercenter.net",
+   "kind": "direct",
+   "description": "Owner portal, automated statements and payouts as an add-on to a PMS.",
+   "pricing_note": "From $49/month per manager account (third-party review).",
+   "evidence_refs": [
+    "ev-61"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-08",
+   "name": "Topkey",
+   "url": "https://topkey.io",
+   "kind": "indirect",
+   "description": "Expense, card and bookkeeping automation for vacation rental managers, integrated with PMS and accounting.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-33",
+    "ev-34"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-09",
+   "name": "PriceLabs",
+   "url": "https://hello.pricelabs.co",
+   "kind": "indirect",
+   "description": "Dynamic pricing tool whose rates flow through PMSs to channels; acknowledges broadcast delays.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-47",
+    "ev-35"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-10",
+   "name": "Airbnb native co-host payouts and smart-lock integration",
+   "url": "https://www.airbnb.com/help/article/3389",
+   "kind": "indirect",
+   "description": "Airbnb splits payouts between owner and co-host and manages lock codes with offline alerts natively.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-23",
+    "ev-56"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-11",
+   "name": "Spreadsheet templates",
+   "url": "https://www.rakidzich.com/articles/airbnb-owner-statement-template",
+   "kind": "manual",
+   "description": "Owner/co-host statement spreadsheets fed by manual entry or PMS/Airbnb exports.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-62",
+    "ev-63",
+    "ev-10",
+    "ev-29"
+   ],
+   "sentiment": []
+  }
+ ],
+ "current_solutions": [
+  {
+   "statement": "Incumbent PMSs (Hospitable, Hostaway, OwnerRez) already ship owner statements and owner portals; Hospitable added co-host statements and native owner payouts.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-17",
+    "ev-20",
+    "ev-21",
+    "ev-12",
+    "ev-15"
+   ]
+  },
+  {
+   "statement": "Where the PMS falls short, managers bolt on accounting tools (QuickBooks, Clearing, VRPlatform, OwnerCenter) or reconcile in spreadsheets.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-04",
+    "ev-10",
+    "ev-22",
+    "ev-61",
+    "ev-63"
+   ]
+  },
+  {
+   "statement": "Airbnb itself splits co-host payouts per booking, so the residual work is reconciling other channels and the true-up, not the whole statement.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-23",
+    "ev-27"
+   ]
+  },
+  {
+   "statement": "Price/calendar drift is handled by support tickets, reconfiguring connections or turning the pricing tool off; no dedicated watchdog appeared in the evidence.",
+   "kind": "inference",
+   "evidence_ids": [
+    "ev-41",
+    "ev-45",
+    "ev-35"
+   ]
+  }
+ ],
+ "companies": [
+  {
+   "ref": "co-01",
+   "name": "Stress Free Co-Hosting",
+   "website": "https://stressfreecohosting.com",
+   "icp_id": null,
+   "location": "Southwest Austin, TX",
+   "industry": "STR co-hosting",
+   "description": "Boutique Airbnb/Vrbo co-host on owners' own accounts; income goes to owners, so owner reporting/invoicing falls on the co-host.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-65"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-64",
+    "ev-65",
+    "ev-66"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 5,
+     "rationale": "Pure co-host model for other owners in the US.",
+     "evidence_refs": [
+      "ev-64",
+      "ev-65"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Vince",
+     "role": "Founder",
+     "email": null,
+     "evidence_ref": "ev-66"
+    }
+   ]
+  },
+  {
+   "ref": "co-02",
+   "name": "The Utmost Host",
+   "website": "https://theutmosthost.com",
+   "icp_id": null,
+   "location": "Broken Bow, OK / Frisco, TX",
+   "industry": "STR co-hosting",
+   "description": "Small boutique co-hosting company on owners' listings; team includes an OwnerRez specialist.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-68"
+   },
+   "technologies": [
+    "OwnerRez"
+   ],
+   "evidence_refs": [
+    "ev-67",
+    "ev-68",
+    "ev-69",
+    "ev-70",
+    "ev-71"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 5,
+     "rationale": "Self-described small boutique co-hosting company.",
+     "evidence_refs": [
+      "ev-67",
+      "ev-68"
+     ]
+    },
+    "technology_fit": {
+     "rating": 3,
+     "rationale": "Team includes an OwnerRez specialist, suggesting OwnerRez use.",
+     "evidence_refs": [
+      "ev-71"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Stacy Parkelj",
+     "role": "Founder",
+     "email": null,
+     "evidence_ref": "ev-69"
+    },
+    {
+     "name": "Nick Parkelj",
+     "role": "Co-founder & Head of Operations",
+     "email": null,
+     "evidence_ref": "ev-70"
+    }
+   ]
+  },
+  {
+   "ref": "co-03",
+   "name": "Smoky Mountain Cohosting",
+   "website": "https://www.smokymountaincohosting.com",
+   "icp_id": null,
+   "location": "Gatlinburg / Pigeon Forge / Sevierville, TN",
+   "industry": "STR co-hosting",
+   "description": "Multi-channel co-host where all income is paid to owners directly, requiring cross-channel settlement.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-73"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-72",
+    "ev-73"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 5,
+     "rationale": "Co-host for owners across Airbnb, Vrbo, Booking.com and direct.",
+     "evidence_refs": [
+      "ev-72",
+      "ev-73"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 3,
+     "rationale": "Owner-held payouts across channels imply invoicing/statement work.",
+     "evidence_refs": [
+      "ev-72"
+     ]
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-04",
+   "name": "Short Term Coops",
+   "website": "https://shorttermcoops.com",
+   "icp_id": null,
+   "location": "Sevierville, TN",
+   "industry": "Boutique STR management",
+   "description": "Boutique cabin manager (30 cabins) that itemizes expenses on monthly owner statements.",
+   "size_estimate": {
+    "min": 30,
+    "max": 30,
+    "signal": "Own site: manages 30 cabins (listings, not staff)",
+    "evidence_ref": "ev-74"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-74"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-74",
+    "ev-75"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Manages 30 owner cabins, inside the 5-50 range.",
+     "evidence_refs": [
+      "ev-74"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 3,
+     "rationale": "Produces monthly itemized owner statements.",
+     "evidence_refs": [
+      "ev-75"
+     ]
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-05",
+   "name": "Be Our Guest Property Management",
+   "website": "https://www.beourguestpropertymanagement.com",
+   "icp_id": null,
+   "location": "Central Oregon / Portland, OR",
+   "industry": "STR management and co-hosting",
+   "description": "Local manager and remote co-host in Oregon.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-76"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-76",
+    "ev-77"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Offers co-hosting and management for owners.",
+     "evidence_refs": [
+      "ev-76",
+      "ev-77"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-06",
+   "name": "The Cohost Company",
+   "website": "https://thecohostcompany.com",
+   "icp_id": null,
+   "location": "Joshua Tree, CA",
+   "industry": "STR co-hosting/management",
+   "description": "Manages owners' homes in the California High Desert.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-79"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-78",
+    "ev-79"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Manages homes for homeowners.",
+     "evidence_refs": [
+      "ev-78"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-07",
+   "name": "Casa Prestada",
+   "website": "https://casaprestada.com",
+   "icp_id": null,
+   "location": "Dallas-Fort Worth, TX",
+   "industry": "STR/MTR property management",
+   "description": "Small, veteran-owned STR manager for owners in DFW.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-80"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-80",
+    "ev-81"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Small-by-intent manager for owners.",
+     "evidence_refs": [
+      "ev-80",
+      "ev-81"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-08",
+   "name": "Elite Lake Vacation Rentals",
+   "website": "https://elitelakerentals.com",
+   "icp_id": null,
+   "location": "Lake Geneva, WI",
+   "industry": "Boutique vacation rental management",
+   "description": "Family-owned boutique manager of owners' homes.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-82"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-82",
+    "ev-83"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Boutique manager representing owners' homes.",
+     "evidence_refs": [
+      "ev-82",
+      "ev-83"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-09",
+   "name": "Host Boise",
+   "website": "https://hostboise.com",
+   "icp_id": null,
+   "location": "Boise, ID",
+   "industry": "Vacation rental management",
+   "description": "Full-service and partial management for Airbnb owners in Idaho.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-84"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-84",
+    "ev-85"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Manages other owners' STRs.",
+     "evidence_refs": [
+      "ev-84",
+      "ev-85"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-10",
+   "name": "WISH Short Term Rental",
+   "website": "https://www.wishstr.com",
+   "icp_id": null,
+   "location": "CA / AZ / TN",
+   "industry": "STR management",
+   "description": "Manager of 100+ owner rentals across three states (above the 5-50 range).",
+   "size_estimate": {
+    "min": 100,
+    "max": null,
+    "signal": "Directory listing: manages over 100 vacation rentals (listings)",
+    "evidence_ref": "ev-86"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-86"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-86",
+    "ev-87"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Manages owners' listings but larger than the 5-50 sweet spot.",
+     "evidence_refs": [
+      "ev-86",
+      "ev-87"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-11",
+   "name": "Zen Host Properties",
+   "website": "https://zenhostproperties.com",
+   "icp_id": null,
+   "location": "Atlanta, GA",
+   "industry": "STR management",
+   "description": "Atlanta STR manager for investors and homeowners.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-88"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-88",
+    "ev-89"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Manages STRs for owners.",
+     "evidence_refs": [
+      "ev-88",
+      "ev-89"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-12",
+   "name": "McNiece Management",
+   "website": "https://www.mcniecemanagement.com",
+   "icp_id": null,
+   "location": "Southeast US",
+   "industry": "STR management",
+   "description": "Hands-on STR manager across the southeast using dynamic pricing.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-90"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-90",
+    "ev-91"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Manages owners' STRs.",
+     "evidence_refs": [
+      "ev-90"
+     ]
+    },
+    "technology_fit": {
+     "rating": 2,
+     "rationale": "Uses dynamic pricing technology (tool not named).",
+     "evidence_refs": [
+      "ev-91"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-13",
+   "name": "SWAP CoHosting",
+   "website": "https://stayworkandplay.com",
+   "icp_id": null,
+   "location": "Austin, TX",
+   "industry": "STR co-hosting",
+   "description": "Couple-run co-host offering owners live financials and twice-weekly payouts.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-92"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-92",
+    "ev-93",
+    "ev-94"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 5,
+     "rationale": "Co-hosts for owners in several states.",
+     "evidence_refs": [
+      "ev-92"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 3,
+     "rationale": "Promises automatically updated owner financials and frequent payouts.",
+     "evidence_refs": [
+      "ev-93",
+      "ev-94"
+     ]
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-14",
+   "name": "Nest Together Hosts",
+   "website": "https://www.nesttogetherhosts.com",
+   "icp_id": null,
+   "location": "California",
+   "industry": "STR co-hosting",
+   "description": "California co-hosting and management company working across the US.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-95"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-95",
+    "ev-96"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 5,
+     "rationale": "Co-hosting company for owners.",
+     "evidence_refs": [
+      "ev-95",
+      "ev-96"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-15",
+   "name": "BonVoyageAZ",
+   "website": "https://www.bonvoyageaz.com",
+   "icp_id": null,
+   "location": "Scottsdale / Phoenix, AZ",
+   "industry": "Vacation rental management",
+   "description": "Full-service AZ manager with monthly disbursements, owner reporting and an owner portal.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-97"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-97",
+    "ev-98"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Full-service manager; size unknown.",
+     "evidence_refs": [
+      "ev-97",
+      "ev-98"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 2,
+     "rationale": "Runs monthly disbursements and owner reporting.",
+     "evidence_refs": [
+      "ev-98"
+     ]
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-16",
+   "name": "My Tampa Rental",
+   "website": "https://mytamparental.com",
+   "icp_id": null,
+   "location": "Tampa, FL",
+   "industry": "STR management",
+   "description": "Tampa manager at 10-14% of revenue using multi-channel software with finances.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-101"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-99",
+    "ev-100",
+    "ev-101"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Manages owners' listings, including existing ones.",
+     "evidence_refs": [
+      "ev-99",
+      "ev-100"
+     ]
+    },
+    "technology_fit": {
+     "rating": 2,
+     "rationale": "Uses multi-platform PMS-style software (not named).",
+     "evidence_refs": [
+      "ev-100"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-17",
+   "name": "Great Dwellings",
+   "website": "https://www.greatdwellings.com",
+   "icp_id": null,
+   "location": "Washington DC region",
+   "industry": "STR management",
+   "description": "Manages STRs for multi-family owners across several states (less of a co-host fit).",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-102"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-102",
+    "ev-103"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "Focus on multi-family owners/developers.",
+     "evidence_refs": [
+      "ev-102",
+      "ev-103"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-18",
+   "name": "Venturebnb",
+   "website": "https://venturebnb.com",
+   "icp_id": null,
+   "location": "United States",
+   "industry": "STR management",
+   "description": "Partnership-based manager with 240+ homes (too large for the core ICP).",
+   "size_estimate": {
+    "min": 240,
+    "max": null,
+    "signal": "Own site: 240+ homes under management (listings)",
+    "evidence_ref": "ev-104"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-104"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-104",
+    "ev-105"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "Larger than the 5-50 listing range.",
+     "evidence_refs": [
+      "ev-104",
+      "ev-105"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-19",
+   "name": "Feliz Stays",
+   "website": "https://felizstays.com",
+   "icp_id": null,
+   "location": "San Antonio, TX",
+   "industry": "Vacation rental management",
+   "description": "San Antonio vacation rental manager.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-106"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-106",
+    "ev-107"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "Manager of rentals; owner-management model not stated on fetched page.",
+     "evidence_refs": [
+      "ev-106",
+      "ev-107"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence of its software stack.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No public problem signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  }
+ ]
+}
