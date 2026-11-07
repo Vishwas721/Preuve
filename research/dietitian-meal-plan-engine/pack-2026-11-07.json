@@ -1,0 +1,2772 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "b22edc0c-63ca-4989-814b-b89d3d420056",
+    "researcher": "claude-code",
+    "started_at": "2026-11-07T09:00:00Z",
+    "finished_at": "2026-11-07T13:00:00Z",
+    "queries": [
+      "dietitian how long does it take to create a meal plan for a client hours",
+      "reddit dietitian meal plan software Indian food database lacking",
+      "South Asian dietitian private practice Desi meal plans registered dietitian",
+      "reddit dietetics \"meal plans\" don't provide meal plans dietitian why (contradiction)",
+      "Practice Better AI meal plan generator feature launch",
+      "That Clean Life review dietitian cons Indian recipes",
+      "reddit r/dietetics meal planning software recommendations time consuming meal plans",
+      "Indian dietitian diet chart software price per month nutritionist India",
+      "dietitian software India Indian food database diet plan generator pricing",
+      "Indian dietitians send diet charts on WhatsApp PDF clients online consultation survey",
+      "study dietitians culturally appropriate food lists lack resources South Asian clients challenges",
+      "site:reddit.com dietetics meal plan software That Clean Life OR Nutrium OR Practice Better",
+      "MealStack nutrition practice software Indian dietitians IFCT INDB AI meal plan",
+      "Nutrena nutrition CRM Indian food database dietitians",
+      "nutritionist don't need meal planning software Canva Google Docs (contradiction)",
+      "Zoconut dietitian software pricing",
+      "Wellnessz dietitian software India pricing plans",
+      "job posting registered dietitian create meal plans remote",
+      "survey dietitians technology adoption factors choosing practice management software cost",
+      "AI generated meal plans dietitians accuracy study ChatGPT",
+      "dietitians nutrient analysis software lacks ethnic cultural foods South Asian",
+      "That Clean Life Indian recipes collection South Asian meal plan",
+      "desi dietitian registered dietitian South Asian clients private practice",
+      "UK registered dietitian South Asian diet specialist private clinic",
+      "Australia dietitian Indian South Asian clients accredited practising dietitian",
+      "Canada registered dietitian South Asian Punjabi Hindi Urdu private practice",
+      "Indian American registered dietitian private practice South Asian",
+      "site:bda.uk.com find-a-dietitian South Asian",
+      "site:dietitiansaustralia.org.au find-an-apd Indian South Asian Hindi",
+      "Brampton dietitian South Asian Punjabi registered dietitian"
+    ],
+    "notes": "Primary ICP from context: South Asian diaspora dietitians abroad (US/UK/Canada/Australia). 18 prospects found (target was 20+; one more, a Toronto RD, was dropped because its only fetchable page shares a directory domain with another prospect); several are evidenced only via association/public directories (BDA Find a Dietitian, Dietitians Australia Find an APD, Medimap, Dietitian Central, PCRM) because their own sites were unfetchable or absent; contacts were taken only from the practices' own pages. Time-per-plan figures come mostly from vendors and a coach with affiliate interests; no independent survey found. Reddit, G2, Capterra, Upwork/Fiverr and several journal pages blocked Preuve's fetcher. Indian vendor claims (Nutrena, mealPlan.fit, WellnessZ, Hint) are self-reported. No evidence found on how dietitians decide on software purchases beyond price points."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://www.stephanielong.ca/blog/meal-planning-software-nutritionists",
+      "title": "Best Meal Planning Software for Nutritionists (Stephanie Long)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "In my own nutrition practice, I remember it taking anywhere from 4-6 hours to create one meal plan for a client.",
+      "statement": "A nutrition business coach reports that one manual client meal plan took her 4-6 hours.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b740594e-18b1-41df-94e3-d29e73aed0d2"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://www.promealplan.com/en/blog/dietitian-meal-planning-software",
+      "title": "Best Dietitian Software for Meal Planning (Promealplan)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Most registered dietitians and nutritionists spend 30 to 60 minutes creating a single meal plan by hand. Between calculating macros, finding appropriate recipes, adjusting portion sizes, checking for allergens, and formatting the document",
+      "statement": "A meal-planning vendor claims a hand-built plan takes 30-60 minutes, spent on macros, recipe search, portions, allergen checks and formatting.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b740594e-18b1-41df-94e3-d29e73aed0d2",
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1",
+        "dfeb4092-2fbc-4859-9339-66d076afe817"
+      ],
+      "company_name": "Promealplan"
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://www.innerbuddies.com/blogs/gut-health/meal-planning-software-for-dietitians",
+      "title": "Best Meal Planning Software for Dietitians (Innerbuddies)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A dietitian manually building a week of meals for a client with specific calorie targets, allergies, and food preferences might spend two to three hours per plan.",
+      "statement": "A vendor blog estimates two to three hours to build a week of meals by hand for a client with calorie targets, allergies and preferences.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b740594e-18b1-41df-94e3-d29e73aed0d2",
+        "dfeb4092-2fbc-4859-9339-66d076afe817"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://www.nutrena.app/",
+      "title": "Nutrena - AI practice software for dietitians",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "45–60 minutes in Word/Excel typing foods and looking up macros",
+      "statement": "An Indian competitor frames manual plan creation as 45-60 minutes in Word/Excel.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b740594e-18b1-41df-94e3-d29e73aed0d2",
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1"
+      ],
+      "company_name": "Nutrena"
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://www.delishknowledge.com/why-meal-plans-arent-the-answer/",
+      "title": "Why Meal Plans aren't the Answer (Delish Knowledge)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "I spent hours crafting those bad boys and used a variety of software programs to tailor the plans specifically to their",
+      "statement": "A dietitian says she spent hours on each tailored meal plan even with software.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b740594e-18b1-41df-94e3-d29e73aed0d2",
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://www.delishknowledge.com/why-meal-plans-arent-the-answer/",
+      "title": "Why Meal Plans aren't the Answer (Delish Knowledge)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "In my almost ten years of being a dietitian, I’ve given out only a handful of meal plans.",
+      "statement": "A private-practice dietitian has given only a handful of meal plans in ten years: for some RDs the plan is not the paid deliverable.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1",
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://abbylangernutrition.com/im-a-dietitian-and-ill-never-make-you-a-meal-plan-heres-why/",
+      "title": "I'm a Dietitian, and I'll Never Make You A Meal Plan (Abby Langer Nutrition)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "I’ve probably been asked for meal plans for weight loss over 1000 times in my career, and besides one or two that I (very reluctantly) made for clients when I first started out, I haven’t done one in probably more than a decade.",
+      "statement": "A dietitian refuses weight-loss meal plans despite over 1000 requests: part of the profession rejects prescriptive plans.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1",
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://www.healthstandnutrition.com/",
+      "title": "Health Stand Nutrition (Calgary)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We go far beyond generic handouts or one-size-fits-all meal plans",
+      "statement": "A Canadian RD practice with South Asian-cuisine dietitians positions itself against one-size-fits-all meal plans and sells counselling, not plans.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1"
+      ],
+      "company_name": "Health Stand Nutrition"
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://www.vandanasheth.com/indian-registered-dietitian-nutritionist/",
+      "title": "Vandana Sheth - Indian Registered Dietitian Nutritionist",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If you are simply looking for a “diet plan,” “quick fix,” or a single session – this may not be the right program for you.",
+      "statement": "A leading US Indian-American RDN sells coaching programs and turns away people who only want a diet plan.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1",
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": "Vandana Sheth, RDN"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://www.dietitiancentral.com/rd/rd_detail.cfm?id=990",
+      "title": "Kavitha Felix-Johnson, RDN, CDE (Dietitian Central directory)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I work with my clients one-on-one, to develop a personalized plan that includes a meal plan as well as strategies to achieve the goals they wish to set for themselves.",
+      "statement": "A US RDN who incorporates Indian foods for diabetes lists a meal plan as part of each client's personalized plan.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1"
+      ],
+      "company_name": "Kavitha Felix-Johnson, RDN"
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://practicebetter.io/blog/how-a-dietitian-achieved-better-client-success",
+      "title": "How a Dietitian Achieved Better Client Success (Practice Better blog)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Before finding That Clean Life, my biggest pain point was the considerable time spent creating individualized plans for my athletes. There was nothing automated or intuitive about how I was working.",
+      "statement": "A dietitian names the time to create individualized plans as her biggest pain point before adopting That Clean Life.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b740594e-18b1-41df-94e3-d29e73aed0d2",
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": "That Clean Life"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.stephanielong.ca/blog/that-clean-life-review-meal-planning-software",
+      "title": "That Clean Life Review (Stephanie Long)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "I remember spending hours and hours researching recipes in cookbooks and Pinterest, and painstakingly typing each one into a Word document when developing custom meal plans and recipe collections for my clients.",
+      "statement": "The manual process was recipe research in cookbooks/Pinterest and typing plans into Word documents.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1",
+        "b740594e-18b1-41df-94e3-d29e73aed0d2"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://koreapp.fit/blog/dietitian-software-india-nutritionist-app",
+      "title": "Kore App - dietitian software India",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Juggling client data in spreadsheets, creating diet charts in Word, and endless back-and-forth on WhatsApp is inefficient and unprofessional.",
+      "statement": "An Indian vendor describes the Indian dietitian status quo as spreadsheets, Word diet charts and WhatsApp.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1"
+      ],
+      "company_name": "Kore App"
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://nutritionbyrunjhun.in/",
+      "title": "Nutrition by Runjhun",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Video consultations anywhere in India, with practical Indian meal plans built around your reports, medicines and daily routine",
+      "statement": "An Indian solo dietitian sells consultations with Indian meal plans as the deliverable.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://disha-web-1oe.pages.dev/",
+      "title": "Dt. Disha Dey - Online Dietitian",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Basic Nutrition Counselling ₹1,499 Second opinion, one-off consult",
+      "statement": "An Indian online dietitian prices a one-off consult at Rs 1,499, which frames what Indian solo dietitians can pay for software.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "111c04f8-878f-4ff3-b4e1-e942f90e8196"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.bigmarker.com/bcdietitians/southasiandiet",
+      "title": "Cultural Competence Series: South Asian Diet & Traditions (BC Dietitians)",
+      "source_type": "industry_publication",
+      "published_at": "2022-10-28",
+      "quote": "Do you feel slightly unprepared when you have a client who is looking for nutrition help and needs support that will allow them to integrate their cultural practices, foods and traditions? … Also someone can make my meal plan with regular Indian foods.",
+      "statement": "A dietitian association webinar says dietitians feel unprepared for South Asian clients, and quotes a client asking for a meal plan with regular Indian foods.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.vandanasheth.com/indian-registered-dietitian-nutritionist/",
+      "title": "Vandana Sheth - Indian Registered Dietitian Nutritionist",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "One of the biggest challenges I have seen with Indian clients as well as family members who have been referred to other dietitians is the gap in understanding of our food, culture, and traditions.",
+      "statement": "An Indian-American RDN says Indian clients referred to other dietitians meet a gap in understanding of their food.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": "Vandana Sheth, RDN"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.bda.uk.com/resource/unity-in-diversity-what-it-means-to-me-as-a-british-indian-dietitian.html",
+      "title": "Unity in diversity: a British Indian dietitian (BDA)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "patients often know what they “should” do, yet struggle to sustain change when advice asks them to abandon the foods that hold their family, faith and identity together.",
+      "statement": "A BDA article says South Asian patients struggle when advice asks them to abandon their foods.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://www.bda.uk.com/resource/unity-in-diversity-what-it-means-to-me-as-a-british-indian-dietitian.html",
+      "title": "Unity in diversity: a British Indian dietitian (BDA)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "“South Asian” is not one diet - each of our food cultures has its own story, shaped by geography, faith and migration.",
+      "statement": "Regional variety matters: 'South Asian' is not one diet.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://researchportalplus.anu.edu.au/en/publications/spicing-up-your-advice-for-south-asian-and-anglo-australians-with/",
+      "title": "Spicing up your advice for South Asian and Anglo-Australians with T2D and CVD",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Clinicians providing dietary advice need to recognise that preferences for staple food items are resistant to change and may affect adherence.",
+      "statement": "Australian qualitative study: staple food preferences resist change and affect adherence.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://glama.ai/mcp/servers/krishnabhat/indian-food-nutrition-mcp",
+      "title": "indian-food-nutrition-mcp",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Every popular calorie database is built on USDA data. It is inaccurate for home-cooked Indian food: wrong oils, wrong preparations, no katori, no idli.",
+      "statement": "A developer says mainstream calorie databases are USDA-based and inaccurate for home-cooked Indian food.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932",
+        "6a0bf075-633f-4221-b2d1-1fd431b0b1d3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5652307/",
+      "title": "Field-friendly dietary assessment tool and nutrient database for India (PMC)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "none adequately captured data on Indian foods, particularly local and regional foods",
+      "statement": "Researchers found that existing tools did not capture Indian regional foods well (older study).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://arxiv.org/html/2412.05248v3",
+      "title": "Enhancing FKG.in: automating Indian food composition analysis (arXiv)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "there is a lack of comprehensive food composition tables necessary for accurate food composition analysis.",
+      "statement": "Researchers note a lack of comprehensive Indian food composition tables.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://dev.to/geoiqai/how-i-built-an-ai-meal-planner-for-1-billion-indians-from-zero-to-pwa-with-gpt-4-push-2nda",
+      "title": "Building a meal planning app for Indian women (dev.to)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "She tried three different apps. None of them knew what Ragi Dosa was.",
+      "statement": "A founder reports consumer apps lacked regional Indian dishes.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://everywhere1234.blogspot.com/2025/08/choosing-best-nutritionist-practice.html",
+      "title": "Choosing the Best Nutritionist Practice Management Software in India",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Generic global apps often lack Indian foods like dal chawal, poha, or millets.",
+      "statement": "An Indian software guide says generic global apps lack common Indian foods.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://www.healio.com/news/cardiology/20260805/large-language-models-fail-to-produce-adequate-diet-plans-for-patients-with-hypertension",
+      "title": "LLMs fail to produce adequate diet plans for patients with hypertension (Healio)",
+      "source_type": "news",
+      "published_at": "2026-08-05",
+      "quote": "The dietitian vastly outperformed the LLMs on DASH score (American omnivore, 9 vs. 2.4 to 3.1; Indian vegetarian, 7 vs. 1.9 to 4.1)",
+      "statement": "In a study including an Indian vegetarian profile, LLM meal plans scored far below a dietitian's.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "6a0bf075-633f-4221-b2d1-1fd431b0b1d3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://www.healio.com/news/cardiology/20260805/large-language-models-fail-to-produce-adequate-diet-plans-for-patients-with-hypertension",
+      "title": "LLMs fail to produce adequate diet plans for patients with hypertension (Healio)",
+      "source_type": "news",
+      "published_at": "2026-08-05",
+      "quote": "LLMs’ role in therapeutic meal planning should be limited to expert-facing suggestions, at least for now",
+      "statement": "Researchers say LLM meal planning should stay expert-facing for now.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6a0bf075-633f-4221-b2d1-1fd431b0b1d3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://www.news-medical.net/news/20260312/AI-generated-meal-plans-for-teens-often-lack-essential-nutrients-and-calories.aspx",
+      "title": "AI-generated meal plans for teens often lack nutrients (News-Medical)",
+      "source_type": "news",
+      "published_at": "2026-03-12",
+      "quote": "AI models calculated the energy requirement on average almost 700 calories lower than the dietitian did.",
+      "statement": "AI-generated plans underestimated energy needs by ~700 kcal versus a dietitian.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6a0bf075-633f-4221-b2d1-1fd431b0b1d3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://dev.to/geoiqai/how-i-built-an-ai-meal-planner-for-1-billion-indians-from-zero-to-pwa-with-gpt-4-push-2nda",
+      "title": "Building a meal planning app for Indian women (dev.to)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "it will confidently give you dishes that have no nutritional backing, make up calorie counts",
+      "statement": "A builder reports GPT-4 invents calorie counts for Indian meal plans; he constrained it to a validated dish list.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "6a0bf075-633f-4221-b2d1-1fd431b0b1d3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://thatcleanlife.com/pricing",
+      "title": "That Clean Life pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Generate meal plans in seconds based on calories, macros, and diet type.",
+      "statement": "That Clean Life already generates meal plans in seconds from calories, macros and diet type.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": "That Clean Life"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://thatcleanlife.com/pricing",
+      "title": "That Clean Life pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "No. We have monthly subscriptions for $30 or $60 USD per month.",
+      "statement": "That Clean Life costs $30 or $60/month, no free trial.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "111c04f8-878f-4ff3-b4e1-e942f90e8196"
+      ],
+      "company_name": "That Clean Life"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://thatcleanlife.com/pricing",
+      "title": "That Clean Life pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Quickly find recipes with over 100 ways to filter including time, diet type, nutrition, and more.",
+      "statement": "Preferences/restrictions are handled today through recipe filters.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "dfeb4092-2fbc-4859-9339-66d076afe817"
+      ],
+      "company_name": "That Clean Life"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.stephanielong.ca/blog/that-clean-life-review-meal-planning-software",
+      "title": "That Clean Life Review (Stephanie Long)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Another amazing feature of That Clean Life is its recipe automations, which allow you to create meal plans and recipe bundles in minutes based on calories, macronutrients, and diet type.",
+      "statement": "Reviewer confirms TCL automation builds plans from calories/macros/diet type.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": "That Clean Life"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.promealplan.com/en/blog/dietitian-meal-planning-software",
+      "title": "Best Dietitian Software for Meal Planning (Promealplan)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The catch: meal planning is not Practice Better's strength. The built-in recipe library is limited, and most nutritionists on Practice Better use That Clean Life as an add-on ($30-60/mo extra).",
+      "statement": "Practice Better's built-in meal planning is weak, and users add That Clean Life.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c",
+        "111c04f8-878f-4ff3-b4e1-e942f90e8196"
+      ],
+      "company_name": "Practice Better"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.promealplan.com/en/blog/dietitian-meal-planning-software",
+      "title": "Best Dietitian Software for Meal Planning (Promealplan)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The meal planning piece is the weakest part of the platform. Recipes are limited, the planning interface feels bolted-on",
+      "statement": "Healthie's meal planning is described by a competitor as its weakest part.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": "Healthie"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://practicebetter.io/integrations/that-clean-life",
+      "title": "That Clean Life + Practice Better integration",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Embed recipes, meal plans, and curated collections directly into Practice Better program modules and protocols.",
+      "statement": "The add-on slot next to Practice Better is already filled by That Clean Life's native integration.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": "Practice Better"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://nutrium.com/en/professionals",
+      "title": "Nutrium for professionals",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Since I started to use Nutrium the time spent on meal planning and nutrition analysis has significantly decreased.",
+      "statement": "Nutrium users report reduced meal-planning time.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": "Nutrium"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://www.nutrena.app/",
+      "title": "Nutrena - AI practice software for dietitians",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Generate a personalised 7-day plan from a client profile in seconds, then refine it in plain English with the co-pilot. You approve every change.",
+      "statement": "Nutrena already offers the proposed wedge: a 7-day plan in seconds from a client profile.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c",
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": "Nutrena"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.nutrena.app/",
+      "title": "Nutrena - AI practice software for dietitians",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "8,000+ Indian dishes across 28 state cuisines plus global staples, every entry nutrition-verified.",
+      "statement": "Nutrena claims 8,000+ Indian dishes across 28 state cuisines, so regional coverage is being sold already.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": "Nutrena"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.nutrena.app/",
+      "title": "Nutrena - AI practice software for dietitians",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Pro is ₹999/month in India, $25/month elsewhere, with unlimited clients, 100 AI plans, clinical analysis (ADIME/PES), and white-label PDFs.",
+      "statement": "Nutrena prices at Rs 999/month in India and $25/month elsewhere, at or below the idea's lowest tier.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "111c04f8-878f-4ff3-b4e1-e942f90e8196"
+      ],
+      "company_name": "Nutrena"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://mealplan.fit/",
+      "title": "mealPlan.fit - dietitian software India",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Pro is ₹1,999/month (or ₹19,999/year) and Max is ₹2,999/month (or ₹29,999/year), both incl. GST, with unlimited clients on both.",
+      "statement": "mealPlan.fit sells at Rs 1,999-2,999/month, showing some Indian dietitians pay in the idea's price range.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "111c04f8-878f-4ff3-b4e1-e942f90e8196"
+      ],
+      "company_name": "mealPlan.fit"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://mealplan.fit/",
+      "title": "mealPlan.fit - dietitian software India",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Yes, 1,000+ ingredients from the Indian Food Composition Tables (IFCT), with 22 micronutrients tracked against ICMR 2020 Recommended Dietary Allowances.",
+      "statement": "mealPlan.fit has an IFCT-based Indian ingredient database.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": "mealPlan.fit"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://www.saashub.com/mealplan-fit",
+      "title": "mealPlan.fit on SaaSHub",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "QuickFill drafts a personalised meal plan in 45 seconds to 2 minutes, depending on how much client data has been added. The dietitian reviews, edits and approves every plan.",
+      "statement": "mealPlan.fit drafts plans with AI in under 2 minutes for dietitian approval.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c",
+        "6a0bf075-633f-4221-b2d1-1fd431b0b1d3"
+      ],
+      "company_name": "mealPlan.fit"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://clearcals.com/products/expert/",
+      "title": "Hint Expert app (Clearcals)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Beginner Unlock your potential ₹499 /month Create diet plans in minutes Access to Hint Database Up to 10 Users Up to 20 diet plans",
+      "statement": "Hint Expert sells Indian-database diet planning from Rs 499/month.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "111c04f8-878f-4ff3-b4e1-e942f90e8196"
+      ],
+      "company_name": "Clearcals (Hint Expert)"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://clearcals.com/products/expert/",
+      "title": "Hint Expert app (Clearcals)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Get unlimited access to thousands of Indian recipes with the Hint nutrition database.",
+      "statement": "Hint Expert offers thousands of Indian recipes.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": "Clearcals (Hint Expert)"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://www.wellnessz.in/",
+      "title": "WellnessZ - software for dietitians",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Coach AI builds weekly or monthly meal plans based on your client's goals, food preferences, health conditions and calorie needs.",
+      "statement": "WellnessZ's AI builds meal plans from goals, preferences, conditions and calories.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c",
+        "dfeb4092-2fbc-4859-9339-66d076afe817"
+      ],
+      "company_name": "WellnessZ"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://www.wellnessz.in/pricing",
+      "title": "WellnessZ pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "BASIC ₹499 per month",
+      "statement": "WellnessZ's basic plan is Rs 499/month.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "111c04f8-878f-4ff3-b4e1-e942f90e8196"
+      ],
+      "company_name": "WellnessZ"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.zoconut.com/",
+      "title": "Zoconut - software for dietitians",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Get access to 100s of recipes, diet templates, workout templates, workout videos and so much more - out of the box.",
+      "statement": "Zoconut offers diet templates and recipes for dietitians.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c"
+      ],
+      "company_name": "Zoconut"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://www.promealplan.com/en/blog/dietitian-meal-planning-software",
+      "title": "Best Dietitian Software for Meal Planning (Promealplan)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If you use Practice Better or Healthie for practice management and need proper meal planning, most dietitians add That Clean Life ($30-60/mo) or Promealplan ($49/mo) on top.",
+      "statement": "Abroad, dietitians already pay for a meal-planning add-on on top of practice software.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "111c04f8-878f-4ff3-b4e1-e942f90e8196"
+      ],
+      "company_name": "Promealplan"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://diseasepreventionllc.com/",
+      "title": "Disease Prevention LLC (Cary, NC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Aparna was very well equiped due to her indian background, she helped me pick indian foods which was my daily diet.",
+      "statement": "A US RD practice's client praises help choosing Indian foods, a sign of demand for Indian-food guidance.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": "Disease Prevention LLC"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://dietyumm.com/about-us/",
+      "title": "Diet Yumm - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "In 2016, she founded Diet Yumm in Melbourne, initially with one location, and it has now expanded to 15 sites.",
+      "statement": "Diet Yumm is a Melbourne dietitian practice with 15 sites.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Diet Yumm"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://dietyumm.com/",
+      "title": "Diet Yumm",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "At Diet Yumm, we seamlessly blend tradition with wellness, celebrating cultural flavours with a health-conscious twist.",
+      "statement": "Diet Yumm positions around cultural food traditions.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Diet Yumm"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://dietyumm.com/about-us/",
+      "title": "Diet Yumm - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Meet Purva Gulyani – an Accredited Practising Dietitian",
+      "statement": "Names the founder and title.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Diet Yumm"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://dietyumm.com/about-us/",
+      "title": "Diet Yumm - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Before calling Melbourne home, Purva led the Department of Nutrition in Bariatric Surgery at a multispeciality hospital in Delhi, India.",
+      "statement": "Founder has an Indian clinical background.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Diet Yumm"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://eatsmartly.com.au/about/",
+      "title": "Eat Smartly - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Gagan Sandhu, an Accredited Practising Dietitian and the founder of EatSmartly",
+      "statement": "Names the founder of Eat Smartly.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Eat Smartly"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://member.dietitiansaustralia.org.au/FAAPD_Profile?ID=51460",
+      "title": "Gagandeep Kaur Sandhu - Find an APD (Dietitians Australia)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "She is a member of Dietitians Australia and Indian Dietetic Association.",
+      "statement": "Australian APD who is also an Indian Dietetic Association member.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Eat Smartly"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://eatsmartly.com.au/",
+      "title": "Eat Smartly",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Planning your meals based on your lifestyle, individual preferences and your health condition.",
+      "statement": "Meal planning is a listed service.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1"
+      ],
+      "company_name": "Eat Smartly"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://member.dietitiansaustralia.org.au/FAAPD_Profile?ID=56047",
+      "title": "Krusha Sandeep Desai - Find an APD (Dietitians Australia)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Krusha is an Accredited Practicing Dietitian and member of the Dietitian Association of Australia (DAA).",
+      "statement": "Australian APD (Ease Dietetics).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ease Dietetics"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://member.dietitiansaustralia.org.au/FAAPD_Profile?ID=56047",
+      "title": "Krusha Sandeep Desai - Find an APD (Dietitians Australia)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "she is well versed in different cultural foods such as Indian, Malaysian and Chinese cuisine as well as western diets",
+      "statement": "Works with Indian cuisine.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ease Dietetics"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://member.dietitiansaustralia.org.au/FAAPD_Profile?ID=53597",
+      "title": "Muhammad Qureshi - Find an APD (Dietitians Australia)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "I speak multiple languages fluently, including English, Urdu, Hindi and Punjabi.",
+      "statement": "APD (Motion Health and Rehab Performance) serving South Asian-language clients.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Motion Health and Rehab Performance"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://member.dietitiansaustralia.org.au/FAAPD_Profile?ID=53597",
+      "title": "Muhammad Qureshi - Find an APD (Dietitians Australia)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "completing placements at The Royal Brisbane and Women’s Hospital and The Prince Charles Hospital",
+      "statement": "Brisbane-based training, listed on Australia's APD directory.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Motion Health and Rehab Performance"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.healthstandnutrition.com/about/team/",
+      "title": "Health Stand Nutrition - Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our Registered Dietitians and Online Nutritionists offer services in English, Punjabi, Urdu, Hindi, and Arabic.",
+      "statement": "Offers services in South Asian languages.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Health Stand Nutrition"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.healthstandnutrition.com/",
+      "title": "Health Stand Nutrition",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We have a Calgary Dietitian Office and offer online nutritionist services across Canada.",
+      "statement": "Located in Calgary, Canada.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Health Stand Nutrition"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.healthstandnutrition.com/about/team/",
+      "title": "Health Stand Nutrition - Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Andrea Holwegner is founder and CEO of Health Stand Nutrition Consulting Inc. since 2000.",
+      "statement": "Names founder/CEO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Health Stand Nutrition"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://www.healthstandnutrition.com/about/team/",
+      "title": "Health Stand Nutrition - Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Meal Planning, Culturally Inclusive Nutrition, South Asian Cuisine",
+      "statement": "Team dietitians list meal planning and South Asian cuisine as specialties.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": "Health Stand Nutrition"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://medimap.ca/clinic/dietitians/on/brampton/healthy-diet-122228",
+      "title": "Healthy Diet - Brampton (Medimap)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Healthy Diet is a virtual dietitian clinic serving patients in Brampton, Ontario and the surrounding areas of Peel Region.",
+      "statement": "Virtual dietitian clinic in Brampton, Ontario.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Healthy Diet"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://medimap.ca/clinic/dietitians/on/brampton/healthy-diet-122228",
+      "title": "Healthy Diet - Brampton (Medimap)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "English, Hindi, Punjabi, Urdu",
+      "statement": "Dietitians speak Hindi, Punjabi, Urdu.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Healthy Diet"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://medimap.ca/clinic/dietitians/on/toronto/jasdeep-singh-rd",
+      "title": "Jasdeep Singh, RD - Toronto (Medimap)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Jasdeep Singh is a registered dietitian based in Toronto, Ontario",
+      "statement": "Toronto RD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Jasdeep Singh, RD"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://medimap.ca/clinic/dietitians/on/toronto/jasdeep-singh-rd",
+      "title": "Jasdeep Singh, RD - Toronto (Medimap)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Languages Spoken English, Punjabi, Hindi",
+      "statement": "Speaks Punjabi and Hindi.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Jasdeep Singh, RD"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://thedietitianstudio.ca/",
+      "title": "The Dietitian Studio",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We're a team of registered dietitians with extensive counselling experience practicing out of Brampton, Ontario and servicing the South Asian population.",
+      "statement": "Brampton RD team explicitly serving the South Asian population.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Dietitian Studio"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://thedietitianstudio.ca/",
+      "title": "The Dietitian Studio",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "each client is individually evaluated and provided with a well-researched and comprehensive plan they can follow for the rest of their lives.",
+      "statement": "Each client receives a comprehensive plan.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1"
+      ],
+      "company_name": "The Dietitian Studio"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.vandanasheth.com/indian-registered-dietitian-nutritionist/",
+      "title": "Vandana Sheth - Indian Registered Dietitian Nutritionist",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I am Vandana Sheth, RDN, CDCES, FAND.",
+      "statement": "Names the RDN.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Vandana Sheth, RDN"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://www.vandanasheth.com/indian-registered-dietitian-nutritionist/",
+      "title": "Vandana Sheth - Indian Registered Dietitian Nutritionist",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "23133 Hawthorne Blvd STE 104, Torrance, CA 90505",
+      "statement": "Located in Torrance, California.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Vandana Sheth, RDN"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.vandanasheth.com/indian-registered-dietitian-nutritionist/",
+      "title": "Vandana Sheth - Indian Registered Dietitian Nutritionist",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We can certainly create Indian-inspired meal/snack ideas, and meal plans down the road in the program once we identify where you need support.",
+      "statement": "Creates Indian meal plans within programs.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2759334c-e02b-4c4b-9f55-5a440b2e60d1"
+      ],
+      "company_name": "Vandana Sheth, RDN"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.nourishingexpert.com/",
+      "title": "Nourishing Expert, LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I’m Lavanya Kethamukkala, a Registered Dietitian Nutritionist, Certified LEAP Therapist, and founder of Nourishing Expert, LLC.",
+      "statement": "Names the founder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nourishing Expert, LLC"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.nourishingexpert.com/",
+      "title": "Nourishing Expert, LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "she blends Indian and American food traditions to make healthy eating flavorful, affordable, and culturall",
+      "statement": "Blends Indian and American food traditions.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nourishing Expert, LLC"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.pcrm.org/findadoctor/lavanya-kethamukkala-rd",
+      "title": "Lavanya Kethamukkala, RD (PCRM directory)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Nourishing Expert, LLC 3508 Lily Orchard Way Apex, NC 27539-9601",
+      "statement": "Located in Apex, North Carolina.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nourishing Expert, LLC"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.dietitiancentral.com/rd/rd_detail.cfm?id=990",
+      "title": "Kavitha Felix-Johnson (Dietitian Central)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Herndon, VIRGINIA 20171",
+      "statement": "Located in Herndon, Virginia.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kavitha Felix-Johnson, RDN"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://www.dietitiancentral.com/rd/rd_detail.cfm?id=990",
+      "title": "Kavitha Felix-Johnson (Dietitian Central)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "-Incorporating ethnic foods such as Indian and Asian foods, in eating for diabetes and other health issues.",
+      "statement": "Specialty in Indian foods for diabetes.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kavitha Felix-Johnson, RDN"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://kidneynutritionmatters.co.uk/about/",
+      "title": "Kidney Nutrition Matters - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are Bruno Mafrici and Ravinder Sagoo; two experienced specialist kidney dietitians offering online consultations for those diagnosed with kidney disease.",
+      "statement": "Two-dietitian UK practice; names the dietitians.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kidney Nutrition Matters"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://www.bda.uk.com/find-a-dietitian/ravinder-sagoo-kidney-nutrition-matters-ltd-nottingham-united-kingdom-16168.html",
+      "title": "Ravinder Sagoo - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As a multilingual dietitian I aim to ensure that the general population including the South Asian population are aware about the impact of diet and kidney health.",
+      "statement": "South Asian focus.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kidney Nutrition Matters"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://www.bda.uk.com/find-a-dietitian/ravinder-sagoo-kidney-nutrition-matters-ltd-nottingham-united-kingdom-16168.html",
+      "title": "Ravinder Sagoo - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "I’ve been a renal dietitian in the NHS for 10 years and the founder of Kidney Nutrition Matters.",
+      "statement": "UK NHS renal dietitian and founder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kidney Nutrition Matters"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://www.tabbydietitian.co.uk/",
+      "title": "Tabby Dietitian - Private Dietitian Nutritionist Wales",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Highly experienced Dietitian Nutritionist working over 35 years in the N H S.",
+      "statement": "UK dietitian.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tabby Dietitian"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://www.tabbydietitian.co.uk/",
+      "title": "Tabby Dietitian - Private Dietitian Nutritionist Wales",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For specialised Diet and Nutrition advice seek the advice of a Professional Dietitian and Nutritionist Tabby Kabeer",
+      "statement": "Names the dietitian.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tabby Dietitian"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://www.bda.uk.com/find-a-dietitian/tabassum-kabeer-your-goals-your-pace-your-dietitian-wwwtabbydietitiancouk-newport-united-kingdom-1704.html",
+      "title": "Tabassum Kabeer - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Group education programs: Asian Type 2 Diabetes (able to speak URDU and Hindi ASIAN DESMOND)",
+      "statement": "South Asian diabetes education in Urdu/Hindi.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tabby Dietitian"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://www.tabbydietitian.co.uk/",
+      "title": "Tabby Dietitian - Private Dietitian Nutritionist Wales",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Private Dietitian Nutritionist Based in Wales UK",
+      "statement": "Based in Wales, UK.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tabby Dietitian"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://www.bda.uk.com/find-a-dietitian/krupa-patel-sensus-nutrition-london-united-kingdom-10965.html",
+      "title": "Krupa Patel - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Company name: Sensus Nutrition Contact address: London United Kingdom",
+      "statement": "Sensus Nutrition is in London.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Sensus Nutrition"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://www.bda.uk.com/find-a-dietitian/krupa-patel-sensus-nutrition-london-united-kingdom-10965.html",
+      "title": "Krupa Patel - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As a British Indian dietitian, providing culturally appropriate and personalised dietary advice is at the core of my practice. I specialise in adapting clinical nutrition goals to traditional South Asian diets",
+      "statement": "Adapts plans to traditional South Asian diets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d54b0ea0-3f0a-40f8-b823-c4633f5cb932"
+      ],
+      "company_name": "Sensus Nutrition"
+    },
+    {
+      "ref": "ev-89",
+      "url": "https://www.bda.uk.com/find-a-dietitian/alka-pandey-nutrivibes-with-alka-aylesbury-bucks-united-kingdom-12337.html",
+      "title": "Alka Pandey - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Company name: Nutrivibes with Alka Contact address: Aylesbury, Bucks, Buckinghamshire United Kingdom",
+      "statement": "Nutrivibes with Alka, Aylesbury UK.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nutrivibes with Alka"
+    },
+    {
+      "ref": "ev-90",
+      "url": "https://www.bda.uk.com/find-a-dietitian/alka-pandey-nutrivibes-with-alka-aylesbury-bucks-united-kingdom-12337.html",
+      "title": "Alka Pandey - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "I combine best of both worlds as I bring in, over 13 years’ experience in the NHS alongside experience from my South Asian background.",
+      "statement": "South Asian background, private consultant.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nutrivibes with Alka"
+    },
+    {
+      "ref": "ev-91",
+      "url": "https://www.bda.uk.com/find-a-dietitian/sema-jethwa-dietconsultancy-bishops-stortford-united-kingdom-3840.html",
+      "title": "Sema Jethwa - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Company name: DietConsultancy Contact address: Bishop's Stortford United Kingdom",
+      "statement": "DietConsultancy, Bishop's Stortford UK.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "DietConsultancy"
+    },
+    {
+      "ref": "ev-92",
+      "url": "https://www.bda.uk.com/find-a-dietitian/sema-jethwa-dietconsultancy-bishops-stortford-united-kingdom-3840.html",
+      "title": "Sema Jethwa - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "I also have a strong interest in South Asian health, weight management, maternal and family nutrition.",
+      "statement": "South Asian health interest.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "DietConsultancy"
+    },
+    {
+      "ref": "ev-93",
+      "url": "https://www.bda.uk.com/find-a-dietitian/varsha-nagaraj-the-family-wellbeing-dietitian-swansea-united-kingdom-1003658.html",
+      "title": "Varsha Nagaraj - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Company name: The Family Wellbeing Dietitian Contact address: Swansea, South Wales United Kingdom",
+      "statement": "The Family Wellbeing Dietitian, Swansea UK.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Family Wellbeing Dietitian"
+    },
+    {
+      "ref": "ev-94",
+      "url": "https://www.bda.uk.com/find-a-dietitian/varsha-nagaraj-the-family-wellbeing-dietitian-swansea-united-kingdom-1003658.html",
+      "title": "Varsha Nagaraj - BDA Find a Dietitian",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "I also have a good awareness about the culture and the dietary needs of South Asians, being Indian myself, and am interested in working with these client groups",
+      "statement": "South Asian client focus.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Family Wellbeing Dietitian"
+    },
+    {
+      "ref": "ev-95",
+      "url": "https://nutritionbyavi.janeapp.com/",
+      "title": "Nutrition by Avi (booking site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hi, I’m Avi Brar, a Registered Dietitian serving clients in British Columbia and Alberta. I offer services in English and Punjabi.",
+      "statement": "Canadian RD offering services in Punjabi; names the RD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nutrition by Avi"
+    },
+    {
+      "ref": "ev-96",
+      "url": "https://diseasepreventionllc.com/",
+      "title": "Disease Prevention LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are the best Nutritionists in Cary, North Carolina.",
+      "statement": "Located in Cary, NC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Disease Prevention LLC"
+    },
+    {
+      "ref": "ev-97",
+      "url": "https://diseasepreventionllc.com/",
+      "title": "Disease Prevention LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Download the Healthie mobile App",
+      "statement": "Uses Healthie practice software.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Disease Prevention LLC"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "b740594e-18b1-41df-94e3-d29e73aed0d2",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Reported time per manual meal plan ranges from 30-60 minutes (vendor claim) to 2-3 hours (vendor blog) to 4-6 hours (a coach's own practice).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-03",
+            "ev-01"
+          ]
+        },
+        {
+          "statement": "Dietitians describe plan-building time as a top pain point, even with software.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-11",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "No independent survey of plan-building time was found; most figures come from vendors.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "d54b0ea0-3f0a-40f8-b823-c4633f5cb932",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Dietitians abroad report a gap in understanding South Asian foods, and clients ask for meal plans with regular Indian foods.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16",
+            "ev-17",
+            "ev-18"
+          ]
+        },
+        {
+          "statement": "Mainstream USDA-based databases and older Indian tables cover regional Indian food poorly.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-21",
+            "ev-22",
+            "ev-23"
+          ]
+        },
+        {
+          "statement": "In India, several vendors already sell large Indian/regional food databases (Nutrena 8,000+ dishes across 28 state cuisines; mealPlan.fit IFCT; Hint), so the gap is mainly in Western tools.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39",
+            "ev-42",
+            "ev-45"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "2759334c-e02b-4c4b-9f55-5a440b2e60d1",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "The manual process is recipe research plus typing plans into Word, spreadsheets, and, in India, sending them on WhatsApp.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-12",
+            "ev-13",
+            "ev-02"
+          ]
+        },
+        {
+          "statement": "Some dietitians, including leading South Asian-focused RDNs, deliberately do not make standalone meal plans the main deliverable.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-06",
+            "ev-09",
+            "ev-08"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "111c04f8-878f-4ff3-b4e1-e942f90e8196",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Price points are established: That Clean Life $30-60/mo; abroad, practices pay an add-on on top of Practice Better/Healthie.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-31",
+            "ev-49"
+          ]
+        },
+        {
+          "statement": "Indian competitors price from Rs 499 (Hint, WellnessZ) and Rs 999 (Nutrena) to Rs 2,999 (mealPlan.fit) per month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44",
+            "ev-47",
+            "ev-40",
+            "ev-41"
+          ]
+        },
+        {
+          "statement": "No evidence found on who decides or which factors drive the decision beyond price; in solo practices the buyer is presumably the dietitian.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "ba32bb1f-db4b-4e9b-aa6c-074ffb93136c",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Practice software meal planning (Practice Better, Healthie) is described as weak, which pushes users to add-ons.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34",
+            "ev-35"
+          ]
+        },
+        {
+          "statement": "The add-on slot is already filled: That Clean Life generates plans from calories/macros/diet type and integrates natively with Practice Better.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-30",
+            "ev-33",
+            "ev-36"
+          ]
+        },
+        {
+          "statement": "Indian tools already generate 7-day plans with AI in seconds to minutes.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38",
+            "ev-43",
+            "ev-46"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "6a0bf075-633f-4221-b2d1-1fd431b0b1d3",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Studies show general LLM meal plans underperform dietitians, including for an Indian vegetarian profile, and researchers advise expert-facing use only.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-26",
+            "ev-27",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "Builders report LLMs invent calorie counts unless constrained to a validated dish list, which supports a curated-database approach.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-29",
+            "ev-21"
+          ]
+        },
+        {
+          "statement": "No direct evidence found of dietitians' stated confidence in existing tools' recipe accuracy.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "dfeb4092-2fbc-4859-9339-66d076afe817",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Allergens and preferences are checked by hand in manual plans, and handled by recipe filters in tools.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-03",
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "Competing AI tools already take food preferences and conditions as inputs.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-46"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "Given Nutrena, mealPlan.fit, WellnessZ and Hint already sell Indian-database plan generation in India at Rs 499-2,999/mo, what would make a dietitian switch?",
+      "category": "alternatives",
+      "priority": "high"
+    },
+    {
+      "question": "Do diaspora dietitians abroad already using That Clean Life lack Indian recipes enough to pay for a second tool?",
+      "category": "urgency",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "That Clean Life",
+      "url": "https://thatcleanlife.com",
+      "kind": "direct",
+      "description": "Meal-plan software for dietitians that generates plans from calories, macros and diet type and integrates with Practice Better.",
+      "pricing_note": "$30 or $60 USD per month (pricing page)",
+      "evidence_refs": [
+        "ev-30",
+        "ev-31",
+        "ev-33",
+        "ev-36",
+        "ev-32"
+      ],
+      "sentiment": [
+        {
+          "statement": "Users credit it with cutting plan time from hours to minutes.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-11",
+            "ev-33"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Nutrena",
+      "url": "https://www.nutrena.app",
+      "kind": "direct",
+      "description": "Indian AI practice software: 7-day plans in seconds, 8,000+ Indian dishes across 28 state cuisines, white-label PDFs.",
+      "pricing_note": "Pro Rs 999/month in India, $25/month elsewhere (site)",
+      "evidence_refs": [
+        "ev-38",
+        "ev-39",
+        "ev-40",
+        "ev-04"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "mealPlan.fit",
+      "url": "https://mealplan.fit",
+      "kind": "direct",
+      "description": "Indian dietitian software with AI plan drafts, IFCT database, WhatsApp/PDF delivery, used abroad too.",
+      "pricing_note": "Rs 1,999-2,999/month incl. GST (site)",
+      "evidence_refs": [
+        "ev-41",
+        "ev-42",
+        "ev-43"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Hint Expert (Clearcals)",
+      "url": "https://clearcals.com/products/expert",
+      "kind": "direct",
+      "description": "Indian diet-plan tool with thousands of Indian recipes and NIN-ICMR guidelines.",
+      "pricing_note": "Rs 499 / 999 / 2,499 per month (site)",
+      "evidence_refs": [
+        "ev-44",
+        "ev-45"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "WellnessZ",
+      "url": "https://www.wellnessz.in",
+      "kind": "direct",
+      "description": "Indian coach/dietitian platform with AI meal plans and branded app.",
+      "pricing_note": "Basic Rs 499/month (pricing page)",
+      "evidence_refs": [
+        "ev-46",
+        "ev-47"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Practice Better",
+      "url": "https://practicebetter.io",
+      "kind": "indirect",
+      "description": "Practice management/EHR; meal planning is limited and usually paired with That Clean Life.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-34",
+        "ev-36"
+      ],
+      "sentiment": [
+        {
+          "statement": "Its built-in recipe library is described as limited.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-07",
+      "name": "Healthie",
+      "url": "https://www.gethealthie.com",
+      "kind": "indirect",
+      "description": "US telehealth/EHR for RDs; meal planning is described as its weakest part.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-35",
+        "ev-97"
+      ],
+      "sentiment": [
+        {
+          "statement": "A competitor says Healthie's meal planning feels bolted-on.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-35"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-08",
+      "name": "Nutrium",
+      "url": "https://nutrium.com",
+      "kind": "indirect",
+      "description": "Nutrition software with meal planning and analysis.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-37"
+      ],
+      "sentiment": [
+        {
+          "statement": "Users report less time on meal planning.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-37"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-09",
+      "name": "Promealplan",
+      "url": "https://www.promealplan.com",
+      "kind": "direct",
+      "description": "Meal-plan-only tool with white-label plans, sold as an add-on to practice software.",
+      "pricing_note": "$49/mo (stated on its own comparison page)",
+      "evidence_refs": [
+        "ev-49",
+        "ev-02"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Kore App",
+      "url": "https://koreapp.fit",
+      "kind": "direct",
+      "description": "Indian dietitian software with diet plan creation and branded client app.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-13"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "Zoconut",
+      "url": "https://www.zoconut.com",
+      "kind": "indirect",
+      "description": "All-in-one dietitian/coach platform with diet templates and recipes.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-48"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "Word / Excel / WhatsApp (manual)",
+      "url": null,
+      "kind": "manual",
+      "description": "Plans typed in Word or spreadsheets and sent as PDF/WhatsApp.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-12",
+        "ev-13",
+        "ev-04"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Many dietitians still build plans by hand in Word or spreadsheets; in India plans go out over WhatsApp.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-12",
+        "ev-13"
+      ]
+    },
+    {
+      "statement": "Abroad, practices pair Practice Better or Healthie with a meal-plan add-on such as That Clean Life, which already auto-generates plans.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-34",
+        "ev-49",
+        "ev-30"
+      ]
+    },
+    {
+      "statement": "In India, Nutrena, mealPlan.fit, WellnessZ and Hint already sell AI or template plan generation on Indian food databases for Rs 499-2,999/month.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-38",
+        "ev-43",
+        "ev-46",
+        "ev-44"
+      ]
+    },
+    {
+      "statement": "Some dietitians avoid prescriptive meal plans and sell counselling instead.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-07",
+        "ev-09"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Diet Yumm",
+      "website": "https://dietyumm.com",
+      "icp_id": null,
+      "location": "Melbourne, VIC, Australia",
+      "industry": "Dietetics private practice",
+      "description": "Indian-founded Melbourne dietitian practice built around cultural food traditions.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-51"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-51",
+        "ev-52",
+        "ev-53",
+        "ev-54"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Indian-background founder, culture-focused positioning, multi-site practice (larger than 1-5).",
+          "evidence_refs": [
+            "ev-52",
+            "ev-54",
+            "ev-51"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Purva Gulyani",
+          "role": "Founder, Accredited Practising Dietitian",
+          "email": null,
+          "evidence_ref": "ev-53"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "Eat Smartly",
+      "website": "https://eatsmartly.com.au",
+      "icp_id": null,
+      "location": "South Morang / Doreen, VIC, Australia",
+      "industry": "Dietetics private practice",
+      "description": "Small APD practice; founder is an Indian Dietetic Association member and offers meal planning.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-56"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-55",
+        "ev-56",
+        "ev-57"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Solo/small practice, Indian Dietetic Association member, meal planning listed.",
+          "evidence_refs": [
+            "ev-56",
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Gagan Sandhu",
+          "role": "Founder, Accredited Practising Dietitian",
+          "email": null,
+          "evidence_ref": "ev-55"
+        }
+      ]
+    },
+    {
+      "ref": "co-03",
+      "name": "Ease Dietetics",
+      "website": "https://www.spencerroadfamilypractice.com.au",
+      "icp_id": null,
+      "location": "Perth, WA, Australia",
+      "industry": "Dietetics private practice",
+      "description": "APD versed in Indian cuisine working across Perth GP clinics.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-58",
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Works with Indian cuisine; directory evidence only.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "Motion Health and Rehab Performance",
+      "website": "https://motionhealthrehab.com.au",
+      "icp_id": null,
+      "location": "Underwood, QLD, Australia",
+      "industry": "Dietetics private practice",
+      "description": "APD speaking Urdu, Hindi and Punjabi.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-60",
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "South Asian language signal only; multidisciplinary clinic.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Health Stand Nutrition",
+      "website": "https://www.healthstandnutrition.com",
+      "icp_id": null,
+      "location": "Calgary, AB, Canada",
+      "industry": "Dietetics private practice",
+      "description": "Established RD practice with dietitians specialising in South Asian cuisine and meal planning, services in Punjabi/Urdu/Hindi.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62",
+        "ev-63",
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "South Asian cuisine specialists on staff; but team larger than 1-5 and positions against one-size meal plans.",
+          "evidence_refs": [
+            "ev-62",
+            "ev-65",
+            "ev-08"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Team lists meal planning as a specialty.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Andrea Holwegner",
+          "role": "Founder and CEO",
+          "email": null,
+          "evidence_ref": "ev-64"
+        }
+      ]
+    },
+    {
+      "ref": "co-06",
+      "name": "Healthy Diet",
+      "website": "https://medimap.ca/clinic/dietitians/on/brampton/healthy-diet-122228",
+      "icp_id": null,
+      "location": "Brampton, ON, Canada",
+      "industry": "Dietetics private practice",
+      "description": "Virtual RD clinic in Brampton with Hindi/Punjabi/Urdu-speaking dietitians.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66",
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Serves Peel Region; South Asian languages.",
+          "evidence_refs": [
+            "ev-66",
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "The Dietitian Studio",
+      "website": "https://thedietitianstudio.ca",
+      "icp_id": null,
+      "location": "Brampton, ON, Canada",
+      "industry": "Dietetics private practice",
+      "description": "RD team in Brampton explicitly serving the South Asian population with individual plans.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-70"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-70",
+        "ev-71"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Explicit South Asian focus and plan-based deliverable.",
+          "evidence_refs": [
+            "ev-70",
+            "ev-71"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Gives each client a comprehensive plan.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Vandana Sheth, RDN",
+      "website": "https://www.vandanasheth.com",
+      "icp_id": null,
+      "location": "Torrance, CA, USA",
+      "industry": "Dietetics private practice",
+      "description": "Leading Indian-American RDN; Indian meal plans inside coaching programs.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-73"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-72",
+        "ev-73",
+        "ev-74",
+        "ev-17"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Exact ICP (Indian-American clientele) but sells coaching, not standalone plans.",
+          "evidence_refs": [
+            "ev-74",
+            "ev-09"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Describes the Indian-food gap other dietitians leave.",
+          "evidence_refs": [
+            "ev-17"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Vandana Sheth",
+          "role": "Registered Dietitian Nutritionist (RDN, CDCES, FAND)",
+          "email": null,
+          "evidence_ref": "ev-72"
+        }
+      ]
+    },
+    {
+      "ref": "co-10",
+      "name": "Nourishing Expert, LLC",
+      "website": "https://www.nourishingexpert.com",
+      "icp_id": null,
+      "location": "Apex, NC, USA",
+      "industry": "Dietetics private practice",
+      "description": "Solo RDN blending Indian and American food traditions.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-75",
+        "ev-76",
+        "ev-77"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Solo, Indian-food focus.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Lavanya Kethamukkala",
+          "role": "Founder, Registered Dietitian Nutritionist",
+          "email": null,
+          "evidence_ref": "ev-75"
+        }
+      ]
+    },
+    {
+      "ref": "co-11",
+      "name": "Kavitha Felix-Johnson, RDN",
+      "website": "https://www.dietitiancentral.com/rd/rd_detail.cfm?id=990",
+      "icp_id": null,
+      "location": "Herndon, VA, USA",
+      "industry": "Dietetics private practice",
+      "description": "Solo RDN/CDE incorporating Indian foods; meal plans part of each client plan.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-78"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-78",
+        "ev-79",
+        "ev-10"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Indian foods specialty and meal-plan deliverable.",
+          "evidence_refs": [
+            "ev-79",
+            "ev-10"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "States each client plan includes a meal plan.",
+          "evidence_refs": [
+            "ev-10"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "Kidney Nutrition Matters",
+      "website": "https://kidneynutritionmatters.co.uk",
+      "icp_id": null,
+      "location": "Nottingham, UK",
+      "industry": "Dietetics private practice",
+      "description": "Two-dietitian online renal practice with South Asian outreach.",
+      "size_estimate": {
+        "min": 2,
+        "max": 2,
+        "signal": "About page: two specialist kidney dietitians",
+        "evidence_ref": "ev-80"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-82"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-80",
+        "ev-81",
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small practice, South Asian focus, but renal niche.",
+          "evidence_refs": [
+            "ev-81",
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Ravinder Sagoo",
+          "role": "Specialist kidney dietitian, co-founder",
+          "email": null,
+          "evidence_ref": "ev-80"
+        }
+      ]
+    },
+    {
+      "ref": "co-13",
+      "name": "Tabby Dietitian",
+      "website": "https://www.tabbydietitian.co.uk",
+      "icp_id": null,
+      "location": "Newport, Wales, UK",
+      "industry": "Dietetics private practice",
+      "description": "Freelance dietitian with Urdu/Hindi South Asian diabetes education experience.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-86"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-83",
+        "ev-84",
+        "ev-85",
+        "ev-86"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Solo, South Asian language/diabetes experience.",
+          "evidence_refs": [
+            "ev-85"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Tabby Kabeer",
+          "role": "Professional Dietitian and Nutritionist",
+          "email": null,
+          "evidence_ref": "ev-84"
+        }
+      ]
+    },
+    {
+      "ref": "co-14",
+      "name": "Sensus Nutrition",
+      "website": "https://www.sensusnutrition.co.uk",
+      "icp_id": null,
+      "location": "London, UK",
+      "industry": "Dietetics private practice",
+      "description": "British Indian dietitian adapting clinical goals to traditional South Asian diets.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-87"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-87",
+        "ev-88"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Explicit South Asian diet adaptation.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "Nutrivibes with Alka",
+      "website": "https://bda.uk.com/find-a-dietitian/alka-pandey-nutrivibes-with-alka-aylesbury-bucks-united-kingdom-12337.html",
+      "icp_id": null,
+      "location": "Aylesbury, UK",
+      "industry": "Dietetics private practice",
+      "description": "Private diabetes dietitian with South Asian background and languages.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-89"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-89",
+        "ev-90"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "South Asian background; private consultant.",
+          "evidence_refs": [
+            "ev-90"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "DietConsultancy",
+      "website": "https://www.dietconsultancy.co.uk",
+      "icp_id": null,
+      "location": "Bishop's Stortford, UK",
+      "industry": "Dietetics private practice",
+      "description": "Freelance diabetes dietitian with South Asian health interest.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-91"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-91",
+        "ev-92"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Interest only.",
+          "evidence_refs": [
+            "ev-92"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "The Family Wellbeing Dietitian",
+      "website": "https://www.thefamilywellbeingdietitian.co.uk",
+      "icp_id": null,
+      "location": "Swansea, UK",
+      "industry": "Dietetics private practice",
+      "description": "Freelance dietitian interested in South Asian client groups.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-93"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-93",
+        "ev-94"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Interest only.",
+          "evidence_refs": [
+            "ev-94"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Nutrition by Avi",
+      "website": "https://nutritionbyavi.janeapp.com",
+      "icp_id": null,
+      "location": "British Columbia / Alberta, Canada",
+      "industry": "Dietetics private practice",
+      "description": "Solo RD offering services in Punjabi.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-95"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-95"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Solo, Punjabi-speaking.",
+          "evidence_refs": [
+            "ev-95"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Avi Brar",
+          "role": "Registered Dietitian",
+          "email": null,
+          "evidence_ref": "ev-95"
+        }
+      ]
+    },
+    {
+      "ref": "co-19",
+      "name": "Disease Prevention LLC",
+      "website": "https://diseasepreventionllc.com",
+      "icp_id": null,
+      "location": "Cary, NC, USA",
+      "industry": "Dietetics private practice",
+      "description": "Solo RD practice using Healthie; clients praise help with Indian foods.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-96"
+      },
+      "technologies": [
+        "Healthie"
+      ],
+      "evidence_refs": [
+        "ev-96",
+        "ev-97",
+        "ev-50"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Solo practice serving Indian-food clients.",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Uses Healthie, whose meal planning is described as weak.",
+          "evidence_refs": [
+            "ev-97",
+            "ev-35"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
