@@ -1,0 +1,3106 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "095049a1-01a1-4f1f-98b2-7841b9e209f1",
+    "researcher": "claude-code",
+    "started_at": "2026-11-07T09:00:00Z",
+    "finished_at": "2026-11-07T13:00:00Z",
+    "queries": [
+      "Docketwise smart forms errors paralegal reddit immigration",
+      "immigration paralegal job posting \"prepare USCIS forms\" \"client intake\" small firm",
+      "USCIS rejected filing common errors blank fields \"N/A\" \"None\" rejection reasons",
+      "LollyLaw outage immigration software",
+      "reddit immigration paralegal Docketwise vs LollyLaw which software",
+      "immigration law firm software survey time spent data entry forms paralegal hours per case",
+      "INSZoom Mitratech support complaints immigration attorneys",
+      "USCIS rejection outdated form edition wrong fee lockbox rejected application attorney blog",
+      "AffiniPay acquires Docketwise immigration 8am",
+      "Docketwise reviews cons \"forms\" trustradius OR softwareadvice OR getapp",
+      "Mitratech acquires Tracker immigration software Cerenade",
+      "immigration attorneys survey practice management software use solo small firm Clio legal trends immigration",
+      "site:reddit.com immigration paralegal software forms Docketwise frustrating",
+      "\"immigration\" paralegal \"data entry\" forms tedious attorney blog intake questionnaire clients don't complete",
+      "eImmigration Cerenade forms software immigration attorneys pricing",
+      "Docketwise \"reverse autofill\" support center",
+      "immigration law firm careers \"immigration paralegal\" \"Docketwise\" OR \"LollyLaw\" job description prepare forms intake",
+      "USCIS new form edition frequency updates 2025 form editions changed I-130 I-485 new edition accept prior editions",
+      "\"hours\" to prepare I-130 I-485 marriage green card package paralegal time per case flat fee immigration attorney",
+      "LollyLaw reviews cons slow bugs softwarefinder OR sourceforge",
+      "immigration law firm \"our team\" paralegal family-based petitions small firm Texas",
+      "boutique immigration law firm \"meet our team\" attorney paralegal \"family\" \"employment\" immigration California",
+      "immigration attorney office \"our staff\" paralegal \"legal assistant\" family immigration Florida law firm",
+      "immigration law firm team page \"paralegal\" \"managing attorney\" New York OR New Jersey family-based green card small firm",
+      "\"immigration\" law office \"our team\" \"paralegal\" \"attorney\" family petitions adjustment of status Chicago OR Houston OR Atlanta OR Seattle",
+      "\"exclusively immigration\" law firm \"meet the team\" paralegal small firm Virginia OR Maryland OR North Carolina OR Colorado",
+      "immigration law PLLC \"our team\" \"immigration paralegal\" \"founding attorney\" family-based employment-based",
+      "immigration law firm \"our team\" paralegal \"legal assistant\" Arizona OR Utah OR Oregon OR Minnesota OR Ohio family-based green card attorney",
+      "\"immigration attorney\" \"paralegal\" team page small law office \"I-130\" \"naturalization\" Pennsylvania OR Massachusetts OR Georgia OR Tennessee",
+      "small immigration law firm \"about us\" \"paralegal\" \"attorney\" \"family-based\" \"consular processing\" Massachusetts OR Connecticut OR Pennsylvania team",
+      "immigration law office team \"senior paralegal\" \"immigration attorney\" Colorado OR Nevada OR New Mexico OR Missouri small firm",
+      "\"immigration law\" firm \"our attorneys and staff\" OR \"meet our staff\" paralegal family green card citizenship small office California OR Texas OR Illinois",
+      "immigration lawyer office \"Case Manager\" \"Paralegal\" \"Founding Attorney\" team bios family-based immigration firm website"
+    ],
+    "notes": "Contradiction searches: blank-field rejection policy status, Docketwise positive reviews, incumbent feature pages (N/A autofill, reverse autofill, two-way sync, multilingual intake, AI document capture). Capterra, G2, Software Advice, TrustRadius, Reddit, LollyLaw.com and Mitratech pages were unfetchable (robots/403), so review evidence relies on Software Finder and SourceForge; Reddit voice comes from one mirrored post. Founder claims not found in public sources: LollyLaw week-long outage, INSZoom/Tracker support decline, broken Clio/MyCase accounting sync. Docketwise is owned by 8am (MyCase/AffiniPay), not Clio. No source quantified paralegal hours per case. Prospects: 21 US immigration firms from their own sites; size is stated for only 5; no technology stack evidence for any; ICP ids were not provided by context so icp_id is null. Locke Immigration's cited page gives no location (geography left null)."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://immpolicytracking.org/policies/uscis-rejecting-certain-application-forms-for-incompleteness-if-any-fields-are-left-blank/",
+      "title": "USCIS rejects certain application forms for incompleteness if any fields are left blank (Immigration Policy Tracking Project)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Under the policy, USCIS rejected applications that left any question in the application unanswered, even where the question was not applicable—for example where the applicant failed to include a response for middle name because they have no middle name. Additionally, USCIS rejected applications where the applicant wrote “none” or “not applicable” instead of “N/A.”",
+      "statement": "Under the 2019-2020 'no blank space' policy USCIS rejected forms for unanswered not-applicable fields and for writing 'none' instead of 'N/A'.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4f71a50-dab1-49c4-9bbd-c19aecfe9247"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://immpolicytracking.org/policies/uscis-rejecting-certain-application-forms-for-incompleteness-if-any-fields-are-left-blank/",
+      "title": "USCIS rejects certain application forms for incompleteness if any fields are left blank (Immigration Policy Tracking Project)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "the settlement agreement prevents the agency from adopting a similar rejection policy with respect to other immigration forms unless authorized by statute or lawfully implemented through regulations. … On April 1, 2021, USCIS confirmed that for all forms it has reverted to the form rejection criteria it applied before October 2019 regarding blank responses.",
+      "statement": "The blank-field rejection policy was rescinded in 2021 and a settlement limits its return, weakening the urgency of automatic N/A/None filling.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4f71a50-dab1-49c4-9bbd-c19aecfe9247"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://www.mmhpc.com/uscis-rejecting-more-applications-and-petitions-if-any-questions-on-forms-are-left-blank/",
+      "title": "USCIS Increases Rejections for Incomplete Immigration Forms (Minsky McCormick & Hallagan)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If USCIS rejects a petition due to a trivial omission, like writing “none” rather than “N/A” into the field for middle name — even when an applicant does not have a middle name — the certification may expire and the applicant may not have enough time obtain a new one.",
+      "statement": "An immigration firm describes how a trivial form omission can cause a rejection that makes time-limited evidence expire.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4f71a50-dab1-49c4-9bbd-c19aecfe9247"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://citizenpath.com/uscis-rejected-my-application/",
+      "title": "USCIS Rejected My Application? 7 Mistakes That Cause It (CitizenPath)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "USCIS lockbox facilities processed more than 10 million applications in fiscal year 2025 and rejected 11% of them. That works out to roughly 1.1 million packages returned in a single year.",
+      "statement": "About 11% of lockbox filings (~1.1M packages) were rejected in FY2025 (all filers, not only law firms).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4f71a50-dab1-49c4-9bbd-c19aecfe9247"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://citizenpath.com/uscis-rejected-my-application/",
+      "title": "USCIS Rejected My Application? 7 Mistakes That Cause It (CitizenPath)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "USCIS reports that the single most common reason is an incorrect fee amount. Payment problems, signature problems, and outdated forms account for a large share of the rest.",
+      "statement": "The most common rejection reason is the wrong fee, not mis-filled form fields; payment, signature and outdated editions follow.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4f71a50-dab1-49c4-9bbd-c19aecfe9247"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://citizenpath.com/uscis-rejected-my-application/",
+      "title": "USCIS Rejected My Application? 7 Mistakes That Cause It (CitizenPath)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "USCIS does not assign a receipt date to a rejected application. In the agency's terms, the filing never happened. … A rejection in those situations can cost you a place in line.",
+      "statement": "A rejected filing gets no receipt date, which can cost priority/deadline position.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4f71a50-dab1-49c4-9bbd-c19aecfe9247"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://www.ahluwalialaw.com/new-form-i-485-edition-required-september-18-2026/",
+      "title": "New Form I-485 Edition Required September 18, 2026 (Ahluwalia Law Offices)",
+      "source_type": "company_site",
+      "published_at": "2026-08-19",
+      "quote": "USCIS has stated that there is no grace period for the revised edition, which is why the agency released a preview version of the form and its instructions in advance. … Both directions carry consequences. Filing the new edition early results in rejection, and filing the old edition late results in rejection.",
+      "statement": "The 09/18/26 I-485 edition had no grace period; wrong edition either way means rejection, so form templates must switch on an exact date.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4f71a50-dab1-49c4-9bbd-c19aecfe9247",
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://immpolicytracking.org/policies/uscis-announces-new-form-editions-with-no-grace-period-for-prior-editions/",
+      "title": "USCIS announces new form edition for several forms with no grace period (Immigration Policy Tracking Project)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "USCIS announced a new form edition, dated 01/20/2025, for 7 forms: … The new form edition takes effect immediately, with no grace period for prior editions.",
+      "statement": "In early 2025 USCIS issued new editions of a dozen forms at once, initially with no grace period (later relaxed after an AILA lawsuit).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://lawyerist.com/news/immigration-practice-management-software/",
+      "title": "Immigration Practice Management Software (Lawyerist, sponsored LollyLaw article)",
+      "source_type": "industry_publication",
+      "published_at": "2022-08-18",
+      "quote": "A single oversight in a visa or other immigration form could delay a case for years. … there’s the sheer volume of forms, data entry, and the ever-changing demands of your cases.",
+      "statement": "Practice press describes immigration work as form- and data-entry heavy where one form oversight can delay a case.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b4f71a50-dab1-49c4-9bbd-c19aecfe9247",
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://lawyerist.com/news/immigration-practice-management-software/",
+      "title": "Immigration Practice Management Software (Lawyerist, sponsored LollyLaw article)",
+      "source_type": "industry_publication",
+      "published_at": "2022-08-18",
+      "quote": "If a form contains information that is not yet in the client’s record, LollyLaw will add that information to your files.",
+      "statement": "LollyLaw already advertises two-way sync from forms back to the client record, the core of the proposed 'edit the PDF and save back' wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "ad9057a8-c9c7-402b-a50c-991cac61e5ff",
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "LollyLaw"
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://lawyerist.com/news/immigration-practice-management-software/",
+      "title": "Immigration Practice Management Software (Lawyerist, sponsored LollyLaw article)",
+      "source_type": "industry_publication",
+      "published_at": "2022-08-18",
+      "quote": "LollyLaw will also send you notifications on new form versions as they are published. They’ll let you know when an edition will expire and give you the option to move data to a newer version.",
+      "statement": "LollyLaw handles USCIS edition changes, including moving data to new editions.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "LollyLaw"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.docketwise.com/features/immigration-forms/",
+      "title": "Immigration Forms Software for Attorneys (Docketwise)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Multilingual — Questionnaires can be auto-translated into Spanish, French, Portuguese, Russian, Arabic, Hindi, Chinese, and more to help clients with questions. - Mobile-Friendly — Clients can provide form information on any device with a browser, including smartphones.",
+      "statement": "Docketwise already offers multilingual, mobile-friendly client questionnaires that populate forms.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "cdbfc936-1394-41e7-82f0-cfc09b7288d3",
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://www.docketwise.com/pricing/",
+      "title": "Docketwise Pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Simplify your case management. $80 /month per user Includes: - Smart Forms - Case Management - Multilingual Custom Intakes & Questionnaires",
+      "statement": "Docketwise's entry plan is listed at $80 per user per month including Smart Forms and multilingual intakes.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://www.docketwise.com/pricing/",
+      "title": "Docketwise Pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Custom Intakes and Questions Searchable Questionnaires Reverse Autofill",
+      "statement": "Docketwise lists a 'Reverse Autofill' feature, suggesting form edits can already flow back to the questionnaire/client data.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "ad9057a8-c9c7-402b-a50c-991cac61e5ff",
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://www.docketwise.com/support/",
+      "title": "Docketwise Support",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Restrict Invoice Access Autofill Empty Fields with N/A",
+      "statement": "Docketwise has a help topic for auto-filling empty fields with N/A, overlapping the proposed automatic N/A rules.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.docketwise.com/blog/how-immigration-software-makes-law-firms-more-efficient/",
+      "title": "How Immigration Software Makes Law Firms More Efficient (Docketwise blog)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "From smaller cosmetic updates to more substantive overhauls, USCIS rolls out changes to its many forms on a regular basis. Keeping up with each new edition can be a huge headache.",
+      "statement": "A vendor co-founded by an immigration attorney says keeping up with USCIS form editions is a major burden.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.docketwise.com/blog/how-immigration-software-makes-law-firms-more-efficient/",
+      "title": "How Immigration Software Makes Law Firms More Efficient (Docketwise blog)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "immigration software like Docketwise closely monitors these updates, and adjusts accordingly within just a few business days of a change.",
+      "statement": "The incumbent already claims to update forms within a few business days, so fast form updates are table stakes rather than a moat.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://softwarefinder.com/legal/docketwise",
+      "title": "Docketwise: Reviews, Pricing & Free Demo (Software Finder)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Users like how easy it is to use, though technical issues with forms come up often as a complaint.",
+      "statement": "Review-site summary says technical issues with forms are a frequent Docketwise complaint.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "ad9057a8-c9c7-402b-a50c-991cac61e5ff"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://softwarefinder.com/legal/docketwise",
+      "title": "Docketwise: Reviews, Pricing & Free Demo (Software Finder)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "The software barely works and it does not integrate with Clio the way they advertise. … It is also far too expensive for what is basically just a glorified PDF form filler.",
+      "statement": "One small-firm reviewer (1-10 employees) calls Docketwise broken, poorly integrated with Clio and overpriced.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "ad9057a8-c9c7-402b-a50c-991cac61e5ff"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://softwarefinder.com/legal/docketwise",
+      "title": "Docketwise: Reviews, Pricing & Free Demo (Software Finder)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "The pricing for 8am DocketWise starts at $90/user/month for its Basic plan. … - Pro - $120/user/month - Advanced - $140/user/month",
+      "statement": "Docketwise is listed at $90-$140 per user per month (Sep 2026), confirming paid spend in the founder's assumed range.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://softwarefinder.com/legal/docketwise",
+      "title": "Docketwise: Reviews, Pricing & Free Demo (Software Finder)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "The data capture tool reads immigration documents and maps the information straight into USCIS forms, cutting out a lot of manual retyping.",
+      "statement": "Docketwise's AI already extracts data from documents into USCIS forms, overlapping the document-photo wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55",
+        "cdbfc936-1394-41e7-82f0-cfc09b7288d3"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://softwarefinder.com/legal/docketwise",
+      "title": "Docketwise: Reviews, Pricing & Free Demo (Software Finder)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Immigration cases usually require several forms, and most of them ask for overlapping client information. Somebody ends up typing the same address or birthdate three or four times.",
+      "statement": "Without form software, the same client data is retyped across several forms.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9",
+        "b063b5d8-e7d2-4796-8c20-fd651bd2ec12"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://softwarefinder.com/legal/docketwise/reviews?page=3",
+      "title": "Docketwise Reviews page 3 (Software Finder)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Getting questionnaires out to clients is very easy and pulling that information into the forms is just as simple. The system is user friendly overall and has been very accurate. … The forms are updated often and new features are added regularly.",
+      "statement": "Several small-firm reviewers (1-10 employees) praise Docketwise forms as accurate and regularly updated.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "ad9057a8-c9c7-402b-a50c-991cac61e5ff"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://reddit.sentinel-team.org/posts/1pw8r7c/snapshots/2025-12-27T01%3A31%3A35.657987Z",
+      "title": "Reddit post snapshot: immigration paralegal researching case software",
+      "source_type": "forum",
+      "published_at": "2025-12-27",
+      "quote": "Currently, my firm uses ImmPro, which is what we have been using for 25 years. But we are looking for a more integrated software program that doesn't keep giving user errors (when saving forms), and that can integrate with Clio, which we use for client management and billing.",
+      "statement": "A paralegal reports a two-tool stack (forms tool + Clio) and errors when saving forms in a legacy forms tool.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9",
+        "ad9057a8-c9c7-402b-a50c-991cac61e5ff"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://reddit.sentinel-team.org/posts/1pw8r7c/snapshots/2025-12-27T01%3A31%3A35.657987Z",
+      "title": "Reddit post snapshot: immigration paralegal researching case software",
+      "source_type": "forum",
+      "published_at": "2025-12-27",
+      "quote": "I'm an immigration paralegal, and have been charged with researching and demo'ing different software programs.",
+      "statement": "At this firm, a paralegal is tasked with researching and demoing replacement software (paralegals influence selection).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d06a677a-d3a8-40a9-86eb-fc5fc3a4b91b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://reddit.sentinel-team.org/posts/1pw8r7c/snapshots/2025-12-27T01%3A31%3A35.657987Z",
+      "title": "Reddit post snapshot: immigration paralegal researching case software",
+      "source_type": "forum",
+      "published_at": "2025-12-27",
+      "quote": "A lot of them claim to integrate but actually just push billing data one way, which ends up creating double entry work for the staff anyway.",
+      "statement": "A commenter warns that forms-to-Clio integrations are often one-way, creating double entry.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ad9057a8-c9c7-402b-a50c-991cac61e5ff"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://law-journals-books.vlex.com/vid/2019-visalaw-ai-case-933063526",
+      "title": "2019 Visalaw.ai Case Management Survey Report (AILA Law Journal via vLex)",
+      "source_type": "report",
+      "published_at": "2020-01-01",
+      "quote": "Creating government forms and saving client information in them | 4.54",
+      "statement": "Surveyed immigration lawyers rated creating government forms and saving client data as the most important feature (4.54/5).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://law-journals-books.vlex.com/vid/2019-visalaw-ai-case-933063526",
+      "title": "2019 Visalaw.ai Case Management Survey Report (AILA Law Journal via vLex)",
+      "source_type": "report",
+      "published_at": "2020-01-01",
+      "quote": "A client portal allowing clients to complete online intake forms that flow into government forms, upload/download documents, make payments, etc. | 3.90",
+      "statement": "A client intake portal feeding forms scored 3.90/5, below core form creation.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55",
+        "cdbfc936-1394-41e7-82f0-cfc09b7288d3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://law-journals-books.vlex.com/vid/2019-visalaw-ai-case-933063526",
+      "title": "2019 Visalaw.ai Case Management Survey Report (AILA Law Journal via vLex)",
+      "source_type": "report",
+      "published_at": "2020-01-01",
+      "quote": "consistent with the AILA Marketplace study from 2019 showing that approximately 76 percent of AILA members are in firms with three or fewer lawyers.",
+      "statement": "About 76% of AILA members work in firms with three or fewer lawyers, so most buyers are small-firm owners.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d06a677a-d3a8-40a9-86eb-fc5fc3a4b91b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://law-journals-books.vlex.com/vid/2019-visalaw-ai-case-933063526",
+      "title": "2019 Visalaw.ai Case Management Survey Report (AILA Law Journal via vLex)",
+      "source_type": "report",
+      "published_at": "2020-01-01",
+      "quote": "The costs of a case management system can be one of the most expensive items in a law firm's budget.",
+      "statement": "Case management software is described as one of the largest budget items for immigration firms.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "d06a677a-d3a8-40a9-86eb-fc5fc3a4b91b"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://law-journals-books.vlex.com/vid/2019-visalaw-ai-case-933063526",
+      "title": "2019 Visalaw.ai Case Management Survey Report (AILA Law Journal via vLex)",
+      "source_type": "report",
+      "published_at": "2020-01-01",
+      "quote": "| INSZoom | 21% | 45 | | Cerenade eImmigration Air | 20% | 42 | | LawLogix | 15% | 32 | | Tracker | 7% | 16 | | Docketwise | 6% | 12 | | Clio | 6% | 12 |",
+      "statement": "In the 2019 survey INSZoom, Cerenade, LawLogix, Tracker, Docketwise and Clio were the most-used systems.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://law-journals-books.vlex.com/vid/2019-visalaw-ai-case-933063526",
+      "title": "2019 Visalaw.ai Case Management Survey Report (AILA Law Journal via vLex)",
+      "source_type": "report",
+      "published_at": "2020-01-01",
+      "quote": "Google Drive - MyKWA - Adobe Acrobat Pro and USCIS.gov forms",
+      "statement": "Some respondents fill USCIS PDFs manually with Adobe Acrobat or use Google Drive instead of dedicated software.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://recruiting.paylocity.com/recruiting/jobs/details/145955",
+      "title": "Immigration Paralegal I (Goel & Anderson LLC)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Work with clients to gather the necessary information and documentation in a timely manner. - Prepare forms according to information received from clients.",
+      "statement": "A paralegal job lists gathering client information/documents and preparing forms from it as core duties.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Goel & Anderson LLC"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.docketwise.com/blog/docketwise-joins-the-mycase-team/",
+      "title": "Docketwise joins the MyCase team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Docketwise is proud to announce it has been acquired by MyCase, a leading practice management software for lawyers. … which powers the firms of over 6,000 immigration practitioners.",
+      "statement": "Docketwise was acquired by MyCase (now 8am), not Clio, and served over 6,000 practitioners at the time.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.docketwise.com/llm-info/",
+      "title": "About Docketwise — Information for AI Assistants",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Owned by 8am and headquartered in Austin, Texas, Docketwise helps immigration attorneys and their teams simplify complex casework with multilingual client intake and translation",
+      "statement": "Docketwise is owned by 8am and positions itself on multilingual intake and translation.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cdbfc936-1394-41e7-82f0-cfc09b7288d3"
+      ],
+      "company_name": "Docketwise"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.mycase.com/solutions/immigration-law-software/",
+      "title": "Immigration Law Software (8am MyCase)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Give clients the ability to complete forms in 12 languages, making communication smoother and more personal. - Keep form data automatically connected to the right case files, ensuring your records stay organized and accurate without manual updates.",
+      "statement": "MyCase also offers immigration forms in 12 client languages with form data synced to case files.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "cdbfc936-1394-41e7-82f0-cfc09b7288d3",
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "MyCase"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://sourceforge.net/software/product/eIMMIGRATION/",
+      "title": "eimmigration by Cerenade (SourceForge)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "17,000+ immigration attorneys, paralegals, caseworkers, and operations leaders choose it to:",
+      "statement": "Cerenade eimmigration claims 17,000+ immigration users.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Cerenade"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://sourceforge.net/software/product/eIMMIGRATION/",
+      "title": "eimmigration by Cerenade (SourceForge)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Cons: I don't like that only one user can access an account at one time.",
+      "statement": "A Cerenade user complains about single-user account access.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "ad9057a8-c9c7-402b-a50c-991cac61e5ff"
+      ],
+      "company_name": "Cerenade"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://softwarefinder.com/legal/lollylaw/reviews",
+      "title": "LollyLaw Reviews (Software Finder)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Customer service is hit or miss. Like sometimes they fix issues right away but other times they ignore our suggestions for new features that would really help our firm.",
+      "statement": "A LollyLaw reviewer reports inconsistent customer service; other reviews praise support.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ad9057a8-c9c7-402b-a50c-991cac61e5ff"
+      ],
+      "company_name": "LollyLaw"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.lawnext.com/2022/05/how-it-works-lollylaw-cloud-based-case-management-software-for-immigration-law-firms.html",
+      "title": "How It Works: LollyLaw (LawNext)",
+      "source_type": "news",
+      "published_at": "2022-05-01",
+      "quote": "LollyLaw, which was recently acquired by law practice management company Paradigm, is designed to allow immigration lawyers to effortlessly manage all major functions of their practice through a single, intuitive platform.",
+      "statement": "LollyLaw was acquired by Paradigm and sells an all-in-one immigration platform.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "LollyLaw"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://softwarereview.com/s/inszoom",
+      "title": "INSZoom software review (SoftwareReview.com)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "INSZoom is for immigration law firms, corporate legal and HR departments managing employee visas, universities handling international student and scholar visas, and large non-profits.",
+      "statement": "INSZoom (Mitratech) targets law firms, corporate HR, universities and large nonprofits.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Mitratech INSZoom"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://citizenpath.com/uscis-rejected-my-application/",
+      "title": "USCIS Rejected My Application? 7 Mistakes That Cause It (CitizenPath)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "When a question does not apply to you, follow the form instructions rather than leaving the field empty. CitizenPath's system will do this automatically for you.",
+      "statement": "CitizenPath (a DIY filing service) already automates not-applicable answers for self-filers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55"
+      ],
+      "company_name": "CitizenPath"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://peterchu.com/pages/f-2a-lawyer-boston",
+      "title": "F-2A Lawyer Boston (Law Office of Peter Darwin Chu)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "| General Practice Attorney | $1,500–$3,000 | Initial consult only; paralegal handles case |",
+      "statement": "A firm describes the common model where the attorney consults and a paralegal handles the case, for $1,500-$3,000.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://lopezimmigration.com/en/our-team/",
+      "title": "Our Team (Lopez Immigration)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "3350 Northlake Parkway Atlanta, GA 30345",
+      "statement": "Lopez Immigration is located in Atlanta, GA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lopez Immigration"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://lopezimmigration.com/en/our-team/",
+      "title": "Our Team (Lopez Immigration)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mrs. Lisa Amezaga is an Immigration Paralegal at Lopez Immigration.",
+      "statement": "Named immigration paralegal at Lopez Immigration.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lopez Immigration"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://lopezimmigration.com/en/our-team/",
+      "title": "Our Team (Lopez Immigration)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ms. Cynthia Toro currently works as a legal assistant for López Immigration LLC. She is dedicated to assisting clients with their family immigration processes, among her functions is preparing translations, forms and applications to submit to Immigration",
+      "statement": "Lopez Immigration staff prepare translations, forms and applications for family cases by hand.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Lopez Immigration"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://lopezimmigration.com/en/our-team/",
+      "title": "Our Team (Lopez Immigration)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We work exclusively with immigration cases so that we can always stay up to date",
+      "statement": "Lopez Immigration practices immigration law exclusively.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lopez Immigration"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.alazlaw.com/",
+      "title": "Alaz Law",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Alaz Law 825 Watters Creek Blvd., Building M, Suite 250, Allen, TX 75013",
+      "statement": "Alaz Law is in Allen, Texas.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Alaz Law Firm PLLC"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.alazlaw.com/team/guljan-jumayeva/",
+      "title": "Guljan Jumayeva — Immigration Case Manager at Alaz Law",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Guljan Jumayeva — Immigration Case Manager at Alaz Law",
+      "statement": "Named immigration case manager at Alaz Law.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Alaz Law Firm PLLC"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.alazlaw.com/team/guljan-jumayeva/",
+      "title": "Guljan Jumayeva — Immigration Case Manager at Alaz Law",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Handle document preparation and filing for various immigration petitions",
+      "statement": "Alaz Law case staff handle document preparation and filing of petitions.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Alaz Law Firm PLLC"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.alazlaw.com/",
+      "title": "Alaz Law",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Explore Green Card services for family- and employment-based permanent residence options.",
+      "statement": "Alaz Law handles family- and employment-based green cards.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Alaz Law Firm PLLC"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.alazlaw.com/about/",
+      "title": "About Alaz Law",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Attorney Hasan Alaz is licensed to practice law in the State of Missouri and the State of Texas.",
+      "statement": "Hasan Alaz is the firm's attorney.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Alaz Law Firm PLLC"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.watsonimmigrationlaw.com/team",
+      "title": "Our Team (Watson Immigration Law)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "1700 7th Avenue, Suite 2100 Seattle, WA 98101",
+      "statement": "Watson Immigration Law is in Seattle, WA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Watson Immigration Law"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.watsonimmigrationlaw.com/team",
+      "title": "Our Team (Watson Immigration Law)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Tahmina Watson Full bio → Founder & Immigration Attorney",
+      "statement": "Tahmina Watson is founder and immigration attorney.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Watson Immigration Law"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.watsonimmigrationlaw.com/team",
+      "title": "Our Team (Watson Immigration Law)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Nicole Full bio → Chief of Staff & Managing Paralegal … Cyril Full bio → Paralegal … Irene Full bio → Administrative, Billing & Paralegal Assistant … Precilla Full bio → Marketing & Communications Assistant",
+      "statement": "Watson's team page lists eight people including a managing paralegal and paralegals.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Watson Immigration Law"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://cuboid-hypersphere-4jnt.squarespace.com/legal-team",
+      "title": "Legal Team (Powell Law, PLLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Sharon Powell is a licensed attorney who runs her immigration law practice out of Williamsburg, Virginia.",
+      "statement": "Powell Law is in Williamsburg, VA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Powell Law, PLLC"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://cuboid-hypersphere-4jnt.squarespace.com/legal-team",
+      "title": "Legal Team (Powell Law, PLLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Sharon Powell, Esq. Immigration Attorney",
+      "statement": "Sharon Powell, immigration attorney (owner).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Powell Law, PLLC"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://cuboid-hypersphere-4jnt.squarespace.com/legal-team",
+      "title": "Legal Team (Powell Law, PLLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Kendra Heinrich Paralegal",
+      "statement": "Kendra Heinrich, paralegal.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Powell Law, PLLC"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://cuboid-hypersphere-4jnt.squarespace.com/legal-team",
+      "title": "Legal Team (Powell Law, PLLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Isabella Wilson Paralegal Isabella joined Powell Law in October of 2023.",
+      "statement": "Isabella Wilson, paralegal.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Powell Law, PLLC"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://cuboid-hypersphere-4jnt.squarespace.com/legal-team",
+      "title": "Legal Team (Powell Law, PLLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Sharon is particularly skilled with complicated family cases and human trafficking cases.",
+      "statement": "Powell Law focuses on family and humanitarian cases.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Powell Law, PLLC"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://blakeimmigration.netlify.app/about/",
+      "title": "About (Blake Immigration Law)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Physical Address 1517 King St. Alexandria, VA 22314",
+      "statement": "Blake Immigration Law is in Alexandria, VA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Blake Immigration Law"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://blakeimmigration.netlify.app/about/",
+      "title": "About (Blake Immigration Law)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Jillian Blake, Esq. Principal Attorney/Owner",
+      "statement": "Jillian Blake is principal attorney/owner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Blake Immigration Law"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://www.blakeimmigration.com/",
+      "title": "Blake Immigration Law",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "with a focus on removal (deportation) defense, asylum and family-based immigrant petitions.",
+      "statement": "Blake Immigration Law focuses on removal defense, asylum and family petitions.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Blake Immigration Law"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://blakeimmigration.netlify.app/about/",
+      "title": "About (Blake Immigration Law)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Karina has been a paralegal at Blake Immigration Law since 2017.",
+      "statement": "Blake Immigration Law employs paralegals (plus four attorneys listed).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Blake Immigration Law"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://torregozalegalpllc.squarespace.com",
+      "title": "Torregoza Legal PLLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Angela Torregoza is a Filipino-American immigration attorney based in New York City.",
+      "statement": "Torregoza Legal is in New York City.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Torregoza Legal PLLC"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://torregozalegalpllc.squarespace.com",
+      "title": "Torregoza Legal PLLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Angela Torregoza Esq. Founder",
+      "statement": "Angela Torregoza is the founder.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Torregoza Legal PLLC"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://torregozalegalpllc.squarespace.com",
+      "title": "Torregoza Legal PLLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We provide assistance for adjustment of status applications and consular processing.",
+      "statement": "Torregoza Legal handles family green card filings.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Torregoza Legal PLLC"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.ahluwalialaw.com/",
+      "title": "Ahluwalia Law Offices",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "16479 Dallas Parkway, Suite 355 Addison, TX 75001",
+      "statement": "Ahluwalia Law Offices' main office is in Addison (Dallas), TX.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ahluwalia Law Offices, PC"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.ahluwalialaw.com/",
+      "title": "Ahluwalia Law Offices",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Led by Texas immigration lawyer Pallavi Ahluwalia, our team helps individuals, families, and businesses",
+      "statement": "Pallavi Ahluwalia leads the firm as immigration lawyer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ahluwalia Law Offices, PC"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.ahluwalialaw.com/",
+      "title": "Ahluwalia Law Offices",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ahluwalia Law Offices, PC provides an extensive range of family and employment based immigration services.",
+      "statement": "Ahluwalia handles family and employment immigration.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ahluwalia Law Offices, PC"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://imlaw.squarespace.com/meet-the-team",
+      "title": "Meet the ImLaw Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "4117 Embassy Drive SE, Grand Rapids",
+      "statement": "ImLaw is in Grand Rapids, MI.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ImLaw"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://imlaw.squarespace.com/meet-the-team",
+      "title": "Meet the ImLaw Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Susan Im Founder & Immigration Attorney",
+      "statement": "Susan Im is founder and immigration attorney.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ImLaw"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://imlaw.squarespace.com/meet-the-team",
+      "title": "Meet the ImLaw Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Kathy Poppenger Immigration Attorney Kathy Poppenger brings over 35 years of experience in immigration law to our team.",
+      "statement": "Kathy Poppenger is an immigration attorney at ImLaw.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ImLaw"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://imlaw.squarespace.com/meet-the-team",
+      "title": "Meet the ImLaw Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "family-based permanent residency/green card applications; and naturalization/U.S. citizenship applications.",
+      "statement": "ImLaw handles family and employment-based cases.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ImLaw"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://law-office-of-christine-troy.squarespace.com/team",
+      "title": "Meet Our Team (Law Office of Christine Troy)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Law Office of Christine Troy 870 Market St., Suite 570 San Francisco, CA 94102",
+      "statement": "The firm is in San Francisco, CA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Law Office of Christine Troy"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://law-office-of-christine-troy.squarespace.com/team",
+      "title": "Meet Our Team (Law Office of Christine Troy)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Christine Troy Owner Christine Troy has more than twenty years of experience practicing exclusively in the area of Immigration and Naturalization Law.",
+      "statement": "Christine Troy is the owner.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Law Office of Christine Troy"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://www.musiccityvisa.com/",
+      "title": "Music City Visa (Law Offices of Sean Lewis, PLLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Con más de 20 años sirviendo a la comunidad hispana en Tennessee, el abogado de inmigración Sean Lewis ofrece atención legal personalizada y completamente en español.",
+      "statement": "Sean Lewis is the immigration attorney; the firm serves Tennessee in Spanish.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Music City Visa (Law Offices of Sean Lewis, PLLC)"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://www.musiccityvisa.com/",
+      "title": "Music City Visa (Law Offices of Sean Lewis, PLLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Trámite que se realiza en una embajada o consulado de EE. UU. para obtener una visa legal, ya sea por motivos familiares, laborales o de estudio.",
+      "statement": "Music City Visa handles family and work visa processing.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Music City Visa (Law Offices of Sean Lewis, PLLC)"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://foundimmigration.com/",
+      "title": "Found Immigration",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Address: 61 W Palisade Ave. Englewood, NJ 07631",
+      "statement": "Found Immigration is in Englewood, NJ.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Found Immigration"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://foundimmigration.com/",
+      "title": "Found Immigration",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I am attorney Linda Chan Attreed, the founder of Found Immigration. I have been practicing immigration law since 2013, with extensive experience in both family-based and employment-based immigration",
+      "statement": "Linda Chan Attreed is the founder; family and employment immigration.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Found Immigration"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://foundimmigration.com/",
+      "title": "Found Immigration",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Direct attorney representation — you work with Linda, not a paralegal or case manager",
+      "statement": "Found Immigration is a solo practice without paralegals.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Found Immigration"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://www.entrylaw.com/people",
+      "title": "People (Entry Law / Parrilli Renison LLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Parrilli Renison LLC, 610 SW Broadway Suite 505, Portland, OR 97205",
+      "statement": "Entry Law is in Portland, OR.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Parrilli Renison LLC (Entry Law)"
+    },
+    {
+      "ref": "ev-89",
+      "url": "https://www.entrylaw.com/people",
+      "title": "People (Entry Law / Parrilli Renison LLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Tifani Parrilli is an immigration attorney in Portland, Oregon",
+      "statement": "Tifani Parrilli, immigration attorney.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Parrilli Renison LLC (Entry Law)"
+    },
+    {
+      "ref": "ev-90",
+      "url": "https://www.entrylaw.com/people",
+      "title": "People (Entry Law / Parrilli Renison LLC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Brent Renison is an immigration attorney in Portland, Oregon who has been representing employers and key employees with business-based immigration since 1997, as well as families with petitions and green card applications.",
+      "statement": "Brent Renison, immigration attorney; business and family petitions.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Parrilli Renison LLC (Entry Law)"
+    },
+    {
+      "ref": "ev-91",
+      "url": "https://simvisa.com/",
+      "title": "SimVisa",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "770 N La Salle St #700, Chicago, IL 60654",
+      "statement": "SimVisa is in Chicago, IL.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "SimVisa"
+    },
+    {
+      "ref": "ev-92",
+      "url": "https://simvisa.com/",
+      "title": "SimVisa",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our attorneys handle every step of your case to minimize the risk of errors and rejection.",
+      "statement": "SimVisa markets avoidance of errors and rejection for family cases.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b4f71a50-dab1-49c4-9bbd-c19aecfe9247"
+      ],
+      "company_name": "SimVisa"
+    },
+    {
+      "ref": "ev-93",
+      "url": "https://barraza-law.com/",
+      "title": "Barraza Law",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Barraza Law 1981 W Downer Pl, Aurora, IL 60506",
+      "statement": "Barraza Law is in Aurora, IL.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Barraza Law"
+    },
+    {
+      "ref": "ev-94",
+      "url": "https://barraza-law.com/",
+      "title": "Barraza Law",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ensure your best chance of legalization with bilingual immigration lawyer, Moises Barraza",
+      "statement": "Moises Barraza is the firm's immigration lawyer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Barraza Law"
+    },
+    {
+      "ref": "ev-95",
+      "url": "https://sites.google.com/romanlaw.org/home/about-our-team",
+      "title": "About Our Team (Roman Law Firm)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Melissa's case work is focused on victims of crimes, humanitarian paroles, family visas, and family / marriage-based petitions. Melissa is also a certified notary in the state of Florida.",
+      "statement": "Roman Law Firm (Florida) has paralegals working family and marriage-based petitions.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Roman Law Firm"
+    },
+    {
+      "ref": "ev-96",
+      "url": "https://sites.google.com/romanlaw.org/home/about-our-team",
+      "title": "About Our Team (Roman Law Firm)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Office Manager / Paralegal … Paralegal … Paralegal / Social Media Manager … Client Relations Specialist",
+      "statement": "Roman Law Firm lists an attorney plus four staff.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Roman Law Firm"
+    },
+    {
+      "ref": "ev-97",
+      "url": "https://shautsova.com/",
+      "title": "Law Office of Alena Shautsova",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "2908A Emmons Ave, Brooklyn, NY 11235",
+      "statement": "Law Office of Alena Shautsova is in Brooklyn, NY.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Law Office of Alena Shautsova"
+    },
+    {
+      "ref": "ev-98",
+      "url": "https://shautsova.com/our-law-firm/meet-the-team-gregory-abrams/",
+      "title": "Meet The Team: Gregory Abrams (Law Office of Alena Shautsova)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Gregory Abrams is a Senior Paralegal and Team Manager at the Law Office of Alena Shautsova",
+      "statement": "Gregory Abrams is senior paralegal and team manager.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Law Office of Alena Shautsova"
+    },
+    {
+      "ref": "ev-99",
+      "url": "https://shautsova.com/our-law-firm/meet-the-team-gregory-abrams/",
+      "title": "Meet The Team: Gregory Abrams (Law Office of Alena Shautsova)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Gregory has assisted in a wide range of immigration matters, including family-based petitions, employment immigration, EB2 NIW filings, asylum cases, VAWA self-petitions, and I-130 petitions.",
+      "statement": "The firm's paralegals prepare family and employment petitions including I-130s.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Law Office of Alena Shautsova"
+    },
+    {
+      "ref": "ev-100",
+      "url": "https://www.visalawyerblog.com/",
+      "title": "Visa Lawyer Blog (Law Offices of Jacob J. Sapochnick)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "1502 6th Ave San Diego, CA 92101",
+      "statement": "The Sapochnick firm is in San Diego, CA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Law Offices of Jacob J. Sapochnick"
+    },
+    {
+      "ref": "ev-101",
+      "url": "https://www.visalawyerblog.com/category/staff-spotlight/page/2/",
+      "title": "Staff Spotlight (Law Offices of Jacob J. Sapochnick)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "It is our pleasure to introduce our most senior Paralegal, Linda Parrish, to our readers.",
+      "statement": "Linda Parrish is the firm's most senior paralegal.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Law Offices of Jacob J. Sapochnick"
+    },
+    {
+      "ref": "ev-102",
+      "url": "https://www.visalawyerblog.com/category/staff-spotlight/page/2/",
+      "title": "Staff Spotlight (Law Offices of Jacob J. Sapochnick)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ms. Powell has worked for our firm since June 2010 and is one of six attorneys working in our law office.",
+      "statement": "The firm has six attorneys.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Law Offices of Jacob J. Sapochnick"
+    },
+    {
+      "ref": "ev-103",
+      "url": "https://www.visalawyerblog.com/category/staff-spotlight/page/2/",
+      "title": "Staff Spotlight (Law Offices of Jacob J. Sapochnick)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Her responsibilities include assisting attorneys with immigration cases, which include: Marriage Adjustments, Naturalization, and Removal proceedings. Ms. Nieto helps to analyze case documents, completes paperwork, and maintains contact with clients.",
+      "statement": "Support staff analyze client documents and complete paperwork for marriage adjustment and naturalization cases.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Law Offices of Jacob J. Sapochnick"
+    },
+    {
+      "ref": "ev-104",
+      "url": "https://stlawoffice.com/",
+      "title": "ST Law Office",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "1825 NW Corporate Blvd. STE 110 Boca Raton, FL 33431",
+      "statement": "ST Law Office is in Boca Raton, FL.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ST Law Office, PLLC"
+    },
+    {
+      "ref": "ev-105",
+      "url": "https://stlawoffice.com/",
+      "title": "ST Law Office",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Reunite with a fiance, a spouse or family in the U.S. through the adjustment of status or consular processing.",
+      "statement": "ST Law Office handles family-based adjustment and consular processing.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ST Law Office, PLLC"
+    },
+    {
+      "ref": "ev-106",
+      "url": "https://immigrantsfirst2024.mocha.themodernfirm.com/",
+      "title": "Immigrants First",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "especially those living in the Washington, D.C. Metro Area, Northern Virginia, and Winchester, Virginia.",
+      "statement": "Immigrants First serves the DC metro and Northern Virginia.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Immigrants First, PLLC"
+    },
+    {
+      "ref": "ev-107",
+      "url": "https://immigrantsfirst2024.mocha.themodernfirm.com/",
+      "title": "Immigrants First",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are passionate advocates for our client’s dreams of attaining family unity, security, work and travel in the United States.",
+      "statement": "Immigrants First handles family-unity and work immigration cases.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Immigrants First, PLLC"
+    },
+    {
+      "ref": "ev-108",
+      "url": "https://lawofficeimmigration.com/about.html",
+      "title": "About Modern Law Group",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Maria has been helping others with immigration and criminal issues since 2003. Originally from Mexico, she now lives and works in our Fort Worth, TX office",
+      "statement": "Modern Law Group has a Fort Worth, TX office (and NY, Chicago/Pittsburgh offices).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Modern Law Group"
+    },
+    {
+      "ref": "ev-109",
+      "url": "https://lawofficeimmigration.com/about.html",
+      "title": "About Modern Law Group",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Rose is the Senior Paralegal at Modern Law Group. She has excelled in the family immigration field – managing over 800 cases since 2014. Under attorney supervision, she has reviewed thousands of outgoing petitions.",
+      "statement": "A senior paralegal manages hundreds of family cases and reviews thousands of outgoing petitions.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e14fe445-eff9-4938-a342-d8d9c97184b9"
+      ],
+      "company_name": "Modern Law Group"
+    },
+    {
+      "ref": "ev-110",
+      "url": "https://lawofficeimmigration.com/about.html",
+      "title": "About Modern Law Group",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Carlos Gomez Lead Spanish Speaking Paralegal – TX",
+      "statement": "Carlos Gomez is lead Spanish-speaking paralegal.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Modern Law Group"
+    },
+    {
+      "ref": "ev-111",
+      "url": "https://www.lockeimmigration.com/about",
+      "title": "About (Locke Immigration Law)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A boutique team with big-firm expertise and a personal touch. Former diplomats, seasoned paralegals, and immigration specialists",
+      "statement": "Locke Immigration describes itself as a boutique team with paralegals.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Locke Immigration Law"
+    },
+    {
+      "ref": "ev-112",
+      "url": "https://www.watsonimmigrationlaw.com/team",
+      "title": "Our Team (Watson Immigration Law)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Nicole is an experienced immigration paralegal with extensive knowledge of employment-based immigration, with a particular focus on investment visa matters.",
+      "statement": "Watson's paralegals focus on employment/investor petitions.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Watson Immigration Law"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "e14fe445-eff9-4938-a342-d8d9c97184b9",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Paralegals and legal assistants gather client information and documents, then prepare USCIS forms from it under attorney review.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33",
+            "ev-52",
+            "ev-56",
+            "ev-103",
+            "ev-99"
+          ]
+        },
+        {
+          "statement": "Most firms use dedicated immigration software (INSZoom, Cerenade, LawLogix, Tracker, Docketwise, Clio); a minority fill USCIS PDFs in Adobe Acrobat or use Google Drive.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-31",
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "Some firms run a forms tool alongside a general practice-management tool such as Clio, which is the multi-tool setup the idea describes.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-24"
+          ]
+        },
+        {
+          "statement": "Without form software, the same client data is retyped across several forms.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "ad9057a8-c9c7-402b-a50c-991cac61e5ff",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Complaints exist: technical issues with forms are a recurring Docketwise complaint, one small-firm reviewer calls it a glorified PDF filler that does not integrate with Clio as advertised, and a paralegal reports errors when saving forms in a legacy tool.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18",
+            "ev-19",
+            "ev-24"
+          ]
+        },
+        {
+          "statement": "Forms-to-Clio integrations are described as one-way, which creates double entry.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-26"
+          ]
+        },
+        {
+          "statement": "Many small-firm reviewers rate Docketwise forms as accurate and frequently updated, so the dissatisfaction is not universal.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23"
+          ]
+        },
+        {
+          "statement": "The specific complaint that edits on the PDF never reach the client record is contradicted by incumbents: LollyLaw advertises two-way form-to-record sync and Docketwise lists Reverse Autofill.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-14"
+          ]
+        },
+        {
+          "statement": "No public evidence was found of the LollyLaw week-long outage or of INSZoom/Tracker support worsening after acquisition.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "b4f71a50-dab1-49c4-9bbd-c19aecfe9247",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Rejections are common and costly: about 11% of lockbox filings were rejected in FY2025, and a rejected filing gets no receipt date, which can cost priority or deadline position.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "Trivial field errors ('none' instead of 'N/A', blank middle name) caused rejections under the 2019-2020 policy.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-03"
+          ]
+        },
+        {
+          "statement": "That blank-field policy was rescinded in 2021, and the most common rejection reason now is the wrong fee rather than mis-filled fields.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Using the wrong form edition is an active rejection risk (e.g. the I-485 09/18/26 edition had no grace period).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07"
+          ]
+        },
+        {
+          "statement": "No firm-level data was found on how many hours or how much money a rejection costs a law firm.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "b063b5d8-e7d2-4796-8c20-fd651bd2ec12",
+      "status": "no_evidence_found",
+      "summary": [
+        {
+          "statement": "No verifiable source quantified paralegal hours per case for data entry or corrections; vendor figures found in search could not be fetched or cited.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "d06a677a-d3a8-40a9-86eb-fc5fc3a4b91b",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Most immigration lawyers work in very small firms (about 76% of AILA members in firms with three or fewer lawyers), so the owner-attorney is likely the buyer.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "Paralegals can run the evaluation: one paralegal was tasked with researching and demoing replacement software.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25"
+          ]
+        },
+        {
+          "statement": "Case-management software is described as one of the most expensive items in an immigration firm's budget.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-30"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "0096b57e-b6bc-4d1d-8aac-041cc5dd6f55",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Creating government forms and saving client information in them was the top-rated feature (4.54/5) in a 2019 survey of immigration lawyers; a client intake portal scored 3.90.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "Keeping form editions current is critical because USCIS releases editions with little or no grace period.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-08",
+            "ev-16"
+          ]
+        },
+        {
+          "statement": "Several proposed wedge features already exist in incumbents: N/A autofill (Docketwise), reverse autofill/two-way sync (Docketwise, LollyLaw), document data capture (Docketwise IQ), and edition-change handling within days.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-15",
+            "ev-14",
+            "ev-10",
+            "ev-21",
+            "ev-17",
+            "ev-11"
+          ]
+        },
+        {
+          "statement": "Incumbent pricing is $80-$140 per user per month, consistent with the $119 solo price hypothesis.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-13",
+            "ev-20"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "cdbfc936-1394-41e7-82f0-cfc09b7288d3",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Incumbents already offer multilingual, mobile-friendly client questionnaires: Docketwise (auto-translated, smartphones) and MyCase (12 languages).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-12",
+            "ev-35",
+            "ev-36"
+          ]
+        },
+        {
+          "statement": "Docketwise's AI data capture already reads immigration documents into forms, overlapping the photo-check idea.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-21"
+          ]
+        },
+        {
+          "statement": "No public evidence was found on how firms handle clients with limited technology access, or on whether automatic name/date cross-checks of document photos are wanted.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "Given that Docketwise and LollyLaw already offer reverse autofill/two-way sync and N/A autofill, what concrete failure do paralegals still hit when correcting forms?",
+      "category": "current_solution",
+      "priority": "high"
+    },
+    {
+      "question": "Would firms run a second forms tool alongside their existing case-management system for new cases only, or does the tool need billing/CRM to replace incumbents?",
+      "category": "other",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "8am DocketWise",
+      "url": "https://www.docketwise.com",
+      "kind": "direct",
+      "description": "Immigration case management with Smart Forms filled from one multilingual intake questionnaire, N/A autofill, reverse autofill, AI document data capture, e-filing; owned by 8am (MyCase/AffiniPay), not Clio.",
+      "pricing_note": "Basic $80/user/month on docketwise.com; Software Finder lists $90 / $120 / $140 per user per month (Sep 2026).",
+      "evidence_refs": [
+        "ev-12",
+        "ev-13",
+        "ev-14",
+        "ev-15",
+        "ev-17",
+        "ev-20",
+        "ev-21",
+        "ev-34",
+        "ev-35"
+      ],
+      "sentiment": [
+        {
+          "statement": "Reviewers praise ease of use and accurate, frequently updated forms.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23"
+          ]
+        },
+        {
+          "statement": "Technical issues with forms are a frequent complaint; one reviewer calls it overpriced and poorly integrated with Clio.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18",
+            "ev-19"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "LollyLaw",
+      "url": "https://www.lollylaw.com",
+      "kind": "direct",
+      "description": "All-in-one immigration practice management (intake, LollyForms, billing) owned by Paradigm; advertises two-way form/record sync and form-edition notifications.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-10",
+        "ev-11",
+        "ev-40",
+        "ev-39"
+      ],
+      "sentiment": [
+        {
+          "statement": "A reviewer says customer service is hit or miss; other reviewers praise support.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "eimmigration by Cerenade",
+      "url": "https://www.cerenade.com",
+      "kind": "direct",
+      "description": "Immigration case management and forms; claims 17,000+ users and was the second most used product in the 2019 survey.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-37",
+        "ev-38",
+        "ev-31"
+      ],
+      "sentiment": [
+        {
+          "statement": "One reviewer dislikes that only one user can access an account at a time.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-04",
+      "name": "Mitratech INSZoom",
+      "url": "https://mitratech.com/products/inszoom/",
+      "kind": "direct",
+      "description": "Immigration case management aimed at law firms, corporate HR, universities and large nonprofits; most used system in the 2019 survey.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-41",
+        "ev-31"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "Tracker (ImmigrationTracker, Mitratech)",
+      "url": null,
+      "kind": "direct",
+      "description": "Immigration case management product used by larger firms (7% of 2019 survey respondents).",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-31"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "8am MyCase (immigration)",
+      "url": "https://www.mycase.com/solutions/immigration-law-software/",
+      "kind": "indirect",
+      "description": "General practice management with immigration form-filling in 12 client languages and form data linked to case files.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-36"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Clio",
+      "url": "https://www.clio.com",
+      "kind": "indirect",
+      "description": "General practice management used for client management and billing alongside a separate forms tool; 6% of 2019 survey respondents used it for immigration.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-24",
+        "ev-31"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "Adobe Acrobat + USCIS fillable PDFs",
+      "url": null,
+      "kind": "manual",
+      "description": "Filling official USCIS PDFs by hand, sometimes with Google Drive for files.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-32",
+        "ev-22"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "CitizenPath",
+      "url": "https://citizenpath.com",
+      "kind": "service",
+      "description": "DIY filing service for self-filers that checks answers, handles not-applicable fields, edition and fee checks; an alternative to hiring a firm for simple cases.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-42"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most immigration firms prepare forms in dedicated case-management software (INSZoom, Cerenade, LawLogix, Tracker, Docketwise, LollyLaw), often alongside Clio or MyCase for billing.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-31",
+        "ev-24",
+        "ev-40"
+      ]
+    },
+    {
+      "statement": "Paralegals gather client data and documents and prepare forms, with attorney review.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-33",
+        "ev-52",
+        "ev-109"
+      ]
+    },
+    {
+      "statement": "A minority fill USCIS PDFs manually in Adobe Acrobat.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-32"
+      ]
+    },
+    {
+      "statement": "Leading tools already include multilingual mobile intake, N/A autofill, two-way sync and AI document capture.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-12",
+        "ev-15",
+        "ev-10",
+        "ev-21"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Lopez Immigration",
+      "website": "https://lopezimmigration.com",
+      "icp_id": null,
+      "location": "Atlanta, GA",
+      "industry": "Immigration law firm",
+      "description": "Immigration-only Atlanta firm whose paralegal and legal assistant prepare family-based forms.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-50"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-50",
+        "ev-51",
+        "ev-52",
+        "ev-53"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Immigration-only firm with paralegal and legal assistant on family cases.",
+          "evidence_refs": [
+            "ev-52",
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Staff describe preparing translations, forms and applications by hand.",
+          "evidence_refs": [
+            "ev-52"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Lisa Amezaga",
+          "role": "Immigration Paralegal",
+          "email": null,
+          "evidence_ref": "ev-51"
+        },
+        {
+          "name": "Cynthia Toro",
+          "role": "Legal Assistant",
+          "email": null,
+          "evidence_ref": "ev-52"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "Alaz Law Firm PLLC",
+      "website": "https://www.alazlaw.com",
+      "icp_id": null,
+      "location": "Allen, TX",
+      "industry": "Immigration law firm",
+      "description": "Dallas-area firm doing family and employment green cards; case manager handles petition preparation.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-54"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-54",
+        "ev-55",
+        "ev-56",
+        "ev-57",
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Immigration plus corporate/estate work; family and employment green cards.",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Case manager role is document preparation and filing.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Guljan Jumayeva",
+          "role": "Immigration Case Manager",
+          "email": null,
+          "evidence_ref": "ev-55"
+        }
+      ]
+    },
+    {
+      "ref": "co-03",
+      "name": "Watson Immigration Law",
+      "website": "https://www.watsonimmigrationlaw.com",
+      "icp_id": null,
+      "location": "Seattle, WA",
+      "industry": "Immigration law firm",
+      "description": "Seattle boutique (8-person team) with managing paralegal and paralegals; mostly business/investor immigration.",
+      "size_estimate": {
+        "min": 8,
+        "max": 8,
+        "signal": "Team page lists 8 people",
+        "evidence_ref": "ev-61"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-59",
+        "ev-60",
+        "ev-61",
+        "ev-112"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small team with paralegals, but focus is employment/investor rather than family.",
+          "evidence_refs": [
+            "ev-61",
+            "ev-112"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Tahmina Watson",
+          "role": "Founder & Immigration Attorney",
+          "email": null,
+          "evidence_ref": "ev-60"
+        }
+      ]
+    },
+    {
+      "ref": "co-04",
+      "name": "Powell Law, PLLC",
+      "website": "https://cuboid-hypersphere-4jnt.squarespace.com",
+      "icp_id": null,
+      "location": "Williamsburg, VA",
+      "industry": "Immigration law firm",
+      "description": "Immigration practice with owner-attorney, two paralegals and office staff; family and humanitarian cases.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62",
+        "ev-63",
+        "ev-64",
+        "ev-65",
+        "ev-66"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Exactly the ICP: one attorney, two paralegals, family-focused.",
+          "evidence_refs": [
+            "ev-63",
+            "ev-64",
+            "ev-65",
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Sharon Powell",
+          "role": "Immigration Attorney (owner)",
+          "email": null,
+          "evidence_ref": "ev-63"
+        },
+        {
+          "name": "Kendra Heinrich",
+          "role": "Paralegal",
+          "email": null,
+          "evidence_ref": "ev-64"
+        },
+        {
+          "name": "Isabella Wilson",
+          "role": "Paralegal",
+          "email": null,
+          "evidence_ref": "ev-65"
+        }
+      ]
+    },
+    {
+      "ref": "co-05",
+      "name": "Blake Immigration Law",
+      "website": "https://www.blakeimmigration.com",
+      "icp_id": null,
+      "location": "Alexandria, VA",
+      "industry": "Immigration law firm",
+      "description": "Alexandria firm with four attorneys plus paralegals; removal defense, asylum and family petitions.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-67",
+        "ev-68",
+        "ev-69",
+        "ev-70"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small immigration-only firm with paralegals and family petitions.",
+          "evidence_refs": [
+            "ev-69",
+            "ev-70"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Jillian Blake",
+          "role": "Principal Attorney/Owner",
+          "email": null,
+          "evidence_ref": "ev-68"
+        }
+      ]
+    },
+    {
+      "ref": "co-06",
+      "name": "Torregoza Legal PLLC",
+      "website": "https://torregozalegalpllc.squarespace.com",
+      "icp_id": null,
+      "location": "New York, NY",
+      "industry": "Immigration law firm",
+      "description": "NYC founder-led immigration firm doing adjustment of status, consular processing, naturalization and artist visas.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-71",
+        "ev-72",
+        "ev-73"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Founder-led small firm doing family and employment filings.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Angela Torregoza",
+          "role": "Founder",
+          "email": null,
+          "evidence_ref": "ev-72"
+        }
+      ]
+    },
+    {
+      "ref": "co-07",
+      "name": "Ahluwalia Law Offices, PC",
+      "website": "https://www.ahluwalialaw.com",
+      "icp_id": null,
+      "location": "Addison (Dallas), TX",
+      "industry": "Immigration law firm",
+      "description": "Dallas/Houston firm with family and employment immigration practice.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-74",
+        "ev-75",
+        "ev-76",
+        "ev-07"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Family and employment immigration, but also corporate and family law; size unknown.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 1,
+          "rationale": "Publishes alerts on form-edition rejections, showing awareness of the edition problem.",
+          "evidence_refs": [
+            "ev-07"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Pallavi Ahluwalia",
+          "role": "Immigration Lawyer (firm lead)",
+          "email": null,
+          "evidence_ref": "ev-75"
+        }
+      ]
+    },
+    {
+      "ref": "co-08",
+      "name": "ImLaw",
+      "website": "https://imlaw.squarespace.com",
+      "icp_id": null,
+      "location": "Grand Rapids, MI",
+      "industry": "Immigration law firm",
+      "description": "Immigration-only boutique handling employment and family green cards and naturalization.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77",
+        "ev-78",
+        "ev-79",
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Immigration-only boutique with family and employment cases.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Susan Im",
+          "role": "Founder & Immigration Attorney",
+          "email": null,
+          "evidence_ref": "ev-78"
+        },
+        {
+          "name": "Kathy Poppenger",
+          "role": "Immigration Attorney",
+          "email": null,
+          "evidence_ref": "ev-79"
+        }
+      ]
+    },
+    {
+      "ref": "co-09",
+      "name": "Law Office of Christine Troy",
+      "website": "https://law-office-of-christine-troy.squarespace.com",
+      "icp_id": null,
+      "location": "San Francisco, CA",
+      "industry": "Immigration law firm",
+      "description": "SF immigration-only practice (owner plus of-counsel attorneys and staff) handling family, business and naturalization.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-81"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-81",
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Owner-led immigration-only practice.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Christine Troy",
+          "role": "Owner",
+          "email": null,
+          "evidence_ref": "ev-82"
+        }
+      ]
+    },
+    {
+      "ref": "co-10",
+      "name": "Music City Visa (Law Offices of Sean Lewis, PLLC)",
+      "website": "https://www.musiccityvisa.com",
+      "icp_id": null,
+      "location": "Nashville, TN",
+      "industry": "Immigration law firm",
+      "description": "Spanish-language immigration practice serving Tennessee's Hispanic community; family and work visas.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-83"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-83",
+        "ev-84"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small immigration firm serving Spanish-speaking clients, relevant to multilingual intake.",
+          "evidence_refs": [
+            "ev-83",
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Sean Lewis",
+          "role": "Immigration Attorney",
+          "email": null,
+          "evidence_ref": "ev-83"
+        }
+      ]
+    },
+    {
+      "ref": "co-11",
+      "name": "Found Immigration",
+      "website": "https://foundimmigration.com",
+      "icp_id": null,
+      "location": "Englewood, NJ",
+      "industry": "Immigration law firm",
+      "description": "Solo NJ practice (secondary ICP) doing family and employment immigration with no paralegal.",
+      "size_estimate": {
+        "min": 1,
+        "max": 1,
+        "signal": "Site says clients work with Linda, not a paralegal or case manager",
+        "evidence_ref": "ev-87"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-85"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-85",
+        "ev-86",
+        "ev-87"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Solo attorney, not the 2-10 primary ICP; fits the solo ICP.",
+          "evidence_refs": [
+            "ev-86",
+            "ev-87"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Linda Chan Attreed",
+          "role": "Founder and Immigration Attorney",
+          "email": null,
+          "evidence_ref": "ev-86"
+        }
+      ]
+    },
+    {
+      "ref": "co-12",
+      "name": "Parrilli Renison LLC (Entry Law)",
+      "website": "https://www.entrylaw.com",
+      "icp_id": null,
+      "location": "Portland, OR",
+      "industry": "Immigration law firm",
+      "description": "Two-attorney Portland immigration firm doing business and family petitions.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-88"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-88",
+        "ev-89",
+        "ev-90"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small firm, mostly business immigration with some family petitions.",
+          "evidence_refs": [
+            "ev-90"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Tifani Parrilli",
+          "role": "Immigration Attorney",
+          "email": null,
+          "evidence_ref": "ev-89"
+        },
+        {
+          "name": "Brent Renison",
+          "role": "Immigration Attorney",
+          "email": null,
+          "evidence_ref": "ev-90"
+        }
+      ]
+    },
+    {
+      "ref": "co-13",
+      "name": "SimVisa",
+      "website": "https://simvisa.com",
+      "icp_id": null,
+      "location": "Chicago, IL",
+      "industry": "Immigration law firm",
+      "description": "Chicago immigration firm focused on family-based cases that markets error and rejection avoidance.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-91"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-91",
+        "ev-92"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Family-based focus; size unknown; tech-forward model may build its own tools.",
+          "evidence_refs": [
+            "ev-92"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 1,
+          "rationale": "Markets minimizing errors and rejection.",
+          "evidence_refs": [
+            "ev-92"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Barraza Law",
+      "website": "https://barraza-law.com",
+      "icp_id": null,
+      "location": "Aurora, IL",
+      "industry": "Immigration law firm",
+      "description": "Bilingual immigration practice led by one attorney, handling legalization, waivers and removal cases.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-93"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-93",
+        "ev-94"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small bilingual immigration practice; size and family-petition share unknown.",
+          "evidence_refs": [
+            "ev-94"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Moises Barraza",
+          "role": "Immigration Lawyer",
+          "email": null,
+          "evidence_ref": "ev-94"
+        }
+      ]
+    },
+    {
+      "ref": "co-15",
+      "name": "Roman Law Firm",
+      "website": "https://sites.google.com/romanlaw.org/home",
+      "icp_id": null,
+      "location": "Florida",
+      "industry": "Immigration law firm",
+      "description": "Florida immigration firm with an attorney and four staff; paralegals work family and marriage petitions.",
+      "size_estimate": {
+        "min": 5,
+        "max": 5,
+        "signal": "Team page lists attorney plus four staff",
+        "evidence_ref": "ev-96"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-95"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-95",
+        "ev-96"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Attorney plus paralegals on family and marriage petitions.",
+          "evidence_refs": [
+            "ev-95",
+            "ev-96"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Law Office of Alena Shautsova",
+      "website": "https://shautsova.com",
+      "icp_id": null,
+      "location": "Brooklyn, NY",
+      "industry": "Immigration law firm",
+      "description": "NY immigration firm whose senior paralegal manages family, employment and I-130 petitions.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-97"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-97",
+        "ev-98",
+        "ev-99"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Immigration firm with a paralegal team doing I-130s.",
+          "evidence_refs": [
+            "ev-99"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 1,
+          "rationale": "Paralegal-led preparation of I-130 and other petitions.",
+          "evidence_refs": [
+            "ev-99"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Gregory Abrams",
+          "role": "Senior Paralegal and Team Manager",
+          "email": "greg.abrams@shautsova.com",
+          "evidence_ref": "ev-98"
+        }
+      ]
+    },
+    {
+      "ref": "co-17",
+      "name": "Law Offices of Jacob J. Sapochnick",
+      "website": "https://www.visalawyerblog.com",
+      "icp_id": null,
+      "location": "San Diego, CA",
+      "industry": "Immigration law firm",
+      "description": "San Diego immigration firm with six attorneys; staff complete paperwork for marriage adjustments and naturalization.",
+      "size_estimate": {
+        "min": 6,
+        "max": null,
+        "signal": "Six attorneys in the office",
+        "evidence_ref": "ev-102"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-100"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-100",
+        "ev-101",
+        "ev-102",
+        "ev-103"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Six attorneys, probably above 10 staff; still a boutique.",
+          "evidence_refs": [
+            "ev-102"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 1,
+          "rationale": "Staff analyze documents and complete paperwork.",
+          "evidence_refs": [
+            "ev-103"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Linda Parrish",
+          "role": "Senior Paralegal",
+          "email": null,
+          "evidence_ref": "ev-101"
+        }
+      ]
+    },
+    {
+      "ref": "co-18",
+      "name": "ST Law Office, PLLC",
+      "website": "https://stlawoffice.com",
+      "icp_id": null,
+      "location": "Boca Raton, FL",
+      "industry": "Immigration law firm",
+      "description": "Florida immigration firm handling family adjustment, consular processing, VAWA and naturalization.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-104"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-104",
+        "ev-105"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Family-focused immigration firm; size unknown.",
+          "evidence_refs": [
+            "ev-105"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "Immigrants First, PLLC",
+      "website": "https://immigrantsfirst2024.mocha.themodernfirm.com",
+      "icp_id": null,
+      "location": "Northern Virginia / DC metro",
+      "industry": "Immigration law firm",
+      "description": "Northern Virginia immigration firm handling family unity, humanitarian and removal cases.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-106"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-106",
+        "ev-107"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Immigration-only firm; size unknown.",
+          "evidence_refs": [
+            "ev-107"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "Modern Law Group",
+      "website": "https://lawofficeimmigration.com",
+      "icp_id": null,
+      "location": "Fort Worth, TX (plus NY, Chicago, Pittsburgh offices)",
+      "industry": "Immigration law firm",
+      "description": "Multi-office family-immigration firm; senior paralegal reviews thousands of petitions. Likely larger than 10 staff.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-108"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-108",
+        "ev-109",
+        "ev-110"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Strong family-petition volume, but multi-office and probably above the 2-10 band.",
+          "evidence_refs": [
+            "ev-109"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "High family-case volume handled by paralegals.",
+          "evidence_refs": [
+            "ev-109"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Carlos Gomez",
+          "role": "Lead Spanish Speaking Paralegal - TX",
+          "email": null,
+          "evidence_ref": "ev-110"
+        }
+      ]
+    },
+    {
+      "ref": "co-21",
+      "name": "Locke Immigration Law",
+      "website": "https://www.lockeimmigration.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Immigration law firm",
+      "description": "Boutique immigration team with paralegals; focuses on EB-1A/O-1 talent visas, not family petitions.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [],
+      "evidence_refs": [
+        "ev-111"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Boutique with paralegals, but location not stated on the cited page and employment focus.",
+          "evidence_refs": [
+            "ev-111"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of the firm's software stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No other signals found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
