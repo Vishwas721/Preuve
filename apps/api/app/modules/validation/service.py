@@ -304,6 +304,7 @@ async def research_score_input(
         questions=tuple(
             research_score.QuestionInput(str(u.id), u.priority.value, findings.get(u.id))
             for u in unknowns
+            if u.status != UnknownStatus.DROPPED  # dropped questions don't count
         ),
         competitors=tuple(
             research_score.CompetitorEntry(

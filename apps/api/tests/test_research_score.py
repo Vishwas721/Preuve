@@ -179,3 +179,19 @@ async def test_endpoint_and_portfolio(
 
 async def test_research_score_requires_own_idea(client: AsyncClient) -> None:
     assert (await client.get(f"/ideas/{uuid.uuid4()}/research-score")).status_code == 404
+
+
+async def test_dropped_questions_do_not_count(client: AsyncClient) -> None:
+    body = {"title": "Q", "description": "d", "target_market": "US"}
+    idea = (await client.post("/ideas", json=body)).json()["id"]
+    await client.post(f"/ideas/{idea}/unknowns", json={"question": "Kept?"})
+    dup = (await client.post(f"/ideas/{idea}/unknowns", json={"question": "Kept?"})).json()
+
+    def questions(data):
+        return next(d for d in data["dimensions"] if d["key"] == "questions")["reason"]
+
+    before = (await client.get(f"/ideas/{idea}/research-score")).json()
+    assert "of 2 questions" in questions(before)
+    await client.patch(f"/ideas/{idea}/unknowns/{dup['id']}", json={"status": "dropped"})
+    after = (await client.get(f"/ideas/{idea}/research-score")).json()
+    assert "of 1 question" in questions(after)
