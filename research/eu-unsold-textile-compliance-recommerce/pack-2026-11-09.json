@@ -1,0 +1,2900 @@
+{
+ "meta": {
+  "schema_version": "1.2",
+  "method_version": "3",
+  "idea_id": "eed4d3a3-d01e-463b-9f96-6a15589c56b5",
+  "researcher": "claude-code",
+  "started_at": "2026-11-09T09:00:00Z",
+  "finished_at": "2026-11-09T13:00:00Z",
+  "queries": [
+   "ESPR ban destruction unsold apparel footwear 19 July 2026 disclosure delegated act",
+   "unsold textiles destruction ban derogations delegated regulation 2026 commission adopted exemptions",
+   "fashion brands excess inventory unsold stock percentage overproduction survey 2025",
+   "Musthad excess stock fashion brands platform",
+   "ZeroW unsold textiles ESPR software",
+   "\"ZeroW\" fashion unsold stock startup",
+   "Recovo deadstock fabric marketplace brands",
+   "Reflaunt resale-as-a-service brands unsold inventory ESPR",
+   "Percentil brands unsold stock resale service B2B",
+   "unsold goods destruction ban ESPR solution donation platform brands Comerso OR Dons Solidaires OR Agence du Don en Nature textiles",
+   "\"we do not destroy\" unsold products H&M OR Inditex OR Zalando policy unsold clothing (contradiction)",
+   "\"unsold consumer products\" disclosure 2025 annual report fashion discarded tonnes ESPR Article 24 website",
+   "job \"excess stock\" OR \"off-price\" OR \"stock liquidation\" manager fashion brand Europe jobs 2026",
+   "fashion excess inventory holding cost storage percent per year apparel warehouse carrying cost",
+   "France AGEC unsold goods destruction ban enforcement controls fines few results evaluation (contradiction)",
+   "Agence du Don en Nature brands donate unsold products textiles companies AGEC",
+   "Otrium brands complaints excess inventory platform problems fees (complaint search)",
+   "\"circularity manager\" fashion job unsold stock ESPR destruction ban responsibilities",
+   "Comerso invendus non alimentaires textile plateforme entreprises",
+   "\"discarded unsold consumer products\" disclosure 2025 fashion brand website ESPR Article 24",
+   "fashion group appoints Chief Supply Chain Officer OR Chief Sustainability Officer 2026 Europe apparel",
+   "corporate.zalando.com management board; hmgroup.com Chief Supply Chain Officer; ovscorporate/kappahl/c-and-a management team"
+  ],
+  "notes": "Market: EU mid-market and large fashion brands/retailers. The ban (ESPR Art. 25) has applied to large companies since 19 July 2026; recycling counts as destruction. Several sources were unfetchable (just-style, Otrium, Recovo, Inspectorio, Greenpeace PDF, Mammut PDF, EuroCommerce, LSA, WSJ via marketscreener) and are not cited. Founder-listed ZeroW: no public evidence found. Recovo: site disallowed by robots.txt, so not included as a competitor. Budget unknown: no evidence. Prospects: 20 companies for the primary ICP (large EU fashion brands/retailers); ASOS is UK-headquartered but sells into the EU and is included because it publishes an ESPR disclosure. Contacts only from companies' own pages (9 people at 7 companies). Several company pages were thin (Inditex, Benetton, s.Oliver, Otto, OTB), so city locations in several entries come from general knowledge and are not evidenced; their geography and size are omitted. No company-specific problem evidence (e.g. job postings) was found except ASOS and H&M."
+ },
+ "evidence": [
+  {
+   "ref": "ev-01",
+   "url": "https://products.cooley.com/2026/05/07/deep-dive-eu-finalises-new-requirements-for-unsold-consumer-products-under-espr/",
+   "title": "Deep Dive: EU Finalises New Requirements for Unsold Consumer Products Under ESPR (Cooley)",
+   "source_type": "industry_publication",
+   "published_at": "2026-05-07",
+   "quote": "(applies from July 19, 2026) A ban on the destruction of certain unsold consumer products – currently footwear, apparel and clothing accessories (e.g. hats, ties, belts, scarves, etc.), as identified in Annex VII. This ban also prohibits the recycling of these unsold products.",
+   "statement": "The ESPR destruction ban for apparel, accessories and footwear applies from 19 July 2026 and also prohibits recycling unsold products, so recycling is not a free routing outlet.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960",
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-02",
+   "url": "https://products.cooley.com/2026/05/07/deep-dive-eu-finalises-new-requirements-for-unsold-consumer-products-under-espr/",
+   "title": "Deep Dive: EU Finalises New Requirements for Unsold Consumer Products Under ESPR (Cooley)",
+   "source_type": "industry_publication",
+   "published_at": "2026-05-07",
+   "quote": "Documentation requirements, including statements from waste treatment operators. Companies will need to keep the information and documentation demonstrating the delivery and reception of discarded unsold consumer products for at least five years from the time the disclosures were made.",
+   "statement": "The implementing regulation requires five years of documentation of delivery and reception of discarded unsold goods, including statements from waste treatment operators: a chain-of-custody evidence need.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-03",
+   "url": "https://products.cooley.com/2026/05/07/deep-dive-eu-finalises-new-requirements-for-unsold-consumer-products-under-espr/",
+   "title": "Deep Dive: EU Finalises New Requirements for Unsold Consumer Products Under ESPR (Cooley)",
+   "source_type": "industry_publication",
+   "published_at": "2026-05-07",
+   "quote": "Many businesses have already been preparing for their first disclosures on discarded unsold consumer products by gathering data on quantities of unsold goods and updating their contracts to ensure they can obtain the necessary information and assurances from disposal service providers.",
+   "statement": "Companies are preparing disclosures by gathering unsold-goods data and updating contracts with disposal service providers, i.e. largely through contracts and internal data collection.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876",
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-04",
+   "url": "https://products.cooley.com/2026/05/07/deep-dive-eu-finalises-new-requirements-for-unsold-consumer-products-under-espr/",
+   "title": "Deep Dive: EU Finalises New Requirements for Unsold Consumer Products Under ESPR (Cooley)",
+   "source_type": "industry_publication",
+   "published_at": "2026-05-07",
+   "quote": "To rely on a derogation, businesses must document their reasoning. For each derogation, the delegated regulation sets out specific documentation requirements",
+   "statement": "Every use of a derogation must be documented with derogation-specific evidence.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-05",
+   "url": "https://products.cooley.com/2026/05/07/deep-dive-eu-finalises-new-requirements-for-unsold-consumer-products-under-espr/",
+   "title": "Deep Dive: EU Finalises New Requirements for Unsold Consumer Products Under ESPR (Cooley)",
+   "source_type": "industry_publication",
+   "published_at": "2026-05-07",
+   "quote": "While third-party assurance obligations were considered in earlier drafts, these have not been included in the final text.",
+   "statement": "The final disclosure rules dropped third-party assurance, lowering the evidence bar compared with earlier drafts.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876",
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-06",
+   "url": "https://products.cooley.com/2026/05/07/deep-dive-eu-finalises-new-requirements-for-unsold-consumer-products-under-espr/",
+   "title": "Deep Dive: EU Finalises New Requirements for Unsold Consumer Products Under ESPR (Cooley)",
+   "source_type": "industry_publication",
+   "published_at": "2026-05-07",
+   "quote": "Donation unviable. The product was either offered for donation to at least three suitable social economic entities in the EU but not accepted or offered via the business’s website for a period of at least eight weeks with no recipient found.",
+   "statement": "Destruction is allowed after a documented donation offer to three EU social economy entities or eight weeks on the company website, which defines a concrete routing workflow and evidence trail.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc",
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-07",
+   "url": "https://environment.ec.europa.eu/news/new-eu-rules-stop-destruction-unsold-clothes-and-shoes-2026-02-09_en",
+   "title": "New EU rules to stop destruction of unsold clothes and shoes (European Commission)",
+   "source_type": "news",
+   "published_at": "2026-02-09",
+   "quote": "Every year in Europe, an estimated 4-9% of unsold textiles are destroyed before ever being worn.",
+   "statement": "The Commission estimates only 4-9% of unsold textiles are destroyed, so most unsold stock already flows to other channels.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-08",
+   "url": "https://environment.ec.europa.eu/news/new-eu-rules-stop-destruction-unsold-clothes-and-shoes-2026-02-09_en",
+   "title": "New EU rules to stop destruction of unsold clothes and shoes (European Commission)",
+   "source_type": "news",
+   "published_at": "2026-02-09",
+   "quote": "In France alone, around €630 million worth of unsold products are destroyed each year. Online shopping also fuels the issue: in Germany, nearly 20 million returned items are discarded annually.",
+   "statement": "The Commission cites EUR 630m of unsold products destroyed yearly in France and nearly 20 million returned items discarded yearly in Germany.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-09",
+   "url": "https://cms.law/en/int/legal-updates/new-eu-rules-to-prevent-the-destruction-of-unsold-textiles",
+   "title": "New EU rules to prevent the destruction of unsold textiles (CMS)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Businesses with high return rates (particularly those with significant online sales) may face substantial operational and cost challenges to be fully compliant.",
+   "statement": "A law firm expects high-return, online-heavy businesses to face substantial operational and cost challenges to comply.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960",
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-10",
+   "url": "https://cms.law/en/int/legal-updates/new-eu-rules-to-prevent-the-destruction-of-unsold-textiles",
+   "title": "New EU rules to prevent the destruction of unsold textiles (CMS)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Failure to comply with the ESPR requirements may expose businesses to significant penalties (determined at Member State level).",
+   "statement": "Penalties are set per Member State, so enforcement will vary.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-11",
+   "url": "https://sustainablefutures.linklaters.com/post/102miiy/eu-espr-commission-adopts-final-acts-on-unsold-consumer-product-destruction-and",
+   "title": "EU ESPR: Commission adopts final acts on unsold consumer product destruction and disclosure (Linklaters)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "The ESPR required the implementing act on the disclosure format to be adopted by 19 July 2025, and the delay in its adoption has created challenges for companies, leaving them in legal limbo regarding the disclosure format.",
+   "statement": "The late disclosure-format act left companies in legal limbo about how to report.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960",
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-12",
+   "url": "https://sustainablefutures.linklaters.com/post/102miiy/eu-espr-commission-adopts-final-acts-on-unsold-consumer-product-destruction-and",
+   "title": "EU ESPR: Commission adopts final acts on unsold consumer product destruction and disclosure (Linklaters)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "The final text clarifies that donated products are not covered by disclosure on discarded unsold consumer products.",
+   "statement": "Donated products fall outside the discard disclosure, so routing to donation removes items from the report.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-13",
+   "url": "https://transition-pathways.europa.eu/textiles/opinions/eu-ban-destruction-unsold-clothing-scope-exceptions-and-open-questions",
+   "title": "The EU Ban on the Destruction of Unsold Clothing: Scope, Exceptions and Open Questions (EU Textiles Ecosystem Platform)",
+   "source_type": "industry_publication",
+   "published_at": "2026-05-26",
+   "quote": "The impact of the ban on destruction will be far-reaching, and the business sector is currently ill-prepared for it, given the still-weak reuse supply chain and the volumes of products involved.",
+   "statement": "An opinion on the EU textiles platform says the sector is ill-prepared because the reuse supply chain is weak relative to volumes.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960",
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-14",
+   "url": "https://transition-pathways.europa.eu/textiles/opinions/eu-ban-destruction-unsold-clothing-scope-exceptions-and-open-questions",
+   "title": "The EU Ban on the Destruction of Unsold Clothing: Scope, Exceptions and Open Questions (EU Textiles Ecosystem Platform)",
+   "source_type": "industry_publication",
+   "published_at": "2026-05-26",
+   "quote": "According to the EEA, in Europe, the average return rate for clothes bought online is estimated at over 20%; in other words, one in five items sold is returned, and around one-third of returned items are destined for destruction.",
+   "statement": "Online clothing returns exceed 20%, and about a third of returns were destined for destruction (EEA), a large flow the ban now redirects.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6",
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-15",
+   "url": "https://transition-pathways.europa.eu/textiles/opinions/eu-ban-destruction-unsold-clothing-scope-exceptions-and-open-questions",
+   "title": "The EU Ban on the Destruction of Unsold Clothing: Scope, Exceptions and Open Questions (EU Textiles Ecosystem Platform)",
+   "source_type": "industry_publication",
+   "published_at": "2026-05-26",
+   "quote": "the fact that repair is not economically viable for garments of low unit value. Finally, there is the difficulty of removing the brand’s distinctive marks from the garments; the issue goes beyond IPR infringement, as resold or donated recognizable items can negatively impact the brand’s position.",
+   "statement": "Repair is uneconomic for low-value garments and brands worry that resold or donated recognisable items hurt brand positioning: constraints on partner choice.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-16",
+   "url": "https://dcycle.io/blog/espr-textiles-ban-unsold-stock/",
+   "title": "ESPR textile ban: what your dead stock must now prove (Dcycle)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The problem is that this data lives scattered: in the ERP, on a delivery note, in the recycler’s email.",
+   "statement": "A vendor describes current disposition data as scattered across ERP, delivery notes and recycler emails, i.e. a manual process.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-17",
+   "url": "https://dcycle.io/blog/espr-textiles-ban-unsold-stock/",
+   "title": "ESPR textile ban: what your dead stock must now prove (Dcycle)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "the EU only has mechanical textile recycling capacity for 1% of that volume. There’s a legal obligation, but not yet the infrastructure to fully meet it.",
+   "statement": "The EU's mechanical textile recycling capacity covers about 1% of the destroyed volume, limiting downstream partner capacity.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-18",
+   "url": "https://projetcelsius.com/en/blog/unsold-textiles-destruction-ban/",
+   "title": "Destruction of unsold textiles: what the ban requires (Projet Celsius)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Without a clause requiring the waste service provider to account for each batch's fate, a brand can neither complete its publication nor prove that recycling preceded incineration.",
+   "statement": "Brands depend on waste service providers to report each batch's fate; without that, they cannot complete the disclosure.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-19",
+   "url": "https://projetcelsius.com/en/blog/unsold-textiles-destruction-ban/",
+   "title": "Destruction of unsold textiles: what the ban requires (Projet Celsius)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "The work is primarily logistical, involving warehouses, shops, customer services and waste service providers.",
+   "statement": "Compliance work sits mainly with logistics: warehouses, shops, customer services and waste providers.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4b4112ce-ec4f-4fc0-ac91-353d452169cb"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-20",
+   "url": "https://projetcelsius.com/en/blog/unsold-textiles-destruction-ban/",
+   "title": "Destruction of unsold textiles: what the ban requires (Projet Celsius)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "It applies from the first full financial year beginning after that date, meaning the 2028 financial year for a 31 December year-end. The 2025 to 2027 publications remain due, using a format of the company's choice.",
+   "statement": "The mandatory EU disclosure template only applies from FY2028 for calendar-year companies; until then the format is free, which delays the hard reporting requirement.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960",
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-21",
+   "url": "https://projetcelsius.com/en/blog/unsold-textiles-destruction-ban/",
+   "title": "Destruction of unsold textiles: what the ban requires (Projet Celsius)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "In France, Article L. 541-15-8 of the French Environmental Code, introduced by the AGEC law, prohibits disposal of new unsold non-food goods, meaning landfilling or incinerating them. The ban has applied since 1 January 2022",
+   "statement": "France has banned disposal of new unsold non-food goods since 2022, so French brands already run alternatives.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-22",
+   "url": "https://projetcelsius.com/en/faq/dpp-espr-affichage-env/que-risque-une-entreprise-qui-detruit-ses-invendus/",
+   "title": "What does a company risk if it destroys unsold goods? (Projet Celsius)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "In France, the AGEC law provides for an administrative fine of up to €3,000 for an individual and €15,000 for a legal entity, with possible publication of the decision. … The bill authorising the DGCCRF to enforce the regulation had not yet been adopted as of 28 September 2026.",
+   "statement": "French fines are capped at EUR 15,000 per legal entity and, as of late September 2026, France had not yet empowered its enforcer for the EU ban: weak near-term enforcement pressure.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960",
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-23",
+   "url": "https://fashionunited.uk/news/business/european-destruction-ban-is-officially-in-effect-a-historic-day-for-fashion/2026072089302",
+   "title": "European 'destruction ban' is officially in effect: a historic day for fashion? (FashionUnited)",
+   "source_type": "news",
+   "published_at": "2026-07-20",
+   "quote": "No German or European manufacturer simply destroys new goods, although that is the impression the name of the law gives.",
+   "statement": "The German textile and fashion association says European manufacturers do not simply destroy new goods.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-24",
+   "url": "https://fashionunited.uk/news/business/european-destruction-ban-is-officially-in-effect-a-historic-day-for-fashion/2026072089302",
+   "title": "European 'destruction ban' is officially in effect: a historic day for fashion? (FashionUnited)",
+   "source_type": "news",
+   "published_at": "2026-07-20",
+   "quote": "surpluses in practice go to outlets or charity. Only minimal quantities that are unusable due to transport issues (such as mould contamination) or significant production defects are discarded.",
+   "statement": "Per the German association, surpluses already go to outlets or charity, and only minimal unusable quantities are discarded.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-25",
+   "url": "https://fashionunited.uk/news/business/european-destruction-ban-is-officially-in-effect-a-historic-day-for-fashion/2026072089302",
+   "title": "European 'destruction ban' is officially in effect: a historic day for fashion? (FashionUnited)",
+   "source_type": "news",
+   "published_at": "2026-07-20",
+   "quote": "As long as these conditions are lacking in the EU, the destruction ban, with all its extra administrative red tape, will remain merely a paper tiger.",
+   "statement": "The German association calls the ban a paper tiger that mainly adds red tape.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-26",
+   "url": "https://fashionunited.uk/news/business/european-destruction-ban-is-officially-in-effect-a-historic-day-for-fashion/2026072089302",
+   "title": "European 'destruction ban' is officially in effect: a historic day for fashion? (FashionUnited)",
+   "source_type": "news",
+   "published_at": "2026-07-20",
+   "quote": "in practice, these items already find a second life through sales, street markets, outlets, or buyers who take over the remaining stock. For these countries, the law mainly confirms existing practices and forces companies to keep records of them from now on.",
+   "statement": "A Belgian industry association says Benelux brands already place surplus via sales, outlets or stock buyers; the law mainly adds record-keeping.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6",
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-27",
+   "url": "https://fashionunited.uk/news/business/european-destruction-ban-is-officially-in-effect-a-historic-day-for-fashion/2026072089302",
+   "title": "European 'destruction ban' is officially in effect: a historic day for fashion? (FashionUnited)",
+   "source_type": "news",
+   "published_at": "2026-07-20",
+   "quote": "They sell unsold stock in bulk as 'second-hand clothing' or 'residual stock' to traders outside the EU, for example in West Africa or Latin America. On paper, this is considered re-use and is therefore legal.",
+   "statement": "Bulk export of unsold stock to non-EU traders counts as reuse on paper, a cheap legal route that competes with a vetted-partner platform.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6",
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-28",
+   "url": "https://fashionunited.uk/news/business/european-destruction-ban-is-officially-in-effect-a-historic-day-for-fashion/2026072089302",
+   "title": "European 'destruction ban' is officially in effect: a historic day for fashion? (FashionUnited)",
+   "source_type": "news",
+   "published_at": "2026-07-20",
+   "quote": "many SMEs are taking a wait-and-see approach: \"In many cases, companies are waiting until the entire regulatory framework is in effect before taking action.\"",
+   "statement": "A Spanish sustainable-fashion association reports many SMEs waiting for the whole framework before acting.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e406d9e-14da-4a39-86a5-e2f0c1a52960"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-29",
+   "url": "https://www.asosplc.com/sustainability/supply-chain-and-policies/discarded-products-reporting/",
+   "title": "Discarded Products Reporting (ASOS plc)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We take significant steps to prevent the destruction of unsold consumer goods by prioritising reuse routes, including resale through sample sale channels and sales to third-party product resellers.",
+   "statement": "ASOS handles unsold goods through sample sales and sales to third-party resellers.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": "ASOS"
+  },
+  {
+   "ref": "ev-30",
+   "url": "https://www.asosplc.com/sustainability/supply-chain-and-policies/discarded-products-reporting/",
+   "title": "Discarded Products Reporting (ASOS plc)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "To support future reporting, we plan to implement additional data collection processes to verify assumptions related to product reseller behaviour, improve visibility of waste treatment routes and, where applicable, derogations, in future disclosures.",
+   "statement": "ASOS's own ESPR disclosure says it needs more data collection to verify reseller behaviour and see waste treatment routes: a reporting gap.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": "ASOS"
+  },
+  {
+   "ref": "ev-31",
+   "url": "https://www.asosplc.com/sustainability/supply-chain-and-policies/discarded-products-reporting/",
+   "title": "Discarded Products Reporting (ASOS plc)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Every product we purchase is a potential sale, and our commercial success is driven by maximising those sales. That means it is not in our interest to discard or destroy unsold goods.",
+   "statement": "ASOS states it is not in its interest to destroy unsold goods.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": "ASOS"
+  },
+  {
+   "ref": "ev-32",
+   "url": "https://www.reconomy.com/article/reconomy-interview-eu-circular-fashion-espr-unsold-stock/",
+   "title": "New EU rules signal shift towards circular fashion models, says Reconomy expert",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Unsold inventory moves from being a logistical issue handled quietly by operations teams to a visible metric that sustainability, finance and compliance teams all need to monitor,",
+   "statement": "Unsold inventory becomes a metric for sustainability, finance and compliance teams, not only operations: the stakeholder set widens.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "4b4112ce-ec4f-4fc0-ac91-353d452169cb"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-33",
+   "url": "https://www.reconomy.com/article/reconomy-interview-eu-circular-fashion-espr-unsold-stock/",
+   "title": "New EU rules signal shift towards circular fashion models, says Reconomy expert",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Many will also need to strengthen returns management processes so that products can be graded and routed more effectively into resale, donation, refurbishment or recycling streams.",
+   "statement": "Brands need grading and routing of returns into resale, donation, refurbishment or recycling streams.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6",
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-34",
+   "url": "https://hmgroup.com/news/updates-hm-executive-management/",
+   "title": "Updates to H&M Group Executive Management Team",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "David von Heijne took on the role of Chief Supply Chain Officer and joined the management team, reporting to Daniel Ervér, CEO, at the end of January. David will be heading a unified Supply Chain function, with end-to-end responsibility for the inventory flow.",
+   "statement": "H&M Group created a Chief Supply Chain Officer role with end-to-end responsibility for inventory flow, a likely owner of excess-stock decisions.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "4b4112ce-ec4f-4fc0-ac91-353d452169cb"
+   ],
+   "company_name": "H&M Group"
+  },
+  {
+   "ref": "ev-35",
+   "url": "https://eightx.co/blog/average-inventory-carrying-cost-by-vertical",
+   "title": "Inventory Carrying Cost by Vertical: 2025 Benchmarks (Eightx)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Apparel sits at 20 to 25 percent and its risk is markdowns and seasonal obsolescence, not theft",
+   "statement": "Practitioner benchmark: apparel carrying cost is about 20-25% of inventory value per year.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-36",
+   "url": "https://eightx.co/blog/clear-dead-stock-strategy",
+   "title": "Clearing Dead Stock Without Killing Margin (Eightx)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Quoted against retail rather than cost, distressed-auction recovery collapses to a median near 9 percent, and apparel as low as 1.4 to 2 percent.",
+   "statement": "Distressed apparel recovers only about 1.4-2% of retail value at auction, so a 5-15% share of recovered value may be small.",
+   "kind": "inference",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169",
+    "671ec53f-85ab-400f-93f5-954248e355de"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-37",
+   "url": "https://eightx.co/blog/clear-dead-stock-strategy",
+   "title": "Clearing Dead Stock Without Killing Margin (Eightx)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "bundling recovers roughly 60 to 80 cents on the dollar of cost, markdown 40 to 70, outlet 30 to 60, B2B liquidation 20 to 40, and donation returns zero cash.",
+   "statement": "Recovery ladder: outlet 30-60%, B2B liquidation 20-40% of cost, donation zero cash.",
+   "kind": "inference",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169",
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-38",
+   "url": "https://www.amiplastics.com/insights/musthad-raises-1m-to-accelerate-the-circular-management-of-excess-inventory-in-the-fashion-industry",
+   "title": "Musthad raises EUR 1M to accelerate the circular management of excess inventory in the fashion industry",
+   "source_type": "news",
+   "published_at": "2026-07-29",
+   "quote": "Musthad reduces these inefficiencies through an automated, data-driven platform that connects brands with a growing ecosystem of over 300 vetted circular operators globally — specialised in recycling, resale, upcycling and donation — with everything tracked and reported in real time.",
+   "statement": "Musthad already offers the proposed wedge: a platform routing brands' excess to 300+ vetted circular operators with tracking and reporting.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": "Musthad"
+  },
+  {
+   "ref": "ev-39",
+   "url": "https://www.amiplastics.com/insights/musthad-raises-1m-to-accelerate-the-circular-management-of-excess-inventory-in-the-fashion-industry",
+   "title": "Musthad raises EUR 1M to accelerate the circular management of excess inventory in the fashion industry",
+   "source_type": "news",
+   "published_at": "2026-07-29",
+   "quote": "Unsold goods, defective items, returns and samples sit in warehouses for months, accumulating significant hidden costs: prolonged storage, manual labour, tied-up capital and disposal.",
+   "statement": "A vendor says unsold goods sit for months in warehouses, accumulating storage, labour, capital and disposal costs.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169"
+   ],
+   "company_name": "Musthad"
+  },
+  {
+   "ref": "ev-40",
+   "url": "https://www.amiplastics.com/insights/musthad-raises-1m-to-accelerate-the-circular-management-of-excess-inventory-in-the-fashion-industry",
+   "title": "Musthad raises EUR 1M to accelerate the circular management of excess inventory in the fashion industry",
+   "source_type": "news",
+   "published_at": "2026-07-29",
+   "quote": "estimates having enabled significant savings in end-of-life management: -44% on manual labour costs, -30% on storage costs, -18% on disposal costs, among others.",
+   "statement": "Musthad claims customers cut manual labour 44%, storage 30% and disposal 18% (vendor estimate).",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169"
+   ],
+   "company_name": "Musthad"
+  },
+  {
+   "ref": "ev-41",
+   "url": "https://www.amiplastics.com/insights/musthad-raises-1m-to-accelerate-the-circular-management-of-excess-inventory-in-the-fashion-industry",
+   "title": "Musthad raises EUR 1M to accelerate the circular management of excess inventory in the fashion industry",
+   "source_type": "news",
+   "published_at": "2026-07-29",
+   "quote": "The Milan-based startup, founded in 2021, closes a €1M round with Italian and international investors",
+   "statement": "Musthad (Milan, 2021) raised EUR 1M in 2026.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Musthad"
+  },
+  {
+   "ref": "ev-42",
+   "url": "https://trustrace.com/knowledge-hub/what-happens-on-19-july-2026-under-espr",
+   "title": "What happens on 19 July 2026 under ESPR (TrusTrace)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "TrusTrace helps brands turn unsold-goods obligations into a manageable, auditable process, from tracking destruction and disposition decisions to preparing the disclosures ESPR requires.",
+   "statement": "TrusTrace sells software for tracking disposition decisions and preparing ESPR unsold-goods disclosures.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": "TrusTrace"
+  },
+  {
+   "ref": "ev-43",
+   "url": "https://dcycle.io/blog/espr-textiles-ban-unsold-stock/",
+   "title": "ESPR textile ban: what your dead stock must now prove (Dcycle)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "In Dcycle that data goes in once and serves everything downstream: the ESRS E5 disclosure, the cost analysis of waste management, the evidence the auditor will ask for.",
+   "statement": "Dcycle positions its ESG data platform for dead-stock evidence and disclosure.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": "Dcycle"
+  },
+  {
+   "ref": "ev-44",
+   "url": "https://www.reboundreturns.com/sustainability/espr/",
+   "title": "ESPR for textiles (ReBound)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "ReBound enables retailers to move unsold goods, returns and take-back items into compliant circular routes. … Each product is sorted and routed based on its condition, value and compliance requirements.",
+   "statement": "ReBound, a returns platform, routes unsold goods and returns to circular routes by condition, value and compliance.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": "ReBound"
+  },
+  {
+   "ref": "ev-45",
+   "url": "https://www.reboundreturns.com/sustainability/espr/",
+   "title": "ESPR for textiles (ReBound)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "ReBound helps retailers demonstrate compliance with ESPR through improved visibility and reporting.",
+   "statement": "ReBound also markets ESPR compliance reporting.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": "ReBound"
+  },
+  {
+   "ref": "ev-46",
+   "url": "https://www.maddyness.com/uk/2024/02/28/unlocking-your-wardrobe-dhl-supply-chain-and-reflaunt-get-together-to-transform-fashion-resale/",
+   "title": "DHL Supply Chain and Reflaunt team up on fashion resale (Maddyness)",
+   "source_type": "news",
+   "published_at": "2024-02-28",
+   "quote": "These services are already operational with the likes of Net-a-porter, Harvey Nichols, Balenciaga, and Altuzarra. Both services are fully integrated into the DHL Supply Chain warehouse operation",
+   "statement": "Reflaunt runs resale services for luxury retailers and brands, integrated with DHL Supply Chain warehouses.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": "Reflaunt"
+  },
+  {
+   "ref": "ev-47",
+   "url": "https://www.smatch.com",
+   "title": "smatch - B2B fashion trading",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "smatch connects global inventories and makes your B2B transactions better than ever before. €2bn+ worth of goods listed 1.000+ global retailers buying power 100% discreet transactions",
+   "statement": "smatch runs a discreet B2B fashion stock marketplace with EUR 2bn+ of goods listed.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": "smatch"
+  },
+  {
+   "ref": "ev-48",
+   "url": "https://www.unfrosen.com/",
+   "title": "Unfrosen - wholesale off-price fashion",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The stock comes from: (1) excess inventory, (2) cancelled orders, (3) overproduction, (4) past-season collections, and (5) showroom samples.",
+   "statement": "Unfrosen, an EU B2B off-price platform, sources brands' excess inventory and overproduction.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": "Unfrosen"
+  },
+  {
+   "ref": "ev-49",
+   "url": "https://www.unfrosen.com/",
+   "title": "Unfrosen - wholesale off-price fashion",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The platform is fully private. Buyers never see supplier names, and suppliers cannot see buyers.",
+   "statement": "Off-price platforms sell on anonymity, a partner criterion brands value.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": "Unfrosen"
+  },
+  {
+   "ref": "ev-50",
+   "url": "https://www.comerso.fr",
+   "title": "Comerso",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Confier nos dons à Comerso nous permet une logistique fiable et réactive ainsi qu'une garantie de traçabilité de nos dons.",
+   "statement": "Comerso (France) already provides donation logistics with traceability for corporate unsold goods.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc",
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": "Comerso"
+  },
+  {
+   "ref": "ev-51",
+   "url": "https://www.linfodurable.fr/lagence-du-don-en-nature-inquiete-dune-reduction-progressive-des-dons-dentreprises-49098",
+   "title": "L'Agence du don en nature inquiète d'une réduction progressive des dons d'entreprises (L'info durable)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "le nombre de dons émanant des entreprises est passé de 3 millions de produits en 2019 à 10 millions en 2023.",
+   "statement": "After France's AGEC ban, corporate donations via the Agence du Don en Nature rose from 3 million products in 2019 to 10 million in 2023: a ban moved volume to donation channels.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": "Agence du Don en Nature"
+  },
+  {
+   "ref": "ev-52",
+   "url": "https://www.linfodurable.fr/lagence-du-don-en-nature-inquiete-dune-reduction-progressive-des-dons-dentreprises-49098",
+   "title": "L'Agence du don en nature inquiète d'une réduction progressive des dons d'entreprises (L'info durable)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "nous avons de gros donateurs qui nous proposent beaucoup moins de produits qu'avant parce qu'ils génèrent moins d'invendus",
+   "statement": "Large donors now offer far fewer products because they generate fewer unsold goods (better production planning).",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": "Agence du Don en Nature"
+  },
+  {
+   "ref": "ev-53",
+   "url": "https://www.linfodurable.fr/lagence-du-don-en-nature-inquiete-dune-reduction-progressive-des-dons-dentreprises-49098",
+   "title": "L'Agence du don en nature inquiète d'une réduction progressive des dons d'entreprises (L'info durable)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "Alors que son association refuse \"15 à 20% des dons proposés\" parce qu'elle cherche avant tout \"les produits dont les associations et les gens ont besoin\"",
+   "statement": "The donation network refuses 15-20% of offered donations, selecting by what charities need.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": "Agence du Don en Nature"
+  },
+  {
+   "ref": "ev-54",
+   "url": "https://www.linfodurable.fr/lagence-du-don-en-nature-inquiete-dune-reduction-progressive-des-dons-dentreprises-49098",
+   "title": "L'Agence du don en nature inquiète d'une réduction progressive des dons d'entreprises (L'info durable)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "qui viennent marcher sur nos platebandes\" en débarrassant les entreprises des invendus \"dans une démarche un peu inverse à celle de l'Agence\".",
+   "statement": "Start-ups clearing unsold goods for companies already compete in France's donation channel.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-55",
+   "url": "https://www.laconceria.it/en/news/france-anti-waste-law-benefits-fast-fashion/",
+   "title": "France: anti-waste law benefits fast fashion (LaConceria)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "They rely on a new figure, the unsold-goods broker. These are usually startup companies that stand between large fast fashion companies and charities, managing the relationships.",
+   "statement": "In France, unsold-goods broker start-ups already intermediate between large fashion groups and charities.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc",
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-56",
+   "url": "https://cosh.eco/en/articles/eu-legislation-espr-unsold-goods-ban",
+   "title": "ESPR & the ban on the destruction of unsold goods (COSH!)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Current sorting and resale companies are already struggling under the overload of low-quality fast-fashion items that are being donated.",
+   "statement": "Sorting and resale partners are already overloaded with low-quality donated items, limiting partner capacity.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-57",
+   "url": "https://iksz.fsv.cuni.cz/en/news/fashion-industry-strategically-stays-silent-unsold-goods-new-study-reveals",
+   "title": "The Fashion Industry Strategically Stays Silent on Unsold Goods (Charles University)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "The analysis reveals that more than three-quarters of even the most \"responsible\" brands fail to disclose what happens to their unsold products.",
+   "statement": "A study of 95 charter-signatory brands found over three-quarters do not disclose what happens to unsold products.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "f53fc7fc-e76c-42a1-8f9a-a614a3665876"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-58",
+   "url": "https://www.theindustry.fashion/new-report-urges-industry-overhaul-to-tackle-overproduction-crisis/",
+   "title": "New report urges industry overhaul to tackle overproduction crisis (TheIndustry.fashion)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "the global fashion industry produces between 80 and 150 billion garments annually - yet up to 40% remain unsold, frequently ending up in landfill, incineration, or markdown bins.",
+   "statement": "A 2025 trade report estimates up to 40% of 80-150bn garments go unsold.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "c9b2e833-8eef-4ffb-8239-aebabbbd0169"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-59",
+   "url": "https://www.glossy.co/fashion/fashion-briefing-inside-the-growing-sometimes-sketchy-world-of-inventory-sourcing-for-resale/",
+   "title": "Inside the growing, sometimes sketchy, world of inventory sourcing for resale (Glossy)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "multiple brands supply them with product directly, but said these relationships are under NDA and the brands don’t advertise that they offer this channel.",
+   "statement": "Brands sell excess directly to resellers under NDA, keeping channels quiet.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6",
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-60",
+   "url": "https://www.glossy.co/fashion/fashion-briefing-inside-the-growing-sometimes-sketchy-world-of-inventory-sourcing-for-resale/",
+   "title": "Inside the growing, sometimes sketchy, world of inventory sourcing for resale (Glossy)",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "“A one-stop shop would be great, but a lot of brands wouldn’t be so fond of being on a master list,” she said. “It’s more exposure that this is something they’re doing. The brands want everything to sell at full price.”",
+   "statement": "Resellers say brands dislike being visible on a central list of excess-stock sellers: discretion is a partner criterion and a risk for a transparent marketplace.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-61",
+   "url": "https://www.anthesisgroup.com/insights/espr-the-ban-on-destruction-of-unsold-goods/",
+   "title": "ESPR: The Ban On Destruction Of Unsold Goods (Anthesis)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Map out current partnerships with charities, recyclers and waste providers to determine where gaps exist in your processes.",
+   "statement": "Consultancies sell ESPR gap analyses including mapping charity, recycler and waste partners.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d34bda7a-4894-41f4-bd51-85e8913e29fc",
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": "Anthesis"
+  },
+  {
+   "ref": "ev-62",
+   "url": "https://www.cbinsights.com/company/percentil",
+   "title": "Percentil company profile (CB Insights)",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Percentil is an e-commerce platform specializing in the sale of second-hand clothing for women, men, and children. … In March 2025, Percentil filed for bankruptcy.",
+   "statement": "Founder-listed Percentil was a consumer second-hand platform and filed for bankruptcy in March 2025.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Percentil"
+  },
+  {
+   "ref": "ev-63",
+   "url": "https://bstock.com/blog/recover-more-value-from-returns-and-excess-inventory/",
+   "title": "Recover More Value from Returns and Excess Inventory (B-Stock)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Discover how finance teams are turning to technology-driven B2B resale platforms to:",
+   "statement": "B-Stock pitches B2B resale of returns and excess to finance teams.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "4b4112ce-ec4f-4fc0-ac91-353d452169cb"
+   ],
+   "company_name": "B-Stock"
+  },
+  {
+   "ref": "ev-70",
+   "url": "https://corporate.zalando.com/en/node/9276",
+   "title": "Our Management Board (Zalando)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Anna Dimitrova, Chief Financial Officer (CFO) Zalando SE",
+   "statement": "Zalando's CFO is named on its own site.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Zalando"
+  },
+  {
+   "ref": "ev-71",
+   "url": "https://corporate.zalando.com/en/about-us",
+   "title": "About us (Zalando)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Founded in Berlin in 2008, Zalando is the leading European technology platform for fashion and lifestyle. Connecting 62 million active customers with more than 7,000 brands across 29 markets",
+   "statement": "Zalando is a Berlin-based European fashion platform with 7,000+ brands.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Zalando"
+  },
+  {
+   "ref": "ev-72",
+   "url": "https://hmgroup.com/about-us/",
+   "title": "About us (H&M Group)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "H&M Group is a global fashion and design company, with over 4,000 stores in more than 80 markets and online sales in over 60 markets. … 130,000 employees globally (2025)*",
+   "statement": "H&M Group has 130,000 employees and 4,000+ stores.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "H&M Group"
+  },
+  {
+   "ref": "ev-73",
+   "url": "https://hmgroup.com/about-us/corporate-governance/ceo/",
+   "title": "CEO of H&M Group",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "country manager for H&M Sweden",
+   "statement": "H&M Group's CEO profile references its Swedish operations.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "H&M Group"
+  },
+  {
+   "ref": "ev-74",
+   "url": "https://group.hugoboss.com/en/company/management-board",
+   "title": "This is HUGO BOSS",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "HUGO BOSS, headquartered in Metzingen (Germany), is a leading global fashion and lifestyle company in the premium segment, offering high-quality women’s and men’s apparel, shoes, and accessories.",
+   "statement": "HUGO BOSS is headquartered in Metzingen, Germany, and sells apparel and shoes.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "HUGO BOSS"
+  },
+  {
+   "ref": "ev-75",
+   "url": "https://group.hugoboss.com/en/company/management-board",
+   "title": "This is HUGO BOSS",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "the passion and commitment of our 18,500 employees worldwide",
+   "statement": "HUGO BOSS has 18,500 employees.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "HUGO BOSS"
+  },
+  {
+   "ref": "ev-76",
+   "url": "https://mangofashiongroup.com/en/home",
+   "title": "We are Mango",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Mango is one of Europe’s leading fashion brands. From Barcelona, on the banks of the Mediterranean",
+   "statement": "Mango is a Barcelona-based European fashion brand.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Mango"
+  },
+  {
+   "ref": "ev-77",
+   "url": "https://mangofashiongroup.com/en/home",
+   "title": "We are Mango",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "+18,000 Employees worldwide",
+   "statement": "Mango has 18,000+ employees.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Mango"
+  },
+  {
+   "ref": "ev-78",
+   "url": "https://mangofashiongroup.com/en/w/mango-incorpora-a-jochen-grosspietsch-para-liderar-la-transformaci%C3%B3n-de-su-cadena-de-valor",
+   "title": "Mango appoints Jochen Grosspietsch to lead the transformation of its value chain",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Mango, one of Europe's leading fashion groups, has announced the appointment of Jochen Grosspietsch as its new Supply Chain Chief Officer",
+   "statement": "Mango's Supply Chain Chief Officer is named on its own pressroom.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Mango"
+  },
+  {
+   "ref": "ev-79",
+   "url": "https://www.kappahl.com/en-us",
+   "title": "Welcome to the Kappahl Group",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "340+ stores in Sweden, Norway, Finland, Poland and the UK. … 4,000 employees in eight countries in Europe and Asia.",
+   "statement": "Kappahl has 4,000 employees and stores in Sweden, Finland and Poland.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Kappahl Group"
+  },
+  {
+   "ref": "ev-80",
+   "url": "https://www.kappahl.com/en-us/about-kappahl-group/this-is-kappahl-group/management--board",
+   "title": "Management and Board of Directors (Kappahl)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Sandra Roos Vice President Sustainability",
+   "statement": "Kappahl's VP Sustainability is named on its site.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Kappahl Group"
+  },
+  {
+   "ref": "ev-81",
+   "url": "https://www.kappahl.com/en-us/about-kappahl-group/this-is-kappahl-group/management--board",
+   "title": "Management and Board of Directors (Kappahl)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Elisabeth Peregi President and CEO",
+   "statement": "Kappahl's CEO is named on its site.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Kappahl Group"
+  },
+  {
+   "ref": "ev-82",
+   "url": "https://www.c-and-a.com/eu/en/corporate/company",
+   "title": "All about the company C&A",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "C&A is one of Europe’s leading fashion retailers … 25,000 employees driving our success",
+   "statement": "C&A is a European fashion retailer with 25,000 employees.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "C&A Europe"
+  },
+  {
+   "ref": "ev-83",
+   "url": "https://www.c-and-a.com/eu/en/corporate/company/about-ca/our-european-management-team",
+   "title": "Our European Leadership Team (C&A)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Edward Brenninkmeijer Chief Executive Officer (CEO)",
+   "statement": "C&A Europe's CEO is named on its site.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "C&A Europe"
+  },
+  {
+   "ref": "ev-84",
+   "url": "https://www.c-and-a.com/eu/en/corporate/company/about-ca/our-european-management-team",
+   "title": "Our European Leadership Team (C&A)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The Management Board and the broader Leadership Team bring together all the key leaders of the functions including Product, Omni-selling, Marketing and Consumer Insights, Finance, Human Resources, Commercial Planning, Technology, Supply Chain and Legal.",
+   "statement": "C&A Europe's leadership spans supply chain, commercial planning, finance and legal: the functions involved in excess-stock decisions.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [
+    "4b4112ce-ec4f-4fc0-ac91-353d452169cb"
+   ],
+   "company_name": "C&A Europe"
+  },
+  {
+   "ref": "ev-85",
+   "url": "https://www.tendam.es/en/about-us/",
+   "title": "Who we are (Tendam)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We have created one of Europe’s leading omni-channel groups in the speciality fashion sector. … With a primary focus on Spain, which accounts for 92% of total logistical capacity",
+   "statement": "Tendam is a European speciality fashion group with logistics concentrated in Spain.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Tendam"
+  },
+  {
+   "ref": "ev-86",
+   "url": "https://www.tendam.es/en/about-us/",
+   "title": "Who we are (Tendam)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "approximately 15% of online orders are fulfilled and shipped directly from physical stores",
+   "statement": "Tendam runs omnichannel fulfilment from stores, a source of returns and dispersed stock.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "Tendam"
+  },
+  {
+   "ref": "ev-87",
+   "url": "https://www.ovscorporate.it/en",
+   "title": "OVS Corporate",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "OVS S.p.A. is Italy’s leading clothing retailer for men, women, and children",
+   "statement": "OVS is Italy's leading clothing retailer.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "OVS"
+  },
+  {
+   "ref": "ev-88",
+   "url": "https://www.ovscorporate.it/en",
+   "title": "OVS Corporate",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "the group in fiscal year 2025 reported 1,746 million Euro in sales and an EBITDA of 218 million Euro. With a network of over 2,600 stores",
+   "statement": "OVS had EUR 1.75bn sales and 2,600+ stores in FY2025.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "OVS"
+  },
+  {
+   "ref": "ev-89",
+   "url": "https://www.lpp.com/en/about-us/",
+   "title": "About us (LPP SA)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "LPP's headquarters is located in Gdańsk.",
+   "statement": "LPP is headquartered in Gdansk, Poland.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "LPP"
+  },
+  {
+   "ref": "ev-90",
+   "url": "https://www.lpp.com/en/about-us/",
+   "title": "About us (LPP SA)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "In more than 30 years we have built from the ground up the largest fashion company in Central and Eastern Europe. LPP owns 5 clothing brands: Reserved, Cropp, House, Mohito and Sinsay.",
+   "statement": "LPP is the largest fashion company in Central and Eastern Europe.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "LPP"
+  },
+  {
+   "ref": "ev-91",
+   "url": "https://bestseller.com",
+   "title": "This is BESTSELLER",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "We have a range of more than 20 brands including JACK & JONES, ONLY, VERO MODA and NAME IT.",
+   "statement": "BESTSELLER runs 20+ fashion brands.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "BESTSELLER"
+  },
+  {
+   "ref": "ev-92",
+   "url": "https://www.pradagroup.com/en/group/group-profile.html",
+   "title": "Prada Group company profile",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The Group designs, manufactures and distributes ready-to-wear collections, leather goods and footwear in more than 70 countries … has 25 owned factories and around 18,000 employees",
+   "statement": "Prada Group makes ready-to-wear and footwear and has about 18,000 employees.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Prada Group"
+  },
+  {
+   "ref": "ev-93",
+   "url": "https://company.marc-o-polo.com/en/company",
+   "title": "Marc O'Polo: About the company",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Marc O'Polo SE, based in Stephanskirchen/Germany, is the strategic and operational headquarters of the premium modern-casual brand.",
+   "statement": "Marc O'Polo is based in Stephanskirchen, Germany.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Marc O'Polo"
+  },
+  {
+   "ref": "ev-94",
+   "url": "https://company.marc-o-polo.com/en",
+   "title": "The Marc O'Polo fashion company at a glance",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Our international network comprises 2,189 stores and retail partners.",
+   "statement": "Marc O'Polo has 2,189 stores and retail partners.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "Marc O'Polo"
+  },
+  {
+   "ref": "ev-95",
+   "url": "https://www.birkenstock-group.com/de/en/about-us/leadership-team/",
+   "title": "Leadership Team (BIRKENSTOCK)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The connector between the German-headquartered BIRKENSTOCK group, its production teams, product developers, and the regional market operations",
+   "statement": "BIRKENSTOCK is a German-headquartered footwear group.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "BIRKENSTOCK"
+  },
+  {
+   "ref": "ev-96",
+   "url": "https://www.birkenstock-group.com/de/en/about-us/leadership-team/",
+   "title": "Leadership Team (BIRKENSTOCK)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Ivica Krolo Chief Financial Officer",
+   "statement": "BIRKENSTOCK's CFO is named on its site.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "BIRKENSTOCK"
+  },
+  {
+   "ref": "ev-97",
+   "url": "https://www.birkenstock-group.com/de/en/about-us/leadership-team/",
+   "title": "Leadership Team (BIRKENSTOCK)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "NICO BOUYAKHF President, EMEA",
+   "statement": "BIRKENSTOCK's President EMEA is named on its site.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "BIRKENSTOCK"
+  },
+  {
+   "ref": "ev-98",
+   "url": "https://www.otb.net/en",
+   "title": "OTB Group",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "OTB is an international fashion group, powering a range of global, unconventional brands, including Diesel, Jil Sander, Maison Margiela, Marni and Viktor&Rolf",
+   "statement": "OTB is a fashion group owning Diesel, Jil Sander, Maison Margiela and Marni.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "OTB Group"
+  },
+  {
+   "ref": "ev-99",
+   "url": "https://www.benettongroup.com/",
+   "title": "Benetton Group",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Today Benetton Group is one of the best-known fashion companies in the world.",
+   "statement": "Benetton Group is a major fashion company.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "Benetton Group"
+  },
+  {
+   "ref": "ev-100",
+   "url": "https://www.oniverse.it:443/en/",
+   "title": "Oniverse (Calzedonia group)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Sandro Veronesi - President and Managing Director",
+   "statement": "Oniverse's President and Managing Director is named on its site.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Oniverse"
+  },
+  {
+   "ref": "ev-101",
+   "url": "https://www.oniverse.it:443/en/",
+   "title": "Oniverse (Calzedonia group)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Our distribution network reaches consumers via boutiques and stores in Milan, Rome, Paris, London",
+   "statement": "Oniverse sells through stores in Milan, Rome and Paris.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "Oniverse"
+  },
+  {
+   "ref": "ev-102",
+   "url": "https://www.ottogroup.com/en/",
+   "title": "Otto Group corporate website",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Hamburg meets Silicon Valley: Otto Group uses Corporate Venturing for tech advantage in retail",
+   "statement": "Otto Group is a Hamburg-based retail group.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "Otto Group"
+  },
+  {
+   "ref": "ev-103",
+   "url": "https://www.inditex.com/itxcomweb/sg/en/home",
+   "title": "INDITEX",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "ZARA, PULL&BEAR, MASSIMO DUTTI, BERSHKA, STRADIVARIUS, OYSHO, ZARA HOME AND LEFTIES",
+   "statement": "Inditex owns Zara, Pull&Bear, Massimo Dutti, Bershka and other apparel brands.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "Inditex"
+  },
+  {
+   "ref": "ev-104",
+   "url": "https://www.soliver-group.com/en/",
+   "title": "S.OLIVER GROUP",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "As part of the Supply Chain Duty of Care Act, we have set up a reporting system",
+   "statement": "s.Oliver Group is subject to Germany's Supply Chain Duty of Care Act (a German, large-company law).",
+   "kind": "inference",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "s.Oliver Group"
+  },
+  {
+   "ref": "ev-105",
+   "url": "https://www.asosplc.com/sustainability/supply-chain-and-policies/discarded-products-reporting/",
+   "title": "Discarded Products Reporting (ASOS plc)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Destruction of unsold goods only occurs as a last resort where products are required to be destroyed, for example due to a legal requirement, a health & safety requirement, or in cases where products cannot be sold",
+   "statement": "ASOS publishes an ESPR discarded-goods disclosure describing destruction only as a last resort.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6"
+   ],
+   "company_name": "ASOS"
+  }
+ ],
+ "unknown_findings": [
+  {
+   "unknown_id": "c9b2e833-8eef-4ffb-8239-aebabbbd0169",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Practitioner benchmarks put apparel inventory carrying cost at about 20-25% of inventory value per year.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-35"
+     ]
+    },
+    {
+     "statement": "Recovery on excess apparel is low: outlet 30-60% and B2B liquidation 20-40% of cost, and distressed apparel auctions about 1.4-2% of retail value.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-36",
+      "ev-37"
+     ]
+    },
+    {
+     "statement": "One vendor claims customers cut manual labour 44%, storage 30% and disposal 18% on end-of-life handling; this is a self-reported estimate.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-40"
+     ]
+    },
+    {
+     "statement": "No public source quantified what brands spend today on preparing unsold-goods disclosures.",
+     "kind": "assumption",
+     "evidence_ids": []
+    }
+   ]
+  },
+  {
+   "unknown_id": "6e5e6be3-1b36-42b4-b3e3-ecfb1bbed3e6",
+   "status": "answered",
+   "summary": [
+    {
+     "statement": "Most unsold stock already leaves through non-destruction channels: the Commission estimates only 4-9% of unsold textiles are destroyed.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-07"
+     ]
+    },
+    {
+     "statement": "Industry associations in Germany and Benelux say surpluses already go to outlets, charity, sales and stock buyers, with only minimal quantities discarded.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-24",
+      "ev-26"
+     ]
+    },
+    {
+     "statement": "Large retailers use sample sales and third-party resellers (ASOS), discreet B2B marketplaces (smatch, Unfrosen) and direct NDA deals with resellers.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-29",
+      "ev-47",
+      "ev-48",
+      "ev-59"
+     ]
+    },
+    {
+     "statement": "Bulk export of unsold stock to non-EU traders counts as reuse on paper and remains a cheap legal route.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-27"
+     ]
+    },
+    {
+     "statement": "In France, the 2022 AGEC ban pushed volume into donation: one network's corporate donations rose from 3 million products in 2019 to 10 million in 2023.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-51"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "f53fc7fc-e76c-42a1-8f9a-a614a3665876",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Disposition data typically sits in ERPs, delivery notes and recycler emails, and brands depend on waste providers to report each batch's fate.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-16",
+      "ev-18"
+     ]
+    },
+    {
+     "statement": "ASOS's own disclosure says it still needs data collection to verify reseller behaviour and waste treatment routes.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-30"
+     ]
+    },
+    {
+     "statement": "The rules require five years of delivery and reception documentation, including waste-operator statements, and documented reasoning for each derogation.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-02",
+      "ev-04"
+     ]
+    },
+    {
+     "statement": "Companies are preparing mainly by gathering data and amending contracts with disposal providers; third-party assurance was dropped and the mandatory template only applies from FY2028 for calendar-year companies.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-03",
+      "ev-05",
+      "ev-20"
+     ]
+    },
+    {
+     "statement": "Software vendors (TrusTrace, Dcycle, ReBound) already market tracking and ESPR disclosure preparation.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-42",
+      "ev-43",
+      "ev-45"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "4b4112ce-ec4f-4fc0-ac91-353d452169cb",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Unsold inventory is moving from operations to a metric sustainability, finance and compliance teams monitor.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-32"
+     ]
+    },
+    {
+     "statement": "H&M Group created a Chief Supply Chain Officer role with end-to-end responsibility for inventory flow.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-34"
+     ]
+    },
+    {
+     "statement": "A compliance adviser says the work is primarily logistical: warehouses, shops, customer services and waste providers.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-19"
+     ]
+    },
+    {
+     "statement": "No source identified who signs off on budget for disposition software specifically.",
+     "kind": "assumption",
+     "evidence_ids": []
+    }
+   ]
+  },
+  {
+   "unknown_id": "671ec53f-85ab-400f-93f5-954248e355de",
+   "status": "no_evidence_found",
+   "summary": [
+    {
+     "statement": "No public evidence was found on how fashion brands budget for unsold-goods compliance or reverse-logistics software; the low recovery value of distressed apparel suggests revenue share on routed goods may be small.",
+     "kind": "assumption",
+     "evidence_ids": []
+    }
+   ]
+  },
+  {
+   "unknown_id": "d34bda7a-4894-41f4-bd51-85e8913e29fc",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Brands value discretion: resellers report NDA-only relationships and brands not wanting to be on a central list; off-price platforms sell on anonymity.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-59",
+      "ev-60",
+      "ev-49"
+     ]
+    },
+    {
+     "statement": "Brand protection limits donation and resale of recognisable items, and repair is uneconomic for low-value garments.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-15"
+     ]
+    },
+    {
+     "statement": "Partner capacity is constrained: donation networks reject 15-20% of offers, sorters are overloaded, and EU mechanical recycling covers about 1% of the volume.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-53",
+      "ev-56",
+      "ev-17"
+     ]
+    },
+    {
+     "statement": "Recycling counts as destruction under the ban, so recyclers are only a valid outlet under a documented derogation.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-01"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "6e406d9e-14da-4a39-86a5-e2f0c1a52960",
+   "status": "answered",
+   "summary": [
+    {
+     "statement": "The ban has applied to large companies since 19 July 2026, and advisers expect substantial operational and cost challenges for high-return online sellers; the sector is described as ill-prepared.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-01",
+      "ev-09",
+      "ev-13"
+     ]
+    },
+    {
+     "statement": "Urgency is undercut by weak enforcement: French fines cap at EUR 15,000 and the French enforcer was not yet empowered as of September 2026; penalties vary by Member State.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-22",
+      "ev-10"
+     ]
+    },
+    {
+     "statement": "The German textile association calls the ban a paper tiger, and many SMEs are waiting for the full framework before acting.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-25",
+      "ev-28"
+     ]
+    },
+    {
+     "statement": "The mandatory disclosure template applies only from FY2028 for calendar-year companies, and earlier delays left companies in legal limbo about format.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-20",
+      "ev-11"
+     ]
+    }
+   ]
+  }
+ ],
+ "hypothesis_update": null,
+ "new_unknowns": [],
+ "competitors": [
+  {
+   "ref": "comp-01",
+   "name": "Musthad",
+   "url": "https://musthad.com",
+   "kind": "direct",
+   "description": "Milan platform routing brands' excess inventory and textile waste to 300+ vetted recycling, resale, upcycling and donation operators, with tracking and reporting; positioned on the ESPR ban.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-38",
+    "ev-40",
+    "ev-41"
+   ],
+   "sentiment": [
+    {
+     "statement": "The company claims customer savings of 44% on manual labour, 30% on storage and 18% on disposal.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-40"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-02",
+   "name": "TrusTrace",
+   "url": "https://trustrace.com",
+   "kind": "direct",
+   "description": "Traceability software that tracks destruction and disposition decisions and prepares ESPR unsold-goods disclosures.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-42"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-03",
+   "name": "ReBound",
+   "url": "https://www.reboundreturns.com",
+   "kind": "indirect",
+   "description": "Returns platform that sorts and routes unsold goods, returns and take-back into resale, repair and donation, with ESPR reporting.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-44",
+    "ev-45"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-04",
+   "name": "Dcycle",
+   "url": "https://dcycle.io",
+   "kind": "indirect",
+   "description": "ESG data platform collecting dead-stock disposition data for ESRS E5 disclosure and audit evidence.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-43",
+    "ev-16"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-05",
+   "name": "Reflaunt",
+   "url": "https://www.reflaunt.com",
+   "kind": "service",
+   "description": "Resale-as-a-service for brands and retailers, with DHL Supply Chain running intake, grading and logistics.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-46"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-06",
+   "name": "smatch",
+   "url": "https://www.smatch.com",
+   "kind": "indirect",
+   "description": "Discreet B2B marketplace for fashion stock between brands and retailers.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-47"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-07",
+   "name": "Unfrosen",
+   "url": "https://www.unfrosen.com",
+   "kind": "indirect",
+   "description": "Private EU B2B off-price wholesale platform buying brands' excess inventory, overproduction and past-season stock.",
+   "pricing_note": "Minimum order value EUR 500 per supplier (buyer side), per its site.",
+   "evidence_refs": [
+    "ev-48",
+    "ev-49"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-08",
+   "name": "Comerso",
+   "url": "https://www.comerso.fr",
+   "kind": "service",
+   "description": "French platform for donating and valorising corporate unsold goods with logistics and traceability.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-50"
+   ],
+   "sentiment": [
+    {
+     "statement": "A customer testimonial praises reliable logistics and traceability of donations.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-50"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-09",
+   "name": "Agence du Don en Nature",
+   "url": "https://www.adnfrance.org",
+   "kind": "service",
+   "description": "French non-profit redistributing companies' new unsold non-food products to partner charities.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-51",
+    "ev-53"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-10",
+   "name": "Unsold-goods broker start-ups (France)",
+   "url": null,
+   "kind": "service",
+   "description": "Intermediaries between large fashion groups and charities that clear unsold goods, partly driven by donation tax credits.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-55",
+    "ev-54"
+   ],
+   "sentiment": [
+    {
+     "statement": "Investigations and a donation network criticise brokers for pushing volume onto charities.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-55",
+      "ev-54"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-11",
+   "name": "Spreadsheets, ERP and provider contracts",
+   "url": null,
+   "kind": "manual",
+   "description": "Internal data gathering from ERP, delivery notes and recycler emails plus contract clauses with disposal providers.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-16",
+    "ev-03"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-12",
+   "name": "Anthesis (sustainability consultancy)",
+   "url": "https://www.anthesisgroup.com",
+   "kind": "service",
+   "description": "Consultancy offering ESPR gap analyses including mapping charity, recycler and waste partners.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-61"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-13",
+   "name": "B-Stock",
+   "url": "https://bstock.com",
+   "kind": "indirect",
+   "description": "B2B recommerce marketplace for returns and excess inventory, pitched to finance teams.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-63"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-14",
+   "name": "Percentil",
+   "url": "https://www.percentil.com",
+   "kind": "indirect",
+   "description": "Founder-listed; a consumer second-hand clothing platform, not a brand-excess router; filed for bankruptcy in March 2025.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-62"
+   ],
+   "sentiment": []
+  }
+ ],
+ "current_solutions": [
+  {
+   "statement": "Most unsold apparel already exits through outlets, sales, charity, stock buyers and third-party resellers; only 4-9% is destroyed.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-07",
+    "ev-24",
+    "ev-26",
+    "ev-29"
+   ]
+  },
+  {
+   "statement": "Discreet B2B off-price marketplaces (smatch, Unfrosen) and NDA deals with resellers absorb excess while protecting brand image.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-47",
+    "ev-48",
+    "ev-59"
+   ]
+  },
+  {
+   "statement": "Donation intermediaries (Comerso, Agence du Don en Nature, broker start-ups) already handle corporate unsold goods in France.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-50",
+    "ev-51",
+    "ev-55"
+   ]
+  },
+  {
+   "statement": "Reporting is assembled from ERP data, delivery notes and provider emails under amended contracts, with emerging software from TrusTrace, Dcycle, ReBound and Musthad.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-16",
+    "ev-03",
+    "ev-42",
+    "ev-38"
+   ]
+  }
+ ],
+ "companies": [
+  {
+   "ref": "co-01",
+   "name": "Zalando",
+   "website": "https://corporate.zalando.com",
+   "icp_id": null,
+   "location": "Berlin, Germany",
+   "industry": "Fashion e-commerce platform",
+   "description": "Large Berlin fashion platform with 7,000+ brands and heavy online returns exposure.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-71",
+    "ev-70"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Large EU fashion e-commerce platform; high-return online model is the segment advisers flag.",
+     "evidence_refs": [
+      "ev-71"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Anna Dimitrova",
+     "role": "Chief Financial Officer",
+     "email": null,
+     "evidence_ref": "ev-70"
+    }
+   ],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-71"
+   }
+  },
+  {
+   "ref": "co-02",
+   "name": "H&M Group",
+   "website": "https://hmgroup.com",
+   "icp_id": null,
+   "location": "Stockholm, Sweden",
+   "industry": "Fashion retail",
+   "description": "Global fashion retailer with 130,000 employees and a new CSCO owning end-to-end inventory flow.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-72",
+    "ev-73",
+    "ev-34"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Very large apparel retailer selling across Europe.",
+     "evidence_refs": [
+      "ev-72"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 3,
+     "rationale": "Created a Chief Supply Chain Officer role with end-to-end inventory-flow responsibility.",
+     "evidence_refs": [
+      "ev-34"
+     ]
+    }
+   },
+   "contacts": [
+    {
+     "name": "David von Heijne",
+     "role": "Chief Supply Chain Officer",
+     "email": null,
+     "evidence_ref": "ev-34"
+    }
+   ],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-73"
+   },
+   "size_estimate": {
+    "min": 130000,
+    "max": null,
+    "signal": "About page: 130,000 employees globally (2025)",
+    "evidence_ref": "ev-72"
+   }
+  },
+  {
+   "ref": "co-03",
+   "name": "HUGO BOSS",
+   "website": "https://group.hugoboss.com",
+   "icp_id": null,
+   "location": "Metzingen, Germany",
+   "industry": "Premium apparel and footwear",
+   "description": "German premium apparel and shoe group with 18,500 employees.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-74",
+    "ev-75"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Large EU apparel and footwear brand in scope of the ban.",
+     "evidence_refs": [
+      "ev-74"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-74"
+   },
+   "size_estimate": {
+    "min": 18500,
+    "max": 18500,
+    "signal": "Company page: 18,500 employees worldwide",
+    "evidence_ref": "ev-75"
+   }
+  },
+  {
+   "ref": "co-04",
+   "name": "Mango",
+   "website": "https://mangofashiongroup.com",
+   "icp_id": null,
+   "location": "Barcelona, Spain",
+   "industry": "Fashion retail",
+   "description": "Barcelona fashion group with 18,000+ employees and a Supply Chain Chief Officer leading value-chain transformation.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-76",
+    "ev-77",
+    "ev-78"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Large EU apparel brand in scope.",
+     "evidence_refs": [
+      "ev-76"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 2,
+     "rationale": "Hired a Supply Chain Chief Officer to transform its supply chain.",
+     "evidence_refs": [
+      "ev-78"
+     ]
+    }
+   },
+   "contacts": [
+    {
+     "name": "Jochen Grosspietsch",
+     "role": "Supply Chain Chief Officer",
+     "email": null,
+     "evidence_ref": "ev-78"
+    }
+   ],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-76"
+   },
+   "size_estimate": {
+    "min": 18000,
+    "max": null,
+    "signal": "Home page: +18,000 employees worldwide",
+    "evidence_ref": "ev-77"
+   }
+  },
+  {
+   "ref": "co-05",
+   "name": "Kappahl Group",
+   "website": "https://www.kappahl.com",
+   "icp_id": null,
+   "location": "Mölndal, Sweden",
+   "industry": "Fashion retail",
+   "description": "Nordic fashion retailer with 4,000 employees, stores in Sweden, Finland and Poland, and a VP Sustainability.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-79",
+    "ev-80",
+    "ev-81"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Large EU apparel retailer above the 250-employee threshold.",
+     "evidence_refs": [
+      "ev-79"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Sandra Roos",
+     "role": "Vice President Sustainability",
+     "email": null,
+     "evidence_ref": "ev-80"
+    },
+    {
+     "name": "Elisabeth Peregi",
+     "role": "President and CEO",
+     "email": null,
+     "evidence_ref": "ev-81"
+    }
+   ],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-79"
+   },
+   "size_estimate": {
+    "min": 4000,
+    "max": 4000,
+    "signal": "Home page: 4,000 employees",
+    "evidence_ref": "ev-79"
+   }
+  },
+  {
+   "ref": "co-06",
+   "name": "C&A Europe",
+   "website": "https://www.c-and-a.com",
+   "icp_id": null,
+   "location": "Düsseldorf, Germany / Vilvoorde, Belgium",
+   "industry": "Fashion retail",
+   "description": "European fashion retailer with 25,000 employees; leadership spans supply chain, commercial planning, finance and legal.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-82",
+    "ev-83",
+    "ev-84"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Large European apparel retailer.",
+     "evidence_refs": [
+      "ev-82"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Edward Brenninkmeijer",
+     "role": "Chief Executive Officer",
+     "email": null,
+     "evidence_ref": "ev-83"
+    }
+   ],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-82"
+   },
+   "size_estimate": {
+    "min": 25000,
+    "max": 25000,
+    "signal": "Company page: 25,000 employees",
+    "evidence_ref": "ev-82"
+   }
+  },
+  {
+   "ref": "co-07",
+   "name": "Tendam",
+   "website": "https://www.tendam.es",
+   "icp_id": null,
+   "location": "Madrid, Spain",
+   "industry": "Fashion retail",
+   "description": "Spanish speciality fashion group (12 brands) with omnichannel fulfilment from stores.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-85",
+    "ev-86"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Large European apparel group; size not stated on fetched pages.",
+     "evidence_refs": [
+      "ev-85"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-85"
+   }
+  },
+  {
+   "ref": "co-08",
+   "name": "OVS",
+   "website": "https://www.ovscorporate.it",
+   "icp_id": null,
+   "location": "Venice-Mestre, Italy",
+   "industry": "Fashion retail",
+   "description": "Italy's leading clothing retailer, EUR 1.75bn sales and 2,600+ stores.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-87",
+    "ev-88"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Large EU apparel retailer.",
+     "evidence_refs": [
+      "ev-87",
+      "ev-88"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-87"
+   }
+  },
+  {
+   "ref": "co-09",
+   "name": "LPP",
+   "website": "https://www.lpp.com",
+   "icp_id": null,
+   "location": "Gdańsk, Poland",
+   "industry": "Fashion retail",
+   "description": "Largest fashion company in Central and Eastern Europe (Reserved, Sinsay, Cropp, House, Mohito).",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-89",
+    "ev-90"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Large EU apparel group.",
+     "evidence_refs": [
+      "ev-90"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-89"
+   }
+  },
+  {
+   "ref": "co-10",
+   "name": "BESTSELLER",
+   "website": "https://bestseller.com",
+   "icp_id": null,
+   "location": "Brande, Denmark",
+   "industry": "Fashion brands",
+   "description": "Family-owned group with 20+ brands (JACK & JONES, ONLY, VERO MODA).",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-91"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Large multi-brand apparel group; location not stated in fetched text.",
+     "evidence_refs": [
+      "ev-91"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-11",
+   "name": "Prada Group",
+   "website": "https://www.pradagroup.com",
+   "icp_id": null,
+   "location": "Milan, Italy",
+   "industry": "Luxury fashion",
+   "description": "Luxury group making ready-to-wear and footwear, about 18,000 employees; luxury brand-protection concerns apply.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-92"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Large apparel/footwear maker; luxury brands may prefer controlled channels.",
+     "evidence_refs": [
+      "ev-92"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [],
+   "size_estimate": {
+    "min": 18000,
+    "max": 18000,
+    "signal": "Group profile: around 18,000 employees",
+    "evidence_ref": "ev-92"
+   }
+  },
+  {
+   "ref": "co-12",
+   "name": "Marc O'Polo",
+   "website": "https://company.marc-o-polo.com",
+   "icp_id": null,
+   "location": "Stephanskirchen, Germany",
+   "industry": "Premium apparel",
+   "description": "German premium casualwear brand with 2,189 stores and retail partners.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-93",
+    "ev-94"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "EU apparel brand; headcount not stated on fetched pages.",
+     "evidence_refs": [
+      "ev-93"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-93"
+   }
+  },
+  {
+   "ref": "co-13",
+   "name": "BIRKENSTOCK",
+   "website": "https://www.birkenstock-group.com",
+   "icp_id": null,
+   "location": "Germany",
+   "industry": "Footwear",
+   "description": "German-headquartered footwear group; footwear is in scope of the ban.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-95",
+    "ev-96",
+    "ev-97"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Large footwear brand headquartered in Germany.",
+     "evidence_refs": [
+      "ev-95"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Ivica Krolo",
+     "role": "Chief Financial Officer",
+     "email": null,
+     "evidence_ref": "ev-96"
+    },
+    {
+     "name": "Nico Bouyakhf",
+     "role": "President, EMEA",
+     "email": null,
+     "evidence_ref": "ev-97"
+    }
+   ],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-95"
+   }
+  },
+  {
+   "ref": "co-14",
+   "name": "OTB Group",
+   "website": "https://www.otb.net",
+   "icp_id": null,
+   "location": "Breganze, Italy",
+   "industry": "Fashion group",
+   "description": "Fashion group owning Diesel, Jil Sander, Maison Margiela and Marni.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-98"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Large fashion group; location and headcount not in fetched text.",
+     "evidence_refs": [
+      "ev-98"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-15",
+   "name": "Benetton Group",
+   "website": "https://www.benettongroup.com",
+   "icp_id": null,
+   "location": "Ponzano Veneto, Italy",
+   "industry": "Fashion retail",
+   "description": "Well-known Italian fashion company.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-99"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "Fashion company; fetched page gives little detail.",
+     "evidence_refs": [
+      "ev-99"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-16",
+   "name": "Oniverse (Calzedonia)",
+   "website": "https://www.oniverse.it",
+   "icp_id": null,
+   "location": "Verona, Italy",
+   "industry": "Apparel and hosiery",
+   "description": "Italian apparel group (Calzedonia, Intimissimi, Tezenis) with stores in Milan, Rome and Paris.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-100",
+    "ev-101"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Large apparel group selling in EU cities.",
+     "evidence_refs": [
+      "ev-101"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Sandro Veronesi",
+     "role": "President and Managing Director",
+     "email": null,
+     "evidence_ref": "ev-100"
+    }
+   ],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-101"
+   }
+  },
+  {
+   "ref": "co-17",
+   "name": "Otto Group",
+   "website": "https://www.ottogroup.com",
+   "icp_id": null,
+   "location": "Hamburg, Germany",
+   "industry": "Retail and e-commerce",
+   "description": "Hamburg retail group with large fashion e-commerce operations.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-102"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "Large retailer; fashion share not stated in fetched text.",
+     "evidence_refs": [
+      "ev-102"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [],
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-102"
+   }
+  },
+  {
+   "ref": "co-18",
+   "name": "Inditex",
+   "website": "https://www.inditex.com",
+   "icp_id": null,
+   "location": "Arteixo, Spain",
+   "industry": "Fashion retail",
+   "description": "Owner of Zara, Pull&Bear, Massimo Dutti, Bershka and others.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-103"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Largest apparel group by brands listed; size and location not in fetched text.",
+     "evidence_refs": [
+      "ev-103"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-19",
+   "name": "s.Oliver Group",
+   "website": "https://www.soliver-group.com",
+   "icp_id": null,
+   "location": "Rottendorf, Germany",
+   "industry": "Fashion brands",
+   "description": "German fashion group subject to Germany's supply-chain duty-of-care law.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-104"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "Fashion group; fetched pages give little detail.",
+     "evidence_refs": [
+      "ev-104"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No public evidence about its excess-stock or reporting tooling.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No specific signal found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-20",
+   "name": "ASOS",
+   "website": "https://www.asosplc.com",
+   "icp_id": null,
+   "location": "London, UK (sells into the EU)",
+   "industry": "Fashion e-commerce",
+   "description": "Publishes an ESPR discarded-goods disclosure and says it needs better data on reseller behaviour and waste routes.",
+   "technologies": [],
+   "evidence_refs": [
+    "ev-105",
+    "ev-29",
+    "ev-30"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Large online fashion retailer selling into the EU; HQ outside the EU.",
+     "evidence_refs": [
+      "ev-105"
+     ]
+    },
+    "technology_fit": {
+     "rating": 1,
+     "rationale": "Uses sample sales and third-party resellers; plans more data collection.",
+     "evidence_refs": [
+      "ev-29",
+      "ev-30"
+     ]
+    },
+    "other_signals": {
+     "rating": 4,
+     "rationale": "Own disclosure states a gap in visibility of reseller behaviour and waste treatment routes.",
+     "evidence_refs": [
+      "ev-30"
+     ]
+    }
+   },
+   "contacts": []
+  }
+ ]
+}
