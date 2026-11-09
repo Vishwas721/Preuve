@@ -1,0 +1,2532 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "1ffaf3a2-88d8-4c18-a2fd-f86e936bc7a1",
+    "researcher": "claude-code",
+    "started_at": "2026-11-09T09:00:00Z",
+    "finished_at": "2026-11-09T13:00:00Z",
+    "queries": [
+      "X25519MLKEM768 middlebox firewall drops ClientHello fragmentation tldr.fail",
+      "Chrome Kyber ML-KEM enterprise issues broken TLS connections proxies firewalls",
+      "post-quantum TLS hybrid key exchange \"no issues\" middlebox compatibility measurement Cloudflare",
+      "NIST IR 8547 deprecated 2030 disallowed 2035 RSA ECC transition",
+      "EU coordinated implementation roadmap post-quantum cryptography 2030 high-risk use cases NIS Cooperation Group",
+      "RBI OR CERT-In post-quantum cryptography banks India guidance cryptographic bill of materials",
+      "PCI DSS 12.3.3 cryptographic cipher suites inventory requirement",
+      "survey percent organizations no post-quantum strategy budget 2026 ISACA quantum pulse poll",
+      "post-quantum migration overhyped \"not a priority\" CISOs quantum threat decades away skeptic",
+      "open source CBOM tool cbomkit IBM sonar cryptography scanner CycloneDX",
+      "pqcscan OR \"pq-tls\" open source tool test post-quantum TLS support servers scan",
+      "bank job posting \"post-quantum\" cryptography engineer \"cryptographic inventory\" PKI",
+      "Palo Alto OR Zscaler OR \"Check Point\" post-quantum ML-KEM TLS decryption ClientHello dropped known issue",
+      "post-quantum TLS internal east-west service mesh microservices migration ClientHello MTU problems enterprise",
+      "IBM Guardium Quantum Safe cryptographic inventory network traffic discovery",
+      "Keyfactor AgileSec Analytics cryptographic discovery CBOM network scan",
+      "\"post-quantum\" cryptography job careers bank \"cryptographic inventory\" (Citi/JPMorgan careers)",
+      "bank executive leadership page Chief Information Security Officer India / US / Europe payments"
+    ],
+    "notes": "Contradiction searches: 'no issues' middlebox measurement, 'overhyped / not a priority', and vendor patch status. Founder-listed Entrust, DigiCert and AppViewX could not be verified: DigiCert returned a bot block and AppViewX is disallowed by robots.txt; Entrust not checked. Most bank PQC job postings (BNY, State Street, PNC via Dice/Ladders) were blocked; only Citi's own careers page was fetchable. Prospects: 21 BFSI/payments companies in the US, EU and India from their own sites; most bank leadership pages were blocked (ICICI, Rabobank, Huntington, Regions, Global Payments), so only 6 named contacts were found and none is a CISO except at Paymentology (whose size is unstated and likely below the ICP's 1000+). Sizes are only given where the company states them. Only Citi has company-specific PQC problem evidence. No source quantifies outage cost or names budgets for path-testing tools."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://tldr.fail/",
+      "title": "tldr.fail",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Due to a bug, these servers reject connections that use post-quantum cryptography, instead of negotiating classical cryptography if they do not support post-quantum cryptography.",
+      "statement": "A public reference site documents servers and middleboxes that reject post-quantum TLS connections instead of falling back to classical crypto.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://tldr.fail/",
+      "title": "tldr.fail",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "You may be using a vendor that has buggy servers or a buggy middlebox. You should contact your vendor and request that they patch their software.",
+      "statement": "The advice to network administrators today is to contact the vendor and ask for a patch.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d",
+        "11f74508-b08b-4478-b251-72eaab1731e6"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://blog.google/chromium/advancing-our-amazing-bet-on-asymmetric/",
+      "title": "Advancing Our Amazing Bet on Asymmetric Cryptography (Google)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "This rollout revealed a number of previously-existing bugs in several TLS middlebox products. … The extra size from Kyber causes the TLS ClientHello to be split into two packets, resulting in a 4% median latency increase to all TLS handshakes in Chrome on desktop.",
+      "statement": "Google says enabling hybrid PQ key exchange in Chrome exposed bugs in several TLS middlebox products and split the ClientHello into two packets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": "Google"
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://technewsday.com/google-chromes-new-post-quantum-cryptography-causes-connection-issues",
+      "title": "Google Chrome's new post-quantum cryptography causes connection issues",
+      "source_type": "news",
+      "published_at": "2024-05-01",
+      "quote": "some web applications, firewalls, and servers have been dropping connections during the ClientHello TLS handshake … These issues have affected various network devices from multiple vendors, including Fortinet, SonicWall, Palo Alto Networks, and AWS",
+      "statement": "After Chrome 124 enabled hybrid PQ key exchange, admins reported firewalls and servers from several vendors dropping connections.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://community.fortinet.com/fortigate-3/technical-tip-err-ssl-protocol-error-when-using-flow-based-deep-inspection-due-to-ml-kem-post-quantum-tls-key-exchange-known-issue-189132",
+      "title": "Fortinet: ERR_SSL_PROTOCOL_ERROR with Flow-based Deep Inspection due to ML-KEM (Known Issue)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "When this issue occurs, users will find that certain websites will fail to load and will present an ERR_SSL_PROTOCOL_ERROR error message.",
+      "statement": "On FortiGate firewalls with flow-based deep inspection, ML-KEM ClientHellos made websites fail to load for users.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": "Fortinet"
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://community.fortinet.com/fortigate-3/technical-tip-err-ssl-protocol-error-when-using-flow-based-deep-inspection-due-to-ml-kem-post-quantum-tls-key-exchange-known-issue-189132",
+      "title": "Fortinet: ERR_SSL_PROTOCOL_ERROR with Flow-based Deep Inspection due to ML-KEM (Known Issue)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For precise identification, obtain a packet capture of the relevant traffic and inspect the packets in Wireshark.",
+      "statement": "The vendor's diagnostic method is a manual packet capture inspected in Wireshark.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d"
+      ],
+      "company_name": "Fortinet"
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://community.fortinet.com/fortigate-3/technical-tip-err-ssl-protocol-error-when-using-flow-based-deep-inspection-due-to-ml-kem-post-quantum-tls-key-exchange-known-issue-189132",
+      "title": "Fortinet: ERR_SSL_PROTOCOL_ERROR with Flow-based Deep Inspection due to ML-KEM (Known Issue)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "According to development, the issue has been fixed starting with the following IPS Engine versions:",
+      "statement": "The firewall vendor shipped fixed IPS engine builds, so this breakage was fixed by patching (the risk the idea itself names).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "11f74508-b08b-4478-b251-72eaab1731e6"
+      ],
+      "company_name": "Fortinet"
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+      "title": "Automatic Key Exchange: post-quantum secure origin handshakes (Cloudflare)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "we have added the ability in the tool to check for post-quantum TLS implementation bugs. If the results come back negative, it will also try to characterize the reason for the failure. Failures often stem from legacy middleboxes, firewalls, or server buffers dropping multi-packet payloads or failing to reassemble a ClientHello split across TCP segments.",
+      "statement": "Cloudflare Radar offers a free check for PQ TLS bugs and says failures often come from legacy middleboxes and firewalls dropping multi-packet ClientHellos.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d",
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "Cloudflare"
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+      "title": "Automatic Key Exchange: post-quantum secure origin handshakes (Cloudflare)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "99.2% of post-quantum TLS 1.3 connections of the currently scanned cohort of origins now complete in a single round trip.",
+      "statement": "At Cloudflare's scale, almost all PQ-capable origin connections now complete in one round trip, suggesting breakage is a small tail.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": "Cloudflare"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+      "title": "Automatic Key Exchange: post-quantum secure origin handshakes (Cloudflare)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "It is important to audit every device terminating or inspecting TLS—including load balancers, WAF appliances, and other middleboxes—to ensure X25519MLKEM768 is enabled on everything that sits between your origin and Cloudflare.",
+      "statement": "Cloudflare tells customers to audit every TLS-terminating or inspecting device on the path.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d",
+        "11f74508-b08b-4478-b251-72eaab1731e6"
+      ],
+      "company_name": "Cloudflare"
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://www.encryptionconsulting.com/x25519mlkem768-tls-deployment-guide/",
+      "title": "X25519MLKEM768 TLS 1.3 Deployment Guide (Encryption Consulting)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The single most common production issue is a TLS inspection appliance, a next-generation firewall, DLP proxy, or SSL offloader, that does not recognize the X25519MLKEM768 group codepoint and rejects the ClientHello outright",
+      "statement": "A PQC consultancy names TLS inspection appliances rejecting the hybrid group as the most common production failure.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": "Encryption Consulting"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.encryptionconsulting.com/x25519mlkem768-tls-deployment-guide/",
+      "title": "X25519MLKEM768 TLS 1.3 Deployment Guide (Encryption Consulting)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Browsers ship it by default, CDNs prefer it automatically, and for most connections it is completely invisible.",
+      "statement": "For most connections, hybrid PQ key exchange already works without anyone noticing.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": "Encryption Consulting"
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://www.encryptionconsulting.com/x25519mlkem768-tls-deployment-guide/",
+      "title": "X25519MLKEM768 TLS 1.3 Deployment Guide (Encryption Consulting)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Test against your real network path, including inspection appliances, before a broad rollout, and instrument negotiated-group telemetry so a middlebox problem surfaces as a metric rather than a support ticket.",
+      "statement": "Recommended remediation is real-path testing plus negotiated-group telemetry, which matches the idea's wedge.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "11f74508-b08b-4478-b251-72eaab1731e6",
+        "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d"
+      ],
+      "company_name": "Encryption Consulting"
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://www.encryptionconsulting.com/x25519mlkem768-tls-deployment-guide/",
+      "title": "X25519MLKEM768 TLS 1.3 Deployment Guide (Encryption Consulting)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our PQC Advisory Services build the staged rollout and telemetry plan this guide describes, sequencing hybrid key exchange deployment around the specific middlebox and legacy system risks in your network.",
+      "statement": "Consultancies already sell middlebox-aware PQC rollout planning as a service.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "Encryption Consulting"
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://mailarchive.ietf.org/arch/msg/tls/Gc6KVPrVHn-QCkeEcvJ_qtRcFxY/",
+      "title": "[TLS] Re: WG Last Call: draft-ietf-tls-mlkem-05",
+      "source_type": "forum",
+      "published_at": "2025-11-28",
+      "quote": "My interest in TLS is internal telecom networks, not the public … my expectation is that some middleboxes blocking … X25519MLKEM768 will still be around in 2030–2035",
+      "statement": "On the IETF TLS list, a participant focused on internal telecom networks expects middleboxes blocking X25519MLKEM768 to persist into 2030-2035.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "f841ca54-b4f7-4bca-9dae-ee9d94ae929d",
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://mailarchive.ietf.org/arch/msg/tls/Gc6KVPrVHn-QCkeEcvJ_qtRcFxY/",
+      "title": "[TLS] Re: WG Last Call: draft-ietf-tls-mlkem-05",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Middleboxes and load-balancers is the big problem",
+      "statement": "An IETF participant names middleboxes and load-balancers as the main obstacle.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://discuss.cachyos.org/t/compatibility-upstream-default-pqc-ml-kem-in-curl-openssl-breaks-sni-routing-in-traefik-due-to-clienthello-bloat/24331",
+      "title": "Default PQC (ML-KEM) breaks SNI routing in Traefik",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "Traefik’s SNI sniffer only inspects the first TCP packet. Because the SNI extension is pushed into the second packet by the massive ML-KEM key shares, Traefik fails to read the requested domain",
+      "statement": "A user report shows a reverse proxy misrouting PQ connections because the ClientHello spans two TCP packets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96",
+        "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://origin-docs.paloaltonetworks.com/pan-os/11-1/pan-os-admin/decryption/post-quantum-cryptography-detection-and-control",
+      "title": "Post-Quantum Cryptography Detection and Control (Palo Alto Networks)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "the NGFW removes PQC, hybrid PQC, and other unsupported algorithms from the ClientHello. This forces the client to negotiate exclusively with classical algorithms.",
+      "statement": "On decrypted paths, Palo Alto firewalls strip PQC from the ClientHello, so traffic silently downgrades to classical crypto on that hop.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "f841ca54-b4f7-4bca-9dae-ee9d94ae929d",
+        "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d"
+      ],
+      "company_name": "Palo Alto Networks"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://origin-docs.paloaltonetworks.com/pan-os/11-1/pan-os-admin/decryption/post-quantum-cryptography-detection-and-control",
+      "title": "Post-Quantum Cryptography Detection and Control (Palo Alto Networks)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "you can detect, block, and log the use of PQC and hybrid PQC algorithms in TLSv1.3 sessions.",
+      "statement": "The NGFW itself can detect and log PQC use, covering part of the visibility need.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "Palo Alto Networks"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://developer.hashicorp.com/consul/docs/secure/encryption/migrate-post-quantum",
+      "title": "Migrate to post-quantum TLS (Consul, HashiCorp)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A mesh configuration entry affects the relevant datacenter and admin partition, not an individual service. … Do not assume that a mesh entry provides a per-service canary.",
+      "statement": "In service meshes, PQ TLS policy changes apply datacenter-wide with no per-service canary, so internal rollouts need separate testing.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "f841ca54-b4f7-4bca-9dae-ee9d94ae929d"
+      ],
+      "company_name": "HashiCorp"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://developer.hashicorp.com/consul/docs/secure/encryption/migrate-post-quantum",
+      "title": "Migrate to post-quantum TLS (Consul, HashiCorp)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Do not report fallback connections as post-quantum protected.",
+      "statement": "Vendor guidance warns that fallback connections must be tracked separately from PQ-protected ones.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "f841ca54-b4f7-4bca-9dae-ee9d94ae929d",
+        "11f74508-b08b-4478-b251-72eaab1731e6"
+      ],
+      "company_name": "HashiCorp"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://www.csoonline.com/article/4232205/growing-pqc-at-the-edge-belies-deeper-quantum-readiness-challenges.html",
+      "title": "Growing PQC at the edge belies deeper quantum-readiness challenges",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The limitation is that this protection does not automatically extend to the origin server, internal APIs, service-to-service communications, or enterprise PKI.",
+      "statement": "CDN-provided PQC covers only the edge; origin, internal APIs and service-to-service traffic are not covered.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "f841ca54-b4f7-4bca-9dae-ee9d94ae929d",
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://www.csoonline.com/article/4232205/growing-pqc-at-the-edge-belies-deeper-quantum-readiness-challenges.html",
+      "title": "Growing PQC at the edge belies deeper quantum-readiness challenges",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Remove Cloudflare-hosted sites and the figure drops to 22%.",
+      "statement": "Outside Cloudflare-hosted sites, only 22% of top websites support PQ key exchange.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ir8547-pqc-transition-20261030-csa-st/",
+      "title": "NIST IR 8547 Final: Post-Quantum Deadlines Become Vendor Requirements (CSA)",
+      "source_type": "industry_publication",
+      "published_at": "2026-10-30",
+      "quote": "Every approved quantum-vulnerable public-key algorithm is now deprecated after 2030 and disallowed under NIST standards",
+      "statement": "NIST IR 8547 (final, Oct 2026) deprecates all quantum-vulnerable public-key algorithms after 2030 and disallows them after 2035.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-ir8547-pqc-transition-20261030-csa-st/",
+      "title": "NIST IR 8547 Final: Post-Quantum Deadlines Become Vendor Requirements (CSA)",
+      "source_type": "industry_publication",
+      "published_at": "2026-10-30",
+      "quote": "For commercial organizations, deprecation after 2030 therefore creates a documented risk-acceptance obligation rather",
+      "statement": "For private companies the 2030 date creates a risk-acceptance obligation, not a ban, which softens the push.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography",
+      "title": "EU reinforces its cybersecurity with post-quantum cryptography",
+      "source_type": "report",
+      "published_at": "2025-06-23",
+      "quote": "All Member States should start transitioning to post-quantum cryptography by the end of 2026. At the same time, the protection of critical infrastructures should be transitioned to PQC as soon as possible, no later than by the end of 2030.",
+      "statement": "The EU roadmap asks Member States to start PQC transition by end-2026 and move critical infrastructure by end-2030.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62803",
+      "title": "RBI: Q-SAFE expert committee",
+      "source_type": "report",
+      "published_at": "2026-05-25",
+      "quote": "it has been decided to constitute an Expert Committee for a Quantum Secure and Adaptive Financial Ecosystem (Q-SAFE) … The Committee will submit its report within six months from the date of its first meeting.",
+      "statement": "The RBI set up the Q-SAFE expert committee in May 2026 with a six-month reporting window; there is no binding Indian bank PQC deadline yet.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": "Reserve Bank of India"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://www.policyedge.in/p/rbi-constitutes-q-safe-committee-to-prepare-banking-systems-for-quantum-cyber-risks",
+      "title": "RBI Constitutes Q-SAFE Committee (The Policy Edge)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Conduct a sector-wide diagnostic audit using a Cryptography Bill of Materials (CBOM) and evaluate financial-sector crypto-agility.",
+      "statement": "The Q-SAFE committee's mandate includes a sector-wide CBOM-based audit of Indian financial institutions.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848",
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://webiis08.mondaq.com/india/new-technology/1656908/cert-ins-expanded-bom-guidelines-preparing-for-the-next-phase-of-cyber-regulation",
+      "title": "CERT-In's Expanded BOM Guidelines",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "CBOM: Captures details of cryptographic elements embedded in systems, such as encryption algorithms or key management modules",
+      "statement": "CERT-In's BOM guidelines v2.0 (July 2025) cover a cryptographic bill of materials.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://www.encryptionconsulting.com/pci-dss-v4-requirement-on-cbom/",
+      "title": "PCI DSS v4.0.1 Requirement on CBOM (Encryption Consulting)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "an up-to-date inventory of all cryptographic cipher suites and protocols in use, including purpose and where used",
+      "statement": "PCI DSS v4.0.1 requirement 12.3.3 (mandatory since March 31, 2025) requires an up-to-date inventory of cipher suites and protocols in use.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://www.encryptionconsulting.com/pci-dss-v4-requirement-on-cbom/",
+      "title": "PCI DSS v4.0.1 Requirement on CBOM (Encryption Consulting)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "cipher suites and protocols via network and endpoint scanning (nmap, sslscan, or continuous discovery tooling)",
+      "statement": "Inventories are built today with free scanners such as nmap and sslscan or with commercial discovery tools.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8",
+        "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.bankinfosecurity.com/blogs/five-quantum-questions-every-bank-ciso-should-ask-p-4140",
+      "title": "Five Quantum Questions Every Bank CISO Should Ask",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Most banks today cannot answer the most basic question regulators are beginning to ask: Where is cryptography actually deployed across your environment?",
+      "statement": "A bank-security commentary says most banks cannot say where their cryptography is deployed.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8",
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.bankinfosecurity.com/blogs/five-quantum-questions-every-bank-ciso-should-ask-p-4140",
+      "title": "Five Quantum Questions Every Bank CISO Should Ask",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "For Indian BFSI organizations, a cryptographic bill of materials is moving from an optional best practice toward an expected security capability.",
+      "statement": "For Indian BFSI firms a CBOM is becoming an expected capability, not yet a hard mandate.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.isaca.org/about-us/newsroom/press-releases/2025/organizations-lack-a-quantum-computing-roadmap-isaca-finds",
+      "title": "ISACA Quantum Computing Pulse Poll 2025",
+      "source_type": "report",
+      "published_at": "2025-04-28",
+      "quote": "only 5 percent say it’s a high priority for the near future",
+      "statement": "In ISACA's 2025 poll only 5% of professionals call quantum a high near-term priority.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848",
+        "8530dd59-ea75-4727-ad79-063d901786cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.isaca.org/about-us/newsroom/press-releases/2025/organizations-lack-a-quantum-computing-roadmap-isaca-finds",
+      "title": "ISACA Quantum Computing Pulse Poll 2025",
+      "source_type": "report",
+      "published_at": "2025-04-28",
+      "quote": "41 percent say they do not plan to address quantum computing at this time",
+      "statement": "41% say their organizations do not plan to address quantum computing yet.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.techradar.com/pro/quantum-can-wait-why-cisos-should-focus-on-todays-preventable-cyber-risks",
+      "title": "Quantum can wait: Why CISOs should focus on today's preventable cyber risks",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "While impending threats shouldn’t be ignored entirely, most companies shouldn’t be focusing on it over the rest of their security priorities.",
+      "statement": "A security CEO argues most companies should not prioritise quantum over current threats.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848",
+        "8530dd59-ea75-4727-ad79-063d901786cd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://www.techtarget.com/cybersecurity/news/366645009/As-Q-Day-looms-90-of-systems-are-unprepared-for-PQC",
+      "title": "As Q-Day looms, 90% of systems are unprepared for PQC",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "A migration nobody has put a number on is a migration nobody will fund,",
+      "statement": "A former bank CISO says PQC migration gets funded only when its risk is quantified, signalling budget friction.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "8530dd59-ea75-4727-ad79-063d901786cd",
+        "0ff2eb77-6a62-4798-b2a6-15b498353b96"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://www.techtarget.com/cybersecurity/news/366645009/As-Q-Day-looms-90-of-systems-are-unprepared-for-PQC",
+      "title": "As Q-Day looms, 90% of systems are unprepared for PQC",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "We still talk to people who ask, 'Does that really affect my industry? Do I need to care?'",
+      "statement": "A research VP reports many organizations still question whether PQC applies to them.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.qnulabs.com/whitepaper/bfsi-quantum-threat-intelligence-report",
+      "title": "Quantum Threat to BFSI (QNu Labs)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "While 92% of BFSI leaders are concerned, funding for quantum prep remains low.",
+      "statement": "An Indian PQC vendor says BFSI funding for quantum preparation remains low despite concern.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "8530dd59-ea75-4727-ad79-063d901786cd",
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": "QNu Labs"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://kpmg.com/us/en/articles/2026/quantum-risk-cybersecurity-preparation-gap.html",
+      "title": "Quantum risk isn't tomorrow's problem (KPMG)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "only a minority have begun implementing post-quantum cryptography, and fewer than half consider themselves well prepared",
+      "statement": "KPMG reports only a minority of organizations have begun implementing PQC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://jobs.citi.com/job/jacksonville/senior-program-manager-cybersecurity-and-technology-risk/287/102910128144",
+      "title": "Senior Program Manager, Cybersecurity & Technology Risk (Citi Careers)",
+      "source_type": "job_posting",
+      "published_at": "2026-11-05",
+      "quote": "a strategic program leadership role accountable for driving the planning, governance, execution, and delivery of Citi's enterprise-wide Post Quantum Readiness Program.",
+      "statement": "Citi runs an enterprise-wide Post Quantum Readiness Program inside Cybersecurity & Technology Risk, with a dedicated program lead.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8530dd59-ea75-4727-ad79-063d901786cd"
+      ],
+      "company_name": "Citi"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://jobs.citi.com/job/jacksonville/senior-program-manager-cybersecurity-and-technology-risk/287/102910128144",
+      "title": "Senior Program Manager, Cybersecurity & Technology Risk (Citi Careers)",
+      "source_type": "job_posting",
+      "published_at": "2026-11-05",
+      "quote": "Respond to the increasing frequency of internal and external regulatory requests on program readiness and alignment.",
+      "statement": "The posting cites a rising frequency of regulatory requests about PQC readiness at a large bank.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a2105179-35f6-4e81-a783-bf114f09f848",
+        "8530dd59-ea75-4727-ad79-063d901786cd"
+      ],
+      "company_name": "Citi"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://jobs.citi.com/job/jacksonville/senior-program-manager-cybersecurity-and-technology-risk/287/102910128144",
+      "title": "Senior Program Manager, Cybersecurity & Technology Risk (Citi Careers)",
+      "source_type": "job_posting",
+      "published_at": "2026-11-05",
+      "quote": "Track critical vendor PQC roadmaps and delivery dates using tools including Confluence and Jira.",
+      "statement": "Vendor PQC readiness is tracked in general tools such as Confluence and Jira.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d",
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "Citi"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://www.helpnetsecurity.com/2025/07/14/pqcscan-open-source-post-quantum-cryptography-scanner/",
+      "title": "pqcscan: Open-source post-quantum cryptography scanner",
+      "source_type": "news",
+      "published_at": "2025-07-14",
+      "quote": "pqcscan is an open-source tool that lets users scan SSH and TLS servers to see which Post-Quantum Cryptography (PQC) algorithms they claim to support.",
+      "statement": "pqcscan is a free open-source scanner for PQC support on SSH/TLS servers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://www.helpnetsecurity.com/2025/07/14/pqcscan-open-source-post-quantum-cryptography-scanner/",
+      "title": "pqcscan: Open-source post-quantum cryptography scanner",
+      "source_type": "news",
+      "published_at": "2025-07-14",
+      "quote": "The HTML output, for example, gets somewhat unwieldy when you’re dealing with 10,000 hosts",
+      "statement": "Its author notes the output becomes unwieldy at 10,000 hosts.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://keyfactor.com/products/cryptographic-discovery-inventory/",
+      "title": "Keyfactor AgileSec: Cryptographic Discovery & Inventory",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Deploy lightweight, purpose-built sensors to scan code, servers, endpoints, cloud workloads, and even real-time network traffic",
+      "statement": "Keyfactor AgileSec discovers cryptography, including from real-time network traffic.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "Keyfactor"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://docs.keyfactor.com/agilesec/latest/cipher-insights-sensor-user-guide",
+      "title": "CipherInsights Connector User Guide (Keyfactor)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "TLS/SSL protocol versions, cipher suites, and key exchange algorithms observed on network endpoints",
+      "statement": "Keyfactor's CipherInsights network sensor records key-exchange algorithms seen on network endpoints.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "Keyfactor"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.sandboxaq.com/solutions/aqtive-guard",
+      "title": "AQtive Guard (SandboxAQ)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "AQtive Guard correlates data across code, runtime, and the network.",
+      "statement": "SandboxAQ's AQtive Guard builds a cryptographic inventory across code, runtime and network.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "SandboxAQ"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://www.ibm.com/products/guardium-quantum-safe",
+      "title": "IBM Quantum Safe",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Find cryptography across IT operations and code repositories, including relevant interfaces and dependencies to build a comprehensive cryptographic inventory.",
+      "statement": "IBM Quantum Safe sells cryptographic inventory and PQC migration orchestration.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "IBM"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://github.com/cbomkit/cbomkit",
+      "title": "CBOMkit (GitHub)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CBOMkit is a toolset for dealing with Cryptography Bill of Materials (CBOM).",
+      "statement": "CBOMkit is a free open-source toolset to generate, view and check CBOMs.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.encryptionconsulting.com/",
+      "title": "Encryption Consulting",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CBOM Secure … Cryptographic Discovery & Inventory … A deterministic discovery solution for complete visibility and governance of your entire cryptographic environment.",
+      "statement": "Encryption Consulting sells a CBOM discovery product alongside advisory services.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "Encryption Consulting"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://pqshield.com/",
+      "title": "PQShield",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "PQShield is focused on empowering organizations, industries, and nations, with the ultimate quantum-resistant hardware and software solutions.",
+      "statement": "PQShield sells PQC algorithm implementations (hardware/software), not path diagnostics.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7122a9ed-bfd1-4846-b811-2b89d45d24b8"
+      ],
+      "company_name": "PQShield"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://jobs.citi.com/job/jacksonville/senior-program-manager-cybersecurity-and-technology-risk/287/102910128144",
+      "title": "Senior Program Manager, Cybersecurity & Technology Risk (Citi Careers)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Jacksonville, Florida, United States … approximately 219,000 dedicated people",
+      "statement": "Citi: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Citi"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.synchrony.com/about-us/leadership",
+      "title": "Leadership at Synchrony",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "a leading consumer financing company that has been at the heart of American commerce for nearly a century",
+      "statement": "Synchrony: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Synchrony"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.synchrony.com/about-us/leadership",
+      "title": "Leadership at Synchrony",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Florin Arghirescu is Executive Vice President and Chief Technology Officer of Synchrony",
+      "statement": "Synchrony public page lists Executive Vice President and Chief Technology Officer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Synchrony"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.adyen.com/about",
+      "title": "Adyen - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "5000+ employees globally … We are located around the world … Amsterdam",
+      "statement": "Adyen: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Adyen"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.phonepe.com/about-us/",
+      "title": "PhonePe - Our Journey",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "PhonePe is an India headquartered technology company",
+      "statement": "PhonePe: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "PhonePe"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.phonepe.com/about-us/",
+      "title": "PhonePe - Our Journey",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Sameer Nigam Founder, Whole-time Director and Chief Executive Officer",
+      "statement": "PhonePe public page lists Founder, Whole-time Director and Chief Executive Officer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "PhonePe"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.paytm.com/about-us",
+      "title": "Paytm - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Paytm started the Digital Revolution in India.",
+      "statement": "Paytm: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Paytm"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://razorpay.com/about/",
+      "title": "About Razorpay",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Bangalore Headquarters",
+      "statement": "Razorpay: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Razorpay"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.cashfree.com/about-us/",
+      "title": "About Cashfree Payments",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Cashfree Payments is a leader in India’s payments landscape, processing $80B annually",
+      "statement": "Cashfree Payments: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cashfree Payments"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.juspay.io/about",
+      "title": "Juspay | About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Headquartered in Bangalore, our global network of 1,500+ payment experts",
+      "statement": "Juspay: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Juspay"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.klarna.com/international/about-us/",
+      "title": "Hej, we're Klarna",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our history Made in Stockholm",
+      "statement": "Klarna: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Klarna"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.bunq.com/about",
+      "title": "About bunq",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "we're Europe's second-largest neobank, trusted by 22+ million users",
+      "statement": "bunq: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "bunq"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://www.kotak.com/en/about-us.html",
+      "title": "Kotak Mahindra Bank - About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Kotak Mahindra Finance Ltd. becomes India’s first non-banking finance company to convert into a commercial bank.",
+      "statement": "Kotak Mahindra Bank: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kotak Mahindra Bank"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.kotak.com/en/about-us.html",
+      "title": "Kotak Mahindra Bank - About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Anup Kumar Saha is a Whole-time Director at Kotak Mahindra Bank",
+      "statement": "Kotak Mahindra Bank public page lists Whole-time Director.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Kotak Mahindra Bank"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.bankofbaroda.in/about-us",
+      "title": "Bank of Baroda - Overview",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Baroda Corporate Centre in Mumbai",
+      "statement": "Bank of Baroda: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bank of Baroda"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://hdfc.bank.in/about-us/management-team",
+      "title": "HDFC Bank Management Team",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "HDFC Bank's mission to be a world class Indian bank",
+      "statement": "HDFC Bank: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "HDFC Bank"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://www.db.com/who-we-are",
+      "title": "About Deutsche Bank",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "it is the leading bank in Germany with a strong position in Europe, represented in 56 countries around the world",
+      "statement": "Deutsche Bank: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Deutsche Bank"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://danskebank.com/about-us",
+      "title": "Danske Bank - About us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "More than 20,000 employees",
+      "statement": "Danske Bank: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Danske Bank"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.santander.com/en/about-us",
+      "title": "About us | Santander",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "operates in 9 core markets in Europe and the Americas",
+      "statement": "Santander: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Santander"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.jackhenry.com/about",
+      "title": "About Jack Henry",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Jack Henry was founded in a small Missouri town",
+      "statement": "Jack Henry: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Jack Henry"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://www.nium.com/about-us",
+      "title": "About Nium",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Co-headquartered in San Francisco and Singapore.",
+      "statement": "Nium: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nium"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.paymentology.com/team",
+      "title": "About Paymentology",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Head of Growth, Europe",
+      "statement": "Paymentology: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Paymentology"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.paymentology.com/team",
+      "title": "About Paymentology",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Jim Hart Chief Information Security Officer",
+      "statement": "Paymentology public page lists Chief Information Security Officer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Paymentology"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.paymentology.com/team",
+      "title": "About Paymentology",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Tim Joslyn Chief Technology Officer",
+      "statement": "Paymentology public page lists Chief Technology Officer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Paymentology"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.fiserv.com/en/about-fiserv.html",
+      "title": "Fiserv - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Digital banking, payments and solutions at scale for large institutions",
+      "statement": "Fiserv: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Fiserv"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.fisglobal.com/about-us",
+      "title": "FIS - About",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "clients served across 150 countries",
+      "statement": "FIS: company facts from its own site (location/scale).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "FIS"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "99d8b4b2-9b67-4b44-aad9-ba151aa7b34d",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Today teams find PQC path breakage reactively: users see failed page loads, and the vendor-documented diagnosis is a manual packet capture inspected in Wireshark.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-05",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "Public guidance tells administrators to contact their middlebox vendor for a patch, or to manually audit every TLS-terminating or inspecting device on the path.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-10"
+          ]
+        },
+        {
+          "statement": "Free point checks exist: Cloudflare Radar tests a hostname for PQ TLS bugs and characterizes failures; pqcscan reports what PQC algorithms servers advertise; inventories use nmap/sslscan or commercial discovery tools.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-08",
+            "ev-44",
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "Ad-hoc workarounds include forcing classical curves on the client.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "None of the found tools test multi-hop internal paths and pinpoint the failing hop; that gap is inferred from what the tools describe, not stated by any source.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-08",
+            "ev-44"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "a2105179-35f6-4e81-a783-bf114f09f848",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "NIST IR 8547 (final, Oct 2026) deprecates all quantum-vulnerable public-key algorithms after 2030 and disallows them after 2035.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-24"
+          ]
+        },
+        {
+          "statement": "The EU roadmap asks Member States to start the transition by end-2026 and move critical infrastructure by end-2030.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-26"
+          ]
+        },
+        {
+          "statement": "PCI DSS v4.0.1 requirement 12.3.3 requires an up-to-date inventory of cipher suites and protocols in use.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-30"
+          ]
+        },
+        {
+          "statement": "In India, the RBI formed the Q-SAFE committee (May 2026), whose mandate includes a CBOM-based sector audit; CERT-In's BOM guidelines cover CBOM. Neither sets a binding bank deadline yet.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27",
+            "ev-28",
+            "ev-29",
+            "ev-33"
+          ]
+        },
+        {
+          "statement": "Against this: for commercial firms deprecation means documented risk acceptance, not a ban, and in 2025 only 5% of ISACA respondents called quantum a high near-term priority while 41% had no plans.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25",
+            "ev-34",
+            "ev-35"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "8530dd59-ea75-4727-ad79-063d901786cd",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "At Citi, PQC readiness is an enterprise program inside Cybersecurity & Technology Risk, with a program lead fielding rising regulatory requests.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-41",
+            "ev-42"
+          ]
+        },
+        {
+          "statement": "Budget is a hurdle: a former bank CISO says unquantified migrations do not get funded, and an Indian vendor says BFSI funding for quantum prep remains low.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-37",
+            "ev-39"
+          ]
+        },
+        {
+          "statement": "No evidence found on who signs for network-path testing tools specifically (security vs network teams) or on budgets in the $30k-$150k range.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "0ff2eb77-6a62-4798-b2a6-15b498353b96",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "When the hybrid ClientHello breaks a middlebox, websites fail to load; Chrome's rollout exposed bugs in several middlebox products from multiple vendors.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-05",
+            "ev-03",
+            "ev-04"
+          ]
+        },
+        {
+          "statement": "The most common production failure is a TLS inspection appliance rejecting the hybrid group; reverse proxies that sniff SNI from the first packet also misroute.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-11",
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "At scale the failures are a tail: Cloudflare reports 99.2% of PQ origin connections completing in one round trip, and a deployment guide says it is invisible for most connections.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-09",
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "No source quantifies outage hours, incident cost or staff time per incident.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "7122a9ed-bfd1-4846-b811-2b89d45d24b8",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Commercial cryptographic inventory platforms already include network discovery: Keyfactor AgileSec (network traffic sensors), SandboxAQ AQtive Guard, IBM Quantum Safe, Encryption Consulting CBOM Secure.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-46",
+            "ev-47",
+            "ev-48",
+            "ev-49",
+            "ev-51"
+          ]
+        },
+        {
+          "statement": "Free and open-source options exist for CBOM generation (CBOMkit) and PQC endpoint scanning (pqcscan, Cloudflare Radar).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-50",
+            "ev-44",
+            "ev-08"
+          ]
+        },
+        {
+          "statement": "NGFWs such as Palo Alto can detect and log PQC use; consultancies sell middlebox-aware rollout planning.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19",
+            "ev-14"
+          ]
+        },
+        {
+          "statement": "Large banks track vendor PQC roadmaps in Confluence and Jira.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-43"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "11f74508-b08b-4478-b251-72eaab1731e6",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Guidance favours testing the real network path including inspection appliances before rollout, and negotiated-group telemetry rather than overall handshake success.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-13"
+          ]
+        },
+        {
+          "statement": "Fallback connections should be reported separately from PQ-protected ones.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-21"
+          ]
+        },
+        {
+          "statement": "The durable fix is a vendor patch, and at least one major firewall vendor shipped fixed builds, which limits the long-term value of breakage-only diagnostics.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-02"
+          ]
+        },
+        {
+          "statement": "No buyer statement was found on whether a proxy/fallback product is wanted.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "f841ca54-b4f7-4bca-9dae-ee9d94ae929d",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "CDN-provided PQC covers only the edge, not origin, internal APIs or service-to-service traffic.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22"
+          ]
+        },
+        {
+          "statement": "Inspecting firewalls on decrypted paths strip PQC from the ClientHello, silently downgrading that hop to classical crypto.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18"
+          ]
+        },
+        {
+          "statement": "Service-mesh PQ policies apply datacenter-wide with no per-service canary; a telecom participant at the IETF expects PQ-blocking middleboxes in internal networks into 2030-2035.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-20",
+            "ev-15"
+          ]
+        },
+        {
+          "statement": "No practitioner first-person evidence was found about east-west PQC breakage at a bank.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Cloudflare Radar post-quantum check / Automatic Key Exchange",
+      "url": "https://radar.cloudflare.com",
+      "kind": "indirect",
+      "description": "Free hostname check for PQ TLS support and implementation bugs, with failure characterization; Cloudflare also probes origins and falls back automatically. Covers external/edge paths only.",
+      "evidence_refs": [
+        "ev-08",
+        "ev-09",
+        "ev-10"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-02",
+      "name": "pqcscan (open source)",
+      "url": "https://github.com/anvilsecure/pqcscan",
+      "kind": "direct",
+      "description": "Free CLI that scans SSH/TLS servers for advertised PQC algorithms; JSON/HTML output. Does not test path breakage.",
+      "evidence_refs": [
+        "ev-44",
+        "ev-45"
+      ],
+      "sentiment": [
+        {
+          "statement": "Its author says HTML output gets unwieldy at 10,000 hosts.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-45"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "Keyfactor AgileSec (incl. CipherInsights)",
+      "url": "https://keyfactor.com/products/cryptographic-discovery-inventory/",
+      "kind": "direct",
+      "description": "Cryptographic discovery and inventory with sensors for code, servers, endpoints, cloud and real-time network traffic; network sensor records key-exchange algorithms per endpoint.",
+      "evidence_refs": [
+        "ev-46",
+        "ev-47"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "SandboxAQ AQtive Guard",
+      "url": "https://www.aqtiveguard.com",
+      "kind": "direct",
+      "description": "Cryptographic inventory and remediation platform correlating code, runtime and network data.",
+      "evidence_refs": [
+        "ev-48"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "IBM Quantum Safe",
+      "url": "https://www.ibm.com/products/quantum-safe",
+      "kind": "direct",
+      "description": "Discovery across IT operations and code repos, CBOMs, risk scoring and migration workflows.",
+      "evidence_refs": [
+        "ev-49"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "CBOMkit (open source, PQCA)",
+      "url": "https://github.com/cbomkit/cbomkit",
+      "kind": "indirect",
+      "description": "Free toolset to generate CBOMs from source code, view them and check compliance.",
+      "evidence_refs": [
+        "ev-50"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Encryption Consulting (CBOM Secure + PQC Advisory)",
+      "url": "https://www.encryptionconsulting.com",
+      "kind": "service",
+      "description": "Consultancy with a CBOM discovery product and advisory that plans middlebox-aware hybrid key exchange rollouts.",
+      "evidence_refs": [
+        "ev-51",
+        "ev-14",
+        "ev-13"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "Palo Alto Networks NGFW PQC detection",
+      "url": "https://www.paloaltonetworks.com",
+      "kind": "indirect",
+      "description": "Firewall can detect, block and log PQC/hybrid PQC in TLS 1.3; strips PQC on decrypted sessions.",
+      "evidence_refs": [
+        "ev-18",
+        "ev-19"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "PQShield",
+      "url": "https://pqshield.com",
+      "kind": "indirect",
+      "description": "PQC algorithm implementations in hardware and software; not network diagnostics.",
+      "evidence_refs": [
+        "ev-52"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Manual: packet capture, vendor tickets, nmap/sslscan, Jira/Confluence trackers",
+      "url": null,
+      "kind": "manual",
+      "description": "Wireshark captures to diagnose failures, vendor patch requests, free scanners for cipher inventories, and general trackers for vendor PQC roadmaps.",
+      "evidence_refs": [
+        "ev-06",
+        "ev-02",
+        "ev-31",
+        "ev-43"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Breakage is found reactively (failed page loads) and diagnosed by packet capture in Wireshark, then fixed by vendor patches or by forcing classical crypto.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-05",
+        "ev-06",
+        "ev-07",
+        "ev-17"
+      ]
+    },
+    {
+      "statement": "For external endpoints, free checks exist (Cloudflare Radar, pqcscan), and CDNs fall back to classical automatically.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-08",
+        "ev-09",
+        "ev-44"
+      ]
+    },
+    {
+      "statement": "Cryptographic inventories are built with commercial discovery platforms (Keyfactor, SandboxAQ, IBM, Encryption Consulting) or free scanners and CBOMkit.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-46",
+        "ev-48",
+        "ev-49",
+        "ev-51",
+        "ev-31",
+        "ev-50"
+      ]
+    },
+    {
+      "statement": "Large banks run PQC as a governance program, tracking vendor roadmaps in Jira and Confluence.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-41",
+        "ev-43"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Citi",
+      "website": "https://www.citigroup.com",
+      "icp_id": null,
+      "location": "United States (global)",
+      "industry": "Global bank",
+      "description": "Global bank running an enterprise-wide Post Quantum Readiness Program with rising regulatory requests.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-53"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-53",
+        "ev-41",
+        "ev-42",
+        "ev-43"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Global bank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 5,
+          "rationale": "Active PQC readiness program and rising regulatory requests on readiness.",
+          "evidence_refs": [
+            "ev-41",
+            "ev-42"
+          ]
+        }
+      },
+      "contacts": [],
+      "size_estimate": {
+        "min": 219000,
+        "max": null,
+        "signal": "Citi careers page: approximately 219,000 people",
+        "evidence_ref": "ev-53"
+      }
+    },
+    {
+      "ref": "co-02",
+      "name": "Synchrony",
+      "website": "https://www.synchrony.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Consumer financing / bank",
+      "description": "Large US consumer-finance bank and card issuer in PCI DSS scope.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-54"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-54",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Consumer financing / bank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Florin Arghirescu",
+          "role": "Executive Vice President and Chief Technology Officer",
+          "email": null,
+          "evidence_ref": "ev-55"
+        }
+      ]
+    },
+    {
+      "ref": "co-03",
+      "name": "Adyen",
+      "website": "https://www.adyen.com",
+      "icp_id": null,
+      "location": "Amsterdam, Netherlands",
+      "industry": "Payments platform",
+      "description": "Global payments processor headquartered in Europe, in PCI DSS scope.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-56"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-56"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Payments platform in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "size_estimate": {
+        "min": 5000,
+        "max": null,
+        "signal": "Adyen about page: 5000+ employees globally",
+        "evidence_ref": "ev-56"
+      }
+    },
+    {
+      "ref": "co-04",
+      "name": "PhonePe",
+      "website": "https://www.phonepe.com",
+      "icp_id": null,
+      "location": "India",
+      "industry": "Digital payments",
+      "description": "India's largest digital payments platform; RBI-regulated payments in scope of CERT-In guidance.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-57"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-57",
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Digital payments in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Sameer Nigam",
+          "role": "Founder, Whole-time Director and Chief Executive Officer",
+          "email": null,
+          "evidence_ref": "ev-58"
+        }
+      ]
+    },
+    {
+      "ref": "co-05",
+      "name": "Paytm",
+      "website": "https://www.paytm.com",
+      "icp_id": null,
+      "location": "India",
+      "industry": "Digital payments",
+      "description": "Major Indian payments app serving merchants; RBI-regulated BFSI.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Digital payments in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Razorpay",
+      "website": "https://razorpay.com",
+      "icp_id": null,
+      "location": "Bangalore, India",
+      "industry": "Payment gateway",
+      "description": "Indian payment gateway and business-banking platform.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-60"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Payment gateway in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Cashfree Payments",
+      "website": "https://www.cashfree.com",
+      "icp_id": null,
+      "location": "India",
+      "industry": "Payment gateway",
+      "description": "Indian payments processor handling $80B annually.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Payment gateway in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "Juspay",
+      "website": "https://juspay.io",
+      "icp_id": null,
+      "location": "Bengaluru, India",
+      "industry": "Payment orchestration",
+      "description": "Bangalore-headquartered payments infrastructure company with 1,500+ staff.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Payment orchestration in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "size_estimate": {
+        "min": 1500,
+        "max": null,
+        "signal": "Juspay about page: 1,500+ payment experts",
+        "evidence_ref": "ev-62"
+      }
+    },
+    {
+      "ref": "co-09",
+      "name": "Klarna",
+      "website": "https://www.klarna.com",
+      "icp_id": null,
+      "location": "Stockholm, Sweden",
+      "industry": "Payments / bank",
+      "description": "European payments company and bank serving 120m people.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Payments / bank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "bunq",
+      "website": "https://www.bunq.com",
+      "icp_id": null,
+      "location": "Netherlands / EU",
+      "industry": "Neobank",
+      "description": "EU-licensed neobank with 22+ million users.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-64"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-64"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Neobank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-64"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Kotak Mahindra Bank",
+      "website": "https://www.kotak.com",
+      "icp_id": null,
+      "location": "India",
+      "industry": "Bank",
+      "description": "Large Indian private-sector bank subject to RBI and CERT-In guidance.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-65"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-65",
+        "ev-66"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Bank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Anup Kumar Saha",
+          "role": "Whole-time Director",
+          "email": null,
+          "evidence_ref": "ev-66"
+        }
+      ]
+    },
+    {
+      "ref": "co-12",
+      "name": "Bank of Baroda",
+      "website": "https://www.bankofbaroda.in",
+      "icp_id": null,
+      "location": "Mumbai, India",
+      "industry": "Bank",
+      "description": "Large Indian public-sector bank operating across 15 countries.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Bank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "HDFC Bank",
+      "website": "https://www.hdfc.bank.in",
+      "icp_id": null,
+      "location": "India",
+      "industry": "Bank",
+      "description": "Large Indian private bank in scope of RBI Q-SAFE and CERT-In CBOM guidance.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-68"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-68"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Bank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Deutsche Bank",
+      "website": "https://www.db.com",
+      "icp_id": null,
+      "location": "Germany",
+      "industry": "Bank",
+      "description": "Leading German bank present in 56 countries; subject to the EU PQC roadmap.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-69"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-69"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Bank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-69"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "Danske Bank",
+      "website": "https://danskebank.com",
+      "icp_id": null,
+      "location": "Denmark",
+      "industry": "Bank",
+      "description": "Nordic bank with more than 20,000 employees.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-70"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-70"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Bank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-70"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "size_estimate": {
+        "min": 20000,
+        "max": null,
+        "signal": "Danske Bank about page: more than 20,000 employees",
+        "evidence_ref": "ev-70"
+      }
+    },
+    {
+      "ref": "co-16",
+      "name": "Santander",
+      "website": "https://www.santander.com",
+      "icp_id": null,
+      "location": "Spain / Europe",
+      "industry": "Bank",
+      "description": "Global retail bank with core markets in Europe and the Americas.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-71"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Bank in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "Jack Henry",
+      "website": "https://www.jackhenry.com",
+      "icp_id": null,
+      "location": "Missouri, United States",
+      "industry": "Core banking / payments technology",
+      "description": "US core-banking and payments provider to community and regional banks (possible channel).",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-72"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-72"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Core banking / payments technology in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-72"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Nium",
+      "website": "https://www.nium.com",
+      "icp_id": null,
+      "location": "San Francisco, US / Singapore",
+      "industry": "Cross-border payments",
+      "description": "Payments infrastructure company co-headquartered in San Francisco.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-73"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-73"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Cross-border payments in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "Paymentology",
+      "website": "https://www.paymentology.com",
+      "icp_id": null,
+      "location": "Global (Europe presence)",
+      "industry": "Card issuer processing",
+      "description": "Card-issuing processor with a named CISO; PCI DSS scope. Size not stated.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-74",
+        "ev-75",
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Card issuer processing in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-74"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Jim Hart",
+          "role": "Chief Information Security Officer",
+          "email": null,
+          "evidence_ref": "ev-75"
+        },
+        {
+          "name": "Tim Joslyn",
+          "role": "Chief Technology Officer",
+          "email": null,
+          "evidence_ref": "ev-76"
+        }
+      ]
+    },
+    {
+      "ref": "co-20",
+      "name": "Fiserv",
+      "website": "https://www.fiserv.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Payments and core banking",
+      "description": "Payments and core-banking processor for large financial institutions.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Payments and core banking in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-21",
+      "name": "FIS",
+      "website": "https://www.fisglobal.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Financial technology",
+      "description": "Financial technology provider to banks in 150 countries.",
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-78"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Financial technology in the target geography; matches the BFSI ICP.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence about its TLS inspection or PQC tooling.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public PQC signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
