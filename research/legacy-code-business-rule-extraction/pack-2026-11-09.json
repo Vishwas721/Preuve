@@ -1,0 +1,2978 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "d4cc9051-4004-4682-952c-4a717463ae21",
+    "researcher": "claude-code",
+    "started_at": "2026-11-09T12:20:00Z",
+    "finished_at": "2026-11-09T14:10:00Z",
+    "queries": [
+      "COBOL business rules undocumented retired developers nobody knows reddit",
+      "credit union core processor outsourced COBOL in-house percent community banks core providers Fiserv Jack Henry FIS market share",
+      "legacy modernization project failure lost business rules survey percent",
+      "AWS Transform mainframe business rules extraction documentation generation free pricing",
+      "IBM watsonx Code Assistant for Z understand business rules explain COBOL announcement",
+      "Mechanical Orchard Imogen legacy behavior capture funding",
+      "Google Cloud Mainframe Assessment Tool Gemini COBOL documentation business rules",
+      "Swimm COBOL business rules extraction mainframe understanding product",
+      "reddit mainframe COBOL \"business rules\" nobody knows why code does this documentation",
+      "EvolveWare survey IT leaders tribal knowledge business rules extraction modernization",
+      "LLM COBOL business rule extraction hallucination accuracy study inconsistent",
+      "bank job posting \"business rules\" COBOL analyst document legacy system credit union RPG developer",
+      "AI legacy code understanding startup business rules COBOL raises seed 2025 2026 CoreStory OR Zengines OR Hypercubic OR Kodesage",
+      "bank concerns uploading source code to generative AI tools security intellectual property survey financial institutions",
+      "\"business rules extraction\" services legacy modernization consulting cost per line of code months",
+      "community bank does not own source code core processor in-house vs outsourced percent banks in-house core 2023 survey",
+      "news.ycombinator.com COBOL business rules extraction LLM worked documentation legacy",
+      "Gartner Magic Quadrant AI-Augmented Code Modernization Tools 2026 vendors",
+      "insurer legacy policy administration system replacement undocumented business rules lost conversion problems",
+      "IBM i RPG survey Fortra IBM i marketplace 2025 skills retiring documentation concern percent",
+      "regional bank careers \"COBOL\" programmer analyst job 2026 bank",
+      "community bank \"in-house core\" system bank hiring \"RPG\" OR \"COBOL\" IBM i programmer",
+      "builtin.com job bank \"IBM i\" OR \"AS/400\" RPG programmer bank core 2026",
+      "bank \"mainframe\" OR \"COBOL\" developer job community bank employees $5 billion bank careers 2026"
+    ],
+    "notes": "Primary ICP = mid-size US regional banks. 21 prospects, all US community/regional banks found via their own sites; only one (Bangor Savings Bank) has a public legacy-code signal (IBM i/RPG job posting). Most others show no stack info, and several (Tri Counties, Peoples, Mechanics) may exceed the 2,000-employee band. Contacts are few because most leadership pages list titles without names or names without titles in one quote. Unfetchable (not cited): Swimm blog posts (403), TechChannel, BusinessWire Advanced survey, Fortra IBM i survey (robots), CSBS community bank survey (403), several job boards. Many problem sources are vendor content; treated as inference where they are opinions."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://www.computerworld.com/article/1545244/the-cobol-brain-drain.html",
+      "title": "The Cobol Brain Drain (Computerworld)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "One Millennium client recently spent $1 million to have its Cobol programs analyzed and business logic reconstructed as part of a migration off of a mainframe. “If they had the legacy programmers there and we had done the exercise with them, it would have cost $200,000 and taken one-tenth of the time,”",
+      "statement": "A rule-extraction vendor reports a client spent $1M to have COBOL programs analyzed and business logic reconstructed for a mainframe migration, versus an estimated $200K had the legacy programmers still been there.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "2436f75b-9812-4bb8-8323-2bf381060257",
+        "8f80d217-ba87-4edf-a62b-2cae3cea154f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://www.computerworld.com/article/1545244/the-cobol-brain-drain.html",
+      "title": "The Cobol Brain Drain (Computerworld)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "If you wait until that institutional knowledge is gone, he warns, the costs can be as much as 10 times higher than they would have been beforehand.",
+      "statement": "Vendor claim that waiting until institutional knowledge is gone can make rule recovery up to 10x more expensive.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2436f75b-9812-4bb8-8323-2bf381060257"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://www.computerworld.com/article/1545244/the-cobol-brain-drain.html",
+      "title": "The Cobol Brain Drain (Computerworld)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "But what really keeps him up at night is the thought that he may not be able to transfer the deep understanding of the business logic embedded within the bank’s programs before it walks out the door with employees who retire.",
+      "statement": "An IT transformation head at a large bank says his biggest worry is failing to transfer the business logic embedded in COBOL programs before staff retire.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": "BNY Mellon"
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://www.computerworld.com/article/1545244/the-cobol-brain-drain.html",
+      "title": "The Cobol Brain Drain (Computerworld)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "But that kind of proactive approach, and the extra costs it incurs, can be a hard sell. “We haven’t gotten to the point of feeling the pain yet. When we do, it will happen,”",
+      "statement": "Even the bank leader most worried about knowledge loss says proactive knowledge-transfer spending is a hard sell because the pain hasn't been felt yet.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8",
+        "8f80d217-ba87-4edf-a62b-2cae3cea154f"
+      ],
+      "company_name": "BNY Mellon"
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://www.computerworld.com/article/1545244/the-cobol-brain-drain.html",
+      "title": "The Cobol Brain Drain (Computerworld)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Much of that involved migrations by small and midsize mainframe shops that move off what they see as a legacy language when they retire the hardware,",
+      "statement": "Gartner (as quoted) says much of the decline in COBOL code comes from small and midsize shops moving off the language when they retire hardware, i.e. smaller firms tend to replace rather than preserve.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://www.computerworld.com/article/1545244/the-cobol-brain-drain.html",
+      "title": "The Cobol Brain Drain (Computerworld)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The county has been forced to contract with retired employees and outsource Cobol maintenance and support to a third party — something that just 18% of Computerworld survey respondents said they’re doing.",
+      "statement": "A county contracts retired employees and outsources COBOL maintenance; only 18% of survey respondents outsource COBOL maintenance.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://www.computerworld.com/article/1545244/the-cobol-brain-drain.html",
+      "title": "The Cobol Brain Drain (Computerworld)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "That means adding staff and having a period of overlap as Cobol’s secrets get passed on to the next generation. “I’m trying to get those people on board and do the knowledge transfer sooner rather than later,”",
+      "statement": "The incumbent approach at a large bank is hiring and overlapping new staff with retirees to transfer knowledge, with a learning curve of a year or more.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "BNY Mellon"
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://devsu.com/resources-center/the-cobol-cliff-is-not-a-talent-problem.-its-an-institutional-knowledge-problem",
+      "title": "The COBOL Cliff Is Not a Talent Problem (Devsu)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "It is that the institution's critical systems have quietly become dependent on individual people, specific engineers who remember how specific batch processes work, who can read specific undocumented modules, who hold specific business logic in their heads that was never written down. When those people leave, the systems do not stop working. They simply become unreadable.",
+      "statement": "A modernization vendor argues banks, credit unions and insurers depend on individual engineers who hold undocumented business logic.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://devsu.com/resources-center/the-cobol-cliff-is-not-a-talent-problem.-its-an-institutional-knowledge-problem",
+      "title": "The COBOL Cliff Is Not a Talent Problem (Devsu)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "RPG specialists, the AS/400 / IBM i cohort that runs significant portions of credit union and community bank infrastructure — are in similar or worse demographic shape.",
+      "statement": "Vendor claim that RPG/IBM i runs significant parts of credit union and community bank infrastructure and that its workforce is ageing.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://devsu.com/resources-center/the-cobol-cliff-is-not-a-talent-problem.-its-an-institutional-knowledge-problem",
+      "title": "The COBOL Cliff Is Not a Talent Problem (Devsu)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "It is a remediation cost, and it typically runs 12 to 24 months of forensic dependency mapping, often without the people who built the system to consult.",
+      "statement": "Vendor estimate: losing the only engineers who understand a critical system leads to 12-24 months of forensic dependency mapping.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2436f75b-9812-4bb8-8323-2bf381060257"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://devsu.com/resources-center/the-cobol-cliff-is-not-a-talent-problem.-its-an-institutional-knowledge-problem",
+      "title": "The COBOL Cliff Is Not a Talent Problem (Devsu)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A senior engineer announces retirement, and the institution scrambles to find a replacement — or, more commonly, persuades the retiring engineer to come back as a contractor at a substantial premium.",
+      "statement": "Vendor describes the common workaround: re-hiring the retiring engineer as a contractor at a premium.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.itjungle.com/2023/03/27/the-disconnect-in-modernization-planning-and-execution/",
+      "title": "The Disconnect In Modernization Planning And Execution (IT Jungle)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The survey found that 41 percent of respondents from organizations in the planning stages of a modernization project said they were “very confident” in their application understanding. Among those who had already kicked off the project, only 28 percent said they were “very confident.”",
+      "statement": "EvolveWare survey: 'very confident' in understanding legacy apps drops from 41% (planning) to 28% (once projects start).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://www.itjungle.com/2023/03/27/the-disconnect-in-modernization-planning-and-execution/",
+      "title": "The Disconnect In Modernization Planning And Execution (IT Jungle)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "70 percent of all survey participants stated they were “confident” or “very confident” in the understanding of the legacy applications being modernized.",
+      "statement": "70% of surveyed IT leaders say they are confident or very confident they understand the legacy applications being modernized.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://www.itjungle.com/2023/03/27/the-disconnect-in-modernization-planning-and-execution/",
+      "title": "The Disconnect In Modernization Planning And Execution (IT Jungle)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "EvolveWare found that 81 percent of survey-takers admit to having some kind of challenges in hiring and retaining “legacy programmers.”",
+      "statement": "81% of surveyed IT leaders report challenges hiring and retaining legacy programmers.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://www.itjungle.com/2023/03/27/the-disconnect-in-modernization-planning-and-execution/",
+      "title": "The Disconnect In Modernization Planning And Execution (IT Jungle)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "“I think they already know that they do not have any written documentation, which means the level of confidence is high based on the availability of their support personnel,”",
+      "statement": "The survey sponsor says organizations' confidence rests on support personnel rather than written documentation.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://evolveware.com/state-of-application-modernization-report/",
+      "title": "State of Application Modernization 2023 (EvolveWare)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "More than half of the respondents would like to automate business rules extraction (BRE), and code transformation. Yet while these and other technologies on their wish lists are available in the current modernization market, only a small group say they have access to them.",
+      "statement": "Vendor survey: more than half of IT leaders want to automate business rules extraction, but few have access to such tools.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.kansascityfed.org/research/payments-system-research-briefings/market-structure-of-core-banking-services-providers/",
+      "title": "Market Structure of Core Banking Services Providers (Kansas City Fed)",
+      "source_type": "report",
+      "published_at": "2024-03-27",
+      "quote": "Most DIs rely on core banking services providers for their core systems and ancillary services, so DIs’ ability to modernize their core systems largely depends on how responsive core providers are to DIs’ needs.",
+      "statement": "Kansas City Fed: most banks and credit unions rely on core providers for core systems, so their ability to modernize depends on those providers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "bbb86f68-1b12-4a30-9f04-6a13291a4fda",
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.kansascityfed.org/research/payments-system-research-briefings/market-structure-of-core-banking-services-providers/",
+      "title": "Market Structure of Core Banking Services Providers (Kansas City Fed)",
+      "source_type": "report",
+      "published_at": "2024-03-27",
+      "quote": "Collectively, the Big Three served more than 70 percent of banks surveyed in 2022 and nearly half of credit unions surveyed in 2020.",
+      "statement": "FIS, Fiserv and Jack Henry served >70% of surveyed banks (2022) and nearly half of credit unions (2020).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "bbb86f68-1b12-4a30-9f04-6a13291a4fda"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://www.kansascityfed.org/research/payments-system-research-briefings/market-structure-of-core-banking-services-providers/",
+      "title": "Market Structure of Core Banking Services Providers (Kansas City Fed)",
+      "source_type": "report",
+      "published_at": "2024-03-27",
+      "quote": "Moreover, some contracts stipulate that the core provider has sole ownership of any work related to core functioning, including software, source code, modifications, and enhancements.",
+      "statement": "Some core contracts give the provider sole ownership of source code, modifications and enhancements, so a bank may not own the code a rule-extraction tool would read.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "bbb86f68-1b12-4a30-9f04-6a13291a4fda",
+        "7b932fcc-7f64-4701-9591-b32a2739f500"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://www.crnrstone.com/gonzobanker/modernize-this-core-systems-and-the-critical-5",
+      "title": "Modernize This: Core Systems and the Critical 5 (Cornerstone Advisors)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Most new core deals are now outsourced, and very few banks and credit unions migrate core from outsourced to in-house anymore.",
+      "statement": "Banking advisory firm: most new core deals are outsourced and very few banks/credit unions move core back in-house.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "bbb86f68-1b12-4a30-9f04-6a13291a4fda"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://careers.ta.com/companies/computer-services-inc-2/jobs/82376460-cobol-software-engineer-banking-payments",
+      "title": "COBOL Software Engineer - Banking/Payments (Computer Services, Inc.)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Supporting ~100 legacy COBOL programs and associated scripts running in an IBM RS6000 (AIX) environment",
+      "statement": "A core vendor serving community and regional banks is hiring to maintain ~100 legacy COBOL programs: the legacy code often sits at the vendor, not the bank.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "bbb86f68-1b12-4a30-9f04-6a13291a4fda"
+      ],
+      "company_name": "Computer Services, Inc."
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://builtin.com/job/senior-midrange-engineer/4099366",
+      "title": "Senior Midrange Engineer (Bangor Savings Bank) job posting",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "using tools such as GoAnywhere, Automate, Jack Henry Enterprise Workflow, and RPG and CL programming.",
+      "statement": "A $7B Maine savings bank runs its Jack Henry SilverLake core in-house on IBM Power and wants RPG/CL programming skills.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Bangor Savings Bank"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://builtin.com/job/senior-midrange-engineer/4099366",
+      "title": "Senior Midrange Engineer (Bangor Savings Bank) job posting",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "As the Bank’s subject matter expert (SME) on the Bank’s core systems and IBM Power System platform and its capabilities, this role provides knowledge transfer, training, and guidance to other members of the Banking Core team",
+      "statement": "The bank relies on a single SME role to transfer knowledge about its core systems and IBM Power platform.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f",
+        "bbb86f68-1b12-4a30-9f04-6a13291a4fda"
+      ],
+      "company_name": "Bangor Savings Bank"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://www.virtualvocations.com/job/mainframe-developer-3324777-i.html",
+      "title": "Mainframe Developer (contract) job posting",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Trace undocumented business logic and modify existing applications without disrupting current processing cycles",
+      "statement": "A financial/accounting mainframe contract role explicitly requires tracing undocumented business logic.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8",
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://www.persistent.com/client-success/turning-legacy-policy-logic-into-migration-readiness/",
+      "title": "Turning legacy policy logic into migration readiness (Persistent)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The client had already attempted modernization through a traditional approach and that effort had not succeeded. Manual discovery and rule extraction were infeasible at the speed and confidence the business required.",
+      "statement": "A U.S. P&C insurer's earlier traditional modernization attempt failed; manual rule extraction was infeasible.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "2436f75b-9812-4bb8-8323-2bf381060257",
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://www.persistent.com/client-success/turning-legacy-policy-logic-into-migration-readiness/",
+      "title": "Turning legacy policy logic into migration readiness (Persistent)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Modernization risk: Migrating to the target platform without complete visibility into legacy rules could create incorrect underwriting behavior, rating mismatches, premium discrepancies or compliance exposure.",
+      "statement": "Without full visibility into legacy rules, migration risks wrong underwriting, rating mismatches and compliance exposure.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2436f75b-9812-4bb8-8323-2bf381060257",
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://www.persistent.com/client-success/turning-legacy-policy-logic-into-migration-readiness/",
+      "title": "Turning legacy policy logic into migration readiness (Persistent)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The success criterion was explicit: migrate the logic and policies to the target platform while staying within the client’s accepted premium variance of ±5%.",
+      "statement": "The insurer set an explicit accuracy bar (premium variance within ±5%) for migrated rules.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://dxc.com/insights/customer-stories/swift-and-steady-wins-the-race-life-insurance-transformation",
+      "title": "$2B life insurance transformation (DXC)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For one of the business lines, 1,500 business rules were elicited, documented, built and tested. Constraints and misconceptions with the previous business rules and systems meant considerable rework and replanning from DXC and the insurer.",
+      "statement": "In a life insurance migration, 1,500 business rules were documented for one line and misconceptions about previous rules caused considerable rework.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "2436f75b-9812-4bb8-8323-2bf381060257",
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://www.businessinsurance.com/when-wisconsin-insurer-replaced-legacy-policy-administration-system-it-bolstere/",
+      "title": "Wisconsin insurer replaced legacy policy administration system (Business Insurance)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Indeed, replicated years of real-world functionality and business rules contained in the old system was a primary challenge during the 18-month replacement process.",
+      "statement": "A regional insurer says replicating years of business rules was a primary challenge in an 18-month PAS replacement.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8",
+        "2436f75b-9812-4bb8-8323-2bf381060257"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://www.cgi.com/en/blog/insurance/life-insurance-policy-admin-system-migrations",
+      "title": "Life insurance policy administration system migrations (CGI)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "A related challenge is that products and systems are often modified over time and not all modifications are clearly documented. Following lengthy product review sessions, it can become clear that a system “no longer works that way” since a new variation was added.",
+      "statement": "Life insurance systems are modified over time without full documentation, which surfaces late in migration reviews.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://praxent.ai/insight/insurance-legacy-system-assessment",
+      "title": "How AI Decodes Decades-Old Business Logic for Insurance Core Systems (Praxent)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Carriers often hesitate to modernize when teams can’t clearly explain how their system currently behaves.",
+      "statement": "A consultancy reports that carriers hesitate to modernize when they cannot explain current system behavior.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.profoundlogic.com/blog/ibm-i-documentation-service-capturing-tribal-knowledge/",
+      "title": "Your Best RPG Developer Retires Next Year (Profound Logic)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Transformation projects stall in discovery, because before anyone can safely transform an application, someone has to establish what it currently does, and that step alone can consume months when there’s no reliable starting point.",
+      "statement": "An IBM i vendor says transformation projects stall for months in discovery when there's no documentation baseline.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2436f75b-9812-4bb8-8323-2bf381060257"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.profoundlogic.com/blog/ibm-i-documentation-service-capturing-tribal-knowledge/",
+      "title": "Your Best RPG Developer Retires Next Year (Profound Logic)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "This is not a rare situation. It is close to the default condition for IBM i organizations right now.",
+      "statement": "Vendor claims undocumented code is the default condition for IBM i shops.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.n-ix.com/legacy-code-modernization-using-ai/",
+      "title": "Legacy code modernization using AI (N-iX)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Reverse-engineering business logic takes about six weeks per 10,000 lines, so months of discovery can pass before modernization work begins.",
+      "statement": "Industry estimate cited by a services firm: manual reverse-engineering takes ~six weeks per 10,000 lines.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "2436f75b-9812-4bb8-8323-2bf381060257",
+        "8f80d217-ba87-4edf-a62b-2cae3cea154f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://increment.com/programming-languages/cobol-all-the-way-down/",
+      "title": "It's COBOL all the way down (Increment)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As a result, many companies don’t know exactly how their systems run, because those rules extracted long ago are embedded in hundreds of thousands to tens of millions of lines of COBOL.",
+      "statement": "Many companies don't know exactly how their systems run because rules are embedded in large COBOL codebases.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://increment.com/programming-languages/cobol-all-the-way-down/",
+      "title": "It's COBOL all the way down (Increment)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "a consulting firm made up of folks like him who spent their lives in the mainframe mines and who can now earn hefty consulting fees for coming back to help.",
+      "statement": "Retired COBOL programmers form consulting firms that are hired back at high fees: a services alternative.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://reddit.sentinel-team.org/posts/1t98jcn/snapshots/2026-05-11T12%3A12%3A46.511026Z",
+      "title": "r/programming snapshot: COBOL and asbestos discussion",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "The problem is not the language, it's the hundreds or thousands of edge cases in behaviour.",
+      "statement": "A practitioner says the hard part of replacing COBOL is the edge-case behavior, not the language.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://reddit.sentinel-team.org/posts/1t98jcn/snapshots/2026-05-11T12%3A12%3A46.511026Z",
+      "title": "r/programming snapshot: COBOL and asbestos discussion",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "rewrite the system piece by piece looking at the observable behavior, not specific language constructs... which takes time and costs money, which businesses don't want to spend, which is how we got into this mess in the first place.",
+      "statement": "A practitioner says incremental rewrites based on observable behavior cost time and money that businesses don't want to spend.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "8f80d217-ba87-4edf-a62b-2cae3cea154f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://conf.researchr.org/details/ease-2025/ease-2025-research-papers/57/LLM-Vs-Rule-Based-The-COBRAIN-Tool-and-An-Empirical-Study-on-Extracting-Business-Ru",
+      "title": "LLM Vs Rule-Based: The COBRAIN Tool (EASE 2025)",
+      "source_type": "report",
+      "published_at": "2025-06-17",
+      "quote": "COBRAIN achieved a precision of 1.0 and a recall of 0.746 when compared with COBREX. It achieved an F1 score of 0.73 when evaluated with ground truth, compared to COBREX’s F1 score of 0.59.",
+      "statement": "Peer-reviewed study: an LLM rule extractor reached F1 0.73 against ground truth (rule-based baseline 0.59), so roughly a quarter of rules are still missed or wrong.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://aclanthology.org/2026.acl-industry.4/",
+      "title": "Leveraging Generative AI for Extracting Business Requirements from Legacy COBOL and PL/I Code (ACL 2026 Industry)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "the system achieves 93% agreementwith expert-authored business rules andreduces documentation effort by approximately70%",
+      "statement": "Industry paper: deterministic parsing plus LLM with traceability to code achieved 93% agreement with expert-written rules on 3.4M LoC and ~70% less documentation effort.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6",
+        "8f80d217-ba87-4edf-a62b-2cae3cea154f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://aclanthology.org/2026.acl-industry.4/",
+      "title": "Leveraging Generative AI for Extracting Business Requirements from Legacy COBOL and PL/I Code (ACL 2026 Industry)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "schema-constrainedLLM generation with bidirectional traceabilityto code.",
+      "statement": "State-of-practice pipelines emphasize bidirectional traceability between extracted rules and source code for compliance-sensitive settings.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://solutionshub.epam.com/blog/post/cobol-code",
+      "title": "COBOL Code Requirement Extraction with GenAI (EPAM)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "- Accuracy of Analysis — Medium - Effort Saving — 40-50% - User Feedback — Ease of use, however, requires fine-tuning to get better accuracy",
+      "statement": "A large services firm rates the accuracy of its own GenAI extraction as 'Medium' in one use case and says it needs fine-tuning.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://www.americanbanker.com/news/a-third-of-banks-ban-employees-from-using-gen-ai-heres-why",
+      "title": "A third of banks ban employees from using gen AI (American Banker)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "30% still ban the use of generative AI tools within their company",
+      "statement": "Arizent survey: 30% of financial services firms ban generative AI tools, a barrier for AI code-reading products.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "7b932fcc-7f64-4701-9591-b32a2739f500"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://www.americanbanker.com/news/a-third-of-banks-ban-employees-from-using-gen-ai-heres-why",
+      "title": "A third of banks ban employees from using gen AI (American Banker)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "80% said they were somewhat or very concerned about nonsensical or inaccurate information.",
+      "statement": "80% of surveyed bankers are concerned about inaccurate gen AI output.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6",
+        "7b932fcc-7f64-4701-9591-b32a2739f500"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://thenextweb.com/news/kodesage-6-6m-seed-legacy-software-modernisation",
+      "title": "Kodesage raises $6.6M (The Next Web)",
+      "source_type": "news",
+      "published_at": "2026-06-04",
+      "quote": "the regulated institutions that most need legacy modernisation, banks, insurers, energy and transport operators, the public sector, cannot connect their core databases to a public cloud.",
+      "statement": "Regulated institutions such as banks and insurers cannot connect core databases to public-cloud AI tools.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "7b932fcc-7f64-4701-9591-b32a2739f500"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://docs.cloud.google.com/mainframe-assessment-tool/docs/business-rules-extraction",
+      "title": "Extract business rules | Mainframe Assessment Tool (Google Cloud)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Reduce risk: minimize functional divergence by validating the extracted rules with business process owners before modernization.",
+      "statement": "Google's tool builds in human validation of extracted rules by business process owners.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://aws.amazon.com/blogs/aws/accelerate-the-modernization-of-mainframe-and-vmware-workloads-with-aws-transform/",
+      "title": "Accelerate the modernization of Mainframe and VMware workloads with AWS Transform (AWS)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Business rule logic extraction – AWS Transform extracts and presents complex logic in plain language so you can gain visibility into business processes embedded within legacy applications. This enables both business and technical stakeholders to gain a greater understanding of application functionality.",
+      "statement": "AWS Transform extracts business rule logic from mainframe apps in plain language.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Amazon Web Services"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://aws.amazon.com/blogs/aws/accelerate-the-modernization-of-mainframe-and-vmware-workloads-with-aws-transform/",
+      "title": "Accelerate the modernization of Mainframe and VMware workloads with AWS Transform (AWS)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Organizationally, they must manage the transition of teams who’ve built careers around legacy systems and navigate undocumented institutional knowledge.",
+      "statement": "AWS frames undocumented institutional knowledge as a core obstacle to mainframe modernization.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": "Amazon Web Services"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://repost.aws/articles/ARiH1NPWyBQIqCR0j_T40K5g/extracting-business-rules-and-program-flows-of-mainframe-cobol-applications-using-aws-transform-for-mainframe",
+      "title": "Extracting Business Rules and Program Flows using AWS Transform for mainframe (AWS re:Post)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Business Rules are stored in a JSON file.",
+      "statement": "AWS Transform exports extracted business rules as JSON and HTML.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Amazon Web Services"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://www.qovery.com/blog/aws-transform-what-it-does-and-what-it-costs",
+      "title": "AWS Transform: What It Does, What It Costs in 2026 (Qovery)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As of 21 September 2026, the official AWS Transform pricing page lists no charge for migrating and modernizing Windows, VMware, and mainframe systems",
+      "statement": "AWS Transform carries no service fee for mainframe modernization (as of Sept 2026).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f",
+        "8f80d217-ba87-4edf-a62b-2cae3cea154f"
+      ],
+      "company_name": "Amazon Web Services"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.qovery.com/blog/aws-transform-what-it-does-and-what-it-costs",
+      "title": "AWS Transform: What It Does, What It Costs in 2026 (Qovery)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "AWS monetizes the destination, not the migration path.",
+      "statement": "Hyperscalers give migration tooling away and monetize the cloud destination.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "8f80d217-ba87-4edf-a62b-2cae3cea154f"
+      ],
+      "company_name": "Amazon Web Services"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://community.ibm.com/community/user/blogs/stephanie-marino/2025/11/11/accelerate-understanding-and-documentation-on-ibm",
+      "title": "Accelerate Understanding and Documentation on IBM Z with watsonx Code Assistant for Z (IBM Community)",
+      "source_type": "company_site",
+      "published_at": "2025-11-11",
+      "quote": "With the business rule discovery capability, developers can rapidly discover and document business rules in COBOL applications",
+      "statement": "IBM watsonx Code Assistant for Z offers business rule discovery and documentation for COBOL.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "IBM"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://community.ibm.com/community/user/blogs/stephanie-marino/2025/11/11/accelerate-understanding-and-documentation-on-ibm",
+      "title": "Accelerate Understanding and Documentation on IBM Z with watsonx Code Assistant for Z (IBM Community)",
+      "source_type": "company_site",
+      "published_at": "2025-11-11",
+      "quote": "Documentation is often incomplete, outdated, or missing altogether. This creates dependencies on subject matter experts (SMEs), slows down onboarding, and makes modernization efforts riskier.",
+      "statement": "IBM states that mainframe documentation is often incomplete or missing, creating SME dependency.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": "IBM"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://community.ibm.com/community/user/blogs/stephanie-marino/2025/11/11/accelerate-understanding-and-documentation-on-ibm",
+      "title": "Accelerate Understanding and Documentation on IBM Z with watsonx Code Assistant for Z (IBM Community)",
+      "source_type": "company_site",
+      "published_at": "2025-11-11",
+      "quote": "Documentation generation transforms the way teams manage knowledge on Z: documentation becomes a living artifact, not a static deliverable.",
+      "statement": "IBM already pitches 'living' documentation, overlapping with the idea's knowledge-base wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "IBM"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.ibm.com/products/watsonx-code-assistant-z",
+      "title": "IBM watsonx Code Assistant for Z (product page)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "accelerate testing with auto-generated unit tests to compare semantic equivalence",
+      "statement": "IBM also generates unit tests to compare semantic equivalence, overlapping with characterization tests.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "IBM"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://docs.cloud.google.com/mainframe-assessment-tool/docs/business-rules-extraction",
+      "title": "Extract business rules | Mainframe Assessment Tool (Google Cloud)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mainframe Assessment Tool extracts your mainframe application logic into human-readable business rules in Gherkin",
+      "statement": "Google's Mainframe Assessment Tool extracts business rules into Gherkin BDD scenarios.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Google Cloud"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.mechanical-orchard.com/",
+      "title": "Mechanical Orchard homepage",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Imogen rewrites legacy systems into modern code while continuously verifying that nothing breaks",
+      "statement": "Mechanical Orchard's Imogen rewrites mainframe systems with automated output verification.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Mechanical Orchard"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://thenextweb.com/news/kodesage-6-6m-seed-legacy-software-modernisation",
+      "title": "Kodesage raises $6.6M (The Next Web)",
+      "source_type": "news",
+      "published_at": "2026-06-04",
+      "quote": "The platform performs what the company calls automated deep discovery of these codebases, extracts the buried logic, and turns it into a living documentation layer that both human teams and AI agents can read.",
+      "statement": "Kodesage extracts buried logic into a living documentation layer, close to this idea's wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Kodesage"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://thenextweb.com/news/kodesage-6-6m-seed-legacy-software-modernisation",
+      "title": "Kodesage raises $6.6M (The Next Web)",
+      "source_type": "news",
+      "published_at": "2026-06-04",
+      "quote": "Kodesage’s answer is to operate entirely inside the customer environment: on-premise, in a virtual private cloud, or fully air-gapped where required.",
+      "statement": "Kodesage runs on-prem, in VPC or air-gapped.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7b932fcc-7f64-4701-9591-b32a2739f500"
+      ],
+      "company_name": "Kodesage"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://thenextweb.com/news/kodesage-6-6m-seed-legacy-software-modernisation",
+      "title": "Kodesage raises $6.6M (The Next Web)",
+      "source_type": "news",
+      "published_at": "2026-06-04",
+      "quote": "The new money funds a go-to-market push in the United States and Europe",
+      "statement": "Kodesage is pushing into the US market.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Kodesage"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://siliconangle.com/2026/08/18/hypercubic-raises-5-3m-map-rewrite-legacy-cobol-apps-ai-agents/",
+      "title": "Hypercubic raises $5.3M (SiliconANGLE)",
+      "source_type": "news",
+      "published_at": "2026-08-18",
+      "quote": "While doing this, they recover all of the business logic that’s buried inside that code, and then use this information to automatically generate the documentation for it, which has never previously been written.",
+      "statement": "Hypercubic's agents recover business logic and generate documentation for COBOL codebases.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Hypercubic"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://siliconangle.com/2026/08/18/hypercubic-raises-5-3m-map-rewrite-legacy-cobol-apps-ai-agents/",
+      "title": "Hypercubic raises $5.3M (SiliconANGLE)",
+      "source_type": "news",
+      "published_at": "2026-08-18",
+      "quote": "“The real challenge is recovering decades of hidden business logic, understanding how systems behave in production, and proving that a modern replacement preserves what matters.”",
+      "statement": "A funded competitor frames the problem the same way: recovering hidden business logic is the real challenge.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "21b171d1-ae81-448b-93c3-32953f1448c8"
+      ],
+      "company_name": "Hypercubic"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.profoundlogic.com/blog/ibm-i-documentation-service-capturing-tribal-knowledge/",
+      "title": "Your Best RPG Developer Retires Next Year (Profound Logic)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Once delivered, the customer’s own developers review and extend that output, adding context and correcting anything the analysis missed.",
+      "statement": "Profound Logic sells an IBM i documentation service with customer developer review.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f",
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6"
+      ],
+      "company_name": "Profound Logic"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://praxent.ai/insight/insurance-legacy-system-assessment",
+      "title": "How AI Decodes Decades-Old Business Logic for Insurance Core Systems (Praxent)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our Legacy System Assessment uses proprietary AI tools to scan your legacy code and extract every business rule automatically.",
+      "statement": "Praxent sells an AI-driven legacy system assessment for insurance carriers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Praxent"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://www.persistent.com/client-success/turning-legacy-policy-logic-into-migration-readiness/",
+      "title": "Turning legacy policy logic into migration readiness (Persistent)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Persistent addressed the challenge by deploying SASVA™, its GenAI-powered software engineering platform, to accelerate legacy discovery, business rule extraction, manuscript generation, data migration and validation.",
+      "statement": "Persistent uses its SASVA GenAI platform for business rule extraction in insurance migrations.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Persistent Systems"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://mlogica.com/resources/blogs/revolutionizing-legacy-systems-with-business-logic-extraction",
+      "title": "Revolutionizing Legacy Systems with BLE Intelligence (mLogica)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Visual Editor allows subject matter experts to interact with extracted business rules, validate their accuracy",
+      "statement": "mLogica sells a business rule extractor with an SME validation editor.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f",
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6"
+      ],
+      "company_name": "mLogica"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://evolveware.com/state-of-application-modernization-report/",
+      "title": "EvolveWare (survey landing page)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "EvolveWare Named in the Inaugural Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools.",
+      "statement": "EvolveWare, a long-standing BRE vendor, is in Gartner's new MQ for AI-augmented code modernization.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "EvolveWare"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.bmc.com/newsroom/releases/bmc-named-a-challenger-for-ai-augmented-code-modernization-in-the-2026-gartner-magic-quadrant-inaugural-report.html",
+      "title": "BMC Named a Challenger in 2026 Gartner MQ for AI-Augmented Code Modernization",
+      "source_type": "news",
+      "published_at": "2026-08-06",
+      "quote": "These tools automate and enhance a broad spectrum of modernization activities, including deep code and architecture analysis, software documentation, dependency mapping, risk assessment, migration planning, and refactoring.",
+      "statement": "Gartner now defines a category of AI code modernization tools that includes documentation and code analysis, a sign the space is crowded.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "BMC"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://solutionshub.epam.com/blog/post/cobol-code",
+      "title": "COBOL Code Requirement Extraction with GenAI (EPAM)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "- 85% accuracy in identifying and documenting business rules. - Significant time savings, reducing documentation efforts by 70%.",
+      "statement": "EPAM reports 85% accuracy and 70% documentation-effort reduction from its GenAI extraction service.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6",
+        "8f80d217-ba87-4edf-a62b-2cae3cea154f"
+      ],
+      "company_name": "EPAM"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://www.computerworld.com/article/1545244/the-cobol-brain-drain.html",
+      "title": "The Cobol Brain Drain (Computerworld)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Trinity Millennium Group and similar vendors have established processes for analyzing and extracting the business rules embedded between the lines of Cobol code.",
+      "statement": "Specialist services firms have offered COBOL business rule extraction for years.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "815a5def-9280-44f1-abed-5cf4e113f10f"
+      ],
+      "company_name": "Trinity Millennium Group"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.kansascityfed.org/research/payments-system-research-briefings/market-structure-of-core-banking-services-providers/",
+      "title": "Market Structure of Core Banking Services Providers (Kansas City Fed)",
+      "source_type": "report",
+      "published_at": "2024-03-27",
+      "quote": "Individually, Fiserv serves the largest share of DIs: 42 percent of banks and 31 percent of credit unions",
+      "statement": "Fiserv alone serves 42% of banks and 31% of credit unions.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "bbb86f68-1b12-4a30-9f04-6a13291a4fda"
+      ],
+      "company_name": "Fiserv"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.bangor.com/careers/",
+      "title": "Bangor Savings Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are the workplace of choice for over 1,200 dedicated",
+      "statement": "Bangor Savings Bank has over 1,200 employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bangor Savings Bank"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://www.bangor.com/about-us/",
+      "title": "Bangor Savings Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Headquartered in Bangor, Maine, the Bank was founded in 1852",
+      "statement": "Headquartered in Bangor, Maine.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bangor Savings Bank"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.bankofstockton.com/careers",
+      "title": "Bank of Stockton (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Since 1867, Bank of Stockton has proudly served generations of families and businesses with unprecedented customer service. Behind every year of “Withstanding the Test of Time” are loyal bank employees who treat our customers like friends and family because they live in the communities that we serve. We strive to be a great place to work and a great place to bank! With 21 branches and growing",
+      "statement": "Bank of Stockton, 21 branches, since 1867.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bank of Stockton"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.exchangebank.com/about",
+      "title": "Exchange Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Since it was established in 1949, the Doyle Trust has contributed more than $105 million to Santa Rosa Junior College",
+      "statement": "Exchange Bank's majority owner funds Santa Rosa Junior College (Santa Rosa, CA).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Exchange Bank"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.exchangebank.com/about/our-people",
+      "title": "Exchange Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Kevin Bender joined Exchange Bank in 2024 as the bank’s Chief Banking Officer.",
+      "statement": "Kevin Bender, Chief Banking Officer (oversees bank operations).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Exchange Bank"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.barharbor.bank/about-us/about-us",
+      "title": "Bar Harbor Bank & Trust (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Bar Harbor Bank & Trust is headquartered in Bar Harbor, Maine and has more than $3.9 billion in assets.",
+      "statement": "HQ Bar Harbor, Maine; $3.9B assets.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bar Harbor Bank & Trust"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.barharbor.bank/about-us/leadership",
+      "title": "Bar Harbor Bank & Trust (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Joseph Scully Senior Vice President Chief Information Officer and Director of Operations",
+      "statement": "Joseph Scully, SVP, CIO and Director of Operations.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bar Harbor Bank & Trust"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://www.camdennational.bank/about/about-camden",
+      "title": "Camden National Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "you'll talk to one of over 650 team members",
+      "statement": "Over 650 team members.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Camden National Bank"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://www.washtrust.com/about",
+      "title": "The Washington Trust Company (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "we are the largest state-chartered bank headquartered in Rhode Island",
+      "statement": "Largest state-chartered bank headquartered in Rhode Island.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Washington Trust Company"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://www.burkeandherbertbank.com/about/",
+      "title": "Burke & Herbert Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "As Virginia’s oldest bank, we’ve helped build steady prosperity",
+      "statement": "Virginia's oldest bank.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Burke & Herbert Bank"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://www.arrowbank.com/about",
+      "title": "Arrow Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "While we’ve grown over the years throughout northeastern and central New York",
+      "statement": "Operates in northeastern and central New York.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Arrow Bank"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://www.bankofmarin.com/about",
+      "title": "Bank of Marin (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We’re proud to serve Northern California",
+      "statement": "Serves Northern California.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bank of Marin"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://www.fnbalaska.com/about/leadership-team/",
+      "title": "First National Bank Alaska (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "His steadfast commitment to more than 600 employees",
+      "statement": "More than 600 employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "First National Bank Alaska"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://www.fnbalaska.com/about/",
+      "title": "First National Bank Alaska (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "First National is committed to our state and supports organizations that make Alaska a better place to work and live.",
+      "statement": "Alaska bank.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "First National Bank Alaska"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://www.cpb.bank/about-us",
+      "title": "Central Pacific Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "and extends to our 850+ employees",
+      "statement": "850+ employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Central Pacific Bank"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://www.cpb.bank/about-us",
+      "title": "Central Pacific Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "the opening of Central Pacific Bank in downtown Honolulu",
+      "statement": "Honolulu-based.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Central Pacific Bank"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://www.fmbonline.com/about/about-f-m-bank.html",
+      "title": "F&M Bank (Farmers & Merchants Bank of Central California) (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "F&M Bank is a locally owned and operated community bank, headquartered in Lodi, California",
+      "statement": "HQ Lodi, California.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "F&M Bank (Farmers & Merchants Bank of Central California)"
+    },
+    {
+      "ref": "ev-89",
+      "url": "https://cnbbank.bank/who-we-are",
+      "title": "CNB Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "we have over 500 employees who serve over 76,000 customers",
+      "statement": "Over 500 employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "CNB Bank"
+    },
+    {
+      "ref": "ev-90",
+      "url": "https://cnbbank.bank/who-we-are",
+      "title": "CNB Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Being a regional independent community bank in North Central Pennsylvania",
+      "statement": "North Central Pennsylvania.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "CNB Bank"
+    },
+    {
+      "ref": "ev-91",
+      "url": "https://www.tcbk.com/about",
+      "title": "Tri Counties Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "headquartered in Chico, California with corporate offices in Roseville",
+      "statement": "HQ Chico, California.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tri Counties Bank"
+    },
+    {
+      "ref": "ev-92",
+      "url": "https://www.firstmid.com/about",
+      "title": "First Mid Bank & Trust (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "First Mid is a $9.2 billion community-focused organization",
+      "statement": "$9.2B, Illinois and neighboring states.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "First Mid Bank & Trust"
+    },
+    {
+      "ref": "ev-93",
+      "url": "https://bankfirst.com/about",
+      "title": "Bank First (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Headquartered in Manitowoc, Wisconsin",
+      "statement": "HQ Manitowoc, Wisconsin.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bank First"
+    },
+    {
+      "ref": "ev-94",
+      "url": "https://midpennbank.com/about-us/",
+      "title": "Mid Penn Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our assets have grown to approximately $7 billion",
+      "statement": "~$7B, Pennsylvania and New Jersey.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Mid Penn Bank"
+    },
+    {
+      "ref": "ev-95",
+      "url": "https://www.orrstown.com/about-us/our-history",
+      "title": "Orrstown Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "What began as a small community bank in Orrstown, Pennsylvania",
+      "statement": "Pennsylvania and Maryland.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Orrstown Bank"
+    },
+    {
+      "ref": "ev-96",
+      "url": "https://www.peoplesbancorp.com/about-us/careers/",
+      "title": "Peoples Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Peoples Bank proudly serves communities throughout Ohio, West Virginia, Kentucky",
+      "statement": "Ohio, WV, KY, VA, MD, DC.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Peoples Bank"
+    },
+    {
+      "ref": "ev-97",
+      "url": "https://www.mechanicsbank.com/about-us/",
+      "title": "Mechanics Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Today with 166 branches spanning from San Diego to Seattle and Hawaii",
+      "statement": "166 West Coast branches.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Mechanics Bank"
+    },
+    {
+      "ref": "ev-98",
+      "url": "https://www.mechanicsbank.com/about-us/who-we-are/executives-board/",
+      "title": "Mechanics Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Chris Pierce was appointed Executive Vice President, Chief Operating Officer at Mechanics Bank",
+      "statement": "Chris Pierce, EVP, COO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Mechanics Bank"
+    },
+    {
+      "ref": "ev-99",
+      "url": "https://www.penncommunitybank.com/about/about-penn-community-bank/",
+      "title": "Penn Community Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Headquartered in Bucks County, for 150 years Penn Community Bank",
+      "statement": "HQ Bucks County, PA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Penn Community Bank"
+    },
+    {
+      "ref": "ev-100",
+      "url": "https://www.penncommunitybank.com/about/about-penn-community-bank/",
+      "title": "Penn Community Bank (company site)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "$2.9 billion in assets 300+ employees",
+      "statement": "$2.9B, 300+ employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Penn Community Bank"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "21b171d1-ae81-448b-93c3-32953f1448c8",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Surveyed IT leaders' 'very confident' understanding of legacy apps drops from 41% in planning to 28% once modernization starts.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "Insurance migrations repeatedly hit undocumented or misunderstood business rules (rework on 1,500 rules; replicating rules a primary challenge).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-28",
+            "ev-29",
+            "ev-30"
+          ]
+        },
+        {
+          "statement": "But 70% of surveyed leaders say they are confident they understand their legacy apps, and a bank leader says the pain 'hasn't been felt yet'.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-13",
+            "ev-04"
+          ]
+        },
+        {
+          "statement": "No source measures how often rule-loss problems occur at mid-size US banks or credit unions specifically.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "815a5def-9280-44f1-abed-5cf4e113f10f",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Today's approaches are people-based: overlapping new hires with retirees, re-hiring retirees as contractors, and retiree consulting firms.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-11",
+            "ev-36",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "Business rule extraction is now bundled free or cheaply into hyperscaler/IBM tools (AWS Transform, watsonx Code Assistant for Z, Google MAT).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-47",
+            "ev-50",
+            "ev-52",
+            "ev-56"
+          ]
+        },
+        {
+          "statement": "Funded startups (Kodesage, Hypercubic) and services firms (Persistent, Praxent, Profound Logic, EPAM, mLogica, Trinity Millennium) already sell extraction and documentation.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-58",
+            "ev-61",
+            "ev-65",
+            "ev-64",
+            "ev-63",
+            "ev-69",
+            "ev-66",
+            "ev-70"
+          ]
+        },
+        {
+          "statement": "More than half of surveyed IT leaders want to automate BRE but few have access to tooling.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "bbb86f68-1b12-4a30-9f04-6a13291a4fda",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Most US banks and credit unions rely on core providers (Big Three >70% of banks), and some contracts give the provider sole ownership of source code.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-17",
+            "ev-18",
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "Most new core deals are outsourced, so for the primary ICP the legacy code often belongs to the vendor, not the bank.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-20",
+            "ev-21"
+          ]
+        },
+        {
+          "statement": "Where banks run IBM i in-house, the owner is the core/IT team (e.g., a senior midrange SME role); the budget holder is likely the CIO, but no source shows who approves understanding-only spend.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-23"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "2436f75b-9812-4bb8-8323-2bf381060257",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "One client spent $1M to reconstruct COBOL business logic for a migration; the vendor estimates $200K had legacy staff still been present.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01"
+          ]
+        },
+        {
+          "statement": "A US P&C insurer's earlier traditional modernization failed; missing rule visibility risks rating mismatches and compliance exposure.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25",
+            "ev-26"
+          ]
+        },
+        {
+          "statement": "Manual reverse-engineering is estimated at ~six weeks per 10,000 lines.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34"
+          ]
+        },
+        {
+          "statement": "Vendor estimates of 12-24 months of remediation after a critical retirement are not independently verified.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-10"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "17bdcdeb-fd3a-46b3-8fb6-2cdb64bb34c6",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Best published pipelines reach 93% agreement with expert rules and stress bidirectional traceability to code; a pure-LLM tool reached F1 0.73.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-40",
+            "ev-41",
+            "ev-39"
+          ]
+        },
+        {
+          "statement": "Insurers set explicit tolerances (e.g., ±5% premium variance) and vendors build in human/SME validation steps.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27",
+            "ev-46",
+            "ev-63",
+            "ev-66"
+          ]
+        },
+        {
+          "statement": "80% of bankers worry about inaccurate gen AI output.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "8f80d217-ba87-4edf-a62b-2cae3cea154f",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Published effort benchmarks exist (six weeks per 10K lines manual; ~70% effort reduction claimed with AI).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34",
+            "ev-40",
+            "ev-69"
+          ]
+        },
+        {
+          "statement": "AWS Transform charges no service fee for mainframe modernization, which sets a free reference price for extraction.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-50",
+            "ev-51"
+          ]
+        },
+        {
+          "statement": "No source shows how mid-size banks evaluate documentation spend or what they pay per system.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "7b932fcc-7f64-4701-9591-b32a2739f500",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "30% of financial services firms ban generative AI tools.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-43"
+          ]
+        },
+        {
+          "statement": "Regulated institutions can't connect core databases to public-cloud AI, so on-prem/VPC/air-gapped deployment is a selling point (Kodesage).",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-45",
+            "ev-59"
+          ]
+        },
+        {
+          "statement": "Core contracts may restrict who owns or may modify the source code.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "Of mid-size US banks and credit unions, what share run in-house legacy code they own (custom COBOL/RPG around or instead of a vendor core) versus fully outsourced cores?",
+      "category": "other",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "AWS Transform for mainframe",
+      "url": "https://aws.amazon.com/transform/",
+      "kind": "direct",
+      "description": "Agentic mainframe modernization with plain-language business rule extraction, documentation and JSON rule export.",
+      "pricing_note": "No service fee for mainframe modernization per a Sept 2026 third-party reading of the pricing page; custom/continuous transformations $0.035 per agent minute.",
+      "evidence_refs": [
+        "ev-47",
+        "ev-49",
+        "ev-50",
+        "ev-51"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-02",
+      "name": "IBM watsonx Code Assistant for Z",
+      "url": "https://www.ibm.com/products/watsonx-code-assistant-z",
+      "kind": "direct",
+      "description": "Business rule discovery, code explanation, living documentation and equivalence unit tests for COBOL on IBM Z.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-52",
+        "ev-54",
+        "ev-55"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "Google Cloud Mainframe Assessment Tool",
+      "url": "https://docs.cloud.google.com/mainframe-assessment-tool/docs/business-rules-extraction",
+      "kind": "direct",
+      "description": "Gemini-based business rule extraction into Gherkin with review/validation statuses.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-56",
+        "ev-46"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Kodesage",
+      "url": "https://kodesage.ai",
+      "kind": "direct",
+      "description": "On-prem AI platform that extracts buried logic into living documentation, generates tests; $6.6M seed, pushing into the US.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-58",
+        "ev-59",
+        "ev-60"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "Hypercubic",
+      "url": "https://www.hypercubic.ai",
+      "kind": "direct",
+      "description": "YC-backed AI agents that map COBOL, recover business logic, document and rewrite; $5.3M seed.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-61",
+        "ev-62"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Mechanical Orchard (Imogen)",
+      "url": "https://www.mechanical-orchard.com",
+      "kind": "indirect",
+      "description": "Rewrites mainframe systems with continuous output verification; rewrite-first rather than understanding-first.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-57"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "EvolveWare",
+      "url": "https://www.evolveware.com",
+      "kind": "direct",
+      "description": "Long-standing BRE/modernization vendor named in Gartner's 2026 MQ for AI-augmented code modernization.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-67",
+        "ev-16"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "mLogica BLE Intelligence",
+      "url": "https://mlogica.com",
+      "kind": "direct",
+      "description": "Business logic extractor with an SME validation editor.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-66"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "Profound Logic IBM i documentation service",
+      "url": "https://www.profoundlogic.com",
+      "kind": "service",
+      "description": "Documentation service for IBM i/RPG portfolios with customer developer review.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-63",
+        "ev-32"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Praxent Legacy System Assessment",
+      "url": "https://praxent.ai",
+      "kind": "service",
+      "description": "AI-assisted legacy assessment and rule extraction for insurance carriers.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-64"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "Persistent Systems (SASVA)",
+      "url": "https://www.persistent.com",
+      "kind": "service",
+      "description": "GenAI platform plus services for rule extraction and policy migration at a US P&C insurer.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-65",
+        "ev-25"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "EPAM",
+      "url": "https://solutionshub.epam.com",
+      "kind": "service",
+      "description": "GenAI COBOL/PL-I requirement extraction service.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-69",
+        "ev-42"
+      ],
+      "sentiment": [
+        {
+          "statement": "EPAM rates the accuracy of one GenAI extraction use case as 'Medium', needing fine-tuning.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-42"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-13",
+      "name": "Trinity Millennium Group and specialist BRE consultancies",
+      "url": "https://www.computerworld.com/article/1545244/the-cobol-brain-drain.html",
+      "kind": "service",
+      "description": "Specialist consultancies that analyze COBOL and reconstruct business logic; one engagement cost $1M.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-70",
+        "ev-01"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-14",
+      "name": "Retiree consultants / knowledge-transfer hiring",
+      "url": "https://increment.com/programming-languages/cobol-all-the-way-down/",
+      "kind": "manual",
+      "description": "Re-hiring retirees as contractors and overlapping new hires with retiring staff.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-36",
+        "ev-07",
+        "ev-11",
+        "ev-06"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-15",
+      "name": "Core banking providers (Fiserv, Jack Henry, FIS, CSI)",
+      "url": "https://www.kansascityfed.org/research/payments-system-research-briefings/market-structure-of-core-banking-services-providers/",
+      "kind": "indirect",
+      "description": "For most banks and credit unions the core legacy code is owned and maintained by the core provider.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-17",
+        "ev-71",
+        "ev-19",
+        "ev-21"
+      ],
+      "sentiment": [
+        {
+          "statement": "Banks report dissatisfaction with Big Three core providers, but most stay with them.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-17"
+          ]
+        }
+      ]
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most mid-size US banks and credit unions outsource core processing, so the provider maintains the legacy code.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-17",
+        "ev-18",
+        "ev-20"
+      ]
+    },
+    {
+      "statement": "Institutions with in-house legacy code rely on people: SMEs, overlapping hires, and retirees re-hired as contractors.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-07",
+        "ev-11",
+        "ev-23",
+        "ev-36"
+      ]
+    },
+    {
+      "statement": "When modernizing, firms buy rule extraction from services firms or use bundled hyperscaler/IBM tools, often free.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-01",
+        "ev-65",
+        "ev-47",
+        "ev-50",
+        "ev-52",
+        "ev-56"
+      ]
+    },
+    {
+      "statement": "Smaller shops often replace legacy systems with packaged software rather than preserve and document them.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-05",
+        "ev-29"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Bangor Savings Bank",
+      "website": "https://www.bangor.com",
+      "icp_id": null,
+      "location": "Bangor, ME",
+      "industry": "Savings bank",
+      "description": "$7B Maine bank running Jack Henry SilverLake in-house on IBM Power and hiring for RPG/CL skills.",
+      "size_estimate": {
+        "min": 1200,
+        "max": null,
+        "signal": "Careers page: over 1,200 employees",
+        "evidence_ref": "ev-72"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-73"
+      },
+      "technologies": [
+        "Jack Henry SilverLake",
+        "IBM i",
+        "RPG"
+      ],
+      "evidence_refs": [
+        "ev-73",
+        "ev-72",
+        "ev-22",
+        "ev-23"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-73",
+            "ev-72"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "In-house IBM i/RPG environment, though the core itself is vendor software.",
+          "evidence_refs": [
+            "ev-22"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Job posting shows in-house IBM i core with RPG/CL programming and a single SME role for core knowledge transfer.",
+          "evidence_refs": [
+            "ev-22",
+            "ev-23"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-02",
+      "name": "Bank of Stockton",
+      "website": "https://www.bankofstockton.com",
+      "icp_id": null,
+      "location": "Stockton, CA",
+      "industry": "Community bank",
+      "description": "150+-year-old California community bank (21 branches).",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-74"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-74"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Exchange Bank",
+      "website": "https://www.exchangebank.com",
+      "icp_id": null,
+      "location": "Santa Rosa, CA",
+      "industry": "Community bank",
+      "description": "Sonoma County community bank founded 1890.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-75"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-75",
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Kevin Bender",
+          "role": "Chief Banking Officer",
+          "email": null,
+          "evidence_ref": "ev-76"
+        }
+      ]
+    },
+    {
+      "ref": "co-04",
+      "name": "Bar Harbor Bank & Trust",
+      "website": "https://www.barharbor.bank",
+      "icp_id": null,
+      "location": "Bar Harbor, ME",
+      "industry": "Community bank",
+      "description": "$3.9B Northern New England community bank (50+ branches).",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77",
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Joseph Scully",
+          "role": "SVP, Chief Information Officer and Director of Operations",
+          "email": null,
+          "evidence_ref": "ev-78"
+        }
+      ]
+    },
+    {
+      "ref": "co-05",
+      "name": "Camden National Bank",
+      "website": "https://www.camdennational.bank",
+      "icp_id": null,
+      "location": "Camden, ME",
+      "industry": "Community bank",
+      "description": "Maine community bank with 650+ team members.",
+      "size_estimate": {
+        "min": 650,
+        "max": null,
+        "signal": "About page: over 650 team members",
+        "evidence_ref": "ev-79"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-79"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-79"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-79",
+            "ev-79"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "The Washington Trust Company",
+      "website": "https://www.washtrust.com",
+      "icp_id": null,
+      "location": "Westerly, RI",
+      "industry": "Community bank",
+      "description": "Oldest US community bank; has an EVP-level CIO role (leadership page).",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-80"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Burke & Herbert Bank",
+      "website": "https://www.burkeandherbertbank.com",
+      "icp_id": null,
+      "location": "Alexandria, VA",
+      "industry": "Community bank",
+      "description": "Virginia community bank serving five states.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-81"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-81"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "Arrow Bank",
+      "website": "https://www.arrowbank.com",
+      "icp_id": null,
+      "location": "Glens Falls, NY",
+      "industry": "Community bank",
+      "description": "175-year-old New York community bank.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-82"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Bank of Marin",
+      "website": "https://www.bankofmarin.com",
+      "icp_id": null,
+      "location": "Novato, CA",
+      "industry": "Community bank",
+      "description": "Northern California business bank with an EVP CIO role.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-83"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-83"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-83"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "First National Bank Alaska",
+      "website": "https://www.fnbalaska.com",
+      "icp_id": null,
+      "location": "Anchorage, AK",
+      "industry": "Community bank",
+      "description": "Alaska's largest locally owned bank; IT division covers core banking solutions.",
+      "size_estimate": {
+        "min": 600,
+        "max": null,
+        "signal": "Leadership page: more than 600 employees",
+        "evidence_ref": "ev-84"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-85"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-85",
+        "ev-84"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-85",
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Central Pacific Bank",
+      "website": "https://www.cpb.bank",
+      "icp_id": null,
+      "location": "Honolulu, HI",
+      "industry": "Regional bank",
+      "description": "Hawaii regional bank with 850+ employees.",
+      "size_estimate": {
+        "min": 850,
+        "max": null,
+        "signal": "About page: 850+ employees",
+        "evidence_ref": "ev-86"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-87"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-87",
+        "ev-86"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-87",
+            "ev-86"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "F&M Bank (Farmers & Merchants Bank of Central California)",
+      "website": "https://www.fmbonline.com",
+      "icp_id": null,
+      "location": "Lodi, CA",
+      "industry": "Community bank",
+      "description": "$5.3B California ag-focused community bank, 33 locations.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-88"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-88"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "CNB Bank",
+      "website": "https://cnbbank.bank",
+      "icp_id": null,
+      "location": "Clearfield, PA",
+      "industry": "Community bank",
+      "description": "Pennsylvania regional community bank with 500+ employees.",
+      "size_estimate": {
+        "min": 500,
+        "max": null,
+        "signal": "Who-we-are page: over 500 employees",
+        "evidence_ref": "ev-89"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-90"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-90",
+        "ev-89"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-90",
+            "ev-89"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Tri Counties Bank",
+      "website": "https://www.tcbk.com",
+      "icp_id": null,
+      "location": "Chico, CA",
+      "industry": "Regional bank",
+      "description": "~$10B California bank with 75+ locations (may exceed the size band).",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-91"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-91"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "First Mid Bank & Trust",
+      "website": "https://www.firstmid.com",
+      "icp_id": null,
+      "location": "Mattoon, IL",
+      "industry": "Community bank",
+      "description": "$9.2B Midwest community bank and insurance group.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-92"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-92"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-92"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Bank First",
+      "website": "https://bankfirst.com",
+      "icp_id": null,
+      "location": "Manitowoc, WI",
+      "industry": "Community bank",
+      "description": "Wisconsin community bank.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-93"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-93"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-93"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "Mid Penn Bank",
+      "website": "https://midpennbank.com",
+      "icp_id": null,
+      "location": "Harrisburg, PA",
+      "industry": "Community bank",
+      "description": "~$7B Pennsylvania/New Jersey bank.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-94"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-94"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-94"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Orrstown Bank",
+      "website": "https://www.orrstown.com",
+      "icp_id": null,
+      "location": "Harrisburg, PA",
+      "industry": "Regional bank",
+      "description": "Regional bank in Pennsylvania and Maryland, recently merged with Codorus Valley.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-95"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-95"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-95"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "Peoples Bank",
+      "website": "https://www.peoplesbancorp.com",
+      "icp_id": null,
+      "location": "Marietta, OH",
+      "industry": "Regional bank",
+      "description": "Multi-state community bank (may exceed size band).",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-96"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-96"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-96"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "Mechanics Bank",
+      "website": "https://www.mechanicsbank.com",
+      "icp_id": null,
+      "location": "Walnut Creek, CA",
+      "industry": "Regional bank",
+      "description": "West Coast regional bank; COO background in core conversions. Likely above the size band.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-97"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-97",
+        "ev-98"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-97"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Chris Pierce",
+          "role": "EVP, Chief Operating Officer",
+          "email": null,
+          "evidence_ref": "ev-98"
+        }
+      ]
+    },
+    {
+      "ref": "co-21",
+      "name": "Penn Community Bank",
+      "website": "https://www.penncommunitybank.com",
+      "icp_id": null,
+      "location": "Perkasie, PA",
+      "industry": "Mutual community bank",
+      "description": "Largest independent mutual bank in eastern Pennsylvania; 300+ employees.",
+      "size_estimate": {
+        "min": 300,
+        "max": null,
+        "signal": "About page: 300+ employees",
+        "evidence_ref": "ev-100"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-99"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-99",
+        "ev-100"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US community/regional bank; size band from own site where stated.",
+          "evidence_refs": [
+            "ev-99",
+            "ev-100"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "Core platform/legacy stack not stated on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public legacy-code or problem signal found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
