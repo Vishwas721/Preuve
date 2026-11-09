@@ -1,0 +1,2382 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "6bbbd90d-d9b9-4e30-9435-cb865afb8efd",
+    "researcher": "claude-code",
+    "started_at": "2026-11-09T09:00:00Z",
+    "finished_at": "2026-11-09T13:00:00Z",
+    "queries": [
+      "digital omnibus AI Act high-risk delay December 2027 adopted employment Annex III",
+      "HR tech vendor EU AI Act compliance customers procurement questionnaire recruiting AI",
+      "EU AI Act compliance cost estimate high-risk AI system provider per system euros",
+      "survey HR leaders EU AI Act preparedness 2026 percent recruitment AI",
+      "job posting \"AI Act\" \"AI governance\" HR tech recruiting software company compliance manager",
+      "Workday OR HireVue OR SmartRecruiters \"EU AI Act\" readiness trust page customers documentation",
+      "Warden AI HR tech vendors AI assurance bias audit EU AI Act",
+      "FairNow AI governance HR EU AI Act compliance platform pricing",
+      "Vanta EU AI Act framework OR OneTrust AI governance EU AI Act conformity assessment module",
+      "\"AI Act\" customers asking vendor questionnaire \"security questionnaire\" AI governance SaaS sales blocked enterprise deals",
+      "companies \"wait and see\" EU AI Act delay omnibus compliance programs paused deprioritised (contradiction)",
+      "reddit EU AI Act compliance startup HR recruiting SaaS how are you handling",
+      "AuditBoard acquires FairNow AI governance",
+      "EU AI Act Annex IV technical documentation template free download excel high-risk",
+      "law firm \"AI Act\" HR technology providers advisory service conformity assessment package fixed fee recruitment software",
+      "greenhouse OR lever OR ashby job \"EU AI Act\" \"AI governance\" counsel HR software recruiting platform 2026",
+      "Holistic AI HR recruitment bias audit EU AI Act solution page",
+      "Article 6(3) AI Act exception recruitment tool not high-risk \"narrow procedural task\" (contradiction)",
+      "\"Responsible AI\" OR \"AI Governance\" job HR software company \"EU AI Act\" product counsel careers",
+      "careers FAQ \"artificial intelligence\" in our recruitment process application screening company Europe",
+      "Schneider Electric Open Talent Market AI internal talent marketplace employees",
+      "Deutsche Telekom OR Siemens OR Allianz OR SAP \"AI in recruiting\" HR artificial intelligence applicants",
+      "European company uses AI interviews recruitment graduates 2026 news",
+      "Eightfold customer story Europe Bayer OR Air France OR Vodafone OR Forvia OR STMicroelectronics"
+    ],
+    "notes": "Primary ICP from context is 'Large EU Employers Using High-Risk HR AI' (deployers), although the idea's stated beachhead is HR-tech vendors (providers); unknowns mostly concern vendors, so evidence covers both. Prospects target the primary ICP: 19 companies (below the 20 target). Many corporate sites (Allianz, SAP, Bayer, Forvia, Heineken, ST) block the fetcher, so several German employers rest only on a news item (Lucca transparency index via borncity); only 1 contact (Ubisoft CPO) could be taken from a company's own page. No job postings for AI Act roles at HR-tech vendors were found via search. Cost figures are consultancy estimates. Regulatory timeline as of Nov 2026: Omnibus (Reg. 2026/1744) in force; Annex III from 2 Dec 2027. Unverifiable pages (Littler via allwork.space, techzine, corporatecomplianceinsights, verdantix, dataprotectionreport) were not cited."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://cdp.cooley.com/digital-ai-omnibus-delays-key-deadlines-introduces-new-rules/",
+      "title": "Digital AI Omnibus Delays Key Deadlines, Introduces New Rules (Cooley)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "On 24 July 2026, the Digital Omnibus on AI (Regulation (EU) 2026/1744) was published in the Official Journal of the European Union … High-risk AI (Annex III stand-alone systems – e.g. employment, education, law enforcement) | 2 August 2026 | 2 December 2027 (16-month deferral)",
+      "statement": "The Digital Omnibus on AI is law; Annex III high-risk obligations (including employment AI) now apply from 2 December 2027, not August 2026.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://cdp.cooley.com/digital-ai-omnibus-delays-key-deadlines-introduces-new-rules/",
+      "title": "Digital AI Omnibus Delays Key Deadlines, Introduces New Rules (Cooley)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The grace period under Article 111(2) operates at the type and model level. If at least one unit of a given type and model was lawfully placed on the market before the applicable compliance date, other units of the same type and model may continue to be placed on the market without additional obligations, provided the design remains materially unchanged.",
+      "statement": "Under Article 111(2), high-risk systems already on the market before the compliance date can keep being placed on the market without new obligations unless their design changes materially.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://www.techpolicy.press/eus-ai-act-delays-let-highrisk-systems-dodge-oversight/",
+      "title": "EU's AI Act Delays Let High-Risk Systems Dodge Oversight (Tech Policy Press)",
+      "source_type": "news",
+      "published_at": "2026-04-02",
+      "quote": "pointed to AI used in hiring systems, explicitly classified as high-risk under the AI Act, as an example. If such a system is placed on the market before December 2, 2027, “it may remain outside the AI Act indefinitely, unless it is substantially altered after that date.”",
+      "statement": "A former AI Act co-negotiator says hiring AI placed on the market before 2 December 2027 may stay outside the Act indefinitely unless substantially altered, which weakens the compliance deadline for incumbent HR-tech products.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://cdp.cooley.com/digital-ai-omnibus-delays-key-deadlines-introduces-new-rules/",
+      "title": "Digital AI Omnibus Delays Key Deadlines, Introduces New Rules (Cooley)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The Omnibus extends existing small and medium-sized enterprise (SME) exemptions from certain administrative requirements to small mid-cap enterprises (SMCs) … SMCs will benefit from streamlined documentation requirements and additional flexibility in post-market monitoring.",
+      "statement": "SME relief now extends to small mid-caps, with streamlined documentation and lighter post-market monitoring, reducing the documentation burden for many HR-tech vendors.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a90235e6-8009-40f9-b4b2-0a51cf788823"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://www.praxikon.com/en/posts/what-does-eu-ai-act-compliance-cost-realistic-numbers",
+      "title": "What does EU AI Act compliance cost: realistic numbers per organisation type",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "A mid-sized organisation with one or more candidate high-risk systems should budget 25,000 to 100,000 euros. A large enterprise, or a provider that places high-risk AI on the market itself, quickly reaches 100,000 to 500,000 euros or more, including conformity work and ongoing governance.",
+      "statement": "A practitioner estimate (mid-2026) puts year-one AI Act cost at EUR 25k-100k for mid-sized organisations with candidate high-risk systems and EUR 100k-500k+ for providers of high-risk AI.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a90235e6-8009-40f9-b4b2-0a51cf788823"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://www.praxikon.com/en/posts/what-does-eu-ai-act-compliance-cost-realistic-numbers",
+      "title": "What does EU AI Act compliance cost: realistic numbers per organisation type",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "AI governance platforms (registers, workflows, monitoring, evidence management) are almost always sold as annual licences. Entry prices of international vendors start around 10,000 to 20,000 euros per year; enterprise implementations run to 50,000 to 100,000 euros per year or more.",
+      "statement": "AI governance platforms are sold as annual licences from about EUR 10k-20k per year at entry level, in line with the idea's EUR 500-2,500/month hypothesis.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "a90235e6-8009-40f9-b4b2-0a51cf788823",
+        "50619c38-31b2-4830-8e67-dc0d8ba6ab8c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://www.praxikon.com/en/posts/what-does-eu-ai-act-compliance-cost-realistic-numbers",
+      "title": "What does EU AI Act compliance cost: realistic numbers per organisation type",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "An honest note: an SME with five AI systems is often well served by a structured register in existing tooling. Buying software before the inventory is finished is the most common budgeting mistake.",
+      "statement": "The same source says a smaller organisation is often well served by a register in existing tooling rather than dedicated software.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "f6a2ad75-5e29-41de-b59a-9824e62059fc",
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://www.praxikon.com/en/posts/what-does-eu-ai-act-compliance-cost-realistic-numbers",
+      "title": "What does EU AI Act compliance cost: realistic numbers per organisation type",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "For most organisations, however, the bill arrives from a different direction first: procurement teams demanding AI Act evidence in tenders, clients asking for contractual assurances",
+      "statement": "Procurement teams demanding AI Act evidence in tenders, and clients asking for contractual assurances, are described as the first cost most organisations face.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617",
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://www.praxikon.com/en/posts/eu-ai-act-impact-startups-smes",
+      "title": "EU AI Act impact on startups & SMEs",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "A Berlin-based startup building AI-powered legal research tools spent eighteen months and over €200,000 preparing for EU AI Act compliance before their product launched.",
+      "statement": "One (non-HR) startup example reports eighteen months and over EUR 200,000 spent preparing for AI Act compliance.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a90235e6-8009-40f9-b4b2-0a51cf788823"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://wolfia.com/blog/eu-ai-act-vendor-assessment-requirements-for-saas",
+      "title": "EU AI Act vendor assessment for SaaS (Wolfia)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Enterprise legal and procurement teams in the EU, particularly those subject to deployer obligations under Article 26, are adding AI-specific question blocks to standard vendor assessments.",
+      "statement": "EU enterprise legal and procurement teams are adding AI Act question blocks to standard vendor assessments.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://wolfia.com/blog/eu-ai-act-vendor-assessment-requirements-for-saas",
+      "title": "EU AI Act vendor assessment for SaaS (Wolfia)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Enterprise buyers ask about risk classification, technical documentation (Article 11), human oversight (Article 14), conformity assessment status, and incident reporting procedures (Article 73).",
+      "statement": "Buyer questionnaires ask for risk classification, Article 11 technical documentation, Article 14 human oversight, conformity assessment status and Article 73 incident procedures.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0374ba5c-8658-4d6b-8919-067ccaa2c79f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://wolfia.com/blog/eu-ai-act-vendor-assessment-requirements-for-saas",
+      "title": "EU AI Act vendor assessment for SaaS (Wolfia)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "An HR tech product that auto-ranks job candidates before a hiring manager reviews the list triggers this category.",
+      "statement": "HR-tech ranking features fall in Annex III category 4, unlike most B2B SaaS, which is minimal risk.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0374ba5c-8658-4d6b-8919-067ccaa2c79f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://wolfia.com/blog/eu-ai-act-vendor-assessment-requirements-for-saas",
+      "title": "EU AI Act vendor assessment for SaaS (Wolfia)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "These questions arrive in the same spreadsheet format as a SOC 2 questionnaire or a SIG Lite section.",
+      "statement": "AI Act questions arrive in spreadsheet questionnaires like SOC 2/SIG, so vendors currently answer them through their usual questionnaire process.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://blog.promise.legal/startup-central/procurement-questionnaire-standing-answer-vendors-sell-enterprise/",
+      "title": "From Procurement Questionnaire to Standing Answer (Promise Legal)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Security questionnaires range from 50 to 500+ questions and consume 10 to 40 hours of combined effort without automation.",
+      "statement": "Security/AI procurement questionnaires take 10-40 hours of combined effort each without automation.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a90235e6-8009-40f9-b4b2-0a51cf788823",
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://blog.promise.legal/startup-central/procurement-questionnaire-standing-answer-vendors-sell-enterprise/",
+      "title": "From Procurement Questionnaire to Standing Answer (Promise Legal)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Mid-market AI vendors lose deals not because they fail the questionnaire but because they answer it ad-hoc. Each new buyer triggers a fresh scramble across engineering, security, legal, and product to assemble responses",
+      "statement": "Mid-market AI vendors are said to lose deals by answering AI procurement questionnaires ad hoc, with each buyer triggering a cross-team scramble.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a",
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.hubert.ai/blog-posts/questions-to-ask-recruitment-software-vendors",
+      "title": "Questions to Ask Recruitment Software Vendors for EU AI Act Compliance (Hubert)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Can you share documentation outlining your classification rationale and impact assessment? … Have you audited your models for demographic fairness and explainability? … Can you provide compliance documents or certifications (e.g. CE mark, conformity assessment, etc.)? Do you maintain logs and traceability of model outputs and updates?",
+      "statement": "An HR-tech vendor checklist for buyers' RFPs asks for classification rationale, fairness audits, conformity documents and output logs: the core of an evidence pack.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0374ba5c-8658-4d6b-8919-067ccaa2c79f",
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": "Hubert"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.testgorilla.com/blog/eu-ai-act-hiring/",
+      "title": "What the EU AI Act means for how you hire (TestGorilla)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Procurement and legal teams are already asking these questions in vendor conversations.",
+      "statement": "An assessment vendor says buyers' procurement and legal teams already ask AI Act questions in vendor conversations.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": "TestGorilla"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.testgorilla.com/blog/eu-ai-act-hiring/",
+      "title": "What the EU AI Act means for how you hire (TestGorilla)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A structured AI Management System (AIMS) is in full operation and aligned with ISO 42001 and EU AI Act requirements. … The program is live, with the team finalizing legal documentation updates, deployer-facing compliance instruments, and a formal auditing process",
+      "statement": "TestGorilla (a provider) runs its own ISO 42001-aligned AI management system and is still finalising deployer-facing compliance instruments.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae",
+        "0374ba5c-8658-4d6b-8919-067ccaa2c79f"
+      ],
+      "company_name": "TestGorilla"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://blog.workday.com/en-us/while-eu-ai-act-stalls-workday-leads-trusted-compliant-ai-fy27-q1.html",
+      "title": "While the EU AI Act Stalls, Workday Leads on Trusted, Compliant AI",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Workday’s AI management system is certified to ISO 42001 … We provide AI Fact Sheets, in-product notices, and generative AI disclosures to make our technology understandable and controllable.",
+      "statement": "Large HR-tech vendors such as Workday build compliance evidence in-house (ISO 42001 certification, AI Fact Sheets for customers).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": "Workday"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://iapp.org/news/a/companies-work-to-navigate-operational-legal-challenges-associated-with-ai-in-hr-systems",
+      "title": "Companies work to navigate operational, legal challenges associated with AI in HR systems (IAPP)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "the legal department is \"often brought in too late\" to matters, meaning the company \"may lose the opportunity to add important protections and assurances in the contract.\"",
+      "statement": "Employment lawyers say legal is often brought into HR AI procurement too late to add protections and assurances.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "50619c38-31b2-4830-8e67-dc0d8ba6ab8c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://www.recruitingnewsnetwork.com/posts/ai-is-reshaping-work-in-europe-faster-than-hr-can-comply--and-time-is-nearly-up",
+      "title": "AI Compliance laws in Europe (Recruiting News Network, on Littler 2025 European Employer Survey)",
+      "source_type": "news",
+      "published_at": "2025-12-05",
+      "quote": "Fewer than 20% of organizations say they are “very prepared” for the EU AI Act. … By contrast, a fifth of employers report being “not at all prepared,” the same share as a year ago.",
+      "statement": "Littler's survey of 400+ European HR, legal and business respondents: under 20% very prepared, a fifth not at all prepared, with no improvement in a year.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://www.cipd.org/en/about/blogs/hr-and-ai-in-europe/",
+      "title": "HR and AI: what Europe is actually doing (CIPD / EAPM survey)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "43% of HR departments in our survey use AI informally — individuals experimenting without structure, policy or backing. Only 19% describe AI as genuinely integrated into workflows. And 66% say their organisation has no clear guidelines for AI use in HR.",
+      "statement": "EAPM survey of 327 European HR leaders: most AI use in HR is informal and 66% have no clear AI guidelines.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://www.cipd.org/en/about/blogs/hr-and-ai-in-europe/",
+      "title": "HR and AI: what Europe is actually doing (CIPD / EAPM survey)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Yet 60% use no AI in talent management whatsoever — not for identifying high-potential employees, succession planning or career pathing. … They are simply operating without training, without guidelines, without budget in many cases",
+      "statement": "60% of surveyed European HR departments use no AI in talent management, and many operate without budget, so high-risk HR AI use and budget may be thinner than assumed.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "50619c38-31b2-4830-8e67-dc0d8ba6ab8c",
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://assessio.com/resources/articles/ai-governance-hr-eu-ai-act/",
+      "title": "AI governance in HR: what the EU AI Act means for your hiring process (Assessio)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "So why do only 39% have clearly defined AI guidelines for HR, and only 32% have a named governance role? … That liability cannot be transferred to your vendor.",
+      "statement": "Assessio's HR-leader research: only 32% have a named AI governance role; deployer liability cannot be passed to the vendor.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "50619c38-31b2-4830-8e67-dc0d8ba6ab8c"
+      ],
+      "company_name": "Assessio"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://borncity.com/news/ki-im-recruiting-nur-vier-von-25-grossunternehmen-informieren-bewerber/",
+      "title": "KI im Recruiting: Nur vier von 25 Großunternehmen informieren Bewerber",
+      "source_type": "news",
+      "published_at": "2026-10-31",
+      "quote": "analysierte der sogenannte „KI-Transparenz-Index“ die 25 nach Mitarbeiterzahl größten Arbeitgeber der Bundesrepublik. … Zwar nutzen 21 der 25 untersuchten Konzerne Bewerbungssoftware, die theoretisch KI-Funktionen unterstützt, doch lediglich vier Unternehmen informieren Bewerberinnen und Bewerber offen darüber.",
+      "statement": "Of Germany's 25 largest employers, 21 use applicant software with AI functions but only 4 tell applicants openly (Lucca index, Oct 2026).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://borncity.com/news/ki-im-recruiting-nur-vier-von-25-grossunternehmen-informieren-bewerber/",
+      "title": "KI im Recruiting: Nur vier von 25 Großunternehmen informieren Bewerber",
+      "source_type": "news",
+      "published_at": "2026-10-31",
+      "quote": "Laut einer repräsentativen Befragung des Digitalverbands Bitkom unter mehr als 600 Unternehmen setzt derzeit erst eine Minderheit auf algorithmische Unterstützung im Personalbereich … Die Bewertung der individuellen Arbeitsleistung mithilfe von Algorithmen nutzen 12 Prozent",
+      "statement": "A Bitkom survey of 600+ German companies finds only a minority use AI in HR; 12% use algorithms to assess individual performance.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://borncity.com/news/ki-im-recruiting-nur-vier-von-25-grossunternehmen-informieren-bewerber/",
+      "title": "KI im Recruiting: Nur vier von 25 Großunternehmen informieren Bewerber",
+      "source_type": "news",
+      "published_at": "2026-10-31",
+      "quote": "Auf dem ersten Platz landete die Allianz mit 26 Punkten, gefolgt von der Deutschen Telekom und dem Softwarekonzern SAP mit jeweils 20 Punkten … Neben der Allianz und SAP gehören lediglich Bayer und Siemens zu den Unternehmen, die den Einsatz entsprechender KI-Funktionen in ihrer Software nach außen klar benennen.",
+      "statement": "Allianz, Deutsche Telekom and SAP ranked top for AI transparency in recruiting; Allianz, SAP, Bayer and Siemens openly name AI functions in their applicant software.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://borncity.com/news/ki-im-recruiting-nur-vier-von-25-grossunternehmen-informieren-bewerber/",
+      "title": "KI im Recruiting: Nur vier von 25 Großunternehmen informieren Bewerber",
+      "source_type": "news",
+      "published_at": "2026-10-31",
+      "quote": "Am unteren Ende des Feldes platzierte sich Siemens Energy mit 5 Punkten auf dem vorletzten Rang, während Aldi Nord mit 1 Punkt den letzten Platz belegt.",
+      "statement": "Siemens Energy and Aldi Nord, both among Germany's 25 largest employers, scored lowest on AI recruiting transparency.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://www.gov.uk/ai-assurance-techniques/warden-ai-continuous-bias-auditing-for-hr-tech",
+      "title": "Warden AI: Continuous Bias Auditing for HR Tech (UK government AI assurance catalogue)",
+      "source_type": "directory",
+      "published_at": null,
+      "quote": "Warden AI provides independent, tech-led AI bias auditing, designed for both HR Tech platforms and enterprises deploying AI solutions in HR. … External-facing dashboards: Dashboards and reports can be shared with end-customers, end-users, or made public",
+      "statement": "Warden AI sells continuous bias auditing built for HR-tech platforms, with dashboards vendors can share with their customers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae",
+        "0374ba5c-8658-4d6b-8919-067ccaa2c79f"
+      ],
+      "company_name": "Warden AI"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://uf.beamery.com/news/beamery-releases-independent-ai-audit-results-from-warden-ai",
+      "title": "Beamery Releases Independent AI Audit Results From Warden AI",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "this year selected Warden AI’s embedded auditing solution, which integrates with the Beamery platform, enabling continuous testing and monitoring.",
+      "statement": "Beamery, an HR-tech vendor, uses Warden AI's embedded continuous bias audit and publishes the results.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": "Beamery"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://techintelpro.com/news/ai/agentic-ai/pageup-ai-hiring-systems-pass-warden-ai-fairness-audit",
+      "title": "PageUp AI Hiring Systems Pass Warden AI Fairness Audit",
+      "source_type": "news",
+      "published_at": "2026-06-01",
+      "quote": "The audit reflects growing enterprise demand for independent verification of AI systems … “Warden AI’s independent audit of PageUp’s solutions helps us move from promises to evidence, which is what enterprise customers are increasingly looking for from their providers.”",
+      "statement": "PageUp's CEO says enterprise customers increasingly want independent evidence from HR-tech providers; PageUp bought a Warden AI audit to supply it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617",
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": "PageUp"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.whippy.ai/blog/eu-ai-act-bias-audit",
+      "title": "Whippy & the EU AI Act: Independent Audit",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "No audit report is a substitute for the Act's full conformity assessment process once high-risk obligations apply; this evidence reflects system behavior under tested conditions at a point in time, not a legal certification.",
+      "statement": "Even a vendor using a third-party bias audit says it does not replace the Act's conformity assessment, leaving a gap between bias audits and full technical documentation.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "f6a2ad75-5e29-41de-b59a-9824e62059fc",
+        "0374ba5c-8658-4d6b-8919-067ccaa2c79f"
+      ],
+      "company_name": "Whippy"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.silicon.co.uk/press-release/fairnow-chosen-by-hr-technology-leaders-for-ai-governance-and-regulatory-needs",
+      "title": "FairNow Chosen by HR Technology Leaders for AI Governance and Regulatory Needs",
+      "source_type": "news",
+      "published_at": "2024-09-19",
+      "quote": "with over a dozen HR tech vendors joining the FairNow platform and ecosystem in recent months, including leading companies such as Dayforce, Ashby, Humanly, and Plum. … FairNow delivers a comprehensive toolkit for HR technology vendors through its automated AI risk assessments, regulatory compliance tracking, bias audits, and advanced technical documentation capabilities.",
+      "statement": "FairNow already sells AI risk assessments, bias audits and technical documentation specifically to HR-tech vendors (Dayforce, Ashby, Humanly, Plum).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": "FairNow"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.helpnetsecurity.com/2025/10/23/auditboard-fairnow-acquisition/",
+      "title": "AuditBoard expands AI compliance with FairNow acquisition and Accelerate launch",
+      "source_type": "news",
+      "published_at": "2025-10-23",
+      "quote": "AuditBoard has reached a definitive agreement to acquire FairNow. … fewer than 30% of leaders feel prepared for upcoming AI governance requirements",
+      "statement": "The leading HR-tech-focused AI governance tool was bought by a large GRC vendor (AuditBoard); AuditBoard cites under 30% of leaders feeling prepared.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "f6a2ad75-5e29-41de-b59a-9824e62059fc",
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": "AuditBoard"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.silicon.co.uk/press-release/vanta-introduces-eu-ai-act-support-for-the-ethical-development-and-use-of-ai-in-europe",
+      "title": "Vanta Introduces EU AI Act Support",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Vanta’s support for the EU AI Act includes all AI-specific controls, policies, tests and documents mandated by the act … Vanta categorises AI systems as “high-risk” or “low-risk” based on regulatory criteria and automates collection of the evidence needed to prove compliance",
+      "statement": "Vanta offers an EU AI Act framework that classifies systems and automates evidence collection.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": "Vanta"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.onetrust.com/solutions/eu-ai-act-compliance/",
+      "title": "OneTrust EU AI Act solution",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "OneTrust enables this by providing a system of continuous governance that keeps AI systems under control as they operate in production — registering systems, enforcing policy, coordinating decisions, and producing enforcement‑ready evidence by default.",
+      "statement": "OneTrust sells AI Act governance (registry, risk, post-market monitoring evidence) for providers and deployers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": "OneTrust"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://toolradar.com/guides/best-eu-ai-act-compliance-tools",
+      "title": "Best EU AI Act Compliance Tools (2026) | Toolradar",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Nine of them are quote-only, and the one exception, IBM watsonx.governance, still needs a sales call for anything past the entry tier.",
+      "statement": "Of ten EU AI Act compliance platforms reviewed in 2026, nine publish no price; the market is crowded with horizontal tools.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae",
+        "a90235e6-8009-40f9-b4b2-0a51cf788823"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://toolradar.com/guides/best-eu-ai-act-compliance-tools",
+      "title": "Best EU AI Act Compliance Tools (2026) | Toolradar",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "IBM watsonx.governance is the one platform here with a published number, Risk & Compliance Basic from $3,500/mo.",
+      "statement": "The only published price among leading AI Act platforms is IBM watsonx.governance from $3,500/month.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a90235e6-8009-40f9-b4b2-0a51cf788823"
+      ],
+      "company_name": "IBM"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.modulos.ai/modulos-vs-vanta/",
+      "title": "Modulos vs Vanta: AI Governance Comparison (2026)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "150+ controls and 16 policies with role and risk classification; for CE marking, Vanta “can connect you to a specialist”",
+      "statement": "A competitor's comparison notes that Vanta's AI Act coverage is a control set and that for CE marking it refers customers to a specialist, a limit of generic GRC tools.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "f6a2ad75-5e29-41de-b59a-9824e62059fc"
+      ],
+      "company_name": "Vanta"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.modulos.ai/modulos-vs-vanta/",
+      "title": "Modulos vs Vanta: AI Governance Comparison (2026)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Choose Modulos if regulators examine your AI systems. You get EU AI Act classification and documentation for high-risk systems, EN 18286 and the rest of the EU stack in one control set",
+      "statement": "Modulos, an EU AI-Act-native platform, sells classification and high-risk documentation including the EN 18286 standard.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": "Modulos"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://www.credo.ai/",
+      "title": "Credo AI - AI Governance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Governance is still manual, fragmented, and stuck in spreadsheets.",
+      "statement": "Credo AI describes AI governance today as manual and spreadsheet-based.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": "Credo AI"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://www.holisticai.com/",
+      "title": "Holistic AI - AI Governance Platform",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "New AI agents, LLMs and vendor tools go live every week, while your AI inventory, risk assessments and compliance evidence still live in spreadsheets.",
+      "statement": "Holistic AI says AI inventories, risk assessments and compliance evidence typically still live in spreadsheets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": "Holistic AI"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://www.securityscientist.net/blog/eu-ai-act-technical-documentation-template/",
+      "title": "EU AI Act Technical Documentation Template (Annex IV, Word)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The trouble is that technical documentation is the one obligation teams keep deferring because it feels like paperwork rather than engineering.",
+      "statement": "Free Annex IV Word templates exist, and the publisher notes teams keep deferring technical documentation.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "27cc8c9d-0fcc-424b-9395-445d6df5f9ae"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://sota.io/blog/eu-ai-act-hrtech-employment-recruitment-ai-developer-compliance-2026",
+      "title": "EU AI Act for HR-Tech Developers (sota.io)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For most HR-Tech SaaS companies, this requires creating formal QMS documentation where none previously existed.",
+      "statement": "HR-tech SaaS providers typically must create Article 17 quality-management documentation from scratch.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a90235e6-8009-40f9-b4b2-0a51cf788823"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://artificialintelligenceact.eu/what-the-act-means-for-staffing-businesses/",
+      "title": "What the EU AI Act Means for Staffing Businesses",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "And it does not matter whether you built the technology. If your business deploys it, compliance is your responsibility, even if the platform vendor says otherwise.",
+      "statement": "Deployers (employers, staffing firms) hold their own obligations regardless of what the vendor provides.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "50619c38-31b2-4830-8e67-dc0d8ba6ab8c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://artificialintelligenceact.eu/what-the-act-means-for-staffing-businesses/",
+      "title": "What the EU AI Act Means for Staffing Businesses",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Regulators also have the power to withdraw or recall non-compliant AI systems from the market. For a staffing business whose operating model depends on technology-enabled matching and screening, that is the more commercially significant risk",
+      "statement": "Beyond fines (up to EUR 15M / 3%), withdrawal or recall of a non-compliant system is described as the bigger commercial risk.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://www.airbus.com/en/careers/faqs",
+      "title": "Airbus Careers FAQs - Using AI in your application",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Airbus utilises AI technologies in a supportive and administrative capacity - such as scheduling interviews. … Please note that for jobs in Canada and China there are ongoing trials that means that AI is being used to help with resume/CV filtering.",
+      "statement": "Airbus limits recruiting AI in Europe to supportive/administrative uses; CV-filtering AI is trialled only in Canada and China. Some large EU employers avoid high-risk HR AI rather than document it.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "25e28fb5-b0fc-415a-8ceb-60f318200d6a"
+      ],
+      "company_name": "Airbus"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.greenhouse.com/uk/blog/2026-candidate-ai-interview-report",
+      "title": "AI interviews in hiring: What candidates actually want (Greenhouse 2026 report)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Now, AI interviews are already part of the hiring experience across the UK, Ireland and Germany … In Ireland, only 9% of candidates who completed an AI interview say they were clearly told upfront that AI would be used.",
+      "statement": "AI interviews are common in Ireland and Germany, but few candidates are told upfront, which suggests deployer transparency obligations are not yet being met.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://www.techbook.de/pc-mac/web-pc-mac/deutsche-telekom-ki-bewerbungen",
+      "title": "Telekom über KI im Recruiting (TECHBOOK)",
+      "source_type": "news",
+      "published_at": "2025-01-19",
+      "quote": "„Ja, wir nutzen KI im Auswahlprozess nicht nur in Deutschland, sondern auch in anderen Ländern.“ … „Wir arbeiten mit Eightfold.ai zusammen, wie andere große Unternehmen auch.",
+      "statement": "Deutsche Telekom uses Eightfold AI in its candidate selection process in Germany and other countries.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": "Deutsche Telekom"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.telekom.com/en/about-us/company-profile",
+      "title": "Deutsche Telekom company profile",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "In the 2025 financial year, we generated revenue of EUR 119.1 billion with around 200 thousand employees worldwide (as of December 31, 2025).",
+      "statement": "Deutsche Telekom has around 200,000 employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Deutsche Telekom"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://www.raconteur.net/talent-culture/ai-hr-schneider-electric",
+      "title": "AI in HR: how one company transformed their workforce (Raconteur)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "To solve the problem, Schneider launched its Open Talent Market, an innovative application of AI in HR … The platform currently performs three functions: matching employees to vacant roles, helping them find a mentor and connecting them to side projects.",
+      "statement": "Schneider Electric runs an AI talent marketplace that matches employees to vacant roles (an Annex III-type internal mobility use).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": "Schneider Electric"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://www.se.com/ww/en/about-us/",
+      "title": "About Schneider Electric",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With 160,000 employees and one million partners in over 100 countries, Schneider Electric is consistently ranked among the world’s most sustainable companies.",
+      "statement": "Schneider Electric has 160,000 employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Schneider Electric"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.casestudies.com/company/eightfold/case-study/forvia-transforms-talent-acquisition-with-award-winning-eightfold-solution",
+      "title": "Forvia transforms talent acquisition with Eightfold (case study)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Forvia, a global automotive-technology company headquartered in Nanterre, France, … Forvia selected Eightfold and its Eightfold Talent Acquisition solution (part of the Eightfold Talent Intelligence Platform) to integrate with SAP SuccessFactors and apply AI across sourcing, screening and events.",
+      "statement": "Forvia (Nanterre, France) applies Eightfold AI across sourcing and screening in 43 countries.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": "Forvia"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.unleash.ai/artificial-intelligence/analysis/vodafone-on-how-eightfold-ai-drove-candidate-satisfaction-into-positive-figures/",
+      "title": "Vodafone on how Eightfold AI drove candidate satisfaction (UNLEASH)",
+      "source_type": "news",
+      "published_at": "2024-06-24",
+      "quote": "senior HR leaders from the HR tech giant's customers, including Vodafone, Ubisoft, Coca-Cola Europacific Partners, MM and Forvia.",
+      "statement": "Ubisoft, MM and Forvia are Eightfold (AI talent intelligence) customers.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://mm.group/company/",
+      "title": "MM Group - Company",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Present in 30 countries and 60 locations, with a highly committed workforce of around 13,000 people … The first modern cartonboard machine was built at the parent mill in Frohnleiten, Austria",
+      "statement": "MM Group has around 13,000 people, with its parent mill in Austria.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "MM Group"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.ubisoft.com/en-us/company/about-us",
+      "title": "About Us | Ubisoft",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ubisoft has appointed Sébastien Froidefond as Chief People Officer, effective November 20 2024.",
+      "statement": "Ubisoft's Chief People Officer is named on its own site.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ubisoft"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.ubisoft.com/en-us/company/about-us",
+      "title": "About Us | Ubisoft",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ubisoft may have 17,000 employees in offices and studios around the world",
+      "statement": "Ubisoft has about 17,000 employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ubisoft"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://eightfold.ai/customers/",
+      "title": "Eightfold AI Customers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "STMicroelectronics builds long-term workforce agility with Eightfold A global semiconductor leader digitized talent acquisition and enhanced the candidate and employee experience with AI.",
+      "statement": "STMicroelectronics uses Eightfold AI in talent acquisition.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": "STMicroelectronics"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.bosch.com/company/",
+      "title": "Bosch company overview",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Bosch Group is a leading global supplier of technology and services. It employs roughly 413,000 associates worldwide (as of December 31, 2025).",
+      "statement": "Bosch employs about 413,000 associates.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bosch"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.stellantis.com/en/company/about-us",
+      "title": "Stellantis - About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With manufacturing facilities* located in Enlarged Europe (including France, Germany, Italy, Spain, Poland, and the UK), … Stellantis is powered by nearly 260,000** employees across its five regions globally.",
+      "statement": "Stellantis has nearly 260,000 employees with major European operations.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Stellantis"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.randstad.com/about-randstad/",
+      "title": "about randstad",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Randstad was founded in 1960 and is headquartered in Diemen, the Netherlands.",
+      "statement": "Randstad is headquartered in Diemen, the Netherlands.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Randstad"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://corporate.zalando.com/en/about-us",
+      "title": "Zalando - About us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Founded in Berlin in 2008, Zalando is the leading European technology platform for fashion and lifestyle .",
+      "statement": "Zalando is a Berlin-based European platform.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Zalando"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://group.dhl.com/en/about-us.html",
+      "title": "DHL Group - About us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "DHL Group in numbers 220+ countries and territories ~584,000 employees worldwide",
+      "statement": "DHL Group has about 584,000 employees.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "DHL Group"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://group.dhl.com/en/about-us.html",
+      "title": "DHL Group - About us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Deutsche Post is the largest postal service provider in Europe and the market leader in the German mail market.",
+      "statement": "DHL Group (Deutsche Post) is based in Germany.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "DHL Group"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.airbus.com/en/about-us",
+      "title": "Airbus - About us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Airbus is the largest aeronautics and space company in Europe, providing products, services and solutions for the commercial aircraft, helicopter, defence and space sectors.",
+      "statement": "Airbus is Europe's largest aerospace company.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Airbus"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.hirevue.com/case-studies",
+      "title": "Hirevue case studies",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Customers Customer overview Ikea Resources",
+      "statement": "HireVue (AI interviews/assessments) lists IKEA among its featured customers.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "9c9ea0b6-cce5-4f12-9aa5-84ece139f617"
+      ],
+      "company_name": "IKEA (Ingka Group)"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.ingka.com/this-is-ingka-group/",
+      "title": "This is Ingka Group",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Driven by the IKEA vision to create a better everyday life for the many people, Ingka Group brings the IKEA brand to millions of homes.",
+      "statement": "Ingka Group is the main IKEA retailer.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Ingka Group"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "a90235e6-8009-40f9-b4b2-0a51cf788823",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Practitioner estimates put year-one AI Act cost at EUR 25k-100k for mid-sized organisations with candidate high-risk systems and EUR 100k-500k+ for providers of high-risk AI; these are estimates, not HR-tech-vendor measurements.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Each AI/security procurement questionnaire takes 10-40 hours of combined effort without automation.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14"
+          ]
+        },
+        {
+          "statement": "HR-tech SaaS providers typically have to write quality-management documentation from scratch.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44"
+          ]
+        },
+        {
+          "statement": "The Omnibus extends streamlined documentation to SMEs and small mid-caps, which lowers the burden for many HR-tech vendors.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04"
+          ]
+        },
+        {
+          "statement": "No source measured hours or spend at an actual HR-tech vendor; the per-vendor cost remains unmeasured.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "27cc8c9d-0fcc-424b-9395-445d6df5f9ae",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "HR-tech vendors use HR-specific bias-audit and governance tools: Warden AI (Beamery, PageUp, Whippy) and FairNow (Dayforce, Ashby, Humanly, Plum).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29",
+            "ev-30",
+            "ev-31",
+            "ev-33"
+          ]
+        },
+        {
+          "statement": "Large vendors build it in-house: Workday holds ISO 42001 certification and publishes AI Fact Sheets; TestGorilla runs its own ISO 42001-aligned AI management system.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19",
+            "ev-18"
+          ]
+        },
+        {
+          "statement": "Horizontal platforms (Vanta, OneTrust, Modulos, Credo AI, Holistic AI) cover AI Act classification, registry and evidence.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-35",
+            "ev-36",
+            "ev-40",
+            "ev-41",
+            "ev-42"
+          ]
+        },
+        {
+          "statement": "The boring answer is spreadsheets, Word templates and ad hoc questionnaire answers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-13",
+            "ev-15",
+            "ev-41",
+            "ev-42",
+            "ev-43"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "50619c38-31b2-4830-8e67-dc0d8ba6ab8c",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "On the employer side, governance ownership is often missing: only 32% of HR leaders report a named AI governance role, and legal is often brought into HR AI procurement too late.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-24",
+            "ev-20"
+          ]
+        },
+        {
+          "statement": "Governance tools sell as annual licences from about EUR 10k-20k a year at entry level; IBM watsonx.governance lists from $3,500/month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-06",
+            "ev-38"
+          ]
+        },
+        {
+          "statement": "Many European HR departments operate without an AI budget.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23"
+          ]
+        },
+        {
+          "statement": "No evidence was found on who owns AI Act compliance inside HR-tech vendors or what they budget.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "9c9ea0b6-cce5-4f12-9aa5-84ece139f617",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "EU enterprise buyers are adding AI Act question blocks to standard vendor assessments, and HR-tech vendors report procurement and legal teams already asking.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-17",
+            "ev-08"
+          ]
+        },
+        {
+          "statement": "An HR-tech CEO says enterprise customers increasingly want independent evidence from providers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "Demand comes from large employers: 21 of Germany's 25 largest employers use applicant software with AI functions.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25"
+          ]
+        },
+        {
+          "statement": "No source gives a count of requests per vendor per month.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "f6a2ad75-5e29-41de-b59a-9824e62059fc",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Bias audits alone do not replace the Act's conformity assessment, as an audited vendor states.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "A competitor notes that Vanta refers customers to a specialist for CE marking.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39"
+          ]
+        },
+        {
+          "statement": "Against the gap: HR-specific tools already exist, and FairNow was acquired by AuditBoard, which shows large GRC vendors moving in.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33",
+            "ev-34"
+          ]
+        },
+        {
+          "statement": "For smaller organisations a register in existing tooling is often enough.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07"
+          ]
+        },
+        {
+          "statement": "No buyer-voice complaints (reviews, forums) about these tools for HR AI were found.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "25e28fb5-b0fc-415a-8ceb-60f318200d6a",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Annex III employment obligations moved to 2 December 2027 by law (Regulation (EU) 2026/1744).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01"
+          ]
+        },
+        {
+          "statement": "Systems placed on the market before that date may continue without new obligations unless materially changed, so incumbent HR-tech products may face little legal pressure.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-03"
+          ]
+        },
+        {
+          "statement": "Near-term risk is commercial rather than regulatory: procurement demands and deals lost to ad hoc answers; later, fines and possible withdrawal or recall of systems.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-08",
+            "ev-15",
+            "ev-46"
+          ]
+        },
+        {
+          "statement": "Employer readiness is low (under 20% very prepared), but use of high-risk HR AI is also limited: 60% of surveyed HR teams use no AI in talent management, and some employers such as Airbus restrict recruiting AI to admin uses in Europe.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-21",
+            "ev-23",
+            "ev-26",
+            "ev-47"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "0374ba5c-8658-4d6b-8919-067ccaa2c79f",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Buyer questionnaires ask for risk classification and rationale, Article 11 technical documentation, Article 14 human-oversight design, conformity assessment status, Article 73 incident procedures, fairness or bias audits, and output logs.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-11",
+            "ev-16"
+          ]
+        },
+        {
+          "statement": "Vendors offer shareable bias-audit dashboards as customer-facing evidence.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "No evidence shows what an enterprise actually accepted as sufficient; acceptance criteria remain unknown.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "How do HR-tech vendors' existing products benefit from the Article 111(2) grandfathering, and which product changes after 2 Dec 2027 would count as 'significant' and trigger full obligations?",
+      "category": "urgency",
+      "priority": "high"
+    },
+    {
+      "question": "Why would an HR-tech vendor choose a new tool over FairNow (now AuditBoard/Optro) or Warden AI, which already target HR-tech providers?",
+      "category": "alternatives",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "FairNow (AuditBoard / Optro)",
+      "url": "https://fairnow.ai",
+      "kind": "direct",
+      "description": "AI governance built for HR-tech vendors: automated AI risk assessments, compliance tracking, bias audits and technical documentation. Acquired by AuditBoard in 2025.",
+      "evidence_refs": [
+        "ev-33",
+        "ev-34"
+      ],
+      "sentiment": [
+        {
+          "statement": "HR-tech vendors including Dayforce, Ashby, Humanly and Plum joined the platform.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Warden AI",
+      "url": "https://www.warden-ai.com",
+      "kind": "direct",
+      "description": "Continuous, independent bias auditing for HR-tech platforms, with dashboards shareable with end customers; audits aligned to NYC LL144, Colorado and the EU AI Act.",
+      "evidence_refs": [
+        "ev-29",
+        "ev-30",
+        "ev-31",
+        "ev-32"
+      ],
+      "sentiment": [
+        {
+          "statement": "Customers say it helps them 'move from promises to evidence' for enterprise buyers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "A customer notes the audit is not a substitute for conformity assessment.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-32"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "Vanta",
+      "url": "https://www.vanta.com",
+      "kind": "indirect",
+      "description": "Trust/compliance automation with an EU AI Act framework (controls, policies, classification, evidence collection) alongside SOC 2/ISO.",
+      "evidence_refs": [
+        "ev-35",
+        "ev-39"
+      ],
+      "sentiment": [
+        {
+          "statement": "A competitor notes that for CE marking Vanta refers customers to a specialist.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-04",
+      "name": "OneTrust",
+      "url": "https://www.onetrust.com",
+      "kind": "indirect",
+      "description": "AI governance for the AI Act: system registry, continuous risk management, post-market monitoring, evidence.",
+      "evidence_refs": [
+        "ev-36"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "Modulos",
+      "url": "https://www.modulos.ai",
+      "kind": "indirect",
+      "description": "EU AI-Act-native governance platform covering classification, high-risk technical documentation and EN 18286.",
+      "evidence_refs": [
+        "ev-40",
+        "ev-37"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Credo AI",
+      "url": "https://www.credo.ai",
+      "kind": "indirect",
+      "description": "Enterprise AI governance registry with regulatory policy packs and audit-ready evidence.",
+      "evidence_refs": [
+        "ev-41"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Holistic AI",
+      "url": "https://www.holisticai.com",
+      "kind": "indirect",
+      "description": "AI governance platform: AI inventory, risk assessment, bias/safety testing, policy enforcement; cites the 2 Dec 2027 deadline.",
+      "evidence_refs": [
+        "ev-42"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "IBM watsonx.governance",
+      "url": "https://www.ibm.com/products/watsonx-governance",
+      "kind": "indirect",
+      "description": "Enterprise AI governance platform listed among EU AI Act tools.",
+      "pricing_note": "Risk & Compliance Basic from $3,500/mo (per Toolradar, Oct 2026)",
+      "evidence_refs": [
+        "ev-38"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "In-house AI management systems (ISO 42001)",
+      "url": null,
+      "kind": "manual",
+      "description": "Large HR-tech vendors build their own governance programmes, ISO 42001 certification and customer-facing AI fact sheets.",
+      "evidence_refs": [
+        "ev-19",
+        "ev-18"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Spreadsheets, Word templates and ad hoc questionnaire answers",
+      "url": null,
+      "kind": "manual",
+      "description": "Annex IV Word templates, registers in existing tools and per-deal questionnaire responses.",
+      "evidence_refs": [
+        "ev-43",
+        "ev-07",
+        "ev-13",
+        "ev-15",
+        "ev-41",
+        "ev-42"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "AI Act advisory and readiness services",
+      "url": null,
+      "kind": "service",
+      "description": "Consultancies and accounting firms selling bespoke or fixed-price AI Act readiness work (inventory, classification, assessments).",
+      "evidence_refs": [
+        "ev-05",
+        "ev-06"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "HR-tech vendors already buy HR-specific evidence tools: Warden AI bias audits (Beamery, PageUp, Whippy) and FairNow governance (Dayforce, Ashby, Humanly, Plum).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-30",
+        "ev-31",
+        "ev-33"
+      ]
+    },
+    {
+      "statement": "Large vendors build it in-house through ISO 42001 programmes and customer-facing AI fact sheets.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-19",
+        "ev-18"
+      ]
+    },
+    {
+      "statement": "Horizontal GRC and AI governance platforms (Vanta, OneTrust, Modulos, Credo AI, Holistic AI) add AI Act frameworks; most are quote-only.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-35",
+        "ev-36",
+        "ev-40",
+        "ev-37"
+      ]
+    },
+    {
+      "statement": "The baseline is spreadsheets, Word templates and ad hoc questionnaire answers.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-41",
+        "ev-42",
+        "ev-43",
+        "ev-15"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Deutsche Telekom",
+      "website": "https://www.telekom.com",
+      "icp_id": null,
+      "location": "Bonn, Germany",
+      "industry": "Telecommunications",
+      "description": "Large EU employer using Eightfold AI in candidate selection across countries.",
+      "evidence_refs": [
+        "ev-50",
+        "ev-51",
+        "ev-25",
+        "ev-27"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "About 200k employees; one of Germany's 25 largest employers.",
+          "evidence_refs": [
+            "ev-51",
+            "ev-25"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Uses Eightfold AI for selection, CV parsing and predictions.",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Ranked 2nd on the AI recruiting transparency index.",
+          "evidence_refs": [
+            "ev-27"
+          ]
+        }
+      },
+      "technologies": [
+        "Eightfold AI"
+      ],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-25"
+      },
+      "size_estimate": {
+        "min": 200000,
+        "max": null,
+        "signal": "Company profile: around 200 thousand employees",
+        "evidence_ref": "ev-51"
+      }
+    },
+    {
+      "ref": "co-02",
+      "name": "Allianz",
+      "website": "https://www.allianz.com",
+      "icp_id": null,
+      "location": "Munich, Germany",
+      "industry": "Insurance",
+      "description": "One of Germany's largest employers; openly names AI functions in its applicant software.",
+      "evidence_refs": [
+        "ev-25",
+        "ev-27"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Among Germany's 25 largest employers.",
+          "evidence_refs": [
+            "ev-25"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Names AI functions in applicant software.",
+          "evidence_refs": [
+            "ev-27"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Top-ranked on AI recruiting transparency.",
+          "evidence_refs": [
+            "ev-27"
+          ]
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-25"
+      }
+    },
+    {
+      "ref": "co-03",
+      "name": "SAP",
+      "website": "https://www.sap.com",
+      "icp_id": null,
+      "location": "Walldorf, Germany",
+      "industry": "Software",
+      "description": "Large German employer that openly names AI functions in its applicant software.",
+      "evidence_refs": [
+        "ev-25",
+        "ev-27"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Among Germany's 25 largest employers.",
+          "evidence_refs": [
+            "ev-25"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Names AI functions in applicant software.",
+          "evidence_refs": [
+            "ev-27"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Ranked 3rd on AI recruiting transparency.",
+          "evidence_refs": [
+            "ev-27"
+          ]
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-25"
+      }
+    },
+    {
+      "ref": "co-04",
+      "name": "Bayer",
+      "website": "https://www.bayer.com",
+      "icp_id": null,
+      "location": "Leverkusen, Germany",
+      "industry": "Pharma / life sciences",
+      "description": "Large German employer that openly names AI functions in its applicant software.",
+      "evidence_refs": [
+        "ev-25",
+        "ev-27"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Among Germany's 25 largest employers.",
+          "evidence_refs": [
+            "ev-25"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Names AI functions in applicant software.",
+          "evidence_refs": [
+            "ev-27"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-25"
+      }
+    },
+    {
+      "ref": "co-05",
+      "name": "Siemens",
+      "website": "https://www.siemens.com",
+      "icp_id": null,
+      "location": "Munich, Germany",
+      "industry": "Industrial technology",
+      "description": "Large German employer that openly names AI functions in its applicant software.",
+      "evidence_refs": [
+        "ev-25",
+        "ev-27"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Among Germany's 25 largest employers.",
+          "evidence_refs": [
+            "ev-25"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Names AI functions in applicant software.",
+          "evidence_refs": [
+            "ev-27"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-25"
+      }
+    },
+    {
+      "ref": "co-06",
+      "name": "Siemens Energy",
+      "website": "https://www.siemens-energy.com",
+      "icp_id": null,
+      "location": "Munich, Germany",
+      "industry": "Energy technology",
+      "description": "Large German employer using AI-capable applicant software with low transparency to applicants.",
+      "evidence_refs": [
+        "ev-25",
+        "ev-28"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Among Germany's 25 largest employers.",
+          "evidence_refs": [
+            "ev-25"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Among the 21 using AI-capable applicant software (not confirmed individually).",
+          "evidence_refs": [
+            "ev-25"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Second-to-last on transparency, a likely deployer-transparency gap.",
+          "evidence_refs": [
+            "ev-28"
+          ]
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-25"
+      }
+    },
+    {
+      "ref": "co-07",
+      "name": "Aldi Nord",
+      "website": "https://www.aldi-nord.de",
+      "icp_id": null,
+      "location": "Essen, Germany",
+      "industry": "Retail",
+      "description": "Large German employer ranked last on AI recruiting transparency.",
+      "evidence_refs": [
+        "ev-25",
+        "ev-28"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Among Germany's 25 largest employers.",
+          "evidence_refs": [
+            "ev-25"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Among the 21 using AI-capable applicant software (not confirmed individually).",
+          "evidence_refs": [
+            "ev-25"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Last on transparency, a likely deployer-transparency gap.",
+          "evidence_refs": [
+            "ev-28"
+          ]
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-25"
+      }
+    },
+    {
+      "ref": "co-08",
+      "name": "Schneider Electric",
+      "website": "https://www.se.com",
+      "icp_id": null,
+      "location": "Rueil-Malmaison, France",
+      "industry": "Energy technology",
+      "description": "Runs an AI talent marketplace that matches employees to vacant roles.",
+      "evidence_refs": [
+        "ev-52",
+        "ev-53"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "160,000 employees.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "AI matching of employees to roles (Open Talent Market).",
+          "evidence_refs": [
+            "ev-52"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [
+        "Open Talent Market (Gloat)"
+      ],
+      "contacts": [],
+      "size_estimate": {
+        "min": 160000,
+        "max": null,
+        "signal": "About page: 160,000 employees",
+        "evidence_ref": "ev-53"
+      }
+    },
+    {
+      "ref": "co-09",
+      "name": "Forvia",
+      "website": "https://www.forvia.com",
+      "icp_id": null,
+      "location": "Nanterre, France",
+      "industry": "Automotive technology",
+      "description": "Applies Eightfold AI across sourcing and screening in 43 countries.",
+      "evidence_refs": [
+        "ev-54",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Global automotive group headquartered in France.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Eightfold AI for sourcing and screening, integrated with SAP SuccessFactors.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [
+        "Eightfold AI",
+        "SAP SuccessFactors"
+      ],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-54"
+      }
+    },
+    {
+      "ref": "co-10",
+      "name": "MM Group",
+      "website": "https://mm.group",
+      "icp_id": null,
+      "location": "Vienna, Austria",
+      "industry": "Packaging",
+      "description": "Austrian packaging group that uses Eightfold AI.",
+      "evidence_refs": [
+        "ev-56",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Around 13,000 people; Austrian parent operations.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Eightfold customer.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [
+        "Eightfold AI"
+      ],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-56"
+      },
+      "size_estimate": {
+        "min": 13000,
+        "max": null,
+        "signal": "Company page: workforce of around 13,000 people",
+        "evidence_ref": "ev-56"
+      }
+    },
+    {
+      "ref": "co-11",
+      "name": "Ubisoft",
+      "website": "https://www.ubisoft.com",
+      "icp_id": null,
+      "location": "Saint-Mandé, France",
+      "industry": "Video games",
+      "description": "French games publisher that uses Eightfold AI for internal mobility.",
+      "evidence_refs": [
+        "ev-55",
+        "ev-57",
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "About 17,000 employees.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Eightfold customer for internal mobility.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [
+        "Eightfold AI"
+      ],
+      "contacts": [
+        {
+          "name": "Sébastien Froidefond",
+          "role": "Chief People Officer",
+          "email": null,
+          "evidence_ref": "ev-57"
+        }
+      ],
+      "size_estimate": {
+        "min": 17000,
+        "max": null,
+        "signal": "About page: 17,000 employees",
+        "evidence_ref": "ev-58"
+      }
+    },
+    {
+      "ref": "co-12",
+      "name": "STMicroelectronics",
+      "website": "https://www.st.com",
+      "icp_id": null,
+      "location": "Franco-Italian group (major sites in France and Italy)",
+      "industry": "Semiconductors",
+      "description": "Semiconductor maker (Franco-Italian group) that digitised talent acquisition with Eightfold AI.",
+      "evidence_refs": [
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Global semiconductor leader; size not verified on its own site.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Eightfold AI in talent acquisition.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [
+        "Eightfold AI"
+      ],
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Airbus",
+      "website": "https://www.airbus.com",
+      "icp_id": null,
+      "location": "Leiden, Netherlands / Toulouse, France",
+      "industry": "Aerospace",
+      "description": "Europe's largest aerospace company; uses AI in recruitment only for admin tasks in Europe so far.",
+      "evidence_refs": [
+        "ev-66",
+        "ev-47"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Largest aerospace company in Europe.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Admin AI in recruiting; CV filtering only trialled outside the EU.",
+          "evidence_refs": [
+            "ev-47"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Publishes a candidate AI-use FAQ, which shows awareness.",
+          "evidence_refs": [
+            "ev-47"
+          ]
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      }
+    },
+    {
+      "ref": "co-14",
+      "name": "Bosch",
+      "website": "https://www.bosch.com",
+      "icp_id": null,
+      "location": "Gerlingen, Germany",
+      "industry": "Technology / manufacturing",
+      "description": "Very large German employer; no HR AI use found.",
+      "evidence_refs": [
+        "ev-60"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "About 413,000 associates.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "size_estimate": {
+        "min": 413000,
+        "max": null,
+        "signal": "Company page: roughly 413,000 associates",
+        "evidence_ref": "ev-60"
+      }
+    },
+    {
+      "ref": "co-15",
+      "name": "Stellantis",
+      "website": "https://www.stellantis.com",
+      "icp_id": null,
+      "location": "Hoofddorp, Netherlands",
+      "industry": "Automotive",
+      "description": "Very large automaker with major EU operations; no HR AI use found.",
+      "evidence_refs": [
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Nearly 260,000 employees.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-61"
+      },
+      "size_estimate": {
+        "min": 260000,
+        "max": null,
+        "signal": "About page: nearly 260,000 employees",
+        "evidence_ref": "ev-61"
+      }
+    },
+    {
+      "ref": "co-16",
+      "name": "Randstad",
+      "website": "https://www.randstad.com",
+      "icp_id": null,
+      "location": "Diemen, Netherlands",
+      "industry": "Staffing / HR services",
+      "description": "Large Dutch staffing group, fitting both the employer and staffing ICPs; no AI evidence collected.",
+      "evidence_refs": [
+        "ev-62"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "HR services leader headquartered in the Netherlands.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      }
+    },
+    {
+      "ref": "co-17",
+      "name": "Zalando",
+      "website": "https://corporate.zalando.com",
+      "icp_id": null,
+      "location": "Berlin, Germany",
+      "industry": "E-commerce",
+      "description": "Berlin tech platform; no HR AI use found.",
+      "evidence_refs": [
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Large Berlin-based platform; headcount not verified.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      }
+    },
+    {
+      "ref": "co-18",
+      "name": "DHL Group",
+      "website": "https://group.dhl.com",
+      "icp_id": null,
+      "location": "Bonn, Germany",
+      "industry": "Logistics",
+      "description": "Very large German employer; no HR AI use found.",
+      "evidence_refs": [
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "About 584,000 employees.",
+          "evidence_refs": [
+            "ev-64"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [],
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-65"
+      },
+      "size_estimate": {
+        "min": 584000,
+        "max": null,
+        "signal": "About page: ~584,000 employees",
+        "evidence_ref": "ev-64"
+      }
+    },
+    {
+      "ref": "co-19",
+      "name": "Ingka Group (IKEA)",
+      "website": "https://www.ingka.com",
+      "icp_id": null,
+      "location": "Leiden, Netherlands",
+      "industry": "Retail",
+      "description": "Main IKEA retailer; HireVue features IKEA as a customer.",
+      "evidence_refs": [
+        "ev-68",
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Major EU retailer; size not verified on fetched page.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Listed in HireVue's customer navigation (weak signal).",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "technologies": [],
+      "contacts": []
+    }
+  ]
+}
