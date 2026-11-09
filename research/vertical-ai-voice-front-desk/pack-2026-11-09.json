@@ -1,0 +1,2857 @@
+{
+ "meta": {
+  "schema_version": "1.2",
+  "method_version": "3",
+  "idea_id": "694e138d-ed84-4afe-84a6-06be0c0f17e0",
+  "researcher": "claude-code",
+  "started_at": "2026-11-09T09:00:00Z",
+  "finished_at": "2026-11-09T13:30:00Z",
+  "queries": [
+   "dental practices missed calls percentage unanswered study",
+   "\"missed calls\" dental office front desk reddit",
+   "home service contractors missed calls lost revenue survey HVAC plumbing",
+   "AI receptionist dental practice reddit experience bad patients hang up (contradiction)",
+   "Arini AI dental receptionist pricing",
+   "Weave AI receptionist dental launch Dentrix integration",
+   "ServiceTitan AI voice agent answer calls book jobs launch (contradiction: incumbent bundles it)",
+   "India clinic AI voice agent Hindi appointment booking startup",
+   "dentaltown AI phone answering front desk missed calls",
+   "patients prefer online booking text over calling dental office survey percentage (contradiction)",
+   "India clinics WhatsApp appointment booking patients prefer WhatsApp over phone calls (contradiction)",
+   "dental front desk receptionist shortage hiring difficult ADA HPI survey 2025",
+   "Retell AI pricing per minute voice agent",
+   "FCC declaratory ruling AI-generated voices robocalls TCPA consent",
+   "Edesy clinic voice agent Rs 2,999 per month Hindi",
+   "Henry Schein One Dentrix AI voice receptionist announced",
+   "reddit r/Dentistry AI receptionist patients hate it front desk (contradiction)",
+   "reddit r/HVAC answering service vs AI receptionist owners experience (contradiction)",
+   "clinic receptionist salary India per month 2026",
+   "Edesy pricing clinic plan 500 minutes voice agent",
+   "prospecting: \"meet our team\" dental \"office manager\" by state (OH, TX, CO, NC, MI, AZ/GA, PA, TN/KY, MN/WI, VA/WA)",
+   "prospecting: Pennbrook Dentistry; Durango Dentistry; Tubac Dental; Penny Creek; Newman Dental; Sapon & Swisher; Prast Family Dental"
+  ],
+  "notes": "Scope: primary ICP is US dental practices (5-50 staff); home-service trades and Indian clinics covered only by a few items. Most quantitative missed-call figures come from vendor-authored or vendor-hosted pages (Dental Economics piece by an AI-phone vendor developer, StealthAgents, ServiceMag/ServiceForge, Swiss Monkey, eesel); they are flagged as such in statements. The only independent dental dial-out study found is UK 2011 (44%). No primary ADA/peer-reviewed missed-call data was found. Reddit is not fetchable; two r/AI_Agents threads were read through a public snapshot mirror (reddit.sentinel-team.org). Unfetchable (not cited): groupdentistrynow, dentaltown (verification wall), Jobber community (403), Orrick FCC note (robots), ACHR News (robots), ambitionbox (robots), ruby.com (403). FCC 2024 TCPA ruling on AI voices (relevant to outbound reminder calls) was found in search but not cited because the fetchable pages were blocked. Founder-listed vendors Hello22, LuMay, Vapi, Synthflow and Bland were not researched individually (no evidence items); Retell, Arini, Weave, ServiceTitan, Smith.ai, Dentina, Viva AI, Edesy, CallMissed and Swiss Monkey were. Prospects: 20 US dental practices from their own sites (one via a chamber of commerce member directory). Most team pages give first names only; no emails were collected. No company-specific problem evidence (e.g., job posts about missed calls) was found for prospects; technology fit is 0 for all since no site names its PMS."
+ },
+ "unknown_findings": [
+  {
+   "unknown_id": "d2053a5e-6c0a-4d14-bfcf-afb155e6e418",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Vendor-cited benchmarks put dental missed-call rates at roughly 30-38% during business hours, and one cited analysis of 4,280 calls across 26 practices found 38% unanswered.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-01",
+      "ev-15"
+     ]
+    },
+    {
+     "statement": "An independent but old (2011, UK) dial-out study found 44% of calls to dental practices did not reach a person.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-04"
+     ]
+    },
+    {
+     "statement": "For home services, CallRail's benchmark is much lower (14%), while health care is 32%; Invoca-based figures cite 27% for home services.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-05",
+      "ev-09"
+     ]
+    },
+    {
+     "statement": "Not every missed call is a lost booking (spam, repeats, vendors, callbacks), so raw miss rates overstate the opportunity.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-06"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "efcbe139-5657-4d1f-951f-451f1167b29f",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Consumer survey data cited for home services: 66% hang up when a call is not answered and 51% stop after contacting one provider.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-07"
+     ]
+    },
+    {
+     "statement": "Practitioners and anecdotes describe callers moving to the next business that answers.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-11",
+      "ev-33"
+     ]
+    },
+    {
+     "statement": "A survey commissioned by a human-answering firm says about a third of callers would hang up on an AI bot, and many patients prefer online self-scheduling, so not all missed callers would be recovered by a voice agent.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-12",
+      "ev-32"
+     ]
+    },
+    {
+     "statement": "No dental-specific primary data on what patients do after reaching voicemail was found.",
+     "kind": "assumption",
+     "evidence_ids": []
+    }
+   ]
+  },
+  {
+   "unknown_id": "61410825-7dfa-468f-a3e3-860492b3b197",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "US dental AI receptionists integrate with Dentrix, Eaglesoft and Open Dental; Weave books directly into only four PMSs and captures requests elsewhere.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-18",
+      "ev-19"
+     ]
+    },
+    {
+     "statement": "Incumbent platforms bundle the capability: Weave's AI receptionist is available to all dental practices and ServiceTitan ships a built-in voice agent that books jobs and aims to replace answering services.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-20",
+      "ev-26",
+      "ev-27"
+     ]
+    },
+    {
+     "statement": "Practice-level expectations for integration were not found in first-person sources.",
+     "kind": "assumption",
+     "evidence_ids": []
+    }
+   ]
+  },
+  {
+   "unknown_id": "d0fabc53-acb2-4124-a2bb-3d035abac89e",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Dental practices face staffing shortages (62% of dentists named it the top 2025 challenge), including hard-to-fill front-desk roles.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-30",
+      "ev-31"
+     ]
+    },
+    {
+     "statement": "Hiring more staff or basic answering services are described as giving only marginal relief for peak, lunch and after-hours coverage.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-03"
+     ]
+    },
+    {
+     "statement": "AI receptionists themselves struggle with triage, insurance verification, complex reschedules and emergencies, and need a human escalation path.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-14",
+      "ev-36"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "90c4ed4a-b728-45cd-9d0e-9faf91d91c97",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Published estimates are models, not measurements: $100k-$200k+ a year for a mid-size dental practice, about $1,200 per missed home-services call, and about $16k/month exposure for a 1,000-call/month home-services firm.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-02",
+      "ev-09",
+      "ev-08"
+     ]
+    },
+    {
+     "statement": "Vendor case studies report recovered bookings (e.g., 330 new-patient appointments in 12 months at a one-provider office; 21% more booked jobs at a ServiceTitan customer).",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-23",
+      "ev-28"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "eb8baa43-a8ef-467f-a767-fe0e441a2352",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "US dental AI receptionists are priced at about $149-$239/month for small practices and $300-$700 for 4-6 chair practices; Dentina and Viva AI publish $299-$349/month.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-16",
+      "ev-18"
+     ]
+    },
+    {
+     "statement": "Alternatives: Smith.ai AI answering at $150/month for 75 calls or human answering from $300/month for 30 calls; a remote human front-office service at $399-$599/month plus hourly fees.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-21",
+      "ev-17"
+     ]
+    },
+    {
+     "statement": "In India, voice agents are already sold at Rs 4-6 per minute, and a starting receptionist earns about Rs 17k-45k a month.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-38",
+      "ev-40",
+      "ev-41"
+     ]
+    },
+    {
+     "statement": "No evidence was found of what individual practices currently spend on call handling.",
+     "kind": "assumption",
+     "evidence_ids": []
+    }
+   ]
+  }
+ ],
+ "hypothesis_update": null,
+ "new_unknowns": [
+  {
+   "question": "Will dental practices already on Weave (or another phone/PMS platform with a bundled AI receptionist) pay for a separate vertical voice agent, and what would make them switch?",
+   "category": "current_solution",
+   "priority": "high"
+  },
+  {
+   "question": "In India, do clinics and diagnostic labs get most bookings by phone or by WhatsApp, and would they pay Rs 2,999+/month for a voice agent?",
+   "category": "budget",
+   "priority": "medium"
+  }
+ ],
+ "competitors": [
+  {
+   "ref": "comp-01",
+   "name": "Arini",
+   "url": "https://www.arini.ai",
+   "kind": "direct",
+   "description": "Dental-specific AI agents for inbound calls, reactivation and confirmations, aimed at practices, groups and DSOs.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-24",
+    "ev-22"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-02",
+   "name": "Weave AI Receptionist",
+   "url": "https://www.getweave.com/ai-receptionist/",
+   "kind": "indirect",
+   "description": "Dental phone/communications platform that bundles an AI receptionist; books directly into four PMSs and captures requests on others.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-25",
+    "ev-19",
+    "ev-20"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-03",
+   "name": "ServiceTitan AI Voice Agent",
+   "url": "https://www.servicetitan.com",
+   "kind": "indirect",
+   "description": "Home-services FSM incumbent with a built-in AI voice agent that books jobs (including after hours), reschedules, takes payments and escalates.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-26",
+    "ev-27",
+    "ev-28"
+   ],
+   "sentiment": [
+    {
+     "statement": "A ServiceTitan customer reports 21% more booked jobs and 24% fewer abandoned calls after adopting AI virtual agents (vendor-published).",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-28"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-04",
+   "name": "Dentina",
+   "url": "https://www.eesel.ai/blog/ai-receptionist-for-dentists",
+   "kind": "direct",
+   "description": "Dental AI receptionist booking into Dentrix, Eaglesoft and Open Dental.",
+   "pricing_note": "From $299/mo per location (per eesel review)",
+   "evidence_refs": [
+    "ev-18",
+    "ev-23"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-05",
+   "name": "Viva AI",
+   "url": "https://getviva.ai",
+   "kind": "direct",
+   "description": "Dental AI receptionist and communications platform booking into major PMSs.",
+   "pricing_note": "From $349/mo (per eesel review)",
+   "evidence_refs": [
+    "ev-18"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-06",
+   "name": "Smith.ai",
+   "url": "https://smith.ai",
+   "kind": "service",
+   "description": "Horizontal AI receptionist with live human backup, billed per call; also human receptionist plans.",
+   "pricing_note": "AI Pro $150/mo for 75 calls; human plans from $300/mo for 30 calls (per eesel review)",
+   "evidence_refs": [
+    "ev-42",
+    "ev-21"
+   ],
+   "sentiment": [
+    {
+     "statement": "Smith.ai routes complex calls from its AI to live North America-based receptionists day or night.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-42"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-07",
+   "name": "Retell AI",
+   "url": "https://www.retellai.com",
+   "kind": "indirect",
+   "description": "Horizontal voice-agent platform billed per minute; a building block, not a vertical product.",
+   "pricing_note": "$0.07-$0.31/minute pay as you go",
+   "evidence_refs": [
+    "ev-29"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-08",
+   "name": "Swiss Monkey",
+   "url": "https://www.swissmonkey.io",
+   "kind": "service",
+   "description": "Remote dental front-office staffing positioned as the human escalation layer next to AI receptionists.",
+   "pricing_note": "$399-$599/month plus a 12% service fee on hourly rates",
+   "evidence_refs": [
+    "ev-17",
+    "ev-14"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-09",
+   "name": "Edesy",
+   "url": "https://edesy.in",
+   "kind": "direct",
+   "description": "Indian Hindi/multilingual hospital and clinic voicebot for booking, reminders and patient queries.",
+   "pricing_note": "From Rs 4/min on plans, Rs 6/min pay as you go",
+   "evidence_refs": [
+    "ev-39",
+    "ev-40"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-10",
+   "name": "CallMissed",
+   "url": "https://www.callmissed.com",
+   "kind": "direct",
+   "description": "India-hosted voice-agent platform with Hindi/Hinglish recognition, marketed to clinics.",
+   "pricing_note": "Rs 4-6 per minute plus phone carriage",
+   "evidence_refs": [
+    "ev-37",
+    "ev-38"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-11",
+   "name": "Online self-scheduling",
+   "url": "https://dentaleconomics.com/practice/marketing/article/55338690/why-patient-self-scheduling-isnt-optional-anymore-the-death-of-dental-phone-calls",
+   "kind": "indirect",
+   "description": "Patient self-scheduling online, which covers after-hours booking without a phone call.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-32"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-12",
+   "name": "Front-desk staff and basic answering services",
+   "url": "https://dentaleconomics.com/practice/article/55385634/the-economics-of-missed-calls-quantifying-revenue-loss-in-dental-practices",
+   "kind": "manual",
+   "description": "Hiring more front-desk staff or using basic answering services, the default today.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-03",
+    "ev-30"
+   ],
+   "sentiment": [
+    {
+     "statement": "Extra staff and basic answering services are described as giving only marginal relief for peak, lunch and after-hours coverage.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-03"
+     ]
+    }
+   ]
+  }
+ ],
+ "current_solutions": [
+  {
+   "statement": "Today most practices rely on front-desk staff (often doubling as assistants) and basic answering services, which leave peak, lunch and after-hours gaps.",
+   "kind": "inference",
+   "evidence_ids": [
+    "ev-03",
+    "ev-31"
+   ]
+  },
+  {
+   "statement": "Dental-specific AI receptionists (Arini, Dentina, Viva AI) already book directly into the main PMSs at about $299-$349/month per location.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-18",
+    "ev-24"
+   ]
+  },
+  {
+   "statement": "Incumbent platforms bundle AI receptionists: Weave for dental practices and ServiceTitan for home services.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-20",
+    "ev-26"
+   ]
+  },
+  {
+   "statement": "Online self-scheduling and horizontal AI/human answering services (Smith.ai, Retell-based builds) cover part of the need.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-32",
+    "ev-21",
+    "ev-29"
+   ]
+  },
+  {
+   "statement": "In India, Hindi/Hinglish clinic voice agents already exist (Edesy, CallMissed) at Rs 4-6 per minute.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-39",
+    "ev-38"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "ref": "ev-01",
+   "url": "https://dentaleconomics.com/practice/article/55385634/the-economics-of-missed-calls-quantifying-revenue-loss-in-dental-practices",
+   "title": "The economics of missed calls: Quantifying revenue loss in dental practices",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Industry benchmarks indicate that dental practices miss 30–38% of incoming calls during business hours.",
+   "statement": "A Dental Economics article (written by a developer at an AI phone vendor) cites industry benchmarks of 30-38% of dental calls missed during business hours.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "d2053a5e-6c0a-4d14-bfcf-afb155e6e418"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-02",
+   "url": "https://dentaleconomics.com/practice/article/55385634/the-economics-of-missed-calls-quantifying-revenue-loss-in-dental-practices",
+   "title": "The economics of missed calls: Quantifying revenue loss in dental practices",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "For a typical midsized practice with three to six operatories and 60–200 calls per day, receiving 300–500 incoming calls per month, a 35% miss rate means 105–175 unanswered calls monthly. … the true annual impact for many practices easily reaches $100,000–$200,000 or more.",
+   "statement": "The same article models 105-175 unanswered calls a month for a mid-size practice and an annual impact of $100k-$200k+; a model built on assumptions, not measured loss.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "d2053a5e-6c0a-4d14-bfcf-afb155e6e418",
+    "90c4ed4a-b728-45cd-9d0e-9faf91d91c97"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-03",
+   "url": "https://dentaleconomics.com/practice/article/55385634/the-economics-of-missed-calls-quantifying-revenue-loss-in-dental-practices",
+   "title": "The economics of missed calls: Quantifying revenue loss in dental practices",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Many owners try solving the issue by hiring additional staff or using basic answering services. While these approaches provide marginal relief, they frequently fail to deliver consistent coverage during peak hours, lunch breaks, or after hours.",
+   "statement": "Current fixes (more staff, basic answering services) are described as giving only marginal relief for peak, lunch and after-hours coverage.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-04",
+   "url": "https://dentistry.co.uk/2011/07/01/44-per-cent-of-phone-calls-fail-to-reach-practice-team/",
+   "title": "44 per cent of phone calls fail to reach practice team - Dentistry.co.uk",
+   "source_type": "news",
+   "published_at": "2011-07-01",
+   "quote": "Researchers discovered that of the 3,557 dial-outs made over a 128-hour period, they reached 718 answer machines, 630 busy signals and 202 no answers, which equates to a staggering 44% of all attempted calls.",
+   "statement": "An older (2011, UK) independent dial-out study found 44% of calls to dental practices hit an answering machine, busy signal or no answer.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d2053a5e-6c0a-4d14-bfcf-afb155e6e418"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-05",
+   "url": "https://stealthagents.com/research/home-services-missed-call-revenue-statistics-2026",
+   "title": "Home Services Missed Call Revenue Statistics 2026",
+   "source_type": "report",
+   "published_at": null,
+   "quote": "CallRail reported that home services businesses missed 14% of calls in its January 2025 small-business benchmark. … placed the home services missed-call rate at 14%, behind health care at 32% and legal services at 28%.",
+   "statement": "CallRail's benchmark puts home-services missed calls at 14% but health care at 32%: the miss rate is much lower for home services than the idea assumes, and higher for health care.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "d2053a5e-6c0a-4d14-bfcf-afb155e6e418"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-06",
+   "url": "https://stealthagents.com/research/home-services-missed-call-revenue-statistics-2026",
+   "title": "Home Services Missed Call Revenue Statistics 2026",
+   "source_type": "report",
+   "published_at": null,
+   "quote": "A missed call is not automatically a lost job. It may be spam, a repeat caller, a vendor, or a customer who leaves a voicemail and accepts a callback.",
+   "statement": "Missed calls overstate lost bookings: many are spam, repeats, vendors, or callers who accept a callback.",
+   "kind": "inference",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "d2053a5e-6c0a-4d14-bfcf-afb155e6e418",
+    "90c4ed4a-b728-45cd-9d0e-9faf91d91c97"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-07",
+   "url": "https://stealthagents.com/research/home-services-missed-call-revenue-statistics-2026",
+   "title": "Home Services Missed Call Revenue Statistics 2026",
+   "source_type": "report",
+   "published_at": null,
+   "quote": "Buyers who stopped after contacting one provider | 51% | Invoca 2026 survey of US and UK home services consumers … Buyers who hung up when a call was not answered | 66% | Same Invoca consumer survey",
+   "statement": "In Invoca's 2026 consumer survey (cited), 66% of home-services buyers hung up when a call was not answered and 51% stopped after contacting one provider.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "efcbe139-5657-4d1f-951f-451f1167b29f"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-08",
+   "url": "https://stealthagents.com/research/home-services-missed-call-revenue-statistics-2026",
+   "title": "Home Services Missed Call Revenue Statistics 2026",
+   "source_type": "report",
+   "published_at": null,
+   "quote": "An illustrative firm receiving 1,000 calls a month has $16,159.50 in monthly gross revenue exposure under stated assumptions, not a forecast of certain loss.",
+   "statement": "An illustrative model puts monthly revenue exposure at about $16k for a home-services firm taking 1,000 calls a month, explicitly not a forecast.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "90c4ed4a-b728-45cd-9d0e-9faf91d91c97"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-09",
+   "url": "https://servicemag.org/news/hvac-after-hours-calls-overnight-revenue",
+   "title": "HVAC After-Hours Calls: What a Mid-Sized Shop Is Actually Losing Overnight",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "Industry call-tracking data from Invoca puts the average missed call for a home service business at roughly $1,200 in foregone revenue, and the same analysis finds that about 27 percent of calls to home-services businesses go unanswered.",
+   "statement": "Invoca data (cited) puts a missed home-services call at about $1,200 of foregone revenue and 27% of calls unanswered.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "90c4ed4a-b728-45cd-9d0e-9faf91d91c97",
+    "d2053a5e-6c0a-4d14-bfcf-afb155e6e418"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-10",
+   "url": "https://servicemag.org/news/hvac-after-hours-calls-overnight-revenue",
+   "title": "HVAC After-Hours Calls: What a Mid-Sized Shop Is Actually Losing Overnight",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "Fourteen missed calls in seven days, and that wasn't a heat wave week.",
+   "statement": "An HVAC owner who pulled a week of call logs found 14 missed calls in seven days.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d2053a5e-6c0a-4d14-bfcf-afb155e6e418"
+   ],
+   "company_name": "Carson HVAC"
+  },
+  {
+   "ref": "ev-11",
+   "url": "https://servicemag.org/news/hvac-after-hours-calls-overnight-revenue",
+   "title": "HVAC After-Hours Calls: What a Mid-Sized Shop Is Actually Losing Overnight",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "most customers book with whoever answers first, and callers who can't reach a service business immediately tend to dial the next name on their list.",
+   "statement": "Callers who can't reach a service business tend to call the next business on their list.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "efcbe139-5657-4d1f-951f-451f1167b29f"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-12",
+   "url": "https://servicemag.org/news/hvac-after-hours-calls-overnight-revenue",
+   "title": "HVAC After-Hours Calls: What a Mid-Sized Shop Is Actually Losing Overnight",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "found that one in three callers (roughly 33 percent) say they'd hang up immediately if they reached an AI bot when calling a business. The same survey found that 83 percent of people have actively requested to speak to a real person instead of AI, and 85 percent prefer a human when contacting a local service business.",
+   "statement": "A survey commissioned by a live-answering company found about a third of callers would hang up on an AI bot and 85% prefer a human for local services, so an AI agent may not recover all missed callers.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "efcbe139-5657-4d1f-951f-451f1167b29f",
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-13",
+   "url": "https://servicemag.org/news/hvac-after-hours-calls-overnight-revenue",
+   "title": "HVAC After-Hours Calls: What a Mid-Sized Shop Is Actually Losing Overnight",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "Average job value of $450, emergency rate multiplier of 2.5, and estimate 10 after-hours calls coming in per week. That's $4,482 in missed revenue every month, or $53,779 a year, walking out the door.",
+   "statement": "A live-answering vendor's worked example puts missed after-hours revenue for a mid-sized HVAC shop at about $4.5k a month.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "90c4ed4a-b728-45cd-9d0e-9faf91d91c97"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-14",
+   "url": "https://content.swissmonkey.io/?p=331",
+   "title": "AI Virtual Receptionists for Dental Practices: What Works",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "AI virtual receptionists handle overflow and after-hours volume well but struggle with clinical triage, insurance verification, complex reschedules, and patients who insist on a human.",
+   "statement": "A dental staffing vendor reports AI receptionists work for overflow/after-hours but struggle with triage, insurance verification and complex reschedules.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-15",
+   "url": "https://content.swissmonkey.io/?p=331",
+   "title": "AI Virtual Receptionists for Dental Practices: What Works",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "A February 2026 Peerlogic analysis of 4,280 calls across 26 dental practices found that 38% of calls went unanswered.",
+   "statement": "A Peerlogic analysis (cited) of 4,280 calls across 26 dental practices found 38% unanswered.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "d2053a5e-6c0a-4d14-bfcf-afb155e6e418"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-16",
+   "url": "https://content.swissmonkey.io/?p=331",
+   "title": "AI Virtual Receptionists for Dental Practices: What Works",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Callacy’s August 2026 guide reports 2026 US dental AI receptionist pricing bands of $149–$239/month for solo and small practices, $300–$700/month for typical 4–6 chair practices, and $800–$2,500+/month for multi-location DSOs.",
+   "statement": "Reported 2026 US dental AI receptionist pricing: $149-$239/month for small practices, $300-$700 for 4-6 chair practices.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-17",
+   "url": "https://content.swissmonkey.io/?p=331",
+   "title": "AI Virtual Receptionists for Dental Practices: What Works",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "For private practices and small groups, Swiss Monkey costs $599/month billed quarterly or $399/month billed annually, plus a 12% service fee on the contracted hourly rate.",
+   "statement": "A remote human front-office service prices at $399-$599/month plus a fee on hourly rates.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": "Swiss Monkey"
+  },
+  {
+   "ref": "ev-18",
+   "url": "https://www.eesel.ai/blog/ai-receptionist-for-dentists",
+   "title": "AI receptionist for dentists: what works in 2026 and what it costs",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Dentina (from $299/mo per location) and Viva AI (from $349/mo) book straight into Dentrix, Eaglesoft and Open Dental, while Weave's AI books directly into only four systems and takes requests everywhere else.",
+   "statement": "Dental AI receptionists already book directly into Dentrix, Eaglesoft and Open Dental at published prices from $299-$349/month per location.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "61410825-7dfa-468f-a3e3-860492b3b197",
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-19",
+   "url": "https://www.eesel.ai/blog/ai-receptionist-for-dentists",
+   "title": "AI receptionist for dentists: what works in 2026 and what it costs",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Its scheduling setup guide says direct booking is \"currently available exclusively for qualifying Dental practices\" on Open Dental, Eaglesoft v18+, Dentrix G6.2+ and Denticon. On every other system, the AI collects the request into a view called Schedule Pulse and a person books it.",
+   "statement": "Weave's AI books directly only into Open Dental, Eaglesoft v18+, Dentrix G6.2+ and Denticon; on other PMSs it only captures requests.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "61410825-7dfa-468f-a3e3-860492b3b197"
+   ],
+   "company_name": "Weave"
+  },
+  {
+   "ref": "ev-20",
+   "url": "https://www.eesel.ai/blog/ai-receptionist-for-dentists",
+   "title": "AI receptionist for dentists: what works in 2026 and what it costs",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Weave's October 2026 release notes say it's now available to all dental, optometry and medical practices.",
+   "statement": "Weave, a widely used dental phone/communications platform, has made its AI receptionist available to all dental practices: incumbents are bundling the capability.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "61410825-7dfa-468f-a3e3-860492b3b197"
+   ],
+   "company_name": "Weave"
+  },
+  {
+   "ref": "ev-21",
+   "url": "https://www.eesel.ai/blog/ai-receptionist-for-dentists",
+   "title": "AI receptionist for dentists: what works in 2026 and what it costs",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "AI plans are per call: Free covers 25 calls ($3.00 each after), Pro is $150/mo for 75 calls, and Enterprise is $500/mo for 300 calls. … If you want people answering instead, its human receptionist plans start at $300/mo for 30 calls.",
+   "statement": "Smith.ai AI answering costs $150/month for 75 calls; its human receptionist plans start at $300/month for 30 calls.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": "Smith.ai"
+  },
+  {
+   "ref": "ev-22",
+   "url": "https://www.eesel.ai/blog/ai-receptionist-for-dentists",
+   "title": "AI receptionist for dentists: what works in 2026 and what it costs",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Arini says Unified Dental Care, a 12-location group in Michigan, booked 18,000+ appointments from 250,000+ calls in its first year. … Pricing. Not published. Every button says \"Book a Demo\".",
+   "statement": "Arini reports a 12-location dental group booked 18,000+ appointments from 250,000+ calls in a year (vendor claim); pricing is not published.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "90c4ed4a-b728-45cd-9d0e-9faf91d91c97",
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": "Arini"
+  },
+  {
+   "ref": "ev-23",
+   "url": "https://www.eesel.ai/blog/ai-receptionist-for-dentists",
+   "title": "AI receptionist for dentists: what works in 2026 and what it costs",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Dentina's case study for Navy Yard Dental, a one-provider office in Washington DC, reports 330 new-patient appointments over 12 months from after-hours and overflow calls.",
+   "statement": "A vendor case study reports 330 new-patient appointments in 12 months from after-hours and overflow calls at a one-provider office.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "90c4ed4a-b728-45cd-9d0e-9faf91d91c97"
+   ],
+   "company_name": "Dentina"
+  },
+  {
+   "ref": "ev-24",
+   "url": "https://www.arini.ai/",
+   "title": "Focus on your patients. Let AI do the rest.",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Missing calls during or after business hours? Deploy inbound voice AI. Need to bring inactive patients back into care? Launch outbound reactivation campaigns. Struggling with no-shows? Turn on automated confirmations.",
+   "statement": "Arini sells inbound voice AI for missed calls, reactivation and confirmations to dental practices and groups.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": "Arini"
+  },
+  {
+   "ref": "ev-25",
+   "url": "https://www.getweave.com/ai-receptionist/",
+   "title": "AI Receptionist | Weave",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Answer calls and texts, book appointments, capture appointment requests and more to care for patients and grow your practice 24/7.",
+   "statement": "Weave's AI Receptionist answers calls and texts and books appointments 24/7.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "61410825-7dfa-468f-a3e3-860492b3b197"
+   ],
+   "company_name": "Weave"
+  },
+  {
+   "ref": "ev-26",
+   "url": "https://help.servicetitan.com/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq.md",
+   "title": "(no title)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "it books new jobs (including after hours), confirms and reschedules appointments, recognizes memberships, communicates dispatch fees, and escalates calls to a live agent based on configurable triggers and routing rules. … It aims to reduce the need for third-party answering services and improve call handling efficiency.",
+   "statement": "ServiceTitan, the leading home-services FSM, ships an AI voice agent that books jobs after hours and aims to replace third-party answering services.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "61410825-7dfa-468f-a3e3-860492b3b197",
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": "ServiceTitan"
+  },
+  {
+   "ref": "ev-27",
+   "url": "https://www.servicetitan.com/blog/automation-csr-ai-voice-agent",
+   "title": "CSRs: Every call counts, so capture them all",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "What separates it from third-party virtual solutions is what it's connected to. A standalone AI answering service, no matter how sophisticated, is working without the data that makes a booking decision meaningful.",
+   "statement": "ServiceTitan argues standalone AI answering services lack the scheduling data its built-in agent has, which is the moat the idea counts on.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "61410825-7dfa-468f-a3e3-860492b3b197"
+   ],
+   "company_name": "ServiceTitan"
+  },
+  {
+   "ref": "ev-28",
+   "url": "https://www.servicetitan.com/blog/automation-csr-ai-voice-agent",
+   "title": "CSRs: Every call counts, so capture them all",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "After adopting Contact Center Pro with AI Virtual Agents, Northwinds saw a 21% increase in booked jobs, a 28% increase in call volume handled, and a 24% drop in abandoned calls.",
+   "statement": "A ServiceTitan customer story reports 21% more booked jobs and 24% fewer abandoned calls after adopting AI virtual agents (vendor-reported).",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "90c4ed4a-b728-45cd-9d0e-9faf91d91c97"
+   ],
+   "company_name": "ServiceTitan"
+  },
+  {
+   "ref": "ev-29",
+   "url": "https://www.retellai.com/pricing",
+   "title": "AI Phone Agent Pricing | Retell AI",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Price | $0.07-$0.31/minute | Custom Pricing",
+   "statement": "Retell's pay-as-you-go voice-agent price is $0.07-$0.31 per minute, so per-minute voice costs are low.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": "Retell AI"
+  },
+  {
+   "ref": "ev-30",
+   "url": "https://adanews.ada.org/ada-news/2025/february/five-years-later-staffing-shortages-infection-control-since-the-covid-19-pandemic/",
+   "title": "Five years later: Staffing shortages, infection control since the COVID-19 pandemic",
+   "source_type": "industry_publication",
+   "published_at": "2025-02-01",
+   "quote": "When the ADA Health Policy Institute asked dentists in late 2024 what the biggest challenge facing their practices would be in 2025, about 62% said staffing shortages — the top response.",
+   "statement": "About 62% of dentists named staffing shortages as their biggest challenge for 2025 (ADA HPI).",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-31",
+   "url": "https://adanews.ada.org/ada-news/2025/february/five-years-later-staffing-shortages-infection-control-since-the-covid-19-pandemic/",
+   "title": "Five years later: Staffing shortages, infection control since the COVID-19 pandemic",
+   "source_type": "industry_publication",
+   "published_at": "2025-02-01",
+   "quote": "Specifically, we have had a number of candidates who do not show up for scheduled interviews. This has been a consistent pattern, especially for potential front desk and assistant positions since 2020.",
+   "statement": "A practice reports front-desk hiring difficulty since 2020.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-32",
+   "url": "https://dentaleconomics.com/practice/marketing/article/55338690/why-patient-self-scheduling-isnt-optional-anymore-the-death-of-dental-phone-calls",
+   "title": "Why patient self-scheduling isn't optional anymore: The death of dental phone calls",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "It's about survival in a marketplace where 80% of patients prefer doctors who offer online scheduling. … Nearly 73% of patients book their appointments after hours when given the option.",
+   "statement": "Patients increasingly prefer online self-scheduling, which handles after-hours booking without a phone call; a cheaper substitute for part of the voice agent's job.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "efcbe139-5657-4d1f-951f-451f1167b29f",
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-33",
+   "url": "https://reddit.sentinel-team.org/posts/1tnyi1d/snapshots/2026-05-29T19%3A16%3A10.134322Z",
+   "title": "Post Snapshot",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "New patients would call, hit voicemail, and just book the next clinic that picked up. … The results after the first month were pretty wild — 3 confirmed new patients from calls that would've hit voicemail before.",
+   "statement": "A builder's anecdote: one dentist's new patients hit voicemail and booked elsewhere; an AI receptionist recovered 3 new patients in a month.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "efcbe139-5657-4d1f-951f-451f1167b29f",
+    "90c4ed4a-b728-45cd-9d0e-9faf91d91c97"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-34",
+   "url": "https://reddit.sentinel-team.org/posts/1tnyi1d/snapshots/2026-05-29T19%3A16%3A10.134322Z",
+   "title": "Post Snapshot",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "One dentist losing patients to voicemail is an anecdote, not a market. You need to know how many dentists actually have this problem and whether they will pay to fix it.",
+   "statement": "A commenter warns that one dentist's voicemail losses are an anecdote, not proof of a paying market.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-35",
+   "url": "https://reddit.sentinel-team.org/posts/1tjpg08/snapshots/2026-05-22T19%3A44%3A11.477623Z",
+   "title": "Post Snapshot",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "The tech stack (transparent): GoHighLevel (AI voice + CRM + review management) + Calendar integration + SMS automation … You're charging too much, but you're also missing Pest Control, Lawn Care, Electrical, Plumbing and many more.",
+   "statement": "Agencies resell off-the-shelf AI voice stacks to HVAC shops, and commenters push back on a $1,000/month price: the horizontal layer is easy to copy and prices are under pressure.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-36",
+   "url": "https://reddit.sentinel-team.org/posts/1tjpg08/snapshots/2026-05-22T19%3A44%3A11.477623Z",
+   "title": "Post Snapshot",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "What usually breaks is edge cases like no heat with kids in the house, gas smell, repeat warranty issue, or an angry existing customer.",
+   "statement": "A practitioner notes HVAC voice agents break on emergencies and angry existing customers.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-37",
+   "url": "https://www.callmissed.com/blog/ai-voice-agent-clinics-india-hindi-booking",
+   "title": "AI Receptionist for Clinics in India: Hindi Voice Agent Guide",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Many are more comfortable in Hindi or Hinglish than in English, and a phone call is still the easiest way to book.",
+   "statement": "An India vendor says many patients prefer Hindi/Hinglish and booking by phone.",
+   "kind": "inference",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "efcbe139-5657-4d1f-951f-451f1167b29f"
+   ],
+   "company_name": "CallMissed"
+  },
+  {
+   "ref": "ev-38",
+   "url": "https://www.callmissed.com/blog/ai-voice-agent-clinics-india-hindi-booking",
+   "title": "AI Receptionist for Clinics in India: Hindi Voice Agent Guide",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Standard is ₹4/min, Expressive ₹5/min and Best latency ₹6/min. There is a 30-second minimum per call, and a call that never connects costs nothing.",
+   "statement": "CallMissed, an India-hosted platform supporting Hinglish, prices clinic voice agents at Rs 4-6 per minute.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": "CallMissed"
+  },
+  {
+   "ref": "ev-39",
+   "url": "https://edesy.in/hospital-voicebot/languages/hindi",
+   "title": "Hindi Hospital Voicebot - Healthcare AI Assistant | edesy.in",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Patients call and book OPD appointments in Hindi. The voicebot checks doctor schedules, suggests available slots, and confirms bookings instantly.",
+   "statement": "Edesy already sells a Hindi voicebot that books OPD appointments for Indian clinics and hospitals, so India's multilingual front desk is not untouched.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": "Edesy"
+  },
+  {
+   "ref": "ev-40",
+   "url": "https://edesy.in/hospital-voicebot/pricing",
+   "title": "edesy.in - Digital Innovation Platform",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "From ₹4/min on plans and credit packs, or ₹6/min pay as you go with no monthly commitment.",
+   "statement": "Edesy's healthcare voicebot is priced from Rs 4/min.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": "Edesy"
+  },
+  {
+   "ref": "ev-41",
+   "url": "https://wageindicator.org/en-in/work-in-india/role-and-pay/india-receptionists-general",
+   "title": "Job and Pay - Receptionists (general)",
+   "source_type": "report",
+   "published_at": null,
+   "quote": "A Receptionists (general) typically earns between ₹17,355 and ₹44,650 net per month at the start of the job.",
+   "statement": "A starting receptionist in India earns about Rs 17k-45k net per month, which caps what Indian clinics will pay for an AI front desk.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "eb8baa43-a8ef-467f-a767-fe0e441a2352"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-42",
+   "url": "https://smith.ai/pricing/ai-receptionist",
+   "title": "Smith.ai Plans & Pricing for AI Receptionist",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "if something complex comes up, the call can be transferred to a live North America-based receptionist — any time, day or night.",
+   "statement": "Smith.ai pairs its AI receptionist with live human backup.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "d0fabc53-acb2-4124-a2bb-3d035abac89e"
+   ],
+   "company_name": "Smith.ai"
+  },
+  {
+   "ref": "ev-43",
+   "url": "https://woodydentaldenver.com/contact/",
+   "title": "Woody Dental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Contact Us 5989 E Colfax Ave, Denver, CO 80220 303.388.9000",
+   "statement": "Woody Dental is located on E Colfax Ave in Denver, CO.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Woody Dental"
+  },
+  {
+   "ref": "ev-44",
+   "url": "https://woodydentaldenver.com/team",
+   "title": "Meet The Team",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The Team Jessica Office Manager Jessica was raised in Aurora, Colorado",
+   "statement": "Woody Dental's team page lists Jessica as Office Manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Woody Dental"
+  },
+  {
+   "ref": "ev-45",
+   "url": "https://woodydentaldenver.com/team",
+   "title": "Meet The Team",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Jennifer Front Office Patient Care Coordinator",
+   "statement": "Woody Dental has a front-office patient care coordinator; the team page lists 7 staff.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Woody Dental"
+  },
+  {
+   "ref": "ev-46",
+   "url": "https://libertydentistrysmiles.com/",
+   "title": "Dentist in Liberty NC | Same-Day Crowns | Liberty Dentistry",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "524 N Greensboro St, Liberty, NC 27298, United States",
+   "statement": "Liberty Dentistry is at 524 N Greensboro St, Liberty, NC.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Liberty Dentistry"
+  },
+  {
+   "ref": "ev-47",
+   "url": "https://libertydentistrysmiles.com/about-us/meet-the-team/",
+   "title": "Meet Our Dental Team | Caring Staff in Liberty, NC Office",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Renee Office Manager After three decades as a dental assistant, Renee moved to the front office",
+   "statement": "Liberty Dentistry lists Renee as Office Manager in the front office.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Liberty Dentistry"
+  },
+  {
+   "ref": "ev-48",
+   "url": "https://libertydentistrysmiles.com/about-us/meet-the-team/",
+   "title": "Meet Our Dental Team | Caring Staff in Liberty, NC Office",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Shanda Insurance Coordinator Shanda grew up in Julian NC",
+   "statement": "Liberty Dentistry has an insurance coordinator; its team page lists 7 staff plus 2 dentists.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Liberty Dentistry"
+  },
+  {
+   "ref": "ev-49",
+   "url": "https://www.lapeerfamilydental.com/",
+   "title": "Dentist for Lapeer, MI | Lapeer Family Dental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "3370 Davison RD, Lapeer, MI 48446",
+   "statement": "Lapeer Family Dental is at 3370 Davison Rd, Lapeer, MI.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Lapeer Family Dental"
+  },
+  {
+   "ref": "ev-50",
+   "url": "https://www.lapeerfamilydental.com/about",
+   "title": "Dental Team | Lapeer Family Dental | Lapeer MI",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Dr. Edward Sawicki, DDS An associate doctor at Lapeer Family Dental since 1990",
+   "statement": "Lapeer Family Dental lists multiple dentists, including associates.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Lapeer Family Dental"
+  },
+  {
+   "ref": "ev-51",
+   "url": "https://www.lapeerfamilydental.com/about",
+   "title": "Dental Team | Lapeer Family Dental | Lapeer MI",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Dr. J. Michael Owen, DDS Dr. Michael Owen graduated from the University of Detroit School of Dentistry in 1985.",
+   "statement": "Dr. J. Michael Owen, DDS is a dentist at Lapeer Family Dental.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Lapeer Family Dental"
+  },
+  {
+   "ref": "ev-52",
+   "url": "https://www.betteryoursmile.com/",
+   "title": "Award-Winning Dentist Aurora",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "3131 S Vaughn Way #422 Aurora, CO 80014 (303) 745-1400",
+   "statement": "Mauck & Ricci, DDS is at 3131 S Vaughn Way, Aurora, CO.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Mauck & Ricci, DDS"
+  },
+  {
+   "ref": "ev-53",
+   "url": "https://www.betteryoursmile.com/",
+   "title": "Award-Winning Dentist Aurora",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Early Appointments Available • Dental Emergencies Welcome",
+   "statement": "The practice advertises early appointments and accepts dental emergencies.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Mauck & Ricci, DDS"
+  },
+  {
+   "ref": "ev-54",
+   "url": "https://www.calmwatersdentistry.com/",
+   "title": "Calm Waters Dentistry & Implants | Mooresville & Statesville NC",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "MOORESVILLE LOCATION: 229 Medical Park Road, Ste 300 Mooresville, NC 28117",
+   "statement": "Calm Waters Dentistry has a Mooresville, NC location.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Calm Waters Dentistry & Implants"
+  },
+  {
+   "ref": "ev-55",
+   "url": "https://www.calmwatersdentistry.com/",
+   "title": "Calm Waters Dentistry & Implants | Mooresville & Statesville NC",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "STATESVILLE LOCATION: 1424A Fern Creek Drive Statesville, NC 28625",
+   "statement": "Calm Waters Dentistry also has a Statesville, NC location.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Calm Waters Dentistry & Implants"
+  },
+  {
+   "ref": "ev-56",
+   "url": "https://www.calmwatersdentistry.com/dental-hygienists-and-staff",
+   "title": "Dental Staff at Calm Waters Dentistry & Implants",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "DIANE - DENTAL ASSISTANT & FRONT DESK",
+   "statement": "Calm Waters staff split time between chairside assisting and the front desk.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Calm Waters Dentistry & Implants"
+  },
+  {
+   "ref": "ev-57",
+   "url": "https://www.cooperowensdds.com/",
+   "title": "Dentist – Geneva, OH",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "220 E. Main Street, Geneva, OH 44041",
+   "statement": "Cooper Owens DDS is at 220 E. Main Street, Geneva, OH.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Cooper Owens DDS"
+  },
+  {
+   "ref": "ev-58",
+   "url": "https://cooperowensdds.com/meet-the-team.html",
+   "title": "Meet Your Trusted Dental Team – Geneva, OH",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Sue, Practice Manager Sue’s career in the dental world covers two full decades so far.",
+   "statement": "Cooper Owens DDS lists Sue as Practice Manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Cooper Owens DDS"
+  },
+  {
+   "ref": "ev-59",
+   "url": "https://www.cooperowensdds.com/",
+   "title": "Dentist – Geneva, OH",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Appointment Request Phones Answered 24/7",
+   "statement": "The practice already advertises phones answered 24/7, so it may already use an answering service.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Cooper Owens DDS"
+  },
+  {
+   "ref": "ev-60",
+   "url": "https://puresmiles.com/westerville/",
+   "title": "Westerville Dentist — Pure Smiles — Westerville, OH",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Address 1245 S Sunbury Rd #201 Westerville, OH 43081",
+   "statement": "Pure Smiles Westerville is at 1245 S Sunbury Rd, Westerville, OH.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Pure Smiles Westerville"
+  },
+  {
+   "ref": "ev-61",
+   "url": "https://puresmiles.com/westerville/meet-the-team/",
+   "title": "Meet The Team — Pure Smiles",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Chris Office Manager Chris is an Ohio native who brings several years of experience in the dental industry to his role as office manager at our Westerville location.",
+   "statement": "Pure Smiles lists Chris as office manager of its Westerville location.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Pure Smiles Westerville"
+  },
+  {
+   "ref": "ev-62",
+   "url": "https://www.drhalasz.com/",
+   "title": "Cosmetic Dental Treatment Services & Care Clinic Kettering, Dayton & Oakwood OH - Michael H. Halasz, DDS",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Cosmetic Dental Treatment Services & Care Clinic Kettering, Dayton & Oakwood OH",
+   "statement": "Michael H. Halasz, DDS serves Kettering, Dayton and Oakwood, OH.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Michael H. Halasz, DDS"
+  },
+  {
+   "ref": "ev-63",
+   "url": "https://drhalasz.com/?p=975",
+   "title": "About Us - Michael H. Halasz, DDS",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Chris Office Manager I have been in dentistry since 1982.",
+   "statement": "The practice lists Chris as Office Manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Michael H. Halasz, DDS"
+  },
+  {
+   "ref": "ev-64",
+   "url": "https://drhalasz.com/?p=975",
+   "title": "About Us - Michael H. Halasz, DDS",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Amber Receptionist I graduated from Miami University and The Dayton School of Dental Assisting.",
+   "statement": "The practice has a receptionist; team page lists 6 people.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Michael H. Halasz, DDS"
+  },
+  {
+   "ref": "ev-65",
+   "url": "https://www.evdp.net/",
+   "title": "1 Family Dentist Office Serving Mesa, Tempe, Chandler | EVDP",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Address 2058 S Dobson Rd. Suite 12 Mesa, AZ 85202",
+   "statement": "EVDP is at 2058 S Dobson Rd, Mesa, AZ.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "East Valley Dental Professionals"
+  },
+  {
+   "ref": "ev-66",
+   "url": "https://www.evdp.net/?p=7110",
+   "title": "Meet Our Team | East Valley Dental Professionals",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Jennifer Office Manager Jennifer grew up in Missouri and moved to Arizona",
+   "statement": "EVDP lists Jennifer as Office Manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "East Valley Dental Professionals"
+  },
+  {
+   "ref": "ev-67",
+   "url": "https://www.brandywinedentalservices.com/",
+   "title": "Brandywine Dental Services Group",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "331 Wilmington West Chester Pike #7, Glen Mills, PA 19342",
+   "statement": "Brandywine Dental Services Group is in Glen Mills, PA.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Brandywine Dental Services Group"
+  },
+  {
+   "ref": "ev-68",
+   "url": "https://brandywinedentalservices.com/our-team",
+   "title": "Meet Our Dental Team in Glen Mills at Brandywine Dental Group",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Patty brings over 20 years of practice management experience to the team.",
+   "statement": "Brandywine has a practice manager with 20+ years of experience; the team page lists 3 dentists and 6 staff.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Brandywine Dental Services Group"
+  },
+  {
+   "ref": "ev-69",
+   "url": "https://brandywinedentalservices.com/our-team",
+   "title": "Meet Our Dental Team in Glen Mills at Brandywine Dental Group",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Dr. Teresa Addiego joined the Brandywine Dental Services Group team in April 2018.",
+   "statement": "Dr. Teresa Addiego is a dentist at Brandywine Dental Services Group.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Brandywine Dental Services Group"
+  },
+  {
+   "ref": "ev-70",
+   "url": "https://mykennewickdentist.com/",
+   "title": "Southridge Dental Clinic Kennewick - Dentist Near Me | The Tri-Cities Friendliest Dental Office",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "2431 S Quillan Place Kennewick, WA 99338",
+   "statement": "Southridge Dental is at 2431 S Quillan Place, Kennewick, WA.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Southridge Dental"
+  },
+  {
+   "ref": "ev-71",
+   "url": "https://mykennewickdentist.com/?p=255",
+   "title": "Meet The Team - Southridge Dental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Office Manager & Front Desk Krissy COO With more than 20 years of experience in the dental industry",
+   "statement": "Southridge Dental lists Krissy as COO heading the office manager and front desk team.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Southridge Dental"
+  },
+  {
+   "ref": "ev-72",
+   "url": "https://mykennewickdentist.com/?p=255",
+   "title": "Meet The Team - Southridge Dental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Jessi Front Desk Jessi was born and raised in the Tri-Cities area … Savannah Front Desk Savannah was born and raised in the Tri-Cities area.",
+   "statement": "Southridge Dental staffs several front-desk people, so it handles heavy phone and scheduling volume.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Southridge Dental"
+  },
+  {
+   "ref": "ev-73",
+   "url": "https://ortingdental.com/?p=256",
+   "title": "Meet Our Team",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Dr. Youngquist graduated from the University of Washington School of Dentistry in 2001 and currently practices dentistry in Orting, Washington.",
+   "statement": "Orting Dental Center is in Orting, WA.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Orting Dental Center"
+  },
+  {
+   "ref": "ev-74",
+   "url": "https://ortingdental.com/?p=256",
+   "title": "Meet Our Team",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Judy – Office Manager I have been working in the dental field for over 19 years",
+   "statement": "Orting Dental lists Judy as Office Manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Orting Dental Center"
+  },
+  {
+   "ref": "ev-75",
+   "url": "https://ortingdental.com/?p=256",
+   "title": "Meet Our Team",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Kristee – Front Office/Dental Assistant My career in dentistry started over 15 years ago",
+   "statement": "At Orting Dental, the front office role is combined with dental assisting.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Orting Dental Center"
+  },
+  {
+   "ref": "ev-76",
+   "url": "https://www.phillydentistry.com/",
+   "title": "Philadelphia Dentistry | Cosmetic Dentist",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "care to enhance and maintain the smiles of the patients at our dental office in Center City, Philadelphia.",
+   "statement": "Philadelphia Dentistry is in Center City, Philadelphia.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Philadelphia Dentistry"
+  },
+  {
+   "ref": "ev-77",
+   "url": "https://www.phillydentistry.com/?p=53",
+   "title": "Meet Our Staff",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Stephen (Office Manager) 7+ Years With Philadelphia Dentistry",
+   "statement": "Philadelphia Dentistry lists Stephen as Office Manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Philadelphia Dentistry"
+  },
+  {
+   "ref": "ev-78",
+   "url": "https://novadentalstudio.com/",
+   "title": "Dentist in Falls Church, VA | Nova Dental Studio",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "200 Little Falls St #101 Falls Church, VA 22046",
+   "statement": "Nova Dental Studio is at 200 Little Falls St, Falls Church, VA.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Nova Dental Studio"
+  },
+  {
+   "ref": "ev-79",
+   "url": "https://novadentalstudio.com/our-team",
+   "title": "Meet Our Dental Team in Falls Church | Nova Dental Studio",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Arifa Dental Assistant Ana Office Manager",
+   "statement": "Nova Dental Studio lists Ana as Office Manager; team page lists 6 staff.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Nova Dental Studio"
+  },
+  {
+   "ref": "ev-80",
+   "url": "https://azdentist.com/meet-your-az-dentist-care-team/",
+   "title": "Meet Your AZ Dentist Care Team | AZ Dentist Arizona Dental C",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "4 Valley & Northern AZ locations: Glendale, Scottsdale, Sedona, and Sun City.",
+   "statement": "AZ Dentist runs four Arizona locations.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "AZ Dentist"
+  },
+  {
+   "ref": "ev-81",
+   "url": "https://azdentist.com/meet-your-az-dentist-care-team/",
+   "title": "Meet Your AZ Dentist Care Team | AZ Dentist Arizona Dental C",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Prefer to talk? Call and we’ll match you with the right dentist for your goals.",
+   "statement": "AZ Dentist routes new patients by phone to match them with a dentist.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "AZ Dentist"
+  },
+  {
+   "ref": "ev-82",
+   "url": "https://www.tubacdental.com/",
+   "title": "Tubac Dental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Tubac Dental is a relationship based practice that serves the communities of Southern Arizona with skill and professionalism.",
+   "statement": "Tubac Dental serves Southern Arizona.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Tubac Dental"
+  },
+  {
+   "ref": "ev-83",
+   "url": "https://www.tubacdental.com/team",
+   "title": "Team — Tubac Dental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Lanna, Office Manager Lanna is a native of southern Arizona.",
+   "statement": "Tubac Dental lists Lanna as Office Manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Tubac Dental"
+  },
+  {
+   "ref": "ev-84",
+   "url": "https://www.durangodentistry.com/about-us",
+   "title": "About Us — Durango Dentistry",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Durango Dentistry is a Durango-based family dental practice that treats patients of all ages, established in 1999 when Dr. Greg Mann took over the practice; then Dr. Steven Reed joined the practice in 2019.",
+   "statement": "Durango Dentistry is a two-dentist family practice in Durango, CO, run since 1999 by Dr. Greg Mann.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Durango Dentistry"
+  },
+  {
+   "ref": "ev-85",
+   "url": "https://www.durangodentistry.com/about-us",
+   "title": "About Us — Durango Dentistry",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "With Dr. Mann, you have a caring, conscientious dentist in Durango, Colorado, handling your dental care.",
+   "statement": "Durango Dentistry is located in Durango, Colorado.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Durango Dentistry"
+  },
+  {
+   "ref": "ev-86",
+   "url": "https://www.pennbrookdental.com/our-practice",
+   "title": "Our Practice - Pennbrook Dentistry",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Making smiles in North Wales, PA wider and brighter.",
+   "statement": "Pennbrook Dentistry is in North Wales, PA.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Pennbrook Dentistry"
+  },
+  {
+   "ref": "ev-87",
+   "url": "https://www.pennbrookdental.com/our-practice",
+   "title": "Our Practice - Pennbrook Dentistry",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Priya Patel, Owner & Dentist",
+   "statement": "Dr. Priya Patel is owner and dentist of Pennbrook Dentistry.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Pennbrook Dentistry"
+  },
+  {
+   "ref": "ev-88",
+   "url": "https://www.pennbrookdental.com/our-practice",
+   "title": "Our Practice - Pennbrook Dentistry",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Amy Miller, Office Manager Amy is the heart of Pennbrook Dentistry as our dedicated office manager.",
+   "statement": "Amy Miller is Pennbrook Dentistry's office manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Pennbrook Dentistry"
+  },
+  {
+   "ref": "ev-89",
+   "url": "https://business.brightoncoc.org/list/member/prast-family-dental-2511",
+   "title": "Prast Family Dental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "315 South Howell St Pinckney Michigan 48169",
+   "statement": "Prast Family Dental is at 315 South Howell St, Pinckney, MI (chamber directory).",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Prast Family Dental"
+  },
+  {
+   "ref": "ev-90",
+   "url": "https://business.brightoncoc.org/list/member/prast-family-dental-2511",
+   "title": "Prast Family Dental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Connie Tolfree Office Manager",
+   "statement": "The chamber directory lists Connie Tolfree as Office Manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Prast Family Dental"
+  },
+  {
+   "ref": "ev-91",
+   "url": "https://business.brightoncoc.org/list/member/prast-family-dental-2511",
+   "title": "Prast Family Dental",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Dr. Elizabeth Prast Dentist",
+   "statement": "The chamber directory lists Dr. Elizabeth Prast as the dentist.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Prast Family Dental"
+  },
+  {
+   "ref": "ev-92",
+   "url": "https://www.newmandental.com/",
+   "title": "Newman Dental | Your Dentist in Tucson",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "5977 E. Grant Rd. Suite #115 Tucson, AZ 85712",
+   "statement": "Newman Dental is at 5977 E. Grant Rd, Tucson, AZ.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Newman Dental"
+  },
+  {
+   "ref": "ev-93",
+   "url": "https://www.newmandental.com/",
+   "title": "Newman Dental | Your Dentist in Tucson",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Tuesday - Thursday: 7:00 am - 4:00 pm",
+   "statement": "Newman Dental's listed hours run Tuesday to Thursday 7am-4pm, leaving evenings uncovered.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [],
+   "company_name": "Newman Dental"
+  }
+ ],
+ "companies": [
+  {
+   "ref": "co-01",
+   "name": "Woody Dental",
+   "website": "https://woodydentaldenver.com",
+   "icp_id": null,
+   "location": "Denver, CO",
+   "industry": "General dentistry",
+   "description": "Independent Denver general dental practice with an office manager and a front-office coordinator, about 7 staff on its team page.",
+   "size_estimate": {
+    "min": 7,
+    "max": null,
+    "signal": "Team page lists 7 staff members",
+    "evidence_ref": "ev-45"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-43"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-43",
+    "ev-44",
+    "ev-45"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Independent US dental practice with a front office; team page lists 7 staff.",
+     "evidence_refs": [
+      "ev-44",
+      "ev-45"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Jessica",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-44"
+    }
+   ]
+  },
+  {
+   "ref": "co-02",
+   "name": "Liberty Dentistry",
+   "website": "https://libertydentistrysmiles.com",
+   "icp_id": null,
+   "location": "Liberty, NC",
+   "industry": "General dentistry",
+   "description": "Two-dentist general practice in Liberty, NC with an office manager, administrative assistant and insurance coordinator.",
+   "size_estimate": {
+    "min": 9,
+    "max": null,
+    "signal": "Team page lists 7 staff and 2 dentists",
+    "evidence_ref": "ev-48"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-46"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-46",
+    "ev-47",
+    "ev-48"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Two-dentist US practice with dedicated front-office roles.",
+     "evidence_refs": [
+      "ev-47",
+      "ev-48"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Renee",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-47"
+    }
+   ]
+  },
+  {
+   "ref": "co-03",
+   "name": "Lapeer Family Dental",
+   "website": "https://www.lapeerfamilydental.com",
+   "icp_id": null,
+   "location": "Lapeer, MI",
+   "industry": "General and family dentistry",
+   "description": "Multi-dentist family practice in Lapeer, MI (five dentists listed).",
+   "size_estimate": {
+    "min": 5,
+    "max": null,
+    "signal": "Team page lists five dentists",
+    "evidence_ref": "ev-50"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-49"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-49",
+    "ev-50",
+    "ev-51"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Multi-dentist US family practice.",
+     "evidence_refs": [
+      "ev-50",
+      "ev-51"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Dr. J. Michael Owen, DDS",
+     "role": "Dentist",
+     "email": null,
+     "evidence_ref": "ev-51"
+    }
+   ]
+  },
+  {
+   "ref": "co-04",
+   "name": "Mauck & Ricci, DDS",
+   "website": "https://www.betteryoursmile.com",
+   "icp_id": null,
+   "location": "Aurora, CO",
+   "industry": "General dentistry",
+   "description": "Aurora, CO general practice that takes dental emergencies and advertises early appointments.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-52"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-52",
+    "ev-53"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "US general practice taking emergency calls; size not stated.",
+     "evidence_refs": [
+      "ev-52",
+      "ev-53"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 1,
+     "rationale": "Takes dental emergencies, a call type an after-hours line would catch.",
+     "evidence_refs": [
+      "ev-53"
+     ]
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-05",
+   "name": "Calm Waters Dentistry & Implants",
+   "website": "https://www.calmwatersdentistry.com",
+   "icp_id": null,
+   "location": "Mooresville and Statesville, NC",
+   "industry": "General dentistry and implants",
+   "description": "Two-location NC practice where dental assistants also cover the front desk.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-54"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-54",
+    "ev-55",
+    "ev-56"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Two-location US practice with assistants doubling as front desk.",
+     "evidence_refs": [
+      "ev-54",
+      "ev-55",
+      "ev-56"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 2,
+     "rationale": "Assistants double as front desk, so phones compete with chairside work.",
+     "evidence_refs": [
+      "ev-56"
+     ]
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-06",
+   "name": "Cooper Owens DDS",
+   "website": "https://www.cooperowensdds.com",
+   "icp_id": null,
+   "location": "Geneva, OH",
+   "industry": "General dentistry",
+   "description": "Geneva, OH practice with a practice manager, front office staff and about 14 team members; already advertises 24/7 phone answering.",
+   "size_estimate": {
+    "min": 14,
+    "max": null,
+    "signal": "Team page lists 14+ staff",
+    "evidence_ref": "ev-58"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-57"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-57",
+    "ev-58",
+    "ev-59"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "US practice with practice manager and a team of 14+.",
+     "evidence_refs": [
+      "ev-58"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 1,
+     "rationale": "Already advertises 24/7 phone answering, so the after-hours gap may already be covered.",
+     "evidence_refs": [
+      "ev-59"
+     ]
+    }
+   },
+   "contacts": [
+    {
+     "name": "Sue",
+     "role": "Practice Manager",
+     "email": null,
+     "evidence_ref": "ev-58"
+    }
+   ]
+  },
+  {
+   "ref": "co-07",
+   "name": "Pure Smiles Westerville",
+   "website": "https://puresmiles.com",
+   "icp_id": null,
+   "location": "Westerville, OH",
+   "industry": "General dentistry (multi-location group)",
+   "description": "Westerville location of a multi-location Ohio dental group with an office manager, patient care coordinator and 10+ clinical staff.",
+   "size_estimate": {
+    "min": 11,
+    "max": null,
+    "signal": "Westerville team page lists 11 staff",
+    "evidence_ref": "ev-61"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-60"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-60",
+    "ev-61"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Multi-location US dental group; Westerville team lists 11 people.",
+     "evidence_refs": [
+      "ev-61"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Chris",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-61"
+    }
+   ]
+  },
+  {
+   "ref": "co-08",
+   "name": "Michael H. Halasz, DDS",
+   "website": "https://www.drhalasz.com",
+   "icp_id": null,
+   "location": "Kettering / Dayton, OH",
+   "industry": "General and cosmetic dentistry",
+   "description": "Single-dentist Dayton-area practice with an office manager and receptionist (6 people on the team page).",
+   "size_estimate": {
+    "min": 6,
+    "max": null,
+    "signal": "Team page lists 6 people",
+    "evidence_ref": "ev-64"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-62"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-62",
+    "ev-63",
+    "ev-64"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Small single-dentist US practice at the low end of the size band.",
+     "evidence_refs": [
+      "ev-63",
+      "ev-64"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Chris",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-63"
+    },
+    {
+     "name": "Amber",
+     "role": "Receptionist",
+     "email": null,
+     "evidence_ref": "ev-64"
+    }
+   ]
+  },
+  {
+   "ref": "co-09",
+   "name": "East Valley Dental Professionals",
+   "website": "https://www.evdp.net",
+   "icp_id": null,
+   "location": "Mesa, AZ",
+   "industry": "Family dentistry",
+   "description": "Mesa, AZ family practice with an office manager and small clinical team.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-65"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-65",
+    "ev-66"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Small US family practice.",
+     "evidence_refs": [
+      "ev-66"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Jennifer",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-66"
+    }
+   ]
+  },
+  {
+   "ref": "co-10",
+   "name": "Brandywine Dental Services Group",
+   "website": "https://www.brandywinedentalservices.com",
+   "icp_id": null,
+   "location": "Glen Mills, PA",
+   "industry": "General and cosmetic dentistry",
+   "description": "Three-dentist Glen Mills, PA practice with a practice manager and hygiene team.",
+   "size_estimate": {
+    "min": 9,
+    "max": null,
+    "signal": "Team page lists 3 dentists and 6 staff",
+    "evidence_ref": "ev-68"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-67"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-67",
+    "ev-68",
+    "ev-69"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Three-dentist US practice in the size band.",
+     "evidence_refs": [
+      "ev-68",
+      "ev-69"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Dr. Teresa Addiego",
+     "role": "Dentist",
+     "email": null,
+     "evidence_ref": "ev-69"
+    }
+   ]
+  },
+  {
+   "ref": "co-11",
+   "name": "Southridge Dental",
+   "website": "https://mykennewickdentist.com",
+   "icp_id": null,
+   "location": "Kennewick, WA",
+   "industry": "General and cosmetic dentistry",
+   "description": "Larger Tri-Cities practice with a COO and six front-desk staff; heavy phone and scheduling volume.",
+   "size_estimate": {
+    "min": 10,
+    "max": null,
+    "signal": "Team page lists 10+ staff incl. six front desk",
+    "evidence_ref": "ev-72"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-70"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-70",
+    "ev-71",
+    "ev-72"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 5,
+     "rationale": "US practice well inside the size band with a large front desk.",
+     "evidence_refs": [
+      "ev-71",
+      "ev-72"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 2,
+     "rationale": "Six front-desk staff show large call/scheduling volume handled by people today.",
+     "evidence_refs": [
+      "ev-72"
+     ]
+    }
+   },
+   "contacts": [
+    {
+     "name": "Krissy",
+     "role": "COO",
+     "email": null,
+     "evidence_ref": "ev-71"
+    }
+   ]
+  },
+  {
+   "ref": "co-12",
+   "name": "Orting Dental Center",
+   "website": "https://www.ortingdental.com",
+   "icp_id": null,
+   "location": "Orting, WA",
+   "industry": "General dentistry",
+   "description": "Small single-dentist Orting, WA practice where front office and assisting are combined.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-73"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-73",
+    "ev-74",
+    "ev-75"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Small US practice at the low end of the size band.",
+     "evidence_refs": [
+      "ev-74",
+      "ev-75"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 1,
+     "rationale": "Front-office role is combined with chairside assisting.",
+     "evidence_refs": [
+      "ev-75"
+     ]
+    }
+   },
+   "contacts": [
+    {
+     "name": "Judy",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-74"
+    },
+    {
+     "name": "Kristee",
+     "role": "Front Office/Dental Assistant",
+     "email": null,
+     "evidence_ref": "ev-75"
+    }
+   ]
+  },
+  {
+   "ref": "co-13",
+   "name": "Philadelphia Dentistry",
+   "website": "https://www.phillydentistry.com",
+   "icp_id": null,
+   "location": "Philadelphia, PA",
+   "industry": "General and cosmetic dentistry",
+   "description": "Center City Philadelphia practice with an office manager, hygiene manager and assistants.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-76"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-76",
+    "ev-77"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Urban US general practice with an office manager.",
+     "evidence_refs": [
+      "ev-77"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Stephen",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-77"
+    }
+   ]
+  },
+  {
+   "ref": "co-14",
+   "name": "Nova Dental Studio",
+   "website": "https://novadentalstudio.com",
+   "icp_id": null,
+   "location": "Falls Church, VA",
+   "industry": "General dentistry",
+   "description": "Falls Church, VA practice with three hygienists, two assistants and an office manager.",
+   "size_estimate": {
+    "min": 6,
+    "max": null,
+    "signal": "Team page lists 6 staff",
+    "evidence_ref": "ev-79"
+   },
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-78"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-78",
+    "ev-79"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "US general practice with 6 listed staff.",
+     "evidence_refs": [
+      "ev-79"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Ana",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-79"
+    }
+   ]
+  },
+  {
+   "ref": "co-15",
+   "name": "AZ Dentist",
+   "website": "https://azdentist.com",
+   "icp_id": null,
+   "location": "Glendale, Scottsdale, Sedona and Sun City, AZ",
+   "industry": "General and cosmetic dentistry (multi-location)",
+   "description": "Four-location Arizona practice that matches callers to dentists by phone.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-80"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-80",
+    "ev-81"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Small multi-location US group (4 offices).",
+     "evidence_refs": [
+      "ev-80"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 1,
+     "rationale": "Phone intake is used to route new patients across locations.",
+     "evidence_refs": [
+      "ev-81"
+     ]
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-16",
+   "name": "Tubac Dental",
+   "website": "https://www.tubacdental.com",
+   "icp_id": null,
+   "location": "Tubac, AZ",
+   "industry": "General dentistry",
+   "description": "Small single-dentist practice in Tubac, AZ (below the 5-person band on its team page).",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-82"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-82",
+    "ev-83"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "Very small practice; team page lists 3 staff plus the dentist.",
+     "evidence_refs": [
+      "ev-83"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Lanna",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-83"
+    }
+   ]
+  },
+  {
+   "ref": "co-17",
+   "name": "Durango Dentistry",
+   "website": "https://www.durangodentistry.com",
+   "icp_id": null,
+   "location": "Durango, CO",
+   "industry": "Family dentistry",
+   "description": "Two-dentist family practice in Durango, CO with five hygienists and several assistants.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-85"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-84",
+    "ev-85"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Two-dentist US family practice with a large hygiene team.",
+     "evidence_refs": [
+      "ev-84"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Dr. Greg Mann",
+     "role": "Dentist (took over the practice in 1999)",
+     "email": null,
+     "evidence_ref": "ev-84"
+    }
+   ]
+  },
+  {
+   "ref": "co-18",
+   "name": "Pennbrook Dentistry",
+   "website": "https://pennbrookdental.com",
+   "icp_id": null,
+   "location": "North Wales, PA",
+   "industry": "Family dentistry",
+   "description": "Owner-run family practice in North Wales, PA with an office manager and hygienists.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-86"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-86",
+    "ev-87",
+    "ev-88"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 4,
+     "rationale": "Owner-run US family practice with a named owner and office manager (the ICP buyers).",
+     "evidence_refs": [
+      "ev-87",
+      "ev-88"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Priya Patel",
+     "role": "Owner & Dentist",
+     "email": null,
+     "evidence_ref": "ev-87"
+    },
+    {
+     "name": "Amy Miller",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-88"
+    }
+   ]
+  },
+  {
+   "ref": "co-19",
+   "name": "Prast Family Dental",
+   "website": "https://www.prastfamilydental.com",
+   "icp_id": null,
+   "location": "Pinckney, MI",
+   "industry": "Family dentistry",
+   "description": "Owner-dentist family practice in Pinckney, MI with an office manager; listed in the Brighton-area chamber directory.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-89"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-89",
+    "ev-90",
+    "ev-91"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Small US family practice; size not stated.",
+     "evidence_refs": [
+      "ev-90",
+      "ev-91"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": [
+    {
+     "name": "Connie Tolfree",
+     "role": "Office Manager",
+     "email": null,
+     "evidence_ref": "ev-90"
+    },
+    {
+     "name": "Dr. Elizabeth Prast",
+     "role": "Dentist",
+     "email": null,
+     "evidence_ref": "ev-91"
+    }
+   ]
+  },
+  {
+   "ref": "co-20",
+   "name": "Newman Dental",
+   "website": "https://www.newmandental.com",
+   "icp_id": null,
+   "location": "Tucson, AZ",
+   "industry": "Family dentistry",
+   "description": "Tucson family practice whose listed hours end at 4pm, leaving evening callers uncovered.",
+   "size_estimate": null,
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-92"
+   },
+   "technologies": [],
+   "evidence_refs": [
+    "ev-92",
+    "ev-93"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Small US family practice; size not stated.",
+     "evidence_refs": [
+      "ev-92"
+     ]
+    },
+    "technology_fit": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    },
+    "other_signals": {
+     "rating": 1,
+     "rationale": "Listed hours end at 4pm, so after-hours callers reach no one unless calls are covered.",
+     "evidence_refs": [
+      "ev-93"
+     ]
+    }
+   },
+   "contacts": []
+  }
+ ]
+}
