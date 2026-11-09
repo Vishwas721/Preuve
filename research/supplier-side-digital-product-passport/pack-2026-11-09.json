@@ -1,0 +1,2343 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "c00f7a65-c1b0-4ad6-87a2-0e9fb9b586f9",
+    "researcher": "claude-code",
+    "started_at": "2026-11-09T09:00:00Z",
+    "finished_at": "2026-11-09T13:00:00Z",
+    "queries": [
+      "Indian exporters digital product passport supplier data requests EU buyers questionnaire burden",
+      "supplier questionnaire fatigue sustainability data requests multiple brands textile suppliers",
+      "digital product passport delay textiles delegated act 2028 postponed (contradiction)",
+      "battery passport supply chain data suppliers reluctant share confidential bill of materials",
+      "Circularise smart questioning suppliers share data without revealing confidential information",
+      "TrusTrace supplier portal free for suppliers share data multiple brands",
+      "UN Transparency Protocol verifiable credentials supplier digital product passport conformity credential",
+      "Higg Facility Environmental Module verified once shared with multiple brands suppliers",
+      "\"Digital Product Passport\" manager job sustainability fashion brand supplier data collection 2026",
+      "AEPC apparel exporters digital product passport EU India awareness survey MSME readiness",
+      "omnibus simplification ESPR digital product passport delay industry calls postpone 2026 (contradiction)",
+      "battery passport survey companies not ready supplier data 2026 readiness percent",
+      "European company sources castings forgings from India suppliers CBAM importer steel digital product passport",
+      "Tchibo / Bestseller / KiK / Takko / Lindex / KappAhl / Indiska India suppliers (prospects)",
+      "German sustainable fashion brand production in India about us (prospects)",
+      "Dibella textiles India Fairtrade cotton (prospects)",
+      "EU e-bike battery importer India supplier battery passport 2027 company (prospects; none found)"
+    ],
+    "notes": "Scope: EU DPP (ESPR) and battery passport demand on Indian/Asian SME suppliers, plus the adjacent CBAM data regime for steel. Most problem evidence is trade press and vendor/consultancy content (vendors have commercial interest); no survey of Indian SME suppliers' hours or questionnaire counts was found. Strongest contradictions: delegated acts for textiles/steel not adopted by mid/late 2026 (textile DPP ~2028-2029), first battery passport excludes carbon/recycled/due-diligence data, and 'enter once, share many' plus selective disclosure already exist (TrusTrace free supplier portal, Retraced, Higg FEM, Circularise, UNTP, EU O3CI). Unfetchable: SupplyChainBrain, GBA roundtable PDF, KPMG DPP survey PDF, apparelresources, cheqd. Prospects: only 11 companies for the primary ICP (EU brands with Asian supply chains), below the 20+ target; many brand sites were unfetchable (404/robots: Primark, Tom Tailor, Bestseller, H&M India pages, Indiska, Hessnatur). No battery or steel importers with India sourcing were found on fetchable own pages. Two leads (Jyoti, Lebenskleidung) are below the ICP size band; ARMEDANGELS and KnowledgeCotton have weak India evidence. Contacts only where name+title appear on the company's own page (4). icp_id null (context returned no ICP ids)."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://sustainablebrands.com/read/2-unintended-consequences-of-your-supply-chain-assessment-and-how-to-avoid-them",
+      "title": "2 Unintended Consequences of your Supply Chain Assessment, and How to Avoid Them",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Now, despite everyone’s good intentions, our tier 1 supplier is responsible for completing not one, but ten detailed, lengthy assessments. Minding the tendency for each company to use a slightly different format, the simple two-hour request can easily become two days of effort or more.",
+      "statement": "A supply-chain platform co-founder illustrates how ten buyers' differently formatted assessments turn a two-hour request into two days or more for one supplier (illustrative, vendor-authored, 2017).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://sustainablebrands.com/read/2-unintended-consequences-of-your-supply-chain-assessment-and-how-to-avoid-them",
+      "title": "2 Unintended Consequences of your Supply Chain Assessment, and How to Avoid Them",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "each company will ask our supplier to respond using any combination of different software platforms and Excel toolkits.",
+      "statement": "Suppliers are asked to answer each buyer through different software platforms and Excel toolkits.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://fashionunited.com/news/business/cascale-meeting-sustainable-transformation-requires-patience/2024093062156",
+      "title": "Cascale Meeting: Sustainable transformation requires patience",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "a supplier from Pakistan reported on the podium that it takes him up to 15 days to gather all the data for a single order",
+      "statement": "At Cascale's 2024 member meeting a Pakistani textile supplier said gathering the data for a single order takes up to 15 days.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://fashionunited.com/news/business/cascale-meeting-sustainable-transformation-requires-patience/2024093062156",
+      "title": "Cascale Meeting: Sustainable transformation requires patience",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Suppliers are frustrated. I know factories that are audited up to 200 times a year.",
+      "statement": "Cascale's CEO said some factories are audited up to 200 times a year and suppliers are frustrated.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7",
+        "72028b7e-125c-4e77-8e95-d14a3a848dda"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://fashionunited.com/news/business/cascale-meeting-sustainable-transformation-requires-patience/2024093062156",
+      "title": "Cascale Meeting: Sustainable transformation requires patience",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "most companies predominantly only know their direct suppliers, which are usually the sewing factories",
+      "statement": "A traceability vendor co-founder said most fashion companies only know their tier-1 sewing factories, not fabric and raw-material tiers.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://ditchcarbon.com/blog/stop-asking-suppliers-questions-theyve-already-answered",
+      "title": "Stop Asking Suppliers Questions They've Already Answered",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "They are receiving near-identical spreadsheets from every major customer, a manual and inefficient process that drains resources on both sides.",
+      "statement": "A Scope 3 data vendor says key suppliers receive near-identical spreadsheets from every major customer.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://www.tndindia.com/the-eu-battery-passport-from-february-2027-what-european-buyers-will-ask-indian-exporters-for/",
+      "title": "The EU battery passport from February 2027: what European buyers will ask Indian exporters for - Your Gateway to Power Transmission & Distribution",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The cost rarely sits in the software. It sits in the working time needed to gather the missing figures from suppliers and keep them updated.",
+      "statement": "A battery-passport software founder writing for Indian exporters says the cost is mostly working time to gather and update supplier figures, not software.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://dpp-tool.com/en/guide/dpp-non-eu-exporters/",
+      "title": "Digital Product Passport for Non-EU Exporters: EU Market Guide",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Assign an owner. One person who tracks the delegated acts for your categories and owns the buyer questionnaires. In most exporting SMEs this is half a role, not a hire.",
+      "statement": "A DPP vendor guide for non-EU exporters estimates handling buyer questionnaires and tracking delegated acts is about half a role in an exporting SME.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://www.downtoearth.org.in/economy/is-the-india-eu-fta-equitable-europes-digital-product-passport-raises-questions-on-that-score",
+      "title": "Is the India-EU FTA equitable? Europe’s Digital Product Passport raises questions on that score",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "But for smaller manufacturers and recyclers based in India, making investments in IT infrastructure and workforce to install and maintain these systems for data storage on all future export shipments will require greater operational and financial obligations.",
+      "statement": "Down To Earth argues smaller Indian manufacturers face higher relative IT and staffing costs to maintain DPP data for every export shipment.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7",
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://evreporter.com/battery-passport-2027-what-makers-exporting-to-the-eu-actually-have-to-do/",
+      "title": "Battery Passport 2027: what makers exporting to the EU actually have to do • EVreporter",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Large cell producers have sustainability teams and connected data rooms. The mid-sized vehicle or battery maker carries the same obligation without such structures.",
+      "statement": "Mid-sized battery makers exporting from India carry the same passport data burden as large cell producers but without sustainability teams or data rooms.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://dpp-tool.com/en/guide/dpp-non-eu-exporters/",
+      "title": "Digital Product Passport for Non-EU Exporters: EU Market Guide",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Even with no ESPR delegated act adopted yet, large EU buyers are already sending supplier questionnaires.",
+      "statement": "Large EU buyers are already sending DPP-related supplier questionnaires to non-EU exporters before any ESPR delegated act exists.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://brevitaz-site.pages.dev/blogs/indian-garment-exporter-eu-dpp-data-gap",
+      "title": "Indian garment exporters have 60% of EU DPP data. Here's what's missing. | Brevitaz Systems",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Most Indian garment exporters have roughly 60% of what EU DPP requires. The 40% they are missing is not the obvious stuff.",
+      "statement": "A traceability-software founder estimates Indian garment exporters hold about 60% of EU DPP data; the gaps are granular, upstream data.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://brevitaz-site.pages.dev/blogs/indian-garment-exporter-eu-dpp-data-gap",
+      "title": "Indian garment exporters have 60% of EU DPP data. Here's what's missing. | Brevitaz Systems",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The data exists on PDFs. It is not in a system.",
+      "statement": "Durability test data held by Indian exporters typically exists only as PDF lab reports, not in a system.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://brevitaz-site.pages.dev/blogs/indian-garment-exporter-eu-dpp-data-gap",
+      "title": "Indian garment exporters have 60% of EU DPP data. Here's what's missing. | Brevitaz Systems",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Getting Tier-2 supplier data is a supplier engagement program, not a software project.",
+      "statement": "The same source argues the hardest part (tier-2 data) is supplier engagement rather than software, which cuts against a software-only wedge.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://wiot-group.com/think/en/news/dpp-and-epr-expose-fashion-data-infrastructure-gap/",
+      "title": "DPP and EPR Expose Fashion’s Data Gaps and Compliance Challenges",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "many upstream suppliers still rely on PDFs, spreadsheets and email.",
+      "statement": "A summary of Vogue Business reporting says many upstream fashion suppliers still rely on PDFs, spreadsheets and email.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://fashionunited.com/news/business/how-to-do-it-brands-talk-about-dpp-implementation/2026061572935",
+      "title": "How to do it: Brands talk about DPP implementation",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Sustainability data lived in folders and spreadsheets and follow‑up was manual, document collection was done via email.",
+      "statement": "Before adopting a platform, a Dutch brand's sustainability data lived in folders and spreadsheets and supplier documents were collected by email.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314"
+      ],
+      "company_name": "King Louie"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://fashionunited.com/news/business/how-to-do-it-brands-talk-about-dpp-implementation/2026061572935",
+      "title": "How to do it: Brands talk about DPP implementation",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "If a buyer asked for a specific audit or certificate, we had to dig through folders or Excel files.",
+      "statement": "A Danish brand reports it had to dig through folders or Excel files when a buyer asked for an audit or certificate.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314"
+      ],
+      "company_name": "KnowledgeCotton Apparel"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.tndindia.com/the-eu-battery-passport-from-february-2027-what-european-buyers-will-ask-indian-exporters-for/",
+      "title": "The EU battery passport from February 2027: what European buyers will ask Indian exporters for - Your Gateway to Power Transmission & Distribution",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "it falls on the economic operator who first makes the battery available on the Union market. In a typical export sale that is the European buyer or importer.",
+      "statement": "For battery passports the legal duty sits with the EU buyer or importer, not the Indian exporter, in a typical export sale.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "85f4a331-63b6-4d84-ae6a-7d2f8ea13f62"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://public.cdxsystem.com:443/en/web/cdx/w/eu-battery-digital-product-passport-commission-shares-survey-results",
+      "title": "EU Commission Holds Second Industry Webinar on Battery Digital Product Passport | CDX",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "This responsibility cannot be delegated away: even where a third party is authorised to handle registration, the economic operator remains fully accountable for compliance.",
+      "statement": "The Commission clarified that the economic operator placing the battery on the market stays accountable even if a third party handles registration.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "85f4a331-63b6-4d84-ae6a-7d2f8ea13f62"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://fashionunited.com/news/business/dpp-readiness-when-and-how-brands-and-suppliers-can-get-started/2026061872936",
+      "title": "DPP readiness: When and how brands and suppliers can get started",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "First, there needs to be a cross-functional DPP transformation team including design, sourcing, sustainability, IT, legal, finance, operations and marketing.",
+      "statement": "Guidance for fashion brands says DPP readiness needs a cross-functional team spanning sourcing, sustainability, IT, legal and finance, so no single budget owner is evident.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "85f4a331-63b6-4d84-ae6a-7d2f8ea13f62"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://www.tndindia.com/the-eu-battery-passport-from-february-2027-what-european-buyers-will-ask-indian-exporters-for/",
+      "title": "The EU battery passport from February 2027: what European buyers will ask Indian exporters for - Your Gateway to Power Transmission & Distribution",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "European buyers who intend to sell after February 2027 will start asking their suppliers for these figures during 2026, because they need them in place before their own first shipment.",
+      "statement": "EU battery buyers are expected to request passport figures from Indian suppliers during 2026, ahead of the 18 Feb 2027 deadline.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://dpp-tool.com/en/guide/dpp-non-eu-exporters/",
+      "title": "Digital Product Passport for Non-EU Exporters: EU Market Guide",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "They push the requirement upstream, into the purchasing contract. Data warranties, documentation clauses, audit rights. Exporters who can answer quickly keep the business. Exporters who cannot become the supplier the buyer quietly replaces.",
+      "statement": "EU importers push DPP data duties into purchase contracts (data warranties, audit rights); slow suppliers risk being replaced.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://public.cdxsystem.com:443/en/web/cdx/w/eu-battery-digital-product-passport-commission-shares-survey-results",
+      "title": "EU Commission Holds Second Industry Webinar on Battery Digital Product Passport | CDX",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Only 15% of respondents said they feel very confident that the necessary battery passport data will be available within their value chain by February 2027. Data availability and quality was identified as the single biggest implementation challenge, cited by 63% of respondents",
+      "statement": "In a Commission pre-webinar survey of 91 mostly large battery companies, only 15% were very confident value-chain data would be available by Feb 2027; 63% named data availability the top challenge.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693",
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://www.downtoearth.org.in/economy/eus-carbon-rules-enter-implementation-phase-putting-indian-msmes-under-pressure",
+      "title": "EU’s carbon rules enter implementation phase, putting Indian MSMEs under pressure",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Some smaller European buyers that previously purchased one or two containers, typically 20 to 25 tonnes, have disappeared. Even the number of inquiries has gone down because of the additional cost burden and additional paperwork",
+      "statement": "An Indian steel maker says some small EU buyers disappeared and inquiries fell because of CBAM's added cost and paperwork, an adjacent data-compliance regime.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://dpp-tool.com/en/guide/dpp-non-eu-exporters/",
+      "title": "Digital Product Passport for Non-EU Exporters: EU Market Guide",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As of mid-2026, no delegated act imposing a DPP on any ESPR product category has been adopted. … These dates have already shifted before and may shift again.",
+      "statement": "As of mid-2026 no ESPR delegated act imposing a DPP had been adopted, and the indicative dates have already shifted.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://www.renoon.com/blog/delegated-acts-for-digital-product-passport-explainer-and-current-status",
+      "title": "Digital Product Passport Delegated Acts Explained: Status and Scope",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Delegated acts for textiles, aluminium and tyres are currently expected between the third and fourth quarters of 2027, followed by furniture in 2028 and mattresses and ICT products in 2029.",
+      "statement": "A DPP vendor (September 2026) says textile, aluminium and tyre delegated acts are expected in Q3-Q4 2027; steel first in Q4 2026; application follows at least 18 months later.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://fashionunited.com/news/business/dpp-readiness-when-and-how-brands-and-suppliers-can-get-started/2026061872936",
+      "title": "DPP readiness: When and how brands and suppliers can get started",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "textile products placed on the EU market will require standardised digital product records linked to physical products only from mid to end 2029",
+      "statement": "A 2026 industry report puts mandatory textile DPPs at mid to end 2029, so the textile deadline pressure is years away.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://public.cdxsystem.com:443/en/web/cdx/w/eu-battery-digital-product-passport-commission-shares-survey-results",
+      "title": "EU Commission Holds Second Industry Webinar on Battery Digital Product Passport | CDX",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The Commission reiterated that carbon footprint declarations, carbon footprint labels, recycled content figures, and due diligence reporting are not required for the February 2027 deadline.",
+      "statement": "For the Feb 2027 battery passport, carbon footprint, recycled content and due diligence data are not yet required, which reduces the most sensitive supplier data asks at first.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693",
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://wiot-group.com/think/en/news/dpp-and-epr-expose-fashion-data-infrastructure-gap/",
+      "title": "DPP and EPR Expose Fashion’s Data Gaps and Compliance Challenges",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "no solution can currently claim to support EU DPP requirements end-to-end, because the final rules are not yet fully defined.",
+      "statement": "Because final DPP rules are undefined, no solution can yet claim end-to-end compliance, a schema risk for any credential product.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "0ecec07b-ff75-4931-8b34-dbfdae8c8693"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://www.tndindia.com/the-eu-battery-passport-from-february-2027-what-european-buyers-will-ask-indian-exporters-for/",
+      "title": "The EU battery passport from February 2027: what European buyers will ask Indian exporters for - Your Gateway to Power Transmission & Distribution",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Figures that used to travel in a datasheet between two parties become visible to competitors, customers and analysts alike. Exporters should assume their published numbers will be compared.",
+      "statement": "Battery passport data that was shared bilaterally becomes public via the QR code, so exporters' figures will be compared by competitors.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://dpp-tool.com/en/guide/dpp-non-eu-exporters/",
+      "title": "Digital Product Passport for Non-EU Exporters: EU Market Guide",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Check that the scope is limited to data you actually control and that trade secrets are handled through confidentiality terms, not just handed over.",
+      "statement": "Exporters are advised to keep trade secrets under confidentiality terms when signing DPP data-supply clauses; the guide also lists 'Bill of materials at a level you are willing to disclose'.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://brusselssignal.eu/2025/05/battery-supply-chain-still-lacks-data-commissioner-says/",
+      "title": "Battery supply chain still lacks data, Commissioner says",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The passport depends on companies sharing data in standardised formats, but competitive concerns and an absence of interoperability have slowed progress here badly.",
+      "statement": "Brussels Signal reports competitive concerns and lack of interoperability have slowed battery-passport data sharing.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://fashionunited.com/news/business/how-to-do-it-brands-talk-about-dpp-implementation/2026061572935",
+      "title": "How to do it: Brands talk about DPP implementation",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Suppliers often fear that transparency makes them vulnerable to competitors, auditors or brands that might then exert price pressure.",
+      "statement": "A traceability vendor CEO says suppliers fear transparency exposes them to competitors and brand price pressure.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://fashionunited.com/news/business/dpp-readiness-when-and-how-brands-and-suppliers-can-get-started/2026061872936",
+      "title": "DPP readiness: When and how brands and suppliers can get started",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "data reluctance is a trust problem, not a capability problem. Phased onboarding and clear data-use agreements can increase supplier engagement.",
+      "statement": "An industry report concludes supplier data reluctance is a trust problem addressed by phased onboarding and data-use agreements.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.downtoearth.org.in/economy/eus-carbon-rules-enter-implementation-phase-putting-indian-msmes-under-pressure",
+      "title": "EU’s carbon rules enter implementation phase, putting Indian MSMEs under pressure",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The process also raises concerns about disclosing commercially sensitive information on suppliers, costs and production.",
+      "statement": "Indian steel MSMEs facing CBAM data requests worry about disclosing sensitive information on suppliers, costs and production.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://brevitaz-site.pages.dev/blogs/indian-garment-exporter-eu-dpp-data-gap",
+      "title": "Indian garment exporters have 60% of EU DPP data. Here's what's missing. | Brevitaz Systems",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "verified against a chain-of-custody certificate issued by a credentialed body",
+      "statement": "Recycled-content claims need chain-of-custody certificates from a credentialed body (e.g. GRS), not spec-sheet statements.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "72028b7e-125c-4e77-8e95-d14a3a848dda"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://public.cdxsystem.com:443/en/web/cdx/w/eu-battery-digital-product-passport-commission-shares-survey-results",
+      "title": "EU Commission Holds Second Industry Webinar on Battery Digital Product Passport | CDX",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The Registry itself performs only limited, formal checks meaning verifying that mandatory fields are complete and correctly formatted. It does not validate the substance of the data; that responsibility lies with Market Surveillance Authorities.",
+      "statement": "The EU DPP registry only checks format and completeness; substance is checked by market surveillance, leaving data credibility to operators.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "72028b7e-125c-4e77-8e95-d14a3a848dda"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://news.metal.com/newscontent/104160201-smm-analysis-cbam-costs-and-emissions-data-reshape-european-procurement-of-indian-steel",
+      "title": "[SMM Analysis] CBAM Costs and Emissions Data Reshape European Procurement of Indian Steel - Shanghai Metals Market (SMM)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Actual values in a CBAM declaration require verification by an independent verifier accredited by an EU national accreditation body.",
+      "statement": "For steel (CBAM), actual emissions values must be verified by an EU-accredited independent verifier.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "72028b7e-125c-4e77-8e95-d14a3a848dda"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.qima.com/higg-fem-assessment",
+      "title": "Higg FEM Assessment & Verification | QIMA",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Official, verified results are captured on Higg.org and can be shared with business partners in lieu of having another verification conducted.",
+      "statement": "Verified Higg FEM results can already be shared with multiple business partners instead of re-verifying.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "72028b7e-125c-4e77-8e95-d14a3a848dda",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed",
+        "c045cb03-47f6-4696-8063-19c780c60314"
+      ],
+      "company_name": "Cascale / Worldly (Higg FEM)"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://spec-untp-fbb45f.opensource.unicc.org/docs/about/Audience/",
+      "title": "Audience | UN Transparency Protocol",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "When certifiers issue their ESG certificates as UNTP-standard digital credentials, they enable verifiers to confirm authenticity, integrity, and validity.",
+      "statement": "The UN Transparency Protocol defines digital conformity credentials issued by certifiers that buyers can verify.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "72028b7e-125c-4e77-8e95-d14a3a848dda",
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "UN Transparency Protocol (UN/CEFACT)"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://spec-untp-fbb45f.opensource.unicc.org/docs/about/Audience/",
+      "title": "Audience | UN Transparency Protocol",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "UNTP confidentiality measures allow supply chain actors to selectively redact upstream credentials before passing them downstream, enabling ESG evidence to be shared without exposing commercially sensitive information.",
+      "statement": "An open UN standard already specifies selective redaction of supplier credentials, the core of the proposed wedge.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed",
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": "UN Transparency Protocol (UN/CEFACT)"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://trustrace.com/platform/benefits-suppliers",
+      "title": "Benefits for Suppliers - TrusTrace - Leading Supply Chain Traceability Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We have over 50 brands connected with 50 000+ supplier users right now. … The best part? It isfreefor suppliers to use!",
+      "statement": "TrusTrace offers textile suppliers a free supplier profile, with 50+ brands and 50,000+ supplier users connected.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "TrusTrace"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://trustrace.com/platform/benefits-suppliers",
+      "title": "Benefits for Suppliers - TrusTrace - Leading Supply Chain Traceability Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "You create a single profile online just like social media to upload this information to communicate transparently with all connected clients.",
+      "statement": "TrusTrace lets a supplier keep one profile and share it with all connected clients (enter once, share many).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "TrusTrace"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://textilevaluechain.in/trustrace-reports-early-adoption-of-one-retail-hub-for-supply-chain-compliance",
+      "title": "TrusTrace Reports Early Adoption of One Retail Hub for Supply Chain Compliance",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "brands using One Retail Hub have reported average time savings of 70% in compliance reporting, as the platform reduces the need to respond to multiple, separate data requests from different retailers.",
+      "statement": "A shared single-assessment hub (brand-to-retailer HREDD) reports 70% average time savings from not answering separate retailer requests, an analogue for 'verify once, share many'.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed",
+        "c045cb03-47f6-4696-8063-19c780c60314"
+      ],
+      "company_name": "TrusTrace"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://textilevaluechain.in/trustrace-reports-early-adoption-of-one-retail-hub-for-supply-chain-compliance",
+      "title": "TrusTrace Reports Early Adoption of One Retail Hub for Supply Chain Compliance",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "reducing completion time from three to four weeks per retailer to approximately four to six days.",
+      "statement": "One Retail Hub says AI-assisted completion cut each retailer assessment from three to four weeks to four to six days.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "TrusTrace"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://worldly.io/tools/higg-fem-environmental-supply-chain-data/",
+      "title": "Higg FEM: Facility Environmental Assessment | Worldly",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "a standardized environmental assessment that manufacturing facilities complete once and share with multiple brand and retailer customers",
+      "statement": "Higg FEM is already a complete-once, share-with-many facility assessment, accepted by 300+ brands and retailers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "Cascale / Worldly (Higg FEM)"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://worldly.io/tools/higg-fem-environmental-supply-chain-data/",
+      "title": "Higg FEM: Facility Environmental Assessment | Worldly",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "spanning over 45,000 manufacturing sites across 97 countries, with more than 300 brands and retailers accepting assessments through the platform",
+      "statement": "Worldly's network spans 45,000+ manufacturing sites and 300+ brands and retailers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "Cascale / Worldly (Higg FEM)"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://fashionunited.com/news/business/how-to-do-it-brands-talk-about-dpp-implementation/2026061572935",
+      "title": "How to do it: Brands talk about DPP implementation",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Once data is cleanly entered into Retraced, it does not need to be reprocessed for every new brand.",
+      "statement": "Retraced (brand-side platform, 30,000+ suppliers) already pitches suppliers on entering verified data once for every brand, so brand-side vendors are not neglecting the supplier side.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "Retraced"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://fashionunited.com/news/business/how-to-do-it-brands-talk-about-dpp-implementation/2026061572935",
+      "title": "How to do it: Brands talk about DPP implementation",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "in practice it saves an enormous amount of time—in our experience, around 90 percent of the work. For many brands, this equates to several weeks of manual effort.",
+      "statement": "Retraced claims automated certificate collection saves brands about 90% of the work, several weeks of manual effort.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "621f237b-b39a-4baf-ae0f-3ee349550dc7",
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "Retraced"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://fashionunited.com/news/business/how-to-do-it-brands-talk-about-dpp-implementation/2026061572935",
+      "title": "How to do it: Brands talk about DPP implementation",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "It took only three months to onboard 80 Tier 1 and 160 Tier 2 suppliers; today, this number is at 100 percent.",
+      "statement": "A German brand onboarded 80 tier-1 and 160 tier-2 suppliers in three months on a brand-side platform, showing brand-funded onboarding works today.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "Tom Tailor"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://fashionunited.com/news/business/dpp-readiness-when-and-how-brands-and-suppliers-can-get-started/2026061872936",
+      "title": "DPP readiness: When and how brands and suppliers can get started",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "It took just one month from kick-off to 75-product DPP coverage.",
+      "statement": "Indian yarn and fabric maker Sutlej Textiles built DPPs for 75 products in one month with GreenStitch, so large Indian suppliers can self-serve.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "Sutlej Textiles & Industries"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://www.circularise.com/share",
+      "title": "Product data disclosure that protects commercial trust",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hide sensitive proprietary components while proving compliance.",
+      "statement": "Circularise's disclosure layer offers per-data-point visibility controls to hide proprietary components while proving compliance.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed",
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": "Circularise"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://ebsi.eu/projects/trace4eu-battery-materials-traceability",
+      "title": "TRACE4EU: Battery Passport Traceability",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "This project aims to pilot the use of EBSI Verifiable Credentials to authenticate data exchanged within the battery supply chain",
+      "statement": "The EU-backed TRACE4EU pilot uses EBSI verifiable credentials to authenticate battery supply-chain data, with auditors and certification bodies as issuers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed",
+        "72028b7e-125c-4e77-8e95-d14a3a848dda"
+      ],
+      "company_name": "TRACE4EU (EBSI)"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://news.metal.com/newscontent/104160201-smm-analysis-cbam-costs-and-emissions-data-reshape-european-procurement-of-indian-steel",
+      "title": "[SMM Analysis] CBAM Costs and Emissions Data Reshape European Procurement of Indian Steel - Shanghai Metals Market (SMM)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The EU's Operators of Third-Country Installations module, or O3CI, allows non-EU producers to share installation and emissions information with declarants while protecting business-sensitive data.",
+      "statement": "For steel, the EU's free O3CI module already lets non-EU producers share emissions data with EU declarants while protecting sensitive data.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed",
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": "EU CBAM Registry (O3CI)"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://dpphero.com",
+      "title": "Digitaler Produktpass | Batteriepass-Software | DPP Hero",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mit DPP Hero können Sie Ihre Batteriepass-Daten ab 49 € pro Monat erfassen und verwalten.",
+      "statement": "DPP Hero sells self-service battery-passport software from EUR 49 per month.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "DPP Hero"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://textalks.com/pdexcil-and-aware-target-dpp-readiness-across-indias-powerloom-sector/",
+      "title": "PDEXCIL and AWARE target DPP readiness across India’s powerloom sector",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Under the agreement, participating manufacturers will retain control of the data they generate.",
+      "statement": "AWARE signed an MoU with India's PDEXCIL to onboard powerloom SMEs with batch-level data tokens, with manufacturers retaining control of their data.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed",
+        "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71"
+      ],
+      "company_name": "AWARE"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://textalks.com/pdexcil-and-aware-target-dpp-readiness-across-indias-powerloom-sector/",
+      "title": "PDEXCIL and AWARE target DPP readiness across India’s powerloom sector",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The next test will be whether small and medium-sized powerloom companies can integrate the system into routine production without creating duplicate paperwork or excessive cost.",
+      "statement": "Trade press notes adoption by SME powerloom units without duplicate paperwork or excess cost is unproven.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "AWARE"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://greensutra.in/question/why-buyers-ask-verified-esg-data/",
+      "title": "Why Buyers Ask for Verified ESG Data | GreenSutra®",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "maps it to the format each questionnaire requests, so the supplier responds from data already collected rather than assembling answers under deadline",
+      "statement": "Indian consultancy GreenSutra sells a service that assembles exporters' ESG evidence once and maps it to each buyer questionnaire (EcoVadis, CDP).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c045cb03-47f6-4696-8063-19c780c60314",
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": "GreenSutra"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.vde.com/en/press/press-releases/challenges-of-eu-battery-passport",
+      "title": "EU Battery Passport: Many Companies Underestimate the Organizational Challenges",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The underlying idea is to capture information digitally just once and then make it available to many stakeholders. Instead of providing the same data repeatedly in various forms, certificates, or customer inquiries, it should be available via the digital passport.",
+      "statement": "VDE notes the DPP itself is meant to end repeated data provision, though it expects administrative burden to rise in the short term.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "f19588d7-bbd8-4a85-952e-e32caf6b53ed"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.dedicatedbrand.com/gb/sustainability/supply-chain/suppliers/the-rajlakshmi-cotton-mills",
+      "title": "DEDICATED | The Rajlakshmi Cotton Mills",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Location: Noida, India",
+      "statement": "Dedicated's supplier page lists The Rajlakshmi Cotton Mills in Noida, India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dedicated"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.dedicatedbrand.com/gb/sustainability/supply-chain/suppliers/the-rajlakshmi-cotton-mills",
+      "title": "DEDICATED | The Rajlakshmi Cotton Mills",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Rajlakshmi Cotton Mills (RCM) is our supplier for organic, Fairtrade and Regenerative Organic Certified cotton jerseys",
+      "statement": "Dedicated sources organic and Fairtrade cotton jerseys from an Indian mill.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dedicated"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.dedicatedbrand.com/es/sustainability/supply-chain/suppliers/dibella",
+      "title": "DEDICATED | Dibella",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Dibella has produced all our linen programs since the SS25 collection",
+      "statement": "Dedicated's linen programs are produced by Dibella near Bangalore, India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dedicated"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.dedicatedbrand.com/gb/sustainability/supply-chain/suppliers/the-rajlakshmi-cotton-mills",
+      "title": "DEDICATED | The Rajlakshmi Cotton Mills",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Karin Veghed, Head of Production and Design.",
+      "statement": "Named head of production and design on Dedicated's own supplier page.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dedicated"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.nudiejeans.com/en-SE/blog/living-wages-and-social-impact",
+      "title": "Living wages and social impact | Nudie Jeans",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We work closely with living wage projects at our suppliers in India and Türkiye.",
+      "statement": "Nudie Jeans has suppliers in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nudie Jeans"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://www.nudiejeans.com/en-SE/blog/living-wages-and-social-impact",
+      "title": "Living wages and social impact | Nudie Jeans",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "In 2024, we expanded the living wage program to include our leather garment supplier in India, encompassing all Indian main suppliers in the program.",
+      "statement": "Nudie Jeans has several Indian main suppliers including a leather garment supplier.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Nudie Jeans"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.melawear.de/en/pages/ueber-uns",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our cotton comes from Indian Fairtrade cooperatives, and it is processed in Fairtrade-certified facilities in Gujarat, Uttar Pradesh, and Tamil Nadu",
+      "statement": "MELAWEAR's cotton and processing are in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "MELAWEAR"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.melawear.de/en/pages/ueber-uns",
+      "title": "About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "our colleagues in Kassel, the people in the cooperatives and sewing workshops in India",
+      "statement": "MELAWEAR's team is in Kassel, Germany; sewing workshops are in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "MELAWEAR"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://impactreport25.armedangels.com/transparency/",
+      "title": "TRANSPARENCY - ARMEDANGELS",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Through supply chain mapping, Digital Product Passports, and strong partnerships built on trust, we’re creating a system where every garment’s journey is visible and understood.",
+      "statement": "ARMEDANGELS states it uses Digital Product Passports and supply chain mapping.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ARMEDANGELS"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://impactreport25.armedangels.com/transparency/",
+      "title": "TRANSPARENCY - ARMEDANGELS",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our supply chain here includes 2 nominated fabric and yarn suppliers and 9 countries with 8 material sources.",
+      "statement": "ARMEDANGELS' 'rest of the world' sourcing covers 9 further countries; main production is in Portugal, Türkiye and Tunisia.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ARMEDANGELS"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://www.armedangels.com/pages/impressum",
+      "title": "Impressum",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Social Fashion Company GmbH Thebäerstr. 17 50823 Köln",
+      "statement": "ARMEDANGELS (Social Fashion Company GmbH) is based in Cologne, Germany.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ARMEDANGELS"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.armedangels.com/pages/impressum",
+      "title": "Impressum",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Geschäftsführung: Martin Höfeler",
+      "statement": "Managing director named in ARMEDANGELS' imprint.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ARMEDANGELS"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.dibellatextiles.com/en/imprint",
+      "title": "Imprint - Dibella Textiles",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Hamelandroute 90 7121 JC Aalten",
+      "statement": "Dibella b.v. is located in Aalten, Netherlands.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dibella"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://www.dibellatextiles.com/en/",
+      "title": "Dibella Textiles - Hotelwäsche, langlebige, nachhaltige Objekttextilien",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Benefit from durable, certified sustainable leasing textiles that are perfectly tailored to your individual requirements",
+      "statement": "Dibella supplies sustainable leasing textiles to hotels, healthcare and laundries.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dibella"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.cinet-online.com/dibella-supporting-organic-cotton-farmers-in-india/",
+      "title": "Dibella supporting organic cotton farmers in India",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "In addition, the company is directly supporting farmers in India.",
+      "statement": "Trade press reports Dibella sources organic Fairtrade cotton from India and supports Indian farmers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dibella"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.tchibo.com/de/en/sustainability/nonfood",
+      "title": "Non Food | Tchibo Sustainability",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Start of the farmer project with the cotton cooperative CHETNA in Odisha, India (“Cotton in Conversion”)",
+      "statement": "Tchibo runs cotton sourcing projects in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tchibo"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.tchibo.com/de/en/sustainability/circularity/rethink",
+      "title": "Rethink - Circular economy | Tchibo Sustainability",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Circular Baby Body with digital product passport",
+      "statement": "Tchibo has piloted a product with a digital product passport.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Tchibo"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.kappahl.com/en-us/about-kappahl-group/sustainability/suppliers-factories",
+      "title": "Suppliers and factories | Kappahl",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We produce our clothes in Asia and Europe, primarily in China, Bangladesh, India and Turkey.",
+      "statement": "KappAhl produces primarily in China, Bangladesh, India and Turkey.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kappahl Group"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.kappahl.com/en-us/about-kappahl-group/sustainability/suppliers-factories",
+      "title": "Suppliers and factories | Kappahl",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We have had our own offices and many employees in Bangladesh, China and India, our largest production countries, for more than 30 years.",
+      "statement": "KappAhl has its own production offices in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kappahl Group"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://www.kappahl.com/en-us",
+      "title": "Welcome to the Kappahl Group | Kappahl",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "4,000 employees in eight countries in Europe and Asia.",
+      "statement": "KappAhl states 4,000 employees in eight countries.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kappahl Group"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://www.kappahl.com/en-us",
+      "title": "Welcome to the Kappahl Group | Kappahl",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "340+ stores in Sweden, Norway, Finland, Poland and the UK.",
+      "statement": "KappAhl operates stores in Sweden, Norway, Finland, Poland and the UK.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kappahl Group"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://about.lindex.com/sustainability/how-we-work/suppliers-and-factories/meet-one-of-our-suppliers/",
+      "title": "Meet one of our suppliers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Meet Paramount, one of our long‑term suppliers in India and a Lindex partner since 2008.",
+      "statement": "Lindex has long-term Indian suppliers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lindex"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://about.lindex.com/sustainability/how-we-work/suppliers-and-factories/",
+      "title": "Suppliers and factories",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We do not own any factories. Instead, our products are made by independent suppliers.",
+      "statement": "Lindex relies on independent suppliers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lindex"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://jyoti-fairworks.org/en/pages/jyoti",
+      "title": "Jyoti",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "JYOTI – FAIR WORKS is a German-Indian fashion label",
+      "statement": "Jyoti is a German-Indian fashion label.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Jyoti - Fair Works"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://jyoti-fairworks.org/en/pages/jyoti",
+      "title": "Jyoti",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We manufacture our clothing according to Fair Trade standards in our three own sewing workshops in the South Indian locations of Chittapur, Londa and Hyderabad",
+      "statement": "Jyoti runs its own sewing workshops in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Jyoti - Fair Works"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://lebenskleidung.com/en/pages/about-us",
+      "title": "About us | Lebenskleidung",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Location: Berlin (remote team working in Germany)",
+      "statement": "Lebenskleidung is based in Berlin.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lebenskleidung"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://lebenskleidung.com/en/pages/about-us",
+      "title": "About us | Lebenskleidung",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Lebenskleidung operates as a combination of retailer and agency. We trade fabrics through our online shop and also provide consulting services for textile projects",
+      "statement": "Lebenskleidung trades sustainable fabrics and runs textile production projects.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lebenskleidung"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://knowledgecottonapparel.com/pages/our-story",
+      "title": "Our Story | KnowledgeCotton Apparel",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Mads Mørup, founder & CEO",
+      "statement": "KnowledgeCotton Apparel founder and CEO named on own page.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "KnowledgeCotton Apparel"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://knowledgecottonapparel.com/pages/our-story",
+      "title": "Our Story | KnowledgeCotton Apparel",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I brought these insights with me when we started KnowledgeCotton Apparel in 2008.",
+      "statement": "KnowledgeCotton Apparel was started in 2008.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "KnowledgeCotton Apparel"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "621f237b-b39a-4baf-ae0f-3ee349550dc7",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Textile suppliers report large per-request effort: one supplier said gathering data for a single order takes up to 15 days, and some factories are audited up to 200 times a year.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-03",
+            "ev-04"
+          ]
+        },
+        {
+          "statement": "Vendors describe the multiplier from many buyers using different formats (a two-hour request becoming two days across ten buyers) and per-retailer assessments taking three to four weeks before a shared hub.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-01",
+            "ev-45"
+          ]
+        },
+        {
+          "statement": "For DPP specifically, the cost is described as staff time to gather and update supplier figures, roughly half a role in an exporting SME; no measured hours from Indian SMEs were found.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-07",
+            "ev-08"
+          ]
+        },
+        {
+          "statement": "No source counts how many DPP questionnaires an Indian or Asian SME receives per year.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "c045cb03-47f6-4696-8063-19c780c60314",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Upstream suppliers mostly hold data in PDFs, spreadsheets and email, and EU buyers already send supplier questionnaires ahead of the delegated acts.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-15",
+            "ev-11",
+            "ev-13"
+          ]
+        },
+        {
+          "statement": "Supplier-side 'enter once, share with many' tools already exist: TrusTrace free supplier profiles, Higg FEM (300+ brands), Retraced's supplier network, and Indian services such as GreenSutra.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-42",
+            "ev-43",
+            "ev-46",
+            "ev-48",
+            "ev-58"
+          ]
+        },
+        {
+          "statement": "Indian exporters hold an estimated ~60% of textile DPP data; the gaps are upstream and granular (tier-2, batch-level, carbon), which is an engagement problem more than a data-entry one.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-12",
+            "ev-14"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "85f4a331-63b6-4d84-ae6a-7d2f8ea13f62",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "The legal duty sits with the EU economic operator (usually the importer/brand) and cannot be delegated, so the EU brand is the natural payer.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18",
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "Guidance points to a cross-functional DPP team (sourcing, sustainability, IT, legal, finance) rather than a single budget owner.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-20"
+          ]
+        },
+        {
+          "statement": "No evidence of any budget allocated specifically to supplier data tools was found; brand-side vendors make the supplier side free.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-42"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "0ecec07b-ff75-4931-8b34-dbfdae8c8693",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Battery buyers face a hard 18 Feb 2027 deadline and only 15% of surveyed companies were very confident value-chain data would be ready; buyers push data warranties into contracts and may replace slow suppliers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23",
+            "ev-21",
+            "ev-22"
+          ]
+        },
+        {
+          "statement": "For textiles, steel, aluminium and tyres no delegated act was adopted by mid/late 2026; textile DPPs are expected around 2028-2029, and the first battery passport excludes carbon footprint, recycled content and due diligence data.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25",
+            "ev-26",
+            "ev-27",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "Adjacent CBAM data demands are already costing some Indian steel exporters small EU buyers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-24"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "f19588d7-bbd8-4a85-952e-e32caf6b53ed",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Shared single-assessment models show value: One Retail Hub reports ~70% time savings and Higg FEM is shared across 300+ brands.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44",
+            "ev-46"
+          ]
+        },
+        {
+          "statement": "But the same value is already offered free or near-free by incumbents and open standards (TrusTrace, Retraced, Higg, UNTP), weakening the idea's claim that brand-side vendors neglect suppliers.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-42",
+            "ev-48",
+            "ev-41"
+          ]
+        },
+        {
+          "statement": "No direct evidence on Indian SME suppliers' willingness to pay INR 1,000-5,000/month was found.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "72028b7e-125c-4e77-8e95-d14a3a848dda",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Buyers and regulators look for third-party verification: chain-of-custody certificates from credentialed bodies, EU-accredited verifiers for CBAM values, and approved Higg FEM verifiers whose results can be reused.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36",
+            "ev-38",
+            "ev-39"
+          ]
+        },
+        {
+          "statement": "The EU registry only checks format and completeness, leaving data credibility to operators and market surveillance.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-37"
+          ]
+        },
+        {
+          "statement": "Digital credential schemes for this already exist (UNTP conformity credentials, EBSI/TRACE4EU pilot).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-40",
+            "ev-53"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "d9d5a560-31a8-48ca-b9e5-7326c0ec5f71",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Suppliers fear transparency exposes them to competitors and brand price pressure; competitive concerns have slowed battery data sharing; Indian steel MSMEs worry about disclosing supplier, cost and production data.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33",
+            "ev-32",
+            "ev-35"
+          ]
+        },
+        {
+          "statement": "Battery passport figures that were bilateral become public via QR, and exporters are advised to protect trade secrets and limit BOM disclosure in DPP clauses.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-30",
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "Selective disclosure is already offered by Circularise, the open UNTP standard and the EU's O3CI module for steel.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-52",
+            "ev-41",
+            "ev-54"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": {
+    "problem": "EU brands and importers must collect DPP and battery-passport data that only non-EU suppliers hold; Asian SME suppliers answer repeated, differently formatted buyer requests by spreadsheet and email, lack upstream (tier-2, batch, carbon) data, and fear exposing commercially sensitive figures. Hard deadlines exist only for batteries (Feb 2027) and CBAM steel data; textile/steel DPPs are expected 2028-2029.",
+    "users": "Indian and other Asian SME exporters (batteries/LMT packs, textiles and apparel, steel and metal parts) supplying EU brands and importers.",
+    "buyer": "EU brands and importers, who carry the non-delegable legal duty; suppliers are unlikely to pay because comparable supplier portals are free.",
+    "decision_maker": "Cross-functional DPP owners at EU brands (sourcing, sustainability, compliance), with no single evidenced budget owner.",
+    "economic_value": "Time saved on repeated supplier requests (shared-assessment hubs report ~70% savings), faster qualification for EU orders, and protection of sensitive data; but incumbents offer this free or near-free.",
+    "geography": "Suppliers in India and Asia; buyers in the European Union.",
+    "industry": "Batteries, textiles and apparel, steel and metal parts supply chains.",
+    "rationale": [
+      {
+        "statement": "Battery deadline is fixed while textile/steel DPP acts are not yet adopted.",
+        "kind": "fact",
+        "evidence_ids": [
+          "ev-23",
+          "ev-25",
+          "ev-27"
+        ]
+      },
+      {
+        "statement": "Legal duty sits with the EU operator and cannot be delegated.",
+        "kind": "fact",
+        "evidence_ids": [
+          "ev-18",
+          "ev-19"
+        ]
+      },
+      {
+        "statement": "Free supplier-side sharing already exists.",
+        "kind": "fact",
+        "evidence_ids": [
+          "ev-42",
+          "ev-46",
+          "ev-48"
+        ]
+      }
+    ]
+  },
+  "new_unknowns": [
+    {
+      "question": "Do Indian SME suppliers serving several EU buyers face buyers on different platforms (TrusTrace, Retraced, Circularise, Higg) such that a neutral credential wallet still saves time, or has one platform per sector already won?",
+      "category": "alternatives",
+      "priority": "high"
+    },
+    {
+      "question": "Will EU brands pay per onboarded supplier when TrusTrace, Retraced and Higg make the supplier side free?",
+      "category": "budget",
+      "priority": "high"
+    },
+    {
+      "question": "Which battery/LMT and steel exporters in India actually receive EU passport or CBAM data requests today, and how many per year?",
+      "category": "frequency",
+      "priority": "medium"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "TrusTrace",
+      "url": "https://trustrace.com",
+      "kind": "direct",
+      "description": "Brand-side traceability platform with a free supplier portal: one supplier profile shared with all connected brands; also runs free One Retail Hub.",
+      "pricing_note": "Free for suppliers (vendor page).",
+      "evidence_refs": [
+        "ev-42",
+        "ev-43",
+        "ev-44",
+        "ev-45"
+      ],
+      "sentiment": [
+        {
+          "statement": "Brands using One Retail Hub report ~70% time savings on compliance reporting.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Retraced",
+      "url": "https://www.retraced.com",
+      "kind": "direct",
+      "description": "Supplier collaboration and DPP platform; pitches suppliers on entering verified data once for every brand.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-48",
+        "ev-49",
+        "ev-50"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "Higg FEM (Cascale / Worldly)",
+      "url": "https://worldly.io",
+      "kind": "indirect",
+      "description": "Standardized facility environmental assessment completed once and shared with 300+ brands; verified results reusable.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-46",
+        "ev-47",
+        "ev-39"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Circularise",
+      "url": "https://www.circularise.com",
+      "kind": "direct",
+      "description": "DPP platform with a disclosure layer to hide proprietary data while proving compliance.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-52"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "UN Transparency Protocol",
+      "url": "https://spec-untp-fbb45f.opensource.unicc.org",
+      "kind": "indirect",
+      "description": "Open UN/CEFACT spec for DPPs and conformity credentials as verifiable credentials, including selective redaction.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-41",
+        "ev-40"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "EU CBAM O3CI module",
+      "url": null,
+      "kind": "indirect",
+      "description": "Free EU module letting non-EU steel producers share installation emissions data with EU declarants while protecting sensitive data.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-54"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "TRACE4EU (EBSI)",
+      "url": "https://ebsi.eu",
+      "kind": "indirect",
+      "description": "EU pilot using verifiable credentials to authenticate battery supply-chain data, with auditors as issuers.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-53"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "DPP Hero",
+      "url": "https://dpphero.com",
+      "kind": "direct",
+      "description": "Self-service battery passport software for SME manufacturers and importers.",
+      "pricing_note": "From EUR 49 per month (vendor page).",
+      "evidence_refs": [
+        "ev-55"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "AWARE",
+      "url": null,
+      "kind": "direct",
+      "description": "Traceability platform onboarding Indian powerloom SMEs via PDEXCIL MoU; suppliers retain control of their data.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-56",
+        "ev-57"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "GreenSutra",
+      "url": "https://greensutra.in",
+      "kind": "service",
+      "description": "Indian consultancy assembling exporters' ESG/DPP evidence once and mapping it to each buyer questionnaire.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-58"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "GreenStitch",
+      "url": null,
+      "kind": "service",
+      "description": "LCA and DPP creation partner used by Sutlej Textiles to cover 75 products in one month.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-51"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "Spreadsheets, PDFs and email",
+      "url": null,
+      "kind": "manual",
+      "description": "Default practice for upstream suppliers and many brands: data in PDFs, folders, Excel and email.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-15",
+        "ev-16",
+        "ev-17",
+        "ev-02"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most upstream suppliers answer buyer requests with PDFs, spreadsheets and email, in each buyer's own format.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-15",
+        "ev-02",
+        "ev-16"
+      ]
+    },
+    {
+      "statement": "Brands onboard suppliers onto brand-side platforms (TrusTrace, Retraced) whose supplier side is free and reusable across brands.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-42",
+        "ev-48",
+        "ev-50"
+      ]
+    },
+    {
+      "statement": "Industry shared assessments (Higg FEM) already let facilities complete once and share verified results with many brands.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-46",
+        "ev-39"
+      ]
+    },
+    {
+      "statement": "Indian exporters buy help from consultancies and DPP partners (GreenSutra, GreenStitch) or join association-led pilots (PDEXCIL-AWARE).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-58",
+        "ev-51",
+        "ev-56"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Dedicated",
+      "website": "https://www.dedicatedbrand.com",
+      "icp_id": null,
+      "location": "Stockholm, Sweden",
+      "industry": "Apparel brand",
+      "description": "Swedish apparel brand that publishes supplier pages for several Indian mills and garment makers (Noida, Bangalore, Tirupur area).",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-60",
+        "ev-61",
+        "ev-62"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Publicly sources from multiple Indian suppliers (cotton jersey, linen).",
+          "evidence_refs": [
+            "ev-60",
+            "ev-61",
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Karin Veghed",
+          "role": "Head of Production and Design",
+          "email": null,
+          "evidence_ref": "ev-63"
+        }
+      ]
+    },
+    {
+      "ref": "co-02",
+      "name": "Nudie Jeans",
+      "website": "https://www.nudiejeans.com",
+      "icp_id": null,
+      "location": "Gothenburg, Sweden",
+      "industry": "Denim and apparel brand",
+      "description": "Swedish denim brand with several main suppliers in India (incl. leather) and Fairtrade cotton sourcing there.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Has multiple Indian main suppliers.",
+          "evidence_refs": [
+            "ev-64",
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "MELAWEAR",
+      "website": "https://www.melawear.de",
+      "icp_id": null,
+      "location": "Kassel, Germany",
+      "industry": "Apparel and accessories brand",
+      "description": "German fair-fashion brand whose entire supply chain (cotton, processing, sewing) is in India.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66",
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Whole supply chain in India; size not stated (may be below 50).",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      }
+    },
+    {
+      "ref": "co-04",
+      "name": "ARMEDANGELS",
+      "website": "https://www.armedangels.com",
+      "icp_id": null,
+      "location": "Cologne, Germany",
+      "industry": "Apparel brand",
+      "description": "German sustainable apparel brand already issuing DPP information and mapping tiers 1-4; Asian sourcing is mostly raw materials, so a weaker India fit.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-68",
+        "ev-69",
+        "ev-70"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Committed to DPPs but production is mostly in Europe/North Africa; India presence not shown on its own pages.",
+          "evidence_refs": [
+            "ev-68",
+            "ev-69"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Publicly reports DPP information on garments.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Martin Höfeler",
+          "role": "Managing Director (Geschäftsführung)",
+          "email": null,
+          "evidence_ref": "ev-71"
+        }
+      ],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-70"
+      }
+    },
+    {
+      "ref": "co-05",
+      "name": "Dibella",
+      "website": "https://www.dibellatextiles.com",
+      "icp_id": null,
+      "location": "Aalten, Netherlands / Bocholt, Germany",
+      "industry": "Hospitality and healthcare textiles",
+      "description": "EU supplier of hotel and healthcare linen made from Indian organic Fairtrade cotton.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-72",
+        "ev-73",
+        "ev-74"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "EU textile importer sourcing cotton from India.",
+          "evidence_refs": [
+            "ev-73",
+            "ev-74"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-72"
+      }
+    },
+    {
+      "ref": "co-06",
+      "name": "Tchibo",
+      "website": "https://www.tchibo.com",
+      "icp_id": null,
+      "location": "Hamburg, Germany",
+      "industry": "Retail (non-food textiles)",
+      "description": "German retailer with Indian cotton projects and a first DPP pilot product.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-75",
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Large textile range with Indian cotton sourcing.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Has piloted a DPP.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Kappahl Group",
+      "website": "https://www.kappahl.com",
+      "icp_id": null,
+      "location": "Mölndal, Sweden",
+      "industry": "Fashion retail",
+      "description": "Nordic fashion group producing heavily in India with its own India office and ~140 suppliers.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77",
+        "ev-78",
+        "ev-79",
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Large EU retailer; India is one of its largest production countries.",
+          "evidence_refs": [
+            "ev-77",
+            "ev-78",
+            "ev-79"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-80"
+      },
+      "size_estimate": {
+        "min": 4000,
+        "max": 4000,
+        "signal": "Kappahl homepage: 4,000 employees in eight countries",
+        "evidence_ref": "ev-79"
+      }
+    },
+    {
+      "ref": "co-08",
+      "name": "Lindex",
+      "website": "https://about.lindex.com",
+      "icp_id": null,
+      "location": "Gothenburg, Sweden",
+      "industry": "Fashion retail",
+      "description": "Nordic fashion retailer with long-term Indian suppliers, all production outsourced.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-81",
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Outsourced production including long-term Indian suppliers.",
+          "evidence_refs": [
+            "ev-81",
+            "ev-82"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Jyoti - Fair Works",
+      "website": "https://jyoti-fairworks.org",
+      "icp_id": null,
+      "location": "Germany",
+      "industry": "Apparel brand",
+      "description": "Small German-Indian fair fashion label with its own Indian workshops; below the ICP's size band, included as a low-fit lead.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-83",
+        "ev-84"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 1,
+          "rationale": "Own Indian production; likely far below 50 staff.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-83"
+      }
+    },
+    {
+      "ref": "co-10",
+      "name": "Lebenskleidung",
+      "website": "https://lebenskleidung.com",
+      "icp_id": null,
+      "location": "Berlin, Germany",
+      "industry": "Fabric wholesale and textile agency",
+      "description": "Berlin GOTS fabric wholesaler/agency founded after work in India; small, low-fit lead.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-85",
+        "ev-86"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 1,
+          "rationale": "Small fabric agency; India sourcing not stated on page.",
+          "evidence_refs": [
+            "ev-86"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-85"
+      }
+    },
+    {
+      "ref": "co-11",
+      "name": "KnowledgeCotton Apparel",
+      "website": "https://knowledgecottonapparel.com",
+      "icp_id": null,
+      "location": "Denmark",
+      "industry": "Apparel brand",
+      "description": "Danish organic menswear brand that already issues DPPs via Retraced and has mapped its full supply chain; India sourcing not confirmed.",
+      "technologies": [
+        "Retraced"
+      ],
+      "evidence_refs": [
+        "ev-88",
+        "ev-17"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "DPP adopter; Asian sourcing (China) mentioned in press, India not confirmed.",
+          "evidence_refs": [
+            "ev-17"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Already uses Retraced for supplier data and DPP QR codes (press).",
+          "evidence_refs": [
+            "ev-17"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Mads Mørup",
+          "role": "Founder & CEO",
+          "email": null,
+          "evidence_ref": "ev-87"
+        }
+      ]
+    }
+  ]
+}
