@@ -1,0 +1,1644 @@
+{
+ "meta": {
+  "schema_version": "1.2",
+  "method_version": "3",
+  "idea_id": "5083be34-10c6-4011-a6e9-ab9085ff066d",
+  "researcher": "claude-code",
+  "started_at": "2026-11-09T09:00:00Z",
+  "finished_at": "2026-11-09T12:00:00Z",
+  "queries": [
+   "agentic commerce chargeback liability dispute agent-initiated purchase merchant",
+   "Visa Intelligent Commerce dispute rules agent transactions reason code",
+   "AP2 Agent Payments Protocol intent mandate cart mandate dispute evidence",
+   "survey merchants AI agent purchases disputes chargebacks 2026",
+   "agentic commerce volume still tiny share of ecommerce 2026 agent checkout adoption low (contradiction)",
+   "Mastercard Agent Pay chargeback dispute agentic tokens liability merchants protected (contradiction)",
+   "Stripe agentic commerce shared payment token disputes merchant handles chargebacks ACP",
+   "startup agent mandate audit trail dispute evidence agentic payments launch",
+   "Nekuda agentic payments mandate SDK merchants",
+   "Mastercard Verifiable Intent open source tamper-resistant record agent dispute",
+   "job posting agentic commerce disputes chargebacks payments operations manager",
+   "Skyfire Payman agent payments KYA audit trail dispute",
+   "Mastercard true cost of a chargeback Datos Insights merchants cost per dispute",
+   "agent-initiated disputes so far low no significant increase chargebacks merchants report agentic (contradiction)",
+   "brands live on ChatGPT Instant Checkout Shopify merchants list (contradiction / prospects)",
+   "retailer announces agentic commerce checkout Visa Intelligent Commerce US merchants 2026",
+   "chargebacks fraud analyst e-commerce job site:job-boards.greenhouse.io",
+   "chargeback specialist ecommerce brand job lever/ashby",
+   "fraud chargebacks analyst DTC retailer United States job 2026",
+   "brand launches agentic checkout DTC press release 2026"
+  ],
+  "notes": "Most sources on agent disputes are chargeback/PSP vendors with a commercial interest; survey figures (PYMNTS, Ravelin, Darwinium) are quoted as reported by secondary pages. No primary network rulebook text was fetchable. No public data exists on agent-dispute frequency or cost. Founder-listed Justt, Midigator, Skyfire and Nekuda pages were unfetchable (403/robots) and are not included as competitors; Payman's site shows it now targets banks. Prospects: only 9 primary-ICP companies were found with fetchable evidence (target was 20+); most DTC sites lack a fetchable about page with location or headcount, so size is omitted for all and location verified for 2. No contacts were added (none named with title on the companies' own fetchable pages)."
+ },
+ "evidence": [
+  {
+   "ref": "ev-01",
+   "url": "https://current.tinyfish.ai/issue/39/market-pulse/article/32330/when-the-first-agent-purchase-gets-disputed",
+   "title": "When the First Agent Purchase Gets Disputed",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Today's chargeback process asks a binary question: did the cardholder authorize this transaction? Agentic commerce produces a harder case. The account was valid. The spending limit held. The merchant processed correctly.",
+   "statement": "Industry newsletter describes a new dispute type: a valid, in-limit agent purchase the user did not intend, which the binary authorization test does not handle.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "00976591-329e-4bcd-a8ef-a529503d15fd"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-02",
+   "url": "https://current.tinyfish.ai/issue/39/market-pulse/article/32330/when-the-first-agent-purchase-gets-disputed",
+   "title": "When the First Agent Purchase Gets Disputed",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "No agent-specific reason code (Visa or Mastercard) … No mandate-content field in dispute files … No decision-trace representment standard",
+   "statement": "Public Visa/Mastercard dispute guides have no agent reason code, no mandate field and no decision-trace representment standard.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "00976591-329e-4bcd-a8ef-a529503d15fd",
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-03",
+   "url": "https://www.chargeback.io/blog/agentic-payments-chargebacks",
+   "title": "Agentic Payments and Chargebacks: A Merchant Guide",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "A disputed agent purchase files under a reason code you already work with, most often Visa 10.4, 13.1, or 13.3. Nothing in the dispute system labels a transaction as agent-made.",
+   "statement": "Agent disputes are filed under existing reason codes and are not labelled as agent-made, so merchants cannot distinguish them in dispute data.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "00976591-329e-4bcd-a8ef-a529503d15fd",
+    "6fa35482-369e-4a9b-98b6-ee104d871730"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-04",
+   "url": "https://www.chargeback.io/blog/agentic-payments-chargebacks",
+   "title": "Agentic Payments and Chargebacks: A Merchant Guide",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Today's tools can't capture the mandate that proves an agent stayed inside the customer's limits. That mandate is what an agent dispute comes down to.",
+   "statement": "A chargeback-alert vendor says current tools cannot capture the mandate, which is what agent disputes turn on.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced",
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-05",
+   "url": "https://www.chargeflow.io/blog/ai-agent-chargeback-liability",
+   "title": "AI Agent Chargeback Liability: Who Pays & How to Prepare",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "A disputed agent purchase follows ordinary card-not-present rules, so the merchant pays unless it wins representment or the agent used a tokenized, authenticated network flow that shifts fraud liability to the issuer.",
+   "statement": "Under current rules the merchant bears the loss on a disputed agent purchase unless it wins representment or a tokenized network flow shifts fraud liability.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "6adb8009-c393-406c-b5ac-84311d84940a",
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-06",
+   "url": "https://worldpay.com/insights/articles/agentic-commerce-liability-is-still-being-written",
+   "title": "Agentic commerce liability is still being written | Insights | Worldpay",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "When an agent authenticates properly and a token is issued correctly, liability generally follows existing authenticated tokenized-transaction rules, with the issuer carrying fraud risk and the cardholder's chargeback rights intact.",
+   "statement": "For fraud claims on properly authenticated, tokenized agent payments the issuer, not the merchant, generally carries the risk, which narrows merchant exposure.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced",
+    "6adb8009-c393-406c-b5ac-84311d84940a"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-07",
+   "url": "https://worldpay.com/insights/articles/agentic-commerce-liability-is-still-being-written",
+   "title": "Agentic commerce liability is still being written | Insights | Worldpay",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "A shopper who claims their agent misunderstood an instruction, bought the wrong item or acted outside what they authorized is making a dispute claim, not a fraud claim. Today's frameworks don't yet have a clean answer for who absorbs that.",
+   "statement": "Worldpay says non-fraud agent disputes (misunderstood instruction, out-of-scope purchase) have no clear liability answer.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "00976591-329e-4bcd-a8ef-a529503d15fd",
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-08",
+   "url": "https://worldpay.com/insights/articles/agentic-commerce-liability-is-still-being-written",
+   "title": "Agentic commerce liability is still being written | Insights | Worldpay",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Without a signed mandate proving what the shopper authorized, a disagreement between agent and shopper becomes a coin flip, and issuers tend to side with the cardholder.",
+   "statement": "Without a signed mandate record, merchants tend to lose these disputes.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced",
+    "6adb8009-c393-406c-b5ac-84311d84940a"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-09",
+   "url": "https://worldpay.com/insights/articles/agentic-commerce-liability-is-still-being-written",
+   "title": "Agentic commerce liability is still being written | Insights | Worldpay",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Liability and dispute resolution doesn’t have a contract yet. … only the card networks can close the liability gap at scale.",
+   "statement": "A large acquirer argues only card networks can close the liability gap at scale, which questions the room for a neutral third party.",
+   "kind": "inference",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-10",
+   "url": "https://forkast.news/?p=131323",
+   "title": "The Agentic Commerce Liability Gap: Who Pays When the Agent Buys Wrong?",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "According to PYMNTS Intelligence data from September 2026, 93% of merchants believe that AI or agent providers should bear the financial loss when an agent makes an incorrect purchase. Faced with this exposure, merchants are acting with predictable caution: only 28% of those surveyed are willing to offer their full product range to AI agents under current terms.",
+   "statement": "Merchants widely reject bearing agent-error losses; only 28% offer their full range to agents under current terms (PYMNTS data as reported).",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "6adb8009-c393-406c-b5ac-84311d84940a"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-11",
+   "url": "https://thepaypers.com/fraud-and-fincrime/news/chargebacks911-warns-of-dispute-risk-gap-in-agentic-payments",
+   "title": "Chargebacks911 flags dispute risk gap in agentic commerce | The Paypers",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "American Express introduced an agentic commerce developer kit alongside a commitment to cover erroneous purchases made by registered agents on its network.",
+   "statement": "American Express absorbs erroneous registered-agent purchases itself, an incumbent response that sidesteps a third-party evidence layer on that network.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": "American Express"
+  },
+  {
+   "ref": "ev-12",
+   "url": "https://thepaypers.com/fraud-and-fincrime/news/chargebacks911-warns-of-dispute-risk-gap-in-agentic-payments",
+   "title": "Chargebacks911 flags dispute risk gap in agentic commerce | The Paypers",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "The company addresses these requirements through its Unified Dispute Management System (UDMS), which uses AI and machine learning to capture consent and permission trails, including what an agent was authorised to do, the scope of that authorisation, and a timestamped record of each action taken.",
+   "statement": "Chargebacks911 already markets capture of agent consent/permission trails in its dispute platform, overlapping the proposed wedge.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": "Chargebacks911"
+  },
+  {
+   "ref": "ev-13",
+   "url": "https://thepaypers.com/fraud-and-fincrime/news/chargebacks911-warns-of-dispute-risk-gap-in-agentic-payments",
+   "title": "Chargebacks911 flags dispute risk gap in agentic commerce | The Paypers",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "First, establishing granular permission and scope frameworks for AI agents transacting on their platforms, documenting authorisation at the point of delegation rather than reconstructing it after a dispute.",
+   "statement": "A dispute firm recommends recording authorisation at delegation time rather than reconstructing it later.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-14",
+   "url": "https://chargebackhelp.com/how-acquirers-can-prepare-for-agentic-commerce/",
+   "title": "How Acquirers Can Prepare for Agentic Commerce",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "On the liability question specifically, 45% of acquirers say redesigning liability frameworks for agent-initiated transactions is a necessity. That figure rises to 56% among U.S. acquirers.",
+   "statement": "PYMNTS acquirer survey (as reported): 45% (56% in the US) say agent liability frameworks need redesign.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-15",
+   "url": "https://chargebackhelp.com/how-acquirers-can-prepare-for-agentic-commerce/",
+   "title": "How Acquirers Can Prepare for Agentic Commerce",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Where does responsibility for refunds and chargebacks land? On merchants. The report finds that 60% of acquirers assign refund and chargeback responsibility to merchants or retailers.",
+   "statement": "Acquirers mostly place chargeback responsibility on merchants.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6adb8009-c393-406c-b5ac-84311d84940a",
+    "99c10405-e67c-4d19-bbd2-197dee86bdeb"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-16",
+   "url": "https://chargebackhelp.com/how-acquirers-can-prepare-for-agentic-commerce/",
+   "title": "How Acquirers Can Prepare for Agentic Commerce",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Only 23% plan to actively accelerate merchant readiness for agentic commerce in the next three years. The remaining 77% are waiting for signals",
+   "statement": "Most acquirers are waiting rather than accelerating agentic readiness, suggesting slow volume growth.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6fa35482-369e-4a9b-98b6-ee104d871730"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-17",
+   "url": "https://www.checkout.com/newsroom/consumer-demand-for-ai-shopping-is-forming-fast-but-trust-for-agentic-commerce-is-still-catching-up",
+   "title": "Consumer demand for AI shopping is forming fast but trust for agentic commerce is still catching up",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "only 3% of transactions involve AI agents, but 89% of merchants overall are actively preparing for agentic commerce",
+   "statement": "UK/US merchants report only 3% of transactions involve AI agents today.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6fa35482-369e-4a9b-98b6-ee104d871730"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-18",
+   "url": "https://alhena.ai/blog/chatgpt-instant-checkout/",
+   "title": "ChatGPT Instant Checkout: Why It Ended & Next Steps | Alhena",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Instant Checkout is retired. It launched September 29, 2025 and was wound down in March 2026. … Fewer than about 30 Shopify merchants ever turned it on.",
+   "statement": "ChatGPT Instant Checkout, a flagship agent checkout, was retired after very low merchant uptake.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6fa35482-369e-4a9b-98b6-ee104d871730"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-19",
+   "url": "https://www.chargeflow.io/blog/agentic-commerce-chargebacks-the-evidence-playbook-merchants-need",
+   "title": "Agentic Commerce Chargebacks: Evidence Playbook",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "public dispute data for agent-initiated orders is not available yet, so your own order and dispute logs are the earliest signal you will get.",
+   "statement": "No public data exists on agent-initiated dispute volumes.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "6fa35482-369e-4a9b-98b6-ee104d871730",
+    "6adb8009-c393-406c-b5ac-84311d84940a"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-20",
+   "url": "https://www.chargeflow.io/blog/agentic-commerce-regulation-what-merchants-need-to-know",
+   "title": "Agentic Commerce Regulation 2026: What Merchants Must Know",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Visa reported in December 2025 that partners had completed hundreds of controlled, real-world agent-initiated transactions in pilots",
+   "statement": "As of late 2025, agent-initiated card transactions numbered in the hundreds in pilots.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6fa35482-369e-4a9b-98b6-ee104d871730"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-21",
+   "url": "https://checkout.com/blog/chargebacks-in-agentic-commerce-how-merchants-can-stay-ahead",
+   "title": "Chargebacks in agentic commerce: How merchants can stay ahead",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "In most early implementations, including experiences built on the Agentic Commerce Protocol (ACP), the user still confirms the final purchase.",
+   "statement": "In most current flows the human still confirms the final purchase, which limits the 'agent bought without me' dispute.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6fa35482-369e-4a9b-98b6-ee104d871730",
+    "00976591-329e-4bcd-a8ef-a529503d15fd"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-22",
+   "url": "https://www.chargeflow.io/blog/agentic-commerce-chargebacks-liability",
+   "title": "User Consent in Agentic Payments: Chargebacks & Liability",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "AP2 and Mastercard Verifiable Intent went to the FIDO Alliance in May 2026, but most consent records still do not reach merchants automatically.",
+   "statement": "Standards are converging, but consent/mandate records mostly do not reach merchants today.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced",
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-23",
+   "url": "https://www.pymnts.com/mastercard/2026/mastercard-unveils-open-standard-to-verify-ai-agent-transactions/",
+   "title": "Mastercard Unveils Open Standard to Verify AI Agent Transactions | PYMNTS.com",
+   "source_type": "news",
+   "published_at": null,
+   "quote": "The idea is to link a consumer’s identity, their specific instructions and the outcome of a transaction into a single, tamper-resistant record. It creates a cryptographic audit trail that all parties can consult if a dispute arises.",
+   "statement": "Mastercard's Verifiable Intent targets the mandate-record-for-disputes role as an open standard.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103",
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced"
+   ],
+   "company_name": "Mastercard"
+  },
+  {
+   "ref": "ev-24",
+   "url": "https://marcmassar.substack.com/p/agentic-protocol-fragility",
+   "title": "Agentic Protocol Fragility",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "The specification defines no mandate storage responsibility, no retention timelines, no archive access mechanisms, no cross-device key portability. … The mandates are evidence of a moment. The protocol provides no mechanism for that evidence to persist, transfer, or be referenced once the session, the agent, or the device that created it ceases to exist.",
+   "statement": "A payments commentator finds AP2 defines no mandate retention or archive, leaving a persistence gap for later disputes.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced",
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-25",
+   "url": "https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/",
+   "title": "PayPal Community Blog | Agent Payments Protocol: Building Verifiable Trust for Agentic Commerce",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Mandates embed cryptographically verifiable consent into authorization flows, providing merchants with dispute-grade evidence, issuers with consistent agent-presence signals and consumers with non-repudiable proof of intent.",
+   "statement": "PayPal positions AP2 mandates inside its own dispute workflows as dispute-grade evidence.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": "PayPal"
+  },
+  {
+   "ref": "ev-26",
+   "url": "https://stripe.com/blog/agentic-commerce-suite",
+   "title": "Introducing the Agentic Commerce Suite: A complete solution for selling on AI agents",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "As the merchant of record, you also retain all control over customer relationships, including how refunds and disputes are managed. … Every token can be scoped to a specific seller, bounded by time and amount, and observable throughout its lifecycle to prevent unauthorized agent actions and reduce the likelihood of disputes.",
+   "statement": "Stripe's agentic suite leaves disputes with the merchant but scopes agent tokens by seller, time and amount to reduce disputes.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": "Stripe"
+  },
+  {
+   "ref": "ev-27",
+   "url": "https://www.chargeflow.io/case-studies/obvi",
+   "title": "Tripling Chargeback Success: Obvi’s 229% Win-Rate Boost with Chargeflow",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Previously, Obvi had been paying a freelancer $40 per chargeback case",
+   "statement": "A supplement merchant paid a freelancer $40 per chargeback case before automating.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "6adb8009-c393-406c-b5ac-84311d84940a",
+    "99c10405-e67c-4d19-bbd2-197dee86bdeb"
+   ],
+   "company_name": "Obvi"
+  },
+  {
+   "ref": "ev-28",
+   "url": "https://www.chargeflow.io/case-studies/obvi",
+   "title": "Tripling Chargeback Success: Obvi’s 229% Win-Rate Boost with Chargeflow",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "either to continue with the manual approach of having their Customer Experience (CX) manager or an outsourced freelancer painstakingly fight each chargeback, or transition to an automated platform",
+   "statement": "At this merchant chargebacks were owned by the CX manager or an outsourced freelancer, not a fraud team.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "99c10405-e67c-4d19-bbd2-197dee86bdeb"
+   ],
+   "company_name": "Obvi"
+  },
+  {
+   "ref": "ev-29",
+   "url": "https://www.chargeflow.io/case-studies/littlespoon",
+   "title": "How Littlespoon Automated Chargeback Management and Freed Up Internal Resources",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The responsibility for managing chargebacks fell on a single customer support manager, who also handled day-to-day customer communications.",
+   "statement": "At Littlespoon chargebacks were handled by one customer support manager.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "high",
+   "unknown_ids": [
+    "99c10405-e67c-4d19-bbd2-197dee86bdeb"
+   ],
+   "company_name": "Littlespoon"
+  },
+  {
+   "ref": "ev-30",
+   "url": "https://www.chargeflow.io/pricing",
+   "title": "Chargeflow Pricing with 4x ROI Guarantee",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The 25% fee applies only to recovered amounts, and does not include the dispute fee.",
+   "statement": "Chargeflow charges a 25% contingency fee on recovered chargebacks, an existing paid budget line a per-dispute fee would compete with.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "99c10405-e67c-4d19-bbd2-197dee86bdeb",
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": "Chargeflow"
+  },
+  {
+   "ref": "ev-31",
+   "url": "https://www.builtinaustin.com/job/manager-disputes-chargebacks-and-partner-performance/10521361",
+   "title": "Manager, Disputes, Chargebacks and Partner Performance",
+   "source_type": "job_posting",
+   "published_at": null,
+   "quote": "Monitor and analyze disputes and chargebacks data (KPIs, metrics, aging case volumes, provisional credit timelines) to identify trends and areas for improvement.",
+   "statement": "Card-issuing platforms employ dedicated dispute managers who run dispute data, BPO vendors and tooling.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "99c10405-e67c-4d19-bbd2-197dee86bdeb"
+   ],
+   "company_name": "Marqeta"
+  },
+  {
+   "ref": "ev-32",
+   "url": "https://stellagent.ai/insights/agentic-commerce-dispute-infrastructure-gap",
+   "title": "The Infrastructure Gap in Agentic Commerce: Payments Are Ready, Disputes Are Not | Stellagent",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "found 44% had already integrated agentic commerce protocols and another 32% planned to within six months. Yet only 29% said they felt very prepared for the associated fraud and security issues.",
+   "statement": "Ravelin survey (as reported): many large merchants integrate agent protocols but few feel prepared for the risk.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6fa35482-369e-4a9b-98b6-ee104d871730"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-33",
+   "url": "https://www.chargeflow.io/blog/agentic-commerce-chargebacks-the-evidence-playbook-merchants-need",
+   "title": "Agentic Commerce Chargebacks: Evidence Playbook",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "In a Darwinium survey of 500 fraud, risk, and security leaders, 39% pointed to the AI provider as liable when an agent-driven transaction goes wrong, 20% to the customer, 14% to the merchant and 11% to the bank",
+   "statement": "Industry opinion on who should be liable for agent errors is split.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-34",
+   "url": "https://tianpan.co/blog/2026-07-02-the-agent-with-your-credit-card",
+   "title": "The Agent With Your Credit Card: Spend Mandates, Merchant Fraud, and Disputes When the Buyer Is Software - TianPan.co",
+   "source_type": "forum",
+   "published_at": null,
+   "quote": "A signed Cart Mandate proves what the agent bought; it cannot prove the purchase matched what the user meant.",
+   "statement": "Even signed mandates cannot prove the purchase matched user intent, which limits how decisive a mandate record is.",
+   "kind": "inference",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-35",
+   "url": "https://checkout.com/blog/chargebacks-in-agentic-commerce-how-merchants-can-stay-ahead",
+   "title": "Chargebacks in agentic commerce: How merchants can stay ahead",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "That means capturing agent identifiers and signatures, logging mandate creation and approval events, and tracking execution signals, including session tokens and orchestration traces.",
+   "statement": "Checkout.com lists the evidence elements agent disputes need: agent IDs, signatures, mandate events and execution traces.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced"
+   ],
+   "company_name": "Checkout.com"
+  },
+  {
+   "ref": "ev-36",
+   "url": "https://www.chargeflow.io/blog/ai-agent-chargeback-liability",
+   "title": "AI Agent Chargeback Liability: Who Pays & How to Prepare",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "OpenAI's production guidance for its Agentic Commerce Protocol says the merchant selling the goods and taking payment is the merchant of record, that OpenAI and payment service providers are not, and that the merchant manages refunds and chargebacks.",
+   "statement": "Agent protocols keep chargebacks with the merchant of record, not the agent platform.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "high",
+   "unknown_ids": [
+    "6adb8009-c393-406c-b5ac-84311d84940a"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-37",
+   "url": "https://realeconomy.rsmus.com/from-ai-assisted-discovery-to-purchase-closing-the-consumer-trust-gap/",
+   "title": "From AI-assisted discovery to purchase: Closing the consumer trust gap",
+   "source_type": "industry_publication",
+   "published_at": null,
+   "quote": "Roughly a quarter of shoppers use AI to decide what to buy, while almost none currently plan to purchase through them.",
+   "statement": "Consumers use AI for research but almost none plan to buy through agents yet.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "high",
+   "unknown_ids": [
+    "6fa35482-369e-4a9b-98b6-ee104d871730"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-38",
+   "url": "https://worldpay.com/insights/articles/agentic-commerce-liability-is-still-being-written",
+   "title": "Agentic commerce liability is still being written | Insights | Worldpay",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Our Ravelin-powered agent detection identifies agent transactions today, with scoring and dispute evidence capabilities expected to become increasingly important as agentic commerce matures.",
+   "statement": "Worldpay (Global Payments) is building agent detection and dispute-evidence capabilities into acquiring.",
+   "kind": "fact",
+   "stance": "contradicts",
+   "relevance": "medium",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103",
+    "00976591-329e-4bcd-a8ef-a529503d15fd"
+   ],
+   "company_name": "Worldpay"
+  },
+  {
+   "ref": "ev-39",
+   "url": "https://originstamp.com/en/blog/reader/agentic-commerce-chargeback-verifiable-records",
+   "title": "Agentic Commerce Chargebacks: Verifiable Records",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "The Mandate Log, a timestamped, cryptographically verifiable record of the agent's authorization state at the moment of each transaction, is emerging as the primary piece of representment evidence in agentic chargeback disputes.",
+   "statement": "A timestamping vendor pitches verifiable mandate logs as representment evidence.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced",
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": "OriginStamp"
+  },
+  {
+   "ref": "ev-40",
+   "url": "https://www.chargeflow.io/blog/agentic-commerce-regulation-what-merchants-need-to-know",
+   "title": "Agentic Commerce Regulation 2026: What Merchants Must Know",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Chargeflow Automation collects evidence and submits it for you, with a 4X ROI guarantee and a 25% fee only on",
+   "statement": "Chargeflow automates chargeback evidence collection and submission.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": "Chargeflow"
+  },
+  {
+   "ref": "ev-41",
+   "url": "https://paymanai.com/",
+   "title": "Payman AI | Agentic AI That Does the Banking. Under Your Control.",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "You define what the agent can and cannot do. Every action logged, every decision traceable.",
+   "statement": "Payman, a founder-listed agent-payment startup, now sells permissioned, logged AI banking agents to banks and credit unions rather than merchant dispute tooling.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": "Payman"
+  },
+  {
+   "ref": "ev-42",
+   "url": "https://ap2-protocol.org/",
+   "title": "Agent Payments Protocol (AP2)",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Clear Transaction Accountability: AP2 provides a non-repudiable, cryptographic audit trail for every transaction, aiding in dispute resolution and building confidence for all participants.",
+   "statement": "Google's AP2 claims a cryptographic audit trail for dispute resolution.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": "Google"
+  },
+  {
+   "ref": "ev-43",
+   "url": "https://www.chargeback.io/blog/agentic-payments-chargebacks",
+   "title": "Agentic Payments and Chargebacks: A Merchant Guide",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Ethoca and Verifi's alerts reach an agent dispute the same way they reach any other, provided you're enrolled and your descriptor is readable.",
+   "statement": "Existing alert networks (Ethoca, Verifi) already catch agent disputes like any other.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "46418beb-1423-45f6-9091-ee2f1ddc9103"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-44",
+   "url": "https://www.chargeflow.io/case-studies/hexclad",
+   "title": "HexClad Fortifies Black Friday Readiness with Chargeflow, Achieving a 59% Surge in Recovery Rate",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Chargeflow’s automated platform saved HexClad 199 hours",
+   "statement": "Manual chargeback handling cost HexClad roughly 199 hours that automation removed.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6adb8009-c393-406c-b5ac-84311d84940a"
+   ],
+   "company_name": "HexClad"
+  },
+  {
+   "ref": "ev-45",
+   "url": "https://www.chargeflow.io/case-studies/truheight",
+   "title": "TruHeight Recovers $112K in Disputed Revenue and Eliminates Manual Chargeback Work with Chargeflow",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "For TruHeight, managing disputes manually had become increasingly time-consuming and unsustainable to handle in-house.",
+   "statement": "TruHeight found manual dispute handling unsustainable in-house.",
+   "kind": "fact",
+   "stance": "supports",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6adb8009-c393-406c-b5ac-84311d84940a"
+   ],
+   "company_name": "TruHeight"
+  },
+  {
+   "ref": "ev-46",
+   "url": "https://stripe.com/blog/agentic-commerce-suite",
+   "title": "Introducing the Agentic Commerce Suite: A complete solution for selling on AI agents",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Leading brands are already onboarding to the Agentic Commerce Suite, such as URBN (including Anthropologie, Free People, and Urban Outfitters), Etsy, Ashley Furniture, Coach, Kate Spade, Nectar, Revolve, Halara, and Abt Electronics.",
+   "statement": "Named merchants onboarding to Stripe's Agentic Commerce Suite (accepting agent orders).",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "medium",
+   "unknown_ids": [
+    "6fa35482-369e-4a9b-98b6-ee104d871730"
+   ],
+   "company_name": null
+  },
+  {
+   "ref": "ev-47",
+   "url": "https://www.abt.com/",
+   "title": "Abt Electronics",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "© Copyright 1997-2026, Abt Electronics Inc. 1200 N. Milwaukee, Glenview, IL 60025",
+   "statement": "Abt Electronics is located in Glenview, Illinois.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "Abt Electronics"
+  },
+  {
+   "ref": "ev-48",
+   "url": "https://www.truheightvitamins.com/",
+   "title": "TruHeight® | Vitamins & Daily Nutrition for Kids & Teens",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Vanilla Chip LLC 5573 San Florentine Ave Las Vegas, NV 89141",
+   "statement": "TruHeight's operating company is in Las Vegas, Nevada.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "TruHeight"
+  },
+  {
+   "ref": "ev-49",
+   "url": "https://www.chargeflow.io/case-studies",
+   "title": "Chargeflow Customers are Happy Customers | Chargeflow Case Studies",
+   "source_type": "company_site",
+   "published_at": null,
+   "quote": "Enterprise Health & Beauty The Beard Club read story",
+   "statement": "The Beard Club is listed as a Chargeflow enterprise customer.",
+   "kind": "fact",
+   "stance": "neutral",
+   "relevance": "low",
+   "unknown_ids": [],
+   "company_name": "The Beard Club"
+  }
+ ],
+ "unknown_findings": [
+  {
+   "unknown_id": "00976591-329e-4bcd-a8ef-a529503d15fd",
+   "status": "answered",
+   "summary": [
+    {
+     "statement": "Merchants currently cannot distinguish agent disputes in dispute data: they are filed under existing reason codes (mainly Visa 10.4, 13.1, 13.3) and nothing labels them as agent-made.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-03"
+     ]
+    },
+    {
+     "statement": "Public Visa and Mastercard dispute guides have no agent-specific reason code and no mandate-content field.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-02"
+     ]
+    },
+    {
+     "statement": "Non-fraud agent disputes (agent misunderstood an instruction or acted outside scope) are dispute claims with no clean liability answer today.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-07",
+      "ev-01"
+     ]
+    },
+    {
+     "statement": "Acquirers such as Worldpay are starting to detect agent transactions at the gateway, which could give merchants an agent flag upstream of the dispute.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-38"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "6adb8009-c393-406c-b5ac-84311d84940a",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "By default the merchant bears the loss on a disputed agent purchase, as merchant of record, unless it wins representment or a tokenized network flow shifts fraud liability to the issuer.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-05",
+      "ev-36",
+      "ev-15"
+     ]
+    },
+    {
+     "statement": "For properly authenticated, tokenized agent payments, fraud-claim risk generally sits with the issuer, which narrows merchant exposure to non-fraud disputes.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-06"
+     ]
+    },
+    {
+     "statement": "General chargeback labour costs are visible: one merchant paid a freelancer $40 per case, another saved 199 hours by automating.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-27",
+      "ev-44",
+      "ev-45"
+     ]
+    },
+    {
+     "statement": "No public data quantifies revenue or labour lost to agent-initiated disputes specifically; the monthly cost per merchant remains unknown.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-19"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "99c10405-e67c-4d19-bbd2-197dee86bdeb",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "In the mid-market merchants found, chargebacks were owned by customer-experience or customer-support managers (or an outsourced freelancer), not a Head of Fraud.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-28",
+      "ev-29"
+     ]
+    },
+    {
+     "statement": "The existing paid budget line is chargeback automation sold on contingency (Chargeflow: 25% of recovered amounts).",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-30"
+     ]
+    },
+    {
+     "statement": "On the issuer/processor side, dedicated dispute managers run dispute data, BPO vendors and tooling.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-31"
+     ]
+    },
+    {
+     "statement": "The hypothesis' buyer (Head of Fraud/VP Payments) may be wrong for mid-market merchants; CX/operations may hold this budget.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-28",
+      "ev-29"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "5bab3f70-b9e9-4e0b-b6f4-c9d11c1dcced",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Dispute experts and PSPs point to the signed mandate as the deciding evidence: without it, issuers tend to side with the cardholder.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-08",
+      "ev-04"
+     ]
+    },
+    {
+     "statement": "Checkout.com lists the elements to capture: agent identifiers and signatures, mandate creation and approval events, and execution signals such as session tokens and orchestration traces.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-35"
+     ]
+    },
+    {
+     "statement": "Networks have not published agent-specific evidence requirements: no mandate field, no decision-trace representment standard.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-02"
+     ]
+    },
+    {
+     "statement": "AP2 defines no mandate retention or archive, and most consent records still do not reach merchants automatically.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-24",
+      "ev-22"
+     ]
+    },
+    {
+     "statement": "A signed mandate proves what was bought, not that it matched what the user meant, so mandate evidence may not decide 'wrong item within mandate' disputes.",
+     "kind": "inference",
+     "evidence_ids": [
+      "ev-34"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "46418beb-1423-45f6-9091-ee2f1ddc9103",
+   "status": "answered",
+   "summary": [
+    {
+     "statement": "Merchants handle agent disputes with their existing chargeback stack: alert networks (Ethoca, Verifi) and automation vendors such as Chargeflow.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-43",
+      "ev-40"
+     ]
+    },
+    {
+     "statement": "Incumbents are building the mandate-evidence layer themselves: Mastercard Verifiable Intent, Google AP2, PayPal's AP2-based dispute workflow, Stripe scoped tokens, Chargebacks911 UDMS consent trails and Worldpay agent detection.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-23",
+      "ev-42",
+      "ev-25",
+      "ev-26",
+      "ev-12",
+      "ev-38"
+     ]
+    },
+    {
+     "statement": "American Express sidesteps the problem on its network by covering erroneous registered-agent purchases.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-11"
+     ]
+    }
+   ]
+  },
+  {
+   "unknown_id": "6fa35482-369e-4a9b-98b6-ee104d871730",
+   "status": "partially_answered",
+   "summary": [
+    {
+     "statement": "Agent purchase volume is still small: UK/US merchants report about 3% of transactions involve AI agents, and almost no shoppers plan to buy through agents yet.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-17",
+      "ev-37"
+     ]
+    },
+    {
+     "statement": "ChatGPT Instant Checkout was retired in March 2026 after fewer than about 30 Shopify merchants turned it on, and in most implementations the user still confirms the final purchase.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-18",
+      "ev-21"
+     ]
+    },
+    {
+     "statement": "There is no public data on how often agent purchases are disputed, and such disputes are not labelled in dispute systems.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-19",
+      "ev-03"
+     ]
+    }
+   ]
+  }
+ ],
+ "hypothesis_update": {
+  "problem": "Merchants accepting AI-agent-initiated orders may face non-fraud disputes ('my agent bought the wrong thing') that land under ordinary reason codes, with no standard mandate record reaching the merchant; volume is very small today.",
+  "users": "Customer-experience/support and payments-operations staff who handle chargebacks at e-commerce merchants; dispute operations at PSPs.",
+  "buyer": "At mid-market merchants, often the CX/operations lead who owns chargeback tooling; at PSPs and acquirers, dispute/risk product owners.",
+  "decision_maker": "Head of operations/finance at mid-market merchants; head of disputes or risk product at PSPs and acquirers.",
+  "economic_value": "Win non-fraud agent disputes and cut manual chargeback labour (merchants already pay per case or a 25% contingency on recoveries); unquantified for agent disputes today.",
+  "geography": "United States and global markets.",
+  "industry": "Financial Technology and E-commerce Payments.",
+  "rationale": [
+   {
+    "statement": "Agent disputes are filed under existing codes and are not labelled as agent-made.",
+    "kind": "fact",
+    "evidence_ids": [
+     "ev-03",
+     "ev-02"
+    ]
+   },
+   {
+    "statement": "At the mid-market merchants found, chargebacks were owned by CX/support managers or freelancers.",
+    "kind": "fact",
+    "evidence_ids": [
+     "ev-28",
+     "ev-29"
+    ]
+   },
+   {
+    "statement": "Agent transaction volume is small today (about 3% of transactions per merchants surveyed).",
+    "kind": "fact",
+    "evidence_ids": [
+     "ev-17",
+     "ev-18"
+    ]
+   }
+  ]
+ },
+ "new_unknowns": [
+  {
+   "question": "Will card networks (Mastercard Verifiable Intent, AP2 via FIDO) deliver mandate records to merchants and PSPs directly, leaving no room for a neutral cross-protocol record?",
+   "category": "alternatives",
+   "priority": "high"
+  },
+  {
+   "question": "What share of agent-initiated disputes are 'wrong item within mandate' cases that a mandate record cannot win?",
+   "category": "urgency",
+   "priority": "medium"
+  }
+ ],
+ "competitors": [
+  {
+   "ref": "comp-01",
+   "name": "Chargebacks911 (UDMS)",
+   "url": "https://chargebacks911.com",
+   "kind": "direct",
+   "description": "Chargeback management firm whose Unified Dispute Management System markets capture of agent consent and permission trails with timestamped action records.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-12",
+    "ev-13"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-02",
+   "name": "Mastercard Verifiable Intent",
+   "url": "https://www.mastercard.com",
+   "kind": "indirect",
+   "description": "Open-source, protocol-agnostic specification linking consumer identity, instructions and transaction outcome into a tamper-resistant record for disputes; part of Agent Pay.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-23",
+    "ev-22"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-03",
+   "name": "Google Agent Payments Protocol (AP2)",
+   "url": "https://ap2-protocol.org/",
+   "kind": "indirect",
+   "description": "Open protocol using signed mandates as a cryptographic audit trail for agent payments and disputes.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-42",
+    "ev-24"
+   ],
+   "sentiment": [
+    {
+     "statement": "A payments commentator criticises AP2 for defining no mandate retention, archive or cross-device access, so evidence may not persist to dispute time.",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-24"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-04",
+   "name": "Stripe Agentic Commerce Suite / Shared Payment Tokens",
+   "url": "https://stripe.com",
+   "kind": "indirect",
+   "description": "Agent checkout for merchants with seller-, time- and amount-scoped tokens meant to reduce disputes; merchant still manages disputes as merchant of record.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-26",
+    "ev-46"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-05",
+   "name": "American Express Agent Purchase Protection",
+   "url": "https://www.americanexpress.com",
+   "kind": "indirect",
+   "description": "Network-level commitment to cover erroneous purchases by registered agents, removing the dispute for cardholders on Amex.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-11"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-06",
+   "name": "Worldpay (Ravelin agent detection)",
+   "url": "https://worldpay.com",
+   "kind": "indirect",
+   "description": "Acquirer detecting agent transactions and building dispute-evidence capabilities for merchants.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-38",
+    "ev-09"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-07",
+   "name": "PayPal (AP2 in Seller Protection)",
+   "url": "https://developer.paypal.com",
+   "kind": "indirect",
+   "description": "Plans to add AP2 mandates into its dispute and Seller Protection workflows as dispute-grade evidence.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-25"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-08",
+   "name": "Chargeflow",
+   "url": "https://www.chargeflow.io",
+   "kind": "indirect",
+   "description": "Chargeback automation (evidence collection and submission, alerts) for e-commerce merchants; publishes agentic-commerce evidence guidance.",
+   "pricing_note": "25% fee on recovered amounts only (pricing page).",
+   "evidence_refs": [
+    "ev-40",
+    "ev-30",
+    "ev-27",
+    "ev-44"
+   ],
+   "sentiment": [
+    {
+     "statement": "Case-study customers praise removing manual dispute work (e.g. 199 hours saved at HexClad).",
+     "kind": "fact",
+     "evidence_ids": [
+      "ev-44",
+      "ev-45"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "comp-09",
+   "name": "Ethoca / Verifi alert networks",
+   "url": "https://www.chargeback.io/blog/agentic-payments-chargebacks",
+   "kind": "indirect",
+   "description": "Pre-dispute alert networks that catch agent disputes the same way as any other, but capture no mandate.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-43",
+    "ev-04"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-10",
+   "name": "OriginStamp",
+   "url": "https://originstamp.com",
+   "kind": "direct",
+   "description": "Blockchain timestamping vendor pitching verifiable mandate logs as representment evidence for agentic chargebacks.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-39"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-11",
+   "name": "Manual handling by CX staff or freelancers",
+   "url": "https://www.chargeflow.io/case-studies/obvi",
+   "kind": "manual",
+   "description": "Mid-market merchants often have a customer-support/CX manager or a paid freelancer fight chargebacks case by case.",
+   "pricing_note": "One merchant paid a freelancer $40 per chargeback case.",
+   "evidence_refs": [
+    "ev-27",
+    "ev-28",
+    "ev-29"
+   ],
+   "sentiment": []
+  },
+  {
+   "ref": "comp-12",
+   "name": "Payman",
+   "url": "https://paymanai.com/",
+   "kind": "indirect",
+   "description": "Founder-listed agent-payment startup; its site now sells permissioned, logged AI banking agents to banks and credit unions, not merchant dispute tooling.",
+   "pricing_note": null,
+   "evidence_refs": [
+    "ev-41"
+   ],
+   "sentiment": []
+  }
+ ],
+ "current_solutions": [
+  {
+   "statement": "Merchants fight agent disputes with their existing chargeback process under ordinary reason codes, using alerts and automation vendors.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-03",
+    "ev-43",
+    "ev-40"
+   ]
+  },
+  {
+   "statement": "Mid-market merchants often handle chargebacks manually through a CX/support manager or a freelancer paid per case.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-27",
+    "ev-28",
+    "ev-29"
+   ]
+  },
+  {
+   "statement": "Networks and protocols are adding mandate and intent records (AP2, Mastercard Verifiable Intent, Stripe scoped tokens), and Amex absorbs registered-agent errors itself.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-42",
+    "ev-23",
+    "ev-26",
+    "ev-11"
+   ]
+  },
+  {
+   "statement": "Dispute vendors (Chargebacks911) and acquirers (Worldpay) are adding agent consent trails and agent detection to existing products.",
+   "kind": "fact",
+   "evidence_ids": [
+    "ev-12",
+    "ev-38"
+   ]
+  }
+ ],
+ "companies": [
+  {
+   "ref": "co-01",
+   "name": "Abt Electronics",
+   "website": "https://www.abt.com",
+   "location": "Glenview, IL",
+   "industry": "Appliance and electronics retail (online and store)",
+   "description": "US electronics retailer named as onboarding to Stripe's Agentic Commerce Suite, so likely to receive agent-initiated orders.",
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-47"
+   },
+   "technologies": [
+    "Stripe Agentic Commerce Suite"
+   ],
+   "evidence_refs": [
+    "ev-47",
+    "ev-46"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "US online retailer with high-ticket goods; size not stated on fetched pages.",
+     "evidence_refs": [
+      "ev-47"
+     ]
+    },
+    "technology_fit": {
+     "rating": 4,
+     "rationale": "Onboarding to Stripe's Agentic Commerce Suite.",
+     "evidence_refs": [
+      "ev-46"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-02",
+   "name": "Nectar",
+   "website": "https://www.nectarsleep.com",
+   "location": null,
+   "industry": "DTC mattresses",
+   "description": "DTC mattress brand named as onboarding to Stripe's Agentic Commerce Suite.",
+   "technologies": [
+    "Stripe Agentic Commerce Suite"
+   ],
+   "evidence_refs": [
+    "ev-46"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "E-commerce merchant; location and size not verified.",
+     "evidence_refs": [
+      "ev-46"
+     ]
+    },
+    "technology_fit": {
+     "rating": 4,
+     "rationale": "Onboarding to Stripe's Agentic Commerce Suite.",
+     "evidence_refs": [
+      "ev-46"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-03",
+   "name": "Halara",
+   "website": "https://www.thehalara.com",
+   "location": null,
+   "industry": "Online activewear",
+   "description": "Online apparel brand named as onboarding to Stripe's Agentic Commerce Suite.",
+   "technologies": [
+    "Stripe Agentic Commerce Suite"
+   ],
+   "evidence_refs": [
+    "ev-46"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "E-commerce merchant; location and size not verified.",
+     "evidence_refs": [
+      "ev-46"
+     ]
+    },
+    "technology_fit": {
+     "rating": 4,
+     "rationale": "Onboarding to Stripe's Agentic Commerce Suite.",
+     "evidence_refs": [
+      "ev-46"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-04",
+   "name": "Revolve",
+   "website": "https://www.revolve.com",
+   "location": null,
+   "industry": "Online fashion retail",
+   "description": "Online fashion retailer named as onboarding to Stripe's Agentic Commerce Suite; may exceed the ICP size band (not verified).",
+   "technologies": [
+    "Stripe Agentic Commerce Suite"
+   ],
+   "evidence_refs": [
+    "ev-46"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "E-commerce merchant; size and location not verified from fetchable pages.",
+     "evidence_refs": [
+      "ev-46"
+     ]
+    },
+    "technology_fit": {
+     "rating": 4,
+     "rationale": "Onboarding to Stripe's Agentic Commerce Suite.",
+     "evidence_refs": [
+      "ev-46"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-05",
+   "name": "HexClad",
+   "website": "https://hexclad.com",
+   "location": null,
+   "industry": "DTC cookware",
+   "description": "DTC cookware brand that uses chargeback automation (Chargeflow) and had a manual dispute workload.",
+   "technologies": [
+    "Chargeflow"
+   ],
+   "evidence_refs": [
+    "ev-44"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "High-volume DTC merchant with chargeback workload.",
+     "evidence_refs": [
+      "ev-44"
+     ]
+    },
+    "technology_fit": {
+     "rating": 3,
+     "rationale": "Uses chargeback management software (Chargeflow).",
+     "evidence_refs": [
+      "ev-44"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-06",
+   "name": "TruHeight",
+   "website": "https://www.truheightvitamins.com",
+   "location": "Las Vegas, NV",
+   "industry": "DTC children's nutrition",
+   "description": "US DTC nutrition brand that found manual dispute handling unsustainable and automated it.",
+   "in_target_geography": {
+    "value": true,
+    "evidence_ref": "ev-48"
+   },
+   "technologies": [
+    "Chargeflow"
+   ],
+   "evidence_refs": [
+    "ev-48",
+    "ev-45"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "US DTC merchant with recurring dispute workload.",
+     "evidence_refs": [
+      "ev-45",
+      "ev-48"
+     ]
+    },
+    "technology_fit": {
+     "rating": 3,
+     "rationale": "Uses chargeback management software (Chargeflow).",
+     "evidence_refs": [
+      "ev-45"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-07",
+   "name": "Obvi",
+   "website": "https://myobvi.com",
+   "location": null,
+   "industry": "DTC health and wellness supplements",
+   "description": "High-volume supplement merchant that paid a freelancer per chargeback before automating; CX manager owned disputes.",
+   "technologies": [
+    "Chargeflow"
+   ],
+   "evidence_refs": [
+    "ev-27",
+    "ev-28"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "DTC merchant with friendly-fraud chargeback volume.",
+     "evidence_refs": [
+      "ev-27"
+     ]
+    },
+    "technology_fit": {
+     "rating": 3,
+     "rationale": "Uses chargeback management software (Chargeflow).",
+     "evidence_refs": [
+      "ev-27"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-08",
+   "name": "Little Spoon",
+   "website": "https://www.littlespoon.com",
+   "location": null,
+   "industry": "DTC baby and kids food subscription",
+   "description": "Subscription DTC food brand whose chargebacks were handled by a single support manager before automation.",
+   "technologies": [
+    "Chargeflow"
+   ],
+   "evidence_refs": [
+    "ev-29"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 3,
+     "rationale": "Subscription DTC merchant with manual dispute pain.",
+     "evidence_refs": [
+      "ev-29"
+     ]
+    },
+    "technology_fit": {
+     "rating": 3,
+     "rationale": "Uses chargeback management software (Chargeflow).",
+     "evidence_refs": [
+      "ev-29"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  },
+  {
+   "ref": "co-09",
+   "name": "The Beard Club",
+   "website": "https://thebeardclub.com",
+   "location": null,
+   "industry": "DTC men's grooming",
+   "description": "DTC grooming brand listed as a Chargeflow enterprise customer.",
+   "technologies": [
+    "Chargeflow"
+   ],
+   "evidence_refs": [
+    "ev-49"
+   ],
+   "assessments": {
+    "company_fit": {
+     "rating": 2,
+     "rationale": "DTC merchant; size and location not verified.",
+     "evidence_refs": [
+      "ev-49"
+     ]
+    },
+    "technology_fit": {
+     "rating": 3,
+     "rationale": "Uses chargeback management software (Chargeflow).",
+     "evidence_refs": [
+      "ev-49"
+     ]
+    },
+    "other_signals": {
+     "rating": 0,
+     "rationale": "No evidence found.",
+     "evidence_refs": []
+    }
+   },
+   "contacts": []
+  }
+ ]
+}
