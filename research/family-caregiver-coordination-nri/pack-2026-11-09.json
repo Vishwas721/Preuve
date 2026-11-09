@@ -1,0 +1,2168 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "cc53664f-b7db-4dc7-87c9-831404c482a6",
+    "researcher": "claude-code",
+    "started_at": "2026-11-09T09:00:00Z",
+    "finished_at": "2026-11-09T12:00:00Z",
+    "queries": [
+      "NRI parents in India elderly care coordination from abroad reddit",
+      "caregiving in the US 2025 AARP report care coordination hours",
+      "CareZone shutting down app caregivers",
+      "Emoha elder care NRI subscription plan price",
+      "NRI children abroad aging parents India loneliness emergency hospital news survey",
+      "employer caregiving benefits survey 2025 percent of employers offer caregiver support Wellthy Cariloop",
+      "Lotsa Helping Hands shutting down caregiving app",
+      "siblings coordinating care aging parent group text spreadsheet frustrated forum",
+      "caregivers rarely use caregiving apps study low adoption technology family caregivers survey (contradiction)",
+      "Anvayaa NRI elder care revenue customers funding Inc42",
+      "Wellthy caregiving benefit care coordinator employers family care app",
+      "\"care coordination\" family caregivers most stressful task survey",
+      "caregiving app startup shuts down 2024 2025 family caregivers app discontinued (contradiction)",
+      "NRI parents India WhatsApp group siblings coordinate caretaker medicines doctor appointments",
+      "ianacare app family caregivers coordinate care team employers",
+      "benefits careers page elder care caregiving support employees Wellthy OR Cariloop OR Care.com",
+      "company careers benefits caregiver support aging parents employee benefit page",
+      "Dow announces caregiver benefits Cariloop North American employees",
+      "newsroom company expands benefits caregiving elder care employees 2025",
+      "Wellthy employer benefits page careers caregiving support employees parents",
+      "site:.edu human resources benefits Wellthy caregiving support employees",
+      "site:.edu human resources benefits Cariloop OR ianacare caregiver support eldercare employees",
+      "corporate.bestbuy.com caregiving benefit Wellthy employees",
+      "university HR caregiving benefit Bright Horizons OR Homethrive OR Wellthy eldercare 2025",
+      "Bank of America newsroom caregiving benefits employees elder care"
+    ],
+    "notes": "Primary ICP from context is US working adults reached via employer caregiver benefits, so 5c prospects are US employers/insurers that already buy a caregiving benefit (they evidence the B2B2C buyer but are already served by Wellthy/Cariloop/Bright Horizons). Only 16 prospects found (target was 20+); only 3 have a named contact on their own pages; no size estimates recorded because no company's own page stated headcount. Several useful sources were unfetchable by Preuve (care.samarth.community and reddit via robots.txt, NCBI/PMC, caring.com, caringvillage.com, Columbia/Harvard/Wellesley HR pages) and were left out. A widely repeated '2024 ASHA survey' NRI statistic appears only on a vendor blog and was not used. No public evidence found for CareZone's shutdown (founder-listed risk), for Hera, or for Samarth (site blocks crawler). Apollo NRI 360 prices are shown without a billing period."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://www.aarp.org/press/releases/2025-07-24-new-report-reveals-crisis-point-for-americas-63-million-family-caregivers.html",
+      "title": "New Report Reveals Crisis Point for America's 63 million Family Caregivers (AARP)",
+      "source_type": "report",
+      "published_at": "2025-07-24",
+      "quote": "63 million Americans—nearly 1 in 4 adults—provided ongoing care for an adult or a child with a complex medical condition or a disability in the past year … caregivers who are paying, on average, roughly $7,200 a year out-of-pocket in caregiving expenses",
+      "statement": "AARP/NAC Caregiving in the U.S. 2025: 63 million US caregivers, paying on average about $7,200 a year out of pocket.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "dd629a8f-592e-4efc-99f4-47a84a13d2d9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://www.aarp.org/press/releases/2025-07-24-new-report-reveals-crisis-point-for-americas-63-million-family-caregivers.html",
+      "title": "New Report Reveals Crisis Point for America's 63 million Family Caregivers (AARP)",
+      "source_type": "report",
+      "published_at": "2025-07-24",
+      "quote": "Six in 10 family caregivers are employed on top of their family caregiving responsibilities; half of them report experiencing work disruptions like going in late or leaving early to care for a loved one. More family caregivers than ever report having access to family caregiving related benefits",
+      "statement": "60% of US caregivers are employed; half of those report work disruptions, and access to employer caregiving benefits is rising.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://careforamma.pages.dev/guides/elder-care-services-comparison/",
+      "title": "Anvayaa vs Emoha vs Samarth 2026 — Honest NRI Comparison (CareForAmma)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Before spending ₹5,000–25,000/month on elder care services … Pricing typically ranges from Rs 5,000 to Rs 25,000 per month depending on the service level and provider.",
+      "statement": "An independent NRI guide puts Indian elder-care service subscriptions at roughly Rs 5,000-25,000 per month.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "dd629a8f-592e-4efc-99f4-47a84a13d2d9",
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://careforamma.pages.dev/guides/elder-care-services-comparison/",
+      "title": "Anvayaa vs Emoha vs Samarth 2026 — Honest NRI Comparison (CareForAmma)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "You probably DO need a paid service if: … There's been a recent fall, hospitalisation, or decline in cognitive function … You've been managing everything yourself from abroad and it's unsustainable",
+      "statement": "The guide lists the triggers for NRI families to buy paid help: a fall, hospitalisation or cognitive decline, or self-managed remote care becoming unsustainable.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b2684bb7-0cd1-492e-9f4d-38e6d9f9db75"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://careforamma.pages.dev/guides/elder-care-services-comparison/",
+      "title": "Anvayaa vs Emoha vs Samarth 2026 — Honest NRI Comparison (CareForAmma)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "You probably DON'T need a paid service if: … A sibling or reliable relative lives nearby and checks in regularly … You can manage doctor appointments and emergencies through your existing network",
+      "statement": "Many NRI families with a nearby sibling or a working local network do not need a paid service at all, which narrows the paying segment.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b2684bb7-0cd1-492e-9f4d-38e6d9f9db75",
+        "89fc2730-8423-475c-a672-d291d26d60aa"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://careforamma.pages.dev/guides/elder-care-services-comparison/",
+      "title": "Anvayaa vs Emoha vs Samarth 2026 — Honest NRI Comparison (CareForAmma)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "a paid elder care service is not a replacement for family involvement — it's an amplifier. … You're still the decision-maker.",
+      "statement": "The NRI child stays the decision-maker when a paid elder-care service is used.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://emoha.com/plans",
+      "title": "Choose the Best Elder Care Plan | Emoha",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Empower Essentials … ₹1,999/month … Dedicated Care Coordinator (Emoha Daughter) … Emoha App access for elders & their adult children … Access to Health Records & Prescriptions included in Empower Essentials",
+      "statement": "Emoha's entry plan (Rs 1,999/month) already bundles a care coordinator, an app for adult children and access to health records and prescriptions.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307",
+        "dd629a8f-592e-4efc-99f4-47a84a13d2d9"
+      ],
+      "company_name": "Emoha"
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://getbelong.com/blog/concierge-services-for-nris/",
+      "title": "Best Concierge Services for NRIs in India (Belong)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "ensuring your elderly parents receive regular medical check-ups, it often requires relying on overburdened relatives or frustrating remote coordination.",
+      "statement": "NRIs commonly rely on overburdened relatives or remote coordination for parents' medical check-ups.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "89fc2730-8423-475c-a672-d291d26d60aa"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://getbelong.com/blog/concierge-services-for-nris/",
+      "title": "Best Concierge Services for NRIs in India (Belong)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Medical concierge catering to all requirements from medical tourism to insurance counselling … 1 month trial - Rs. 21k … Annual subscription - 2-3L",
+      "statement": "A medical concierge used by NRIs (Healync) charges Rs 21k for a one-month trial and Rs 2-3 lakh a year.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "dd629a8f-592e-4efc-99f4-47a84a13d2d9"
+      ],
+      "company_name": "Healync"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://littleindia.com/?p=22169",
+      "title": "NRI Dreams and Parental Nightmares (Little India)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Every year, hundreds of parents of Non Resident Indians die from sudden heart attacks, old age, or other ailments with only friends at their bedside. … In the absence of close family, friends are often the first line of support for aging parents.",
+      "statement": "Parents of NRIs often face emergencies with only friends present; friends are the first line of support.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b2684bb7-0cd1-492e-9f4d-38e6d9f9db75",
+        "89fc2730-8423-475c-a672-d291d26d60aa"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://nripulse.com/has-distance-become-thegreatest-divide-between-diaspora-children-and-their-parents/",
+      "title": "Has Distance Become the Greatest Divide Between Diaspora Children and their Parents? (NRI Pulse)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Children who’ve settled abroad also consider monthly remittances, frequent video calls, and emergency support a form of closeness. … elderly parents with migrant children are about 5% more likely to be depressed (17% compared to 12%) than those whose children live with them",
+      "statement": "NRI children support parents through remittances, video calls and emergency support; parents with migrant children show higher depression rates (BKPAI).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "89fc2730-8423-475c-a672-d291d26d60aa"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://nriinformation.com/nri-info/parents-abroad-or-elder-care-india",
+      "title": "Bring parents abroad or care for them in India? (NRIinformation)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "a live-in attendant runs about ₹15,000 to ₹50,000 a month, assisted living roughly ₹25,000 to ₹1,00,000, paid from an NRO (Non-Resident Ordinary) account. … Remote, dependent on a trusted local relative or a paid care manager as your eyes on the ground.",
+      "statement": "A live-in attendant in India costs about Rs 15,000-50,000 a month, typically paid by the NRI from an NRO account; oversight depends on a local relative or paid care manager.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "dd629a8f-592e-4efc-99f4-47a84a13d2d9",
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3",
+        "89fc2730-8423-475c-a672-d291d26d60aa"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://tennews.in/how-nris-can-ensure-proper-care-for-their-parents-in-india/",
+      "title": "How NRIs Can Ensure Proper Care for Their Parents in India (TenNews)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Monthly costs for basic care range from INR 15,000–30,000; full-time nursing care can reach INR 40,000–80,000 or more.",
+      "statement": "Basic care for parents in India costs INR 15,000-30,000 a month; full-time nursing INR 40,000-80,000+.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "dd629a8f-592e-4efc-99f4-47a84a13d2d9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://tennews.in/how-nris-can-ensure-proper-care-for-their-parents-in-india/",
+      "title": "How NRIs Can Ensure Proper Care for Their Parents in India (TenNews)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Time zone gaps make real-time communication difficult, especially during emergencies that occur mid-workday abroad. … Parents may feel abandoned and hide health concerns to avoid worrying their children.",
+      "statement": "Time zones and parents hiding health concerns make remote coordination hard for NRIs.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7a84c1e8-8ecf-41b9-a945-c68600970da7",
+        "b2684bb7-0cd1-492e-9f4d-38e6d9f9db75"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://cariloop.com/blog/the-data-is-clear-caregiving-support-is-a-top-requested-employee-benefit",
+      "title": "Caregiving Benefits: Meeting the Real-Life Needs of Today's Workforce (Cariloop)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Yet close to half report having no caregiving benefits at all. … In the past five years, adoption of caregiving benefits has grown 177% among employers.",
+      "statement": "Vendor-reported: about half of employees lack caregiving benefits, while employer adoption grew 177% in five years.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Cariloop"
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.voya.com/article/caregivers-work-progress-made-pressures-persist",
+      "title": "Caregivers at work: Progress made, pressures persist (Voya)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Caregivers in our study reported average monthly caregiving expenses of nearly $1,000.",
+      "statement": "Employed US caregivers report nearly $1,000 a month in caregiving expenses (Voya Cares survey, 2026).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "dd629a8f-592e-4efc-99f4-47a84a13d2d9"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.aarp.org/caregiving/life-balance/siblings-competing-for-control/",
+      "title": "How Siblings Can Stop Competing for Caregiving Control (AARP)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Whether it was scheduling medical appointments or home health aides, no caregiving choice appeared too insignificant for them to debate with her and each other. … The more relatives who are involved in caregiving, though, the greater the likelihood of conflicts and power struggles.",
+      "statement": "Sibling caregiving teams frequently fight over appointments and aides; more relatives means more conflict.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7a84c1e8-8ecf-41b9-a945-c68600970da7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://healthjournalism.org/blog/2016/06/study-caregivers-want-tech-support-but-adoption-rates-low/",
+      "title": "Study: Caregivers want tech support, but adoption rates low (AHCJ)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "only about seven percent of respondents in a recent national survey actually use available caregiving technology. … it doesn’t seem there’s a Candy Crush for medication adherence yet",
+      "statement": "AARP's study found only about 7% of caregivers used caregiving technology (2016); engagement is the unsolved problem.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://dhinsights.org/news/hospitals-and-startups-are-building-digital-tools-for-family-caregivers",
+      "title": "Hospitals and startups are building digital tools for family caregivers (Digital Health Insights)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "More than half of caregivers (55%) use one or more types of technology to manage the demands of care coordination, health monitoring and routine management, according to a 2026 report from AARP. … Scheduling assistants: 9%",
+      "statement": "A 2026 AARP report: 55% of caregivers use some tech, but only 9% use scheduling assistants.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307",
+        "89fc2730-8423-475c-a672-d291d26d60aa"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://thesouthfirst.com/health/interview-india-is-ageing-faster-than-its-systems-can-adapt-says-anvayaa-founder-prashanth-reddy/",
+      "title": "Interview: India is ageing faster than its systems can adapt, says Anvayaa founder (South First)",
+      "source_type": "news",
+      "published_at": "2026-03-18",
+      "quote": "The early adopters were almost entirely NRIs, people living abroad who felt guilty about not being there and needed a trusted organisation to fill the gap.",
+      "statement": "Anvayaa's founder says its early paying customers were almost entirely NRIs.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3",
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Anvayaa"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://thesouthfirst.com/health/interview-india-is-ageing-faster-than-its-systems-can-adapt-says-anvayaa-founder-prashanth-reddy/",
+      "title": "Interview: India is ageing faster than its systems can adapt, says Anvayaa founder (South First)",
+      "source_type": "news",
+      "published_at": "2026-03-18",
+      "quote": "WhatsApp is about the outer limit of what most of them are comfortable with. … Knowing more is not always better, and I say that genuinely, not as a technology person.",
+      "statement": "An operator says most elderly parents won't go beyond WhatsApp, and that more visibility doesn't always help families.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "89fc2730-8423-475c-a672-d291d26d60aa"
+      ],
+      "company_name": "Anvayaa"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://thesouthfirst.com/health/interview-india-is-ageing-faster-than-its-systems-can-adapt-says-anvayaa-founder-prashanth-reddy/",
+      "title": "Interview: India is ageing faster than its systems can adapt, says Anvayaa founder (South First)",
+      "source_type": "news",
+      "published_at": "2026-03-18",
+      "quote": "Today, companies like Wipro, Tata Steel, Accenture, and others have integrated our services into their employee benefit programmes.",
+      "statement": "Indian employers already buy Anvayaa's elder care as an employee benefit.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307",
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Anvayaa"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://inc42.com/company/anvayaa-kin-care-pvt-ltd/financials/",
+      "title": "Anvayaa Kin Care Pvt. Ltd Financials (Inc42)",
+      "source_type": "directory",
+      "published_at": null,
+      "quote": "Anvayaa Kin Care Pvt. Ltd's revenue grew 15.5% year-on-year, from ₹12.6 Cr in FY24 to ₹14.6 Cr in FY25.",
+      "statement": "Anvayaa, an NRI-focused elder-care operator founded in 2016, had FY25 revenue of Rs 14.6 crore (about $1.7M), growing 15.5%.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307",
+        "dd629a8f-592e-4efc-99f4-47a84a13d2d9"
+      ],
+      "company_name": "Anvayaa"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://www.trysignalbase.com/news/funding/nila-raises-24m-pre-seed-investment-to-support-nri-families",
+      "title": "Nila Raises $2.4M Pre-Seed Investment to Support NRI Families (Signalbase)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Nila, a company focused on assisting Non-Resident Indians (NRIs) in providing care for their families in their home country, has secured $2,400,000 in investment capital from investors.",
+      "statement": "Nila raised a $2.4M pre-seed for NRI family care.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Nila"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://techcrunch.com/2023/05/11/wellthy-lands-25m-to-grow-its-tech-enabled-care-concierge-business/",
+      "title": "Wellthy lands $25M to help caregivers feel less overwhelmed (TechCrunch)",
+      "source_type": "news",
+      "published_at": "2023-05-11",
+      "quote": "At first, the company offered its services direct to consumer but by 2017, it had started working with employers so businesses could cover the cost of Wellthy as an employee benefit. … Wellthy still does have a private pay business but doesn’t promote it.",
+      "statement": "Wellthy started direct-to-consumer, moved to employer-paid by 2017, and no longer promotes private pay.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3",
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Wellthy"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://techcrunch.com/2023/05/11/wellthy-lands-25m-to-grow-its-tech-enabled-care-concierge-business/",
+      "title": "Wellthy lands $25M to help caregivers feel less overwhelmed (TechCrunch)",
+      "source_type": "news",
+      "published_at": "2023-05-11",
+      "quote": "From 2019 to 2022 the number of lives covered with Wellthy benefits grew from about 100,000 to 2 million.",
+      "statement": "Employer-paid caregiving coordination grew fast: Wellthy covered lives went from 100k to 2M in 2019-2022.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Wellthy"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://wellthy.com/faq",
+      "title": "Frequently Asked Questions | Wellthy",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "availability in 190+ countries … Your Care Circle includes anyone you invite to collaborate on a Care Project—like a spouse, sibling, or trusted friend. … The Medication Tracker allows you to log and manage medications for yourself or a loved one.",
+      "statement": "Wellthy already offers sibling Care Circles, a medication tracker and availability in 190+ countries.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Wellthy"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://research.google/pubs/isolation-in-coordination-challenges-of-caregivers-in-the-usa/",
+      "title": "Isolation in Coordination: Challenges of Caregivers in the USA (Google Research)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "we report results of a large survey study with 2000 informal caregivers in the USA, highlighting the fundamental challenges that different types of caregivers face when coordinating care with others.",
+      "statement": "A 2,000-caregiver US survey documents fundamental challenges coordinating care with others.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7a84c1e8-8ecf-41b9-a945-c68600970da7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://careforamma.pages.dev/guides/parent-hospitalised-india/",
+      "title": "My Parent Is in Hospital in India — What Do I Do From Abroad? (CareForAmma)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Set up a family WhatsApp group immediately — siblings, local relatives, trusted neighbours. One person should be designated the local coordinator.",
+      "statement": "The standard NRI advice for a hospitalisation is a family WhatsApp group plus one local coordinator.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "89fc2730-8423-475c-a672-d291d26d60aa",
+        "b2684bb7-0cd1-492e-9f4d-38e6d9f9db75"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://www.cioncancerclinics.com/targeted-therapy/managing-parent-cancer-treatment-from-abroad/",
+      "title": "Coordinating a Parent's Cancer Care From Abroad (CION Cancer Clinics)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Most NRI families start with good intentions and a large WhatsApp group. Information arrives in fragments. Relatives interpret the same update differently.",
+      "statement": "A Hyderabad cancer provider says NRI families coordinate through large WhatsApp groups where information arrives in fragments.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "89fc2730-8423-475c-a672-d291d26d60aa",
+        "7a84c1e8-8ecf-41b9-a945-c68600970da7"
+      ],
+      "company_name": "CION Cancer Clinics"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://thenodmag.com/content/eldest-daughter-ageing-indian-parents-health-responsibility",
+      "title": "Who put the eldest daughter in charge of everyone's health? (The Nod)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "the reports arrive in the family WhatsApp group in the same mildly ceremonial fashion: several PDFs, a thumbs-up from my father, my mother asking whether someone has looked at them",
+      "statement": "Indian families share parents' medical reports as PDFs in the family WhatsApp group.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "89fc2730-8423-475c-a672-d291d26d60aa"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://lumenlabs-website.pages.dev/article/parentpulse/caring-for-aging-parents-in-india-from-abroad-the-3am-problem/",
+      "title": "Caring for Aging Parents in India From Abroad: The 3 A.M. Problem (ParentPulse)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Group chats are designed for conversation — a flowing stream where nothing is permanent, nothing is overdue, nothing has an owner. … ParentPulse is a two-device care coordination app built for exactly this scenario",
+      "statement": "ParentPulse, a waitlist-stage app, targets the same NRI coordination wedge and argues WhatsApp lacks state.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "ParentPulse"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://apollohomecare.com/nri360-enquiry/",
+      "title": "NRI 360 | Apollo HomeCare",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Price: $1199 … Price - $2499 … Dedicated Helpline for Family Members to get Updates",
+      "statement": "Apollo HomeCare's NRI 360 plans are priced in dollars ($1,199-$2,499; billing period not stated on the page) with family update helplines.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "dd629a8f-592e-4efc-99f4-47a84a13d2d9",
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Apollo HomeCare"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.papa.com/",
+      "title": "Papa | Companion Care for Older Adults & Families",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Try it risk-free: $30/hour with zero long-term commitment or contracts.",
+      "statement": "Papa sells companion visits at $30/hour.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Papa"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.honorcare.com:443/",
+      "title": "Honor | Home Instead",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Since 1994, our global home care brand, Home Instead, has been providing aging adults the quality care they need to age in the comfort of their own homes.",
+      "statement": "Honor now operates Home Instead, a home-care provider.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Honor"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.carepredict.com/",
+      "title": "CarePredict",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CarePredict is the Resident Care Platform that helps innovative operators uncover hidden care gaps across their entire community.",
+      "statement": "CarePredict sells to senior-living operators, not families.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "CarePredict"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://www.khyaal.com/",
+      "title": "Khyaal",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Explore the world with Khyaal Tours … 5,000,000+ … seniors love the Khyaal app",
+      "statement": "Khyaal is a senior lifestyle app (tours, events, digi-gold), not a care-coordination tool.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Khyaal"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://anvayaa.com/",
+      "title": "Anvayaa Elder Care",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "He felt helpless when his mother fell. … I was anxious yet impressed when both my parents had emergencies on the same day. The app showed real-time updates, and anvayaa quickly arranged a reliable hospital attendant. … We assign a dedicated care manager to every family.",
+      "statement": "Anvayaa markets to US-based children after a parent's fall, with a care manager plus an app with real-time updates.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b2684bb7-0cd1-492e-9f4d-38e6d9f9db75",
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Anvayaa"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://ianacare.com/",
+      "title": "ianacare",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Trusted by 50,000+ families, clinicians, and employers nationwide … Everyone used a different platform — email, text, Facebook Messenger.",
+      "statement": "ianacare (employer/insurer channel) cites caregivers scattering across email, text and Messenger before adopting it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307",
+        "89fc2730-8423-475c-a672-d291d26d60aa"
+      ],
+      "company_name": "ianacare"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://lotsahelpinghands.com/",
+      "title": "Lotsa Helping Hands",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The easiest (and free!) way to help those wishing to help others. … My six siblings and I are using it to coordinate and communicate care for our elderly mother in New York state.",
+      "statement": "Free sibling coordination tools already exist (Lotsa Helping Hands).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Lotsa Helping Hands"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://cariloop.com/",
+      "title": "Cariloop",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Cariloop supports over 2 million employees worldwide … Coordinating tasks. Tracking medications. The day-to-day juggle can be overwhelming. Our tools help employees stay organized and on top of it all.",
+      "statement": "Cariloop's employer benefit already covers task coordination and medication tracking for 2M+ employees.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307"
+      ],
+      "company_name": "Cariloop"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://hr.mit.edu/worklife/adult-care/support",
+      "title": "Adult and Elder Care Advising | MIT HR",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Digital tools including an online platform that serves as a secure hub for planning, communication, and coordination of tasks for everyone on the caregiving team.",
+      "statement": "MIT's employer benefit (Bright Horizons) already includes a shared coordination hub for the family care team.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307",
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "MIT"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://www.guardianlife.com/news/release/guardian-and-wellthy-launch-new-partnership-to-support-working-caregivers-and-inspire-wellbeing",
+      "title": "Guardian and Wellthy launch new partnership (Guardian)",
+      "source_type": "company_site",
+      "published_at": "2024-06-10",
+      "quote": "Guardian becomes the first carrier to include caregiving support services in an employer-provided disability insurance policy. … Made available in March 2024, 35%** of Guardian colleagues with a caregiving need have since utilized Wellthy’s services.",
+      "statement": "Insurer Guardian bundles caregiving support into disability policies; 35% of its own caregiving staff used Wellthy.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Guardian Life"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://www.guardianlife.com/news/release/guardian-and-wellthy-launch-new-partnership-to-support-working-caregivers-and-inspire-wellbeing",
+      "title": "Guardian and Wellthy launch new partnership (Guardian)",
+      "source_type": "company_site",
+      "published_at": "2024-06-10",
+      "quote": "said Matt Darula, Head of Product and Digital Offerings at Guardian.",
+      "statement": "Guardian's product head is named on its release.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Guardian Life"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://news.medtronic.com/new-medtronic-benefits-help-sandwich-generation-employees-newsroom",
+      "title": "New Medtronic benefits help 'sandwich generation' employees (Medtronic)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "a new company benefit for U.S. employees called Wellthy. … “We didn’t receive specific requests for this benefit, but we knew more and more of our employees were dealing with this issue,” said Denise King, our vice president of global benefits.",
+      "statement": "Medtronic offers Wellthy to US employees; its VP of global benefits set it up proactively.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Medtronic"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://corporate.dow.com/en-us/news/seek-together/employee-total-rewards-for-caregivers.html",
+      "title": "Total Rewards for caregivers (Dow)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Through Cariloop, our North American employees can access a robust content library and suite of digital tools to help plan and manage the care of their loved ones.",
+      "statement": "Dow offers Cariloop caregiving tools to North American employees.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Dow"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://corporate.dow.com/en-us/news/seek-together/employee-total-rewards-for-caregivers.html",
+      "title": "Total Rewards for caregivers (Dow)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Lisa Bryant, Chief Human Resources Officer",
+      "statement": "Dow's CHRO authored the caregiving benefits post.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Dow"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.phila.gov/2024-10-28-new-backup-care-program-for-employees-wellthy-provides-reliable-support-for-lifes-unexpected-moments/",
+      "title": "New Backup Care Program for Employees: Wellthy (City of Philadelphia)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The City of Philadelphia is committed to supporting employees both at work and at home. … Whether an employee needs emergency backup care for a child, support caring for an aging parent, or assistance navigating healthcare for themselves, Wellthy provides practical, personalized support every step of the way.",
+      "statement": "The City of Philadelphia offers Wellthy to employees, including support caring for aging parents.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "City of Philadelphia"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://www.smu.edu/businessfinance/hr/benefitsandwellness/healthandotherbenefits/cariloop",
+      "title": "Caregiving and Education Support Program (SMU)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "SMU covers this benefit for full-time and part-time faculty and staff. … Out-of-State caregiving and concerns",
+      "statement": "SMU pays for Cariloop for all staff, explicitly including out-of-state caregiving.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Southern Methodist University"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://cardinalatwork.stanford.edu/well-being/elder-care-caregiving/back-elder-care",
+      "title": "Back-Up Elder Care (Stanford Cardinal at Work)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Benefits-eligible faculty and staff can access high-quality temporary in-home care for adult and elder relatives for up to 10 days every year. … Care options are available nationwide.",
+      "statement": "Stanford provides subsidized back-up elder care nationwide.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Stanford University"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://your.yale.edu/youryale/2026-03-23-care-you-trust",
+      "title": "Care you trust (Yale)",
+      "source_type": "company_site",
+      "published_at": "2026-03-23",
+      "quote": "Yale University offers back-up care through Bright Horizons to all benefit-eligible employees. … It can also be used to find care for a parent or adult loved one who needs care in their home anywhere throughout the U.S.",
+      "statement": "Yale provides back-up care that covers parents anywhere in the US.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Yale University"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://www.hr.upenn.edu/PennHR/wellness-worklife/family-care",
+      "title": "Caring for Your Family (Penn HR)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Access child and elder care benefits and support on Penn's Bright Horizons portal.",
+      "statement": "Penn provides elder care benefits via Bright Horizons.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "University of Pennsylvania"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://hr.virginia.edu/benefits/uva-dependent-care-resources/uva-provided-caregiving-resources",
+      "title": "Caregiving Resources Provided by UVA and UPG",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Care for any age from infant to elderly … dependents do not need to reside in the employee’s home",
+      "statement": "UVA's back-up care covers elderly dependents who don't live with the employee.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "University of Virginia"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://today.umd.edu/family-care-resources-expand-faculty-staff-and-graduate-assistants-39c01fcf-50ce-4e8d-9dc0-fd96d5b05a19",
+      "title": "Family Care Resources Expand for Faculty, Staff and Graduate Assistants (Maryland Today)",
+      "source_type": "company_site",
+      "published_at": "2021-03-29",
+      "quote": "the university has launched a suite of new family care benefits for our employees and graduate assistants, including a comprehensive webpage, a new partnership with Care.com",
+      "statement": "University of Maryland launched family care benefits including Care.com eldercare back-up care (2021).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "University of Maryland"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://corporate.bestbuy.com/2023/introducing-joshin/",
+      "title": "New benefit for Best Buy: introducing Joshin",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Best Buy continually assesses and evolves ways to support our employees’ overall well-being — including those who find themselves in the most important role of all: caregiver.",
+      "statement": "Best Buy frames caregiver support as a benefits priority.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Best Buy"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.investmentnews.com/retirement-planning/mariner-adds-caregiving-support-as-advisors-flag-rising-client-need/267293",
+      "title": "Mariner adds caregiving support as advisors flag rising client need (InvestmentNews)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Mariner, the Overland Park, Kansas-based national wealth management firm, said Monday it has partnered with Cariloop … in the first two weeks after launch, they opened more than 300 caregiving cases for their own families",
+      "statement": "Mariner rolled out Cariloop; advisors opened 300+ caregiving cases in two weeks.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Mariner"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.silicon.co.uk/press-release/the-university-of-notre-dame-partners-with-cariloop-to-offer-family-care-services-to-all-faculty-and-staff",
+      "title": "University of Notre Dame Partners with Cariloop (Silicon UK press release)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Cariloop, the leading comprehensive caregiver support platform, has partnered with the University of Notre Dame (Notre Dame) to offer its hands-on support to the institution’s 6,000 full-time faculty and staff.",
+      "statement": "Notre Dame offers Cariloop to its staff.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "University of Notre Dame"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.brighthorizons.com/newsroom/archive/2025-ebn-att-caregiving-benefits",
+      "title": "At AT&T, Employee Caregivers Get a Boost From These Benefits (EBN via Bright Horizons)",
+      "source_type": "news",
+      "published_at": "2025-12-17",
+      "quote": "Also in 2021, the company partnered with family-care solution Bright Horizons, giving employees access to a variety of caregiving options including 10 days of backup care at a subsidized rate and eldercare guidance and resources.",
+      "statement": "AT&T offers back-up care and eldercare guidance via Bright Horizons.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "AT&T"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://hr.lafayette.edu/author/tracht/page/2/",
+      "title": "Wellthy Family Care Support (Lafayette College HR)",
+      "source_type": "company_site",
+      "published_at": "2021-09-20",
+      "quote": "Wellthy offers dedicated care coordinators to help you with family and life issues including caregiving support for elder care, child care",
+      "statement": "Lafayette College offers Wellthy to employees.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Lafayette College"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://telanganatoday.com/anvayaa-doubles-office-space-in-hyderabad-launches-corporate-benefit-plan-nischint",
+      "title": "Anvayaa launches corporate benefit plan 'Nischint' (Telangana Today)",
+      "source_type": "news",
+      "published_at": "2022-11-09",
+      "quote": "Anvayaa also launched ‘Nischint’, a corporate benefit plan. This helps companies to subscribe to Anvayaa’s elder care services for their employees’ families.",
+      "statement": "Anvayaa sells elder care as a corporate benefit in India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "af79124b-956e-409c-b1d7-b856a1ca1307",
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "Anvayaa"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://hr.mit.edu/worklife/adult-care/support",
+      "title": "Adult and Elder Care Advising | MIT HR",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Benefits-eligible MIT staff, faculty, and postdocs (associates and fellows) have access to Adult and Elder Care Advising at no cost.",
+      "statement": "MIT pays for elder care advising for its staff.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "low",
+      "unknown_ids": [
+        "fc974d34-3710-4b19-bb36-20a1bbc5a0a3"
+      ],
+      "company_name": "MIT"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "89fc2730-8423-475c-a672-d291d26d60aa",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "NRI families coordinate parents' care mainly through family WhatsApp groups, a designated local relative or neighbour, and phone calls; medical reports are shared as PDFs in the group.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29",
+            "ev-30",
+            "ev-31",
+            "ev-10",
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "Providers and guides describe the WhatsApp approach as fragmented: information arrives in pieces and relatives interpret updates differently.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-30",
+            "ev-08"
+          ]
+        },
+        {
+          "statement": "Families who need more hire paid care managers (Emoha, Anvayaa, Apollo NRI 360) whose plans already include an app or helpline for children abroad.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-33",
+            "ev-38"
+          ]
+        },
+        {
+          "statement": "No source quantifies how many NRI families use a dedicated coordination app; one operator says most parents won't go beyond WhatsApp.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-21"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "b2684bb7-0cd1-492e-9f4d-38e6d9f9db75",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Triggers named for buying paid help are a fall, a hospitalisation, cognitive decline, or remote self-management becoming unsustainable.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04",
+            "ev-38",
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "Families with a nearby sibling or a working local network are advised they probably don't need a paid service.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "These triggers lead to buying hands-on services (care managers, attendants), not standalone coordination software; no evidence shows a software-only purchase trigger.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-04",
+            "ev-38",
+            "ev-07"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "dd629a8f-592e-4efc-99f4-47a84a13d2d9",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Indian elder-care service subscriptions run about Rs 5,000-25,000 per month; Emoha's plans are Rs 1,999-10,999 per month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-03",
+            "ev-07"
+          ]
+        },
+        {
+          "statement": "A live-in attendant costs about Rs 15,000-50,000 a month and basic care Rs 15,000-30,000, often paid by the NRI from an NRO account.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-12",
+            "ev-13"
+          ]
+        },
+        {
+          "statement": "Apollo NRI 360 is priced in dollars at $1,199-$2,499 per plan; a medical concierge charges Rs 2-3 lakh a year.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33",
+            "ev-09"
+          ]
+        },
+        {
+          "statement": "In the US, caregivers spend about $7,200 a year out of pocket, and employed caregivers report nearly $1,000 a month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-16"
+          ]
+        },
+        {
+          "statement": "No source gives what NRIs spend on coordination software specifically.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "fc974d34-3710-4b19-bb36-20a1bbc5a0a3",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "In the NRI segment the child abroad pays and stays the decision-maker; Anvayaa's early customers were almost entirely NRIs, and attendants are paid from NRO accounts.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-06",
+            "ev-20",
+            "ev-12"
+          ]
+        },
+        {
+          "statement": "In the US, the payer for coordination services has shifted to employers and insurers: Wellthy moved from direct-to-consumer to employer-paid and no longer promotes private pay.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25",
+            "ev-26",
+            "ev-43"
+          ]
+        },
+        {
+          "statement": "Many US employers (Dow, Medtronic, Philadelphia, MIT, Stanford, Yale and others) already buy caregiving benefits from Wellthy, Cariloop or Bright Horizons.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-45",
+            "ev-46",
+            "ev-48",
+            "ev-42",
+            "ev-50",
+            "ev-51"
+          ]
+        },
+        {
+          "statement": "Indian employers also buy elder care as a benefit (Anvayaa's Nischint plan).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22",
+            "ev-60"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "7a84c1e8-8ecf-41b9-a945-c68600970da7",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Coordination problems are widely described (fragmented WhatsApp updates, sibling conflict over appointments and aides, coordination challenges in a 2,000-caregiver survey).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-30",
+            "ev-17",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "No source measures how often tasks are missed or communication breaks down; frequency stays unquantified.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "af79124b-956e-409c-b1d7-b856a1ca1307",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "India: Emoha, Anvayaa, Samarth, Apollo NRI 360, Healync and newer entrants (Nila, ParentPulse) serve NRI families, mostly as human-led care-manager services with apps attached.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-03",
+            "ev-07",
+            "ev-33",
+            "ev-09",
+            "ev-24",
+            "ev-32",
+            "ev-38"
+          ]
+        },
+        {
+          "statement": "Anvayaa's FY25 revenue was Rs 14.6 crore after a decade, suggesting a modest market for NRI elder-care subscriptions.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-23"
+          ]
+        },
+        {
+          "statement": "US: employer-paid Wellthy, Cariloop, ianacare and Bright Horizons already include sibling care circles, medication tracking and shared coordination hubs; free tools like Lotsa Helping Hands exist.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27",
+            "ev-41",
+            "ev-39",
+            "ev-42",
+            "ev-40"
+          ]
+        },
+        {
+          "statement": "Caregiver tech adoption has historically been low (7% in AARP's 2016 study; 9% use scheduling assistants in 2026).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18",
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "No evidence was found on why families switch providers.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "Will NRI families pay $15-40/month for software when Indian care-manager services (Emoha from Rs 1,999/month) already bundle an app and coordinator?",
+      "category": "budget",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Emoha",
+      "url": "https://emoha.com",
+      "kind": "direct",
+      "description": "Indian elder-care subscription with care coordinator, app for adult children, records access.",
+      "pricing_note": "Rs 1,999 to Rs 10,999 per month (Empower plans)",
+      "evidence_refs": [
+        "ev-07",
+        "ev-03"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-02",
+      "name": "Anvayaa",
+      "url": "https://anvayaa.com",
+      "kind": "direct",
+      "description": "Hyderabad care-manager service for NRI families with app updates; also sells as an Indian employee benefit.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-38",
+        "ev-20",
+        "ev-23",
+        "ev-60",
+        "ev-22"
+      ],
+      "sentiment": [
+        {
+          "statement": "A US-based customer testimonial praises real-time app updates and fast attendant arrangement during emergencies.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "Apollo HomeCare NRI 360",
+      "url": "https://apollohomecare.com/nri-360-v2",
+      "kind": "service",
+      "description": "Hospital-group NRI plan with health manager, doctor visits and family helpline.",
+      "pricing_note": "Silver $1,199, Platinum $2,499 (billing period not stated)",
+      "evidence_refs": [
+        "ev-33"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Wellthy",
+      "url": "https://wellthy.com",
+      "kind": "direct",
+      "description": "Employer-paid care concierge with Care Circle, medication tracker and calendar; 190+ countries.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-27",
+        "ev-25",
+        "ev-26"
+      ],
+      "sentiment": [
+        {
+          "statement": "Wellthy abandoned promoting private pay in favour of employer-paid contracts.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-05",
+      "name": "Cariloop",
+      "url": "https://cariloop.com",
+      "kind": "direct",
+      "description": "Employer-paid caregiver coaching and tools for task and medication coordination.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-41",
+        "ev-15"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "ianacare",
+      "url": "https://ianacare.com",
+      "kind": "direct",
+      "description": "Family care navigation platform sold via employers, health plans and CMS GUIDE.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-39"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Lotsa Helping Hands",
+      "url": "https://lotsahelpinghands.com",
+      "kind": "direct",
+      "description": "Free care-team scheduling and updates for families.",
+      "pricing_note": "Free",
+      "evidence_refs": [
+        "ev-40"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "Bright Horizons (Adult and Elder Care)",
+      "url": "https://www.brighthorizons.com",
+      "kind": "indirect",
+      "description": "Employer benefit with back-up elder care, care advisors and a family coordination hub.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-42",
+        "ev-51",
+        "ev-58"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "Healync",
+      "url": null,
+      "kind": "service",
+      "description": "Medical concierge for NRIs including elder care check-ups and nurses.",
+      "pricing_note": "Rs 21k one-month trial; Rs 2-3 lakh a year",
+      "evidence_refs": [
+        "ev-09"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Nila",
+      "url": null,
+      "kind": "direct",
+      "description": "Pre-seed startup for NRI family care coordination.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-24"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "ParentPulse",
+      "url": "https://lumenlabs-website.pages.dev",
+      "kind": "direct",
+      "description": "Waitlist-stage two-device coordination app for NRI children and parents.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-32"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "Papa",
+      "url": "https://www.papa.com",
+      "kind": "service",
+      "description": "US companion and errand visits for older adults.",
+      "pricing_note": "$30/hour",
+      "evidence_refs": [
+        "ev-34"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-13",
+      "name": "Honor / Home Instead",
+      "url": "https://www.honorcare.com",
+      "kind": "service",
+      "description": "US home care provider.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-35"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-14",
+      "name": "Khyaal",
+      "url": "https://www.khyaal.com",
+      "kind": "indirect",
+      "description": "Senior lifestyle app (events, tours, digi-gold); not care coordination.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-37"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-15",
+      "name": "CarePredict",
+      "url": "https://www.carepredict.com",
+      "kind": "indirect",
+      "description": "Resident-care platform sold to senior-living operators, not families.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-36"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-16",
+      "name": "Family WhatsApp group + local coordinator",
+      "url": null,
+      "kind": "manual",
+      "description": "Default NRI coordination: WhatsApp group, one local relative or neighbour, shared PDFs.",
+      "pricing_note": "Free",
+      "evidence_refs": [
+        "ev-29",
+        "ev-30",
+        "ev-31"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most NRI families coordinate through a family WhatsApp group with one local coordinator, relatives, friends or neighbours.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-29",
+        "ev-30",
+        "ev-10",
+        "ev-31"
+      ]
+    },
+    {
+      "statement": "Families who pay buy human-led care-manager subscriptions (Emoha, Anvayaa, Apollo NRI 360) that already include apps or helplines for children abroad.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-07",
+        "ev-38",
+        "ev-33"
+      ]
+    },
+    {
+      "statement": "In the US, coordination software is mostly bundled into employer-paid benefits (Wellthy, Cariloop, Bright Horizons, ianacare) or free tools (Lotsa Helping Hands).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-27",
+        "ev-41",
+        "ev-42",
+        "ev-39",
+        "ev-40"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Dow",
+      "website": "https://corporate.dow.com",
+      "icp_id": null,
+      "location": "Midland, MI",
+      "industry": "Chemicals",
+      "description": "US employer that already pays for caregiver support (Cariloop) for North American employees.",
+      "evidence_refs": [
+        "ev-46",
+        "ev-47"
+      ],
+      "technologies": [
+        "Cariloop"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US employer that already pays for caregiver support (Cariloop) for North American employees.",
+          "evidence_refs": [
+            "ev-46"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Cariloop).",
+          "evidence_refs": [
+            "ev-46"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "CHRO publicly champions caregiver benefits.",
+          "evidence_refs": [
+            "ev-47"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Lisa Bryant",
+          "role": "Chief Human Resources Officer",
+          "email": null,
+          "evidence_ref": "ev-47"
+        }
+      ],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-46"
+      }
+    },
+    {
+      "ref": "co-02",
+      "name": "Medtronic",
+      "website": "https://www.medtronic.com",
+      "icp_id": null,
+      "location": "US (global)",
+      "industry": "Medical devices",
+      "description": "Offers Wellthy to US employees; benefits leader set it up proactively.",
+      "evidence_refs": [
+        "ev-45"
+      ],
+      "technologies": [
+        "Wellthy"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Offers Wellthy to US employees; benefits leader set it up proactively.",
+          "evidence_refs": [
+            "ev-45"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Wellthy).",
+          "evidence_refs": [
+            "ev-45"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [
+        {
+          "name": "Denise King",
+          "role": "Vice President of Global Benefits",
+          "email": null,
+          "evidence_ref": "ev-45"
+        }
+      ],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-45"
+      }
+    },
+    {
+      "ref": "co-03",
+      "name": "Guardian Life",
+      "website": "https://www.guardianlife.com",
+      "icp_id": null,
+      "location": "New York, NY",
+      "industry": "Insurance",
+      "description": "Insurer that offers Wellthy to staff and bundles caregiving support into disability policies (insurer channel).",
+      "evidence_refs": [
+        "ev-43",
+        "ev-44"
+      ],
+      "technologies": [
+        "Wellthy"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Insurer that offers Wellthy to staff and bundles caregiving support into disability policies (insurer channel).",
+          "evidence_refs": [
+            "ev-43"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Wellthy).",
+          "evidence_refs": [
+            "ev-43"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "35% of its caregiving staff used the benefit.",
+          "evidence_refs": [
+            "ev-43"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Matt Darula",
+          "role": "Head of Product and Digital Offerings",
+          "email": null,
+          "evidence_ref": "ev-44"
+        }
+      ]
+    },
+    {
+      "ref": "co-04",
+      "name": "City of Philadelphia",
+      "website": "https://www.phila.gov",
+      "icp_id": null,
+      "location": "Philadelphia, PA",
+      "industry": "Municipal government",
+      "description": "Public employer offering Wellthy care concierge including aging-parent support.",
+      "evidence_refs": [
+        "ev-48"
+      ],
+      "technologies": [
+        "Wellthy"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Public employer offering Wellthy care concierge including aging-parent support.",
+          "evidence_refs": [
+            "ev-48"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Wellthy).",
+          "evidence_refs": [
+            "ev-48"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-48"
+      }
+    },
+    {
+      "ref": "co-05",
+      "name": "Southern Methodist University",
+      "website": "https://www.smu.edu",
+      "icp_id": null,
+      "location": "Dallas, TX",
+      "industry": "Higher education",
+      "description": "Pays for Cariloop for all staff, including out-of-state caregiving.",
+      "evidence_refs": [
+        "ev-49"
+      ],
+      "technologies": [
+        "Cariloop"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Pays for Cariloop for all staff, including out-of-state caregiving.",
+          "evidence_refs": [
+            "ev-49"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Cariloop).",
+          "evidence_refs": [
+            "ev-49"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Stanford University",
+      "website": "https://www.stanford.edu",
+      "icp_id": null,
+      "location": "Stanford, CA",
+      "industry": "Higher education",
+      "description": "Provides nationwide back-up elder care to staff.",
+      "evidence_refs": [
+        "ev-50"
+      ],
+      "technologies": [
+        "Bright Horizons"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Provides nationwide back-up elder care to staff.",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Bright Horizons).",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-50"
+      }
+    },
+    {
+      "ref": "co-07",
+      "name": "Yale University",
+      "website": "https://www.yale.edu",
+      "icp_id": null,
+      "location": "New Haven, CT",
+      "industry": "Higher education",
+      "description": "Back-up care covering parents anywhere in the US.",
+      "evidence_refs": [
+        "ev-51"
+      ],
+      "technologies": [
+        "Bright Horizons"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Back-up care covering parents anywhere in the US.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Bright Horizons).",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-51"
+      }
+    },
+    {
+      "ref": "co-08",
+      "name": "University of Pennsylvania",
+      "website": "https://www.upenn.edu",
+      "icp_id": null,
+      "location": "Philadelphia, PA",
+      "industry": "Higher education",
+      "description": "Elder care benefits via Bright Horizons portal.",
+      "evidence_refs": [
+        "ev-52"
+      ],
+      "technologies": [
+        "Bright Horizons"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Elder care benefits via Bright Horizons portal.",
+          "evidence_refs": [
+            "ev-52"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Bright Horizons).",
+          "evidence_refs": [
+            "ev-52"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "University of Virginia",
+      "website": "https://www.virginia.edu",
+      "icp_id": null,
+      "location": "Charlottesville, VA",
+      "industry": "Higher education",
+      "description": "Back-up care for elderly dependents who don't live with the employee.",
+      "evidence_refs": [
+        "ev-53"
+      ],
+      "technologies": [
+        "Bright Horizons"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Back-up care for elderly dependents who don't live with the employee.",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Bright Horizons).",
+          "evidence_refs": [
+            "ev-53"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "MIT",
+      "website": "https://www.mit.edu",
+      "icp_id": null,
+      "location": "Cambridge, MA",
+      "industry": "Higher education",
+      "description": "Pays for elder care advising that includes a family coordination hub.",
+      "evidence_refs": [
+        "ev-42",
+        "ev-61"
+      ],
+      "technologies": [
+        "Bright Horizons"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Pays for elder care advising that includes a family coordination hub.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Bright Horizons).",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "University of Maryland",
+      "website": "https://www.umd.edu",
+      "icp_id": null,
+      "location": "College Park, MD",
+      "industry": "Higher education",
+      "description": "Launched family care benefits including adult/elder back-up care via Care.com (2021).",
+      "evidence_refs": [
+        "ev-54"
+      ],
+      "technologies": [
+        "Care.com"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Launched family care benefits including adult/elder back-up care via Care.com (2021).",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Care.com).",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "Best Buy",
+      "website": "https://corporate.bestbuy.com",
+      "icp_id": null,
+      "location": "Richfield, MN",
+      "industry": "Retail",
+      "description": "Treats caregiver support as a benefits priority.",
+      "evidence_refs": [
+        "ev-55"
+      ],
+      "technologies": [],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Treats caregiver support as a benefits priority.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence of the technology stack.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Mariner",
+      "website": "https://www.marinerwealthadvisors.com",
+      "icp_id": null,
+      "location": "Overland Park, KS",
+      "industry": "Wealth management",
+      "description": "Rolled out Cariloop to associates and clients; 300+ cases in two weeks.",
+      "evidence_refs": [
+        "ev-56"
+      ],
+      "technologies": [
+        "Cariloop"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Rolled out Cariloop to associates and clients; 300+ cases in two weeks.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Cariloop).",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Strong early uptake reported (300+ cases in two weeks).",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-56"
+      }
+    },
+    {
+      "ref": "co-14",
+      "name": "University of Notre Dame",
+      "website": "https://www.nd.edu",
+      "icp_id": null,
+      "location": "Notre Dame, IN",
+      "industry": "Higher education",
+      "description": "Offers Cariloop to faculty and staff.",
+      "evidence_refs": [
+        "ev-57"
+      ],
+      "technologies": [
+        "Cariloop"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Offers Cariloop to faculty and staff.",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Cariloop).",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "AT&T",
+      "website": "https://www.att.com",
+      "icp_id": null,
+      "location": "Dallas, TX",
+      "industry": "Telecommunications",
+      "description": "Offers subsidised back-up care and eldercare guidance via Bright Horizons.",
+      "evidence_refs": [
+        "ev-58"
+      ],
+      "technologies": [
+        "Bright Horizons"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Offers subsidised back-up care and eldercare guidance via Bright Horizons.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Bright Horizons).",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Lafayette College",
+      "website": "https://www.lafayette.edu",
+      "icp_id": null,
+      "location": "Easton, PA",
+      "industry": "Higher education",
+      "description": "Offers Wellthy care coordinators to employees (2021 post).",
+      "evidence_refs": [
+        "ev-59"
+      ],
+      "technologies": [
+        "Wellthy"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Offers Wellthy care coordinators to employees (2021 post).",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Already buys a caregiving benefit vendor (Wellthy).",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "None found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
