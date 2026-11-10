@@ -1,0 +1,2439 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "45a09f83-9a50-4a03-8bd6-ac91b61d6a6a",
+    "researcher": "claude-code",
+    "started_at": "2026-11-10T09:00:00Z",
+    "finished_at": "2026-11-10T13:00:00Z",
+    "queries": [
+      "CAM reconciliation spreadsheet commercial property manager pain reddit",
+      "AppFolio commercial CAM reconciliation limitations",
+      "\"CAM reconciliation\" job posting property accountant commercial",
+      "tenant CAM audit percentage of reconciliations contain errors survey",
+      "Yardi Voyager CAM recovery setup consultant hours commercial",
+      "lease abstraction services outsourced commercial real estate CAM",
+      "Prophia lease abstraction AI commercial real estate",
+      "biggerpockets CAM reconciliation small commercial landlord spreadsheet",
+      "Yardi Breeze Premier CAM reconciliation commercial feature",
+      "Re-Leased CAM reconciliation service charge reconciliation commercial property software",
+      "Yardi consulting services CAM recovery setup commercial expense pools",
+      "\"CAM reconciliations\" property accountant job greenhouse OR lever OR workable commercial real estate",
+      "AppFolio commercial property management CAM reconciliation feature help",
+      "CAM reconciliation \"weeks\" OR \"months\" property accounting team year-end late statements landlords",
+      "\"most tenants\" do not audit CAM charges reconciliation rarely audited (contradiction)",
+      "reddit CommercialRealEstate CAM reconciliation Yardi or excel how do you do it",
+      "CAM reconciliation software automated small commercial landlords QuickBooks list 2026",
+      "stratafolio pricing plans CAM reconciliation",
+      "property management technology purchase decision maker survey controller CFO commercial real estate software buying",
+      "\"Director of Lease Administration\" OR \"Controller\" job \"CAM reconciliation\" software implementation commercial property management",
+      "landlords switching to fixed CAM charges instead of reconciliation trend (contradiction)",
+      "commercial property management company retail office industrial \"CAM reconciliations\" services",
+      "third-party commercial property management firm shopping centers office \"lease administration\" \"CAM\" Texas OR Florida OR Arizona",
+      "commercial property management \"operating expense reconciliations\" tenants firm Midwest OR California OR Georgia"
+    ],
+    "notes": "Most problem evidence is vendor marketing (STRATAFOLIO, Prophia, PredictAP, Springbord); error-rate statistics (30-40%) are secondary citations whose primary studies could not be located. BiggerPockets threads, Yardi.com, jmco.com (Yardi consultant), TrustRadius/Capterra/Software Advice, Dice and several job boards were blocked by robots.txt or 403, so the forum voice and Yardi-consultant cost claims are missing. No public evidence found for the 50-80 consultant hours / $15k-$50k Yardi setup claim or for tenant bills 50-100% above estimates. Prospects use the primary ICP (large commercial PM firm) plus mid-market operators; no contacts recorded by instruction; technology fit unknown for all companies."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://stratafolio.com/features/cam-reconciliation/",
+      "title": "STRATAFOLIO - CAM Reconciliation Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Common Area Maintenance (CAM) reconciliation is arguably the most tedious, error-prone, and high-stakes task in property management. If you are still relying on a mess of manual spreadsheets and fragmented QuickBooks files",
+      "statement": "A CAM software vendor describes CAM reconciliation as tedious and error-prone and frames manual spreadsheets plus QuickBooks files as the status quo it replaces.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0"
+      ],
+      "company_name": "STRATAFOLIO"
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://stratafolio.com/features/cam-reconciliation/",
+      "title": "STRATAFOLIO - CAM Reconciliation Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Time Investment | 20+ hours per property annually. | Under 10 minutes per property.",
+      "statement": "Vendor claims the manual way takes 20+ hours per property per year (vendor marketing figure, not an independent measurement).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7d950cdf-2bcf-4b9b-ae52-2aea93c3d1fe"
+      ],
+      "company_name": "STRATAFOLIO"
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://stratafolio.com/features/cam-reconciliation/",
+      "title": "STRATAFOLIO - CAM Reconciliation Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Most CAM audits are triggered because a tenant receives a reconciliation bill that lacks detail, and/or it was delayed.",
+      "statement": "Vendor states that most tenant CAM audits are triggered by reconciliation bills lacking detail or arriving late.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d",
+        "8719a386-4d9d-4f4c-aff8-ffb3ad927345"
+      ],
+      "company_name": "STRATAFOLIO"
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://blog.predictap.com/its-cam-plicated-lets-talk-recoveries",
+      "title": "It's CAM-plicated: Let's Talk Recoveries (PredictAP)",
+      "source_type": "company_site",
+      "published_at": "2026-05-12",
+      "quote": "January hits, year-end closes, and suddenly your entire accounting team disappears into a black hole of CAM reconciliation. Three months later, they emerge exhausted, buried in backup documentation, and still fielding challenges from tenants.",
+      "statement": "An AP-automation vendor for CRE describes CAM reconciliation consuming roughly three months of the accounting team's time each year, with ongoing tenant challenges.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7d950cdf-2bcf-4b9b-ae52-2aea93c3d1fe",
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d"
+      ],
+      "company_name": "PredictAP"
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://blog.predictap.com/its-cam-plicated-lets-talk-recoveries",
+      "title": "It's CAM-plicated: Let's Talk Recoveries (PredictAP)",
+      "source_type": "company_site",
+      "published_at": "2026-05-12",
+      "quote": "Add it up: the outbound reconciliation statements, the tenant challenges, the backup requests, the accounting reviews, the reclasses, the settlement negotiations. For most retail real estate teams, this process consumes the better part of Q1 each year.",
+      "statement": "Vendor claims the full cycle (statements, tenant challenges, backup requests, reclasses, settlements) consumes most of Q1 for retail real estate teams.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7d950cdf-2bcf-4b9b-ae52-2aea93c3d1fe",
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d",
+        "8719a386-4d9d-4f4c-aff8-ffb3ad927345"
+      ],
+      "company_name": "PredictAP"
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://www.prophia.com/blog/cam-reconciliation-mistakes",
+      "title": "The Most Expensive CAM Reconciliation Mistake (Prophia)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The asset manager pulls up the spreadsheet. The accounting team pulls up their version. Someone digs through a shared drive to find the lease.",
+      "statement": "A lease-abstraction vendor describes the typical CAM dispute workflow as competing spreadsheets plus searching a shared drive for the lease.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0"
+      ],
+      "company_name": "Prophia"
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://www.prophia.com/blog/the-15-billion-blind-spot-why-cam-rec-errors-are-draining-cre-owners-noi",
+      "title": "The $15 Billion Blind Spot (Prophia)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Tango Analytics has found material errors in roughly 40% of commercial CAM reconciliations.",
+      "statement": "A vendor blog cites Tango Analytics finding material errors in roughly 40% of commercial CAM reconciliations (secondary citation; primary study not located).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d"
+      ],
+      "company_name": "Prophia"
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://www.prophia.com/blog/the-15-billion-blind-spot-why-cam-rec-errors-are-draining-cre-owners-noi",
+      "title": "The $15 Billion Blind Spot (Prophia)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Professional CAM audit firms routinely recover 3–5% of a tenant's annual occupancy costs, and that industry exists specifically because owners' reconciliation data doesn't match what the lease allows.",
+      "statement": "Vendor states a tenant-side CAM audit industry exists and routinely recovers 3-5% of tenants' annual occupancy costs.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d"
+      ],
+      "company_name": "Prophia"
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://www.springbord.com/blog/tenant-common-area-maintenance-cam-audit-the-top-three-challenges/",
+      "title": "Tenant CAM Audit: The Top Three Challenges (Springbord)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "However, 30% of CAM reconciliations contain errors, leading to financial discrepancies and disputes between landlords and tenants according to the Journal of Property Management.",
+      "statement": "An outsourcing/audit vendor cites a 30% CAM reconciliation error rate attributed to the Journal of Property Management (secondary; primary not located; conflicts with the 40% figure in ev-07).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d"
+      ],
+      "company_name": "Springbord"
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://www.wealthmanagement.com/real-estate/retailers-are-fighting-back-against-cam-charge-errors",
+      "title": "Retailers Are Fighting Back Against CAM Charge Errors (WealthManagement.com)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "finds errors in approximately 40 percent of the leases it reviews. The most common ones include a landlord charging for capital expenses which the lease does not allow; too high fees for mall HVAC; and inaccurate calculations on pro-rata percentages.",
+      "statement": "A trade article reports a tenant lease-audit firm estimating it finds errors in about 40% of leases reviewed, mostly capital expenses, HVAC fees and pro-rata miscalculations (older article, undated on page).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://www.wealthmanagement.com/real-estate/retailers-are-fighting-back-against-cam-charge-errors",
+      "title": "Retailers Are Fighting Back Against CAM Charge Errors (WealthManagement.com)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "it takes an average of two months to review one year’s worth of CAM charges",
+      "statement": "A tenant audit of one year of CAM charges takes about two months on average, per an audit specialist quoted in the article.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d",
+        "8719a386-4d9d-4f4c-aff8-ffb3ad927345"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.wealthmanagement.com/real-estate/retailers-are-fighting-back-against-cam-charge-errors",
+      "title": "Retailers Are Fighting Back Against CAM Charge Errors (WealthManagement.com)",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "increasingly entertaining the idea of billing CAM charges as a fixed expense once again",
+      "statement": "Landlords were reported to be considering a return to fixed CAM charges, which would remove the need for annual reconciliation on those leases.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://invoicedataextraction.com/blog/us-cam-reconciliation-tenant-audit",
+      "title": "Tenant Guide: Auditing a US Commercial CAM Reconciliation",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Tenants then have between 90 days and 12 months from delivery — the audit window the lease defines — to review the statement, request supporting invoices, and dispute discrepancies. Once the audit-request letter goes out, most leases give the landlord around 30 days to produce the supporting GL extract and invoice package.",
+      "statement": "Tenants commonly get 90 days to 12 months to audit, and landlords usually have about 30 days to produce the GL extract and invoice package once requested.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8719a386-4d9d-4f4c-aff8-ffb3ad927345",
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://invoicedataextraction.com/blog/us-cam-reconciliation-tenant-audit",
+      "title": "Tenant Guide: Auditing a US Commercial CAM Reconciliation",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The request should ask for the GL extract for the entire CAM expense pool, not just the categories the desk audit flagged.",
+      "statement": "Tenant auditors are advised to request the GL extract for the entire CAM expense pool.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8719a386-4d9d-4f4c-aff8-ffb3ad927345"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://invoicedataextraction.com/blog/us-cam-reconciliation-tenant-audit",
+      "title": "Tenant Guide: Auditing a US Commercial CAM Reconciliation",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The management-fee calculation worksheet should show the base figure the fee was applied to, the percentage applied, and any adjustments … The gross-up worksheet should show which expense lines were grossed up, the actual occupancy used, the target occupancy the gross-up scaled to, and the resulting adjustment per line.",
+      "statement": "Tenants are advised to request management-fee and gross-up worksheets that show the calculation inputs line by line.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8719a386-4d9d-4f4c-aff8-ffb3ad927345"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://invoicedataextraction.com/blog/us-cam-reconciliation-tenant-audit",
+      "title": "Tenant Guide: Auditing a US Commercial CAM Reconciliation",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The package is typically a 50-to-500-page PDF mixing the GL extract (often as the first 10 to 30 pages, exported from Yardi or MRI), per-vendor invoice scans grouped by category or by month",
+      "statement": "Landlord backup packages are typically 50-500 page PDFs mixing GL extracts from Yardi/MRI with invoice scans, i.e. not structured line-to-invoice packets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8719a386-4d9d-4f4c-aff8-ffb3ad927345"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://stratafolio.com/blog/cam-reconciliation-red-flags-that-trigger-tenant-audits/",
+      "title": "CAM Reconciliation Red Flags That Trigger Tenant Audits (STRATAFOLIO)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CAM disputes rarely end with the disputed dollar amount. They often result in: … Delayed or withheld payments",
+      "statement": "Vendor states CAM disputes often lead to delayed or withheld tenant payments.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d"
+      ],
+      "company_name": "STRATAFOLIO"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://stephsbooks.com/blog/best-software-property-management-accounting",
+      "title": "9 Best Property Management Accounting Software (2026) - Steph's Books",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Buildium is primarily residential and offers no native CAM reconciliation. You’d need to export data to Excel or QBO and calculate manually.",
+      "statement": "A bookkeeping firm's 2026 software guide says Buildium users must export to Excel or QuickBooks and calculate CAM manually.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://stephsbooks.com/blog/best-software-property-management-accounting",
+      "title": "9 Best Property Management Accounting Software (2026) - Steph's Books",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Yardi Voyager is the gold standard for CAM reconciliation. It handles base year calculations, gross-up provisions, expense caps, and multi-tenant allocation automatically.",
+      "statement": "The same guide says Yardi Voyager already handles base years, gross-ups, caps and multi-tenant allocation automatically.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://stephsbooks.com/blog/best-software-property-management-accounting",
+      "title": "9 Best Property Management Accounting Software (2026) - Steph's Books",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "AppFolio Plus added CAM reconciliation features in 2025, making it viable for mixed residential-commercial portfolios. The standard tier doesn’t support it.",
+      "statement": "The guide says AppFolio Plus added CAM reconciliation in 2025 (standard tier excluded), weakening the claim that AppFolio users must use spreadsheets.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://stephsbooks.com/blog/best-software-property-management-accounting",
+      "title": "9 Best Property Management Accounting Software (2026) - Steph's Books",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Expect custom pricing starting around $1,500/mo for mid-size commercial portfolios.",
+      "statement": "The guide estimates Yardi Voyager pricing from about $1,500/month for mid-size commercial portfolios.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7d950cdf-2bcf-4b9b-ae52-2aea93c3d1fe"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://www.yardibreeze.com/blog/2025/09/common-area-maintenance-reconciliation/",
+      "title": "Common Area Maintenance (CAM) Reconciliation Made Easy (Yardi Breeze)",
+      "source_type": "company_site",
+      "published_at": "2025-09-01",
+      "quote": "Fortunately, Yardi Breeze and Yardi Breeze Premier automate common area maintenance reconciliations and calculate commercial recoveries for you. In both programs, CAM reconciliations are as easy as 1-2-3:",
+      "statement": "Yardi markets CAM reconciliation in Breeze and Breeze Premier as automated and 'as easy as 1-2-3'.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": "Yardi"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://www.yardibreeze.com/commercial-features/",
+      "title": "Yardi Breeze Commercial Features and pricing",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Commercial Portfolios … Breeze $2 per unit … $200 minimum",
+      "statement": "Yardi Breeze lists commercial pricing at $2 per unit per month with a $200 minimum, a low price anchor for CAM-capable software.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7d950cdf-2bcf-4b9b-ae52-2aea93c3d1fe",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": "Yardi"
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://www.re-leased.com/en-us/product/budget-management",
+      "title": "CAM Budgeting Software (Re-Leased USA)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Re-Leased automates the full CAM reconciliation workflow with guided steps that generate balancing charges and tenant statements in minutes. The system handles expense caps, collars, base-year stops, pro-rata allocations, and tenant-specific exclusions.",
+      "statement": "Re-Leased claims to handle caps, collars, base-year stops, pro-rata allocation and exclusions with QuickBooks/Xero/Sage Intacct/NetSuite integration.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": "Re-Leased"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://www.doorloop.com/features/cam-reconciliation",
+      "title": "CAM Reconciliation Reports (DoorLoop)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Every tenant's share, calculated for you. Admin fees, base year stops, gross-ups, and exclusions apply per lease.",
+      "statement": "DoorLoop markets per-lease CAM reconciliation with admin fees, base-year stops, gross-ups and exclusions.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": "DoorLoop"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://www.rentmanager.com/commercial/",
+      "title": "Commercial - Rent Manager",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Using Rent Manager’s CAM Reconciliation feature, you can compare the total amount of commercial recoverable expenses (CRE) incurred by selected properties to the total amount of CRE charges posted to tenants of those properties over a select period.",
+      "statement": "Rent Manager includes a CAM reconciliation feature.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": "Rent Manager"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://www.prophia.com/lease-abstraction",
+      "title": "Automated Commercial Lease Abstraction (Prophia)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "By combining AI with expert validation, we deliver consistent, structured lease data you can trust across your portfolio. … 10% of Lease Abstracts Have a Material Error",
+      "statement": "Prophia sells AI-plus-human lease abstraction for CRE and claims 10% of lease abstracts have a material error.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "7c63e5ce-6fbb-444a-979b-30733948d22c",
+        "11d42708-0a17-4055-8b32-d8e01347c5a0"
+      ],
+      "company_name": "Prophia"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://www.appfolio.com/markets/commercial",
+      "title": "AppFolio Commercial Property Management Software",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Streamline your team’s Common Area Maintenance tracking and reconciliation processes to save your team time and boost profitability.",
+      "statement": "AppFolio markets CAM tracking and reconciliation for commercial portfolios.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": "AppFolio"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://apmhelp-testing.pages.dev/blog/appfolio/acb-tto-cam-rubs",
+      "title": "AppFolio Acronyms You Should Know (APM Help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "CAM - Common Area Maintenance, which only applies to commercial properties in AppFolio. You don't need to submit a support request to get this feature enabled! However, it can be confusing to set up.",
+      "statement": "An AppFolio consultancy notes AppFolio's CAM feature can be confusing to set up and offers help with it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0"
+      ],
+      "company_name": "APM Help"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://blog.irem.org/cam-reconciliation-turning-a-necessary-task-into-a-strategic-advantage",
+      "title": "CAM reconciliation: Turning a necessary task into a strategic advantage (IREM)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "One of the biggest challenges of CAM reconciliation is complexity. No two leases are alike. Expense inclusions, exclusions, caps, and allocation methods can vary widely within the same property.",
+      "statement": "IREM, the property-manager association, says lease terms (inclusions, exclusions, caps, allocation) vary widely even within one property.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://blog.irem.org/cam-reconciliation-turning-a-necessary-task-into-a-strategic-advantage",
+      "title": "CAM reconciliation: Turning a necessary task into a strategic advantage (IREM)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Automating CAM reconciliations in Excel Part 1 … Create CAM reconciliation templates you can use to easily funnel tenant data, design strategies using common Excel functions.",
+      "statement": "IREM sells courses on building CAM reconciliation templates in Excel, indicating spreadsheets are a mainstream method.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.withum.com/resources/the-role-of-cam-tracking-and-tenant-billing-in-driving-real-estate-performance/",
+      "title": "The Role of CAM Tracking and Tenant Billing (Withum)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Managing CAM charges and tenant billing is complex. High transaction volumes, multiple properties, and intricate lease structures create significant room for error. Manual processes only add inefficiencies",
+      "statement": "An accounting firm describes CAM billing as error-prone and manual, and sells outsourced accounting for it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": "Withum"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.springbord.com/services-we-offer/cam-reconciliation-services.html",
+      "title": "CAM Reconciliation Services (Springbord)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Springbord delivers Accurate, On-Time CAM Reconciliation for US Landlords, Property Managers & REITs",
+      "statement": "Springbord sells outsourced CAM reconciliation to US landlords, property managers and REITs.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "7c63e5ce-6fbb-444a-979b-30733948d22c",
+        "11d42708-0a17-4055-8b32-d8e01347c5a0"
+      ],
+      "company_name": "Springbord"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.ohiaccounting.com/cam-reconciliation",
+      "title": "CAM Reconciliation Services (OHI)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Accounting for expense recoveries and reconciling CAM charges in a commercial lease is complicated, error-prone and time-consuming. OHI provides comprehensive and high quality CAM reconciliation and CAM audit related services.",
+      "statement": "OHI, an offshore outsourcer, sells CAM reconciliation and audit services, pitching 30-50% savings versus in-house staff.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7c63e5ce-6fbb-444a-979b-30733948d22c",
+        "11d42708-0a17-4055-8b32-d8e01347c5a0"
+      ],
+      "company_name": "OHI"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://camrecoverygroupllc.duckdns.org/",
+      "title": "CAM Recovery Group LLC",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We work from your leases, expense ledger, property information and other relevant documents. Standard service takes approximately 6–7 days, Priority 3–5 days and Rush 24–48 hours.",
+      "statement": "A done-for-you CAM service works from leases plus the expense ledger and promises statements in about 6-7 days, close to the proposed wedge (hosted on a dynamic-DNS domain; legitimacy unverified).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": "CAM Recovery Group"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://jobs.lever.co/ghj/02f135e7-554e-4fa2-a29f-ae1d56930939",
+      "title": "Senior Property Accountant - GHJ Search and Staffing (Lever)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Prepare annual CAM and real estate tax budgets and reconciliations … Prepare audit workpapers and support internal, external, and tenant audits … $90,000 - $95,000 a year",
+      "statement": "A recruiter posting for a real estate firm lists annual CAM reconciliations and tenant audit support as core duties of a $90-95k Senior Property Accountant (MRI, Excel).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7d950cdf-2bcf-4b9b-ae52-2aea93c3d1fe",
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d"
+      ],
+      "company_name": "GHJ"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://www.purpose.jobs/discover/companies/mri-software/jobs/56073571-senior-cam-specialist",
+      "title": "Senior CAM Specialist - MRI Software",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "They will be responsible for overseeing the accurate setup and reconciliation of CAM charges, ensuring that lease terms are correctly interpreted, applied, and executed within our accounting systems. … 4+ Years of Experience with CAM setups and CAM Reconciliations",
+      "statement": "MRI Software itself employs CAM specialists (4+ years experience) to set up and reconcile CAM for clients, so CAM setup is labor-intensive even inside the vendor.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7d950cdf-2bcf-4b9b-ae52-2aea93c3d1fe"
+      ],
+      "company_name": "MRI Software"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://jobs.weekday.works/bfo-management-property-accountant",
+      "title": "Property Accountant - BFO Management",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "BFO Management is a growing real estate ownership and management company overseeing a diverse portfolio of office, retail, industrial, and operational properties across multiple markets. … Prepare tenant-ready CAM reconciliations",
+      "statement": "A mixed commercial owner-manager posting lists preparing tenant-ready CAM reconciliations as a property accountant duty.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "ca6394e9-530e-442d-b46d-067a9da95d42"
+      ],
+      "company_name": "BFO Management"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.nar.realtor/news/commercial-insights/proptech-insights-from-property-managers",
+      "title": "Proptech Insights from Property Managers (NAR / IREM)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Property management teams often make proptech decisions independently, which limits knowledge of risks associated with implementation.",
+      "statement": "IREM's proptech survey (via NAR) finds property management teams often make proptech decisions independently.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ca6394e9-530e-442d-b46d-067a9da95d42"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.hklaw.com/en/insights/publications/2000/03/stale-cam-charges-are-you-protected",
+      "title": "Stale CAM Charges: Are You Protected? (Holland & Knight)",
+      "source_type": "industry_publication",
+      "published_at": "2000-03-01",
+      "quote": "The problem of delay in billing and/or accounting may be infrequent with large, institutional landlords; however, smaller landlords who have fewer administrative resources may experience such problems more often.",
+      "statement": "A law-firm article (2000) suggests delayed CAM billing is infrequent at large institutional landlords (the primary ICP) and more common at smaller landlords.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://www.amundsendavislaw.com/alert-cam-reconciliation-landlord-considerations-for-common-area-maintenance-fee-provisions",
+      "title": "CAM Reconciliation: Landlord Considerations (Amundsen Davis)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "many retail leases now include fixed CAM fees or capped CAM charges paired with set annual increases or to avoid negotiation costs regarding CAM fees.",
+      "statement": "A law-firm alert (2017) notes many retail leases use fixed CAM fees or caps with set increases, which reduces or simplifies reconciliation for those leases.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://ustechautomations.com/resources/blog/best-commercial-cam-reconciliation-software-2027",
+      "title": "Commercial CAM Reconciliation Software: 5 Options (US Tech Automations)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "bills the Essential, Professional and Enterprise plans at $160, $190 and $230 a month when billed annually. Each plan's base price includes your first 5 units, and each additional unit costs $2 on Essential, $4 on Professional and $6 on Enterprise.",
+      "statement": "A comparison guide reports STRATAFOLIO's CAM-capable plans start at $190/month including 5 units plus $4 per extra unit, a price anchor below the $50-100 per property hypothesis for multi-unit properties.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7d950cdf-2bcf-4b9b-ae52-2aea93c3d1fe",
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://ustechautomations.com/resources/blog/best-commercial-cam-reconciliation-software-2027",
+      "title": "Commercial CAM Reconciliation Software: 5 Options (US Tech Automations)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "If your ledger is Yardi, the reconciliation module inside Yardi is usually a better buy than a second system that re-codes the same expenses.",
+      "statement": "The guide argues Yardi users are better served by Yardi's own module than by a second system, a direct objection to a sidecar.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "7c63e5ce-6fbb-444a-979b-30733948d22c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://wiss.com/cam-charges-in-commercial-real-estate-leases/",
+      "title": "Understanding CAM Charges in Commercial Real Estate Leases (Wiss)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "A CAM reconciliation that results in tenant objections, disputes, or renegotiations is almost always traceable to imprecise lease language or documentation gaps, not to underlying expense levels.",
+      "statement": "An accounting firm says CAM disputes trace mostly to lease language and documentation gaps, which supports the lease-extraction plus audit-packet approach.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "46015940-0ef4-4d6e-900f-fb1ac5bf134d",
+        "8719a386-4d9d-4f4c-aff8-ffb3ad927345"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://stratafolio.com/blog/how-to-streamline-your-inefficient-cam-reconciliation-process/",
+      "title": "How to Streamline Your Inefficient CAM Reconciliation Process (STRATAFOLIO)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "And even worse, we hear of owners that don’t complete the process at all.",
+      "statement": "Vendor reports some owners skip CAM reconciliation entirely.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "11d42708-0a17-4055-8b32-d8e01347c5a0"
+      ],
+      "company_name": "STRATAFOLIO"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://www.occupier.com/blog/cam-reconciliation",
+      "title": "Mastering CAM Reconciliation (Occupier)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "tenants must manually cross-reference every line item against their specific lease language to identify errors, duplicate charges, and misclassifications.",
+      "statement": "A lease-management vendor says tenants must cross-reference each line item against their lease by hand.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "8719a386-4d9d-4f4c-aff8-ffb3ad927345"
+      ],
+      "company_name": "Occupier"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://aquilacommercial.com/services/property-management/",
+      "title": "Property Management - AQUILA Commercial",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Whether you own office space, retail, industrial, or land, we’re here to serve. … Lease Administration … Our boots are on the ground in Austin.",
+      "statement": "AQUILA provides third-party property management including lease administration for office, retail and industrial owners in Austin, TX.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "AQUILA Commercial"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://dswcommercial.com/",
+      "title": "DSW Commercial Real Estate",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Strategically located grocery anchored center with office in Tucson, AZ of appx. 190,022 square feet in a multi-building configuration.",
+      "statement": "DSW Commercial manages a grocery-anchored retail/office center in Tucson, AZ.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "DSW Commercial"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://hiffman.com/",
+      "title": "Hiffman - Commercial Real Estate Services",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "NAI Hiffman is our Chicago-based brokerage firm with more than 50 real estate professionals providing a wealth of experience and a history of excellence in the region’s industrial, office and retail markets.",
+      "statement": "Hiffman is Chicago-based and serves industrial, office and retail markets.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hiffman"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://hiffman.com/hiffman-national/",
+      "title": "Hiffman National",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our management services group offers property management, accounting and facilities management services, while our advisory services group includes our lease administration, lender services and project management business lines.",
+      "statement": "Hiffman National offers property management, accounting and lease administration nationally.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Hiffman"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.woodmont.com/",
+      "title": "The Woodmont Company",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Headquartered in Fort Worth with a nationwide portfolio, Woodmont develops, brokers and manages tens of millions of square feet of retail and commercial property. … We operate retail properties in a manner that maximizes value by providing comprehensive management, leasing, marketing and finance/accounting.",
+      "statement": "Woodmont, headquartered in Fort Worth, manages retail properties including finance/accounting.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Woodmont"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://midamericagrp.com/",
+      "title": "Mid-America Real Estate",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "At Mid-America, we know retail in every dimension. … #1 IN THE MIDWEST",
+      "statement": "Mid-America is a Midwest retail real estate services firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Mid-America Real Estate"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://franklinst.com/",
+      "title": "Franklin Street - Commercial Real Estate",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Management Project & Property Management … TAMPA, Florida — Franklin Street, a",
+      "statement": "Franklin Street is a Tampa, Florida firm with a project and property management line.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Franklin Street"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.newquest.com/",
+      "title": "NewQuest",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "NewQuest is proud to manage an ever-growing, $2.3 billion portfolio including 100+ projects located in four states.",
+      "statement": "NewQuest manages a $2.3B portfolio of 100+ projects in four states.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "NewQuest"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.newquest.com/",
+      "title": "NewQuest",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Tenant Rep Accounts 150+ Professionals … 8827 W. Sam Houston Parkway, N., Suite 200, Houston, TX 77040",
+      "statement": "NewQuest lists 150+ professionals and a Houston, TX office.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "NewQuest"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.vestar.com/",
+      "title": "Vestar",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Vestar is a nationally recognized leader in the acquisition, management and development of retail real estate. Our current portfolio of retail properties totals 30 million square feet throughout the western United States.",
+      "statement": "Vestar manages a 30M sq ft retail portfolio in the western US.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Vestar"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.bradford.com/",
+      "title": "Bradford Commercial Real Estate Services",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Years Serving DFW Since 1989",
+      "statement": "Bradford has served Dallas-Fort Worth since 1989.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bradford Companies"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.bradford.com/property-management/",
+      "title": "Commercial Property Management Dallas - Bradford",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Each tenant is required to pay their percentage of the monthly CAM based on their pro rata share.",
+      "statement": "Bradford's property management page explains pro-rata CAM billing to tenants.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bradford Companies"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.firstwash.com",
+      "title": "First Washington Realty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We focus on owning and managing neighborhood and community shopping centers and are driven by a commitment to excellence and results.",
+      "statement": "First Washington Realty owns and manages neighborhood and community shopping centers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "First Washington Realty"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.firstwash.com",
+      "title": "First Washington Realty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "2 States & DC 13 Shopping Centers 11 Team Members",
+      "statement": "First Washington Realty lists 13 shopping centers in 2 states and DC, and 11 team members.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "First Washington Realty"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.cypressequities.com/",
+      "title": "Cypress Equities",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "ADDRESS 8144 Walnut Hill Lane Suite 1200 Dallas, TX 75231",
+      "statement": "Cypress Equities is based in Dallas, TX.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cypress Equities"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://www.cypressequities.com/",
+      "title": "Cypress Equities",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Operating on a vertically integrated platform, we continually elevate the industry standard in acquisitions, development, asset management, leasing, and property operations.",
+      "statement": "Cypress Equities runs property operations for its retail, office and industrial investments.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Cypress Equities"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://www.whlr.us/",
+      "title": "WHLR Real Estate Investment Trust",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "WHLR is a real estate investment trust that owns a portfolio of grocery-anchored shopping centers in secondary and tertiary markets from Florida to Massachusetts, totaling over approximately eight million square feet.",
+      "statement": "WHLR owns grocery-anchored shopping centers from Florida to Massachusetts.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "WHLR"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.whitestonereit.com/",
+      "title": "Whitestone REIT",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "2600 S. Gessner Rd, Suite 500, Houston , TX 77063",
+      "statement": "Whitestone REIT is based in Houston, TX.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Whitestone REIT"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.whitestonereit.com/",
+      "title": "Whitestone REIT",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We shaped our time-tested strategy around the potential of small-format, service-based retail to serve a fundamental human need that e-commerce couldn’t: community.",
+      "statement": "Whitestone focuses on small-format, service-based retail centers (many small tenants).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Whitestone REIT"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://www.crcrealty.com/",
+      "title": "Continental Realty Corporation",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Acquiring and managing desirable apartment communities for our residents and providing high quality retail and office spaces for both local and national businesses",
+      "statement": "Continental Realty manages a mixed portfolio of apartments plus retail and office space.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Continental Realty Corporation"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://www.crcrealty.com/",
+      "title": "Continental Realty Corporation",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Continental Realty Corporation 1427 Clarkview Road, Suite 500 Baltimore, MD 21209",
+      "statement": "Continental Realty Corporation is based in Baltimore, MD.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Continental Realty Corporation"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.midlandatlantic.com/",
+      "title": "Midland Atlantic Properties",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Brokerage Service … Property Management",
+      "statement": "Midland Atlantic offers property management services.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Midland Atlantic Properties"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.midlandatlantic.com/",
+      "title": "Midland Atlantic Properties",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Cincinnati Office 8044 Montgomery Rd., Suite 370 Cincinnati, Ohio 45236",
+      "statement": "Midland Atlantic has a Cincinnati, Ohio office.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Midland Atlantic Properties"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://www.branchprop.com/",
+      "title": "Branch Properties",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We have an outstanding track record of property and asset management spanning over 50 years.",
+      "statement": "Branch Properties provides property and asset management for its shopping centers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Branch Properties"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.branchprop.com/",
+      "title": "Branch Properties",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "3340 Peachtree Road NE, Suite 2775 Atlanta, GA 30326",
+      "statement": "Branch Properties is based in Atlanta, GA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Branch Properties"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://lormaxstern.com/",
+      "title": "Lormax Stern",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Lormax Stern is a fully integrated commercial real estate firm specializing in the acquisition, development, and management of premier properties throughout the United States.",
+      "statement": "Lormax Stern acquires, develops and manages commercial properties across the US.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lormax Stern"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.holladayproperties.com/",
+      "title": "Holladay Properties",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For over 75 years, Holladay Properties has been offering full-service real estate solutions across the country.",
+      "statement": "Holladay Properties offers full-service real estate across the US.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Holladay Properties"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.holladayproperties.com/",
+      "title": "Holladay Properties",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Property Management Brokerage Design Portfolio Locations South Bend Nashville Chicago Portage Indianapolis Orlando Savannah",
+      "statement": "Holladay lists property management and offices in South Bend, Nashville, Chicago, Indianapolis and others.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Holladay Properties"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.thompsonthrift.com/",
+      "title": "Thompson Thrift",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Thompson Thrift is an integrated, full-service real estate company with offices in Indianapolis and Terre Haute, Indiana; Houston, Texas; Phoenix, Arizona; and Denver, Colorado.",
+      "statement": "Thompson Thrift is an integrated residential and commercial developer-manager with US offices.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Thompson Thrift"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://edens.com/",
+      "title": "EDENS",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are the owner, developer and steward of a nationally leading portfolio of more than 100 open-air retail and mixed-use places in high-growth markets coast to coast.",
+      "statement": "EDENS owns and operates 100+ open-air retail and mixed-use places across the US.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "EDENS"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "11d42708-0a17-4055-8b32-d8e01347c5a0",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "CAM reconciliation is done inside PM/accounting platforms (Yardi Breeze/Voyager, AppFolio, Re-Leased, Rent Manager, DoorLoop), many of which claim to handle caps, base years and gross-ups.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22",
+            "ev-19",
+            "ev-24",
+            "ev-26",
+            "ev-25",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "Spreadsheets remain common where the system lacks CAM support or for complex leases, and IREM teaches Excel CAM templates.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18",
+            "ev-31",
+            "ev-01",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "In-house property accountants do the work as a core annual duty, and some firms outsource it to service providers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36",
+            "ev-38",
+            "ev-33",
+            "ev-34"
+          ]
+        },
+        {
+          "statement": "No source described how lease terms are extracted in mid-market firms beyond manual abstraction and abstraction vendors.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "7d950cdf-2bcf-4b9b-ae52-2aea93c3d1fe",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Vendors claim 20+ hours per property per year manually, and that the cycle consumes most of Q1 for retail teams; these are marketing figures.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-04",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Senior property accountants who own CAM reconciliations are paid about $90-95k a year in one posting.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36"
+          ]
+        },
+        {
+          "statement": "Existing CAM software is cheap: Yardi Breeze commercial at $2/unit/month and STRATAFOLIO from $190/month, which constrains pricing.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23",
+            "ev-42"
+          ]
+        },
+        {
+          "statement": "No public evidence found for the claimed 50-80 consultant hours ($15k-$50k) to set up Yardi recoveries.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "ca6394e9-530e-442d-b46d-067a9da95d42",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Property management teams often make proptech decisions independently (IREM survey via NAR).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39"
+          ]
+        },
+        {
+          "statement": "No source identified who approves or pays for a CAM sidecar specifically (controller vs. VP property management vs. CFO).",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "46015940-0ef4-4d6e-900f-fb1ac5bf134d",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Secondary sources cite CAM reconciliation error rates of 30-40%, but the primary studies could not be located.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-09",
+            "ev-10"
+          ]
+        },
+        {
+          "statement": "A tenant audit of one year of CAM takes about two months, and disputes can delay or withhold payments.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-11",
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "One law-firm source suggests delayed billing is infrequent at large institutional landlords.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-40"
+          ]
+        },
+        {
+          "statement": "No source quantified how often disputes actually delay settlement of statements.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "8719a386-4d9d-4f4c-aff8-ffb3ad927345",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Tenant auditors request the full GL extract for the CAM pool, invoice backup (commonly above $5,000), service contracts, and management-fee and gross-up worksheets, usually within about 30 days of the request.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-13",
+            "ev-14",
+            "ev-15"
+          ]
+        },
+        {
+          "statement": "Backup today often arrives as 50-500 page mixed PDFs, and statements that lack detail trigger audits.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16",
+            "ev-03"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "7c63e5ce-6fbb-444a-979b-30733948d22c",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Alternatives include AI lease-abstraction tools (Prophia), CAM add-ons (STRATAFOLIO), PM suites (Re-Leased, DoorLoop, Rent Manager, AppFolio, Yardi), outsourced CAM services (Springbord, OHI, Withum) and Excel templates.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27",
+            "ev-01",
+            "ev-24",
+            "ev-25",
+            "ev-26",
+            "ev-28",
+            "ev-22",
+            "ev-33",
+            "ev-34",
+            "ev-32",
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "A comparison guide argues Yardi users should use Yardi's module rather than a second system.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-43"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "Will mid-market operators already on Yardi, AppFolio or Re-Leased pay for a separate CAM sidecar when their system claims to handle CAM?",
+      "category": "alternatives",
+      "priority": "high"
+    },
+    {
+      "question": "Is $50-100 per property per month viable when STRATAFOLIO and Yardi Breeze price CAM-capable software far lower per unit?",
+      "category": "cost",
+      "priority": "medium"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Yardi Breeze / Breeze Premier / Voyager",
+      "url": "https://www.yardibreeze.com",
+      "kind": "indirect",
+      "description": "Incumbent property-management and accounting platforms with built-in CAM reconciliation; Breeze markets it as automated, Voyager handles base years, gross-ups and caps.",
+      "pricing_note": "Breeze commercial: $2 per unit per month, $200 minimum (Yardi Breeze pricing page).",
+      "evidence_refs": [
+        "ev-22",
+        "ev-23",
+        "ev-19",
+        "ev-21"
+      ],
+      "sentiment": [
+        {
+          "statement": "A 2026 software guide calls Voyager the gold standard for CAM reconciliation.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-19"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "AppFolio",
+      "url": "https://www.appfolio.com/markets/commercial",
+      "kind": "indirect",
+      "description": "Residential-first PM platform with CAM tracking and reconciliation for commercial properties (Plus tier per one guide).",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-28",
+        "ev-20",
+        "ev-29"
+      ],
+      "sentiment": [
+        {
+          "statement": "An AppFolio consultancy says the CAM feature can be confusing to set up.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "Re-Leased",
+      "url": "https://www.re-leased.com",
+      "kind": "direct",
+      "description": "Commercial PM software with CAM budgeting and reconciliation that handles caps, collars, base-year stops and exclusions, syncing to QuickBooks, Xero, Sage Intacct and NetSuite.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-24"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "STRATAFOLIO",
+      "url": "https://stratafolio.com",
+      "kind": "direct",
+      "description": "QuickBooks-linked CAM reconciliation add-on for small commercial owners: a sidecar to an existing ledger, as the idea proposes.",
+      "pricing_note": "Per a comparison guide: CAM-capable plans $190-$230/month incl. 5 units, +$4-$6 per extra unit.",
+      "evidence_refs": [
+        "ev-01",
+        "ev-02",
+        "ev-42"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "DoorLoop",
+      "url": "https://www.doorloop.com/features/cam-reconciliation",
+      "kind": "indirect",
+      "description": "PM platform with per-lease CAM reconciliation (admin fees, base-year stops, gross-ups, exclusions) and tenant statement PDFs.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-25"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Rent Manager",
+      "url": "https://www.rentmanager.com/commercial/",
+      "kind": "indirect",
+      "description": "PM platform with a CAM reconciliation feature and pro-rata calculations.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-26"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Prophia",
+      "url": "https://www.prophia.com",
+      "kind": "direct",
+      "description": "AI-plus-human lease abstraction for CRE that positions structured lease data as the fix for CAM errors; covers the extraction half of the wedge.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-27",
+        "ev-06",
+        "ev-07"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "PredictAP",
+      "url": "https://blog.predictap.com",
+      "kind": "indirect",
+      "description": "AI invoice coding for CRE that targets CAM accuracy upstream at invoice entry.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-04",
+        "ev-05"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "Springbord",
+      "url": "https://www.springbord.com",
+      "kind": "service",
+      "description": "Outsourced CAM reconciliation and tenant CAM audit services for US landlords, property managers and REITs.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-33",
+        "ev-09"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "OHI",
+      "url": "https://www.ohiaccounting.com",
+      "kind": "service",
+      "description": "Offshore outsourced CAM reconciliation, lease abstraction and audit services.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-34"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "CAM Recovery Group",
+      "url": "https://camrecoverygroupllc.duckdns.org/",
+      "kind": "service",
+      "description": "Done-for-you CAM reconciliation from leases and the expense ledger in about 6-7 days, nearly the proposed wedge delivered as a service (legitimacy unverified).",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-35"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "Withum (outsourced accounting)",
+      "url": "https://www.withum.com",
+      "kind": "service",
+      "description": "CPA firm offering outsourced CAM tracking and tenant billing.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-32"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-13",
+      "name": "Excel / spreadsheet templates",
+      "url": null,
+      "kind": "manual",
+      "description": "Spreadsheet CAM models, taught by IREM courses and used where the PM system lacks CAM (e.g. Buildium).",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-31",
+        "ev-18",
+        "ev-06"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-14",
+      "name": "MRI Software",
+      "url": "https://www.mrisoftware.com",
+      "kind": "indirect",
+      "description": "Enterprise CRE platform; employs in-house CAM specialists to set up and reconcile CAM for clients.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-37"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most operators reconcile CAM inside their PM/accounting system (Yardi, AppFolio, Re-Leased, Rent Manager, DoorLoop), which vendors market as automated.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-22",
+        "ev-24",
+        "ev-26",
+        "ev-25",
+        "ev-28"
+      ]
+    },
+    {
+      "statement": "Spreadsheets are the fallback for unsupported systems and complex leases, and IREM trains managers to build Excel CAM templates.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-18",
+        "ev-31",
+        "ev-06"
+      ]
+    },
+    {
+      "statement": "Property accountants own CAM reconciliations and tenant audit support as a salaried annual duty.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-36",
+        "ev-38",
+        "ev-37"
+      ]
+    },
+    {
+      "statement": "Firms also outsource CAM reconciliation to service providers such as Springbord, OHI and Withum.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-33",
+        "ev-34",
+        "ev-32"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "AQUILA Commercial",
+      "website": "https://aquilacommercial.com",
+      "icp_id": null,
+      "location": "Austin, TX",
+      "industry": "Commercial property management",
+      "description": "AMO-accredited third-party manager of office, retail and industrial properties with in-house accounting and lease administration.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-50"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-50"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Third-party commercial manager with accounting and lease administration services.",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-02",
+      "name": "DSW Commercial",
+      "website": "https://dswcommercial.com",
+      "icp_id": null,
+      "location": "Tucson, AZ",
+      "industry": "Commercial development and management",
+      "description": "Arizona developer-manager of grocery-anchored retail and office centers with mixed residential holdings.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-51"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-51"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Owns/manages multi-tenant retail center in Arizona.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Hiffman",
+      "website": "https://hiffman.com",
+      "icp_id": null,
+      "location": "Chicago, IL",
+      "industry": "Commercial property management and brokerage",
+      "description": "National third-party manager offering property accounting and lease administration for office, industrial and retail owners.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-52"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-52",
+        "ev-53"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Runs property accounting and lease administration lines for third-party owners.",
+          "evidence_refs": [
+            "ev-52"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "The Woodmont Company",
+      "website": "https://www.woodmont.com",
+      "icp_id": null,
+      "location": "Fort Worth, TX",
+      "industry": "Retail real estate management",
+      "description": "Retail property manager offering management and finance/accounting across a nationwide portfolio.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-54"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-54"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Manages retail properties with finance/accounting, where CAM recoveries are standard.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Mid-America Real Estate",
+      "website": "https://midamericagrp.com",
+      "icp_id": null,
+      "location": "Midwest, US",
+      "industry": "Retail real estate services",
+      "description": "Midwest retail real estate firm that leases and manages shopping centers.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-55"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Retail leasing and management firm; CAM likely but not stated.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "Franklin Street",
+      "website": "https://franklinst.com",
+      "icp_id": null,
+      "location": "Tampa, FL",
+      "industry": "Commercial real estate services",
+      "description": "Florida full-service CRE firm with property management and lease administration offerings.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-56"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-56"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Offers property management for retail/office/industrial.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "NewQuest",
+      "website": "https://www.newquest.com",
+      "icp_id": null,
+      "location": "Houston, TX",
+      "industry": "Retail development and property management",
+      "description": "Houston retail developer and property manager with 100+ properties across four states.",
+      "size_estimate": {
+        "min": 150,
+        "max": null,
+        "signal": "Homepage: 150+ Professionals",
+        "evidence_ref": "ev-58"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-57",
+        "ev-58"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Manages 100+ retail projects, in the 10-100+ property range.",
+          "evidence_refs": [
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "Vestar",
+      "website": "https://www.vestar.com",
+      "icp_id": null,
+      "location": "Western United States",
+      "industry": "Retail real estate management",
+      "description": "Retail owner-manager with a 30M sq ft portfolio in the western US.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Large multi-tenant retail portfolio where CAM recoveries are standard.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Bradford Companies",
+      "website": "https://www.bradford.com",
+      "icp_id": null,
+      "location": "Dallas-Fort Worth, TX",
+      "industry": "Commercial property management",
+      "description": "DFW third-party manager of office, industrial and retail that bills pro-rata CAM.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-60",
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Third-party commercial manager explicitly billing pro-rata CAM.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "First Washington Realty",
+      "website": "https://www.firstwash.com",
+      "icp_id": null,
+      "location": "US (2 states & DC)",
+      "industry": "Shopping center owner-operator",
+      "description": "Small owner-operator of 13 neighborhood shopping centers, inside the 10-100 property target band.",
+      "size_estimate": {
+        "min": 11,
+        "max": 11,
+        "signal": "Homepage: 11 Team Members",
+        "evidence_ref": "ev-63"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62",
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "13 shopping centers with a small team: core mid-market fit.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Cypress Equities",
+      "website": "https://www.cypressequities.com",
+      "icp_id": null,
+      "location": "Dallas, TX",
+      "industry": "Commercial real estate investment and operations",
+      "description": "Vertically integrated owner with retail, office and industrial assets and in-house property operations.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-64"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Owner-operator of commercial assets.",
+          "evidence_refs": [
+            "ev-64"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "WHLR (Wheeler REIT)",
+      "website": "https://www.whlr.us",
+      "icp_id": null,
+      "location": "US East Coast",
+      "industry": "Shopping center REIT",
+      "description": "Small-cap REIT with 67 grocery-anchored centers; CAM recoveries across many leases.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Multi-tenant grocery-anchored retail portfolio.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Whitestone REIT",
+      "website": "https://www.whitestonereit.com",
+      "icp_id": null,
+      "location": "Houston, TX",
+      "industry": "Shopping center REIT",
+      "description": "REIT focused on small-format service retail centers, which means many small-shop leases to reconcile.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-67",
+        "ev-68"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Many small-shop tenants per center.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Continental Realty Corporation",
+      "website": "https://www.crcrealty.com",
+      "icp_id": null,
+      "location": "Baltimore, MD",
+      "industry": "Mixed residential and commercial owner-manager",
+      "description": "Mixed-portfolio operator (apartments plus retail and office), the 'mixed portfolio' segment the idea targets.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-70"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-69",
+        "ev-70"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Mixed residential/commercial portfolio.",
+          "evidence_refs": [
+            "ev-69"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "Midland Atlantic Properties",
+      "website": "https://www.midlandatlantic.com",
+      "icp_id": null,
+      "location": "Cincinnati, OH",
+      "industry": "Retail development and property management",
+      "description": "Retail developer-manager with property management and a tenant portal.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-72"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-71",
+        "ev-72"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Retail property manager.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Branch Properties",
+      "website": "https://www.branchprop.com",
+      "icp_id": null,
+      "location": "Atlanta, GA",
+      "industry": "Grocery-anchored retail owner-manager",
+      "description": "Atlanta owner-manager of grocery-anchored shopping centers with in-house property management.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-73",
+        "ev-74"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Self-managed shopping centers.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "Lormax Stern",
+      "website": "https://lormaxstern.com",
+      "icp_id": null,
+      "location": "Michigan, US",
+      "industry": "Retail real estate owner-manager",
+      "description": "Owner-manager of retail centers, mainly in Michigan and Kansas.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-75"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-75"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Manages multi-tenant retail centers.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Holladay Properties",
+      "website": "https://www.holladayproperties.com",
+      "icp_id": null,
+      "location": "South Bend, IN",
+      "industry": "Commercial real estate services",
+      "description": "Full-service firm with property management across several US offices.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-76",
+        "ev-77"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Commercial property management line.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "Thompson Thrift",
+      "website": "https://www.thompsonthrift.com",
+      "icp_id": null,
+      "location": "Indianapolis, IN",
+      "industry": "Residential and commercial development and management",
+      "description": "Mixed residential/commercial developer that also leases and manages, fitting the mixed-portfolio segment.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-78"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Mixed portfolio with leasing and management.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "EDENS",
+      "website": "https://edens.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Open-air retail owner-operator",
+      "description": "Large owner-operator of 100+ retail and mixed-use centers (primary 'large firm' ICP).",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-79"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-79"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "100+ multi-tenant retail centers.",
+          "evidence_refs": [
+            "ev-79"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No public evidence of which accounting/PM system it uses.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public problem signal (e.g. CAM job posting) found for this company.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
