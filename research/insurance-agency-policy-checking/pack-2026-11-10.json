@@ -1,0 +1,2769 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "a39be586-0442-41b3-900c-b0357098097e",
+    "researcher": "claude-code",
+    "started_at": "2026-11-10T09:00:00Z",
+    "finished_at": "2026-11-10T13:00:00Z",
+    "queries": [
+      "insurance agency policy checking manual process account manager compare policy to quote E&O",
+      "policy checking outsourcing insurance agency India cost per policy",
+      "Applied Epic agency bill statement reconciliation problems reddit",
+      "Quandri policy checking AI commercial lines agencies",
+      "\"policy checker\" commercial lines insurance agency job description",
+      "IVANS download commercial lines not available manual entry agency percentage policies download",
+      "Applied Systems AI agent policy checking Applied Epic 2026 launch",
+      "Applied Systems lawsuit Comulate",
+      "Vertafore AMS360 AI policy checking agent launch",
+      "agency E&O claims causes statistics failure to procure coverage percentage Swiss Re Big I (contradiction)",
+      "insurance agency accounting job \"agency bill\" reconcile carrier statements Applied Epic",
+      "agencies don't check policies skip policy checking survey percent agencies (contradiction)",
+      "reddit insurance account manager \"policy checking\" commercial lines hate tedious",
+      "Exdion policy checking commercial insurance brokers product",
+      "Patra policy checking services agencies",
+      "Comulate commission reconciliation agency bill statement AI brokerages",
+      "2026 Agency Universe Study Big I Future One AI 46% independent agencies",
+      "independent insurance agency technology buying decision who decides agency principal",
+      "AI policy checking hallucination agencies don't trust accuracy E&O risk human review (contradiction)",
+      "recruiting.paylocity.com commercial lines account manager insurance agency \"policy checking\"",
+      "independent insurance agency careers \"check policies\" commercial lines CSR Applied Epic job",
+      "insurance agency job \"agency bill\" \"carrier statements\" reconcile accounting specialist independent agency",
+      "Insurance Journal Top 100 Property/Casualty Agencies 2026 list"
+    ],
+    "notes": "Evidence fetched 2026-11-10 with Preuve's fetcher. Much of the market evidence is vendor or vendor-sponsored trade press (Applied, Vertafore, ReSource Pro, Patra, Fulcrum partner content), so time and accuracy figures are vendor claims. No Reddit or forum threads were found. Review sites, LinkedIn, Coverager, Upwork and several agency sites blocked the fetcher. Prospects come from public job postings and agency websites; contacts are left empty by design (no personal names). Several prospects are larger than the $1M-$50M commission band; size is given only where a headcount is stated."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://riskandinsurance.com/insurance-brokers-sick-of-checking-policies-ai-can-speed-up-the-process-and-reduce-errors/",
+      "title": "Insurance Brokers, Sick of Checking Policies? AI Can Speed Up the Process and Reduce Errors",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "It’s the broker’s job to check the policy thoroughly for such errors and correct them, comparing them against other policy source documents including the application, quotation and any endorsements.",
+      "statement": "Trade article: brokers must check each policy against the application, quotation and endorsements.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://riskandinsurance.com/insurance-brokers-sick-of-checking-policies-ai-can-speed-up-the-process-and-reduce-errors/",
+      "title": "Insurance Brokers, Sick of Checking Policies? AI Can Speed Up the Process and Reduce Errors",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As a result, huge backlogs have developed, sometimes as long as six months, around the main annual renewal dates.",
+      "statement": "Policy-checking backlogs of up to six months build up around renewal dates.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7",
+        "3d22a6d2-2b69-4c5a-8708-c8a8048c47e8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://riskandinsurance.com/insurance-brokers-sick-of-checking-policies-ai-can-speed-up-the-process-and-reduce-errors/",
+      "title": "Insurance Brokers, Sick of Checking Policies? AI Can Speed Up the Process and Reduce Errors",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "While 95% of errors may be found using the manual process, it’s those that aren’t picked up that can cause the biggest loss.",
+      "statement": "The article says manual checking finds about 95% of errors; the misses cause the largest losses.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a10d6453-00b2-4ec0-8277-ea7e6dd7fbd3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://riskandinsurance.com/insurance-brokers-sick-of-checking-policies-ai-can-speed-up-the-process-and-reduce-errors/",
+      "title": "Insurance Brokers, Sick of Checking Policies? AI Can Speed Up the Process and Reduce Errors",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Initially, brokers used offshore outsourcing companies to reduce the checking costs, but that still took a significant time and generated backlogs, and more importantly, errors persisted.",
+      "statement": "Brokers already pay offshore outsourcers for policy checking, but backlogs and errors persisted.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163",
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://riskandinsurance.com/insurance-brokers-sick-of-checking-policies-ai-can-speed-up-the-process-and-reduce-errors/",
+      "title": "Insurance Brokers, Sick of Checking Policies? AI Can Speed Up the Process and Reduce Errors",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The core product within the suite is Exdion Policy Check, which was launched in 2019 and is already being used by the major U.S. brokerage firms.",
+      "statement": "Exdion Policy Check (launched 2019) is used by major US brokerages.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": "Exdion"
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://riskandinsurance.com/insurance-brokers-sick-of-checking-policies-ai-can-speed-up-the-process-and-reduce-errors/",
+      "title": "Insurance Brokers, Sick of Checking Policies? AI Can Speed Up the Process and Reduce Errors",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "From a costs benefit analysis perspective, we have been able to achieve significant time savings versus the current outsourced service we use, as well as sizeable operational and budgetary gains.",
+      "statement": "A large brokerage (EPIC Insurance Brokers, per the article) compared policy-check software against the outsourced service it uses: an existing outsourcing budget line being displaced.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": "EPIC Insurance Brokers and Consultants"
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://www.resourcepro.com/blog/policy-checking-a-vital-step-to-mitigate-eo-and-improve-service/",
+      "title": "Policy Checking: A Vital Step to Mitigate E&O and Improve Service",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As a result, many agencies use policy checking as a training ground for junior and early-career associates, and backlogs in completing policy checks are frequent.",
+      "statement": "Agencies hand policy checking to junior staff, and backlogs are frequent.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8",
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://www.resourcepro.com/blog/policy-checking-a-vital-step-to-mitigate-eo-and-improve-service/",
+      "title": "Policy Checking: A Vital Step to Mitigate E&O and Improve Service",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "According to the Big “I,” one in every seven agents files an E&O liability claim annually. About 20% of E&O claims involve coverage-related issues, such as:",
+      "statement": "Citing the Big I: one in seven agents files an E&O claim each year, and about 20% of E&O claims involve coverage issues.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a10d6453-00b2-4ec0-8277-ea7e6dd7fbd3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://www.resourcepro.com/blog/policy-checking-a-vital-step-to-mitigate-eo-and-improve-service/",
+      "title": "Policy Checking: A Vital Step to Mitigate E&O and Improve Service",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Checklists. A standardized, and repeatable, method for improving the accuracy and completeness of policy information is to create checklists.",
+      "statement": "Checklists are a common in-house method for policy checking.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://www.resourcepro.com/blog/how-agencies-can-reduce-eo-risk-across-the-policy-lifecycle/",
+      "title": "How Agencies Can Reduce E&O Risk Across the Policy Lifecycle",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Some agencies leave account managers to decide how thoroughly a policy needs to be checked. The absence of a consistent process can leave agencies at risk.",
+      "statement": "Some agencies have no standard checking process; each account manager decides how thoroughly to check.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://www.resourcepro.com/intelligent-policy-checking/",
+      "title": "Intelligent Policy Checking for Insurance | ReSource Pro",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Insurance agencies work hard to balance efficiency and accuracy, knowing that over-checking drains resources while under-checking can lead to missed details, E&O exposure, reputational damage, and financial risk.",
+      "statement": "ReSource Pro sells tiered AI-plus-human policy checking for commercial lines, framed around over- vs under-checking.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": "ReSource Pro"
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.resourcepro.com/intelligent-policy-checking/",
+      "title": "Intelligent Policy Checking for Insurance | ReSource Pro",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "average reduction in account managers’ time spent on policy checking with AdvanceCheck.",
+      "statement": "Vendor claim: AdvanceCheck cuts account managers' policy-checking time by 30% on average (they still review).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": "ReSource Pro"
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://outmarket.ai/platform/policy-check",
+      "title": "Policy Check | Outmarket",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Side-by-side comparison of expiring policy, quote, issued policy, and AMS, with critical-to-low severity ratings on every discrepancy.",
+      "statement": "Outmarket compares expiring policy, quote, issued policy and AMS data with severity ratings.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": "Outmarket"
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://outmarket.ai/platform/policy-check",
+      "title": "Policy Check | Outmarket",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "One-click write-back to Applied Epic, AMS 360 and Nexsure. Zero double entry, zero swivel-chair work. … Outmarket AI raises $34.5M Series B to fuel the AI Operating System for Insurance. … Trusted by 300+ agencies.",
+      "statement": "Outmarket writes back to Epic/AMS360, raised a $34.5M Series B and claims 300+ agency customers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8",
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": "Outmarket"
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://www.runcopycat.com/commercial-insurance-policy-checking-software",
+      "title": "Commercial Insurance Policy Checking Software | CopyCat",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Find changed terms, missing forms, and schedule mismatches, with the source behind every flag. … Open every finding on the exact policy, quote, or schedule page.",
+      "statement": "CopyCat already sells source-linked commercial policy checking: every flag opens on the exact source page (the idea's claimed differentiator).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": "CopyCat"
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.insurancejournal.com/services/newswire/2026/10/08/888216.htm",
+      "title": "Quandri Launches AI Workflows, Expanding Beyond Renewals to Run Full P&C Agency Operations",
+      "source_type": "news",
+      "published_at": "2026-10-08",
+      "quote": "The release extends the platform beyond renewals into client servicing and revenue growth, and introduces Quandri’s first commercial workflow, a policy check-in.",
+      "statement": "Quandri launched its first commercial-lines workflow, a policy check-in, in October 2026.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": "Quandri"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.outsource2india.com/insurance/case-studies/policy-checking-for-brokerage-consulting-firm.asp",
+      "title": "Case Study on Policy Checking for a Brokerage Consulting Firm - O2I",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The customer approached us as they needed help in handling large volumes of policy checking and certificate of insurance. The customer wanted immediate assistance and work with an agent who already had prior training in the EPIC agency management system.",
+      "statement": "An India-based outsourcer case study: a US commercial brokerage outsourced high-volume policy checking with Epic-trained agents.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": "Outsource2india"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.flatworldsolutions.com/insurance-bpo/policy-checking.php",
+      "title": "Outsource Insurance Policy Checking Services - FWS",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "With clear exception reports, we cut down on manual effort, allowing account managers to validate information without having to sift through it line by line.",
+      "statement": "Flatworld Solutions (outsourcer) now sells tool-assisted policy checking with exception reports.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8",
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": "Flatworld Solutions"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://www.wisemonk.io/blogs/p-and-c-insurance-outsourcing.md",
+      "title": "P&C Insurance Outsourcing: What Can Legally Move Offshore",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Pricing runs across dedicated FTE, per policy, per claim, per transaction, and outcome based models.",
+      "statement": "Offshore P&C outsourcing is priced per FTE, per policy or per transaction, so per-policy pricing is an existing norm.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://insurance-canada.ca/2023/08/14/patra-ai-policy-checking-service-offering/",
+      "title": "Patra Introduces AI to its All-In-One Policy Checking Service Offering",
+      "source_type": "news",
+      "published_at": "2023-08-14",
+      "quote": "Traditionally, agencies performed policy checks manually, comparing 100+ page documents against other 100+ documents, as well as data in agency software applications, using only their eyes as tools.",
+      "statement": "Patra describes the traditional manual method: comparing 100+ page documents and AMS data by eye.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": "Patra"
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://insurance-canada.ca/2023/08/14/patra-ai-policy-checking-service-offering/",
+      "title": "Patra Introduces AI to its All-In-One Policy Checking Service Offering",
+      "source_type": "news",
+      "published_at": "2023-08-14",
+      "quote": "Many agencies have long entrusted this critical activity to Patra, whose workflows and global teams have improved efficiency and quality. … Patra’s full-service offering and per-policy price include all steps in the process, from retrieving policy documents to checking coverages, limits, forms, and schedules, to delivering the policy to the insured if desired.",
+      "statement": "Many agencies already outsource policy checking to Patra at a per-policy price.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": "Patra"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://www.kitetechgroup.com/applied-epic-agency-billing-common-discrepancies-and-how-to-address-them/",
+      "title": "Applied Epic Agency Billing: Common Discrepancies and How to Address Them",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "If the carrier’s invoice or statement doesn’t match the invoiced transactions, then there is a discrepancy that needs to be investigated and corrected. … At this point, accounting must stop the reconciliation process and reach out to the servicing team using the designated activity to get the discrepancy corrected.",
+      "statement": "When an agency-bill statement doesn't match Epic, accounting stops and routes the discrepancy back to servicing staff.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://www.kitetechgroup.com/applied-epic-agency-billing-common-discrepancies-and-how-to-address-them/",
+      "title": "Applied Epic Agency Billing: Common Discrepancies and How to Address Them",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "If the PPE is incorrect on the policy, the agency bill reconciliation and payment cannot be completed correctly.",
+      "statement": "A setup error on the policy (premium payable entity) blocks agency-bill reconciliation: a configuration mismatch inside the AMS.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://int.appliedsystems.com/en-us/blog/posts/how-to-fix-reconciliation-applied-recon/",
+      "title": "Why Commission Reconciliation Is Breaking Insurance Agencies (and How to Fix It)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Teams spend hours reconciling transactions across statements, policies, and invoices, often in spreadsheets.",
+      "statement": "Applied says teams spend hours reconciling statements, often in spreadsheets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49",
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://int.appliedsystems.com/en-us/blog/posts/how-to-fix-reconciliation-applied-recon/",
+      "title": "Why Commission Reconciliation Is Breaking Insurance Agencies (and How to Fix It)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Many agencies attempt to solve reconciliation challenges with third-party tools or workarounds layered outside their management system. On paper, it works. In practice, it creates more friction.",
+      "statement": "The dominant AMS vendor argues bolt-on reconciliation tools outside the AMS create friction, which works against a sidecar.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49",
+        "9dd3f898-ac54-4164-949e-3c3fecdf6e90"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://prep.appliedsystems.com/en-us/blog/posts/agency-bill-reconciliation-applied-recon/",
+      "title": "Automated Agency Bill Reconciliation Is Live in Applied Recon",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Agency bill has stayed the manual exception. Finance and accounting teams are still matching agency bill statements by hand, re-keying data into separate spreadsheets or accounting tools, and stitching the gaps together every month-end close.",
+      "statement": "Applied concedes agency-bill statements were still matched by hand in spreadsheets each month-end.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://prep.appliedsystems.com/en-us/blog/posts/agency-bill-reconciliation-applied-recon/",
+      "title": "Automated Agency Bill Reconciliation Is Live in Applied Recon",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Agency bill statement reconciliation is now live in Applied Recon™, powered by purpose-built AI.",
+      "statement": "Applied now ships AI agency-bill reconciliation natively in Epic, directly covering the reconciliation wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://talents.vaia.com/companies/insurica/carrier-payables-specialist-49130320/",
+      "title": "Carrier Payables Specialist – INSURICA",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Accurate and timely reconciliation of carrier statements and/or individual carrier invoices against EPIC invoicing … Research and resolve discrepancies such as missing statements, payment variances, billing discrepancies and unapplied cash",
+      "statement": "INSURICA pays a full-time specialist to reconcile carrier statements against Epic and resolve discrepancies.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49",
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": "INSURICA"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://talents.vaia.com/companies/insurica/carrier-payables-specialist-49130320/",
+      "title": "Carrier Payables Specialist – INSURICA",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "INSURICA Corporate - Oklahoma City, OK 73118 … Salary Range: $60,000.00 - $65,000.00",
+      "statement": "The INSURICA reconciliation role is based in Oklahoma City and pays $60k–$65k.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": "INSURICA"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://www.leadersedge.com/brokerage-ops/from-manual-to-machine",
+      "title": "From Manual to Machine | Leader's Edge Magazine",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Not every carrier uploads their statements to an Ivans network, for example, so an agency has to go to a carrier site, enter credentials, download the statement, start entering in premiums and taxes policy by policy, and so on.",
+      "statement": "Statements outside Ivans must be downloaded from carrier sites and keyed in policy by policy.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49",
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://www.leadersedge.com/brokerage-ops/from-manual-to-machine",
+      "title": "From Manual to Machine | Leader's Edge Magazine",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Agencies working with Ascend have reduced time spent on the manual reconciliation process by 90%, leading to savings across the board.",
+      "statement": "Ascend claims a 90% cut in reconciliation time for its agency customers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49"
+      ],
+      "company_name": "Ascend"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://comulate.com/",
+      "title": "Comulate - Accounting Automation & Revenue Intelligence",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Comulate is the accounting automation platform decisively chosen by today's and tomorrow's top 100, powering turnkey transformation with end-to-end automation across direct bill, cash application, carrier payables, revenue integrity, and beyond.",
+      "statement": "Comulate sells broker accounting automation (direct bill, carrier payables) to top-100 brokers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49"
+      ],
+      "company_name": "Comulate"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/applied-systems-builds-ai-directly-into-epic-to-automate-agency-workflows-591593.aspx",
+      "title": "Applied Systems builds AI directly into Epic to automate agency workflows",
+      "source_type": "news",
+      "published_at": "2026-09-30",
+      "quote": "Quote comparisons run side by side, and every bound policy is checked against what was originally quoted. Coverage gaps and missing endorsements are flagged for review.",
+      "statement": "Applied's Epic Conductor (Oct 2026) checks every bound policy against the quote natively in Epic.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/applied-systems-builds-ai-directly-into-epic-to-automate-agency-workflows-591593.aspx",
+      "title": "Applied Systems builds AI directly into Epic to automate agency workflows",
+      "source_type": "news",
+      "published_at": "2026-09-30",
+      "quote": "Reconciliation for direct bill, agency bill, and bank statements runs automatically, with human review built in as a checkpoint.",
+      "statement": "Epic Conductor also automates direct-bill, agency-bill and bank reconciliation.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/applied-systems-builds-ai-directly-into-epic-to-automate-agency-workflows-591593.aspx",
+      "title": "Applied Systems builds AI directly into Epic to automate agency workflows",
+      "source_type": "news",
+      "published_at": "2026-09-30",
+      "quote": "Epic Conductor extracts information from carrier documents, including dec pages, applications, and submissions, and writes it directly back into Epic.",
+      "statement": "Epic Conductor extracts dec-page data into Epic, covering the data-entry wedge.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/applied-puts-numbers-on-ai-platform-for-independent-agencies-591874.aspx",
+      "title": "Applied puts numbers on AI platform for independent agencies",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "It added that automated policy checking and quote comparison save 32 to 60 minutes per check, depending on whether the account is monoline or multi-line.",
+      "statement": "Applied claims 32–60 minutes saved per policy check, implying manual checks take at least that long (vendor figure, method unstated).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/applied-puts-numbers-on-ai-platform-for-independent-agencies-591874.aspx",
+      "title": "Applied puts numbers on AI platform for independent agencies",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Agencies with complex commercial books, spread across regional carriers and wholesale markets, may find more of the work still lands on staff.",
+      "statement": "Trade press expects complex commercial books with regional and wholesale carriers to still leave work on staff, a gap the incumbents may not cover.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8",
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/applied-puts-numbers-on-ai-platform-for-independent-agencies-591874.aspx",
+      "title": "Applied puts numbers on AI platform for independent agencies",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The company has not said whether its 99% accuracy rate is measured per field, per document or per policy. At the volumes a mid-sized agency handles, even 1% of fields captured incorrectly could mean a steady stream of wrong limits or missing endorsements.",
+      "statement": "Even 1% field errors in AI extraction could produce wrong limits or missing endorsements: the accuracy fear the idea targets.",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a10d6453-00b2-4ec0-8277-ea7e6dd7fbd3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/applied-puts-numbers-on-ai-platform-for-independent-agencies-591874.aspx",
+      "title": "Applied puts numbers on AI platform for independent agencies",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "However, the most common uses were marketing content (49%), coverage form analysis (43%) and contract reviews (35%), not the operational and accounting work Epic Conductor targets.",
+      "statement": "Agency AI use so far is mostly marketing and coverage-form analysis, not operations and accounting.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3d22a6d2-2b69-4c5a-8708-c8a8048c47e8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/submission-friction-now-beats-price-in-where-agents-place-business-ivans-finds-587645.aspx",
+      "title": "Submission friction now beats price in where agents place business, Ivans finds",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Commercial-heavy agencies reported re-keying data at a 70% rate compared with 62% for personal lines-focused agencies, and rely far more heavily on email, cited by 49%, than dedicated submission capture software, cited by just 7%.",
+      "statement": "Ivans 2026 survey: commercial-heavy agencies re-key data more (70%) than personal-lines agencies (62%). This is about submissions, not policy download.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://insurance-edge.net/2026/10/19/vertafore-launches-two-new-policy-agents/",
+      "title": "Vertafore Launches Two New Policy Agents",
+      "source_type": "news",
+      "published_at": "2026-10-19",
+      "quote": "When that information is not available through carrier download, agency teams must interpret those documents and manually enter policy details into their management system.",
+      "statement": "Vertafore confirms that when policies don't come through carrier download, agencies enter them by hand.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": "Vertafore"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://insurance-edge.net/2026/10/19/vertafore-launches-two-new-policy-agents/",
+      "title": "Vertafore Launches Two New Policy Agents",
+      "source_type": "news",
+      "published_at": "2026-10-19",
+      "quote": "Most of our farm policies don’t download, which has traditionally meant a lot of manual data entry for our team.",
+      "statement": "An agency account manager says most of their farm policies don't download, so they are re-keyed by hand.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://insurance-edge.net/2026/10/19/vertafore-launches-two-new-policy-agents/",
+      "title": "Vertafore Launches Two New Policy Agents",
+      "source_type": "news",
+      "published_at": "2026-10-19",
+      "quote": "Policy Check Agent is available now in AMS360. Early testing shows the Policy Check Agent can reduce policy-checking time by up to 90% per line of business",
+      "statement": "Vertafore's Policy Check Agent is generally available in AMS360, claiming up to 90% less checking time.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8",
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": "Vertafore"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://insurance-edge.net/2026/10/19/vertafore-launches-two-new-policy-agents/",
+      "title": "Vertafore Launches Two New Policy Agents",
+      "source_type": "news",
+      "published_at": "2026-10-19",
+      "quote": "In early adopter testing, the Policy Intake Agent reduced the time required to create and review a typical Commercial Property and General Liability package policy by up to 87%.",
+      "statement": "Vertafore's Policy Intake Agent cut CPP/GL package entry time by up to 87% in early testing.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": "Vertafore"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://amp.insurancejournal.com/news/national/2026/01/21/854949.htm",
+      "title": "Battle Between Applied Systems and Comulate Escalates With New Antitrust Lawsuit",
+      "source_type": "news",
+      "published_at": "2026-01-21",
+      "quote": "kicking Comulate off of Applied’s insurance agency management system, called Epic—a particularly important development since Applied has ownership of Ivans",
+      "statement": "Comulate alleges Applied cut it off from Epic; Applied also owns Ivans. This is platform risk for any Epic sidecar.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "9dd3f898-ac54-4164-949e-3c3fecdf6e90"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://prod-rebrand.appliedsystems.com/en-us/news/applied-v-comulate",
+      "title": "Applied Systems v. Comulate Lawsuit",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "declined to mandate Applied Epic’s integration with Comulate beyond June 30, 2026.",
+      "statement": "The court declined to force Applied to keep Comulate's Epic integration past June 30, 2026.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9dd3f898-ac54-4164-949e-3c3fecdf6e90"
+      ],
+      "company_name": "Applied Systems"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://www.insurancejournal.com/magazines/mag-editorsnote/2022/07/04/674013.htm",
+      "title": "Bad Business",
+      "source_type": "industry_publication",
+      "published_at": "2022-07-04",
+      "quote": "The leading cause of an agency errors and omissions claim continues to be “failure to procure coverage.”",
+      "statement": "The leading E&O cause is failure to procure coverage, an upstream error that issued-policy checking may not catch.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a10d6453-00b2-4ec0-8277-ea7e6dd7fbd3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.insurancejournal.com/magazines/mag-features/2026/07/13/877091.htm",
+      "title": "How AI Is Changing the Roles of Account Managers and CSRs",
+      "source_type": "industry_publication",
+      "published_at": "2026-07-13",
+      "quote": "AI can check policies against the proposal and quote. … Prior to the AI’s implementation, a person had to manually check the policy against the proposal for entry into the agency’s AMS. “Now we don’t have to manually do that,” she added.",
+      "statement": "Account managers at large brokerages say AI policy checking already replaced their manual check against the proposal.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://www.insurancejournal.com/magazines/mag-features/2026/07/13/877091.htm",
+      "title": "How AI Is Changing the Roles of Account Managers and CSRs",
+      "source_type": "industry_publication",
+      "published_at": "2026-07-13",
+      "quote": "It’s costly for agencies to manage behind-the-scenes processing, whether they choose to do so in-house or outsource,",
+      "statement": "A recruiter says back-office processing is costly whether agencies do it in-house or outsource.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://www.insurancejournal.com/partner-perspective/fulcrum/2026/05/15/869588.htm",
+      "title": "When the Workflow Finally Works",
+      "source_type": "industry_publication",
+      "published_at": "2026-05-15",
+      "quote": "Policy checks shipped off and returned in two weeks, sometimes longer. … had gone uncorrected for an entire policy year. The outsourced check had missed it.",
+      "statement": "At Heffernan, outsourced policy checks took two weeks or more and missed an error that went uncorrected for a policy year.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8",
+        "a10d6453-00b2-4ec0-8277-ea7e6dd7fbd3"
+      ],
+      "company_name": "Heffernan Insurance Brokers"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.insurancejournal.com/partner-perspective/fulcrum/2026/05/15/869588.htm",
+      "title": "When the Workflow Finally Works",
+      "source_type": "industry_publication",
+      "published_at": "2026-05-15",
+      "quote": "The old process meant a 14-day wait, a report of discrepancies, and then another hour of manual updates in Epic.",
+      "statement": "The old process was a 14-day wait, a discrepancy report, then about an hour of manual Epic updates. The brokerage now uses Fulcrum.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": "Heffernan Insurance Brokers"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://www.iamagazine.com/2024/06/01/integrating-ai-while-avoiding-eo-claims/",
+      "title": "Integrating AI While Avoiding E&O Claims",
+      "source_type": "industry_publication",
+      "published_at": "2024-06-01",
+      "quote": "AI adoption as an alternative to third-party vendors is one of the largest growth areas. … While this software is helpful in the admitted market, it pays for itself in the excess & surplus lines market, where carriers can change coverage on a daily basis and without the blessing of a state’s department of insurance.",
+      "statement": "A Swiss Re underwriter (in the Big I magazine) says AI is replacing leased offshore staff, and policy-review AI 'pays for itself' in E&S.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163",
+        "3d22a6d2-2b69-4c5a-8708-c8a8048c47e8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://www.iamagazine.com/2024/06/01/integrating-ai-while-avoiding-eo-claims/",
+      "title": "Integrating AI While Avoiding E&O Claims",
+      "source_type": "industry_publication",
+      "published_at": "2024-06-01",
+      "quote": "The contract contained a list of items the AI software would review—and matching coverages in layers of a tower was not included in that list.",
+      "statement": "An E&O claim arose because the agency's AI policy-review vendor did not check defense coverage across tower layers.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "a10d6453-00b2-4ec0-8277-ea7e6dd7fbd3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.iamagazine.com/2024/06/01/integrating-ai-while-avoiding-eo-claims/",
+      "title": "Integrating AI While Avoiding E&O Claims",
+      "source_type": "industry_publication",
+      "published_at": "2024-06-01",
+      "quote": "Overall, continue to have someone review the policies and compare their results with the results of an AI policy review product.",
+      "statement": "E&O carriers advise running AI policy review in parallel with humans before relying on it. This slows adoption.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9dd3f898-ac54-4164-949e-3c3fecdf6e90",
+        "3d22a6d2-2b69-4c5a-8708-c8a8048c47e8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://blog.hawksoft.com/ai-first-vs-ai-enabled-solutions",
+      "title": "The AI Dilemma: AI-First vs. AI-Enabled Solutions",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "In an industry built on precision, \"mostly right\" isn't good enough. When AI makes a mistake on a commercial policy, the cost isn't just a glitch in a system—it’s an E&O risk for your agency. And we all know AI doesn’t carry an E&O policy. Your agency does.",
+      "statement": "Vendor blog: 'mostly right' AI on commercial policies is an E&O risk for the agency.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "a10d6453-00b2-4ec0-8277-ea7e6dd7fbd3"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://blog.hawksoft.com/ai-first-vs-ai-enabled-solutions",
+      "title": "The AI Dilemma: AI-First vs. AI-Enabled Solutions",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Your team doesn't need another tool. They need their existing tools to be smarter.",
+      "statement": "Agency staff are said to prefer AI inside existing tools over another standalone tool.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "9dd3f898-ac54-4164-949e-3c3fecdf6e90"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/agents-are-using-ai--their-agencies-mostly-arent--why-593372.aspx",
+      "title": "Agents are using AI. Their agencies mostly aren't – why?",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "That leaves agency owners deciding whether staff will use another tool, and whether the agency can absorb the change.",
+      "statement": "Agency owners decide whether to adopt another tool.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "9dd3f898-ac54-4164-949e-3c3fecdf6e90"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/agents-are-using-ai--their-agencies-mostly-arent--why-593372.aspx",
+      "title": "Agents are using AI. Their agencies mostly aren't – why?",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "65 percent of agents said they had used AI for work in the past year. Only 14 percent said their agency had actually put an AI tool in place.",
+      "statement": "Liberty Mutual 2026 study: 65% of agents use AI, but only 14% of agencies have formally deployed an AI tool.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3d22a6d2-2b69-4c5a-8708-c8a8048c47e8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/agents-are-using-ai--their-agencies-mostly-arent--why-593372.aspx",
+      "title": "Agents are using AI. Their agencies mostly aren't – why?",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The surveys suggest agents want the time savings AI offers but have less interest in learning another standalone system.",
+      "statement": "Agents want AI time savings but have less interest in learning another standalone system, a headwind for a sidecar.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "9dd3f898-ac54-4164-949e-3c3fecdf6e90",
+        "3d22a6d2-2b69-4c5a-8708-c8a8048c47e8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/independent-agency-revenue-rose-at-three-in-four-firms-as-ai-adoption-tripled-big-i-study-finds-590958.aspx",
+      "title": "Independent agency revenue rose at three in four firms as AI adoption tripled, Big I study finds",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "nearly half of agencies, 46%, reported using AI in 2026, up sharply from 15% in 2024. … 60% of agencies cited lack of knowledge about AI's capabilities as the top barrier",
+      "statement": "Big I 2026: 46% of agencies use AI (15% in 2024); 60% cite lack of AI knowledge as the top barrier.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3d22a6d2-2b69-4c5a-8708-c8a8048c47e8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.ivans.com/for-mgas/products/ivans-download",
+      "title": "Ivans Download for MGAs",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Commercial Lines Policies available for Commercial Lines download include Agriculture Package, Auto, Business Owners Policy (BOP), Crime, General Liability, Inland Marine, Package, Property, Umbrella and Worker’s Compensation.",
+      "statement": "Ivans Download supports many commercial lines (BOP, GL, package, property, umbrella, WC), so standard commercial policies can download when the carrier participates.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "7ff1ee98-750e-4193-ba32-9e326fcab5f7"
+      ],
+      "company_name": "Ivans"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4312671",
+      "title": "Client Support Specialist – Standard Commercial Lines (Insurance Partners)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Process and review renewal policies for accuracy and completeness. … Exceptional attention to detail with the ability to identify missing coverages, coverage gaps, and policy discrepancies. … Proficient in AMS360, ImageRight, internet research, and carrier web portals.",
+      "statement": "SeibertKeck Insurance Partners hires staff to review renewal policies for accuracy and spot discrepancies; it uses AMS360.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": "SeibertKeck Insurance Partners"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4312671",
+      "title": "Client Support Specialist – Standard Commercial Lines (Insurance Partners)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Founded in Akron, OH in 1910, we’ve grown to 250+ employees across 20+ locations in Ohio, Kentucky and Florida",
+      "statement": "SeibertKeck: Akron, OH; 250+ employees across 20+ locations.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "SeibertKeck Insurance Partners"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4365677",
+      "title": "Commercial Lines Account Manager – Starkweather & Shepley",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Respond to client inquiries, incoming mail, and carrier inquiries, and assists PATRA. … Respond to policy checking discrepancy questions.",
+      "statement": "Starkweather & Shepley account managers work with Patra (outsourcer) and answer policy-checking discrepancy questions, so checking is outsourced there.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8",
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": "Starkweather & Shepley Insurance Brokerage"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4365677",
+      "title": "Commercial Lines Account Manager – Starkweather & Shepley",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Commercial Lines Account Manager Providence, RI",
+      "statement": "The Starkweather & Shepley role is in Providence, RI.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Starkweather & Shepley Insurance Brokerage"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4375733",
+      "title": "Commercial Lines Insurance Account Manager – J D Fulwiler & Co",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Maintain complete and accurate documentation in Applied Epic. … Working knowledge of Commercial Lines coverages, applications, renewals, marketing, endorsements, certificates, audits, and policy review.",
+      "statement": "J D Fulwiler commercial account managers keep Epic data accurate and do policy review.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8"
+      ],
+      "company_name": "J D Fulwiler & Co Insurance"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4375733",
+      "title": "Commercial Lines Insurance Account Manager – J D Fulwiler & Co",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Commercial Lines Insurance Account Manager Portland, OR",
+      "statement": "The J D Fulwiler role is in Portland, OR.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "J D Fulwiler & Co Insurance"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3991018",
+      "title": "Commercial Lines Account Manager – Avery W Hall Insurance Agency",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Manage accounts, which can consist of processing renewal applications, endorsements, audits, and cancellations. … Invoice agency billed policies.",
+      "statement": "Avery W Hall account managers process renewals and invoice agency-billed policies.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49"
+      ],
+      "company_name": "Avery W Hall Insurance Agency"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4294358",
+      "title": "Commercial Lines Account Manager – United Insurance",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Check the monthly renewal list which includes review of renewal policies, making any changes on coverages as appropriate. … Work with the Accounting Department on agency billed accounts per written standards.",
+      "statement": "United Insurance account managers review renewal policies and work agency-billed accounts with accounting.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "e6a2d119-061e-49b7-9852-03d95e770ac8",
+        "953d51ef-efb6-4563-ba0f-fdd0a5231c49"
+      ],
+      "company_name": "United Insurance"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4294358",
+      "title": "Commercial Lines Account Manager – United Insurance",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Commercial Lines Account Manager Farmington, ME",
+      "statement": "The United Insurance role is in Farmington, ME.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "United Insurance"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4294358",
+      "title": "Commercial Lines Account Manager – United Insurance",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Compensation: $45,300 – $65,000 annually, plus commission on new business.",
+      "statement": "A commercial account manager costs $45k–$65k a year plus commission, which sets the labor cost baseline.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "ab2af5ac-1c03-4d31-b51f-a4e6008c7163"
+      ],
+      "company_name": "United Insurance"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.heffins.com:443/",
+      "title": "Heffernan Insurance Brokers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Since 1988, Heffernan has remained employee owned and has grown revenue to over $200 million organically and through strategic acquisitions.",
+      "statement": "Heffernan is an employee-owned independent broker with over $200M revenue, above the idea's $1M–$50M band.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Heffernan Insurance Brokers"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://kapnick.com/",
+      "title": "Kapnick Insurance Group",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Contact Adrian, MI Ann Arbor, MI Troy, MI … Our 220+ colleagues provide expert guidance",
+      "statement": "Kapnick: independent broker in Michigan (Adrian, Ann Arbor, Troy) with 220+ colleagues.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Kapnick Insurance Group"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.lawleyinsurance.com/about/",
+      "title": "About Us – Lawley",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "361 Delaware Ave, Buffalo NY, 14202",
+      "statement": "Lawley is headquartered in Buffalo, NY.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lawley Insurance"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.lawleyinsurance.com/about/",
+      "title": "About Us – Lawley",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Lawley is an independent, regional firm of insurance professionals specializing in property and casualty, employee benefits, risk management and personal insurance consulting.",
+      "statement": "Lawley is an independent regional P&C and benefits firm.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Lawley Insurance"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://danielandhenry.com/",
+      "title": "Daniel & Henry",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Daniel & Henry is one of the largest independent firms in the country … Saint Louis, Missouri 63110",
+      "statement": "Daniel & Henry: large independent broker, Saint Louis, MO.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Daniel & Henry"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.truenorthcompanies.com/about-us/our-story",
+      "title": "Our Story & Values | TrueNorth",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Despite growing into one of the nation's top 50 insurance brokerages since our founding in 2001 … TrueNorth celebrates the grand opening of its new headquarters, formerly the Cedar Rapids Public Library",
+      "statement": "TrueNorth: top-50 US broker headquartered in Cedar Rapids, Iowa.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "TrueNorth Companies"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.myknowledgebroker.com/about-us",
+      "title": "R&R Insurance – About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Serving the Midwest since 1975, R&R Insurance Services has grown to be one of the largest independently owned insurance agencies in the region. … Headquartered in Waukesha, WI",
+      "statement": "R&R Insurance: independent agency headquartered in Waukesha, WI.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "R&R Insurance Services"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://www.bmbinc.com/about-us/",
+      "title": "About Bowen, Miclette & Britt",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Recognized as one of the largest independent insurance agencies in America, BMB has large-agency capabilities, while maintaining small agency service and values. Our clients span all industries including Construction, Energy, Manufacturing, and General Industry, and perform operations throughout the world.",
+      "statement": "Bowen, Miclette & Britt: large independent agency focused on commercial lines (construction, energy, manufacturing).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bowen, Miclette & Britt"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://www.bmbinc.com/about-us/",
+      "title": "About Bowen, Miclette & Britt",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Texas Houston – HQ 2800 North Loop West … 1100 Houston, TX 77092",
+      "statement": "BMB is headquartered in Houston, TX.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Bowen, Miclette & Britt"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://www.shepherdins.com",
+      "title": "Shepherd Insurance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "As one of the 50 largest independent insurance agencies in the country, we have access to over 200 insurance carriers … Headquartered in Carmel, Indiana, with offices throughout the country",
+      "statement": "Shepherd Insurance: top-50 independent agency headquartered in Carmel, IN.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Shepherd Insurance"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://www.deandraper.com/",
+      "title": "Dean & Draper",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "we rank as one of the largest agencies in Texas. We are a full-service, independent insurance agency offering commercial and personal insurance lines … 1177 West Loop South Suite 1000 Houston, TX 77027",
+      "statement": "Dean & Draper: independent agency, commercial and personal lines, Houston, TX.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dean & Draper"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://www.ansay.com/",
+      "title": "Ansay & Associates",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ansay & Associates manages the insurance and risk needs of over 5,000 business, non-profit, and governmental clients in Wisconsin and the Midwest.",
+      "statement": "Ansay & Associates: independent agency serving 5,000+ business clients in Wisconsin and the Midwest.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Ansay & Associates"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://www.sterlingrisk.com/",
+      "title": "SterlingRisk Insurance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "300 + employees ready to serve your needs … 135 Crossways Park Drive, Suite 300 P.O. Box 9017, Woodbury, NY 11797",
+      "statement": "SterlingRisk: 300+ employees, headquartered in Woodbury, NY.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "SterlingRisk"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://www.thegibsonedge.com/",
+      "title": "Gibson Insurance Agency",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "ARIZONA ILLINOIS INDIANA MICHIGAN NEW MEXICO UTAH",
+      "statement": "Gibson Insurance Agency lists offices in six US states.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gibson Insurance Agency"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://isuinsurance.com/",
+      "title": "ISU Insurance Services of Colorado",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are an Independent Insurance Agency … Located in Littleton, Colorado",
+      "statement": "ISU Insurance Services of Colorado: small independent agency in Littleton, CO, offering commercial lines.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "ISU Insurance Services of Colorado"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://insurica.com/",
+      "title": "INSURICA",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "As a full-service insurance agency, we are committed to delivering tailored solutions",
+      "statement": "INSURICA is a full-service insurance agency.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "INSURICA"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://www.oswaldcompanies.com/about-us/",
+      "title": "Oswald Companies – About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Founded in 1893, Cleveland-based and employee-owned, Oswald is one of the nation’s largest independent insurance brokerage and risk management firms.",
+      "statement": "Oswald: employee-owned independent broker based in Cleveland, OH.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Oswald Companies"
+    },
+    {
+      "ref": "ev-89",
+      "url": "https://libertycompany.com/",
+      "title": "The Liberty Company Insurance Brokers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Founded in 1987, The Liberty Company Insurance Brokers is a family-owned, independent insurance firm licensed in all 50 states.",
+      "statement": "The Liberty Company: family-owned independent broker licensed in all 50 states.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "The Liberty Company Insurance Brokers"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "e6a2d119-061e-49b7-9852-03d95e770ac8",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Account managers or CSRs compare the issued policy line by line against the quote, application, proposal and AMS data, often by eye and with checklists.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-20",
+            "ev-09"
+          ]
+        },
+        {
+          "statement": "Practice is inconsistent: some agencies let each account manager decide how thoroughly to check, and junior staff often do it.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-07"
+          ]
+        },
+        {
+          "statement": "Many agencies outsource checking (Patra, India-based BPOs) and account managers then handle the discrepancy reports.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-21",
+            "ev-64",
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "A fast-growing share now uses AI checkers (Outmarket, Fulcrum, Vertafore Policy Check Agent, Epic Conductor) with human review of flagged items.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14",
+            "ev-51",
+            "ev-43",
+            "ev-33",
+            "ev-48"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "7ff1ee98-750e-4193-ba32-9e326fcab5f7",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Vendor figures imply a manual check takes roughly 30–60 minutes per policy (Applied claims 32–60 minutes saved per check).",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-36"
+          ]
+        },
+        {
+          "statement": "Outsourced checks have taken two weeks or more, followed by about an hour of manual AMS updates per policy at one brokerage.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-51",
+            "ev-50"
+          ]
+        },
+        {
+          "statement": "Policies that don't come through carrier download are keyed in by hand; one agency says most of its farm policies don't download.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-41",
+            "ev-42"
+          ]
+        },
+        {
+          "statement": "No public data gives weekly hours per account manager for checking or non-download entry.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "953d51ef-efb6-4563-ba0f-fdd0a5231c49",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Accounting staff reconcile carrier statements against AMS invoices by hand or in spreadsheets; mismatches are routed back to servicing staff.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22",
+            "ev-26",
+            "ev-24",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "Setup errors on the policy (wrong premium payable entity) block agency-bill reconciliation, matching the idea's 'configuration mismatch' claim.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-23"
+          ]
+        },
+        {
+          "statement": "Applied now ships AI agency-bill reconciliation in Applied Recon and Epic Conductor; Comulate and Ascend automate direct bill.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-27",
+            "ev-34",
+            "ev-32",
+            "ev-31"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "ab2af5ac-1c03-4d31-b51f-a4e6008c7163",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "A paid budget line exists: agencies outsource policy checking to Patra and India-based BPOs, priced per policy or per FTE.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-21",
+            "ev-19",
+            "ev-17",
+            "ev-04"
+          ]
+        },
+        {
+          "statement": "Reconciliation is a salaried role (e.g. $60k–$65k for a carrier payables specialist).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "No public per-policy price for outsourced checking was found, so the $5–$10 per policy hypothesis is untested.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "9dd3f898-ac54-4164-949e-3c3fecdf6e90",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Agency owners decide whether staff adopt another tool.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-57"
+          ]
+        },
+        {
+          "statement": "For Epic integrations, Applied effectively holds a veto: it cut Comulate's Epic integration and the court declined to force it back.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-45",
+            "ev-46"
+          ]
+        },
+        {
+          "statement": "No source names a specific approval role (CFO vs operations director) for AMS-adjacent tools.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "3d22a6d2-2b69-4c5a-8708-c8a8048c47e8",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Renewal-season backlogs and E&S volume are cited as reasons to adopt policy-review automation.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-52"
+          ]
+        },
+        {
+          "statement": "AI adoption is rising (46% of agencies) but formal deployment is low (14%), and E&O carriers advise a parallel-run period first.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-60",
+            "ev-58",
+            "ev-54"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "a10d6453-00b2-4ec0-8277-ea7e6dd7fbd3",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "One in seven agents files an E&O claim a year, about 20% coverage-related; manual checking is said to catch about 95% of errors.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-08",
+            "ev-03"
+          ]
+        },
+        {
+          "statement": "Outsourced and AI checks both miss errors (a missed address change; an AI vendor that did not check tower defense coverage).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-50",
+            "ev-53"
+          ]
+        },
+        {
+          "statement": "The leading E&O cause is failure to procure coverage, which issued-policy checking may not address.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-47"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "Since Applied (Epic Conductor) and Vertafore (Policy Check Agent) shipped native policy checking in Oct 2026, what share of mid-sized agencies will still buy a third-party checker, and for which lines (E&S, complex commercial)?",
+      "category": "alternatives",
+      "priority": "high"
+    },
+    {
+      "question": "Can a sidecar integrate with Applied Epic through sanctioned channels (Applied certification/Ivans) without the platform risk shown in Applied v. Comulate?",
+      "category": "other",
+      "priority": "high"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Applied Systems (Epic Conductor, Applied Recon)",
+      "url": "https://www.appliedsystems.com",
+      "kind": "indirect",
+      "description": "Dominant AMS; native AI policy checking, dec-page extraction and agency-bill reconciliation inside Epic (Oct 2026).",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-33",
+        "ev-35",
+        "ev-34",
+        "ev-27",
+        "ev-36"
+      ],
+      "sentiment": [
+        {
+          "statement": "Trade press notes Applied has not disclosed how its 99% accuracy or time savings were measured.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Vertafore (Velocity Policy Check / Intake Agents)",
+      "url": "https://www.vertafore.com",
+      "kind": "indirect",
+      "description": "AMS360 vendor; Policy Check Agent and Policy Intake Agent generally available Oct 2026.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-43",
+        "ev-44",
+        "ev-41"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "Outmarket",
+      "url": "https://outmarket.ai",
+      "kind": "direct",
+      "description": "AI policy check across expiring, quote, issued policy and AMS with write-back to Epic/AMS360/Nexsure.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-13",
+        "ev-14"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "CopyCat",
+      "url": "https://www.runcopycat.com",
+      "kind": "direct",
+      "description": "Commercial policy checking with every finding linked to the exact source page.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-15"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "Quandri",
+      "url": "https://www.quandri.io",
+      "kind": "direct",
+      "description": "Personal-lines renewal automation now adding a commercial policy check-in workflow.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-16"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Exdion",
+      "url": "https://www.exdion.com",
+      "kind": "direct",
+      "description": "Exdion Policy Check, AI commercial policy checking used by large US brokers since 2019.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-05"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Fulcrum",
+      "url": "https://www.insurancejournal.com/partner-perspective/fulcrum/",
+      "kind": "direct",
+      "description": "AI platform that one brokerage uses for in-house policy checks with Epic updates.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-51"
+      ],
+      "sentiment": [
+        {
+          "statement": "A brokerage account manager says the old outsourced process was 'very tedious' and Fulcrum checks take seconds.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-51"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-08",
+      "name": "Patra (PolicyChecking.AI)",
+      "url": "https://www.patracorp.com",
+      "kind": "service",
+      "description": "Offshore tech-enabled policy checking service with per-policy pricing, plus a self-service AI tool.",
+      "pricing_note": "Per-policy price for full-service checking (amount not stated).",
+      "evidence_refs": [
+        "ev-21",
+        "ev-20",
+        "ev-64"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "ReSource Pro (Policy Insights)",
+      "url": "https://www.resourcepro.com",
+      "kind": "service",
+      "description": "Tiered AI plus human policy checking service for commercial lines.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-11",
+        "ev-12"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "Outsource2india / Flatworld Solutions (India BPOs)",
+      "url": "https://www.outsource2india.com",
+      "kind": "service",
+      "description": "India-based outsourced policy checking with Epic-trained staff, increasingly tool-assisted.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-17",
+        "ev-18"
+      ],
+      "sentiment": [
+        {
+          "statement": "Outsourced checks were slow and errors persisted.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04",
+            "ev-50"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-11",
+      "name": "Comulate",
+      "url": "https://comulate.com",
+      "kind": "direct",
+      "description": "Broker accounting automation (direct bill, carrier payables); lost its Epic integration in litigation with Applied.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-32",
+        "ev-45",
+        "ev-46"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "Ascend",
+      "url": "https://www.useascend.com",
+      "kind": "direct",
+      "description": "AI commission statement ingestion and reconciliation.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-31"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-13",
+      "name": "In-house manual checking (checklists, spreadsheets)",
+      "url": "https://www.resourcepro.com/blog/policy-checking-a-vital-step-to-mitigate-eo-and-improve-service/",
+      "kind": "manual",
+      "description": "Account managers or junior staff compare documents by eye with checklists; accounting matches statements in spreadsheets.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-09",
+        "ev-07",
+        "ev-26"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Manual in-house checking by account managers or junior staff with checklists, plus spreadsheet statement matching by accounting.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-09",
+        "ev-07",
+        "ev-20",
+        "ev-26"
+      ]
+    },
+    {
+      "statement": "Outsourcing to Patra, ReSource Pro or India-based BPOs, often per policy, with account managers resolving the discrepancy reports.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-21",
+        "ev-64",
+        "ev-17",
+        "ev-11"
+      ]
+    },
+    {
+      "statement": "AI checkers from startups (Outmarket, CopyCat, Exdion, Fulcrum, Quandri) that already compare quote, policy, expiring and AMS data.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-13",
+        "ev-15",
+        "ev-05",
+        "ev-51",
+        "ev-16"
+      ]
+    },
+    {
+      "statement": "Since Oct 2026, native AMS agents: Epic Conductor and Applied Recon, and Vertafore's Policy Check and Intake Agents.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-33",
+        "ev-27",
+        "ev-43",
+        "ev-44"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "SeibertKeck Insurance Partners",
+      "website": "https://www.seibertkeck.com",
+      "icp_id": null,
+      "location": "Akron, OH",
+      "industry": "Independent P&C agency",
+      "description": "Ohio independent agency (250+ staff) whose commercial support staff review renewal policies for discrepancies in AMS360.",
+      "size_estimate": {
+        "min": 250,
+        "max": null,
+        "signal": "Job posting: 250+ employees across 20+ locations",
+        "evidence_ref": "ev-63"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [
+        "AMS360",
+        "ImageRight"
+      ],
+      "evidence_refs": [
+        "ev-62",
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Mid-sized independent agency with a commercial lines department.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Uses AMS360 (Vertafore), where Vertafore's own Policy Check Agent now competes.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Hiring for renewal policy review and discrepancy spotting.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-02",
+      "name": "Starkweather & Shepley Insurance Brokerage",
+      "website": "https://www.starkweather.com",
+      "icp_id": null,
+      "location": "Providence, RI",
+      "industry": "Independent insurance brokerage",
+      "description": "Commercial lines account managers answer policy-checking discrepancy questions alongside outsourcer Patra, so the outsourcing budget line exists.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-65"
+      },
+      "technologies": [
+        "Sagitta",
+        "ImageRight",
+        "Patra"
+      ],
+      "evidence_refs": [
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Independent brokerage with commercial practice groups; size not stated on fetched pages.",
+          "evidence_refs": [
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 2,
+          "rationale": "Uses Sagitta/ImageRight per posting; outsources to Patra.",
+          "evidence_refs": [
+            "ev-64"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Explicit policy-checking discrepancy workflow with an outsourcer.",
+          "evidence_refs": [
+            "ev-64"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "INSURICA",
+      "website": "https://insurica.com",
+      "icp_id": null,
+      "location": "Oklahoma City, OK",
+      "industry": "Independent insurance agency",
+      "description": "Full-service agency that employs carrier-payables specialists to reconcile carrier statements against Epic.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-29"
+      },
+      "technologies": [
+        "Applied Epic"
+      ],
+      "evidence_refs": [
+        "ev-28",
+        "ev-29",
+        "ev-87"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Full-service agency; size not stated on fetched pages.",
+          "evidence_refs": [
+            "ev-87"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Runs Applied Epic.",
+          "evidence_refs": [
+            "ev-28"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Paid role dedicated to statement reconciliation and discrepancies.",
+          "evidence_refs": [
+            "ev-28"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "J D Fulwiler & Co Insurance",
+      "website": "https://www.fulwiler.com",
+      "icp_id": null,
+      "location": "Portland, OR",
+      "industry": "Independent insurance agency",
+      "description": "Hiring commercial lines account managers who do policy review and keep Applied Epic data accurate.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      },
+      "technologies": [
+        "Applied Epic"
+      ],
+      "evidence_refs": [
+        "ev-66",
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Independent agency with commercial lines book; size unknown.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Applied Epic preferred.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Policy review listed in role.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Avery W Hall Insurance Agency",
+      "website": "https://www.averyhall.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Independent insurance agency",
+      "description": "Commercial account managers invoice agency-billed policies, which is the reconciliation-adjacent workload.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [],
+      "evidence_refs": [
+        "ev-68"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Independent agency; location and size not stated on fetched page.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Agency-billed invoicing in AM role.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "United Insurance",
+      "website": "https://www.unitedinsurance.com",
+      "icp_id": null,
+      "location": "Farmington, ME",
+      "industry": "Independent insurance agency",
+      "description": "Commercial account managers review renewal policies and work agency-billed accounts with accounting in Epic.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-70"
+      },
+      "technologies": [
+        "Applied Epic"
+      ],
+      "evidence_refs": [
+        "ev-69",
+        "ev-70",
+        "ev-71"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Independent agency with commercial lines; size unknown.",
+          "evidence_refs": [
+            "ev-69"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Prior Epic experience preferred.",
+          "evidence_refs": [
+            "ev-69"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Renewal review and agency-bill coordination in role.",
+          "evidence_refs": [
+            "ev-69"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Heffernan Insurance Brokers",
+      "website": "https://www.heffins.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Independent insurance brokerage",
+      "description": "Employee-owned broker that had outsourced policy checks (14-day turnaround, missed error) and moved to Fulcrum. Larger than the target band.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "Applied Epic",
+        "Fulcrum"
+      ],
+      "evidence_refs": [
+        "ev-50",
+        "ev-51",
+        "ev-72"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Over $200M revenue, above the $1M–$50M band.",
+          "evidence_refs": [
+            "ev-72"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Uses Epic plus Fulcrum for AI policy checks.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Documented pain with outsourced checking, but already switched to an AI vendor.",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "Kapnick Insurance Group",
+      "website": "https://kapnick.com",
+      "icp_id": null,
+      "location": "Adrian, MI",
+      "industry": "Independent insurance brokerage",
+      "description": "Michigan independent broker (220+ colleagues) with business insurance as a core line.",
+      "size_estimate": {
+        "min": 220,
+        "max": null,
+        "signal": "Website: 220+ colleagues",
+        "evidence_ref": "ev-73"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-73"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-73"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Mid-sized independent with business insurance practice.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Lawley Insurance",
+      "website": "https://www.lawleyinsurance.com",
+      "icp_id": null,
+      "location": "Buffalo, NY",
+      "industry": "Independent insurance brokerage",
+      "description": "Regional independent P&C and benefits firm in Buffalo.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-74",
+        "ev-75"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Independent regional P&C firm.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "Daniel & Henry",
+      "website": "https://danielandhenry.com",
+      "icp_id": null,
+      "location": "Saint Louis, MO",
+      "industry": "Independent insurance brokerage",
+      "description": "Large broker-owned independent firm with commercial insurance practice.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-76"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Large independent commercial broker.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "TrueNorth Companies",
+      "website": "https://www.truenorthcompanies.com",
+      "icp_id": null,
+      "location": "Cedar Rapids, IA",
+      "industry": "Independent insurance brokerage",
+      "description": "Top-50 US broker headquartered in Cedar Rapids, Iowa.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Independent broker; may exceed the commission band.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "R&R Insurance Services",
+      "website": "https://www.rrins.com",
+      "icp_id": null,
+      "location": "Waukesha, WI",
+      "industry": "Independent insurance agency",
+      "description": "One of the largest independently owned agencies in its Midwest region.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-78"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-78"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Regional independent agency.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Bowen, Miclette & Britt",
+      "website": "https://www.bmbinc.com",
+      "icp_id": null,
+      "location": "Houston, TX",
+      "industry": "Independent insurance agency",
+      "description": "Commercial-focused independent agency (construction, energy, manufacturing), likely heavy in complex commercial lines.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-80"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-79",
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Commercial-heavy independent agency.",
+          "evidence_refs": [
+            "ev-79"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Shepherd Insurance",
+      "website": "https://www.shepherdins.com",
+      "icp_id": null,
+      "location": "Carmel, IN",
+      "industry": "Independent insurance agency",
+      "description": "Top-50 independent agency with 200+ carriers, which means many carrier formats to check.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-81"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-81"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Large independent multi-carrier agency.",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "Dean & Draper",
+      "website": "https://www.deandraper.com",
+      "icp_id": null,
+      "location": "Houston, TX",
+      "industry": "Independent insurance agency",
+      "description": "Independent commercial and personal lines agency, one of the largest in Texas.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-82"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-82"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Independent agency with commercial lines.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Ansay & Associates",
+      "website": "https://www.ansay.com",
+      "icp_id": null,
+      "location": "Wisconsin",
+      "industry": "Independent insurance agency",
+      "description": "Independent agency serving 5,000+ business clients in Wisconsin and the Midwest.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-83"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-83"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Commercial book of 5,000+ business clients.",
+          "evidence_refs": [
+            "ev-83"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "SterlingRisk",
+      "website": "https://www.sterlingrisk.com",
+      "icp_id": null,
+      "location": "Woodbury, NY",
+      "industry": "Insurance brokerage",
+      "description": "Commercial and personal lines broker with 300+ employees.",
+      "size_estimate": {
+        "min": 300,
+        "max": null,
+        "signal": "Website: 300+ employees",
+        "evidence_ref": "ev-84"
+      },
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-84"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-84"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Mid-to-large commercial broker.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Gibson Insurance Agency",
+      "website": "https://www.thegibsonedge.com",
+      "icp_id": null,
+      "location": "Six US states",
+      "industry": "Insurance, benefits and consulting",
+      "description": "Multi-state agency offering insurance and risk management to organizations.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-85"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-85"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Agency serving organizations; commercial focus not detailed on fetched page.",
+          "evidence_refs": [
+            "ev-85"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "ISU Insurance Services of Colorado",
+      "website": "https://isuinsurance.com",
+      "icp_id": null,
+      "location": "Littleton, CO",
+      "industry": "Independent insurance agency",
+      "description": "Small independent agency offering BOP, GL, commercial auto and WC. Likely below the commission band.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-86"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-86"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 1,
+          "rationale": "Small agency, mostly personal lines.",
+          "evidence_refs": [
+            "ev-86"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "Oswald Companies",
+      "website": "https://www.oswaldcompanies.com",
+      "icp_id": null,
+      "location": "Cleveland, OH",
+      "industry": "Independent insurance brokerage",
+      "description": "Employee-owned independent broker based in Cleveland; large commercial book.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-88"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-88"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Large independent; may exceed the band.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-21",
+      "name": "The Liberty Company Insurance Brokers",
+      "website": "https://libertycompany.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Independent insurance brokerage",
+      "description": "Family-owned independent broker licensed in all 50 states.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-89"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-89"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Independent broker.",
+          "evidence_refs": [
+            "ev-89"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
