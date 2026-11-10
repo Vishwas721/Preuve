@@ -1,0 +1,2921 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "1a041be0-8676-48fd-9795-6c74d2209d6f",
+    "researcher": "claude-code",
+    "started_at": "2026-11-10T09:00:00Z",
+    "finished_at": "2026-11-10T13:00:00Z",
+    "queries": [
+      "NetSuite service tier transaction lines limit upgrade renewal cost",
+      "NetSuite renewal price increase tier upgrade reddit",
+      "NetSuite summarize Shopify orders journal entries reduce transaction volume",
+      "NetSuite \"transaction lines\" service tier exceeded forced upgrade ecommerce orders",
+      "NetSuite \"summary\" journal entries instead of individual sales orders high volume ecommerce best practice",
+      "NetSuite licensing guide service tier upgrade transaction volume growth cost",
+      "NetSuite \"$164\" OR \"164k\" renewal tier upgrade",
+      "NetSuite kit item assembly component lines count transaction lines service tier",
+      "NetSuite \"should not be doing\" transformation matching routing clean structured entries",
+      "reddit NetSuite premium tier upgrade transaction lines \"premium\" forced renewal",
+      "NetSuite renewal increase tier upgrade \"transaction lines\" blog experience controller",
+      "\"NetSuite Service Tier Dashboard FAQs\" transaction line kit components count",
+      "summarize transactions to avoid NetSuite service tier upgrade transaction lines summarized orders",
+      "Leapfin revenue subledger NetSuite summarized journal entries high volume",
+      "Blue Onion NetSuite subledger ecommerce order-to-cash summarized entries",
+      "[contradiction] NetSuite service tier exceed transaction lines \"not enforced\" OR \"no penalty\" OR \"cheaper to upgrade\"",
+      "[contradiction] summary journal entries ecommerce drawbacks lose order-level detail inventory COGS NetSuite",
+      "\"NetSuite\" \"service tier\" upgrade notice client \"transaction lines\" consultant blog reduce",
+      "[contradiction] NetSuite Premium tier price cost per year how much more than Standard",
+      "Rillet AI-native ERP replace NetSuite high transaction volume",
+      "Campfire AI ERP NetSuite alternative switch",
+      "Celigo NetSuite Shopify integration summarized orders cash sale batching",
+      "[complaint] Celigo NetSuite integration cons expensive errors complaints review",
+      "[complaint] A2X NetSuite limitations problems review cons inventory COGS",
+      "\"Built for NetSuite\" SuiteApp verification program requirements partners",
+      "auditors subledger SOC 1 report reliance summarized journal entries ERP drill-down audit evidence",
+      "\"Staff Accountant\" NetSuite Shopify Amazon settlement reconciliation job greenhouse DTC brand",
+      "jobs.lever.co accountant NetSuite Shopify ecommerce brand reconciliation",
+      "Blue Onion case study NetSuite brand ecommerce customer",
+      "job-boards.greenhouse.io accountant \"NetSuite\" \"Shopify\" brand",
+      "jobs.ashbyhq.com \"NetSuite\" \"Shopify\" accounting manager consumer brand",
+      "\"senior accountant\" \"NetSuite\" \"Amazon\" \"Shopify\" consumer products company job posting 2026",
+      "celigo.com customers DTC brand NetSuite Shopify case study",
+      "A2X NetSuite customer story brand Amazon Shopify case study",
+      "NetSuite partner case study DTC brand Shopify Amazon high order volume NetSuite implementation consumer brand US",
+      "casestudies.com celigo case study apparel brand NetSuite Shopify Amazon",
+      "\"NetSuite\" \"Shopify\" brand case study Anchor Group OR \"Eide Bailly\" OR \"Protelo\" OR \"Techfino\" consumer brand",
+      "celigo customer stories \"Peak Design\" OR \"Yamazaki USA\" headquarters NetSuite",
+      "Jade Global Sol de Janeiro NetSuite Shopify Celigo case study"
+    ],
+    "notes": "Scope: US mid-market NetSuite customers (DTC/marketplace brands first). Strongest evidence is Oracle's own documentation (component lines count toward the tier metric; six-month average; tier is a priced line). Practitioner forums with tier-upgrade anecdotes (NetSuite Professionals archive, Oracle Community, Reddit) block Preuve's crawler (robots.txt/403) and were not cited. The idea's $46k->$164k example and the 'should not be doing transformation' quote could not be found. No public dollar figure for a tier upgrade was verifiable. Prospects come from vendor case studies (Celigo, Blue Onion, Eide Bailly, Anchor Group, Snapshot, Jade Global, Hairball) plus the brands' own sites; no headcounts were stated on own sites, so size_estimate is omitted. No personal names are recorded; contacts left empty by instruction."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/subsect_97130325331.html",
+      "title": "NetSuite Service Tier Dashboard FAQs (Oracle NetSuite help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "It is important to know that a single transaction is not necessarily one transaction line in the Monthly Transaction Lines metric. There can be underlying component items that count toward the Monthly Transaction Lines metric.",
+      "statement": "Oracle's own FAQ confirms that hidden component items (kits, assemblies, groups) count toward the Monthly Transaction Lines service-tier metric.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4",
+        "b4d96551-a63c-4512-8ff2-49f8168acc1c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/subsect_97130325331.html",
+      "title": "NetSuite Service Tier Dashboard FAQs (Oracle NetSuite help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Main Line (1) + Assembly Item (1) + Component Items (5) = 7 transaction lines. … Main Line (1) + Assembly Item (1) = 2.",
+      "statement": "Oracle's worked example: a sales order that shows 2 lines on the form counts as 7 lines toward the tier metric when the assembly has 5 components.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/subsect_97130325331.html",
+      "title": "NetSuite Service Tier Dashboard FAQs (Oracle NetSuite help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Monthly Transaction Lines are reported each month and a 6-month rolling average is used to determine the appropriate service tier.",
+      "statement": "Service tier placement is driven by a six-month rolling average of monthly transaction lines.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4d96551-a63c-4512-8ff2-49f8168acc1c",
+        "c89c1499-0261-4d70-a937-5c47f03831ac"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/subsect_159162378384.html",
+      "title": "NetSuite Service Tier Structure (Oracle NetSuite help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Each service tier supports a maximum number of users, file storage, and monthly transaction lines created. … Total transaction lines per month across all transaction types, averaged over the most recent six months.",
+      "statement": "Each NetSuite service tier caps monthly transaction lines (across all transaction types, six-month average) alongside users and storage.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/subsect_159162378384.html",
+      "title": "NetSuite Service Tier Structure (Oracle NetSuite help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If you exceed one or more service tier limits, administrators will see a banner message and receive an email notification with further instructions. … If the limit you have exceeded is File Cabinet Storage, you will be granted a 90 day grace period for this limit only.",
+      "statement": "When a tier limit is exceeded, admins get a banner and email; the documented 90-day grace period applies only to file storage, not transaction lines.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_160311737279.html",
+      "title": "Transaction Types Included in Monthly Transaction Lines Metric (Oracle NetSuite help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "It could also be an inventory adjustment or an assembly build transaction. It's likely that one transaction has multiple transaction lines that count toward your Monthly Transaction Lines metric.",
+      "statement": "Oracle lists inventory adjustments and assembly builds among the counted transactions and notes one transaction usually contributes multiple lines.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_0514020332.html",
+      "title": "Service Tier Dashboard (Oracle NetSuite help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Average Monthly Transaction Lines (previous six-month average): The rolling monthly average based on the last six months of transaction lines.",
+      "statement": "NetSuite provides a native Service Tier Dashboard showing the six-month rolling average of transaction lines.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4d96551-a63c-4512-8ff2-49f8168acc1c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/subsect_97130325331.html",
+      "title": "NetSuite Service Tier Dashboard FAQs (Oracle NetSuite help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The SuiteSuccess Transaction Types Analysis Workbook, available on the SuiteApp marketplace, helps you see your company's transaction line usage for the current month.",
+      "statement": "Oracle offers a SuiteApp workbook to analyse current-month transaction line usage by type.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b4d96551-a63c-4512-8ff2-49f8168acc1c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/subsect_0616010738.html",
+      "title": "Service Tier Upgrade FAQs (Oracle NetSuite help)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Service tiers support long-term growth and aren't meant for short-term spikes. Customers get a wider threshold in tracked attributes, so you rarely need to downgrade.",
+      "statement": "Oracle frames tier upgrades as long-term and rarely reversed, so once upgraded a customer is unlikely to step back down.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://timdietrich.me/blog/netsuite-suiteql-transaction-line-usage/",
+      "title": "NetSuite: Use SuiteQL to Calculate Transaction Line Usage (consultant blog)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "One of my NetSuite clients is growing rapidly, and as a result, so is their NetSuite usage - especially the number of transactions that they are generating. They're concerned that they'll need to upgrade their NetSuite Service Tier.",
+      "statement": "A NetSuite consultant reports a fast-growing client worried that transaction growth will force a service tier upgrade.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b4d96551-a63c-4512-8ff2-49f8168acc1c",
+        "c89c1499-0261-4d70-a937-5c47f03831ac"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://timdietrich.me/blog/netsuite-suiteql-transaction-line-usage/",
+      "title": "NetSuite: Use SuiteQL to Calculate Transaction Line Usage (consultant blog)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "My client asked me to create a query that they can use to determine their Transaction Line Usage.",
+      "statement": "Monitoring line usage is done with custom SuiteQL queries written by consultants.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b4d96551-a63c-4512-8ff2-49f8168acc1c"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://concentrus.com/optimizing-your-transaction-line-use/",
+      "title": "Optimizing Your Transaction Line Use (Concentrus, NetSuite partner)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Recently, one of our clients received notice they were being selected for a service tier upgrade based on their transaction use.",
+      "statement": "A NetSuite partner reports a client was notified of a service tier upgrade based on transaction line usage.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac",
+        "831ba383-b721-45a4-b437-1ecda203c9f1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://concentrus.com/optimizing-your-transaction-line-use/",
+      "title": "Optimizing Your Transaction Line Use (Concentrus, NetSuite partner)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "After performing a data analysis, we discovered an abnormally large number of inventory cost revaluation transactions. These transactions are created through the standard cost revaluation process and were responsible for about as much as a million transaction lines in certain months.",
+      "statement": "In that case, system-generated inventory cost revaluation transactions (not orders) drove up to about a million lines in some months.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac",
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://concentrus.com/optimizing-your-transaction-line-use/",
+      "title": "Optimizing Your Transaction Line Use (Concentrus, NetSuite partner)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "we were able to help them identify opportunities to reduce transaction line use and develop an action plan for monitoring transaction use over the coming months and save on monthly licensing costs due to transaction line usage.",
+      "statement": "The partner resolved the tier pressure through analysis, configuration changes and monitoring rather than a new external system, suggesting a consulting/config fix can be enough.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://www.stacksync.com/data-sync/netsuite-transaction-lines-explained-real-time-sync",
+      "title": "NetSuite Transaction Lines Explained + Real-Time Sync Guide (Stacksync)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "These limits are calculated using a six-month rolling average, meaning sustained growth in transaction volume necessitates tier upgrades. … The jump from Standard to Premium tier represents a 10x increase in capacity but also a significant investment in both licensing and infrastructure.",
+      "statement": "An integration vendor states sustained volume growth forces tier upgrades and that Standard-to-Premium is a significant licensing investment (no figure given).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac",
+        "831ba383-b721-45a4-b437-1ecda203c9f1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://redresscompliance.com/oracle-netsuite-negotiation",
+      "title": "NetSuite negotiation in 2026 (Redress Compliance)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Every NetSuite account sits on a service tier that caps full licensed users, file storage and monthly transaction lines. The tier is priced as its own line, and a quote built on inflated seat counts can push you into a higher tier than your real volumes need.",
+      "statement": "A licensing advisor confirms the service tier is a separately priced line item on NetSuite quotes.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "831ba383-b721-45a4-b437-1ecda203c9f1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://redresscompliance.com/oracle-netsuite-negotiation",
+      "title": "NetSuite negotiation in 2026 (Redress Compliance)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Transaction lines are averaged over the most recent six months, so one busy month does not move you. If a rep says you need the next tier, ask which of the limits you exceed and by how much.",
+      "statement": "Tier pressure is negotiable and a single peak month does not trigger an upgrade, which tempers urgency.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://redresscompliance.com/oracle-netsuite-negotiation",
+      "title": "NetSuite negotiation in 2026 (Redress Compliance)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Most of the padding sits in seats. Full Licensed Users are routinely quoted for people who only enter time, expenses or approvals, work that Employee Center and View and Approve licenses cover.",
+      "statement": "A licensing advisor says the largest overspend on NetSuite quotes is seats, not the service tier, so tier avoidance may be a secondary lever.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "831ba383-b721-45a4-b437-1ecda203c9f1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://redresscompliance.com/oracle-netsuite-negotiation",
+      "title": "NetSuite negotiation in 2026 (Redress Compliance)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Oracle's standard NetSuite agreement renews at then current pricing unless agreed otherwise, so the uplift cap and price holds belong in the first order form.",
+      "statement": "NetSuite renewals default to then-current pricing unless caps were negotiated, supporting the renewal-uplift pain.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "831ba383-b721-45a4-b437-1ecda203c9f1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://redresscompliance.com/oracle-netsuite-negotiation",
+      "title": "NetSuite negotiation in 2026 (Redress Compliance)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Across roughly 30 to 40 Oracle NetSuite renewals we benchmarked between 2024 and 2026, the first quote ran 20 to 35 percent above the price the same customer eventually signed.",
+      "statement": "In 30-40 benchmarked renewals, first renewal quotes ran 20-35% above the final price, so renewals are contentious but negotiable.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "831ba383-b721-45a4-b437-1ecda203c9f1",
+        "796b0a54-5a1c-4172-9c1d-977805b70c5e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://www.houseblend.io/articles/netsuite-licensing-options-enterprise-guide",
+      "title": "NetSuite Licensing Models: Enterprise Guide (Houseblend)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "It’s common that the first contract has steep discounts to win your business, and Oracle may attempt to raise rates at renewal.",
+      "statement": "A NetSuite partner guide says initial discounts are common and Oracle may try to raise rates at renewal.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "831ba383-b721-45a4-b437-1ecda203c9f1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://www.randgroup.com/insights/oracle-netsuite/how-much-does-netsuite-cost/",
+      "title": "How much does NetSuite cost? (Rand Group, NetSuite partner)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Service tier: Standard Service Tier initially, with upgrades as order volume, inventory movement, or integrations increase",
+      "statement": "A NetSuite partner's typical wholesale-distribution profile expects tier upgrades as order volume and inventory movement grow.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://netsuite.folio3.com/blog/netsuite-service-tiers-explained-choosing-the-right-one-for-your-business/",
+      "title": "NetSuite Service Tiers Explained (Folio3, NetSuite partner)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "By upgrading from the Standard Tier to the Premium Tier, you not only get more users, storage, and transactions but also enjoy several additional advantages that improve your business management in NetSuite.",
+      "statement": "Partners present tier upgrades as bringing extra value (concurrency, throughput, sandbox), so customers may accept them rather than engineer around them.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "c89c1499-0261-4d70-a937-5c47f03831ac"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://llms.campfire.ai/campfire-vs-netsuite",
+      "title": "Campfire vs NetSuite (Campfire)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "implementations still take a year, and renewal prices still spike 30%",
+      "statement": "A competing AI-native ERP vendor claims NetSuite renewal prices spike about 30% (vendor claim, unverified).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "831ba383-b721-45a4-b437-1ecda203c9f1"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://llms.campfire.ai/campfire-vs-netsuite",
+      "title": "Campfire vs NetSuite (Campfire)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "20–30% of Campfire's customers are NetSuite replacements.",
+      "statement": "Campfire says 20-30% of its customers replaced NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Campfire"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://erpresearch.com/en-us/ai-native-erp",
+      "title": "AI-Native ERP Systems: Rillet, DualEntry & Rivals (ERP Research)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "No AI-native vendor matches the operational scope of NetSuite, Dynamics 365, or Acumatica. If your ERP runs inventory, manufacturing, or complex projects, the AI-natives are not yet a like-for-like alternative",
+      "statement": "An independent guide says AI-native ERPs are not yet a like-for-like replacement for inventory/manufacturing businesses, i.e. the idea's ICP.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://info.rillet.com/rillet-vs-netsuite-intacct-qbo-xero",
+      "title": "Rillet vs NetSuite, Sage Intacct, QuickBooks, and Xero (Rillet)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Legacy ERPs like NetSuite and Sage Intacct when teams want a faster close and a more integration-native stack.",
+      "statement": "Rillet positions itself as a replacement for NetSuite for teams wanting a faster close.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Rillet"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://a2xaccounting.com/netsuite",
+      "title": "Amazon and Shopify NetSuite Integration (A2X)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "A2X transforms transaction data from your sales channels into summarized journal entries that reconcile perfectly with payouts in NetSuite.",
+      "statement": "A2X already posts summarized, payout-level journal entries from Amazon/Shopify into NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "A2X"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://a2xaccounting.com/netsuite",
+      "title": "Amazon and Shopify NetSuite Integration (A2X)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Most inventory integrations focus on individual orders. While this approach is great for operations, it can make accounting challenging, as you're attempting to reconcile thousands of orders to a single payout.",
+      "statement": "A2X describes order-level integrations as making accounting hard because thousands of orders must be reconciled to one payout.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4",
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd"
+      ],
+      "company_name": "A2X"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://support.a2xaccounting.com/en/articles/7239084-netsuite-and-a2x",
+      "title": "NetSuite and A2X (A2X Support Center)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Note that the NetSuite integration currently does not support the following A2X features: … COGS. Instead of using A2X's average cost feature, we recommend using NetSuite's built-in inventory costing methods.",
+      "statement": "A2X's NetSuite integration does not handle COGS, leaving inventory and cost lines to NetSuite - a gap relative to the idea's BOM/component scope.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "A2X"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://shogo.io/integrations/shopify-netsuite",
+      "title": "Shopify to NetSuite Integration (Shogo)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Shogo provides exactly that — pulling daily Shopify sales summaries and posting structured journal entries to NetSuite with full dimensional support.",
+      "statement": "Shogo posts daily summarized Shopify journal entries into NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "Shogo"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://www.bookkeep.com/docs/accounting-platforms/netsuite/how-bookkeep-posts-to-netsuite",
+      "title": "How Bookkeep posts to NetSuite (Bookkeep)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Each deposit posts separately to simplify bank feed matching, while daily sales are summarized to prevent excessive clutter in your accounting system.",
+      "statement": "Bookkeep summarizes daily sales into NetSuite to avoid clutter.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "Bookkeep"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://www.blueonion.ai/close",
+      "title": "Month-End Close Automation for E-commerce (Blue Onion)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The Subledger posts daily summary entries directly to NetSuite, QuickBooks, or Xero - with full audit trail built in.",
+      "statement": "Blue Onion already sells an e-commerce subledger that posts daily summary entries to NetSuite with an audit trail - very close to the proposed wedge.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4",
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd"
+      ],
+      "company_name": "Blue Onion"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://www.leapfin.com/connect-stripe-to-netsuite",
+      "title": "Connect Stripe to NetSuite for reconciliation (Leapfin)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Yes, in many cases, Leapfin would replace Boomi, Celigo, and SuiteSync. When using Leapfin, you would no longer send raw Stripe data with these integration tools. … Leapfin will also prepare journal entry summaries to be shared with NetSuite.",
+      "statement": "Leapfin positions its subledger as replacing raw-data iPaaS feeds into NetSuite with summarized journal entries.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "Leapfin"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://www.leapfin.com/product/architecture",
+      "title": "Architecture (Leapfin)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Protect valuable revenue data in Leapfin’s SOC 1 and SOC 2 Type 1-secured platform.",
+      "statement": "An incumbent subledger vendor markets SOC 1 and SOC 2 attestations, indicating the trust bar for finance-data tools.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "796b0a54-5a1c-4172-9c1d-977805b70c5e"
+      ],
+      "company_name": "Leapfin"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://www.usagepricing.com/blueprint/stack/leapfin",
+      "title": "Leapfin - RevOps tool profile (UsagePricing)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "ERPs are built for summarized journal entries, not millions of monthly transactions. A subledger holds the transaction-grain revenue record, applies recognition rules there, and posts summaries upward — so the GL stays clean while every number remains traceable to source data.",
+      "statement": "An independent profile describes the subledger-plus-summary-posting pattern as the established answer to high transaction volume in ERPs.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4",
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd"
+      ],
+      "company_name": "Leapfin"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://www.usagepricing.com/blueprint/stack/leapfin",
+      "title": "Leapfin - RevOps tool profile (UsagePricing)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Accounting teams use it to close faster and to answer auditors with drill-down from a journal entry to the underlying transactions.",
+      "statement": "Drill-down from summary entries to source transactions is a core audit requirement that existing subledgers already address.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd"
+      ],
+      "company_name": "Leapfin"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://www.ledge.co/content/why-netsuite-automations-break-down-and-what-to-do-about-it",
+      "title": "Why NetSuite automations break down (Ledge)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "But operators in the weeds know that much of the heavy lifting still happens outside of the NetSuite platform, relying on spreadsheets, custom scripts, and manual work.",
+      "statement": "A reconciliation vendor states much NetSuite finance work happens outside NetSuite in spreadsheets and scripts.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "Ledge"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://www.ledge.co/content/why-netsuite-automations-break-down-and-what-to-do-about-it",
+      "title": "Why NetSuite automations break down (Ledge)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ledge generates and posts journal entries automatically based on matched transactions — using flexible rules that finance can configure and test without IT. Every entry is audit-tracked, tied directly to its source records, and synced to NetSuite.",
+      "statement": "Ledge already matches transactions outside NetSuite and posts audit-tracked journal entries into it.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4",
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd"
+      ],
+      "company_name": "Ledge"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://www.celigo.com/integrations/netsuite-shopify/",
+      "title": "Shopify - NetSuite Integration App (Celigo)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Import Orders from Shopify to NetSuite as Sales Order/Cash Sale/Invoice Add",
+      "statement": "Celigo's standard Shopify app imports orders into NetSuite as individual sales orders/cash sales/invoices, i.e. the line-heavy pattern.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "Celigo"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://www.sixlakesconsulting.com/blogs/celigo-pros-and-cons-what-to-know-before-you-commit.html",
+      "title": "Celigo Pros and Cons (Six Lakes Consulting)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The platform does not remove integration work. Complex business rules still need design and testing. Someone must also own errors, app changes, security, and cost.",
+      "statement": "A consultant notes Celigo still requires buyers to own errors, rules and cost.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Celigo"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://www.sixlakesconsulting.com/blogs/celigo-pros-and-cons-what-to-know-before-you-commit.html",
+      "title": "Celigo Pros and Cons (Six Lakes Consulting)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The same review set also includes concerns about learning curve, complexity, cost, and unclear error messages.",
+      "statement": "G2 review themes for Celigo include complaints about learning curve, complexity, cost and unclear errors.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Celigo"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://www.webgility.com/blog/detail-vs-summary-in-ecommerce-accounting-whats-best-for-your-business",
+      "title": "Detail vs. Summary in Ecommerce Accounting (Webgility)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For most growing ecommerce businesses, order-level detail syncing is recommended. Summary data limits your ability to analyze SKU-level profitability since you can't combine sales with COGS in one place.",
+      "statement": "An e-commerce accounting vendor recommends order-level detail over summaries for growing brands because summaries break SKU-level margin analysis (QuickBooks context).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://endlesscommerce.com/playbook/shopify-quickbooks-netsuite-patterns",
+      "title": "Shopify - QuickBooks/NetSuite Patterns (Endless Commerce)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "No transaction-level detail in accounting system (must reference Shopify for refunds, specific orders) … COGS allocation is approximation without real inventory system",
+      "statement": "Summary-posting patterns lose transaction-level detail in the ledger and approximate COGS, a drawback for audit and inventory accuracy.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4",
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://linkmybooks.com/blog/what-is-summary-posting-in-ecommerce-accounting-a-guide-for-accountants",
+      "title": "Summary Posting in Ecommerce Accounting (Link My Books)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Itemized posting generates an extremely high volume of accounting entries, often creating thousands of individual transactions that can slow down accounting software and make reconciliation a lengthy, error-prone process.",
+      "statement": "A summary-posting vendor argues itemized posting bloats ledgers and slows reconciliation (written for Xero/QuickBooks).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://www.isaca.org/resources/isaca-journal/issues/2018/volume-6/adding-increased-valuethe-it-auditors-role-in-a-sox-audit",
+      "title": "Adding Increased Value - The IT Auditor's Role in a SOX Audit (ISACA Journal)",
+      "source_type": "industry_publication",
+      "published_at": "2018-11-01",
+      "quote": "There is an assumption that JEs coming from subledgers are derived from transactions that have their own controls within those modules/business processes, so another review of the JE is unnecessary.",
+      "statement": "Auditors typically rely on subledger controls rather than re-reviewing subledger journal entries, so an external subledger's own controls (and attestation) become audit-relevant.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd",
+        "796b0a54-5a1c-4172-9c1d-977805b70c5e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://www.zoneandco.com/glossary/bfn-certification",
+      "title": "BFN certification (Zone & Co)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "While the program doesn't provide any guarantee from NetSuite, it does mean the app has passed customer reference checks, technical demonstrations and security reviews.",
+      "statement": "Built for NetSuite certification (references, demo, security review) is a recognised trust signal when buyers evaluate NetSuite add-ons.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "796b0a54-5a1c-4172-9c1d-977805b70c5e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.blueonion.ai/case-studies/how-wayb-automates-bank-payouts-in-netsuite-with-blue-onion",
+      "title": "How WAYB Automates Bank Payouts in NetSuite (Blue Onion case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Their entire reconciliation process was manual, from downloading and converting data from Amazon Seller Central to Excel, to performing manual pivots to creating journal entries and applying accounts receivable to payouts.",
+      "statement": "A NetSuite-using DTC brand built marketplace journal entries manually in Excel before buying a subledger.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "WAYB"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://www.blueonion.ai/case-studies/how-wayb-automates-bank-payouts-in-netsuite-with-blue-onion",
+      "title": "How WAYB Automates Bank Payouts in NetSuite (Blue Onion case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Manual, labor-intensive processes consumed approximately 40% of the staff accountant’s role, leading to inefficiencies and delayed month-end closings.",
+      "statement": "Manual reconciliation consumed about 40% of a staff accountant's role at that brand.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd"
+      ],
+      "company_name": "WAYB"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://www.blueonion.ai/case-studies/how-wayb-automates-bank-payouts-in-netsuite-with-blue-onion",
+      "title": "How WAYB Automates Bank Payouts in NetSuite (Blue Onion case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "WAYB is a sustainable retailer that focuses on providing high quality, eco-friendly products for families. … Seeking a better way, they adopted NetSuite, a comprehensive enterprise resource planning (ERP) system.",
+      "statement": "WAYB is a family travel-gear brand that runs NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "WAYB"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.blueonion.ai/case-studies/how-clean-simple-eats-went-from-60-hours-to-under-5-for-month-end-close",
+      "title": "How Clean Simple Eats Went From 60+ Hours to Under 5 (Blue Onion case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "After transitioning to NetSuite (ERP), the goal was to streamline financial processes, presenting challenges, especially in managing and reconciling transactions.",
+      "statement": "Clean Simple Eats moved to NetSuite and struggled to reconcile Shopify transactions in it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "Clean Simple Eats"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://www.blueonion.ai/case-studies/how-clean-simple-eats-went-from-60-hours-to-under-5-for-month-end-close",
+      "title": "How Clean Simple Eats Went From 60+ Hours to Under 5 (Blue Onion case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Blue Onion was a crucial asset for Clean Simple Eats during their first-ever audit for fiscal year 2023. … Over a week’s time, I pushed around 1,000 deposits into NetSuite.",
+      "statement": "During its first audit the brand used a subledger to trace payouts to orders and pushed about 1,000 deposits into NetSuite in a week.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd"
+      ],
+      "company_name": "Clean Simple Eats"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://www.blueonion.ai/case-studies/how-public-rec-achieves-99-5-order-to-cash-accuracy-with-blue-onion",
+      "title": "How Public Rec Achieves 99.5% Order-to-Cash Accuracy (Blue Onion case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "I think the best part is being able to drill up and down. If I see a report, I can click into the data and see what’s behind it.",
+      "statement": "A NetSuite-using apparel brand's finance lead values drill-down from roll-ups to transactions, the traceability the idea relies on.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "f35e8035-203c-4087-a4e4-c0c0abe75efd"
+      ],
+      "company_name": "Public Rec"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.celigo.com/customer-stories/coterie/",
+      "title": "How Coterie achieved 60% growth with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The system handles about 12,000 Amazon settlement records monthly while managing thousands of Shopify subscription orders every night.",
+      "statement": "Coterie processes ~12,000 Amazon settlement records a month and thousands of Shopify orders nightly into NetSuite.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "Coterie"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.celigo.com/customer-stories/coterie/",
+      "title": "How Coterie achieved 60% growth with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Coterie’s business growth tells the same story: surpassing $200 million in net revenue in the last twelve months, reflecting nearly 60% year-over-year growth.",
+      "statement": "Coterie passed $200M net revenue with ~60% growth, inside the idea's $10M-$250M band.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Coterie"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.celigo.com/customer-stories/coterie/",
+      "title": "How Coterie achieved 60% growth with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Headquarters New York, NY Integrations used Shopify, Amazon, Slack, NetSuite, Loop Returns, 3PL warehouses",
+      "statement": "Coterie is headquartered in New York and runs Shopify, Amazon and NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Coterie"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://www.coterie.com/",
+      "title": "Coterie home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Coterie exists to give you a premium diapering experience.",
+      "statement": "Coterie sells premium diapers and baby care direct to consumers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Coterie"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://www.celigo.com/customer-stories/eyebobs-saves-hundreds-of-thousands-of-dollars-and-improves-the-customer-experience-with-celigo/",
+      "title": "Eyebobs saves with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Eyebobs sees several hundred orders a day from retail, Amazon, and its webstore. As the company grew, eyebobs relied on manual data entry of Amazon orders into NetSuite ERP",
+      "statement": "Eyebobs runs NetSuite and handles several hundred orders a day across retail, Amazon and web.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "eyebobs"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.eyebobs.com/pages/about-us",
+      "title": "About eyebobs",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "eyebobs is an American eyewear brand based in Minneapolis, Minnesota",
+      "statement": "Eyebobs is a US eyewear brand based in Minneapolis.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "eyebobs"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.casestudies.com/company/celigo/case-study/chubbies-automates-edi-processes-and-accelerates-growth-in-wholesale-with-celigo",
+      "title": "Chubbies achieves EDI automation with Celigo (case study summary)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "After moving from QuickBooks to NetSuite, Chubbies also needed a better way to connect its Shopify storefront and wholesale operations",
+      "statement": "Chubbies runs NetSuite with a Shopify storefront and wholesale channel.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Chubbies"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://www.chubbiesshorts.com/pages/about-us",
+      "title": "Chubbies - About Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Chubbies was founded in 2011 by a group of friends who found the traditional world of men’s capital-F-”Fashion” completely unrelatable.",
+      "statement": "Chubbies is a men's apparel brand founded in 2011.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Chubbies"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://www.casestudies.com/company/celigo/case-study/poo-pourri-achieves-soaring-growth-seamlessly-with-celigo",
+      "title": "Poo-Pourri achieves scalable growth with Celigo (case study summary)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Celigo implemented its iPaaS to integrate Poo-Pourri’s NetSuite ERP, Shopify storefront, and later channels like Walmart, Faire, Brandwise, and 3PL Central",
+      "statement": "Poo-Pourri runs NetSuite with Shopify and several marketplace/wholesale channels.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Poo-Pourri"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://pourri.com/pages/contact",
+      "title": "Poo~Pourri - Contact Us",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Scentsible, LLC 4901 Keller Springs Suite 106D Addison, TX 75001",
+      "statement": "Poo-Pourri (Scentsible, LLC) is located in Addison, Texas.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Poo-Pourri"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.casestudies.com/company/celigo/case-study/loot-crate-customer-case-study",
+      "title": "Loot Crate achieves automated fulfillment with Celigo (case study summary)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Loot Crate, a fast-growing subscription box company, struggled to manually move order and fulfillment data between Shopify Plus, NetSuite, and its warehouse systems as volumes surged",
+      "statement": "Loot Crate runs Shopify Plus and NetSuite and struggled with surging order volume.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Loot Crate"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://lootcrate.com/",
+      "title": "Loot Crate home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Get a surprise bundle of collectibles and gear from your favorite movies, TV",
+      "statement": "Loot Crate sells subscription boxes of collectibles.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Loot Crate"
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://wayb.com/pages/about-us",
+      "title": "About WAYB",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We’re on a mission to reinvent on-the-go gear that’s better for people and the planet.",
+      "statement": "WAYB sells travel gear for families direct to consumers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "WAYB"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://cleansimpleeats.com/pages/our-story",
+      "title": "Clean Simple Eats - Meet the Founders",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Clean Simple Eats empowers others to fuel their bodies and feel their best with clean and delicious supplements.",
+      "statement": "Clean Simple Eats is a DTC supplements and nutrition brand.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Clean Simple Eats"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.celigo.com/customer-stories/peak-design/",
+      "title": "How Peak Design unified commerce operations with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Peak Design, the San Francisco-based maker of premium camera accessories, carry gear, and everyday bags, replaced a fragmented, manually dependent operations model with Celigo to run its direct-to-consumer, marketplace, and wholesale channels on NetSuite.",
+      "statement": "Peak Design is a San Francisco-based DTC/marketplace/wholesale brand running on NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Peak Design"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://www.celigo.com/customer-stories/peak-design/",
+      "title": "How Peak Design unified commerce operations with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Staff manually uploaded files to NetSuite daily, finance tracked landed costs and B2B pricing in disconnected spreadsheets",
+      "statement": "Before automation, Peak Design staff uploaded files to NetSuite daily and finance tracked costs in spreadsheets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "Peak Design"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://www.peakdesign.com/global/",
+      "title": "Peak Design home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The lightest Peak Design rollers, in three sizes from carry-on to checked.",
+      "statement": "Peak Design sells bags and camera gear online.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Peak Design"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.celigo.com/customer-stories/topo-designs-revamps-inventory-management-and-financial-systems-cutting-operational-costs-by-30-by-using-celigo/",
+      "title": "Topo Designs cuts operational costs with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Consumer / Fashion / Outdoor Apparel Denver, CO",
+      "statement": "Topo Designs is an outdoor apparel brand in Denver, Colorado.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Topo Designs"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.celigo.com/customer-stories/topo-designs-revamps-inventory-management-and-financial-systems-cutting-operational-costs-by-30-by-using-celigo/",
+      "title": "Topo Designs cuts operational costs with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "the team first automated its order-to-cash business processes with Celigo’s Shopify-NetSuite Integration App",
+      "statement": "Topo Designs runs Shopify and NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Topo Designs"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://topodesigns.com/",
+      "title": "Topo Designs home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Tough organic cotton overalls, a crossbody for the essentials, and a pack that's ready when the pavement ends.",
+      "statement": "Topo Designs sells packs and apparel online.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Topo Designs"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.eidebailly.com/Insights/Case-Studies/Customizing-NetSuite-for-e-Commerce-success",
+      "title": "Customizing NetSuite for e-Commerce Success (Eide Bailly case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Based in Salt Lake City and founded in 2005, Kuru Footwear is a footwear brand that designs and manufactures their products for sale exclusively online.",
+      "statement": "KURU is an online-only footwear brand in Salt Lake City that designs and manufactures its products.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "KURU Footwear"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.eidebailly.com/Insights/Case-Studies/Customizing-NetSuite-for-e-Commerce-success",
+      "title": "Customizing NetSuite for e-Commerce Success (Eide Bailly case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "KURU was able to pay for their NetSuite implementation and customization costs in the first year through efficiency savings alone.",
+      "statement": "KURU runs NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "KURU Footwear"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.kurufootwear.com/",
+      "title": "KURU Footwear home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "That's why we design our shoes to mirror the natural, rounded shape of your heels",
+      "statement": "KURU sells comfort footwear direct to consumers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "KURU Footwear"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.snapshotdesign.com/crazy-shirts-shopify-netsuite-celigo-case-study",
+      "title": "Crazy Shirts: Shopify & NetSuite Integration with Celigo (Snapshot case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Crazy Shirts operates 30 stores across Hawaii and the U.S. mainland.",
+      "statement": "Crazy Shirts operates 30 stores in Hawaii and the US mainland.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Crazy Shirts"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.snapshotdesign.com/crazy-shirts-shopify-netsuite-celigo-case-study",
+      "title": "Crazy Shirts: Shopify & NetSuite Integration with Celigo (Snapshot case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Using Celigo’s Shopify-NetSuite Integration App alongside custom flows, Snapshot delivered a seamless connection between their online store, retail locations, and NetSuite ERP.",
+      "statement": "Crazy Shirts runs Shopify Plus and NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Crazy Shirts"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://crazyshirts.com/",
+      "title": "Crazy Shirts home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Memorable artwork on quality products since 1964!",
+      "statement": "Crazy Shirts is an apparel brand selling online since 1964.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Crazy Shirts"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://www.snapshotdesign.com/litezall-dataintegration",
+      "title": "LitezAll Data Integration Case Study (Snapshot)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Manual Data Entry: Managing product information, customer details, and order data across both Shopify and NetSuite involved significant manual effort, leading to potential errors and delays.",
+      "statement": "LitezAll runs Shopify and NetSuite and had manual order-data effort between them.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "LitezAll"
+    },
+    {
+      "ref": "ev-81",
+      "url": "https://litezall.com/pages/about-us",
+      "title": "About Us | LitezAll",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Since 2010, LitezAll® has been lighting the way with innovative, high-performance LED lighting solutions built for home, work, and adventure.",
+      "statement": "LitezAll is an LED lighting products brand.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "LitezAll"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://www.casestudies.com/company/anchor-group-5071/case-study/altus-brands-saves-40kyr-with-anchor-group",
+      "title": "Altus Brands saves $40K/year with Anchor Group (case study summary)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The integration only partially processed orders from Amazon and Walmart, creating sales orders but failing to automatically generate the required item fulfillment and invoice records.",
+      "statement": "Altus Brands runs NetSuite with Amazon and Walmart orders flowing in as sales orders, fulfillments and invoices.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Altus Brands"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://altusbrands.com/",
+      "title": "Altus Brands home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Now based in Grawn, MI, Pro Ears are still manufactured by hand in the United States",
+      "statement": "Altus Brands is based in Grawn, Michigan and manufactures products in the US.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Altus Brands"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://www.blueonion.ai/case-studies/achieving-financial-operations-efficiency-data-transparency-with-blue-onion",
+      "title": "Perfect Snacks: Financial Operations with Blue Onion (Blue Onion case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We were drawn to Blue Onion's ease of integration with NetSuite, our ERP system, and the ability to consolidate data from multiple ecommerce platforms",
+      "statement": "Perfect Snacks runs NetSuite and sells across multiple e-commerce platforms.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Perfect Snacks"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://perfectsnacks.com/pages/our-story",
+      "title": "Perfect Snacks - Our Story",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "we gambled it all on the unconventional idea of putting a protein bar in the fridge.",
+      "statement": "Perfect Snacks makes refrigerated protein bars.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Perfect Snacks"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://www.casestudies.com/company/hairball/case-study/oofos-streamlines-shopify-netsuite-workflows-across-2-order-flows-with-hairball",
+      "title": "OOFOS streamlines Shopify-NetSuite workflows (Hairball case study summary)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "OOFOS, a footwear brand known for its recovery shoes, faced challenges in managing its complex order flows between Shopify and NetSuite.",
+      "statement": "OOFOS runs Shopify and NetSuite with complex order flows.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "OOFOS"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://www.oofos.com/",
+      "title": "OOFOS official store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "OOFOS Recovery Footwear - Official Store",
+      "statement": "OOFOS sells recovery footwear online.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "OOFOS"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://ats.rippling.com/rugsusa/jobs/164af447-e45b-454c-a83a-d8d2e6b0999d",
+      "title": "E-Commerce Revenue Recognition & AR Specialist (RugsUSA job posting)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "This role manages Amazon settlements, accounts receivable, cash application, deductions, chargebacks, customer disputes, and related general ledger activity.",
+      "statement": "RugsUSA pays for a dedicated role to manage Amazon settlements and related GL activity.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "RugsUSA"
+    },
+    {
+      "ref": "ev-89",
+      "url": "https://ats.rippling.com/rugsusa/jobs/164af447-e45b-454c-a83a-d8d2e6b0999d",
+      "title": "E-Commerce Revenue Recognition & AR Specialist (RugsUSA job posting)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Experience with NetSuite, SAP, Oracle, Microsoft Dynamics, Sage, QuickBooks Enterprise, or a comparable ERP platform.",
+      "statement": "The posting lists NetSuite among acceptable ERPs; it does not confirm RugsUSA uses NetSuite.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "RugsUSA"
+    },
+    {
+      "ref": "ev-90",
+      "url": "https://ats.rippling.com/rugsusa/jobs/164af447-e45b-454c-a83a-d8d2e6b0999d",
+      "title": "E-Commerce Revenue Recognition & AR Specialist (RugsUSA job posting)",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "This is a hybrid role requiring on-site presence in our Manhattan office 3 to 4 days per week.",
+      "statement": "RugsUSA has a Manhattan office.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "RugsUSA"
+    },
+    {
+      "ref": "ev-91",
+      "url": "https://www.celigo.com/customer-stories/designs-for-health-improves-customer-experience-and-drives-global-expansion-by-automating-processes-with-celigo/",
+      "title": "Designs for Health automates with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Designs for Health was one of NetSuite’s first customers (since 1999), when the company was still called NetLedger. … with millions of orders per year.",
+      "statement": "Designs for Health has run NetSuite since 1999 and processes millions of orders per year.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [],
+      "company_name": "Designs for Health"
+    },
+    {
+      "ref": "ev-92",
+      "url": "https://www.celigo.com/customer-stories/designs-for-health-improves-customer-experience-and-drives-global-expansion-by-automating-processes-with-celigo/",
+      "title": "Designs for Health automates with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Retail, Ecommerce Palm Coast, FL",
+      "statement": "Designs for Health is located in Palm Coast, Florida.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Designs for Health"
+    },
+    {
+      "ref": "ev-93",
+      "url": "https://www.designsforhealth.com/",
+      "title": "Designs for Health home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Streamline your practice with a free Virtual Dispensary, Spotlight™ testing, eScripting, and rewards",
+      "statement": "Designs for Health sells supplements to practitioners and patients online.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Designs for Health"
+    },
+    {
+      "ref": "ev-94",
+      "url": "https://www.celigo.com/customer-stories/miansai-improves-processes-and-customer-satisfaction-with-celigo/",
+      "title": "Miansai improves processes with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Miansai already used NetSuite to fulfill orders and Square as their point-of-sale (POS) solution.",
+      "statement": "Miansai runs NetSuite, Shopify Plus and Square POS.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Miansai"
+    },
+    {
+      "ref": "ev-95",
+      "url": "https://www.celigo.com/customer-stories/miansai-improves-processes-and-customer-satisfaction-with-celigo/",
+      "title": "Miansai improves processes with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "through its flagship store located in New York’s Soho neighborhood, a store in Venice Beach, and online.",
+      "statement": "Miansai sells through a New York flagship, a Venice Beach store and online.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Miansai"
+    },
+    {
+      "ref": "ev-96",
+      "url": "https://www.celigo.com/customer-stories/therabody-it-efficiency-growth-celigo/",
+      "title": "Therabody connects Demandware, ERP, and 3PL with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The first priority was replacing their current integration platform and reestablishing NetSuite as the core ERP system.",
+      "statement": "Therabody runs NetSuite as its core ERP.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Therabody"
+    },
+    {
+      "ref": "ev-97",
+      "url": "https://www.celigo.com/customer-stories/therabody-it-efficiency-growth-celigo/",
+      "title": "Therabody connects Demandware, ERP, and 3PL with Celigo (Celigo customer story)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Therabody specializes in wellness technology and consumer health products, best known for their percussive therapy devices like the Theragun",
+      "statement": "Therabody is a consumer wellness device brand.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Therabody"
+    },
+    {
+      "ref": "ev-98",
+      "url": "https://jadeglobal.com/resources/case-study/complete-netsuite-erp-ownership-along-activating-automation-leveraging-celigo",
+      "title": "NetSuite Integration with Shopify (Jade Global case study)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Manual CSV based integration with Shopify was not scalable and was not maintaining/rolling forward Inventory on hand on time … Full end-to-end integration with Shopify to handle bundles, assembly items, and Cash sale transactions",
+      "statement": "Sol de Janeiro runs NetSuite with Shopify and needed bundles and assembly items handled - the component-line pattern Oracle says inflates line counts.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3fecc109-c771-48e9-a030-74abb72d64d4"
+      ],
+      "company_name": "Sol de Janeiro"
+    },
+    {
+      "ref": "ev-99",
+      "url": "https://soldejaneiro.com/",
+      "title": "Sol de Janeiro official website",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Rich milk-to-butter body lotion for weightless, soothing hydration",
+      "statement": "Sol de Janeiro sells body care products online.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Sol de Janeiro"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "b4d96551-a63c-4512-8ff2-49f8168acc1c",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "NetSuite ships a native Service Tier Dashboard showing last month's lines and the six-month rolling average, visible to administrators.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-03"
+          ]
+        },
+        {
+          "statement": "Oracle also offers a SuiteSuccess Transaction Types Analysis Workbook to break current-month line usage down by transaction type.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-08"
+          ]
+        },
+        {
+          "statement": "In practice, consultants write custom SuiteQL queries or run the workbook for clients worried about a tier upgrade.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-10",
+            "ev-11",
+            "ev-13"
+          ]
+        },
+        {
+          "statement": "No public evidence was found of how DTC finance teams monitor line counts routinely as order volume grows; this needs interviews.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "c89c1499-0261-4d70-a937-5c47f03831ac",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Exceeding a tier limit triggers an admin banner and email; the documented 90-day grace period applies only to file storage.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "One NetSuite partner's client was notified it was selected for a tier upgrade; the partner analysed line usage, found ~1M lines/month from cost revaluations, and reduced usage with an action plan.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-12",
+            "ev-13",
+            "ev-14"
+          ]
+        },
+        {
+          "statement": "Advisors recommend challenging the rep on which limit is exceeded, and note one busy month does not move the six-month average.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "Partners present tier upgrades as normal with growth and as adding value, and Oracle says upgrades are long-term and rarely reversed.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22",
+            "ev-23",
+            "ev-09"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "3fecc109-c771-48e9-a030-74abb72d64d4",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Oracle confirms component items of kits/assemblies count toward the tier metric (a 2-line order form can count as 7 lines).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-02",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "Summary posting into NetSuite is already sold by A2X, Shogo, Bookkeep, Blue Onion and Leapfin, mostly for payouts/daily sales; A2X's NetSuite integration does not handle COGS.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-28",
+            "ev-31",
+            "ev-32",
+            "ev-33",
+            "ev-34",
+            "ev-30"
+          ]
+        },
+        {
+          "statement": "Common iPaaS setups (Celigo) import each order as a NetSuite sales order/cash sale/invoice, and some brands still build marketplace journal entries manually in Excel.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-40",
+            "ev-48",
+            "ev-38"
+          ]
+        },
+        {
+          "statement": "No source was found that explicitly uses summarization to stay under a service tier; the link between summary posting and tier avoidance is unproven.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "831ba383-b721-45a4-b437-1ecda203c9f1",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "The service tier is a separately priced line on NetSuite quotes, and renewals default to then-current pricing unless caps were negotiated.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16",
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "A licensing advisor benchmarked 30-40 renewals where first quotes ran 20-35% above the signed price; partners say Oracle may try to raise rates at renewal.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-20",
+            "ev-21"
+          ]
+        },
+        {
+          "statement": "The same advisor says most quote padding is in seats rather than the tier.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18"
+          ]
+        },
+        {
+          "statement": "No public dollar figure for a tier-driven increase was found; the idea's $46k to $164k example could not be verified, and Campfire's '30% spikes' is a competitor claim.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-24"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "796b0a54-5a1c-4172-9c1d-977805b70c5e",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Built for NetSuite certification (customer references, demo, security review) is a recognised trust signal for NetSuite add-ons.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-47"
+          ]
+        },
+        {
+          "statement": "Incumbent subledger vendors advertise SOC 1/SOC 2 attestations, and auditors usually rely on subledger controls rather than re-reviewing subledger journal entries.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-35",
+            "ev-46"
+          ]
+        },
+        {
+          "statement": "No evidence was found on who signs off or how long approval takes at mid-market NetSuite customers.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "f35e8035-203c-4087-a4e4-c0c0abe75efd",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "At one NetSuite DTC brand, manual reconciliation consumed about 40% of a staff accountant's role before automation.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-49"
+          ]
+        },
+        {
+          "statement": "Brands value drill-down from summaries to transactions; one used a subledger to trace payouts to orders during its first audit.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-53",
+            "ev-52",
+            "ev-37"
+          ]
+        },
+        {
+          "statement": "Summary patterns can lose transaction-level detail in the ledger and approximate COGS, which shifts audit work to the external system.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44",
+            "ev-43"
+          ]
+        },
+        {
+          "statement": "No measured hours for tying aggregate journal entries back to raw detail during audits were found.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [
+    {
+      "question": "What does a NetSuite Standard-to-Premium (or Premium-to-Enterprise) tier move actually add to the annual subscription for a $10M-$250M brand?",
+      "category": "cost",
+      "priority": "high"
+    },
+    {
+      "question": "What share of a target brand's monthly transaction lines comes from order and component lines that could be summarized, versus inventory, fulfillment and cost-revaluation lines that would remain in NetSuite?",
+      "category": "other",
+      "priority": "high"
+    },
+    {
+      "question": "Will controllers and auditors accept summarized NetSuite entries when inventory and COGS must still be relieved item-by-item in NetSuite?",
+      "category": "buyer",
+      "priority": "medium"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Blue Onion",
+      "url": "https://www.blueonion.ai",
+      "kind": "direct",
+      "description": "E-commerce subledger that reconciles orders to payouts and posts daily summary entries to NetSuite with an audit trail.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-33",
+        "ev-48",
+        "ev-52"
+      ],
+      "sentiment": [
+        {
+          "statement": "Customers report large cuts in manual reconciliation effort (e.g. ~40% of a staff accountant's role before adoption).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-49"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Leapfin",
+      "url": "https://www.leapfin.com",
+      "kind": "direct",
+      "description": "Revenue subledger that ingests high-volume transactions and posts journal entry summaries to NetSuite, positioned to replace raw-data iPaaS feeds.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-34",
+        "ev-35",
+        "ev-36",
+        "ev-37"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "A2X",
+      "url": "https://www.a2xaccounting.com",
+      "kind": "direct",
+      "description": "Posts summarized payout-level journal entries from Amazon, Shopify and other channels into NetSuite; NetSuite integration lacks COGS.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-28",
+        "ev-29",
+        "ev-30"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Shogo",
+      "url": "https://shogo.io",
+      "kind": "direct",
+      "description": "Posts daily Shopify sales summaries as journal entries into NetSuite with dimensions.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-31"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "Bookkeep",
+      "url": "https://www.bookkeep.com",
+      "kind": "direct",
+      "description": "Summarizes daily POS/e-commerce sales into NetSuite journal entries; deposits posted separately.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-32"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Ledge",
+      "url": "https://www.ledge.co",
+      "kind": "direct",
+      "description": "Transaction matching outside NetSuite with automatic, audit-tracked journal entry posting into NetSuite.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-38",
+        "ev-39"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Celigo",
+      "url": "https://www.celigo.com",
+      "kind": "indirect",
+      "description": "iPaaS whose Shopify-NetSuite app imports orders as individual NetSuite sales orders/cash sales/invoices; widely used by the ICP.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-40",
+        "ev-41",
+        "ev-42",
+        "ev-54"
+      ],
+      "sentiment": [
+        {
+          "statement": "Review themes include learning curve, complexity, cost and unclear error messages; buyers still own errors and rules.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-41",
+            "ev-42"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-08",
+      "name": "Campfire",
+      "url": "https://campfire.ai",
+      "kind": "indirect",
+      "description": "AI-native ERP that replaces NetSuite; says 20-30% of customers are NetSuite replacements.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-25",
+        "ev-24",
+        "ev-26"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-09",
+      "name": "Rillet",
+      "url": "https://www.rillet.com",
+      "kind": "indirect",
+      "description": "AI-native ERP positioned as a replacement for NetSuite for faster close; independent guide says AI-natives are not yet like-for-like for inventory-heavy businesses.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-27",
+        "ev-26"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "NetSuite native tier tooling (Service Tier Dashboard, SuiteSuccess workbook)",
+      "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_0514020332.html",
+      "kind": "indirect",
+      "description": "Built-in dashboard and SuiteApp workbook for monitoring transaction line usage against tier limits.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-07",
+        "ev-08"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "Spreadsheets and custom SuiteQL queries",
+      "url": "https://www.blueonion.ai/case-studies/how-wayb-automates-bank-payouts-in-netsuite-with-blue-onion",
+      "kind": "manual",
+      "description": "Manual Excel journal entries and custom queries to build entries and track line usage.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-48",
+        "ev-11",
+        "ev-38"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "NetSuite partners and licensing advisors",
+      "url": "https://concentrus.com/optimizing-your-transaction-line-use/",
+      "kind": "service",
+      "description": "Partners analyse line usage and reduce it via configuration; licensing advisors negotiate tier and renewal terms.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-12",
+        "ev-14",
+        "ev-17",
+        "ev-20"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Order data usually flows into NetSuite per order through iPaaS apps such as Celigo, the line-heavy pattern the idea targets.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-40",
+        "ev-54",
+        "ev-72"
+      ]
+    },
+    {
+      "statement": "Payout and daily-sales summarization into NetSuite is already offered by A2X, Shogo, Bookkeep and Blue Onion; Leapfin and Ledge sell subledgers that post summarized or matched entries.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-28",
+        "ev-31",
+        "ev-32",
+        "ev-33",
+        "ev-34",
+        "ev-39"
+      ]
+    },
+    {
+      "statement": "Many teams still reconcile and build journal entries manually in Excel.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-48",
+        "ev-38"
+      ]
+    },
+    {
+      "statement": "When a tier upgrade looms, NetSuite partners analyse line usage and cut it through configuration, and licensing advisors negotiate.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-12",
+        "ev-14",
+        "ev-17"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Coterie",
+      "website": "https://www.coterie.com",
+      "icp_id": null,
+      "location": "New York, NY",
+      "industry": "DTC baby care",
+      "description": "Premium DTC diaper brand on Shopify+Amazon+NetSuite with >$200M revenue and ~12k Amazon settlement records a month.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-56"
+      },
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Amazon",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-54",
+        "ev-55",
+        "ev-56",
+        "ev-57"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "DTC subscription brand at ~$200M revenue, high order volume.",
+          "evidence_refs": [
+            "ev-55",
+            "ev-57"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs NetSuite with Shopify and Amazon via Celigo.",
+          "evidence_refs": [
+            "ev-56"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "About 12,000 Amazon settlement records monthly plus thousands of nightly orders.",
+          "evidence_refs": [
+            "ev-54"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-02",
+      "name": "eyebobs",
+      "website": "https://www.eyebobs.com",
+      "icp_id": null,
+      "location": "Minneapolis, MN",
+      "industry": "DTC eyewear",
+      "description": "Eyewear brand with several hundred orders a day across retail, Amazon and web, on NetSuite.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-59"
+      },
+      "technologies": [
+        "NetSuite",
+        "Amazon",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-58",
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "US DTC/omnichannel eyewear brand.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Uses NetSuite ERP.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Several hundred orders a day.",
+          "evidence_refs": [
+            "ev-58"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-03",
+      "name": "Chubbies",
+      "website": "https://www.chubbiesshorts.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "DTC men's apparel",
+      "description": "Men's apparel brand that moved from QuickBooks to NetSuite with Shopify and wholesale/EDI.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-60",
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "DTC apparel brand with wholesale.",
+          "evidence_refs": [
+            "ev-61"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs NetSuite and Shopify.",
+          "evidence_refs": [
+            "ev-60"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-04",
+      "name": "Poo-Pourri",
+      "website": "https://pourri.com",
+      "icp_id": null,
+      "location": "Addison, TX",
+      "industry": "DTC home care",
+      "description": "Home care brand on NetSuite with Shopify plus Walmart, Faire and wholesale channels.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-63"
+      },
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-62",
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Multichannel consumer brand.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs NetSuite ERP with Shopify.",
+          "evidence_refs": [
+            "ev-62"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Loot Crate",
+      "website": "https://lootcrate.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Subscription box e-commerce",
+      "description": "Subscription box company on Shopify Plus and NetSuite with surging peak volumes.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "NetSuite",
+        "Shopify Plus",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-64",
+        "ev-65"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "High-volume subscription e-commerce.",
+          "evidence_refs": [
+            "ev-64",
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs NetSuite and Shopify Plus.",
+          "evidence_refs": [
+            "ev-64"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Order volumes surged, especially at peak.",
+          "evidence_refs": [
+            "ev-64"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-06",
+      "name": "WAYB",
+      "website": "https://wayb.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "DTC family travel gear",
+      "description": "Family travel-gear brand on NetSuite selling via Amazon, Shopify and wholesale; manual reconciliation took ~40% of an accountant's role.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Amazon",
+        "Celigo",
+        "Blue Onion"
+      ],
+      "evidence_refs": [
+        "ev-50",
+        "ev-66",
+        "ev-48",
+        "ev-49"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Multichannel DTC brand.",
+          "evidence_refs": [
+            "ev-50",
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Adopted NetSuite.",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Manual marketplace journal entries and heavy reconciliation load.",
+          "evidence_refs": [
+            "ev-48",
+            "ev-49"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-07",
+      "name": "Clean Simple Eats",
+      "website": "https://cleansimpleeats.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "DTC nutrition",
+      "description": "DTC supplements brand that moved to NetSuite and struggled to reconcile Shopify transactions; first audit in FY2023.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Blue Onion"
+      ],
+      "evidence_refs": [
+        "ev-51",
+        "ev-52",
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "DTC nutrition brand.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs NetSuite.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Reconciliation pain and first audit.",
+          "evidence_refs": [
+            "ev-51",
+            "ev-52"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-08",
+      "name": "Peak Design",
+      "website": "https://www.peakdesign.com",
+      "icp_id": null,
+      "location": "San Francisco, CA",
+      "industry": "DTC camera and carry gear",
+      "description": "San Francisco DTC/marketplace/wholesale brand on NetSuite with Shopify and Amazon; staff uploaded files daily to NetSuite before automation.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-68"
+      },
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Amazon",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-68",
+        "ev-69",
+        "ev-70"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "DTC + marketplace + wholesale brand.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs on NetSuite.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Manual daily uploads and spreadsheet cost tracking before automation.",
+          "evidence_refs": [
+            "ev-69"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Topo Designs",
+      "website": "https://topodesigns.com",
+      "icp_id": null,
+      "location": "Denver, CO",
+      "industry": "DTC outdoor apparel and packs",
+      "description": "Denver outdoor brand running Shopify and NetSuite via Celigo.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      },
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-71",
+        "ev-72",
+        "ev-73"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "DTC outdoor apparel brand.",
+          "evidence_refs": [
+            "ev-71",
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs Shopify-NetSuite integration.",
+          "evidence_refs": [
+            "ev-72"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-10",
+      "name": "KURU Footwear",
+      "website": "https://www.kurufootwear.com",
+      "icp_id": null,
+      "location": "Salt Lake City, UT",
+      "industry": "DTC footwear (light manufacturing)",
+      "description": "Online-only footwear brand that designs and manufactures its products, on NetSuite.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      },
+      "technologies": [
+        "NetSuite"
+      ],
+      "evidence_refs": [
+        "ev-74",
+        "ev-75",
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 5,
+          "rationale": "Online-only brand that also manufactures.",
+          "evidence_refs": [
+            "ev-74"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Implemented NetSuite.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Crazy Shirts",
+      "website": "https://crazyshirts.com",
+      "icp_id": null,
+      "location": "Hawaii and US mainland",
+      "industry": "Apparel brand, retail + e-commerce",
+      "description": "Apparel brand with 30 stores and an online store connected to NetSuite via Celigo.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      },
+      "technologies": [
+        "NetSuite",
+        "Shopify Plus",
+        "Shopify POS",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-77",
+        "ev-78",
+        "ev-79"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Omnichannel apparel brand, more retail-heavy.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs NetSuite with Shopify Plus/POS.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "LitezAll",
+      "website": "https://litezall.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Consumer lighting products",
+      "description": "Lighting brand integrating Shopify with NetSuite after manual order-data effort.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-80",
+        "ev-81"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Consumer products brand with B2B and online channels.",
+          "evidence_refs": [
+            "ev-81"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs Shopify and NetSuite.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-13",
+      "name": "Altus Brands",
+      "website": "https://altusbrands.com",
+      "icp_id": null,
+      "location": "Grawn, MI",
+      "industry": "E-commerce retailer / US manufacturer (outdoor sporting)",
+      "description": "Michigan e-commerce retailer and manufacturer whose Amazon/Walmart orders flow into NetSuite as sales orders, fulfillments and invoices.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-83"
+      },
+      "technologies": [
+        "NetSuite",
+        "Amazon",
+        "Walmart"
+      ],
+      "evidence_refs": [
+        "ev-82",
+        "ev-83"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Marketplace seller that also manufactures.",
+          "evidence_refs": [
+            "ev-83"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs NetSuite with marketplace order flows.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Hundreds of marketplace transactions per week needed manual completion before automation.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-14",
+      "name": "Perfect Snacks",
+      "website": "https://perfectsnacks.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "CPG food brand",
+      "description": "Refrigerated protein bar brand on NetSuite consolidating multiple e-commerce platforms.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "NetSuite",
+        "Blue Onion"
+      ],
+      "evidence_refs": [
+        "ev-84",
+        "ev-85"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "CPG brand with e-commerce channels.",
+          "evidence_refs": [
+            "ev-85"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Uses NetSuite as ERP.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-15",
+      "name": "OOFOS",
+      "website": "https://www.oofos.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "DTC footwear",
+      "description": "Recovery footwear brand with complex Shopify-to-NetSuite order flows (web and kiosk).",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-86",
+        "ev-87"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "DTC footwear brand.",
+          "evidence_refs": [
+            "ev-87"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs Shopify and NetSuite.",
+          "evidence_refs": [
+            "ev-86"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "RugsUSA",
+      "website": "https://www.rugsusa.com",
+      "icp_id": null,
+      "location": "New York, NY",
+      "industry": "Online home goods retailer",
+      "description": "Online rug retailer hiring a dedicated specialist for Amazon settlements and high-volume reconciliation; NetSuite use not confirmed.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-90"
+      },
+      "technologies": [],
+      "evidence_refs": [
+        "ev-88",
+        "ev-89",
+        "ev-90"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Online retailer with large marketplace volume.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "technology_fit": {
+          "rating": 1,
+          "rationale": "Posting lists NetSuite only among acceptable ERPs.",
+          "evidence_refs": [
+            "ev-89"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Paid role for high-volume Amazon settlement reconciliation.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "Designs for Health",
+      "website": "https://www.designsforhealth.com",
+      "icp_id": null,
+      "location": "Palm Coast, FL",
+      "industry": "Supplements (DTC and private label)",
+      "description": "Supplement brand on NetSuite since 1999 with millions of orders per year.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-92"
+      },
+      "technologies": [
+        "NetSuite",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-91",
+        "ev-92",
+        "ev-93"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "High-volume supplements brand; likely above $10M.",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "NetSuite customer since 1999.",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Millions of orders per year.",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Miansai",
+      "website": "https://www.miansai.com",
+      "icp_id": null,
+      "location": "New York, NY",
+      "industry": "DTC accessories",
+      "description": "Accessories brand shifting from wholesale to DTC, running NetSuite with Shopify Plus and Square POS.",
+      "size_estimate": null,
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-95"
+      },
+      "technologies": [
+        "NetSuite",
+        "Shopify Plus",
+        "Square",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-94",
+        "ev-95"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "DTC accessories brand with stores.",
+          "evidence_refs": [
+            "ev-95"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Uses NetSuite.",
+          "evidence_refs": [
+            "ev-94"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-19",
+      "name": "Therabody",
+      "website": "https://www.therabody.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "Consumer wellness devices",
+      "description": "Wellness device brand that re-established NetSuite as its core ERP for orders and 3PLs.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "NetSuite",
+        "Celigo"
+      ],
+      "evidence_refs": [
+        "ev-96",
+        "ev-97"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Consumer device brand, possibly above the revenue band.",
+          "evidence_refs": [
+            "ev-97"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "NetSuite is the core ERP.",
+          "evidence_refs": [
+            "ev-96"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No public signal of line-count or tier pressure found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-20",
+      "name": "Sol de Janeiro",
+      "website": "https://soldejaneiro.com",
+      "icp_id": null,
+      "location": null,
+      "industry": "DTC beauty",
+      "description": "Beauty brand on NetSuite whose Shopify integration handles bundles and assembly items, which count as component lines.",
+      "size_estimate": null,
+      "in_target_geography": null,
+      "technologies": [
+        "NetSuite",
+        "Shopify",
+        "Celigo",
+        "Amazon FBA"
+      ],
+      "evidence_refs": [
+        "ev-98",
+        "ev-99"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "DTC beauty brand with Shopify and Amazon.",
+          "evidence_refs": [
+            "ev-98",
+            "ev-99"
+          ]
+        },
+        "technology_fit": {
+          "rating": 5,
+          "rationale": "Runs NetSuite.",
+          "evidence_refs": [
+            "ev-98"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Bundles and assembly items, the component-line pattern.",
+          "evidence_refs": [
+            "ev-98",
+            "ev-01"
+          ]
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
