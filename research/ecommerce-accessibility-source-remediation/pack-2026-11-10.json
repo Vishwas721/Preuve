@@ -1,0 +1,3117 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "1ae4de29-46a4-450a-89c9-671ab9d78db9",
+    "researcher": "claude-code",
+    "started_at": "2026-11-10T09:00:00Z",
+    "finished_at": "2026-11-10T13:00:00Z",
+    "queries": [
+      "2025 ADA website accessibility lawsuits report e-commerce percentage federal filings",
+      "FTC accessiBe $1 million order overlay compliance claims",
+      "overlay users still sued accessibility widget lawsuits 2025 report",
+      "overlayfactsheet.com signatories accessibility overlays statement",
+      "reddit shopify accessibility lawsuit demand letter store owner overlay",
+      "European Accessibility Act microenterprise exemption e-commerce fewer than 10 employees enforcement 2026",
+      "Shopify blog predatory ADA lawsuits small business notice and cure merchants",
+      "ADA website lawsuits 2026 decline first half filings down (contradiction)",
+      "Shopify theme store accessibility requirements themes must meet accessibility Online Store 2.0 (contradiction)",
+      "accessiBe pricing per year accessWidget plans",
+      "AudioEye pricing plans per month small business",
+      "Shopify app store accessibility app source code fixes theme WCAG remediation app",
+      "\"accessibility statement\" \"accessWidget\" clothing brand shop",
+      "\"accessibility statement\" \"UserWay\" beauty skincare brand online store",
+      "Claude Code OR Cursor fix website accessibility issues automatically AI coding agent WCAG Shopify theme (contradiction)",
+      "\"makes available the UserWay Website Accessibility Widget\" apparel boutique pages",
+      "\"accessiBe\" \"accessibility statement\" pages shopify jewelry OR apparel brand",
+      "job posting \"Shopify developer\" \"WCAG\" accessibility apparel OR beauty brand ecommerce",
+      "Shopify agency ADA accessibility remediation service price audit Shopify Plus partner",
+      "WooCommerce accessibility lawsuit store owner plugin overlay wordpress.org support forum",
+      "AudioEye customers lawsuits fewer accessibility protection guarantee claim data 2025 (contradiction)",
+      "European Accessibility Act enforcement first year e-commerce complaints authorities few fines 2026 (contradiction)",
+      "survey who is responsible for digital accessibility in organization budget ecommerce 2025 report",
+      "used ChatGPT OR Claude to fix accessibility issues on my Shopify theme myself (contradiction)",
+      "Shopify Sidekick accessibility alt text Horizon theme accessibility built in 2025 (contradiction)",
+      "\"Barrierefreiheitserklärung\" Shopify Modelabel Online Shop BFSG Kosmetik",
+      "\"accessibility statement\" \"European Accessibility Act\" apparel brand shopify \"partially conformant\"",
+      "\"UserWay\" \"accessibility statement\" women's clothing boutique",
+      "Shopify agency accessibility WCAG remediation services ecommerce agency about us",
+      "\"accessiBe\" accessibility statement skincare OR cosmetics brand pages/accessibility"
+    ],
+    "notes": "Quotes copied from `research fetch` output. Most lawsuit statistics come from vendors (UsableNet, AudioEye, TestParty, Seyfarth law firm) with commercial interests. FTC press release (robots), Level Access SODAR and Deque pages (403/robots), several job postings (expired/429) and AudioEye pages (429) could not be fetched and were left out. No personal names recorded; contacts left empty for all companies. Brands named after people were excluded from prospects. Prospect sizes not stated on fetched pages, so size_estimate omitted. Shopify platform inferred from /pages/ URLs unless stated."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://blog.usablenet.com/ada-web-lawsuit-trends-2026",
+      "title": "ADA Web Lawsuit Trends for 2026: What 2025 Filings Reveal",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "By the end of 2025, more than 5,000 digital accessibility lawsuits had been filed. … E-commerce accounted for nearly 70 percent of all ADA web lawsuits.",
+      "statement": "UsableNet counts 5,000+ US digital accessibility lawsuits in 2025, with e-commerce making up nearly 70% of ADA web lawsuits.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee",
+        "3c60d66e-1317-4ec7-9af6-1ff32aaafce8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://blog.usablenet.com/ada-web-lawsuit-trends-2026",
+      "title": "ADA Web Lawsuit Trends for 2026: What 2025 Filings Reveal",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Of the more than 5,000 digital accessibility lawsuits filed in 2025, 1,427 targeted companies that had already faced an ADA web accessibility claim. In federal court alone, 46 percent of cases involved repeat defendants.",
+      "statement": "1,427 of 2025's digital accessibility suits hit companies already sued before; 46% of federal cases involved repeat defendants.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://blog.usablenet.com/ada-web-lawsuit-trends-2026",
+      "title": "ADA Web Lawsuit Trends for 2026: What 2025 Filings Reveal",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Monthly filing data shows no meaningful reduction in lawsuits against widget users. Lawsuit volume remained steady throughout the year, peaking above 150 cases in a single month.",
+      "statement": "UsableNet's 2025 data shows no reduction in lawsuits against sites using accessibility widgets, peaking above 150 a month.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://blog.usablenet.com/ada-web-lawsuit-trends-2026",
+      "title": "ADA Web Lawsuit Trends for 2026: What 2025 Filings Reveal",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "In 2025, 36 percent of companies sued reported annual revenue exceeding $25 million, continuing an upward trend from prior years.",
+      "statement": "36% of companies sued in 2025 had revenue over $25M, and that share is rising.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://blog.usablenet.com/2025-midyear-accessibility-lawsuit-report-key-legal-trends",
+      "title": "2025 Midyear Accessibility Lawsuit Report: Key Legal Trends",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "At the same time, some states are introducing safe harbor provisions for small businesses, which may reduce their legal exposure and shift the focus to larger organizations.",
+      "statement": "Some states are adding small-business safe harbors that may shift lawsuit focus to larger companies, shrinking exposure for small stores.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee",
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://blog.usablenet.com/2025-midyear-accessibility-lawsuit-report-key-legal-trends",
+      "title": "2025 Midyear Accessibility Lawsuit Report: Key Legal Trends",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Plaintiffs filed lawsuits against companies using widgets every month in the first half of 2025, including 132 in February alone.",
+      "statement": "Companies using accessibility widgets were sued every month of H1 2025, including 132 in February.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://www.mondaq.com/unitedstates/discrimination-disability-sexual-harassment/1766320/federal-court-website-accessibility-lawsuit-filings-bounce-back-in-2025",
+      "title": "Federal Court Website Accessibility Lawsuit Filings Bounce Back In 2025 (Seyfarth)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Plaintiffs filed 3,117 website accessibility lawsuits in federal court in 2025 – a 27% increase from 2024.",
+      "statement": "Seyfarth counts 3,117 federal website accessibility suits in 2025, up 27% from 2024.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://www.mondaq.com/unitedstates/discrimination-disability-sexual-harassment/1766320/federal-court-website-accessibility-lawsuit-filings-bounce-back-in-2025",
+      "title": "Federal Court Website Accessibility Lawsuit Filings Bounce Back In 2025 (Seyfarth)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "in California, both federal and state courts of appeals have reached the conclusion that online only businesses are not covered by the ADA, making it virtually impossible for plaintiffs to file viable lawsuits against online-only businesses for accessibility violations",
+      "statement": "In California, appeals courts have held online-only businesses are not covered by the ADA, which largely shields online-only stores there.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://community.shopify.com/t/how-to-ensure-ada-and-wcag-compliance-on-my-shopify-store/28266",
+      "title": "How to ensure ADA and WCAG compliance on my Shopify store? (Shopify Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "We’ve been sued a 3 times over the last 4 years. The first time we just ignored the problem, the second time we added the Accessibly App (there are many similar ones on the app store), and now after the third time (even with the app) – and paying tens of thousand of dollars to settle the suits – we know that it’s all about your theme code.",
+      "statement": "A Shopify merchant reports being sued three times in four years, including once while running an overlay app, and paying tens of thousands to settle.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee",
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://community.shopify.com/t/how-to-ensure-ada-and-wcag-compliance-on-my-shopify-store/28266",
+      "title": "How to ensure ADA and WCAG compliance on my Shopify store? (Shopify Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "We still pay for the basic plan, just in case. We are in the process of hiring a freelance coder to clean up our theme’s code to be compliant.",
+      "statement": "The same merchant keeps paying for the overlay 'just in case' while hiring a freelance coder to fix theme code.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735",
+        "78e457e4-b1e3-4c64-85d1-3d079d0df30e",
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://community.shopify.com/t/how-to-ensure-ada-and-wcag-compliance-on-my-shopify-store/28266",
+      "title": "How to ensure ADA and WCAG compliance on my Shopify store? (Shopify Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "We have received multiple quotes and depending on the depth and scope of work, can be from around $4,000 to $25,000.",
+      "statement": "A merchant reports remediation quotes of about $4,000 to $25,000.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "78e457e4-b1e3-4c64-85d1-3d079d0df30e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://community.shopify.com/t/how-to-ensure-ada-and-wcag-compliance-on-my-shopify-store/28266",
+      "title": "How to ensure ADA and WCAG compliance on my Shopify store? (Shopify Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "We were using an app for a few months, but decided to remove it, because they don’t remediate your site. If you ever want to go away from the app then you have to do all the work on your site anyway.",
+      "statement": "A merchant removed an overlay app because it does not remediate the site.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735",
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://community.shopify.com/t/how-to-ensure-ada-and-wcag-compliance-on-my-shopify-store/28266",
+      "title": "How to ensure ADA and WCAG compliance on my Shopify store? (Shopify Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "this part is not to speak negatively about the overlays and apps, but the information I have come across on this is split pretty close to 50/50 on if they are beneficial or not.",
+      "statement": "A merchant perceives information on whether overlays help as split roughly 50/50, so the case against overlays is not obvious to buyers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://community.shopify.com/t/how-to-ensure-ada-and-wcag-compliance-on-my-shopify-store/28266",
+      "title": "How to ensure ADA and WCAG compliance on my Shopify store? (Shopify Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "I am being sued now and need to know how to fix my site. I am not good with the web - do I need to hire outside agency to complete this for us? Very small company.",
+      "statement": "A very small store owner being sued does not know how to fix the site or whom to hire.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "74546c07-ad25-4d31-b3c5-96c4600240dd",
+        "78e457e4-b1e3-4c64-85d1-3d079d0df30e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://community.shopify.com/t/how-to-ensure-ada-and-wcag-compliance-on-my-shopify-store/28266",
+      "title": "How to ensure ADA and WCAG compliance on my Shopify store? (Shopify Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "You can subscribe to Squidler.io for €49 and your website will be tested every day in different ways and interactions.",
+      "statement": "Squidler offers continuous automated accessibility testing for €49/month.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Squidler"
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://www.shopify.com/news/accessibility-lawsuits",
+      "title": "The small business shakedown: Why thousands of entrepreneurs are getting buried in lawsuits (Shopify)",
+      "source_type": "company_site",
+      "published_at": "2025-10-22",
+      "quote": "Small online businesses operate on tight budgets and with limited staff. They lack the financial resources to hire specialized web developers or dedicated accessibility teams.",
+      "statement": "Shopify says small online businesses lack the money to hire specialized developers or accessibility teams.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "74546c07-ad25-4d31-b3c5-96c4600240dd",
+        "78e457e4-b1e3-4c64-85d1-3d079d0df30e"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://www.shopify.com/news/accessibility-lawsuits",
+      "title": "The small business shakedown: Why thousands of entrepreneurs are getting buried in lawsuits (Shopify)",
+      "source_type": "company_site",
+      "published_at": "2025-10-22",
+      "quote": "Ultimately, they wanted $30,000, and we couldn’t afford it. We’re a small company with only three employees, and the brand wasn’t even yet profitable.",
+      "statement": "A three-employee brand quoted in Shopify's post faced a $30,000 demand it could not afford.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://www.shopify.com/news/accessibility-lawsuits",
+      "title": "The small business shakedown: Why thousands of entrepreneurs are getting buried in lawsuits (Shopify)",
+      "source_type": "company_site",
+      "published_at": "2025-10-22",
+      "quote": "We provide merchants with accessibility-optimized components, tools like Sidekick for automated alt text generation, and themes built with accessibility standards from the ground up.",
+      "statement": "Shopify itself provides accessibility-optimized components, AI alt-text generation and accessible themes, covering part of the problem natively.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://www.shopify.com/news/accessibility-lawsuits",
+      "title": "The small business shakedown: Why thousands of entrepreneurs are getting buried in lawsuits (Shopify)",
+      "source_type": "company_site",
+      "published_at": "2025-10-22",
+      "quote": "That’s where “notice and cure” legislation comes in. This type of reform is gaining traction in both Congress and certain states and would change the way ADA lawsuits are handled.",
+      "statement": "Shopify is backing notice-and-cure reform, which if passed would reduce drive-by lawsuit pressure.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://www.consentmo.com/blog-posts/us-response-ada-website-lawsuit-surge-shopify-merchants-guide",
+      "title": "ADA Lawsuit Surge: What Shopify Merchants Should Do (Consentmo)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Qualifying businesses that take substantial, good-faith steps to fix identified accessibility issues within 90 days of notice can get a rebuttable presumption that a later claim is abusive.",
+      "statement": "Missouri's 2026 law gives businesses that fix issues within 90 days of notice a presumption that later claims are abusive, a cure window that weakens pre-emptive urgency.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://adrianroselli.com/2025/11/shopify-needs-a-mirrorfy.html",
+      "title": "Shopify Needs a Mirrorfy",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "As a Shopify theme dev for 5 years, no, Shopify does not offer any of that lol",
+      "statement": "A Shopify theme developer says Shopify does not provide merchants with accessibility guarantees, checks or legal-response support.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://www.lflegal.com/?p=61630",
+      "title": "Beware of AI Accessibility Promises: US Federal Agency Fines an Overlay Company One Million Dollars",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "For example, accessiBe cannot say (either expressly or by implication) that its overlay products or services can make any website compliant with WCAG.",
+      "statement": "Under the FTC order, accessiBe may not claim its overlay can make any website WCAG-compliant.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735",
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": "accessiBe"
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://wptavern.com/accessibility-advocates-sign-open-letter-urging-people-not-to-use-accesibe-and-other-overlay-products",
+      "title": "Accessibility Advocates Sign Open Letter Urging People Not To Use AccesiBe and Other Overlay Products (WP Tavern)",
+      "source_type": "news",
+      "published_at": "2021-05-13",
+      "quote": "more than 400 accessibility advocates and developers signed an open letter calling on the industry to unite against the use of accessibility overlay products.",
+      "statement": "In 2021, 400+ accessibility advocates and developers signed an open letter against overlays.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://wptavern.com/accessibility-advocates-sign-open-letter-urging-people-not-to-use-accesibe-and-other-overlay-products",
+      "title": "Accessibility Advocates Sign Open Letter Urging People Not To Use AccesiBe and Other Overlay Products (WP Tavern)",
+      "source_type": "news",
+      "published_at": "2021-05-13",
+      "quote": "More specifically, we hereby advocate for the removal of accessiBe, AudioEye, UserWay, User1st, MK-Sense, MaxAccess, FACIL’iti, and all similar products",
+      "statement": "The open letter calls for removing accessiBe, AudioEye, UserWay and similar overlay products.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://wptavern.com/accessibility-advocates-sign-open-letter-urging-people-not-to-use-accesibe-and-other-overlay-products",
+      "title": "Accessibility Advocates Sign Open Letter Urging People Not To Use AccesiBe and Other Overlay Products (WP Tavern)",
+      "source_type": "news",
+      "published_at": "2021-05-13",
+      "quote": "Similarly, EqualWeb advertises making sites accessible by inserting “one line of code” to gain “compliance with WCAG 2.1, ADA, Section 508, AODA, EN 301549 and IS 5568.”",
+      "statement": "EqualWeb has marketed one-line-of-code compliance.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "EqualWeb"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://www.fudge.ai/blog/best-shopify-accessibility-apps/",
+      "title": "Best Shopify apps for accessibility & WCAG (2026) (Fudge)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "More than 1,000 professionals have signed a public statement that overlays cannot achieve compliance",
+      "statement": "More than 1,000 professionals have signed a statement that overlays cannot achieve compliance.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://www.edf-feph.org/publications/joint-statement-on-accessibility-overlays/",
+      "title": "EDF and IAAP joint statement on accessibility overlays",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Overlays do not make the website accessible or compliant with European accessibility legislation. They do not constitute an acceptable alternative or a substitute for fixing the website itself.",
+      "statement": "The European Disability Forum and IAAP state overlays do not make sites compliant with EU accessibility law.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735",
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://stacker.com/stories/small-business/nearly-4-10-businesses-sued-accessibility-already-had-solution-heres-what",
+      "title": "Nearly 4 in 10 businesses sued for accessibility already had a solution (AudioEye via Stacker)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Approximately 38% of the companies sued in 2025 already had an accessibility tool in place when the lawsuit arrived.",
+      "statement": "AudioEye data: about 38% of companies sued in 2025 already had an accessibility tool installed.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://stacker.com/stories/small-business/nearly-4-10-businesses-sued-accessibility-already-had-solution-heres-what",
+      "title": "Nearly 4 in 10 businesses sued for accessibility already had a solution (AudioEye via Stacker)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "44% manage accessibility entirely in-house, and 64% of that group says they lack the internal expertise to sustain it.",
+      "statement": "In an AudioEye survey of 400+ business leaders, 44% handle accessibility in-house and 64% of those lack the expertise to sustain it.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "74546c07-ad25-4d31-b3c5-96c4600240dd",
+        "78e457e4-b1e3-4c64-85d1-3d079d0df30e"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://stacker.com/stories/small-business/nearly-4-10-businesses-sued-accessibility-already-had-solution-heres-what",
+      "title": "Nearly 4 in 10 businesses sued for accessibility already had a solution (AudioEye via Stacker)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Settlements typically run $15,000 to $75,000 and increase with each repeat claim.",
+      "statement": "AudioEye reports settlements typically of $15,000 to $75,000, rising with repeat claims.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://stacker.com/stories/small-business/nearly-4-10-businesses-sued-accessibility-already-had-solution-heres-what",
+      "title": "Nearly 4 in 10 businesses sued for accessibility already had a solution (AudioEye via Stacker)",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "a single accessibility complaint against Fashion Nova filed in 2020 escalated into a class action that settled for $5.15 million five years later",
+      "statement": "An apparel retailer's 2020 accessibility complaint became a class action settled for $5.15M.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3c60d66e-1317-4ec7-9af6-1ff32aaafce8"
+      ],
+      "company_name": "Fashion Nova"
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://appnavigator.io/app/accesswidget/reviews/",
+      "title": "accessiBe Web Accessibility - Shopify app reviews (AppNavigator)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "We installed this app after we were hit with a lawsuit. It was our understanding that the Accessibe widget would ensure that handicap users would easily be able to navigate our website. That's why we were quite surprised to be hit with a second lawsuit soon after as there were minor bugs on our website that the widget did not catch.",
+      "statement": "A Shopify merchant installed accessiBe after a lawsuit and was sued again soon after.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735",
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": "accessiBe"
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://appnavigator.io/app/accesswidget/reviews/",
+      "title": "accessiBe Web Accessibility - Shopify app reviews (AppNavigator)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Beyond the fact that the app dramatically slowed down our website, to the point that it needed to be uninstalled, the company continues to misrepresent the legal coverage that its services provide to a website that uses it.",
+      "statement": "A reviewer says accessiBe slowed their site and misrepresents its legal coverage.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735",
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "accessiBe"
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://appnavigator.io/app/accesswidget/reviews/",
+      "title": "accessiBe Web Accessibility - Shopify app reviews (AppNavigator)",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "Great customer service. Pricing is fair. Implementation could not have been easier.",
+      "statement": "Other merchants are satisfied with accessiBe's price and ease of setup, so not all overlay buyers feel a reason to switch.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "accessiBe"
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://accessibe.com/pricing",
+      "title": "accessWidget Pricing - Web Accessibility Plans | accessiBe",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Plans for accessWidget, our AI-powered accessibility solution, start at $59 a month.",
+      "statement": "accessiBe's accessWidget starts at $59/month.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "accessiBe"
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://apps.shopify.com/accesswidget",
+      "title": "accessiBe Web Accessibility | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "AI scans your store daily and applies accessibility adjustments without altering your design or layout.",
+      "statement": "accessiBe's Shopify app applies AI adjustments without changing the theme.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "accessiBe"
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://apps.shopify.com/userway-accessibility",
+      "title": "UserWay Website Accessibility | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "UserWay's AI-powered accessibility solutions help Shopify stores provide equal access rights, boost conversions, and protect against the risk of lawsuits.",
+      "statement": "UserWay markets its Shopify widget as protection against lawsuit risk.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "UserWay"
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://apps.shopify.com/testparty",
+      "title": "TestParty: ADA Compliance | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Unlike overlay widgets, TestParty remediates WCAG violations directly in your theme's source code — delivering genuine ADA, WCAG 2.2 AA, EAA, and AODA compliance.",
+      "statement": "TestParty already sells source-code remediation in Shopify themes as an overlay alternative.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "TestParty"
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://apps.shopify.com/testparty",
+      "title": "TestParty: ADA Compliance | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Great app, great team, easy integration and puts your ADA lawsuit worries to bed. Plugs right into git hub and your normal build/deploy flow.",
+      "statement": "A TestParty reviewer praises easy integration with GitHub and the deploy flow.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "TestParty"
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://testparty.ai/blog/shopify-accessibility",
+      "title": "The $1.5 Billion Accessibility Shakedown (TestParty)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Automated scanning starting at $99/month … Hybrid audits (automated + manual) from $500/month",
+      "statement": "TestParty's pricing starts at $99/month for scanning and $500/month for hybrid audits, the same band as the idea's pricing.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "TestParty"
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://testparty.ai/blog/shopify-accessibility",
+      "title": "The $1.5 Billion Accessibility Shakedown (TestParty)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The article correctly identifies that 73% of lawsuits target businesses with less than $25 million in revenue.",
+      "statement": "TestParty, citing Shopify's article, says 73% of lawsuits target businesses under $25M revenue.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "4bac6b8f-7130-442d-9b10-9594477214ee"
+      ],
+      "company_name": "TestParty"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://apps.shopify.com/curbcut",
+      "title": "Curbcut: Accessibility Fixes | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Curbcut works on the code itself: it audits every Liquid file in your published theme against WCAG 2.1/2.2 AA and writes a minimal fix in your theme's own objects and variables.",
+      "statement": "Curbcut audits Shopify Liquid files and writes code fixes in the theme.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "Curbcut"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://apps.shopify.com/accesscomply",
+      "title": "AccessComply Accessibility ADA | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Built for the moment an ADA demand letter or an accessibility deadline arrives. … Fixes written into your theme code, not an overlay widget",
+      "statement": "AccessComply writes fixes into Shopify theme code and targets merchants who just got a demand letter or deadline.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d",
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "AccessComply"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://apps.shopify.com/remedy-accessibility",
+      "title": "Remedy - ADA, WCAG & EAA Fixes | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Each fix is tested on your store and discarded if it fails. Your live theme is never edited: labels go into a copy you preview and publish.",
+      "statement": "Remedy re-tests fixes and applies them to a theme copy, with a GitHub PR tier.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "Remedy"
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://apps.shopify.com/accessfix",
+      "title": "AccessFix | Shopify App Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For each one you get fix steps written for your theme, with the exact Theme Editor change or code to paste.",
+      "statement": "AccessFix gives theme-specific fix instructions for merchants to apply themselves.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "AccessFix"
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://www.fudge.ai/blog/best-shopify-accessibility-apps/",
+      "title": "Best Shopify apps for accessibility & WCAG (2026) (Fudge)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Best for most stores: Patrol - a free full audit with continuous monitoring, plus automated fixes written into your theme’s source code from $200/month.",
+      "statement": "Patrol offers free monitoring plus automated theme-code fixes from $200/month.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "Patrol"
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://www.fudge.ai/blog/best-shopify-accessibility-apps/",
+      "title": "Best Shopify apps for accessibility & WCAG (2026) (Fudge)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Best managed compliance program: TestParty - source-code remediation, monthly manual audits, and compliance certificates at $599/month.",
+      "statement": "TestParty's managed source-remediation program is listed at $599/month.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "TestParty"
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://www.fudge.ai/blog/best-shopify-accessibility-apps/",
+      "title": "Best Shopify apps for accessibility & WCAG (2026) (Fudge)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Best way to fix what the audits find: Fudge - the AI operator for Shopify stores. Ask it for an accessibility audit and it drafts the fixes in your theme code for your team to approve",
+      "statement": "General AI store operators like Fudge already draft accessibility fixes in theme code, an AI-tool substitute risk.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "Fudge"
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://www.fudge.ai/blog/is-shopify-ada-compliant/",
+      "title": "Is Shopify ADA compliant? What merchants need to know (Fudge)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The standard Shopify checkout has been independently tested against WCAG 2.2 AA, and the admin against WCAG 2.1 AA.",
+      "statement": "Shopify's standard checkout is platform-controlled and independently tested against WCAG 2.2 AA, so checkout is less of a merchant-fixable gap than the idea assumes.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3c60d66e-1317-4ec7-9af6-1ff32aaafce8"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://ecommercepartners.com/blog/ada-compliance-ecommerce/",
+      "title": "ADA Compliance for Ecommerce: Shopify & BigCommerce Guide (ECommerce Partners)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The standard checkout flow on Shopify Plus and Shopify, which has been independently tested against WCAG via a published VPAT.",
+      "statement": "A Shopify Plus agency also says Shopify handles the standard checkout's accessibility.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3c60d66e-1317-4ec7-9af6-1ff32aaafce8"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://www.shopify.com/partners/blog/theme-store-accessibility-requirements",
+      "title": "New Accessibility Requirements in the Shopify Theme Store",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Your theme must have a minimum average Lighthouse accessibility score of 90.",
+      "statement": "Shopify Theme Store themes must score at least 90 on Lighthouse accessibility.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Shopify"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://wordpress.org/plugins/?p=307431",
+      "title": "AP Accessibility Fixer for WooCommerce (WordPress.org)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "The plugin does not make a store fully accessible. It does not measure the store against WCAG, and it does not fix text contrast ratios. … The fixes run through WordPress and WooCommerce hooks. They are not an overlay widget.",
+      "statement": "A free WooCommerce plugin applies a few non-overlay code-level fixes.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "AP Accessibility Fixer for WooCommerce"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://dev.to/agentkit/six-accessibility-failures-we-keep-finding-in-woocommerce-stores-and-the-plugins-that-cause-them-1lpf",
+      "title": "Six Accessibility Failures We Keep Finding in WooCommerce Stores (DEV Community)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "We have audited a long string of WooCommerce stores in the last six months — small bakeries, indie clothing brands, a couple of supplement shops, a regional book chain, a handmade-jewelry seller, a coffee roaster. Every one of them had the same six problems. None of the owners knew.",
+      "statement": "An auditor found the same six accessibility failures in every small WooCommerce store audited, including indie clothing brands; owners were unaware.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "3c60d66e-1317-4ec7-9af6-1ff32aaafce8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://dev.to/agentkit/six-accessibility-failures-we-keep-finding-in-woocommerce-stores-and-the-plugins-that-cause-them-1lpf",
+      "title": "Six Accessibility Failures We Keep Finding in WooCommerce Stores (DEV Community)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The number-one finding across every WooCommerce audit is product images whose alt text is the file name or the product name copy-pasted twenty times in a row.",
+      "statement": "Poor product-image alt text is the top failure in WooCommerce audits, relevant to image-heavy apparel and beauty catalogs.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "3c60d66e-1317-4ec7-9af6-1ff32aaafce8"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://www.thirdandgrove.com/your-shopify-store-risk-be-sued-web-accessibility-now-what",
+      "title": "Your Shopify Store is at Risk to be Sued for Web Accessibility (Third & Grove)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "You can expect an audit should for a mid-market site on Shopify to cost you anywhere from $3,000 to $10,000. Depending on the quality of your existing theme and the number of issues, you can expect to pay anywhere from $5,000 - $25,000 (at agency rates) to address them.",
+      "statement": "An agency estimates $3k-$10k for a mid-market Shopify audit plus $5k-$25k to fix issues.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "78e457e4-b1e3-4c64-85d1-3d079d0df30e"
+      ],
+      "company_name": "Third & Grove"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.thirdandgrove.com/your-shopify-store-risk-be-sued-web-accessibility-now-what",
+      "title": "Your Shopify Store is at Risk to be Sued for Web Accessibility (Third & Grove)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Web accessibility compliance is not a major undertaking for a mid-market digital brand, but you do have to do it deliberately.",
+      "statement": "An agency says compliance is not a major undertaking for a mid-market brand.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "78e457e4-b1e3-4c64-85d1-3d079d0df30e"
+      ],
+      "company_name": "Third & Grove"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://accessible.org/shopify-website-ada-compliant/",
+      "title": "How to Make a Shopify Website ADA Compliant (Accessible.org)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Standard audit turnaround is two weeks. Remediation timing depends on developer capacity and the volume of issues.",
+      "statement": "Accessible.org sells manual Shopify audits; remediation timing depends on developer capacity.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "78e457e4-b1e3-4c64-85d1-3d079d0df30e"
+      ],
+      "company_name": "Accessible.org"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://accessible.org/shopify-website-ada-compliant/",
+      "title": "How to Make a Shopify Website ADA Compliant (Accessible.org)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Scans alone are not enough. Scans only flag approximately 25% of WCAG 2.1 AA success criteria.",
+      "statement": "Accessible.org says scans flag only about 25% of WCAG 2.1 AA criteria, which limits fully automated fixing.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735",
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": "Accessible.org"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://www.barrelny.com/services/shopify-accesibility",
+      "title": "Shopify ADA Compliance & Accessibility Services (Barrel)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We collaborate with clients to remediate findings from accessibility audits on their Shopify website.",
+      "statement": "Barrel, a Shopify agency, remediates accessibility audit findings for clients.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Barrel"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.barrelny.com/services/shopify-accesibility",
+      "title": "Shopify ADA Compliance & Accessibility Services (Barrel)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "For clients looking to obtain a letter of conformance and in-depth testing, we work with leading accessibility firm Allyant to provide extra support.",
+      "statement": "Barrel partners with Allyant for audits and conformance letters.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Barrel"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://e-include.eu/web-accessibility/european-accessibility-act/",
+      "title": "The European Accessibility Act: who it applies to and what it asks for (e-Include)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Microenterprises that provide services are outside the scope: fewer than ten people and an annual turnover or balance sheet total of no more than two million euro.",
+      "statement": "EU microenterprises (<10 staff, <=EUR 2M) providing services are exempt from the EAA.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://e-include.eu/web-accessibility/european-accessibility-act/",
+      "title": "The European Accessibility Act: who it applies to and what it asks for (e-Include)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "E-commerce here means selling goods or services to consumers through a website or a mobile application. A shop is in scope because it sells online, not because of what it sells.",
+      "statement": "The EAA covers e-commerce shops because they sell online.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://abilitynet.org.uk/news-blogs/eaa-monitoring-story-so-far",
+      "title": "EAA monitoring: the story so far (AbilityNet)",
+      "source_type": "industry_publication",
+      "published_at": "2025-11-27",
+      "quote": "45% of organisations report that ‘nothing has changed since the EAA took effect.",
+      "statement": "AbilityNet's 2025 survey: 45% of organisations say nothing has changed since the EAA took effect.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://abilitynet.org.uk/news-blogs/eaa-monitoring-story-so-far",
+      "title": "EAA monitoring: the story so far (AbilityNet)",
+      "source_type": "industry_publication",
+      "published_at": "2025-11-27",
+      "quote": "Denmark: Authorities in Denmark began in mid-2025 to notify at least one major online retailer of accessibility issues on their website, framed as a warning rather than formal enforcement. No fines or other measures have been reported so far.",
+      "statement": "Early EAA enforcement in Denmark was a warning with no fines reported.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://abilitynet.org.uk/news-blogs/eaa-monitoring-story-so-far",
+      "title": "EAA monitoring: the story so far (AbilityNet)",
+      "source_type": "industry_publication",
+      "published_at": "2025-11-27",
+      "quote": "It has sent letters to companies around the globe that have e-commerce services in The Netherlands. It has started monitoring those who were unresponsive. Enforcement is expected to start in mid 2026.",
+      "statement": "The Dutch ACM sent letters to e-commerce firms worldwide and expected enforcement from mid-2026.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-66",
+      "url": "https://dev.to/chille87/accessibility-lawsuits-surged-27-in-2025-heres-why-developers-should-care-about-2026-3n7h",
+      "title": "Accessibility Lawsuits Surged 27% in 2025 (DEV Community)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The EAA took effect on June 28, 2025 across all 27 EU member states. … If your site has EU customers, the EAA applies to you regardless of where your business is based.",
+      "statement": "The EAA applies since 28 June 2025 to sites with EU customers, wherever the business is based.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://community.shopify.com/t/legal-scam-re-ada-compliance-websites/182873",
+      "title": "Legal Scam re ADA compliance/websites (Shopify Community)",
+      "source_type": "forum",
+      "published_at": null,
+      "quote": "PHASE 3: You get flooded with Phone calls from Companies that can help you will Compliance for a monthly Fee.",
+      "statement": "A sued merchant sees monthly-fee compliance vendors as part of a lawsuit 'scam' ecosystem, a trust barrier for any subscription offer.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "cd0e17be-de72-4ea6-9c1b-04088db6ef5a"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://juicebeauty.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Juice Beauty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "www.juicebeauty.com makes UserWay's Web Accessibility Widget available which is powered by a dedicated accessibility server.",
+      "statement": "Juice Beauty runs the UserWay overlay widget.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Juice Beauty"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://juicebeauty.com/",
+      "title": "Juice Beauty home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Get it for $20 on $85+ | Free US shipping $50+",
+      "statement": "Juice Beauty sells to US customers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Juice Beauty"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.palladiobeauty.com/pages/accessibility",
+      "title": "Accessibility | Palladio Beauty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "PalladioBeauty.com includes the UserWay Accessibility Widget, which provides visitors with tools that may help adjust the website’s presentation and interaction based on individual needs.",
+      "statement": "Palladio Beauty runs the UserWay widget alongside its remediation efforts.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Palladio Beauty"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://www.palladiobeauty.com/",
+      "title": "Palladio Beauty home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Free U.S. Shipping on Orders $35+ | Free Canada Shipping on Orders $100+",
+      "statement": "Palladio Beauty sells to US customers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Palladio Beauty"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://planetbeauty.com/pages/website-accessibility",
+      "title": "Website Accessibility | Planet Beauty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "www.planetbeauty.com makes available the UserWay Website Accessibility Widget that is powered by a dedicated accessibility server.",
+      "statement": "Planet Beauty runs the UserWay overlay widget.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Planet Beauty"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.planetbeauty.com/pages/about-us",
+      "title": "About Planet Beauty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Planet Beauty (Beauty Web Limited Partnership) is a privately owned, upscale beauty retailer that was founded in Newport Beach, California in 1992.",
+      "statement": "Planet Beauty is a California beauty retailer founded in Newport Beach.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Planet Beauty"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://beautyhabit.com/pages/accessibility",
+      "title": "Beautyhabit Accessibility Statement",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Beautyhabit also makes AccessiBE Web Accessibility Widget available which is powered by a dedicated accessibility server.",
+      "statement": "Beautyhabit runs the accessiBe widget (and engaged UserWay).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Beautyhabit"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.beautyhabit.com/",
+      "title": "Beautyhabit home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Free shipping to Contiguous US States on $85 + Orders and Free Samples with Every Order!",
+      "statement": "Beautyhabit sells to US customers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Beautyhabit"
+    },
+    {
+      "ref": "ev-78",
+      "url": "https://www.dopesnow.com/info/accessibility",
+      "title": "Dopesnow Accessibility Statement",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Dopesnow is an e-commerce service under the directive (EU) 2019/882 on accessibility for products and services.",
+      "statement": "Dopesnow, an outdoor apparel e-shop, states it is in scope of the EAA.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "10cac8c6-5661-4836-820b-e5eb3427e89d"
+      ],
+      "company_name": "Dopesnow"
+    },
+    {
+      "ref": "ev-79",
+      "url": "https://www.dopesnow.com/info/about-us",
+      "title": "About Us - Dopesnow.com",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "What began as a small project importing gear previously unavailable in Sweden for a small group of friends quickly snowballed into something special.",
+      "statement": "Dopesnow originated in Sweden.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Dopesnow"
+    },
+    {
+      "ref": "ev-80",
+      "url": "https://everywhereapparel.com/pages/accessibility",
+      "title": "Everywhere Apparel | Website Accessibility Statement",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Everywhere Apparel Website is partially conformant with WCAG 2.1 level AA. … Postal Address: 11550 Wright Rd, Lynwood, CA 90262, United States",
+      "statement": "Everywhere Apparel (Lynwood, CA) declares partial WCAG 2.1 AA conformance based on self-evaluation.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Everywhere Apparel"
+    },
+    {
+      "ref": "ev-82",
+      "url": "https://www.sovash.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | SOVASH",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are also working to implement an accessibility toolbar for enhanced support of screen readers, voice input tools, and keyboard navigation.",
+      "statement": "SOVASH plans to add an accessibility toolbar, i.e. is heading toward an overlay-style tool.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "SOVASH"
+    },
+    {
+      "ref": "ev-83",
+      "url": "https://www.sovash.com/",
+      "title": "SOVASH home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "SOVASH is operated by SOVASH LLC, a Wyoming-based U.S. company offering consumer products and mobile applications.",
+      "statement": "SOVASH is a Wyoming-based US company.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "SOVASH"
+    },
+    {
+      "ref": "ev-84",
+      "url": "https://wildcraftedbeauty.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Wildcrafted Beauty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We are actively working to improve the accessibility and usability of our website and aim to align with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards.",
+      "statement": "Wildcrafted Beauty is working toward WCAG 2.1 AA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Wildcrafted Beauty"
+    },
+    {
+      "ref": "ev-85",
+      "url": "https://mirabellabeauty.com/pages/website-technology-accessibility-statement",
+      "title": "Accessibility Statement - Mirabella Beauty Website",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We continually test content and features for WCAG 2.1 Level AA compliance and remediate any issues to ensure we meet or exceed the standards.",
+      "statement": "Mirabella Beauty says it tests and remediates against WCAG 2.1 AA.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Mirabella Beauty"
+    },
+    {
+      "ref": "ev-86",
+      "url": "https://www.mirabellabeauty.com/",
+      "title": "Mirabella Beauty home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "FREE SHIPPING ON US RETAIL ORDERS $30+",
+      "statement": "Mirabella Beauty sells to US retail customers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Mirabella Beauty"
+    },
+    {
+      "ref": "ev-87",
+      "url": "https://www.windsorstore.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Windsor",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our website undergoes regular monitoring and testing by various internal and external resources. Identified accessibility issues are addressed by our team with ongoing efforts to enhance compliance with WCAG 2.2 Level AA Success Criteria.",
+      "statement": "Windsor monitors and fixes its fashion site against WCAG 2.2 AA with internal and external resources.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Windsor"
+    },
+    {
+      "ref": "ev-88",
+      "url": "https://shopsimplyme.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Simply Me Boutique",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "To enhance your browsing experience, our website includes an accessibility tool called Accessibly, located in the bottom-right corner of most pages.",
+      "statement": "Simply Me Boutique runs the Accessibly overlay app.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Simply Me Boutique"
+    },
+    {
+      "ref": "ev-89",
+      "url": "https://layaliboutique.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Layali Boutique",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Layali Boutique is partially conformant with WCAG 2.2 level AA.",
+      "statement": "Layali Boutique declares partial WCAG 2.2 AA conformance.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Layali Boutique"
+    },
+    {
+      "ref": "ev-90",
+      "url": "https://www.layaliboutique.com/",
+      "title": "Layali Boutique home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "817 Dye Ave Elmwood Park New Jersey, 07407",
+      "statement": "Layali Boutique is located in Elmwood Park, New Jersey.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Layali Boutique"
+    },
+    {
+      "ref": "ev-91",
+      "url": "https://grayfashion.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Gray Fashion",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We use tools made available by the platform maker (Shopify and third parties plug ins)",
+      "statement": "Gray Fashion relies on Shopify and third-party plugins for accessibility.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Gray Fashion"
+    },
+    {
+      "ref": "ev-92",
+      "url": "https://grayfashion.com/",
+      "title": "Gray Fashion home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "801 SOUTH HOOVER ST LOS ANGELES, CA 90005",
+      "statement": "Gray Fashion has a Los Angeles store address.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Gray Fashion"
+    },
+    {
+      "ref": "ev-93",
+      "url": "https://www.graceandlace.com/pages/accessibility-statement",
+      "title": "Accessibility Statement - Grace and Lace",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We’re always working behind the scenes to make our website better and more accessible.",
+      "statement": "Grace and Lace publishes an accessibility statement without a stated standard or method.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Grace and Lace"
+    },
+    {
+      "ref": "ev-94",
+      "url": "https://www.graceandlace.com/",
+      "title": "Grace and Lace home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "FREE SHIPPING on U.S. Orders Over $65.",
+      "statement": "Grace and Lace sells to US customers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Grace and Lace"
+    },
+    {
+      "ref": "ev-95",
+      "url": "https://www.farmacybeauty.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Farmacy Beauty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "552 7th Avenue, Suite 501, New York, NY 10018",
+      "statement": "Farmacy Beauty is based in New York.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Farmacy Beauty"
+    },
+    {
+      "ref": "ev-96",
+      "url": "https://www.farmacybeauty.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Farmacy Beauty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Additionally, we provide an Assistive Technology app (link opens in a new tab) featured on our website for customers who have trouble typing, gesturing, moving a mouse or reading.",
+      "statement": "Farmacy Beauty offers a third-party assistive technology app on its site.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Farmacy Beauty"
+    },
+    {
+      "ref": "ev-97",
+      "url": "https://povbeauty.com/pages/accessibility-policy",
+      "title": "Accessibility Policy | POV Beauty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "To ensure accessibility, POV Beauty has partnered with AccessiBe, a leading accessibility consultant, to help us achieve and maintain compliance with the Americans with Disabilities Act (ADA)",
+      "statement": "POV Beauty relies on accessiBe for ADA compliance.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "POV Beauty"
+    },
+    {
+      "ref": "ev-98",
+      "url": "https://kravebeauty.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Krave Beauty",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Krave Beauty believes all our customers should have a positive website experience, and we aim to promote accessibility and inclusion.",
+      "statement": "Krave Beauty publishes a generic accessibility statement.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Krave Beauty"
+    },
+    {
+      "ref": "ev-99",
+      "url": "https://sherocommerce.com/pages/accessibility-statement",
+      "title": "Accessibility Statement | Shero Commerce",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "To help support visitors, our website uses the UserWay accessibility plugin. … Shero Commerce Inc, 21 Glen Pond Dr, Red Hook, NY 12571",
+      "statement": "Shero Commerce, a New York Shopify agency, uses the UserWay plugin on its own site.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "Shero Commerce"
+    },
+    {
+      "ref": "ev-100",
+      "url": "https://sherocommerce.com/",
+      "title": "Shero Commerce home page",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Shopify Platinum Partner for complex eCommerce brands",
+      "statement": "Shero Commerce is a Shopify Platinum Partner agency.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Shero Commerce"
+    },
+    {
+      "ref": "ev-101",
+      "url": "https://ecommercepartners.com/about/",
+      "title": "Shopify Plus Ecommerce Agency - About (ECommerce Partners)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "ECommerce Partners is an ecommerce development agency for B2B and DTC brands, certified on Shopify Plus and BigCommerce BigDev, based in Tenafly, New Jersey.",
+      "statement": "ECommerce Partners is a Shopify Plus agency in Tenafly, NJ.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "ECommerce Partners"
+    },
+    {
+      "ref": "ev-102",
+      "url": "https://ecommercepartners.com/blog/ada-compliance-ecommerce/",
+      "title": "ADA Compliance for Ecommerce: Shopify & BigCommerce Guide (ECommerce Partners)",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "ADA compliance for an ecommerce store means meeting WCAG 2.1 or 2.2 Level AA at the code level; on Shopify and BigCommerce the platform covers only checkout, the admin and a few first-party themes, and the merchant owns everything else.",
+      "statement": "ECommerce Partners publishes ADA guidance for merchants, saying code-level fixes are the merchant's job.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "df8ee7b8-f25d-4b75-b279-3a00320c8735"
+      ],
+      "company_name": "ECommerce Partners"
+    },
+    {
+      "ref": "ev-103",
+      "url": "https://www.barrelny.com/contact",
+      "title": "Contact / Barrel",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "We partner with CPG brands to shape strategy, design, and performance across DTC, marketplaces, POS, and B2B.",
+      "statement": "Barrel is a CPG commerce agency serving DTC brands.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Barrel"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "4bac6b8f-7130-442d-9b10-9594477214ee",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "US website accessibility lawsuits are frequent and rising: 3,117 federal filings in 2025 (+27%) and 5,000+ across federal and state courts, about 70% against e-commerce.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-01"
+          ]
+        },
+        {
+          "statement": "Repeat suits are common: 1,427 2025 suits hit previously sued companies, and a Shopify merchant reports three suits in four years.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-02",
+            "ev-09"
+          ]
+        },
+        {
+          "statement": "Costs are material for small stores: settlements typically $15k-$75k, and a three-employee brand faced a $30k demand.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-30",
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "Exposure is uneven: larger companies are a growing share of defendants, some states add small-business safe harbors, and California courts largely exclude online-only businesses.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04",
+            "ev-05",
+            "ev-08"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "df8ee7b8-f25d-4b75-b279-3a00320c8735",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Many target-profile beauty and apparel stores rely on overlay widgets (UserWay, accessiBe, Accessibly) as their accessibility solution.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-70",
+            "ev-72",
+            "ev-74",
+            "ev-76",
+            "ev-88",
+            "ev-97"
+          ]
+        },
+        {
+          "statement": "Overlays do not stop lawsuits: about 38% of 2025 defendants already had a tool installed, and widget users were sued every month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-28",
+            "ev-03",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "Merchants report being sued while running overlays and then turning to code fixes by freelancers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-09",
+            "ev-10",
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "Regulators and the disability community reject overlays as compliance (FTC order on accessiBe; EDF/IAAP statement; practitioner letter).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-22",
+            "ev-27",
+            "ev-23",
+            "ev-26"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "74546c07-ad25-4d31-b3c5-96c4600240dd",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "In small stores the owner handles accessibility personally and often does not know whom to hire.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-14",
+            "ev-16"
+          ]
+        },
+        {
+          "statement": "Many organisations keep accessibility in-house but lack the expertise to sustain it.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "No public evidence found on how stores in the $500k-$50M band budget for accessibility or which role signs off.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "10cac8c6-5661-4836-820b-e5eb3427e89d",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Demand letters and lawsuits are the main trigger; vendors build products for the moment a letter arrives, and merchants install tools right after being sued.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-43",
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "The EAA brings e-commerce into scope and the Dutch regulator has sent letters to e-commerce firms worldwide.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-62",
+            "ev-65",
+            "ev-66"
+          ]
+        },
+        {
+          "statement": "Urgency is dampened by weak early EAA enforcement, a microenterprise exemption, and notice-and-cure reforms that give time to fix after notice.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-63",
+            "ev-64",
+            "ev-61",
+            "ev-20",
+            "ev-19"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "78e457e4-b1e3-4c64-85d1-3d079d0df30e",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Remediation is quoted at about $4k-$25k, and an agency estimates $3k-$10k for an audit plus $5k-$25k for fixes.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-11",
+            "ev-55"
+          ]
+        },
+        {
+          "statement": "Small stores lack developer capacity; one merchant is hiring a freelance coder after three lawsuits.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16",
+            "ev-10",
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "One agency says compliance is not a major undertaking for a mid-market brand.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-56"
+          ]
+        },
+        {
+          "statement": "No evidence found on actual internal developer hours spent on accessibility.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "cd0e17be-de72-4ea6-9c1b-04088db6ef5a",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Source-code remediation for Shopify is already crowded: TestParty, Curbcut, AccessComply, Remedy, AccessFix, Patrol and AI operators like Fudge, at $49-$599/month.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-38",
+            "ev-42",
+            "ev-43",
+            "ev-44",
+            "ev-45",
+            "ev-46",
+            "ev-47",
+            "ev-48",
+            "ev-40"
+          ]
+        },
+        {
+          "statement": "Some overlay buyers are satisfied with price and ease, and some merchants see the overlay debate as 50/50, weakening the switching trigger.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34",
+            "ev-13"
+          ]
+        },
+        {
+          "statement": "Merchants distrust monthly-fee compliance vendors after lawsuits, a barrier for a subscription offer.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-67"
+          ]
+        },
+        {
+          "statement": "Removing an overlay is easy, but merchants who drop one still have to do the code work.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-12"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "3c60d66e-1317-4ec7-9af6-1ff32aaafce8",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "E-commerce is the most-sued sector, and an apparel retailer's complaint grew into a $5.15M class settlement.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-31"
+          ]
+        },
+        {
+          "statement": "Image-heavy catalogs fail on product alt text, the top finding in small WooCommerce store audits including clothing brands.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-53",
+            "ev-54"
+          ]
+        },
+        {
+          "statement": "Shopify's standard checkout is platform-controlled and tested against WCAG, so checkout fixes are less of a merchant-side opportunity on Shopify.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-49",
+            "ev-50"
+          ]
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": {
+    "problem": "US and EU e-commerce stores (especially apparel and beauty on Shopify/WooCommerce) face frequent, repeat accessibility lawsuits and new EAA obligations; the overlay widgets many of them pay for do not prevent suits, and they lack in-house developer capacity to fix theme code.",
+    "users": "Owners and e-commerce managers of small and mid-size Shopify and WooCommerce stores, and the agencies that build and maintain them.",
+    "buyer": "Store owner or head of e-commerce; for agencies, the agency owner.",
+    "decision_maker": "In small stores the owner decides, usually after a demand letter or lawsuit; no public evidence yet on budget ownership in mid-size stores.",
+    "economic_value": "Avoid settlements (typically $15k-$75k, repeat suits common), EAA exposure, and $5k-$25k one-off agency remediation; replace overlay subscriptions that do not prevent suits.",
+    "geography": "United States and European Union",
+    "industry": "E-commerce, with apparel, beauty and consumer goods as early focus",
+    "rationale": [
+      {
+        "statement": "Lawsuits are frequent, rising and concentrated on e-commerce, with many repeat defendants.",
+        "kind": "fact",
+        "evidence_ids": [
+          "ev-07",
+          "ev-01",
+          "ev-02"
+        ]
+      },
+      {
+        "statement": "About 38% of 2025 defendants already had an accessibility tool, and widget users were sued every month.",
+        "kind": "fact",
+        "evidence_ids": [
+          "ev-28",
+          "ev-03"
+        ]
+      },
+      {
+        "statement": "Small stores lack money and expertise to hire developers for remediation.",
+        "kind": "fact",
+        "evidence_ids": [
+          "ev-16",
+          "ev-29"
+        ]
+      },
+      {
+        "statement": "The source-code remediation niche is already crowded, so the problem is real but differentiation is the open question.",
+        "kind": "fact",
+        "evidence_ids": [
+          "ev-38",
+          "ev-42",
+          "ev-43",
+          "ev-46"
+        ]
+      }
+    ]
+  },
+  "new_unknowns": [
+    {
+      "question": "What would make a merchant choose this product over existing Shopify source-remediation apps (TestParty, Curbcut, AccessComply, Patrol) at similar prices?",
+      "category": "alternatives",
+      "priority": "high"
+    },
+    {
+      "question": "Will notice-and-cure laws (e.g., Missouri 2026) and weak early EAA enforcement reduce merchants' willingness to pay before receiving a demand letter?",
+      "category": "urgency",
+      "priority": "medium"
+    }
+  ],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "TestParty",
+      "url": "https://testparty.ai",
+      "kind": "direct",
+      "description": "Source-code remediation for Shopify themes via GitHub PRs, monthly manual audits and compliance certificates.",
+      "pricing_note": "Scanning from $99/month and hybrid audits from $500/month (TestParty blog); managed program $599/month per a Fudge review.",
+      "evidence_refs": [
+        "ev-38",
+        "ev-39",
+        "ev-40",
+        "ev-47"
+      ],
+      "sentiment": [
+        {
+          "statement": "Reviewers praise easy GitHub/deploy integration.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Curbcut",
+      "url": "https://apps.shopify.com/curbcut",
+      "kind": "direct",
+      "description": "Shopify app that audits Liquid theme files and writes code fixes with backups.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-42"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-03",
+      "name": "AccessComply",
+      "url": "https://apps.shopify.com/accesscomply",
+      "kind": "direct",
+      "description": "Shopify app writing approved fixes into theme code, with remediation plan, fix record and accessibility statement.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-43"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Remedy",
+      "url": "https://apps.shopify.com/remedy-accessibility",
+      "kind": "direct",
+      "description": "Shopify app scanning with axe-core, re-testing fixes and offering verified fixes as GitHub PRs.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-44"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "AccessFix",
+      "url": "https://apps.shopify.com/accessfix",
+      "kind": "direct",
+      "description": "WCAG scanner giving theme-specific fix instructions merchants apply themselves.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-45"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "Patrol",
+      "url": null,
+      "kind": "direct",
+      "description": "Shopify app with free monitoring and automated theme-code fixes.",
+      "pricing_note": "From $200/month per a Fudge review (Sept 2026).",
+      "evidence_refs": [
+        "ev-46"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "Fudge",
+      "url": "https://www.fudge.ai",
+      "kind": "indirect",
+      "description": "AI operator for Shopify stores that drafts accessibility fixes in theme code among other storefront work.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-48"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-08",
+      "name": "accessiBe",
+      "url": "https://accessibe.com",
+      "kind": "indirect",
+      "description": "Overlay widget (accessWidget) with AI adjustments, litigation support and documentation.",
+      "pricing_note": "Plans start at $59/month (accessiBe pricing page).",
+      "evidence_refs": [
+        "ev-35",
+        "ev-36",
+        "ev-22",
+        "ev-32",
+        "ev-33",
+        "ev-34"
+      ],
+      "sentiment": [
+        {
+          "statement": "A merchant was sued again after installing it.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-32"
+          ]
+        },
+        {
+          "statement": "A reviewer reports site slowdown and misrepresented legal coverage.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33"
+          ]
+        },
+        {
+          "statement": "Other reviewers praise fair pricing and easy setup.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-34"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-09",
+      "name": "UserWay",
+      "url": "https://userway.org",
+      "kind": "indirect",
+      "description": "Overlay widget for Shopify marketed as protection against lawsuit risk.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-37",
+        "ev-24"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-10",
+      "name": "AudioEye",
+      "url": "https://www.audioeye.com",
+      "kind": "indirect",
+      "description": "Automated accessibility platform named in the anti-overlay open letter; publishes lawsuit data.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-24",
+        "ev-28"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-11",
+      "name": "EqualWeb",
+      "url": "https://www.equalweb.com",
+      "kind": "indirect",
+      "description": "Overlay vendor marketing one-line-of-code compliance.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-25"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-12",
+      "name": "Shopify (native accessibility)",
+      "url": "https://www.shopify.com",
+      "kind": "indirect",
+      "description": "Accessible themes requirement, Sidekick alt-text generation, and a WCAG-tested standard checkout.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-18",
+        "ev-51",
+        "ev-49"
+      ],
+      "sentiment": [
+        {
+          "statement": "A theme developer says Shopify offers merchants no accessibility guarantees or legal support.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-21"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-13",
+      "name": "AP Accessibility Fixer for WooCommerce",
+      "url": "https://wordpress.org/plugins/amazingplugins-accessibility-fixer-for-woocommerce/",
+      "kind": "direct",
+      "description": "Free WooCommerce plugin with nine hook-based code fixes; not an overlay.",
+      "pricing_note": "Free; no Pro version (plugin page).",
+      "evidence_refs": [
+        "ev-52"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-14",
+      "name": "Squidler",
+      "url": "https://squidler.io",
+      "kind": "direct",
+      "description": "Continuous automated accessibility testing of websites.",
+      "pricing_note": "€49/month (per a post on Shopify Community).",
+      "evidence_refs": [
+        "ev-15"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-15",
+      "name": "Barrel (with Allyant)",
+      "url": "https://www.barrelny.com",
+      "kind": "service",
+      "description": "Shopify agency remediating audit findings, partnering with Allyant for audits and conformance letters.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-59",
+        "ev-60"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-16",
+      "name": "Accessible.org",
+      "url": "https://accessible.org",
+      "kind": "service",
+      "description": "Manual Shopify accessibility audits, remediation and validation.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-57",
+        "ev-58"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-17",
+      "name": "Third & Grove",
+      "url": "https://www.thirdandgrove.com",
+      "kind": "service",
+      "description": "Agency offering Shopify accessibility audits and remediation.",
+      "pricing_note": "Estimates audits at $3k-$10k and fixes at $5k-$25k at agency rates.",
+      "evidence_refs": [
+        "ev-55",
+        "ev-56"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-18",
+      "name": "Freelance developers (manual fixes)",
+      "url": null,
+      "kind": "manual",
+      "description": "Merchants hire freelance coders to fix theme code after lawsuits.",
+      "pricing_note": null,
+      "evidence_refs": [
+        "ev-10",
+        "ev-11"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Many small and mid-size stores install overlay widgets (UserWay, accessiBe, Accessibly) and publish accessibility statements.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-70",
+        "ev-74",
+        "ev-76",
+        "ev-88",
+        "ev-97"
+      ]
+    },
+    {
+      "statement": "After lawsuits, merchants hire freelancers or agencies to fix theme code, at quoted costs of about $4k-$25k.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-10",
+        "ev-11",
+        "ev-55"
+      ]
+    },
+    {
+      "statement": "A growing set of Shopify apps already fix accessibility in theme source code (TestParty, Curbcut, AccessComply, Remedy, Patrol).",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-38",
+        "ev-42",
+        "ev-43",
+        "ev-44",
+        "ev-46"
+      ]
+    },
+    {
+      "statement": "Shopify covers part of the problem natively with accessible themes, alt-text generation and a WCAG-tested checkout.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-18",
+        "ev-49",
+        "ev-51"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "Juice Beauty",
+      "website": "https://juicebeauty.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Organic skincare and makeup",
+      "description": "US beauty brand using the UserWay overlay; prime overlay-replacement target.",
+      "technologies": [
+        "Shopify",
+        "UserWay"
+      ],
+      "evidence_refs": [
+        "ev-70",
+        "ev-71"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Beauty DTC brand selling in the US.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-70"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Uses an overlay widget.",
+          "evidence_refs": [
+            "ev-70"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      }
+    },
+    {
+      "ref": "co-02",
+      "name": "Palladio Beauty",
+      "website": "https://www.palladiobeauty.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Makeup",
+      "description": "Beauty brand using UserWay automated remediation plus the widget.",
+      "technologies": [
+        "Shopify",
+        "UserWay"
+      ],
+      "evidence_refs": [
+        "ev-72",
+        "ev-73"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Beauty DTC brand selling in the US.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-72"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Uses an overlay widget.",
+          "evidence_refs": [
+            "ev-72"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-73"
+      }
+    },
+    {
+      "ref": "co-03",
+      "name": "Planet Beauty",
+      "website": "https://www.planetbeauty.com",
+      "icp_id": null,
+      "location": "Newport Beach, California",
+      "industry": "Beauty retail",
+      "description": "California beauty retailer with e-commerce site running UserWay.",
+      "technologies": [
+        "Shopify",
+        "UserWay"
+      ],
+      "evidence_refs": [
+        "ev-74",
+        "ev-75"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Multi-store beauty retailer with online store.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-74"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Uses an overlay widget.",
+          "evidence_refs": [
+            "ev-74"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-75"
+      }
+    },
+    {
+      "ref": "co-04",
+      "name": "Beautyhabit",
+      "website": "https://www.beautyhabit.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Beauty and lifestyle e-commerce",
+      "description": "Beauty e-shop running the accessiBe widget.",
+      "technologies": [
+        "Shopify",
+        "accessiBe"
+      ],
+      "evidence_refs": [
+        "ev-76",
+        "ev-77"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Beauty e-commerce selling in the US; size unknown.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Uses an overlay widget.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      }
+    },
+    {
+      "ref": "co-05",
+      "name": "Dopesnow",
+      "website": "https://www.dopesnow.com",
+      "icp_id": null,
+      "location": "Sweden",
+      "industry": "Outdoor apparel",
+      "description": "Swedish outdoor apparel e-shop that declares itself in EAA scope.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-78",
+        "ev-79"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Apparel e-commerce in the EU under the EAA.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No platform signal captured on fetched pages.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Published an EAA accessibility statement.",
+          "evidence_refs": [
+            "ev-78"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-79"
+      }
+    },
+    {
+      "ref": "co-06",
+      "name": "Everywhere Apparel",
+      "website": "https://everywhereapparel.com",
+      "icp_id": null,
+      "location": "Lynwood, California",
+      "industry": "Apparel",
+      "description": "California apparel company with self-evaluated, partially conformant site.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-80"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Apparel company in the US; size unknown.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Self-declared partial conformance via self-evaluation only.",
+          "evidence_refs": [
+            "ev-80"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-80"
+      }
+    },
+    {
+      "ref": "co-07",
+      "name": "SOVASH",
+      "website": "https://www.sovash.com",
+      "icp_id": null,
+      "location": "Wyoming, United States",
+      "industry": "Skincare",
+      "description": "US skincare brand planning to add an accessibility toolbar.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-82",
+        "ev-83"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Beauty DTC brand in the US.",
+          "evidence_refs": [
+            "ev-83"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Plans an accessibility toolbar.",
+          "evidence_refs": [
+            "ev-82"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-83"
+      }
+    },
+    {
+      "ref": "co-08",
+      "name": "Wildcrafted Beauty",
+      "website": "https://wildcraftedbeauty.com",
+      "icp_id": null,
+      "location": "United States (not stated)",
+      "industry": "Hair and skin care",
+      "description": "Beauty brand working toward WCAG 2.1 AA.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-84"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Beauty e-commerce; size and location unverified.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Generic statement only.",
+          "evidence_refs": [
+            "ev-84"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-09",
+      "name": "Mirabella Beauty",
+      "website": "https://www.mirabellabeauty.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Professional cosmetics",
+      "description": "Cosmetics brand selling to US retail customers, claims ongoing WCAG remediation.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-85",
+        "ev-86"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Beauty brand selling in the US.",
+          "evidence_refs": [
+            "ev-86"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-85"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Claims in-house testing and remediation.",
+          "evidence_refs": [
+            "ev-85"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-86"
+      }
+    },
+    {
+      "ref": "co-10",
+      "name": "Windsor",
+      "website": "https://www.windsorstore.com",
+      "icp_id": null,
+      "location": "United States (not stated)",
+      "industry": "Women's fashion",
+      "description": "Fashion retailer monitoring its site against WCAG 2.2 AA.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-87"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Fashion e-commerce; location not stated on fetched pages.",
+          "evidence_refs": [
+            "ev-87"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-87"
+          ]
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "Uses internal and external resources already.",
+          "evidence_refs": [
+            "ev-87"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-11",
+      "name": "Simply Me Boutique",
+      "website": "https://shopsimplyme.com",
+      "icp_id": null,
+      "location": "United States (not stated)",
+      "industry": "Women's boutique apparel",
+      "description": "Women's boutique running the Accessibly overlay app.",
+      "technologies": [
+        "Shopify",
+        "Accessibly"
+      ],
+      "evidence_refs": [
+        "ev-88"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Small apparel boutique.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Uses an overlay widget.",
+          "evidence_refs": [
+            "ev-88"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-12",
+      "name": "Layali Boutique",
+      "website": "https://www.layaliboutique.com",
+      "icp_id": null,
+      "location": "Elmwood Park, New Jersey",
+      "industry": "Evening dresses",
+      "description": "New Jersey dress boutique declaring partial WCAG 2.2 AA conformance.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-89",
+        "ev-90"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Apparel boutique in the US.",
+          "evidence_refs": [
+            "ev-90"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-89"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Partial conformance declared.",
+          "evidence_refs": [
+            "ev-89"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-90"
+      }
+    },
+    {
+      "ref": "co-13",
+      "name": "Gray Fashion",
+      "website": "https://grayfashion.com",
+      "icp_id": null,
+      "location": "Los Angeles, California",
+      "industry": "Women's fashion and lingerie",
+      "description": "LA fashion store relying on Shopify and plugins for accessibility.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-91",
+        "ev-92"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Apparel e-commerce in the US.",
+          "evidence_refs": [
+            "ev-92"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "States its store is hosted on Shopify and uses plugins.",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Relies on platform and plugins.",
+          "evidence_refs": [
+            "ev-91"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-92"
+      }
+    },
+    {
+      "ref": "co-14",
+      "name": "Grace and Lace",
+      "website": "https://www.graceandlace.com",
+      "icp_id": null,
+      "location": "United States",
+      "industry": "Women's apparel",
+      "description": "Apparel brand selling to US customers with a generic accessibility statement.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-93",
+        "ev-94"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Apparel brand selling in the US.",
+          "evidence_refs": [
+            "ev-94"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-93"
+          ]
+        },
+        "other_signals": {
+          "rating": 1,
+          "rationale": "Generic statement only.",
+          "evidence_refs": [
+            "ev-93"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-94"
+      }
+    },
+    {
+      "ref": "co-15",
+      "name": "Farmacy Beauty",
+      "website": "https://www.farmacybeauty.com",
+      "icp_id": null,
+      "location": "New York, New York",
+      "industry": "Skincare",
+      "description": "New York skincare brand offering a third-party assistive technology app.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-95",
+        "ev-96"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Beauty DTC brand in the US (P&G-owned per site, possibly above ICP size).",
+          "evidence_refs": [
+            "ev-95"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-96"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Uses a third-party assistive app.",
+          "evidence_refs": [
+            "ev-96"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-95"
+      }
+    },
+    {
+      "ref": "co-16",
+      "name": "POV Beauty",
+      "website": "https://povbeauty.com",
+      "icp_id": null,
+      "location": "United States (not stated)",
+      "industry": "Beauty",
+      "description": "Beauty brand relying on accessiBe for ADA compliance.",
+      "technologies": [
+        "Shopify",
+        "accessiBe"
+      ],
+      "evidence_refs": [
+        "ev-97"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Beauty DTC brand.",
+          "evidence_refs": [
+            "ev-97"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-97"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Relies on accessiBe.",
+          "evidence_refs": [
+            "ev-97"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "Krave Beauty",
+      "website": "https://kravebeauty.com",
+      "icp_id": null,
+      "location": "United States (not stated)",
+      "industry": "Skincare",
+      "description": "Skincare brand with a generic accessibility statement.",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-98"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Beauty DTC brand; location unverified.",
+          "evidence_refs": [
+            "ev-98"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Store URL structure (/pages/) and statement indicate a Shopify storefront.",
+          "evidence_refs": [
+            "ev-98"
+          ]
+        },
+        "other_signals": {
+          "rating": 1,
+          "rationale": "Generic statement only.",
+          "evidence_refs": [
+            "ev-98"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-18",
+      "name": "Shero Commerce",
+      "website": "https://sherocommerce.com",
+      "icp_id": null,
+      "location": "Red Hook, New York",
+      "industry": "Shopify Plus agency",
+      "description": "Shopify Platinum Partner agency (agency ICP) that itself uses the UserWay plugin.",
+      "technologies": [
+        "Shopify",
+        "UserWay"
+      ],
+      "evidence_refs": [
+        "ev-99",
+        "ev-100"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Shopify agency serving apparel, beauty and jewelry merchants.",
+          "evidence_refs": [
+            "ev-100"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Shopify Platinum Partner.",
+          "evidence_refs": [
+            "ev-100"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Uses an overlay on its own site.",
+          "evidence_refs": [
+            "ev-99"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-99"
+      }
+    },
+    {
+      "ref": "co-19",
+      "name": "ECommerce Partners",
+      "website": "https://ecommercepartners.com",
+      "icp_id": null,
+      "location": "Tenafly, New Jersey",
+      "industry": "Shopify Plus / BigCommerce agency",
+      "description": "Shopify Plus agency publishing ADA compliance guidance for merchants (agency ICP).",
+      "technologies": [
+        "Shopify Plus",
+        "BigCommerce"
+      ],
+      "evidence_refs": [
+        "ev-101",
+        "ev-102"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Ecommerce agency in the US.",
+          "evidence_refs": [
+            "ev-101"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Certified on Shopify Plus.",
+          "evidence_refs": [
+            "ev-101"
+          ]
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Publishes ADA compliance guidance.",
+          "evidence_refs": [
+            "ev-102"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-101"
+      }
+    },
+    {
+      "ref": "co-20",
+      "name": "Barrel",
+      "website": "https://www.barrelny.com",
+      "icp_id": null,
+      "location": "United States (not stated)",
+      "industry": "CPG commerce agency",
+      "description": "Shopify agency that remediates accessibility audit findings with Allyant (agency ICP, also a service competitor).",
+      "technologies": [
+        "Shopify"
+      ],
+      "evidence_refs": [
+        "ev-59",
+        "ev-60",
+        "ev-103"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Agency serving DTC/CPG brands including beauty.",
+          "evidence_refs": [
+            "ev-103"
+          ]
+        },
+        "technology_fit": {
+          "rating": 4,
+          "rationale": "Builds Shopify sites.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Already sells accessibility remediation.",
+          "evidence_refs": [
+            "ev-59",
+            "ev-60"
+          ]
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
