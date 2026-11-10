@@ -1,0 +1,2477 @@
+{
+  "meta": {
+    "schema_version": "1.2",
+    "method_version": "3",
+    "idea_id": "3326c741-43cc-496e-906a-a574370d0a7b",
+    "researcher": "claude-code",
+    "started_at": "2026-11-10T09:00:00Z",
+    "finished_at": "2026-11-10T13:00:00Z",
+    "queries": [
+      "IRDAI annual report grievances health insurance claims rejection percentage 2024-25",
+      "Insurance Ombudsman annual report complaints partial repudiation health claims",
+      "Localcircles survey health insurance claim rejected partially settled",
+      "IRDAI cautions public unregistered claim consultants charging fees claim settlement",
+      "Insurance Samadhan rejected health claim fees success fee how it works",
+      "reddit india health insurance claim partially settled room rent proportionate deduction",
+      "AI tool India analyse health insurance claim rejection letter draft grievance ombudsman startup",
+      "health insurance claim assistance service India rejected claim help fee startup Beshak OR Ditto OR \"claim support\"",
+      "\"claim settlement ratio\" health insurers India 2025 high most claims settled smoothly cashless (contradiction)",
+      "General Insurance Council claim influencers instigating agencies charge percentage of claim policyholders warning",
+      "Insurance Samadhan health claim rejected complaint register fee page",
+      "IRDAI public notice beware entities promising help with claim settlement for a fee policyholders",
+      "job \"claims executive\" insurance broker health claims \"claim follow up\" TPA corporate employees India",
+      "reddit IndiaInvestments health insurance claim rejected \"ombudsman\" experience deductions",
+      "Ditto insurance claim support free customers claim rejected help joinditto",
+      "HR employees group health insurance claims queries burden HR team India survey claims experience employees",
+      "Policybazaar claim assistance health \"claim\" team rejected claims recovered crore (contradiction: 94% approved)",
+      "insurance broking firm India \"claim assistance\" health insurance \"IRDAI\" direct broker small family office claims support",
+      "Insurance Brokers Association of India member list directory",
+      "health insurance claim consultant India rejected claim recovery service company Delhi Mumbai Bangalore",
+      "\"insurance advisory\" health insurance claim support India \"claims\" small firm website InsureMart OR Beshak OR \"Insurance Guru\"",
+      "ClaimForSure insurance claim assistance India",
+      "\"insurance brokers pvt ltd\" health insurance \"claim support\" Pune OR Ahmedabad OR Jaipur OR Kochi OR Chandigarh",
+      "Bimacafe insurance broker Pune claim assistance",
+      "Intact Insurance Brokers Ahmedabad OR Arron Insurance Brokers OR Sarvpriya Insurance Brokers website",
+      "InsureMart insurance advisor health claims OR Beshak health insurance claim help",
+      "Hudson Insurance Brokers Chandigarh health insurance claims",
+      "Westford Insurance Brokers OR Tamarind Insurance Brokers OR Greenlife Insurance Broking health claim assistance",
+      "Robinhood Insurance Broker OR Veezinsure OR \"Ideal Insurance Brokers\" Kolkata health insurance claims support"
+    ],
+    "notes": "Market: India. Primary ICP is individual policyholders, who cannot be prospected as companies, so the 19 prospects target the secondary ICP (agents and small brokers); several are larger distributors or group-benefit brokers listed as channel partners outside the 1-10 size band. Contacts are left empty and no personal names are quoted. Forum evidence comes from a Reddit snapshot mirror (reddit.sentinel-team.org) and freefincal reader stories. Unfetchable (robots/403/timeouts): angelone.in, itbrief.in, cfotech.in, business-standard.com, policybazaar.com, newsmeter.in, producthunt.com (fairClaims by Policygaido), indiehackers.com, insurancesamadhan.in (timeout), beshak.org (429), policyholder.gov.in broker list, paybima.com, renewbuy.com, connect-brite.lovable.app (ClaimForSure). None are cited. No primary IRDAI notice specifically warning about fee-charging claim consultants was found; the 2020 notice cited is about fee-seeking impostors. The proportionate-deduction rule (ev-21) is from a non-official wiki and was not verified against the circular."
+  },
+  "evidence": [
+    {
+      "ref": "ev-01",
+      "url": "https://cafemutual.com/news/insurance/38460-insurance-industry-disposed-off-287-lakh-complaints-in-fy26-through-bima-bharosa",
+      "title": "Insurance industry disposed off 2.87 lakh complaints in FY26 through Bima Bharosa",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Health insurers received 1,17,979 complaints, disposed off 1,12,315 and had 5,664 pending.",
+      "statement": "Per IRDAI data cited in a Lok Sabha reply, health insurers received about 1.18 lakh complaints through Bima Bharosa in FY26.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-02",
+      "url": "https://cafemutual.com/news/insurance/38460-insurance-industry-disposed-off-287-lakh-complaints-in-fy26-through-bima-bharosa",
+      "title": "Insurance industry disposed off 2.87 lakh complaints in FY26 through Bima Bharosa",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Claims are partly settled or disallowed when they exceed the sum insured or policy sub-limits, or because of co-payment, deductibles, room rent limits or non-medical expenses.",
+      "statement": "IRDAI's own analysis lists sub-limits, co-pay, deductibles, room-rent limits and non-medical expenses as the drivers of partial settlements, i.e. the clause-level deductions the idea targets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108",
+        "8df25476-bd04-4d90-8a85-7ea376e00f56"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-03",
+      "url": "https://www.insurancebusinessmag.com/asia/news/life-insurance/irdai-cannot-explain-why-health-insurance-claims-go-unpaid-583814.aspx",
+      "title": "IRDAI cannot explain why health insurance claims go unpaid",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "Complaints involving general and health insurers increased sharply, with claim-related issues accounting for approximately 69% of grievances in those segments. … Health insurance disputes accounted for approximately 64% of all complaints",
+      "statement": "About 69% of general/health grievances were claim-related in FY2024-25, and health made up about 64% of Ombudsman complaints.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-04",
+      "url": "https://www.insurancebusinessmag.com/asia/news/life-insurance/irdai-cannot-explain-why-health-insurance-claims-go-unpaid-583814.aspx",
+      "title": "IRDAI cannot explain why health insurance claims go unpaid",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The government further confirmed that the IRDAI collects data only on overall claim repudiation rates, not the reasons behind individual denials.",
+      "statement": "The regulator does not collect reasons for individual denials, so there is no public data on how often specific clauses are misapplied.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-05",
+      "url": "https://www.insurancebusinessmag.com/asia/news/life-insurance/irdai-cannot-explain-why-health-insurance-claims-go-unpaid-583814.aspx",
+      "title": "IRDAI cannot explain why health insurance claims go unpaid",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "17 Ombudsman offices across India received 53,184 complaints in FY2024-25, of which approximately 71% were resolved in favour of the policyholder.",
+      "statement": "Policyholders who escalate to the Ombudsman win a majority of cases, suggesting many disputed deductions/rejections are recoverable.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d",
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-06",
+      "url": "https://cafemutual.com/news/insurance/38665-fewer-policyholders-are-winning-claim-rejection-cases",
+      "title": "Fewer policyholders are winning claim rejection cases",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "the Insurance Ombudsman disposed of 54% of cases in favour of complainants or policyholders in FY26 of the total claim requests. … This was the lowest share in four years",
+      "statement": "The Ombudsman win rate on claim-repudiation complaints fell to about 54% in FY26, the lowest in four years, which weakens success-fee economics.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-07",
+      "url": "https://cafemutual.com/news/insurance/38665-fewer-policyholders-are-winning-claim-rejection-cases",
+      "title": "Fewer policyholders are winning claim rejection cases",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "18,809 cases were decided in favour of complainants in FY26, even as the overall number of complaints relating to the partial or total repudiation of claims rose to 35,186.",
+      "statement": "Ombudsman complaints about partial or total repudiation rose to 35,186 in FY26 (from 11,942 in FY22 per the same table).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-08",
+      "url": "https://www.businesstoday.in/personal-finance/insurance/story/insurance-claims-over-50-health-cover-claims-faced-rejection-or-partial-approval-says-survey-459394-2025-01-02",
+      "title": "Insurance claims: Over 50% health cover claims faced rejection or partial approval, says survey",
+      "source_type": "report",
+      "published_at": "2025-01-02",
+      "quote": "33% of respondents stated that their claim was \"only partially approved with invalid reasons\", while 36% said their claim was outright rejected with invalid reasons.",
+      "statement": "A LocalCircles survey of claimants reported 33% partially approved and 36% rejected, in respondents' view for invalid reasons (self-reported, not independently verified).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-09",
+      "url": "https://www.businesstoday.in/personal-finance/insurance/story/insurance-claims-over-50-health-cover-claims-faced-rejection-or-partial-approval-says-survey-459394-2025-01-02",
+      "title": "Insurance claims: Over 50% health cover claims faced rejection or partial approval, says survey",
+      "source_type": "news",
+      "published_at": "2025-01-02",
+      "quote": "insurance companies disallowed and repudiated health policy claims amounting to Rs 26,000 crore during the fiscal year ending in March 2024",
+      "statement": "Disallowed plus repudiated health claim amounts reached about Rs 26,000 crore in FY24 (IRDAI annual report).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8df25476-bd04-4d90-8a85-7ea376e00f56"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-10",
+      "url": "https://www.outlookmoney.com/personal-finance/premiums-rising-fast-but-health-insurance-claims-still-test-patients-patience-localcircles-survey",
+      "title": "Premiums Rising Fast, But Health Insurance Claims Still Test Patients' Patience: LocalCircles Survey",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Around four in ten respondents who had filed claims said their claims were either rejected or only partly settled. Some policyholders said they were not given clear explanations when insurers reduced or declined their claims.",
+      "statement": "In a later LocalCircles survey, about 4 in 10 claimants reported rejection or partial settlement, and some said deductions were not clearly explained.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-11",
+      "url": "https://www.outlookmoney.com/personal-finance/premiums-rising-fast-but-health-insurance-claims-still-test-patients-patience-localcircles-survey",
+      "title": "Premiums Rising Fast, But Health Insurance Claims Still Test Patients' Patience: LocalCircles Survey",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Many respondents said they were surprised to find that certain hospital expenses were either excluded from coverage or reimbursed only partially. … Some respondents said insurers sought more paperwork or asked for further explanations while processing claims.",
+      "statement": "Claimants report surprise exclusions/partial reimbursement and repeated document requests.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd",
+        "8df25476-bd04-4d90-8a85-7ea376e00f56"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-12",
+      "url": "https://www.deccanherald.com/health/healthcare/claims-complaints-coverage-india-s-health-insurance-story-3501336",
+      "title": "Claims, complaints, coverage: India's health insurance story",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "For the average policyholder, such hassles in claim processing are far from rare. According to a recent report by Insurance Samadhan, a tech-based grievance redressal platform, around 88 per cent of complaints by health insurance policyholders are related to claim rejection.",
+      "statement": "Insurance Samadhan's grievance data shows about 88% of health policyholder complaints relate to claim rejection.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-13",
+      "url": "https://www.deccanherald.com/health/healthcare/claims-complaints-coverage-india-s-health-insurance-story-3501336",
+      "title": "Claims, complaints, coverage: India's health insurance story",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The high volume of complaints related to health insurance claims stems from a lack of clarity in policy terms, insufficient communication, and complex documentation",
+      "statement": "An insurer CEO attributes the complaint volume to unclear policy terms, poor communication and complex documentation, the comprehension gap the idea targets.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108",
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-14",
+      "url": "https://www.outlookmoney.com/personal-finance/why-95-per-cent-of-health-insurance-complaints-concern-claim-rejections",
+      "title": "Why 95 Per Cent Of Health Insurance Complaints Concern Claim Rejections",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The report of the Council for Insurance Ombudsmen 2023-24 states that 95 per cent of health insurance complaints dealt with claims rejections.",
+      "statement": "Per the CIO 2023-24 report, 95% of health insurance Ombudsman complaints concerned claim rejections.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-15",
+      "url": "https://reddit.sentinel-team.org/posts/1tvwd3x/snapshots/2026-06-04T02%3A07%3A14.708178Z",
+      "title": "Post snapshot: final update on a hospitalization claim denial (r/IndiaInsurance mirror)",
+      "source_type": "forum",
+      "published_at": "2026-06-04",
+      "quote": "There were repeated document requests, template-style responses, and the same broad denial reasoning being repeated despite the clinical evidence. … after around 22 months of persistence, documentation, escalation, and follow-up, the claim was finally settled.",
+      "statement": "A policyholder describes a 22-month fight with repeated document requests and template denials before an Ombudsman-stage settlement.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-16",
+      "url": "https://reddit.sentinel-team.org/posts/1tjdlcd/snapshots/2026-05-22T19%3A31%3A18.362228Z",
+      "title": "Post snapshot: reimbursement claim rejected as 'OPD possible' (forum mirror)",
+      "source_type": "forum",
+      "published_at": "2026-05-22",
+      "quote": "Niva Bupa rejected the claim saying hospitalization was not medically justified and the patient could have been managed on OPD basis. … Policybazaar helped raise reconsideration, but once Niva Bupa maintained rejection, I felt I was left alone to fight the case.",
+      "statement": "A policyholder whose ~Rs 44,000 claim was rejected says the broker's help stopped after one reconsideration, leaving them to escalate alone.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd",
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "Policybazaar"
+    },
+    {
+      "ref": "ev-17",
+      "url": "https://freefincal.com/how-i-used-bima-lokpal-to-contest-my-health-insurance-claim-rejection-and-won/",
+      "title": "How I used Bima Lokpal to contest my health insurance claim rejection and won",
+      "source_type": "forum",
+      "published_at": "2024-08-07",
+      "quote": "To my surprise, my insurance company informed me that only 20% of the claimed amount qualifies. … This was frustrating since there was no one to call (all calls went to untrained Call centres, and there was no support from any Grievance Person).",
+      "statement": "A reader describes a short-paid claim and an unresponsive insurer grievance channel.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd",
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-18",
+      "url": "https://freefincal.com/how-i-used-bima-lokpal-to-contest-my-health-insurance-claim-rejection-and-won/",
+      "title": "How I used Bima Lokpal to contest my health insurance claim rejection and won",
+      "source_type": "forum",
+      "published_at": "2024-08-07",
+      "quote": "I raised an Online grievance (a straightforward process!) to get Justice & Dues. … They took all the details from me & concluded my claim was correct & agreed to pay me the claim amount I raised !!!",
+      "statement": "The same claimant won at the Ombudsman alone, calling the online process straightforward: a free DIY route that competes with a paid tool.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d",
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-19",
+      "url": "https://freefincal.com/health-insurer-said-hospitalization-was-unnecessary-but-paid-after-ombudsman-complaint/",
+      "title": "Health insurer said hospitalization was unnecessary, but paid after Ombudsman complaint!",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "His hospitalization cost totalled ₹ 2.48 lakhs. He was forced to pay that amount from his pocket. … The ten months of challenging and emotionally draining process has left him in bad taste. … The claim process wasn’t clearly defined from the outset.",
+      "statement": "An advisor's case write-up: a Rs 2.48 lakh claim was paid out of pocket and took ten months, with an unclear escalation process, before the insurer settled at the Ombudsman stage.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "8df25476-bd04-4d90-8a85-7ea376e00f56",
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-20",
+      "url": "https://www.outlookmoney.com/personal-finance/understanding-proportionate-deductions-how-hospital-room-choice-impacts-your-health-insurance-claim",
+      "title": "Proportionate Deductions: How Room Choice Impacts Your Claim",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "If a patient chooses a room above the limit allowed in the policy, the insurer does not just restrict the payout to the extra rent. In such cases, the insurer recalculates the whole hospital bill in proportion to the difference between the room rent allowed under the policy and the higher rent actually chosen.",
+      "statement": "A brokers' association expert explains that room-rent overages trigger proportionate deductions across the bill, a deduction type claimants find hard to follow.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "8df25476-bd04-4d90-8a85-7ea376e00f56"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-21",
+      "url": "https://righttoinformation.wiki/proportionate-deduction-health-insurance-india",
+      "title": "Proportionate Deduction on Your Health Insurance Claim",
+      "source_type": "other",
+      "published_at": null,
+      "quote": "Under the IRDAI Health Insurance Master Circular dated 29 May 2024, proportionate deduction can apply only to room rent itself, not to associated medical expenses like ICU, surgeon, anaesthesia, OT, nursing, investigations or pharmacy. … Many citizens still receive the old-style proportionate cut.",
+      "statement": "A non-official explainer says proportionate cuts beyond room rent conflict with the 2024 master circular yet still occur; if right, this is a checkable misapplied deduction (not verified against the circular).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "8df25476-bd04-4d90-8a85-7ea376e00f56",
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-22",
+      "url": "https://www.outlookmoney.com/magazine/money/story/lay-claim-on-your-health-insurance-rights-1695",
+      "title": "Lay Claim On Your Health Insurance Rights",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Issues faced by health insurance clients include outright rejection of claims and unwarranted deductions from hospital bills, including that from network hospitals",
+      "statement": "The secretary general of the Insurance Brokers Association of India names unwarranted bill deductions, even at network hospitals, as a common issue.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108",
+        "8df25476-bd04-4d90-8a85-7ea376e00f56"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-23",
+      "url": "https://www.outlookmoney.com/magazine/money/story/lay-claim-on-your-health-insurance-rights-1695",
+      "title": "Lay Claim On Your Health Insurance Rights",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Her ordeal continued with another 10 rounds of communication via email with the insurance company. During this phase, she was asked to submit the documents multiple times",
+      "statement": "A family member pursuing a cancer surgery claim faced 10 email rounds and repeated document requests.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-24",
+      "url": "https://www.businesstoday.in/amp/personal-finance/insurance/story/this-startup-helps-customers-fight-insurance-claim-rejection-243124-2020-01-28",
+      "title": "This startup helps customers fight insurance claim rejection",
+      "source_type": "news",
+      "published_at": "2020-01-28",
+      "quote": "Although the mechanism is available, policyholders find it difficult to use it due to lack of awareness and financial literacy.",
+      "statement": "Policyholders struggle to use grievance mechanisms (IGMS, Ombudsman) without guidance.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd",
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-25",
+      "url": "https://www.businesstoday.in/amp/personal-finance/insurance/story/this-startup-helps-customers-fight-insurance-claim-rejection-243124-2020-01-28",
+      "title": "This startup helps customers fight insurance claim rejection",
+      "source_type": "news",
+      "published_at": "2020-01-28",
+      "quote": "Insurance Samadhan charges Rs 500 registration fee, which is valid for each member of the family. Post the resolution of the complaint, the start-up takes 9 per cent share in the claims amount that has been resolved.",
+      "statement": "Insurance Samadhan charged a Rs 500 registration fee plus 9% of the resolved amount (2020), showing a paid success-fee model exists.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d",
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "Insurance Samadhan"
+    },
+    {
+      "ref": "ev-26",
+      "url": "https://www.businesstoday.in/amp/personal-finance/insurance/story/this-startup-helps-customers-fight-insurance-claim-rejection-243124-2020-01-28",
+      "title": "This startup helps customers fight insurance claim rejection",
+      "source_type": "news",
+      "published_at": "2020-01-28",
+      "quote": "We don't work on each complaint but only take forward the ones that we know are genuine. On an average we only select three-four cases out of 100",
+      "statement": "The leading claim-dispute service took on only 3-4 of every 100 cases, implying most complaints are not worth pursuing on a success fee.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d"
+      ],
+      "company_name": "Insurance Samadhan"
+    },
+    {
+      "ref": "ev-27",
+      "url": "https://www.businesstoday.in/amp/personal-finance/insurance/story/88-of-consumer-complaints-are-due-to-insurance-claims-being-rejected-report-467731-2025-03-12",
+      "title": "88% of consumer complaints are due to insurance claims being rejected: Report",
+      "source_type": "news",
+      "published_at": "2025-03-12",
+      "quote": "Insurance Samadhan has made significant strides in resolving grievances, having settled over 18,000 cases and recovered claims worth INR 160 crores for over 15,000 individuals.",
+      "statement": "Insurance Samadhan reports 18,000+ cases settled and INR 160 crore recovered: there is real demand for paid help.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d",
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "Insurance Samadhan"
+    },
+    {
+      "ref": "ev-28",
+      "url": "https://www.editorji.com/business-news/personal-finance/insights-on-health-insurance-claims-policybazaar-survey-reveals-94-of-claims-get-approved-86-customer-1719390724645",
+      "title": "Insights on health insurance claims: Survey reveals 94% of claims approved",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "A recent report by Policybazaar has revealed that 94% of health insurance claims are approved by insurance companies.",
+      "statement": "A Policybazaar report says 94% of health claims are approved, implying rejection is the exception for its customers.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": "Policybazaar"
+    },
+    {
+      "ref": "ev-29",
+      "url": "https://www.editorji.com/business-news/personal-finance/insights-on-health-insurance-claims-policybazaar-survey-reveals-94-of-claims-get-approved-86-customer-1719390724645",
+      "title": "Insights on health insurance claims: Survey reveals 94% of claims approved",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "Meanwhile, when customers resubmit rejected claims themselves, only 6% succeed in having their decisions reversed. However, this rate improves dramatically to 32% with the assistance of offline agents and jumps to 67% when utilising online intermediaries.",
+      "statement": "Assisted resubmissions reverse far more rejections (32-67%) than DIY (6%), supporting the value of expert help.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d",
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "Policybazaar"
+    },
+    {
+      "ref": "ev-30",
+      "url": "https://www.editorji.com/business-news/personal-finance/insights-on-health-insurance-claims-policybazaar-survey-reveals-94-of-claims-get-approved-86-customer-1719390724645",
+      "title": "Insights on health insurance claims: Survey reveals 94% of claims approved",
+      "source_type": "report",
+      "published_at": null,
+      "quote": "70% of reimbursement claimants seek financial aid to cover upfront payments",
+      "statement": "Most reimbursement claimants need financial aid to fund upfront payments, so short payments hurt.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "8df25476-bd04-4d90-8a85-7ea376e00f56"
+      ],
+      "company_name": "Policybazaar"
+    },
+    {
+      "ref": "ev-31",
+      "url": "https://indiamedtoday.com/record-health-insurance-claims-settled-in-fy25-average-payout-per-claim-declines/",
+      "title": "Record health insurance claims settled in FY25, average payout per claim declines",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "The share of repudiated claims dropped to around 8% from about 11% a year earlier, while pending claims edged down to roughly 5% from 6%, reflecting faster processing and tighter oversight of claim decisions.",
+      "statement": "Repudiations fell from about 11% to 8% of claims in FY25, so outright rejection affects a minority and is declining.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-32",
+      "url": "https://indiamedtoday.com/record-health-insurance-claims-settled-in-fy25-average-payout-per-claim-declines/",
+      "title": "Record health insurance claims settled in FY25, average payout per claim declines",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "At the same time, the regulator has tightened governance around claim repudiations, requiring all rejections to be approved by a product management committee or a claims review committee.",
+      "statement": "The regulator now requires committee approval of every rejection, which may reduce wrongful rejections.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-33",
+      "url": "https://indiamedtoday.com/record-health-insurance-claims-settled-in-fy25-average-payout-per-claim-declines/",
+      "title": "Record health insurance claims settled in FY25, average payout per claim declines",
+      "source_type": "news",
+      "published_at": null,
+      "quote": "However, the average amount paid per claim declined to ₹28,910 from ₹31,086",
+      "statement": "The average paid health claim is about Rs 28,910, which bounds what a typical dispute is worth (and so a success fee).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "8df25476-bd04-4d90-8a85-7ea376e00f56",
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-34",
+      "url": "https://knnindia.co.in/news/newsdetails/sectors/health-insurance-payouts-rise-slower-than-claims-allude-to-inefficiencies-in-settlement-irdai-data",
+      "title": "Health Insurance Payouts Rise Slower Than Claims Allude To Inefficiencies In Settlement: IRDAI Data",
+      "source_type": "news",
+      "published_at": "2025-11-24",
+      "quote": "While claim volumes are high, the amounts settled, especially fully settled claims, remain lower than expected. We are monitoring this closely,",
+      "statement": "IRDAI's chairman says fully settled claim amounts are lower than expected, a regulator-level signal of partial settlements.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108",
+        "8df25476-bd04-4d90-8a85-7ea376e00f56"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-35",
+      "url": "https://joinditto.in/health-insurance/top-10-claim-settlement-ratio-health-insurance-companies/",
+      "title": "Top 10 Claim Settlement Ratio Health Insurance Companies in India [2026]",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "The top 5 health insurance companies by 3-year average CSR (FY 2024-26) are Digit Health Insurance at 99.01%, New India Assurance at 98.00%, HDFC ERGO at 97.61%",
+      "statement": "Leading insurers settle 97-99% of claims by count, so rejections are rare at these insurers (CSR does not capture partial deductions).",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-36",
+      "url": "https://lawsikho.com/blog/draft-an-insurance-ombudsman-complaint-using-ai/",
+      "title": "How to draft an insurance ombudsman complaint using AI (Part 5)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Absolutely. No filing fees, no lawyer fees required, and no court costs. The entire process is designed to be accessible to policyholders.",
+      "statement": "The Insurance Ombudsman is free to use, which caps what claimants will pay for help.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "high",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d",
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-37",
+      "url": "https://lawsikho.com/blog/draft-an-insurance-ombudsman-complaint-using-ai/",
+      "title": "How to draft an insurance ombudsman complaint using AI (Part 5)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Less prone to making up legal citations or referencing non-existent case law … Use AI as your drafting partner, but remember, it is a tool, not a lawyer. … For complex cases involving significant amounts or technical issues, consult a lawyer after preparing your AI-assisted draft.",
+      "statement": "A legal-education guide flags that AI can invent citations and recommends a lawyer for complex, high-value cases, supporting human review in the product.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "4fd787a5-529c-42d5-80af-12fd2191e871"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-38",
+      "url": "https://lawsikho.com/blog/draft-an-insurance-ombudsman-complaint-using-ai/",
+      "title": "How to draft an insurance ombudsman complaint using AI (Part 5)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Most AI platforms like ChatGPT are designed for everyday users. Just copy-paste the prompts I’ve provided and follow the structure.",
+      "statement": "Free general-purpose chatbots with published prompts already serve as a substitute for complaint drafting.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b275eba0-493b-4a82-9849-013cf31fc340",
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-39",
+      "url": "https://lawsikho.com/blog/draft-an-insurance-ombudsman-complaint-using-ai/",
+      "title": "How to draft an insurance ombudsman complaint using AI (Part 5)",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "most people mess up their complaints so badly that even winning cases get thrown out on technicalities",
+      "statement": "A practitioner says poorly drafted complaints lose winnable cases, so drafting quality matters.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd",
+        "4fd787a5-529c-42d5-80af-12fd2191e871"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-40",
+      "url": "https://etvbharat.com/english/business/business-news/deal-directly-with-insurers-or-registered-agents-irdai/na20200728121213987",
+      "title": "Deal directly with insurers or registered agents: IRDAI",
+      "source_type": "news",
+      "published_at": "2020-07-28",
+      "quote": "subject to upfront payment of fee/advance tax/deposit or payment to the account of the caller … The public should directly deal with insurance companies or registered intermediaries/insurance agents while purchasing a policy or having any financial dealing with the insurance companies for verification",
+      "statement": "IRDAI (2020) warned about fee-seeking unregistered callers and told the public to deal with insurers or registered intermediaries, a regulatory headwind for unregistered fee-charging claim helpers.",
+      "kind": "inference",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-41",
+      "url": "https://careers.sierraventures.com/companies/loop-health/jobs/59005260-claims-office-executive",
+      "title": "Claims Office Executive - Loop Health",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Upload the claim files on TPA/Insurer portals to help with the digital claim submission … Interact with client to communicate about deficiencies",
+      "statement": "A group-health intermediary pays staff to upload claim files to TPA portals and chase document deficiencies by hand.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Loop Health"
+    },
+    {
+      "ref": "ev-42",
+      "url": "https://jobs.weekday.works/assistant-manager-employee-benefits-claims-at-prudent-insurance-brokers-pvt-ltd-4382570698",
+      "title": "Assistant Manager - Employee Benefits - Claims at Prudent Insurance Brokers",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Reviewing denial claims sent by TPAs & ensuring that denial is done as per policy terms. … Representing client claims to insurer/TPA in case of ambiguity in settlement/denial",
+      "statement": "A broker employs experienced claims staff to check TPA denials against policy terms and contest them, the same clause-mapping work the tool automates.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Prudent Insurance Brokers"
+    },
+    {
+      "ref": "ev-43",
+      "url": "https://jobs.weekday.works/assistant-manager-employee-benefits-claims-at-prudent-insurance-brokers-pvt-ltd-4382570698",
+      "title": "Assistant Manager - Employee Benefits - Claims at Prudent Insurance Brokers",
+      "source_type": "job_posting",
+      "published_at": null,
+      "quote": "Prudent is a Composite Insurance Broker regulated by the Insurance Regulatory and Development Authority of India (IRDAI) and headquartered in Mumbai, India.",
+      "statement": "Prudent is an IRDAI-regulated composite broker headquartered in Mumbai.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [],
+      "company_name": "Prudent Insurance Brokers"
+    },
+    {
+      "ref": "ev-44",
+      "url": "https://www.pazcare.com/blog/how-can-hrs-reduce-claim-rejections-in-employee-health-insurance",
+      "title": "How can HRs reduce claim rejections in employee health insurance?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "HR gets pulled into urgent escalations and anxious follow-ups. … HR teams spend hours coordinating with TPAs, insurers, and employees to resolve disputes.",
+      "statement": "A benefits broker's blog says rejected claims pull HR into escalations and hours of coordination.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "high",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-45",
+      "url": "https://www.pazcare.com/blog/how-can-hrs-reduce-claim-rejections-in-employee-health-insurance",
+      "title": "How can HRs reduce claim rejections in employee health insurance?",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "When exclusions are misunderstood, denials feel unfair, but they are contractually aligned with policy wording.",
+      "statement": "Many denials are contractually valid, which limits how much a dispute tool can recover.",
+      "kind": "inference",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108",
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-46",
+      "url": "https://www.pazcare.com/blog/the-top-10-group-health-insurance-myths-indian-employees-still-believe-to-be-true",
+      "title": "The top 10 group health insurance myths Indian employees still believe to be true",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "And for HR, it means more escalations, back-and-forth with insurance brokers, and frustrated teams.",
+      "statement": "Group-health confusion creates escalations and back-and-forth with brokers for HR.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-47",
+      "url": "https://www.outlookmoney.com/magazine/money/story/lay-claim-on-your-health-insurance-rights-1695",
+      "title": "Lay Claim On Your Health Insurance Rights",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "It is important to note here that the numbers include a large portion of claims rejected because of the insured person’s fault as well.",
+      "statement": "A large share of rejections is attributed to policyholder fault (e.g. non-disclosure), which a dispute tool cannot reverse.",
+      "kind": "fact",
+      "stance": "contradicts",
+      "relevance": "medium",
+      "unknown_ids": [
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-48",
+      "url": "https://joinditto.in/articles/health-insurance/how-to-appeal-for-a-rejected-health-insurance/",
+      "title": "How to Appeal for a Rejected Health Insurance 2025",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "According to IRDAI guidelines, all insurers must clearly state the reason for rejection, along with the relevant policy clause.",
+      "statement": "Insurers must already cite the clause behind a rejection, so part of the 'explain the clause' value is mandated (enforcement unclear).",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-49",
+      "url": "https://joinditto.in/articles/health-insurance/how-to-appeal-for-a-rejected-health-insurance/",
+      "title": "How to Appeal for a Rejected Health Insurance 2025",
+      "source_type": "industry_publication",
+      "published_at": null,
+      "quote": "Match the insurer’s cited clause to your policy wording. Then, check waiting periods, exclusions, sub-limits, room-rent cap, pre-/post-hospitalization windows, and other missing documentation.",
+      "statement": "Today's advice is a manual checklist: claimants compare the cited clause with the policy wording by hand.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd",
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": null
+    },
+    {
+      "ref": "ev-50",
+      "url": "https://nyvo.in/resources/claims/claim-rejection-reasons",
+      "title": "Health Insurance Claim Rejected? 7 Reasons + Fixes",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "it's that policy wordings have specific clauses, and when those clauses aren't matched correctly during the claim, the system rejects. The good news: most rejections are reversible if you understand which pattern your case falls into and respond correctly within the window.",
+      "statement": "An IRDAI corporate agent frames rejections as clause mismatches that are often reversible with the right response, which matches the idea's wedge (vendor claim).",
+      "kind": "inference",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b1727b31-da15-41c8-b9a1-828f654bbd4d",
+        "da8fc233-5cc4-4119-ab45-4d5f978b0108"
+      ],
+      "company_name": "nyvo"
+    },
+    {
+      "ref": "ev-51",
+      "url": "https://joinditto.in/claims-assistance/",
+      "title": "Ditto claims assistance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "If your claim is unfairly rejected, we'll guide you through escalating it and help you draft and file a complaint with the insurer's grievance cell. … If there's still no resolution, we'll help you prepare your Ombudsman submission",
+      "statement": "Ditto offers grievance and Ombudsman drafting help to its customers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "Ditto"
+    },
+    {
+      "ref": "ev-52",
+      "url": "https://joinditto.in/",
+      "title": "Ditto Insurance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Ditto is one of India's highly rated insurance advisors with a stellar 4.9 Google rating from 30,000+ happy customers.",
+      "statement": "Ditto is an Indian insurance advisory with a large customer base.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Ditto"
+    },
+    {
+      "ref": "ev-53",
+      "url": "https://www.theweek.in/wire-updates/business/2025/12/08/dcm60-ht-syndication.html",
+      "title": "Policybazaar Celebrates Heartfelt Experiences Behind Successful Claim Stories with Insurance Ka Superhero",
+      "source_type": "news",
+      "published_at": "2025-12-08",
+      "quote": "Policybazaar has successfully processed claims worth crores and reopened thousands of stuck cases through its powerful initiatives like Claim Samadhan Diwas and dedicated teams for on-ground claims assistance.",
+      "statement": "Policybazaar (press release) runs claim-dispute programs for its customers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "Policybazaar"
+    },
+    {
+      "ref": "ev-54",
+      "url": "https://www.policygaido.com/",
+      "title": "Policygaido",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Upload your existing policy or pick your plan, our GaidoAI spots coverage gaps, hidden exclusions, and tells you exactly where you stand. … The most common cause of proportionate deductions, flagged instantly.",
+      "statement": "Policygaido already offers AI policy-upload analysis that flags exclusions and proportionate-deduction triggers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "high",
+      "unknown_ids": [
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "Policygaido"
+    },
+    {
+      "ref": "ev-55",
+      "url": "https://oneassure.in/",
+      "title": "OneAssure",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "From big life changes to small confusions - our Insurance Buddy, PolicyPal’s got answers in plain English, 24/7",
+      "statement": "OneAssure runs an AI chatbot that answers policy questions such as room-rent caps and waiting periods.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "OneAssure"
+    },
+    {
+      "ref": "ev-56",
+      "url": "https://www.oneassure.in/about-us",
+      "title": "About Us - OneAssure",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "OneAssure helps individuals and families compare, buy, manage, and claim insurance with expert guidance, transparent advice, and support at every step.",
+      "statement": "OneAssure positions itself on claim support as well as sales.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "OneAssure"
+    },
+    {
+      "ref": "ev-57",
+      "url": "https://nyvo.in/health-insurance-advisor",
+      "title": "Health Insurance Advisor in India: Free and Licensed",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Buy through nyvo and we get your claim passed, otherwise refund your premium. We are putting our money on our claim service.",
+      "statement": "nyvo bundles a claim-support guarantee with policies sold through it.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "nyvo"
+    },
+    {
+      "ref": "ev-58",
+      "url": "https://nyvo.in/irdai-licence",
+      "title": "IRDAI Licence and Contact Details | nyvo insurance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "nyvo insurance Services LLP is registered with IRDAI as a corporate agent (composite), licence number CA1085. … Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
+      "statement": "nyvo is an IRDAI corporate agent based in Bengaluru.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "nyvo"
+    },
+    {
+      "ref": "ev-59",
+      "url": "https://okbima.com/claims/health-insurance",
+      "title": "Okbima health insurance claims",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Our helpdesk team works closely with insurance companies to resolve any queries or documentation issues on your behalf.",
+      "statement": "Okbima runs a claims helpdesk that handles insurer queries and document issues for customers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Okbima"
+    },
+    {
+      "ref": "ev-60",
+      "url": "https://www.okbima.com/about-us",
+      "title": "About Okbima",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Based in Noida, we have grown into a team of experts across the nation dedicated to protecting the health, life, and assets of over 2,00,000+ happy families across the country.",
+      "statement": "Okbima is a Noida-based IRDAI-approved distributor.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Okbima"
+    },
+    {
+      "ref": "ev-61",
+      "url": "https://algatesinsurance.in/",
+      "title": "Algates Insurance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "That’s why we stand with you through the claims process: coordinating with insurers, escalating rejections, and making sure you get what you’re owed.",
+      "statement": "Algates Insurance, a small advisory firm, offers claim escalation help to clients.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Algates Insurance"
+    },
+    {
+      "ref": "ev-62",
+      "url": "https://algatesinsurance.in/about-us/",
+      "title": "About Algates Insurance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Based in the heart of Indiranagar, Bangalore, Algates Insurance is your trustworthy insurance advisory firm, serving individuals and families nationwide.",
+      "statement": "Algates Insurance is based in Bangalore.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Algates Insurance"
+    },
+    {
+      "ref": "ev-63",
+      "url": "https://www.bimacafe.com/",
+      "title": "Bimacafe",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "As trusted insurance brokers, we offer tailored solutions that meet your unique needs. … We offer end-to-end support during the claims process, from documentation to follow-ups, ensuring a smooth and hassle-free experience.",
+      "statement": "Bimacafe, a small broker, offers end-to-end claims support.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Bimacafe"
+    },
+    {
+      "ref": "ev-64",
+      "url": "https://www.probusinsurance.com/",
+      "title": "Probus Insurance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "you are backed by the highly motivated claims support team to help you at every step in filing claims.",
+      "statement": "Probus runs a claims support team for retail customers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Probus Insurance Broker"
+    },
+    {
+      "ref": "ev-65",
+      "url": "https://www.probusinsurance.com/about-us",
+      "title": "About Us - Probus Insurance",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Probus Insurance Broker Private limited is one of the renowned Insurance Broker in India",
+      "statement": "Probus is an Indian insurance broker.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Probus Insurance Broker"
+    },
+    {
+      "ref": "ev-66",
+      "url": "http://www.intactinsurance.co.in/",
+      "title": "Intact Insurance Brokers",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Intact Insurance Brokers is an independent and privately owned Insurance Broking company from India",
+      "statement": "Intact Insurance Brokers is an independent Indian broker.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "Intact Insurance Brokers"
+    },
+    {
+      "ref": "ev-67",
+      "url": "https://www.riskbirbal.com/",
+      "title": "RiskBirbal",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "As an Insurance broker in Delhi (Headquarter), we specialize in providing personalized coverage through a streamlined policy. … Welcome to WellConnect, where we believe in the power of comprehensive employee health insurance.",
+      "statement": "RiskBirbal is a Delhi-headquartered broker with an employee health insurance line.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "RiskBirbal Insurance Brokers"
+    },
+    {
+      "ref": "ev-68",
+      "url": "https://www.policyx.com/claim-dashboard",
+      "title": "Claim Dashboard | PolicyX.com",
+      "source_type": "review",
+      "published_at": null,
+      "quote": "All my claims were rejected for 3 years. Then, I received a text from PolicyX team, who noticed that my claims hadn't been settled. They managed to get my claims settled, totalling ₹4.5 L.",
+      "statement": "A PolicyX testimonial describes years of rejected claims later settled with the distributor's help (vendor-published).",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "55cf15c7-0332-4b0b-b20a-2da389a270bd",
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "PolicyX"
+    },
+    {
+      "ref": "ev-69",
+      "url": "https://www.policyx.com/about-us.php",
+      "title": "About PolicyX.com",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Their trust has brought us from a small office in Udyog Vihar to a double-storeyed building at the heart of Gurugram.",
+      "statement": "PolicyX is based in Gurugram.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [],
+      "company_name": "PolicyX"
+    },
+    {
+      "ref": "ev-70",
+      "url": "https://www.pazcare.com/",
+      "title": "Pazcare",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Raise and track claims on the app with ease … Real-time access to your employee's claims status and benefits usage.",
+      "statement": "Pazcare gives HR teams claims tracking for group health plans.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Pazcare"
+    },
+    {
+      "ref": "ev-71",
+      "url": "https://www.plumhq.com/",
+      "title": "Plum",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Global standards, local compliance, and a claims experience your India workforce will trust … Through serving 6000+ companies",
+      "statement": "Plum, a group-health broker for Indian companies, serves 6000+ companies and sells on claims experience.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Plum"
+    },
+    {
+      "ref": "ev-72",
+      "url": "https://www.loophealth.com/",
+      "title": "Loop Health",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "20+ healthy years for India's workforce … Spend less time managing endorsements and claims",
+      "statement": "Loop sells group health to Indian employers on reducing HR time spent on claims.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Loop Health"
+    },
+    {
+      "ref": "ev-73",
+      "url": "https://www.onsurity.com/",
+      "title": "Onsurity",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "One membership covers it end to end — health insurance, doctor consults, lab tests, wellness and hands-on claims support. … Onsurity is an employee healthcare platform for growing Indian businesses.",
+      "statement": "Onsurity bundles hands-on claims support for small Indian employers.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Onsurity"
+    },
+    {
+      "ref": "ev-74",
+      "url": "https://www.novabenefits.com/",
+      "title": "Nova Benefits",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "their swift claim handling and tailored service have greatly boosted our employee relations and streamlined HR operations … our aim is to make employee benefits more personalised and easily accessible for companies all across India irrespective of their team size",
+      "statement": "A Nova Benefits client testimonial credits claim handling with easing HR operations; Nova serves companies across India.",
+      "kind": "fact",
+      "stance": "supports",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Nova Benefits"
+    },
+    {
+      "ref": "ev-75",
+      "url": "https://www.turtlemint.com/",
+      "title": "Turtlemint",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "POSP training made easy with 500+ videos, live webinars, and classroom sessions. … Experts to guide and handle your claims to get you the best payouts",
+      "statement": "Turtlemint supports POSP agents and offers claims handling, a channel to agents.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "medium",
+      "unknown_ids": [
+        "94720904-a0db-4667-bf56-114a7a561f4f"
+      ],
+      "company_name": "Turtlemint"
+    },
+    {
+      "ref": "ev-76",
+      "url": "https://www.insurancedekho.com/",
+      "title": "InsuranceDekho",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "InsuranceDekho is becoming a household name in India. … assistance during the settlement of a claim, our team of experts is at your service all days.",
+      "statement": "InsuranceDekho offers claim settlement assistance.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "InsuranceDekho"
+    },
+    {
+      "ref": "ev-77",
+      "url": "https://www.coverfox.com/",
+      "title": "Coverfox",
+      "source_type": "company_site",
+      "published_at": null,
+      "quote": "Compare motor and health protection plans from IRDAI-approved insurers with seamless renewals and claims support. … Coverfox is making Insurance accessible, available and affordable across India.",
+      "statement": "Coverfox sells health plans with claims support across India.",
+      "kind": "fact",
+      "stance": "neutral",
+      "relevance": "low",
+      "unknown_ids": [
+        "b275eba0-493b-4a82-9849-013cf31fc340"
+      ],
+      "company_name": "Coverfox"
+    }
+  ],
+  "unknown_findings": [
+    {
+      "unknown_id": "da8fc233-5cc4-4119-ab45-4d5f978b0108",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Health insurers received about 1.18 lakh Bima Bharosa complaints in FY26, and claim issues make up about 69% of general/health grievances.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-01",
+            "ev-03"
+          ]
+        },
+        {
+          "statement": "Ombudsman complaints about partial or total repudiation rose to 35,186 in FY26, and the CIO says 95% of health complaints concern claim rejections.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-07",
+            "ev-14"
+          ]
+        },
+        {
+          "statement": "Self-reported LocalCircles surveys put rejection or partial settlement at roughly 4 in 10 claimants, or more.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-08",
+            "ev-10"
+          ]
+        },
+        {
+          "statement": "Against this, IRDAI data shows repudiations fell to about 8% of claims in FY25, top insurers settle 97-99% of claims by count, and Policybazaar reports 94% approval.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-31",
+            "ev-35",
+            "ev-28"
+          ]
+        },
+        {
+          "statement": "No public data breaks down how often specific clauses (room rent, sub-limits) are misapplied; IRDAI does not collect denial reasons.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-04"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "55cf15c7-0332-4b0b-b20a-2da389a270bd",
+      "status": "answered",
+      "summary": [
+        {
+          "statement": "Claimants escalate themselves: insurer grievance officer, then Bima Bharosa, then the Ombudsman, often over months (10 to 22 months in documented cases).",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-15",
+            "ev-19",
+            "ev-17"
+          ]
+        },
+        {
+          "statement": "Frustrations reported include repeated document requests, template denials, unresponsive grievance channels and unclear process.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-11",
+            "ev-15",
+            "ev-17",
+            "ev-23",
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "Distributor help can stop after a first reconsideration, leaving the claimant to escalate alone.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16"
+          ]
+        },
+        {
+          "statement": "Policyholders find grievance mechanisms hard to use without guidance.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-24"
+          ]
+        }
+      ]
+    },
+    {
+      "unknown_id": "8df25476-bd04-4d90-8a85-7ea376e00f56",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "In aggregate, disallowed plus repudiated health claims reached about Rs 26,000 crore in FY24.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-09"
+          ]
+        },
+        {
+          "statement": "The average paid claim is about Rs 28,910; documented disputes range from about Rs 44,000 to Rs 2.48 lakh.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-33",
+            "ev-16",
+            "ev-19"
+          ]
+        },
+        {
+          "statement": "Most reimbursement claimants need financial aid to cover upfront payments.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-30"
+          ]
+        },
+        {
+          "statement": "There is no source for the typical size of a disputed deduction per family; the per-case value of a dispute is still unknown.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "b1727b31-da15-41c8-b9a1-828f654bbd4d",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "A paid success-fee market exists: Insurance Samadhan charged Rs 500 plus 9% of recovered amounts and reports INR 160 crore recovered.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-25",
+            "ev-27"
+          ]
+        },
+        {
+          "statement": "Assisted resubmissions reverse far more rejections than DIY (32-67% vs 6%), and the Ombudsman rules for policyholders in a majority of cases.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29",
+            "ev-05"
+          ]
+        },
+        {
+          "statement": "Willingness to pay is capped by free routes: the Ombudsman charges nothing, and claimants do win alone.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-36",
+            "ev-18"
+          ]
+        },
+        {
+          "statement": "Success-fee economics are narrow: the leading service accepts only 3-4 of every 100 cases, and the Ombudsman win rate fell to about 54% in FY26.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-26",
+            "ev-06"
+          ]
+        },
+        {
+          "statement": "No evidence was found on what individuals would pay for a Rs 499-2,999 self-serve package.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "b275eba0-493b-4a82-9849-013cf31fc340",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Options in use include distributor claim desks (Policybazaar, Ditto, PolicyX, nyvo), success-fee services (Insurance Samadhan), free public escalation (Ombudsman), and general AI chatbots.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-53",
+            "ev-51",
+            "ev-68",
+            "ev-57",
+            "ev-25",
+            "ev-36",
+            "ev-38"
+          ]
+        },
+        {
+          "statement": "Assistance type changes outcomes, per Policybazaar's own data.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-29"
+          ]
+        },
+        {
+          "statement": "No evidence was found on how claimants compare or choose between these options.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "94720904-a0db-4667-bf56-114a7a561f4f",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Brokers employ claims staff to review TPA denials against policy terms and contest them, and to upload files and chase deficiencies by hand.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-42",
+            "ev-41"
+          ]
+        },
+        {
+          "statement": "Rejected claims pull HR into escalations and hours of coordination with TPAs and insurers.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-44",
+            "ev-46"
+          ]
+        },
+        {
+          "statement": "Group-health intermediaries (Plum, Loop, Onsurity, Nova, Pazcare) already compete on claims handling, so they are both potential buyers and incumbents.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-71",
+            "ev-72",
+            "ev-73",
+            "ev-74",
+            "ev-70"
+          ]
+        },
+        {
+          "statement": "No evidence was found that is specific to individual agents or POSPs.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "unknown_id": "4fd787a5-529c-42d5-80af-12fd2191e871",
+      "status": "partially_answered",
+      "summary": [
+        {
+          "statement": "Practitioner guidance treats AI as a drafting aid that can invent citations, and recommends a lawyer for complex, high-value cases.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-37"
+          ]
+        },
+        {
+          "statement": "Poorly drafted complaints can lose winnable cases, so an incorrect analysis has a real cost.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-39"
+          ]
+        },
+        {
+          "statement": "No evidence was found on the accuracy level users expect.",
+          "kind": "assumption",
+          "evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "hypothesis_update": null,
+  "new_unknowns": [],
+  "competitors": [
+    {
+      "ref": "comp-01",
+      "name": "Insurance Samadhan",
+      "url": "https://www.insurancesamadhan.in",
+      "kind": "service",
+      "description": "Grievance-redressal startup that drafts complaints and represents policyholders before insurers and the Ombudsman on a success fee.",
+      "pricing_note": "Rs 500 registration fee per family member plus 9% of the resolved claim amount (as reported in 2020).",
+      "evidence_refs": [
+        "ev-25",
+        "ev-27",
+        "ev-26",
+        "ev-12"
+      ],
+      "sentiment": [
+        {
+          "statement": "It takes on only 3-4 of every 100 cases it sees.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-26"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-02",
+      "name": "Policybazaar claim support / Claim Samadhan Diwas",
+      "url": "https://www.policybazaar.com",
+      "kind": "indirect",
+      "description": "Aggregator claim desk and dispute events for its own customers.",
+      "evidence_refs": [
+        "ev-53",
+        "ev-28",
+        "ev-29",
+        "ev-16"
+      ],
+      "sentiment": [
+        {
+          "statement": "One customer said help stopped after one reconsideration, leaving them to fight the case alone.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-16"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-03",
+      "name": "Ditto claims assistance",
+      "url": "https://joinditto.in/claims-assistance/",
+      "kind": "indirect",
+      "description": "Advisory firm that helps its customers escalate rejections and prepare Ombudsman submissions.",
+      "evidence_refs": [
+        "ev-51",
+        "ev-52"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-04",
+      "name": "Policygaido (GaidoAI)",
+      "url": "https://policygaido.com",
+      "kind": "direct",
+      "description": "AI policy-upload analysis that flags exclusions and proportionate-deduction triggers; pre-claim focus.",
+      "evidence_refs": [
+        "ev-54"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-05",
+      "name": "OneAssure PolicyPal",
+      "url": "https://oneassure.in",
+      "kind": "indirect",
+      "description": "Distributor with an AI chatbot answering policy questions, plus claim-dispute help.",
+      "evidence_refs": [
+        "ev-55",
+        "ev-56"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-06",
+      "name": "nyvo Claim Support Guarantee",
+      "url": "https://nyvo.in",
+      "kind": "indirect",
+      "description": "Corporate agent that works claims for policies it sold, with a premium-refund guarantee.",
+      "evidence_refs": [
+        "ev-57",
+        "ev-50"
+      ],
+      "sentiment": []
+    },
+    {
+      "ref": "comp-07",
+      "name": "PolicyX claims helpdesk",
+      "url": "https://www.policyx.com",
+      "kind": "indirect",
+      "description": "Web aggregator with a claims helpdesk for its customers.",
+      "evidence_refs": [
+        "ev-68"
+      ],
+      "sentiment": [
+        {
+          "statement": "A published testimonial credits PolicyX with getting years of rejected claims settled.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-68"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-08",
+      "name": "Free self-escalation (insurer GRO, Bima Bharosa, Insurance Ombudsman)",
+      "url": null,
+      "kind": "manual",
+      "description": "Free statutory grievance route the claimant runs alone, with manual clause-checking.",
+      "evidence_refs": [
+        "ev-36",
+        "ev-18",
+        "ev-49",
+        "ev-05"
+      ],
+      "sentiment": [
+        {
+          "statement": "Claimants describe the online Ombudsman process as straightforward but the overall journey as long.",
+          "kind": "fact",
+          "evidence_ids": [
+            "ev-18",
+            "ev-19"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-09",
+      "name": "General-purpose AI chatbots (e.g. ChatGPT)",
+      "url": null,
+      "kind": "indirect",
+      "description": "Free chatbots used with published prompts to draft grievance and Ombudsman complaints.",
+      "evidence_refs": [
+        "ev-38",
+        "ev-37"
+      ],
+      "sentiment": [
+        {
+          "statement": "Guides warn that AI can invent citations and should not replace a lawyer on complex cases.",
+          "kind": "inference",
+          "evidence_ids": [
+            "ev-37"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "comp-10",
+      "name": "Employee-benefits brokers' claims teams",
+      "url": null,
+      "kind": "service",
+      "description": "Brokers' in-house claims staff who review TPA denials and represent group-health claims.",
+      "evidence_refs": [
+        "ev-42",
+        "ev-41",
+        "ev-74"
+      ],
+      "sentiment": []
+    }
+  ],
+  "current_solutions": [
+    {
+      "statement": "Most claimants escalate on their own through the insurer's grievance officer, Bima Bharosa and the free Ombudsman, often over many months.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-15",
+        "ev-19",
+        "ev-18",
+        "ev-36"
+      ]
+    },
+    {
+      "statement": "Distributors (Policybazaar, Ditto, PolicyX, nyvo) provide claim help, mainly to customers who bought through them.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-53",
+        "ev-51",
+        "ev-68",
+        "ev-57"
+      ]
+    },
+    {
+      "statement": "Paid success-fee services such as Insurance Samadhan handle selected disputes.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-25",
+        "ev-27"
+      ]
+    },
+    {
+      "statement": "For group health, broker claims teams and HR handle disputes manually.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-42",
+        "ev-41",
+        "ev-44"
+      ]
+    },
+    {
+      "statement": "AI tools are emerging: pre-claim policy-gap analysis (Policygaido) and generic chatbots for drafting complaints.",
+      "kind": "fact",
+      "evidence_ids": [
+        "ev-54",
+        "ev-38"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "ref": "co-01",
+      "name": "nyvo insurance Services LLP",
+      "website": "https://nyvo.in",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": "Bengaluru, Karnataka",
+      "industry": "Insurance corporate agent (composite)",
+      "description": "Small IRDAI corporate agent that works customers' claims and escalations, a fit for a clause-mapping/drafting tool.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-58",
+        "ev-57",
+        "ev-50"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Corporate agent that sells health policies and works claims through escalation.",
+          "evidence_refs": [
+            "ev-57",
+            "ev-58"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Publicly frames rejections as clause mismatches that can be reversed.",
+          "evidence_refs": [
+            "ev-50"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-58"
+      }
+    },
+    {
+      "ref": "co-02",
+      "name": "Okbima",
+      "website": "https://www.okbima.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": "Noida, Uttar Pradesh",
+      "industry": "Online insurance distributor",
+      "description": "Distributor with a claims helpdesk handling insurer queries and documentation for customers.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-60",
+        "ev-59"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Runs a claims helpdesk for retail health customers.",
+          "evidence_refs": [
+            "ev-59"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-60"
+      }
+    },
+    {
+      "ref": "co-03",
+      "name": "Algates Insurance",
+      "website": "https://algatesinsurance.in",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": "Bangalore, Karnataka",
+      "industry": "Insurance advisory / marketing firm",
+      "description": "Small advisory firm offering free lifetime claim assistance, including escalating rejections.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-62",
+        "ev-61"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 4,
+          "rationale": "Small advisory firm whose service includes escalating rejections.",
+          "evidence_refs": [
+            "ev-61",
+            "ev-62"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-62"
+      }
+    },
+    {
+      "ref": "co-04",
+      "name": "Bimacafe",
+      "website": "https://bimacafe.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Insurance broker",
+      "description": "Small broker offering end-to-end claims support from documentation to follow-ups.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-63"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Broker with an end-to-end claims-support offer; location not stated on the fetched page.",
+          "evidence_refs": [
+            "ev-63"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-05",
+      "name": "Probus Insurance Broker",
+      "website": "https://www.probusinsurance.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Insurance broker (retail, pan-India)",
+      "description": "Retail-focused broker with a claims support team.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-65",
+        "ev-64"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Retail broker with a claims support team.",
+          "evidence_refs": [
+            "ev-64",
+            "ev-65"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-65"
+      }
+    },
+    {
+      "ref": "co-06",
+      "name": "Intact Insurance Brokers",
+      "website": "https://intactinsurance.co.in",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Insurance broker",
+      "description": "Independent Indian broker; claims practice not described on the fetched page.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-66"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Independent broker; health-claims activity not evidenced.",
+          "evidence_refs": [
+            "ev-66"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-66"
+      }
+    },
+    {
+      "ref": "co-07",
+      "name": "RiskBirbal Insurance Brokers",
+      "website": "https://riskbirbal.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": "Delhi",
+      "industry": "Insurance broker",
+      "description": "Delhi broker with an employee health insurance line (WellConnect).",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-67"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Broker with an employee-health line; claims work not evidenced.",
+          "evidence_refs": [
+            "ev-67"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-67"
+      }
+    },
+    {
+      "ref": "co-08",
+      "name": "PolicyX",
+      "website": "https://www.policyx.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": "Gurugram, Haryana",
+      "industry": "Insurance web aggregator",
+      "description": "Aggregator with a claims helpdesk that pursues customers' rejected claims.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-69",
+        "ev-68"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Works rejected claims for customers.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 2,
+          "rationale": "A testimonial cites years of rejected claims later settled.",
+          "evidence_refs": [
+            "ev-68"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-69"
+      }
+    },
+    {
+      "ref": "co-09",
+      "name": "Ditto",
+      "website": "https://joinditto.in",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Insurance advisory",
+      "description": "Advisory firm whose claims team drafts grievance and Ombudsman submissions.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-52",
+        "ev-51"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Claims team already drafts escalations; could use tooling or could compete.",
+          "evidence_refs": [
+            "ev-51"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-52"
+      }
+    },
+    {
+      "ref": "co-10",
+      "name": "Prudent Insurance Brokers",
+      "website": "https://www.prudentbrokers.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": "Mumbai, Maharashtra",
+      "industry": "Composite insurance broker (employee benefits)",
+      "description": "Broker hiring claims staff to review TPA denials against policy terms.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-43",
+        "ev-42"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Large broker rather than 1-10 staff, but has an EB claims team doing the target work.",
+          "evidence_refs": [
+            "ev-43"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Job posting for denial review and representation.",
+          "evidence_refs": [
+            "ev-42"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-43"
+      }
+    },
+    {
+      "ref": "co-11",
+      "name": "Loop Health",
+      "website": "https://www.loophealth.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Group health insurance broker",
+      "description": "Group-health intermediary that pays staff to handle claim files and deficiencies manually.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-72",
+        "ev-41"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Serves employers; claims operations are manual.",
+          "evidence_refs": [
+            "ev-72"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 4,
+          "rationale": "Job posting for manual claim-file handling and deficiency communication.",
+          "evidence_refs": [
+            "ev-41"
+          ]
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-72"
+      }
+    },
+    {
+      "ref": "co-12",
+      "name": "Plum",
+      "website": "https://www.plumhq.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Group health insurance broker",
+      "description": "Group-health broker for 6000+ companies that sells on claims experience.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-71"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Claims experience is central to its pitch.",
+          "evidence_refs": [
+            "ev-71"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-71"
+      }
+    },
+    {
+      "ref": "co-13",
+      "name": "Onsurity",
+      "website": "https://www.onsurity.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Employee healthcare platform (corporate agent)",
+      "description": "SME employee-health platform bundling hands-on claims support.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-73"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Offers hands-on claims support to small employers.",
+          "evidence_refs": [
+            "ev-73"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-73"
+      }
+    },
+    {
+      "ref": "co-14",
+      "name": "Nova Benefits",
+      "website": "https://www.novabenefits.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Employee benefits broker",
+      "description": "Benefits broker whose clients credit its claim handling with easing HR operations.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-74"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Claims handling for HR clients.",
+          "evidence_refs": [
+            "ev-74"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-74"
+      }
+    },
+    {
+      "ref": "co-15",
+      "name": "Pazcare",
+      "website": "https://www.pazcare.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Employee benefits broker",
+      "description": "Benefits broker giving HR claims tracking and publishing on HR claim-rejection pain.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-70",
+        "ev-44",
+        "ev-46"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Serves HR teams and documents HR claim escalations.",
+          "evidence_refs": [
+            "ev-70",
+            "ev-44"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 3,
+          "rationale": "Its content describes HR time spent on disputes.",
+          "evidence_refs": [
+            "ev-44",
+            "ev-46"
+          ]
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-16",
+      "name": "Turtlemint",
+      "website": "https://www.turtlemint.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Insurance distribution platform for POSP agents",
+      "description": "Platform that trains and equips POSP agents and offers claims handling, a channel to many agents.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-75"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Channel to POSP agents in the ICP rather than a 1-10 person firm.",
+          "evidence_refs": [
+            "ev-75"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    },
+    {
+      "ref": "co-17",
+      "name": "InsuranceDekho",
+      "website": "https://www.insurancedekho.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Insurance broker / aggregator",
+      "description": "Large distributor offering claim settlement assistance; potential channel partner.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-76"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Large distributor with claim assistance; outside the 1-10 size band.",
+          "evidence_refs": [
+            "ev-76"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-76"
+      }
+    },
+    {
+      "ref": "co-18",
+      "name": "Coverfox",
+      "website": "https://www.coverfox.com",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Insurance broker",
+      "description": "Broker selling health plans with claims support across India.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-77"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 2,
+          "rationale": "Broker with claims support; outside the 1-10 size band.",
+          "evidence_refs": [
+            "ev-77"
+          ]
+        },
+        "technology_fit": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": [],
+      "in_target_geography": {
+        "value": true,
+        "evidence_ref": "ev-77"
+      }
+    },
+    {
+      "ref": "co-19",
+      "name": "OneAssure",
+      "website": "https://oneassure.in",
+      "icp_id": "61956eb7-cdeb-4c5c-89d8-8926b9331a0a",
+      "location": null,
+      "industry": "Insurance distributor",
+      "description": "Distributor whose AI chatbot and team help with policy questions and claim disputes; partner or competitor.",
+      "technologies": [],
+      "evidence_refs": [
+        "ev-56",
+        "ev-55"
+      ],
+      "assessments": {
+        "company_fit": {
+          "rating": 3,
+          "rationale": "Claim help and AI policy Q&A for retail customers.",
+          "evidence_refs": [
+            "ev-56",
+            "ev-55"
+          ]
+        },
+        "technology_fit": {
+          "rating": 3,
+          "rationale": "Already runs an AI chatbot over policy terms.",
+          "evidence_refs": [
+            "ev-55"
+          ]
+        },
+        "other_signals": {
+          "rating": 0,
+          "rationale": "No evidence found.",
+          "evidence_refs": []
+        }
+      },
+      "contacts": []
+    }
+  ]
+}
